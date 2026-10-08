@@ -1,0 +1,9 @@
+   Compiling bream-monitor-consumer v0.0.0 (/home/bat/projects/bream/experiments/monitor-process/consumer)
+error[E0616]: field `generation` of struct `ProcessId` is private
+ --> consumer/examples/reject_id_mutation.rs:3:8
+  |
+3 |     id.generation = 0;
+  |        ^^^^^^^^^^ private field
+
+For more information about this error, try `rustc --explain E0616`.
+error: could not compile `bream-monitor-consumer` (example "reject_id_mutation") due to 1 previous error

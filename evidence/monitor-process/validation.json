@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "date": "2026-10-08",
+  "cohort": "evidence/monitor-process/runs/20261008-monitor-02",
+  "retained_cohorts": 2,
+  "hash_records_verified": 1140,
+  "current_inputs_verified": 113,
+  "commands": 221,
+  "observations": 198,
+  "runtime_tests_executed_by_audit": false,
+  "benchmarks_executed": false,
+  "performance_qualification": "prohibited on this machine",
+  "errors": []
+}

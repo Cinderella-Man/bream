@@ -1,0 +1,8 @@
+   Compiling bream-link-consumer v0.0.0 (/home/bat/projects/bream/experiments/link-process/consumer)
+error: bream milestone subset: arbitrary calls are forbidden; only observe(u64) is an approved statement builtin
+ --> consumer/examples/reject_custom_call.rs:5:5
+  |
+5 |     std::thread::scope(|_| {});
+  |     ^^^
+
+error: could not compile `bream-link-consumer` (example "reject_custom_call") due to 1 previous error

@@ -1,0 +1,10 @@
+[package]
+name = "bream-structured-consumer"
+version = "0.0.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+bream-structured-runtime = { path = "../runtime" }
+bream-structured-macros = { path = "../macros" }
+

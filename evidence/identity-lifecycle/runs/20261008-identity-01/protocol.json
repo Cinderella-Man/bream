@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-08",
+  "milestone": "Generational process identity, terminal arbitration and publication/shutdown ownership",
+  "allowances": [
+    1,
+    32,
+    256
+  ],
+  "correctness": "11 deterministic runtime transition/failure tests per compiler profile; identity, structured and baseline controls at three allowances per profile; 57 rejected consumers per profile; four shadowing executions.",
+  "limits": [
+    "single worker",
+    "closed generated grammar",
+    "recoverable policy/capacity/channel failures only; no allocator-failure recovery",
+    "worker failure is host-fatal and unrecovered",
+    "no waiting I/O/mailboxes/monitors",
+    "no complete G1/G2 qualification"
+  ],
+  "development": "Unrecorded development builds and smoke checks preceded this fixed retained protocol.",
+  "evidence_revision": "2026-10-08: timing protocol and results removed; this is the correctness subset of the original run.",
+  "performance_status": "redo_required",
+  "local_speed_tests_allowed": false
+}

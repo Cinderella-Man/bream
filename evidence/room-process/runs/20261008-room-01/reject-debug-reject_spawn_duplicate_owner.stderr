@@ -1,0 +1,12 @@
+   Compiling bream-room-consumer v0.0.0 (/home/bat/projects/bream/experiments/room-process/consumer)
+error[E0382]: use of moved value: `words`
+ --> consumer/examples/reject_spawn_duplicate_owner.rs:4:110
+  |
+4 |     fn child() {} fn run() { let words = owned_input(); spawn_monitor(child, words, 0, 0); spawn_link(child, words, 0, 0); }
+  |                                  -----                                       -----                           ^^^^^ value used here after move
+  |                                  |                                           |
+  |                                  |                                           value moved here
+  |                                  move occurs because `words` has type `OwnedWords`, which does not implement the `Copy` trait
+
+For more information about this error, try `rustc --explain E0382`.
+error: could not compile `bream-room-consumer` (example "reject_spawn_duplicate_owner") due to 2 previous errors

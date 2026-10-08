@@ -1,0 +1,185 @@
+{
+  "reason": "Preserve the initial successful test cohort before fixing an independently found input-capacity admission gap. The follow-up is justified by correctness, not timing results.",
+  "copies": [
+    {
+      "original_path": "experiments/process-milestone/Cargo.lock",
+      "path": "evidence/process-milestone/runs/20261008-useful-process-01/inputs/experiments/process-milestone/Cargo.lock",
+      "sha256": "2c8c37e093a21dbf2efa2fe6bf3be1b0b7886867b9cb85e78d499d59b863411f"
+    },
+    {
+      "original_path": "experiments/process-milestone/Cargo.toml",
+      "path": "evidence/process-milestone/runs/20261008-useful-process-01/inputs/experiments/process-milestone/Cargo.toml",
+      "sha256": "3ef7f940bcad0ab49e8984b409a58f99319026aca593fe46e4ed0968f9877a51"
+    },
+    {
+      "original_path": "experiments/process-milestone/consumer/Cargo.toml",
+      "path": "evidence/process-milestone/runs/20261008-useful-process-01/inputs/experiments/process-milestone/consumer/Cargo.toml",
+      "sha256": "67a6764a50afc0163753d65f874535384c982514494a6136f8a29ddd4df6e3c4"
+    },
+    {
+      "original_path": "experiments/process-milestone/consumer/examples/reject_buffer_move.rs",
+      "path": "evidence/process-milestone/runs/20261008-useful-process-01/inputs/experiments/process-milestone/consumer/examples/reject_buffer_move.rs",
+      "sha256": "f7c83c42a6d4d8b87335864d89e102bb468444735ced3dbd3fdd282a35147d53"
+    },
+    {
+      "original_path": "experiments/process-milestone/consumer/examples/reject_buffer_rebind.rs",
+      "path": "evidence/process-milestone/runs/20261008-useful-process-01/inputs/experiments/process-milestone/consumer/examples/reject_buffer_rebind.rs",
+      "sha256": "1edab45e2aa5746047da5ad4d4f7c5bd62e6ba8c77303c62397a0ed02897326d"
+    },
+    {
+      "original_path": "experiments/process-milestone/consumer/examples/reject_closure.rs",
+      "path": "evidence/process-milestone/runs/20261008-useful-process-01/inputs/experiments/process-milestone/consumer/examples/reject_closure.rs",
+      "sha256": "6fd1b036e06762a22fc3cfd6ea63cdba0f607e01113cc53d144a43019fef80fd"
+    },
+    {
+      "original_path": "experiments/process-milestone/consumer/examples/reject_closure_spawn.rs",
+      "path": "evidence/process-milestone/runs/20261008-useful-process-01/inputs/experiments/process-milestone/consumer/examples/reject_closure_spawn.rs",
+      "sha256": "e454692170bcc0bf691248403586e813e86e2efe307011ba03d980ed609f0bf9"
+    },
+    {
+      "original_path": "experiments/process-milestone/consumer/examples/reject_custom_call.rs",
+      "path": "evidence/process-milestone/runs/20261008-useful-process-01/inputs/experiments/process-milestone/consumer/examples/reject_custom_call.rs",
+      "sha256": "028f6e52af21c250963b36a50cd768ec4593988b3525b99e43fc2ad09c1dacdf"
+    },
+    {
+      "original_path": "experiments/process-milestone/consumer/examples/reject_custom_drop.rs",
+      "path": "evidence/process-milestone/runs/20261008-useful-process-01/inputs/experiments/process-milestone/consumer/examples/reject_custom_drop.rs",
+      "sha256": "09ce78d37327b71dc52dbb830156a4e0040675fcbf136ee4f02383042c3ad169"
+    },
+    {
+      "original_path": "experiments/process-milestone/consumer/examples/reject_custom_iterator.rs",
+      "path": "evidence/process-milestone/runs/20261008-useful-process-01/inputs/experiments/process-milestone/consumer/examples/reject_custom_iterator.rs",
+      "sha256": "6d74a77bac023fc7100e9925ecfa6b518d304f64fea0ac23dab67ca78657ab62"
+    },
+    {
+      "original_path": "experiments/process-milestone/consumer/examples/reject_custom_type.rs",
+      "path": "evidence/process-milestone/runs/20261008-useful-process-01/inputs/experiments/process-milestone/consumer/examples/reject_custom_type.rs",
+      "sha256": "f81f6a4d17ef014acffa62ac3c50bd3ddeb2c6c81afd408dc12021729726d592"
+    },
+    {
+      "original_path": "experiments/process-milestone/consumer/examples/reject_drop_input.rs",
+      "path": "evidence/process-milestone/runs/20261008-useful-process-01/inputs/experiments/process-milestone/consumer/examples/reject_drop_input.rs",
+      "sha256": "26ecdda71d13cce44919850a35225747be550f89290eb87fd3217e0df35df30d"
+    },
+    {
+      "original_path": "experiments/process-milestone/consumer/examples/reject_external_method.rs",
+      "path": "evidence/process-milestone/runs/20261008-useful-process-01/inputs/experiments/process-milestone/consumer/examples/reject_external_method.rs",
+      "sha256": "e9d17aa6efca2dc33e1737bb09a32b933ec1ae8ff0a629ff18c8d7698d2daa0f"
+    },
+    {
+      "original_path": "experiments/process-milestone/consumer/examples/reject_future.rs",
+      "path": "evidence/process-milestone/runs/20261008-useful-process-01/inputs/experiments/process-milestone/consumer/examples/reject_future.rs",
+      "sha256": "0d6e195957183777e5e07647f5acffbd0529a8896f01f039b251f62bc9c52aa3"
+    },
+    {
+      "original_path": "experiments/process-milestone/consumer/examples/reject_global_read.rs",
+      "path": "evidence/process-milestone/runs/20261008-useful-process-01/inputs/experiments/process-milestone/consumer/examples/reject_global_read.rs",
+      "sha256": "730e8020d6848714b797823ea7cdb0a7545621761df7ceb70ce1b3d61172f598"
+    },
+    {
+      "original_path": "experiments/process-milestone/consumer/examples/reject_inner_attribute.rs",
+      "path": "evidence/process-milestone/runs/20261008-useful-process-01/inputs/experiments/process-milestone/consumer/examples/reject_inner_attribute.rs",
+      "sha256": "d8aa1787ff83a245c2e213afe9f5db8d2a0d167e776b5574e3d74063d1038843"
+    },
+    {
+      "original_path": "experiments/process-milestone/consumer/examples/reject_macro.rs",
+      "path": "evidence/process-milestone/runs/20261008-useful-process-01/inputs/experiments/process-milestone/consumer/examples/reject_macro.rs",
+      "sha256": "acbf78f5f1ffb96ccfdbc868661617c4e9e8edb7b5ba63d63f171a66339c0e9b"
+    },
+    {
+      "original_path": "experiments/process-milestone/consumer/examples/reject_manual_await.rs",
+      "path": "evidence/process-milestone/runs/20261008-useful-process-01/inputs/experiments/process-milestone/consumer/examples/reject_manual_await.rs",
+      "sha256": "e65af1c068b18f242c3656c17e87f348f46645dab0dec3173e8d680aa124b7b2"
+    },
+    {
+      "original_path": "experiments/process-milestone/consumer/examples/reject_nested_macro.rs",
+      "path": "evidence/process-milestone/runs/20261008-useful-process-01/inputs/experiments/process-milestone/consumer/examples/reject_nested_macro.rs",
+      "sha256": "e1f90528e65f3d0fd1ea5a6fe87b3673375fa5a3e9712573c329a48e2bc17409"
+    },
+    {
+      "original_path": "experiments/process-milestone/consumer/examples/reject_program_fields.rs",
+      "path": "evidence/process-milestone/runs/20261008-useful-process-01/inputs/experiments/process-milestone/consumer/examples/reject_program_fields.rs",
+      "sha256": "b90bbc38c944116a7e3f09c7afe7f253ae35ffc753a3b5bb8bd8f3eca80fca15"
+    },
+    {
+      "original_path": "experiments/process-milestone/consumer/examples/reject_raw_identifier.rs",
+      "path": "evidence/process-milestone/runs/20261008-useful-process-01/inputs/experiments/process-milestone/consumer/examples/reject_raw_identifier.rs",
+      "sha256": "0126185f95ef31b63bee326ad2cd2bd289c8c8f034e82ad881fa8de24ccaf291"
+    },
+    {
+      "original_path": "experiments/process-milestone/consumer/examples/reject_reserved_name.rs",
+      "path": "evidence/process-milestone/runs/20261008-useful-process-01/inputs/experiments/process-milestone/consumer/examples/reject_reserved_name.rs",
+      "sha256": "5ca2d76e0d98be8eb3d22335ac71375eb5f896f71a8abfc61ef55ac9da94330f"
+    },
+    {
+      "original_path": "experiments/process-milestone/consumer/examples/reject_safe_constructor.rs",
+      "path": "evidence/process-milestone/runs/20261008-useful-process-01/inputs/experiments/process-milestone/consumer/examples/reject_safe_constructor.rs",
+      "sha256": "9c1bdabc67c66d3c6fa244cc5b44881579273291318eca9ed2d23d7aa2f49e62"
+    },
+    {
+      "original_path": "experiments/process-milestone/consumer/examples/reject_scalar_read.rs",
+      "path": "evidence/process-milestone/runs/20261008-useful-process-01/inputs/experiments/process-milestone/consumer/examples/reject_scalar_read.rs",
+      "sha256": "db15216d2700d45aff6b5c37ff7c5ea246972141cbeb9dbe5d994f0c85fba803"
+    },
+    {
+      "original_path": "experiments/process-milestone/consumer/examples/reject_unsafe.rs",
+      "path": "evidence/process-milestone/runs/20261008-useful-process-01/inputs/experiments/process-milestone/consumer/examples/reject_unsafe.rs",
+      "sha256": "81789c13fe4428a176428bdb4d37d416d3fc0d056cb54ba4ae34a9ee89c38687"
+    },
+    {
+      "original_path": "experiments/process-milestone/consumer/examples/shadow_paths.rs",
+      "path": "evidence/process-milestone/runs/20261008-useful-process-01/inputs/experiments/process-milestone/consumer/examples/shadow_paths.rs",
+      "sha256": "c0eace8df2fe49c8a5ab81d0712c7269a3a22f84bc450ce535c9bbaf11737a0e"
+    },
+    {
+      "original_path": "experiments/process-milestone/consumer/src/main.rs",
+      "path": "evidence/process-milestone/runs/20261008-useful-process-01/inputs/experiments/process-milestone/consumer/src/main.rs",
+      "sha256": "c2b8a2d6716ac3ce4ce89c76c0a9e1007492281b92429abc7d187af155b6c43a"
+    },
+    {
+      "original_path": "experiments/process-milestone/macros/Cargo.toml",
+      "path": "evidence/process-milestone/runs/20261008-useful-process-01/inputs/experiments/process-milestone/macros/Cargo.toml",
+      "sha256": "a0526cb39ef8dae579995a302484b04f027de2d91d1728368561f797ed5fdb2c"
+    },
+    {
+      "original_path": "experiments/process-milestone/macros/src/lib.rs",
+      "path": "evidence/process-milestone/runs/20261008-useful-process-01/inputs/experiments/process-milestone/macros/src/lib.rs",
+      "sha256": "cf073d632f9939a9c334cc124504c1154145ca81416ee5d40c4c4099f421f52f"
+    },
+    {
+      "original_path": "experiments/process-milestone/runtime/Cargo.toml",
+      "path": "evidence/process-milestone/runs/20261008-useful-process-01/inputs/experiments/process-milestone/runtime/Cargo.toml",
+      "sha256": "da54800aeadafd880c1267f39da44245be893e18dce6e276b73239b9d4c1dcfa"
+    },
+    {
+      "original_path": "experiments/process-milestone/runtime/src/lib.rs",
+      "path": "evidence/process-milestone/runs/20261008-useful-process-01/inputs/experiments/process-milestone/runtime/src/lib.rs",
+      "sha256": "05e8db9c896f1a7668a0085a461c71fba9c2e428461eba05b0d82006514b2279"
+    },
+    {
+      "original_path": "evidence/process-milestone/run.py",
+      "path": "evidence/process-milestone/runs/20261008-useful-process-01/inputs/evidence/process-milestone/run.py",
+      "sha256": "0211257756cbc6037acbdf8e57a5f327168e605eca32c7907c5dfc01c10ac4f6"
+    },
+    {
+      "original_path": ".tools/process-milestone/debug/bream-milestone-consumer",
+      "path": ".tools/process-milestone-archive/20261008-useful-process-01/debug/bream-milestone-consumer",
+      "sha256": "f13bde5a21e5c6af7d3be6a48dc22f710e08aca799097d36d96d9acf0a048bce"
+    },
+    {
+      "original_path": ".tools/process-milestone/debug/examples/shadow_paths",
+      "path": ".tools/process-milestone-archive/20261008-useful-process-01/debug/examples/shadow_paths",
+      "sha256": "013afafb88173f5fc8b9dbf623ba0ed27eb1467febe4e5e79559d1127807aaae"
+    },
+    {
+      "original_path": ".tools/process-milestone/release/bream-milestone-consumer",
+      "path": ".tools/process-milestone-archive/20261008-useful-process-01/release/bream-milestone-consumer",
+      "sha256": "9cb3ad747ba629c7b3a3e4baf02111cf8d2931b154aafa424925238b05a99e49"
+    },
+    {
+      "original_path": ".tools/process-milestone/release/examples/shadow_paths",
+      "path": ".tools/process-milestone-archive/20261008-useful-process-01/release/examples/shadow_paths",
+      "sha256": "f5afc3c8fa3882be2e293fa45ef9498207d21095c120c4e46928d9e94112ed61"
+    }
+  ]
+}

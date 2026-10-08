@@ -1,0 +1,19 @@
+   Compiling bream-busy-consumer v0.0.0 (/home/bat/projects/bream/experiments/busy-session/consumer)
+error[E0308]: mismatched types
+   --> consumer/examples/reject_closure_spawn.rs:4:13
+    |
+  4 |     r.spawn(|| loop {}, vec![]).unwrap();
+    |       ----- ^^^^^^^^^^ expected `Program`, found closure
+    |       |
+    |       arguments to this method are incorrect
+    |
+    = note: expected struct `Program`
+              found closure `{closure@consumer/examples/reject_closure_spawn.rs:4:13: 4:15}`
+note: method defined here
+   --> runtime/src/lifecycle.rs:647:12
+    |
+647 |     pub fn spawn(&self, program: Program, words: Vec<u64>) -> Result<ProcessHandle, SpawnError> {
+    |            ^^^^^
+
+For more information about this error, try `rustc --explain E0308`.
+error: could not compile `bream-busy-consumer` (example "reject_closure_spawn") due to 1 previous error

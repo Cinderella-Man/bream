@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "date": "2026-10-08",
+  "cohort": "evidence/shared-process/runs/20261008-shared-01",
+  "retained_cohorts": 1,
+  "hash_records_verified": 1765,
+  "current_inputs_verified": 185,
+  "prior_room_hashes_verified": 809,
+  "commands": 375,
+  "observations": 340,
+  "runtime_tests_executed_by_audit": false,
+  "benchmarks_executed": false,
+  "performance_qualification": "prohibited on this machine",
+  "errors": []
+}

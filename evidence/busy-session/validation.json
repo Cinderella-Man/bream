@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "date": "2026-10-08",
+  "cohort": "evidence/busy-session/runs/20261008-busy-01",
+  "retained_cohorts": 1,
+  "hash_records_verified": 1925,
+  "current_inputs_verified": 186,
+  "prior_shared_hashes_verified": 956,
+  "inherited_runtime_compiler_files_verified": 18,
+  "commands": 381,
+  "observations": 346,
+  "runtime_tests_executed_by_audit": false,
+  "benchmarks_executed": false,
+  "performance_qualification": "prohibited on this machine",
+  "errors": []
+}

@@ -1,0 +1,8 @@
+   Compiling bream-identity-consumer v0.0.0 (/home/bat/projects/bream/experiments/identity-lifecycle/consumer)
+error: bream milestone subset: unsupported statement; arbitrary calls, macros, unsafe, closures, references, explicit await and custom types are forbidden
+ --> consumer/examples/reject_external_method.rs:5:5
+  |
+5 |     word.to_string();
+  |     ^^^^
+
+error: could not compile `bream-identity-consumer` (example "reject_external_method") due to 1 previous error

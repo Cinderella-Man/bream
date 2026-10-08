@@ -1,0 +1,8 @@
+   Compiling bream-spawn-consumer v0.0.0 (/home/bat/projects/bream/experiments/spawn-process/consumer)
+error: bream structured subset: spawn requires moved Words, u64 tag and u64 argument
+ --> consumer/examples/reject_spawn_tag_type.rs:4:30
+  |
+4 |     fn child() {} fn run() { spawn_monitor(child, owned_input(), false, 0); }
+  |                              ^^^^^^^^^^^^^
+
+error: could not compile `bream-spawn-consumer` (example "reject_spawn_tag_type") due to 1 previous error

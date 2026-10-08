@@ -2,10 +2,10 @@
   "schema_version": 1,
   "planning_date": "2026-10-07",
   "project": "Bream",
-  "status": "planned_not_executed",
+  "status": "planned_performance_evidence_removed",
   "definition_document": "docs/performance-plan.md",
   "completion_rule": "Every task inherits the shared correctness, ownership, workload and repeated-measurement acceptance protocol in the definition document. Feature cases remain separately counted.",
-  "task_count": 85,
+  "task_count": 107,
   "tasks": [
     {
       "id": "PERF-001",
@@ -686,6 +686,191 @@
       "evidence_and_decision": "Read contention, update cost, retries and retired snapshots. Compare first with the existing direct-provider path; preserve continuity, reader retention and configured failure behavior. No lock-removal win against a baseline that never took that lock.",
       "status": "planned",
       "result": null
+    },
+    {
+      "id": "PERF-086",
+      "gates_and_dependencies": "Qualified internal tasks; EXEC-08.C23/24, LANG-02",
+      "experiment": "Generic boxed operation/argument/result tags \u2192 private typed request variants and compact correlation handles; W14",
+      "evidence_and_decision": "Allocations, copied bytes, record size, branch/code footprint and admission throughput. Preserve signal ordering and accepted/rejected ownership; reject type-confused or lost replies.",
+      "status": "planned",
+      "result": null
+    },
+    {
+      "id": "PERF-087",
+      "gates_and_dependencies": "Conditional maintenance; EXEC-08.C25\u201327, EXEC-02",
+      "experiment": "Existing per-turn work deduplication \u2192 explicit pending-work state plus separately owned request records for additional qualified coalescing; W14",
+      "evidence_and_decision": "Expensive operations per request, queue memory, reply latency and mixed-priority tails. Reject lost correlation, false completion or starvation. BEAM already coalesces some GC work.",
+      "status": "planned",
+      "result": null
+    },
+    {
+      "id": "PERF-088",
+      "gates_and_dependencies": "Qualified completion path; EXEC-08.C28, EXEC-03, LIFE-05",
+      "experiment": "Monolithic reply drain \u2192 owned resumable completion cursor with budgeted admitted helpers; W02/W07/W14",
+      "evidence_and_decision": "Uninterrupted work, lock time, throughput, peer latency and cleanup backlog. Reject replayed replies, orphaned remainder, early reclamation completion or unbounded inner copy work.",
+      "status": "planned",
+      "result": null
+    },
+    {
+      "id": "PERF-089",
+      "gates_and_dependencies": "Admitted helper completion; LIFE-05.C21, EXEC-03",
+      "experiment": "Scan-to-merge nonempty owned fragment chains \u2192 maintained-tail segmented ownership consumed at a private result gate; W07/W14",
+      "evidence_and_decision": "Merge cost by segment count, metadata/cache cost and cleanup tails. Preserve all owners after death and suppress dead continuations. Empty-destination baseline already avoids traversal; external jobs remain unselected.",
+      "status": "planned",
+      "result": null
+    },
+    {
+      "id": "PERF-090",
+      "gates_and_dependencies": "G1\u2013G2; EXEC-01/02, conditional EXEC-08.C25/29",
+      "experiment": "Generic priority routing in minimal profile \u2192 compile-time normal-priority specialization with independent control activity; W02/W14",
+      "evidence_and_decision": "Queue/state bytes, dispatch cost and binary size against optimized baseline. Reject lost control/exit progress; full priority extension must retain its separate semantics.",
+      "status": "planned",
+      "result": null
+    },
+    {
+      "id": "PERF-091",
+      "gates_and_dependencies": "G1\u2013G3; EXEC-03, MSG-01, CODE-01.C06/13",
+      "experiment": "General approved buffer handle for constant bytes \u2192 generated permanent-static/owned/shared variants; W03/W04/W07",
+      "evidence_and_decision": "Allocation/refcount savings versus dispatch/code growth. Static bytes must be genuinely permanent and immutable; reject hidden leaked allocations, unaccounted dynamic owners or unsupported constant replacement.",
+      "status": "planned",
+      "result": null
+    },
+    {
+      "id": "PERF-092",
+      "gates_and_dependencies": "Conditional replaceable data; CODE-01.C07/08/11, LANG-02/03",
+      "experiment": "Correct arena retirement enumerating admitted roots \u2192 generated typed holders plus runtime owner records to avoid unrelated scans; W10/W14",
+      "evidence_and_decision": "Visited owners, scan/copy work, index contention and stop/cleanup tails. Reject missing diagnostic/helper/message holders, registration after publication or strong-count snapshots treated as reclamation proof.",
+      "status": "planned",
+      "result": null
+    },
+    {
+      "id": "PERF-093",
+      "gates_and_dependencies": "G3 immutable ownership; conditional CODE-01.C09/13",
+      "experiment": "One retained immutable region per live view \u2192 per-payload ownership or measured small-survivor copy-out; W04/W07/W14",
+      "evidence_and_decision": "Retained capacity versus allocation/refcount/cache costs, sparse and dense views. Preserve owner-plus-offset validity and final release; reject moving memory into unreported global retention. Extends PERF-010 with constant-region ownership.",
+      "status": "planned",
+      "result": null
+    },
+    {
+      "id": "PERF-094",
+      "gates_and_dependencies": "Conditional replaceable data graphs; CODE-01.C07\u201309, LANG-03",
+      "experiment": "Qualified whole-region scratch/relocation \u2192 generated non-destructive layout visits or index graphs with external forwarding state; W14",
+      "evidence_and_decision": "Copied bytes, temporary memory, sharing/edge visits and dense-case tails. Retain source plus partial destination across kill/yield; reject lost sharing, early publication or unbounded traversal. No requirement to implement a GC.",
+      "status": "planned",
+      "result": null
+    },
+    {
+      "id": "PERF-095",
+      "gates_and_dependencies": "Conditional naming; NAME-01.C13, LIFE-01",
+      "experiment": "String-key and already-interned integer baselines \u2192 compact owned runtime-specific name tokens; W13",
+      "evidence_and_decision": "Hash/allocation cost, cardinality, retained tokens and cleanup tails. Include interning expense; BEAM already uses atom identity. Reject stale-name reuse or cross-runtime aliasing.",
+      "status": "planned",
+      "result": null
+    },
+    {
+      "id": "PERF-096",
+      "gates_and_dependencies": "Conditional typed naming; NAME-01.C10/14, LANG-01/02",
+      "experiment": "Checked erased binding per lookup \u2192 concrete typed address after explicit resolve-once; W13",
+      "evidence_and_decision": "Type-check/dispatch cost and code size at identical resolution semantics. Reject covariance bypass and stale protocol authorization. Dynamic named sends/timers still check the selected binding; mismatch policy is open.",
+      "status": "planned",
+      "result": null
+    },
+    {
+      "id": "PERF-097",
+      "gates_and_dependencies": "Naming and G7; NAME-01.C06/08/12",
+      "experiment": "Single correct registry lock \u2192 name shards plus coordinated target registration ownership; W13",
+      "evidence_and_decision": "Contention, retries, writer/kill tails and record retention. Reject two names for one target, two owners for one name, lock-order cycles or stale backpointers. One-key insertion does not cover both constraints.",
+      "status": "planned",
+      "result": null
+    },
+    {
+      "id": "PERF-098",
+      "gates_and_dependencies": "Conditional registry enumeration; NAME-01.C11/13",
+      "experiment": "Protected owned-name copy \u2192 compact token vector with qualified allocation/version strategy; W10/W13",
+      "evidence_and_decision": "Writer blocking, allocation, copied bytes and peer latency across registry sizes. Preserve result lifetime and the declared snapshot consistency; reject escaped borrowed entries or silently weaker per-shard snapshots.",
+      "status": "planned",
+      "result": null
+    },
+    {
+      "id": "PERF-099",
+      "gates_and_dependencies": "Conditional dynamic-name cache; NAME-01.C10/14, TIME-01",
+      "experiment": "Correct typed resolution per operation \u2192 version-validated cache with safe record retention; W06/W13",
+      "evidence_and_decision": "Hit rate, invalidation traffic, retained records and rebind/expiry tails. Model check/use races; reject sticky first-owner behavior, incompatible payload delivery or indefinite retention. Cached PID is a distinct workload.",
+      "status": "planned",
+      "result": null
+    },
+    {
+      "id": "PERF-100",
+      "gates_and_dependencies": "Worker wait path; EXEC-07.C22/24, EXEC-05",
+      "experiment": "Correct mutex/predicate Condvar queue \u2192 same queue with dedicated-worker sticky park/unpark, zero spin; W08/W12",
+      "evidence_and_decision": "Wake/API-call cost, storage, scheduled peer-ready delay and stop tails. Reject lost publication/close, token consumption by unrelated code or notification treated as dispatch authority. Report57 models/host timings cover only the smaller queue projection; no backend selected.",
+      "status": "planned",
+      "result": null
+    },
+    {
+      "id": "PERF-101",
+      "gates_and_dependencies": "Worker service; EXEC-07.C22/23/25, EXEC-02",
+      "experiment": "Notify every service publication \u2192 coalesced reason transitions with retained work/clear protocol; W06/W08/W12",
+      "evidence_and_decision": "Calls, CPU, last-small-batch age and timer/control tails at matched offered rates. Keep auxiliary service distinct from dispatch permission. Reject lost final work or lower queue delay achieved merely by issuing work late.",
+      "status": "planned",
+      "result": null
+    },
+    {
+      "id": "PERF-102",
+      "gates_and_dependencies": "Conditional worker resizing; EXEC-07.C24\u201326, TIME-01",
+      "experiment": "Suspended workers continue local service \u2192 transfer each timer/auxiliary obligation to an eligible owner before deep parking/removal; W06/W08/W12",
+      "evidence_and_decision": "Idle threads/CPU, transfer cost, deadline lateness, wake/kill tails and cleanup retention across shrink/grow. Reject duplicate/lost service ownership, stranded bound records or moving costs to an unmeasured helper.",
+      "status": "planned",
+      "result": null
+    },
+    {
+      "id": "PERF-103",
+      "gates_and_dependencies": "Conditional scheduler controller; EXEC-07.C26\u201328",
+      "experiment": "Flags plus allocated requester records \u2192 private typed request/acknowledgment transitions with runtime-owned reusable indexed records; W08/W12",
+      "evidence_and_decision": "Allocation/retention and completion tails under online/block churn. Preserve old-value responses, separate dirty acknowledgments, nested blockers and requester-death handoff. Reject coalescing distinct observations or reused-identity ABA.",
+      "status": "planned",
+      "result": null
+    },
+    {
+      "id": "PERF-104",
+      "gates_and_dependencies": "Qualified resource helper; RES-01.C07\u201309, LANG-02/03",
+      "experiment": "Correct generic task/callback records \u2192 typed request variants in a single-worker owned queue with claimed/aborted/settled states; W09/W14",
+      "evidence_and_decision": "Record/allocation cost, dispatch and cancel latency; compare against already-pooled allocation. Reject lost rejection rollback, caller dependency order or retained node ownership. No port/driver ABI requirement.",
+      "status": "planned",
+      "result": null
+    },
+    {
+      "id": "PERF-105",
+      "gates_and_dependencies": "Conditional concurrent qualified work; RES-01.C11/13, EXEC-07",
+      "experiment": "Serial invocation per hashed-key bucket \u2192 per-resource serial ordering lanes with runnable-lane scheduling; W08/W14",
+      "evidence_and_decision": "Head-of-line delay, queue age, throughput, scheduler overhead and retained bytes under skewed keys. Reject simultaneous invocation within a required lane, side-effect reordering or assuming invocation order proves ready-callback order.",
+      "status": "planned",
+      "result": null
+    },
+    {
+      "id": "PERF-106",
+      "gates_and_dependencies": "Qualified completion service; RES-01.C10\u201312, EXEC-02/03",
+      "experiment": "Thread-safe completion queue plus producer mutex \u2192 bounded batching or sharded completion handoff with consumer allowance; W09/W14",
+      "evidence_and_decision": "Producer CPU/contention, completion age and peer/stop tails with cheap/expensive callbacks and cleanup. Reference mutex deliberately limits contention. Reject lost wakes, reordered required effects or hidden unbounded inner work.",
+      "status": "planned",
+      "result": null
+    },
+    {
+      "id": "PERF-107",
+      "gates_and_dependencies": "Resource teardown; RES-01.C09/13, EXEC-03/05",
+      "experiment": "Monolithic busy/local/incoming cancellation drain \u2192 runtime-owned ordered cleanup cursor with explicit waiter/accounting state; W07/W09/W14",
+      "evidence_and_decision": "Maximum uninterrupted teardown, stop-to-cleanup, extra cursor/storage and retained resources. Reject early reclamation acknowledgment, repeated abort/free, blocked-sender leaks or unbounded inner destruction. Distinct from successful reply fanout in PERF-088.",
+      "status": "planned",
+      "result": null
     }
+  ],
+  "last_research_update": "2026-10-08",
+  "performance_evidence_status": "All speed-test evidence removed at user request on2026-10-08; previously attempted tests require new runs elsewhere.",
+  "redo_required": [
+    "static payload costs (PERF-091)",
+    "worker notification costs (PERF-100/PERF-101)",
+    "useful-process scheduling/stop measurements",
+    "structured-process measurements",
+    "identity, churn and lookup measurements"
   ]
 }

@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "date": "2026-10-08",
+  "cohort": "evidence/link-process/runs/20261008-link-02",
+  "retained_cohorts": 2,
+  "hash_records_verified": 2492,
+  "current_inputs_verified": 133,
+  "prior_monitor_hashes_verified": 1140,
+  "commands": 263,
+  "observations": 236,
+  "runtime_tests_executed_by_audit": false,
+  "benchmarks_executed": false,
+  "performance_qualification": "prohibited on this machine",
+  "errors": []
+}

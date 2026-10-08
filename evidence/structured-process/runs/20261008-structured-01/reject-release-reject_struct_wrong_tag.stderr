@@ -1,0 +1,8 @@
+   Compiling bream-structured-consumer v0.0.0 (/home/bat/projects/bream/experiments/structured-process/consumer)
+error: bream structured subset: variant payload type
+ --> consumer/examples/reject_struct_wrong_tag.rs:8:22
+  |
+8 |         let action = Action::Update(true);
+  |                      ^^^^^^
+
+error: could not compile `bream-structured-consumer` (example "reject_struct_wrong_tag") due to 1 previous error

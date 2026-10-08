@@ -1,0 +1,8 @@
+   Compiling bream-shared-consumer v0.0.0 (/home/bat/projects/bream/experiments/shared-process/consumer)
+error: bream structured subset: send requires Pid, u64 tag and moved Words
+ --> consumer/examples/reject_send_numeric_pid.rs:5:9
+  |
+5 |         send(1, 7, owned_input());
+  |         ^^^^
+
+error: could not compile `bream-shared-consumer` (example "reject_send_numeric_pid") due to 1 previous error

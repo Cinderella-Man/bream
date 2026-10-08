@@ -1,0 +1,10 @@
+[package]
+name = "bream-shared-consumer"
+version = "0.0.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+bream-shared-runtime = { path = "../runtime" }
+bream-shared-macros = { path = "../macros" }
+

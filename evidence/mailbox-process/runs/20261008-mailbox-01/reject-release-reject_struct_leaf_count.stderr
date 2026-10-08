@@ -1,0 +1,8 @@
+   Compiling bream-mailbox-consumer v0.0.0 (/home/bat/projects/bream/experiments/mailbox-process/consumer)
+error: bream structured subset: record depth/leaf bound exceeded
+  --> consumer/examples/reject_struct_leaf_count.rs:14:12
+   |
+14 |     struct Wide {
+   |            ^^^^
+
+error: could not compile `bream-mailbox-consumer` (example "reject_struct_leaf_count") due to 1 previous error

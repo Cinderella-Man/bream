@@ -1,0 +1,3 @@
+   Compiling bream-shared-runtime v0.0.0 (/home/bat/projects/bream/experiments/shared-process/runtime)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 12.93s
+     Running unittests src/lib.rs (.tools/shared-process/20261008-shared-01/debug/deps/bream_shared_runtime-c96f754bec7e5783)

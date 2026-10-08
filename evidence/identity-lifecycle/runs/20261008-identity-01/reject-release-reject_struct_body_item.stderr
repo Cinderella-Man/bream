@@ -1,0 +1,8 @@
+   Compiling bream-identity-consumer v0.0.0 (/home/bat/projects/bream/experiments/identity-lifecycle/consumer)
+error: bream structured subset: local items, attributes and macros forbidden
+ --> consumer/examples/reject_struct_body_item.rs:5:9
+  |
+5 |         fn nested() {
+  |         ^^
+
+error: could not compile `bream-identity-consumer` (example "reject_struct_body_item") due to 1 previous error

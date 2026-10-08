@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-08",
+  "milestone": "Owned envelopes, selective receive, parking/wakeup and waiting-state cleanup",
+  "correctness_only": true,
+  "speed_tests": false,
+  "performance_comparisons": false,
+  "machine_constraint": "User actively uses this machine for other work. NEVER run speed tests or performance comparisons here; prior local timings are unsuitable performance indicators.",
+  "allowances": [
+    1,
+    4,
+    32
+  ],
+  "build_jobs": 2,
+  "controls": "Each compiler profile: 21 deterministic protocol/ownership tests; three public mailbox-control invocations; 66 compile-rejected consumers and three positive shadowing routes.",
+  "logical_oracles": "Earliest matching order, retained nonmatches, one unit per candidate, peer completion event before scanner completion, peer event during nine cleanup batches, no idle polling, exact release counts and stale-incarnation isolation.",
+  "races": "16 bounded send/kill races per public invocation, plus two host publishers with eight messages each; receipt/ownership assertions only.",
+  "timing_policy": "No sampled timings, rates, warmups, affinity changes or performance summaries. Watchdog timeouts detect hangs only; incidental cargo test/build duration text is not analyzed as evidence.",
+  "limits": [
+    "one application worker",
+    "one concrete application-envelope schema",
+    "fixed scalar tag or any selector",
+    "trusted host allocator and panic behavior",
+    "no receive timers/runtime notifications",
+    "no general worker-failure recovery",
+    "no full G1/G2/G3 qualification"
+  ]
+}

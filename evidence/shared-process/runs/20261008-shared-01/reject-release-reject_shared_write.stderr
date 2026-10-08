@@ -1,0 +1,8 @@
+   Compiling bream-shared-consumer v0.0.0 (/home/bat/projects/bream/experiments/shared-process/consumer)
+error: bream structured subset: read/write/len requires concrete Words with matching mutability
+ --> consumer/examples/reject_shared_write.rs:6:15
+  |
+6 |         write(bytes, 0, 42);
+  |               ^^^^^
+
+error: could not compile `bream-shared-consumer` (example "reject_shared_write") due to 1 previous error

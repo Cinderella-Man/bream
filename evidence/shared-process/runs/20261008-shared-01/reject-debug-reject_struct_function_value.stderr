@@ -1,0 +1,8 @@
+   Compiling bream-shared-consumer v0.0.0 (/home/bat/projects/bream/experiments/shared-process/consumer)
+error: bream structured subset: unknown local
+ --> consumer/examples/reject_struct_function_value.rs:8:24
+  |
+8 |         let callback = helper;
+  |                        ^^^^^^
+
+error: could not compile `bream-shared-consumer` (example "reject_struct_function_value") due to 1 previous error

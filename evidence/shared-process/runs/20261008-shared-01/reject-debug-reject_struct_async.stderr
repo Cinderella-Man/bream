@@ -1,0 +1,8 @@
+   Compiling bream-shared-consumer v0.0.0 (/home/bat/projects/bream/experiments/shared-process/consumer)
+error: bream structured subset: only private synchronous nongeneric checked functions
+ --> consumer/examples/reject_struct_async.rs:4:5
+  |
+4 |     async fn helper() {}
+  |     ^^^^^
+
+error: could not compile `bream-shared-consumer` (example "reject_struct_async") due to 1 previous error

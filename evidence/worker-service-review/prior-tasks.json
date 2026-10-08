@@ -1,0 +1,794 @@
+[
+  {
+    "id": "PERF-001",
+    "gates_and_dependencies": "G0 harness; REF-02, MEASURE-01",
+    "experiment": "Reused-process, single-mode microbench \u2192 independent run cohorts, cold/warm and observer modes; all W",
+    "evidence_and_decision": "Retain manifests, histogram/raw samples and load-generator delay. Reject comparisons with unmatched semantics, artifacts or unexplained noise.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-002",
+    "gates_and_dependencies": "G1\u2013G2; LANG-01/03, EXEC-01/02",
+    "experiment": "Full helper invocation per mandatory check \u2192 inline allowance check with cold scheduler branch at identical boundaries; W02",
+    "evidence_and_decision": "Cycles/operation, branch/code footprint, peer/kill tails. No admission bypass or removed required check. [37](research/37-checkpoint-and-continuation-costs.md)",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-003",
+    "gates_and_dependencies": "G1\u2013G2; LANG-03, EXEC-03",
+    "experiment": "Maximum fixed continuation/full state saves \u2192 generated live-state storage and selective helper updates; W01/W02",
+    "evidence_and_decision": "Saved bytes, first-growth versus reuse latency, process density and code size. Reject untracked owned state or stale omitted fields. [37](research/37-checkpoint-and-continuation-costs.md)",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-004",
+    "gates_and_dependencies": "G1\u2013G3; EXEC-02, LANG-03",
+    "experiment": "Uniform small chunks \u2192 bounded cost-aware chunks for admitted copy, matching and fanout; W02/W04/W05",
+    "evidence_and_decision": "Work per turn, actual uninterrupted segment and tails. Fail if a byte count or callback hides unbounded work; no quota semantics. [37](research/37-checkpoint-and-continuation-costs.md)",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-005",
+    "gates_and_dependencies": "G1\u2013G3; LANG-01/02/03, MSG-02",
+    "experiment": "Generic admitted helper/matcher dispatch \u2192 generated scalar and typed-protocol fast paths; W02/W05",
+    "evidence_and_decision": "Dispatch cost, branch misses and code size across many protocols. Slow paths must preserve order, control, errors and cleanup. [37](research/37-checkpoint-and-continuation-costs.md)",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-006",
+    "gates_and_dependencies": "G2; EXEC-06, MEASURE-01",
+    "experiment": "Full event trace \u2192 disabled, counters-only and sampled modes; W01\u2013W07",
+    "evidence_and_decision": "Observer overhead, event loss and snapshot consistency. Retain full ownership traces for correctness separately; sampling is not exhaustive evidence. [37](research/37-checkpoint-and-continuation-costs.md)",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-007",
+    "gates_and_dependencies": "G3; LANG-02, MSG-01, EXEC-03",
+    "experiment": "Clone/serialize admitted owned value \u2192 transfer its ownership into the mailbox; W03/W04",
+    "evidence_and_decision": "Copies, allocations, send cost and discarded-payload cleanup. Qualify partial publication/death and cross-worker transfer; Rust type size or `Send` alone is insufficient. [34](research/34-message-allocation-and-copy-costs.md)",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-008",
+    "gates_and_dependencies": "G3; MSG-01, EXEC-03/04",
+    "experiment": "Separate envelope/payload allocations \u2192 inline small payload or combined allocation; W03/W04",
+    "evidence_and_decision": "Allocation count, cache footprint, threshold discontinuities and failure injection. Large enum variants must not silently inflate every process/mailbox node. [34](research/34-message-allocation-and-copy-costs.md)",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-009",
+    "gates_and_dependencies": "G3; MSG-01/04",
+    "experiment": "Generic self-send \u2192 process-local self-send path preserving required signal order; W03",
+    "evidence_and_decision": "Lock/copy savings with tracing and control traffic. Reject overtaking the sender's earlier pending monitor/control signals or changing permitted selectable order; no new global order across unrelated senders. [34](research/34-message-allocation-and-copy-costs.md)",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-010",
+    "gates_and_dependencies": "G3; EXEC-03, MSG-01",
+    "experiment": "Copy bytes to every recipient \u2192 freeze once and share immutable runtime-owned storage; W04/W07",
+    "evidence_and_decision": "First freeze separately from subsequent send, refcount traffic, final release and retained capacity. No mutable aliases or arbitrary destructor escape. [34](research/34-message-allocation-and-copy-costs.md)",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-011",
+    "gates_and_dependencies": "G3; EXEC-03, MEM-01",
+    "experiment": "Always retain shared backing for a byte view \u2192 copy small long-lived slices under an explicit internal policy; W04/W07",
+    "evidence_and_decision": "Copy cost versus backing-capacity retention across view sizes/lifetimes. Shared bytes remain valid through publisher death; threshold is experimental. [34](research/34-message-allocation-and-copy-costs.md)",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-012",
+    "gates_and_dependencies": "G3 then G7; MSG-04, EXEC-07",
+    "experiment": "Direct locked ingress \u2192 measured adaptive buffered/batched ingress; W04/W08",
+    "evidence_and_decision": "Contention, allocation, light-load latency and same-sender order. Require slot/array lifetime and first-arrival wakeup models; buffer retirement remains a prerequisite. [30](research/30-buffered-signal-publication-protocol.md), [34](research/34-message-allocation-and-copy-costs.md)",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-013",
+    "gates_and_dependencies": "G3; MSG-01, EXEC-06",
+    "experiment": "Unconditional trace metadata/copying \u2192 disabled fast path plus explicit trace slow path; W03/W04",
+    "evidence_and_decision": "Cost with trace off/on, payload lifetime and observability. Enabled semantics cannot be lost to gain off-mode throughput. [34](research/34-message-allocation-and-copy-costs.md)",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-014",
+    "gates_and_dependencies": "G3; MSG-02/07, LANG-03",
+    "experiment": "Correct full selective scan \u2192 freshness-proved saved-prefix marker; W05",
+    "evidence_and_decision": "Messages inspected, fallback/recycling cost and match latency. Unknown IDs use full scan; test final priority-capability removal while accepted priority messages remain queued, including the prior debug assertion, before adoption. [28](research/28-selective-receive-marker-protocol.md), [29](research/29-pinned-reference-observations.md)",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-015",
+    "gates_and_dependencies": "G3 receive; later TIME-01",
+    "experiment": "One simple correct deadline index \u2192 wheel/tree or hybrid chosen by measured deadline distribution; W06",
+    "evidence_and_decision": "Insertion/removal, sparse idle scanning, bytes/timer and expiry delay. Distinguish allocator thresholds from placement thresholds; preserve clock/range/rounding semantics.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-016",
+    "gates_and_dependencies": "Later TIME-01",
+    "experiment": "One time-tree node per timer \u2192 shared exact-deadline groups; W06",
+    "evidence_and_decision": "Tree operations and clustered-expiry cost. Exercise singleton, representative replacement and cancellation during partial expiry; no global equal-deadline order invented.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-017",
+    "gates_and_dependencies": "G3 receive; later TIME-01, EXEC-01/02",
+    "experiment": "Helper-local batch bound \u2192 scheduler-visible budget across all expiry continuations; W02/W06",
+    "evidence_and_decision": "Count callbacks per outer wheel bump and time until a peer runs, including self-rearming at-once service callbacks. Test source-predicted repeated batches before claiming a bound.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-018",
+    "gates_and_dependencies": "Later TIME-01, EXEC-07",
+    "experiment": "One shared timer service \u2192 per-worker ownership and routed remote operations; W06/W08",
+    "evidence_and_decision": "Local/remote fraction, queue hops, cancel response tails and migration cost. Preserve timer identity and read/cancel/expiry outcomes.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-019",
+    "gates_and_dependencies": "Later TIME-01, EXEC-03/07",
+    "experiment": "Individually notify/reclaim remote cancellations \u2192 bounded batches with explicit flush/progress conditions; W06/W07",
+    "evidence_and_decision": "Atomic/wakeup cost and retention delay; logical cancellation and physical reclamation recorded separately. No indefinitely stranded small batch.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-020",
+    "gates_and_dependencies": "Later TIME-01, EXEC-03/04",
+    "experiment": "Allocate every timer uniformly \u2192 size/lifetime-informed local pools or reusable slots; W01/W06/W07",
+    "evidence_and_decision": "Cold allocation, memory high-water mark, reuse and stale-ref tests. Distinguish preallocation policy from wheel routing; reclaim through shutdown.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-021",
+    "gates_and_dependencies": "Later TIME-01, EXEC-02/03, REF-02",
+    "experiment": "Fixed charge per timer callback \u2192 payload-sensitive accounting and resumable runtime release; W02/W06/W07",
+    "evidence_and_decision": "Callback duration, copied bytes and reference-release work for equal timer counts with different payload shapes. Reject unbounded hidden cleanup or improved expiry throughput achieved by unreported reclamation backlog.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-022",
+    "gates_and_dependencies": "G7; EXEC-07, LIFE-05",
+    "experiment": "Uniform balancing \u2192 locality-biased placement and migration only when skew warrants it; W04/W08",
+    "evidence_and_decision": "Queue delay, migrations, cache misses and throughput; reject starvation or transfer of ineligible state. Placement does not change process identity.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-023",
+    "gates_and_dependencies": "G7; EXEC-07, EXEC-02",
+    "experiment": "Successful-steal count alone \u2192 budget total visited entries, retries and transfers; W08 with mostly bound entries",
+    "evidence_and_decision": "Critical-section/scanning time, victim-lock contention and progress. A 100-transfer cap does not prove bounded work.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-024",
+    "gates_and_dependencies": "G7; EXEC-07",
+    "experiment": "Single-item stealing \u2192 batch sizes varied by transferable work and measured contention; W08",
+    "evidence_and_decision": "Lock amortization versus locality and tail delay; excluded/bound entries and priority classes remain accounted for.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-025",
+    "gates_and_dependencies": "G7; EXEC-07",
+    "experiment": "Fixed active-worker set \u2192 adaptive compaction with hysteresis; W08 changing load",
+    "evidence_and_decision": "Utilization, wake delay, migrations and oscillation. Source reduction history is a policy input, not a universally optimal load metric.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-026",
+    "gates_and_dependencies": "G7; EXEC-07, EXEC-01",
+    "experiment": "Immediate park or fixed spin \u2192 measured spin/park and wake coalescing variants; W08 sparse/bursty",
+    "evidence_and_decision": "Idle CPU/energy where available, wake tail and throughput. Include long quiet periods and contention; retain lost-wakeup invariants.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-027",
+    "gates_and_dependencies": "G7; EXEC-07",
+    "experiment": "Population-only balancing \u2192 per-priority and eligible-work-aware estimates; W08 mixed work",
+    "evidence_and_decision": "False migration/steal attempts, lower-priority progress and control latency. Do not flatten supported scheduler priority or invent strict round robin.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-028",
+    "gates_and_dependencies": "G7; EXEC-07, EXEC-06",
+    "experiment": "Many unconditional queue statistics updates \u2192 cheaper sampled/per-worker summaries with exact ownership accounting; W08",
+    "evidence_and_decision": "Cache-line contention and estimate error. Approximate policy statistics cannot become approximate execution ownership.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-029",
+    "gates_and_dependencies": "G2\u2013G4; EXEC-02/03, LIFE-05",
+    "experiment": "Uniform cleanup traversal \u2192 resumable ownership-aware chunks and dedicated runtime cleanup work; W07",
+    "evidence_and_decision": "Kill-stop, DOWN visibility and full tracked cleanup separately; bound nested final-release work. Runtime progress must not depend on application receive or arbitrary user `Drop`.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-030",
+    "gates_and_dependencies": "G2 then G7; EXEC-03/04/07",
+    "experiment": "General allocation of runtime records \u2192 per-worker slabs/free lists with bounded remote returns; W01/W04/W07",
+    "evidence_and_decision": "Allocation hot spots, cache locality, fragmentation and post-churn retained memory. Audit slot generations, delayed readers, failure and shutdown before tuning. Full ERTS allocator internals remain future source work.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-031",
+    "gates_and_dependencies": "G0 model/reference; MSG-04.C17, LIFE-05",
+    "experiment": "Current source trace of possible late buffer installation \u2192 controlled sender/exit pause experiment and ownership model",
+    "evidence_and_decision": "Establish whether replacement installation is reachable and how it is reclaimed, with forced/debug and normal-contention paths separate. This is a correctness prerequisite for buffered designs, not a confirmed upstream bug or a speedup benchmark.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-032",
+    "gates_and_dependencies": "G5\u2013G6; APP-01, MEASURE-01",
+    "experiment": "Independently selected microbench improvements \u2192 integrated room/session comparison with one change and then supported combinations; W01\u2013W07",
+    "evidence_and_decision": "Report operating ranges and interference, including slow consumers, churn and CPU hogs. Reject wins that vanish in the first-product workload; compare BEAM and async Rust only under stated equivalent semantics.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-033",
+    "gates_and_dependencies": "G7; EXEC-07",
+    "experiment": "Cyclic victim selection \u2192 recent-success or topology-local search with bounded exploration and complete fallback; W08",
+    "evidence_and_decision": "Unsuccessful probes, remote traffic and drain latency of distant hot queues. Keep topology and seeds; reject a locality preference that repeatedly misses eligible work. Topology awareness is a Bream hypothesis, not a finding about BEAM's index order. [35](research/35-scheduler-locality-and-load-balancing.md)",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-034",
+    "gates_and_dependencies": "G7; EXEC-07, LIFE-05",
+    "experiment": "Protected mutable migration policy \u2192 immutable published plan snapshots if reads are a measured bottleneck; W08",
+    "evidence_and_decision": "Reader/update cost and retired-plan retention with stalled readers. Prove protection before dereference and reclamation after readers, including shutdown; do not copy raw ERTS epoch assumptions. [35](research/35-scheduler-locality-and-load-balancing.md)",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-035",
+    "gates_and_dependencies": "G3 then G7; EXEC-03, MSG-01",
+    "experiment": "One shared-buffer reference operation per holder \u2192 modeled batched reference reservations during fanout; W04/W07",
+    "evidence_and_decision": "Atomic contention versus reservation overhead for one buffer and many views. Register each recipient obligation before visibility; return unused reservations after partial fanout or kill without tying recipient lifetime to publisher. [34](research/34-message-allocation-and-copy-costs.md)",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-036",
+    "gates_and_dependencies": "G3; MSG-01/02, EXEC-02/03",
+    "experiment": "Linear adoption of received ownership metadata \u2192 bounded resumable adoption or direct ownership transfer; W03/W05/W07",
+    "evidence_and_decision": "One large buffer versus many references of equal total bytes; measure receive cost and peer tails. Payload survives node removal, and partial adoption is kill-safe. Moving a long walk into dequeue is not constant-time receive. [34](research/34-message-allocation-and-copy-costs.md)",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-037",
+    "gates_and_dependencies": "G1\u2013G3; LANG-02/03, MEM-01",
+    "experiment": "Equivalent small tagged/traced state representation \u2192 generated native typed owning fields; W01/W04",
+    "evidence_and_decision": "Generic root visits, tag checks, bytes copied, frame/code size and cleanup tails. Mutable/cyclic data needs a declared policy; compiler types do not automatically make an arbitrary graph collectible.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-038",
+    "gates_and_dependencies": "G1\u2013G3; EXEC-03, MEM-01",
+    "experiment": "Individually owned qualified allocations \u2192 process-private region/index storage; W01/W04/W07",
+    "evidence_and_decision": "Allocation cost versus unreachable retained bytes over long process lifetimes. Test contained cycles, stale indexes, external immutable owners and partial construction; whole-region release requires proof that all escaped obligations are handled.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-039",
+    "gates_and_dependencies": "G1\u2013G2; LANG-03, MEM-01",
+    "experiment": "Stable boxed continuation \u2192 eligible owner-plus-offset generated state that can relocate; W01/W02",
+    "evidence_and_decision": "Growth/shrink/move correctness, indirection, copying and density. Forbid byte-moving pinned fields or escaped borrows; force same-base and moved-base allocation outcomes. This is an alternative to qualify, not blanket permission to relocate native state.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-040",
+    "gates_and_dependencies": "G1\u2013G3; LANG-03, EXEC-03",
+    "experiment": "Exact initialized-owner ledger with fine-grained reclamation \u2192 the same exact ledger with coarser retained batches in qualified helpers; W01/W04/W07",
+    "evidence_and_decision": "Bookkeeping saved versus dead-but-retained bytes, partial-state cleanup and return/error/suspend behavior. Coarser retention must remain visible and cannot keep resources beyond the supported lifetime contract.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-041",
+    "gates_and_dependencies": "G3; EXEC-03, MSG-01",
+    "experiment": "Periodic discovery of writable/frozen buffer descriptor state \u2192 consuming typed builder-to-frozen transition with immediate bookkeeping; W04/W07",
+    "evidence_and_decision": "Removed ownership-list traversal, transition/refcount overhead and spare-capacity retention. Preserve sent snapshots; safe constructor/view/clone paths must not recover mutable access to published bytes.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-042",
+    "gates_and_dependencies": "G2\u2013G3; LIFE-01, MSG-01",
+    "experiment": "Generic tagged addresses and boolean insertion result \u2192 typed protocol address plus ownership-bearing occupied/vacant result; W01/W03",
+    "evidence_and_decision": "Compile-fail protocol/transition cases, collision allocation, dispatch branches and code size. Runtime namespace/incarnation checks remain mandatory; types do not certify that an address is still alive.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-043",
+    "gates_and_dependencies": "G2\u2013G4; LIFE-01, EXEC-04",
+    "experiment": "Flag-driven partially initialized spawn record \u2192 consuming staged construction and qualified preallocation; W01/W07",
+    "evidence_and_decision": "Initialization/copy/allocation cost and recovery at every failure boundary. If identity is externally visible, preserve valid early operations. No application execution or uninitialized access before construction and initial relationships complete; exact skeleton-publication timing is not prescribed.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-044",
+    "gates_and_dependencies": "G2 then G7; LIFE-01, EXEC-07",
+    "experiment": "Individually boxed records with protected free IDs \u2192 stable chunked generational slots; W01/W08",
+    "evidence_and_decision": "Churn, occupancy, page/cache cost, free-token retries and retired capacity. Include tiny model counters to force wrap; no storage moves under readers or silent stale-address aliasing.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-045",
+    "gates_and_dependencies": "G2\u2013G4; LIFE-01, EXEC-06",
+    "experiment": "Fully provisioned record \u2192 small header, separately typed body and lazy cold metadata; W01/W03/W07",
+    "evidence_and_decision": "Idle density, send/kill lookup cost and first inspection/trace activation. Include failed publication and losing CAS cleanup; compare fairly with BEAM's already-lazy metadata.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-046",
+    "gates_and_dependencies": "G2 then G7; LIFE-05, EXEC-07",
+    "experiment": "Retain/release record on every lookup \u2192 scoped guard-bound internal borrow, explicit retention only for deferred work; W03/W08",
+    "evidence_and_decision": "Atomic churn, service latency and retention under stalled/forgotten guards. Compile-fail escaped borrows and prove aliasing/reclamation; a public address must not keep application execution alive.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-047",
+    "gates_and_dependencies": "G2\u2013G3; EXEC-03/04",
+    "experiment": "Generic allocation/free routing metadata \u2192 typed internal owners for qualified runtime allocation classes; W01/W04",
+    "evidence_and_decision": "Routing checks, allocation frequency, layout/padding and compiler code size. Audit partial initialization and correct allocation-family return; payload type is not sufficient if carrier ownership can change.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-048",
+    "gates_and_dependencies": "G7; EXEC-03/07",
+    "experiment": "Direct current-owner remote frees \u2192 explicit bounded return batches with owner revalidation/redirection; W04/W07/W08",
+    "evidence_and_decision": "Queue CAS/lock cost, cross-worker traffic, redirection count and final-small-batch progress. Caller, original allocator and current carrier owner may differ; model managed and unmanaged participants separately.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-049",
+    "gates_and_dependencies": "G2 then G7; EXEC-03, LIFE-05",
+    "experiment": "One conservative retirement phase \u2192 separately justified payload-reuse and metadata-retirement phases; W01/W07/W08",
+    "evidence_and_decision": "Retired bytes and allocation reuse rate with paused readers. Accept earlier reuse only where metadata remains valid and readers cannot access reused payload; do not turn one epoch check into universal reuse permission.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-050",
+    "gates_and_dependencies": "G2 then G7; EXEC-03/05",
+    "experiment": "Fixed local/fixed-size/carrier retention \u2192 measured cache trim and empty-carrier policies; W01/W07/W08",
+    "evidence_and_decision": "Cold-start versus warm allocation, burst recovery, high-water retention and shutdown completion. Report allocator caches separately from live ownership; no unbounded trim work on a process turn.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-051",
+    "gates_and_dependencies": "G2\u2013G6; EXEC-03/06, MEASURE-01",
+    "experiment": "Nominal element-count memory estimates \u2192 actual layout/allocation-capacity accounting by runtime ownership class; W01/W04/W07",
+    "evidence_and_decision": "Compare logical bytes, unique backing, padding, reserved slabs, retired metadata and RSS. First validate target atomic/slot sizes; do not infer an exact physical total from a helper's approximate accounting formula.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-052",
+    "gates_and_dependencies": "G1\u2013G2; LANG-02.C10, EXEC-03",
+    "experiment": "Destructor-dependent admitted handle cleanup with all bypasses rejected \u2192 independently tracked cleanup obligations for supported handles; W01/W07",
+    "evidence_and_decision": "Test forget, ManuallyDrop, partial transfer and dead receivers before measuring registration/removal cost. No premature free of escaped/live-recipient state. This compares two contracts to enforce the same accepted cleanup behavior, not permission to leak.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-053",
+    "gates_and_dependencies": "G1\u2013G2; LANG-03.C12, EXEC-01",
+    "experiment": "Conservative borrow-free generated body \u2192 admitted local borrows retained in compiler-generated pinned state; W01/W02",
+    "evidence_and_decision": "Consumer acceptance/rejection, resume/kill validity, frame size and indirection. The existing language probe is a control; automatic boundary coverage, one execution owner and bounded cleanup still need actual Bream fixtures.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-054",
+    "gates_and_dependencies": "G1; LANG-01/02/03",
+    "experiment": "Public generic marker/constructor sketch \u2192 closed generated representation and qualified helper boundary tested from another crate",
+    "evidence_and_decision": "Reject forged admission and hidden operations through traits, callbacks, globals, aliases and construction helpers. Keep useful typed positive examples. Record diagnostic usability, build/code-size cost and supported surface; no production-performance claim until the boundary is established.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-055",
+    "gates_and_dependencies": "After G3; IO-01, MSG-01/04, EXEC-03",
+    "experiment": "Generic readiness envelope construction \u2192 compact typed notification with owned registration identity; W09",
+    "evidence_and_decision": "Allocations, copied bytes, dispatch cost and code size. Preserve replacement/cancel/detach ownership and existing no-new-interest syscall elision; never recycle a published envelope.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-056",
+    "gates_and_dependencies": "I/O gate then G7; IO-01.C17/19, EXEC-03/07",
+    "experiment": "Dense FD-indexed state with growth under striped locks \u2192 stable chunked registration slots and qualified generation keys; W09",
+    "evidence_and_decision": "Sparse-descriptor memory, growth pauses and lookup cost. Test copied events, duplicates, wrap and validation-to-use races; a generation match alone does not retain the descriptor.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-057",
+    "gates_and_dependencies": "I/O gate; IO-01.C18\u201321",
+    "experiment": "Correct immediate one-shot rearm \u2192 coalesced interest changes with explicit publication/acknowledgment rules; W09",
+    "evidence_and_decision": "Control syscalls, ready-to-service delay and cancel-to-close tails. Preserve independent directions, recipient replacement, sticky error-interest history and failed-operation poststate; reject lost wakes or hidden close delays.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-058",
+    "gates_and_dependencies": "G7 and I/O gate; IO-01.C23, EXEC-07",
+    "experiment": "Dedicated poll workers \u2192 qualified scheduler-local read polling; W08/W09",
+    "evidence_and_decision": "Wakeups, cache cost, throughput and unrelated peer delay. Include changing recipients, migration back, full tracking slots and shutdown; public one-shot notifications do not imply every backend pollset is one-shot.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-059",
+    "gates_and_dependencies": "I/O gate; IO-01.C25, EXEC-02/03",
+    "experiment": "Process an adaptively growing result batch \u2192 explicitly bounded dispatch slices retaining the unfinished batch; W02/W07/W09",
+    "evidence_and_decision": "Poll overhead versus cold-FD delay, kill responsiveness and retained bytes. No discarded events, starved late entries or abandoned batch on worker/runtime shutdown.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-060",
+    "gates_and_dependencies": "I/O gate then G7; IO-01.C24, EXEC-05/07",
+    "experiment": "Coalesced wake pipe \u2192 qualified alternative notification primitive; W08/W09",
+    "evidence_and_decision": "Wake syscalls/CPU, producer contention and idle wake tails. Force full/empty transitions and interruption; preserve no-lost-wakeup protocol, absolute deadline handling and internal-event filtering.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-061",
+    "gates_and_dependencies": "Conditional enumeration; OBS-01.C09/10, EXEC-03",
+    "experiment": "Correct compact deleted-incarnation records with individual allocation \u2192 typed chunked storage and owned snapshot cursor; W10",
+    "evidence_and_decision": "Allocation/cache cost, retained history and snapshot latency under churn. BEAM already avoids retaining complete process bodies here; preserve insertion/deletion interval and incarnation identity.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-062",
+    "gates_and_dependencies": "Conditional enumeration; OBS-01.C11, EXEC-02/03",
+    "experiment": "Abandoned snapshot frees eligible history while holding table write lock \u2192 bounded unlink/detach plus resumable reclamation; W01/W07/W10",
+    "evidence_and_decision": "Table-lock hold time, peer spawn/send delay and cleanup backlog. Preserve other enumeration markers and active readers; detached storage must retain a cleanup owner through kill/shutdown.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-063",
+    "gates_and_dependencies": "Conditional observation; OBS-01.C09\u201311, OBS-02.C09, EXEC-02",
+    "experiment": "Charge selected record actions \u2192 account all traversed continuation work, including markers and session/ref lookup; W02/W10",
+    "evidence_and_decision": "Maximum observed uninterrupted segment and total observation throughput. Preserve cursor progress and snapshot/cleaner semantics; numerical source work counts are not time bounds.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-064",
+    "gates_and_dependencies": "Conditional sessions; OBS-02.C07\u201310, LIFE-05",
+    "experiment": "Repeated per-session tracee lookup \u2192 single-pass attachment classification or compact typed index with distinct public-handle and cleanup ownership; W01/W10",
+    "evidence_and_decision": "Destroy/clear cost versus attach/detach overhead, retention and event load. Loss of all public and temporary owning holds must still trigger destruction; tracee/index membership cannot itself keep the session enabled.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-065",
+    "gates_and_dependencies": "Conditional diagnostics; OBS-02.C11, MSG-04, EXEC-03",
+    "experiment": "Generic queued diagnostic payloads \u2192 compact typed records with explicit in-flight observer retention; W03/W07/W10",
+    "evidence_and_decision": "Event allocation/copy and formatting cost, code size and teardown backlog. Preserve accepted-event disposal, ordering, sensitivity and replaced-observer lifetime; deferred formatting must use qualified data.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-066",
+    "gates_and_dependencies": "Native-resource integration gate; IO-01.C09\u201311",
+    "experiment": "Dynamic resource/reference decoding \u2192 typed association and fixed-layout monitor record; W10",
+    "evidence_and_decision": "Register/cancel/claim cost, lookup/cache and allocation. Types may reject wrong kinds; runtime provenance, generation, origin claim and both endpoint lifetimes still require validation.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-067",
+    "gates_and_dependencies": "Native-resource integration gate; IO-01.C09/15",
+    "experiment": "Allocate tree node for every resource monitor \u2192 inline first relation with qualified overflow storage; W10",
+    "evidence_and_decision": "Common single-relation cost versus promotion, many-target churn and cleanup. Preserve independent repeated monitors and exact ownership through overflow allocation failure; no silent deduplication.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-068",
+    "gates_and_dependencies": "I/O/resource integration; IO-01.C11\u201314, EXEC-03",
+    "experiment": "Repeated shared holds/general stop job \u2192 move a qualified stop capability into runtime cleanup; W07/W09/W10",
+    "evidence_and_decision": "Atomic operations, queue hops, stop latency and retained storage. Retain shared holds whenever uses overlap; no close before backend/callback access ends or reliance on application Drop.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-069",
+    "gates_and_dependencies": "Native-resource integration gate; IO-01.C13, LANG-01/03",
+    "experiment": "Generic callback with temporary term environment \u2192 typed runtime lifecycle event and statically selected qualified handler; W10",
+    "evidence_and_decision": "Temporary bytes, event/dispatch cost and generated code size. Preserve supported notifications and nested-work accounting; this qualified boundary does not claim arbitrary callback compatibility.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-070",
+    "gates_and_dependencies": "Resource integration; IO-01.C15/16, EXEC-02/03/05",
+    "experiment": "Unsliced monitor/resource-ledger teardown \u2192 runtime cleanup cursor and separately accounted final-release work; W02/W07/W10",
+    "evidence_and_decision": "Peer progress, cleanup throughput and retained bytes after all user execution stops. Every step must be qualified; arbitrary user destructors cannot hide inside the final step. Static code may omit takeover bookkeeping only under an explicit static-resource boundary.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-071",
+    "gates_and_dependencies": "G7 / concurrent-host qualification; EXEC-07.C13\u201317",
+    "experiment": "Confirm progress at every qualified runtime turn \u2192 fewer confirmations only at explicitly eligible boundaries; W02/W07/W12",
+    "evidence_and_decision": "Barrier/cache traffic versus retirement age and retained bytes. Never announce quiescence while protected access survives; preserve sleep/block/code-barrier rules and measure stalled-worker interference.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-072",
+    "gates_and_dependencies": "G7; EXEC-07.C14\u201318",
+    "experiment": "Complete remaining participant scan in one coordinator update \u2192 proved resumable scan allowance; W08/W12",
+    "evidence_and_decision": "Scan/lock time, progress advancement, wakeups and peer tails across worker counts. Preserve confirmation/election state across slices; no starvation of late scan entries or inactive-as-quiescent shortcut.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-073",
+    "gates_and_dependencies": "G7 / concurrent-host qualification; EXEC-07.C13/16/19, LIFE-05",
+    "experiment": "One correct reclamation domain \u2192 separately qualified domains for unrelated metadata with typed or validated identity; W07/W12",
+    "evidence_and_decision": "Retention caused by one stalled reader versus extra metadata and cross-domain handoff. Cross-reachable objects need all applicable protection or an explicit retained owner; no unsafe shutdown or memory hidden in a different account.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-074",
+    "gates_and_dependencies": "G2 then G7; EXEC-07.C20, EXEC-02/03",
+    "experiment": "Backlog-scaled eligible callback count \u2192 bounded cleanup cursor accounting for nested releases; W02/W07/W12",
+    "evidence_and_decision": "Uninterrupted work, peer delay, drain throughput and retained backlog. Preserve detach-before-callback, owned continuation and qualified final release. Specializes PERF-029 for progress-eligible work; it does not permit arbitrary user callbacks.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-075",
+    "gates_and_dependencies": "G2 then G7; EXEC-07.C18/21, EXEC-05",
+    "experiment": "Correct byte-threshold cleanup wake coalescing \u2192 qualified byte-plus-age or idle-flush policy; W07/W12",
+    "evidence_and_decision": "Wake CPU, final-small-batch age and peak retired memory. Establish the baseline route through eligibility and execution first; no premature free, lost wake or cleanup depending on further application traffic.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-076",
+    "gates_and_dependencies": "G2; EXEC-01.C16/20/21/23, LANG-03",
+    "experiment": "Dynamic lock masks/field conventions \u2192 private typed field-access guards and checked rank transitions; W01/W03/W12",
+    "evidence_and_decision": "Removed redundant checks, code size and access/kill latency. Compile-fail escaped/stale borrows; dynamic PID order and whole lock graph still need proof. Internal guards must not escape into indefinitely running host/application code.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-077",
+    "gates_and_dependencies": "G7 / host contention; EXEC-01.C16\u201318, EXEC-07",
+    "experiment": "Packed lock/control word \u2192 qualified separation of contended domains or a simpler combined lock in the same supported concurrency profile; W03/W08/W12",
+    "evidence_and_decision": "CAS retries, cache-line traffic, memory per process and tail latency. Preserve lock-set semantics and terminal-state coordination; fewer bits or atomics is not itself an improvement.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-078",
+    "gates_and_dependencies": "G7 / host contention; EXEC-01.C17\u201319",
+    "experiment": "Fixed configured spin-before-park \u2192 measured contention-aware spin/park policy; W02/W08/W12",
+    "evidence_and_decision": "CPU burn, park/wake count, lock wait and unrelated process delay. Count CAS-only retries and partial-set holding time; no total wait bound inferred from a resettable spin counter or per-domain FIFO.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-079",
+    "gates_and_dependencies": "G2 then G7; EXEC-01.C16/18/20/22/23",
+    "experiment": "Manually maintained acquired masks/rollback branches \u2192 owned partial-set acquisition and handoff records; W12",
+    "evidence_and_decision": "Failure/contended-path branches and ownership bookkeeping, plus retained state during wait. Force failure at every acquisition position and all supported backends; cannot unlock an unowned domain, duplicate same-process authority or rely on application Drop.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-080",
+    "gates_and_dependencies": "G2 then G7; EXEC-01.C18/19, EXEC-03",
+    "experiment": "Every process embeds contention queue metadata \u2192 optional cold waiter record or compact indexed representation; W01/W12",
+    "evidence_and_decision": "Idle density/cache cost versus first-contention allocation and wake tails. Retain metadata through granted-but-not-resumed waiters; no unqualified allocation under runtime locks or retirement while a handoff can access it.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-081",
+    "gates_and_dependencies": "G3; TIME-01.C17/21/23, MSG-03",
+    "experiment": "Dynamically tagged domain/unit values \u2192 private typed instants, deadlines and durations with checked constructors; W06/W11",
+    "evidence_and_decision": "Tag/check branches, instructions, layout and compile-fail misuse controls. Runtime origin identity and overflow remain explicit; inspect generated code before calling a wrapper zero-cost.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-082",
+    "gates_and_dependencies": "G3; TIME-01.C20/21, MSG-03",
+    "experiment": "General checked wide time conversion \u2192 constant-unit specialization with verified fast path and wide fallback; W11",
+    "evidence_and_decision": "Divisions, cycles, code size, fallback and rejected-boundary rates. Preserve operation-specific ceiling and signed floor; no blanket Duration truncation, overflow wrap or zero-timeout allocation change.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-083",
+    "gates_and_dependencies": "G3 then G7; TIME-01.C20/23, EXEC-02",
+    "experiment": "Correct service clock sampling \u2192 per-batch observation with mandatory fresh registration and wait-boundary reads; W06/W11",
+    "evidence_and_decision": "Clock calls, actual kernel crossings, cycles and expiry/peer tails after long batches. Compare with an already cached baseline; stale service may add measured lateness but cannot backdate a newly registered relative deadline.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-084",
+    "gates_and_dependencies": "Timer/I/O integration; TIME-01.C22, IO-01.C24",
+    "experiment": "Repeated generic wait conversion \u2192 typed retained absolute deadline with specialized remaining-wait conversion; W09/W11",
+    "evidence_and_decision": "Conversion/read cost, wakeups, retry CPU and timeout/stop tails. Keep the original deadline across capped or empty waits; backend precision changes must preserve the supported public resolution.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-085",
+    "gates_and_dependencies": "Conditional provider/correction integration; TIME-01.C18/24, EXEC-07",
+    "experiment": "Required correction under an RW lock \u2192 immutable versioned correction snapshot or initialization specialization for a qualified corrected provider; W11/W12",
+    "evidence_and_decision": "Read contention, update cost, retries and retired snapshots. Compare first with the existing direct-provider path; preserve continuity, reader retention and configured failure behavior. No lock-removal win against a baseline that never took that lock.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-086",
+    "gates_and_dependencies": "Qualified internal tasks; EXEC-08.C23/24, LANG-02",
+    "experiment": "Generic boxed operation/argument/result tags \u2192 private typed request variants and compact correlation handles; W14",
+    "evidence_and_decision": "Allocations, copied bytes, record size, branch/code footprint and admission throughput. Preserve signal ordering and accepted/rejected ownership; reject type-confused or lost replies.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-087",
+    "gates_and_dependencies": "Conditional maintenance; EXEC-08.C25\u201327, EXEC-02",
+    "experiment": "Existing per-turn work deduplication \u2192 explicit pending-work state plus separately owned request records for additional qualified coalescing; W14",
+    "evidence_and_decision": "Expensive operations per request, queue memory, reply latency and mixed-priority tails. Reject lost correlation, false completion or starvation. BEAM already coalesces some GC work.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-088",
+    "gates_and_dependencies": "Qualified completion path; EXEC-08.C28, EXEC-03, LIFE-05",
+    "experiment": "Monolithic reply drain \u2192 owned resumable completion cursor with budgeted admitted helpers; W02/W07/W14",
+    "evidence_and_decision": "Uninterrupted work, lock time, throughput, peer latency and cleanup backlog. Reject replayed replies, orphaned remainder, early reclamation completion or unbounded inner copy work.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-089",
+    "gates_and_dependencies": "Admitted helper completion; LIFE-05.C21, EXEC-03",
+    "experiment": "Scan-to-merge nonempty owned fragment chains \u2192 maintained-tail segmented ownership consumed at a private result gate; W07/W14",
+    "evidence_and_decision": "Merge cost by segment count, metadata/cache cost and cleanup tails. Preserve all owners after death and suppress dead continuations. Empty-destination baseline already avoids traversal; external jobs remain unselected.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-090",
+    "gates_and_dependencies": "G1\u2013G2; EXEC-01/02, conditional EXEC-08.C25/29",
+    "experiment": "Generic priority routing in minimal profile \u2192 compile-time normal-priority specialization with independent control activity; W02/W14",
+    "evidence_and_decision": "Queue/state bytes, dispatch cost and binary size against optimized baseline. Reject lost control/exit progress; full priority extension must retain its separate semantics.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-091",
+    "gates_and_dependencies": "G1\u2013G3; EXEC-03, MSG-01, CODE-01.C06/13",
+    "experiment": "General approved buffer handle for constant bytes \u2192 generated permanent-static/owned/shared variants; W03/W04/W07",
+    "evidence_and_decision": "Allocation/refcount savings versus dispatch/code growth. Static bytes must be genuinely permanent and immutable; reject hidden leaked allocations, unaccounted dynamic owners or unsupported constant replacement.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-092",
+    "gates_and_dependencies": "Conditional replaceable data; CODE-01.C07/08/11, LANG-02/03",
+    "experiment": "Correct arena retirement enumerating admitted roots \u2192 generated typed holders plus runtime owner records to avoid unrelated scans; W10/W14",
+    "evidence_and_decision": "Visited owners, scan/copy work, index contention and stop/cleanup tails. Reject missing diagnostic/helper/message holders, registration after publication or strong-count snapshots treated as reclamation proof.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-093",
+    "gates_and_dependencies": "G3 immutable ownership; conditional CODE-01.C09/13",
+    "experiment": "One retained immutable region per live view \u2192 per-payload ownership or measured small-survivor copy-out; W04/W07/W14",
+    "evidence_and_decision": "Retained capacity versus allocation/refcount/cache costs, sparse and dense views. Preserve owner-plus-offset validity and final release; reject moving memory into unreported global retention. Extends PERF-010 with constant-region ownership.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-094",
+    "gates_and_dependencies": "Conditional replaceable data graphs; CODE-01.C07\u201309, LANG-03",
+    "experiment": "Qualified whole-region scratch/relocation \u2192 generated non-destructive layout visits or index graphs with external forwarding state; W14",
+    "evidence_and_decision": "Copied bytes, temporary memory, sharing/edge visits and dense-case tails. Retain source plus partial destination across kill/yield; reject lost sharing, early publication or unbounded traversal. No requirement to implement a GC.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-095",
+    "gates_and_dependencies": "Conditional naming; NAME-01.C13, LIFE-01",
+    "experiment": "String-key and already-interned integer baselines \u2192 compact owned runtime-specific name tokens; W13",
+    "evidence_and_decision": "Hash/allocation cost, cardinality, retained tokens and cleanup tails. Include interning expense; BEAM already uses atom identity. Reject stale-name reuse or cross-runtime aliasing.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-096",
+    "gates_and_dependencies": "Conditional typed naming; NAME-01.C10/14, LANG-01/02",
+    "experiment": "Checked erased binding per lookup \u2192 concrete typed address after explicit resolve-once; W13",
+    "evidence_and_decision": "Type-check/dispatch cost and code size at identical resolution semantics. Reject covariance bypass and stale protocol authorization. Dynamic named sends/timers still check the selected binding; mismatch policy is open.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-097",
+    "gates_and_dependencies": "Naming and G7; NAME-01.C06/08/12",
+    "experiment": "Single correct registry lock \u2192 name shards plus coordinated target registration ownership; W13",
+    "evidence_and_decision": "Contention, retries, writer/kill tails and record retention. Reject two names for one target, two owners for one name, lock-order cycles or stale backpointers. One-key insertion does not cover both constraints.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-098",
+    "gates_and_dependencies": "Conditional registry enumeration; NAME-01.C11/13",
+    "experiment": "Protected owned-name copy \u2192 compact token vector with qualified allocation/version strategy; W10/W13",
+    "evidence_and_decision": "Writer blocking, allocation, copied bytes and peer latency across registry sizes. Preserve result lifetime and the declared snapshot consistency; reject escaped borrowed entries or silently weaker per-shard snapshots.",
+    "status": "planned",
+    "result": null
+  },
+  {
+    "id": "PERF-099",
+    "gates_and_dependencies": "Conditional dynamic-name cache; NAME-01.C10/14, TIME-01",
+    "experiment": "Correct typed resolution per operation \u2192 version-validated cache with safe record retention; W06/W13",
+    "evidence_and_decision": "Hit rate, invalidation traffic, retained records and rebind/expiry tails. Model check/use races; reject sticky first-owner behavior, incompatible payload delivery or indefinite retention. Cached PID is a distinct workload.",
+    "status": "planned",
+    "result": null
+  }
+]

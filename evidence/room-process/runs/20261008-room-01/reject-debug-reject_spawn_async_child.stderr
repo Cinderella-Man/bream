@@ -1,0 +1,8 @@
+   Compiling bream-room-consumer v0.0.0 (/home/bat/projects/bream/experiments/room-process/consumer)
+error: bream structured subset: only private synchronous nongeneric checked functions
+ --> consumer/examples/reject_spawn_async_child.rs:4:5
+  |
+4 |     async fn child() {} fn run() { spawn_monitor(child, owned_input(), 0, 0); }
+  |     ^^^^^
+
+error: could not compile `bream-room-consumer` (example "reject_spawn_async_child") due to 1 previous error

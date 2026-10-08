@@ -1,0 +1,8 @@
+   Compiling bream-replacement-consumer v0.0.0 (/home/bat/projects/bream/experiments/session-replacement/consumer)
+error: bream milestone subset: unsupported statement; arbitrary calls, macros, unsafe, closures, references, explicit await and custom types are forbidden
+ --> consumer/examples/reject_unsafe.rs:5:5
+  |
+5 |     unsafe { loop {} }
+  |     ^^^^^^
+
+error: could not compile `bream-replacement-consumer` (example "reject_unsafe") due to 1 previous error

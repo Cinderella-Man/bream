@@ -1,0 +1,257 @@
+   Compiling proc-macro2 v1.0.107
+   Compiling quote v1.0.47
+   Compiling unicode-ident v1.0.26
+   Compiling bream-spawn-runtime v0.0.0 (/home/bat/projects/bream/experiments/spawn-process/runtime)
+   Compiling syn v2.0.119
+   Compiling bream-spawn-macros v0.0.0 (/home/bat/projects/bream/experiments/spawn-process/macros)
+   Compiling bream-spawn-consumer v0.0.0 (/home/bat/projects/bream/experiments/spawn-process/consumer)
+warning: unused variable: `unexpected`
+  --> consumer/src/links.rs:52:30
+   |
+52 |             ExitResult::Exit(unexpected) => {
+   |                              ^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_unexpected`
+   |
+   = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `unexpected`
+  --> consumer/src/links.rs:84:34
+   |
+84 |                 ExitResult::Exit(unexpected) => {
+   |                                  ^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_unexpected`
+
+warning: unused variable: `gate`
+   --> consumer/src/links.rs:115:13
+    |
+115 |         let gate = receive(9);
+    |             ^^^^ help: if this is intentional, prefix it with an underscore: `_gate`
+
+warning: unused variable: `unexpected`
+   --> consumer/src/links.rs:129:32
+    |
+129 |             EventResult::Event(unexpected) => {
+    |                                ^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_unexpected`
+
+warning: unused variable: `gate`
+   --> consumer/src/links.rs:157:13
+    |
+157 |         let gate = receive(9);
+    |             ^^^^ help: if this is intentional, prefix it with an underscore: `_gate`
+
+warning: unused variable: `early_exit`
+   --> consumer/src/links.rs:172:25
+    |
+172 |             Event::Exit(early_exit) => {
+    |                         ^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_early_exit`
+
+warning: unused variable: `early_down`
+   --> consumer/src/links.rs:176:25
+    |
+176 |             Event::Down(early_down) => {
+    |                         ^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_early_down`
+
+warning: unused variable: `early_message`
+   --> consumer/src/links.rs:186:32
+    |
+186 |                 Event::Message(early_message) => {
+    |                                ^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_early_message`
+
+warning: unused variable: `misordered_down`
+   --> consumer/src/links.rs:190:29
+    |
+190 |                 Event::Down(misordered_down) => {
+    |                             ^^^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_misordered_down`
+
+warning: unused variable: `tail_message`
+   --> consumer/src/links.rs:201:28
+    |
+201 |             Event::Message(tail_message) => {
+    |                            ^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_tail_message`
+
+warning: unused variable: `tail_exit`
+   --> consumer/src/links.rs:205:25
+    |
+205 |             Event::Exit(tail_exit) => {
+    |                         ^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_tail_exit`
+
+warning: unused variable: `extra`
+   --> consumer/src/links.rs:211:32
+    |
+211 |             EventResult::Event(extra) => {
+    |                                ^^^^^ help: if this is intentional, prefix it with an underscore: `_extra`
+
+warning: unused variable: `unexpected_exit`
+   --> consumer/src/links.rs:235:25
+    |
+235 |             Event::Exit(unexpected_exit) => {
+    |                         ^^^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_unexpected_exit`
+
+warning: unused variable: `unexpected_down`
+   --> consumer/src/links.rs:238:25
+    |
+238 |             Event::Down(unexpected_down) => {
+    |                         ^^^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_unexpected_down`
+
+warning: unused variable: `gate`
+   --> consumer/src/links.rs:257:13
+    |
+257 |         let gate = receive(9);
+    |             ^^^^ help: if this is intentional, prefix it with an underscore: `_gate`
+
+warning: unused variable: `attempt`
+   --> consumer/src/links.rs:260:13
+    |
+260 |         for attempt in 0..2 {
+    |             ^^^^^^^ help: if this is intentional, prefix it with an underscore: `_attempt`
+
+warning: unused variable: `extra`
+   --> consumer/src/links.rs:274:32
+    |
+274 |             EventResult::Event(extra) => {
+    |                                ^^^^^ help: if this is intentional, prefix it with an underscore: `_extra`
+
+warning: unused variable: `early_exit`
+   --> consumer/src/spawns.rs:107:25
+    |
+107 |             Event::Exit(early_exit) => {
+    |                         ^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_early_exit`
+
+warning: unused variable: `early_down`
+   --> consumer/src/spawns.rs:111:25
+    |
+111 |             Event::Down(early_down) => {
+    |                         ^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_early_down`
+
+warning: unused variable: `extra_message`
+   --> consumer/src/spawns.rs:125:28
+    |
+125 |             Event::Message(extra_message) => {
+    |                            ^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_extra_message`
+
+warning: unused variable: `misordered_down`
+   --> consumer/src/spawns.rs:129:25
+    |
+129 |             Event::Down(misordered_down) => {
+    |                         ^^^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_misordered_down`
+
+warning: unused variable: `tail_message`
+   --> consumer/src/spawns.rs:144:28
+    |
+144 |             Event::Message(tail_message) => {
+    |                            ^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_tail_message`
+
+warning: unused variable: `extra_exit`
+   --> consumer/src/spawns.rs:148:25
+    |
+148 |             Event::Exit(extra_exit) => {
+    |                         ^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_extra_exit`
+
+warning: unused variable: `extra`
+   --> consumer/src/spawns.rs:154:32
+    |
+154 |             EventResult::Event(extra) => {
+    |                                ^^^^^ help: if this is intentional, prefix it with an underscore: `_extra`
+
+warning: unused variable: `child_result`
+   --> consumer/src/spawns.rs:170:13
+    |
+170 |         let child_result = spawn_link_monitor(child, owned_input(), 0, 0);
+    |             ^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_child_result`
+
+warning: unused variable: `gate`
+  --> consumer/src/monitors.rs:68:13
+   |
+68 |         let gate = receive(9);
+   |             ^^^^ help: if this is intentional, prefix it with an underscore: `_gate`
+
+warning: unused variable: `unexpected_exit_1`
+  --> consumer/src/monitors.rs:79:25
+   |
+79 |             Event::Exit(unexpected_exit_1) => {
+   |                         ^^^^^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_unexpected_exit_1`
+
+warning: unused variable: `unexpected_head`
+  --> consumer/src/monitors.rs:83:25
+   |
+83 |             Event::Down(unexpected_head) => {
+   |                         ^^^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_unexpected_head`
+
+warning: unused variable: `unexpected_exit_2`
+  --> consumer/src/monitors.rs:93:25
+   |
+93 |             Event::Exit(unexpected_exit_2) => {
+   |                         ^^^^^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_unexpected_exit_2`
+
+warning: unused variable: `unexpected_middle`
+   --> consumer/src/monitors.rs:100:28
+    |
+100 |             Event::Message(unexpected_middle) => {
+    |                            ^^^^^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_unexpected_middle`
+
+warning: unused variable: `unexpected_exit_3`
+   --> consumer/src/monitors.rs:114:25
+    |
+114 |             Event::Exit(unexpected_exit_3) => {
+    |                         ^^^^^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_unexpected_exit_3`
+
+warning: unused variable: `unexpected_tail`
+   --> consumer/src/monitors.rs:118:25
+    |
+118 |             Event::Down(unexpected_tail) => {
+    |                         ^^^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_unexpected_tail`
+
+warning: unused variable: `gate`
+   --> consumer/src/monitors.rs:135:13
+    |
+135 |         let gate = receive(9);
+    |             ^^^^ help: if this is intentional, prefix it with an underscore: `_gate`
+
+warning: unused variable: `extra`
+   --> consumer/src/monitors.rs:160:32
+    |
+160 |             EventResult::Event(extra) => {
+    |                                ^^^^^ help: if this is intentional, prefix it with an underscore: `_extra`
+
+warning: unused variable: `unexpected_exit_4`
+   --> consumer/src/monitors.rs:183:25
+    |
+183 |             Event::Exit(unexpected_exit_4) => {
+    |                         ^^^^^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_unexpected_exit_4`
+
+warning: unused variable: `unexpected`
+   --> consumer/src/monitors.rs:187:25
+    |
+187 |             Event::Down(unexpected) => {
+    |                         ^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_unexpected`
+
+warning: unused variable: `gate`
+   --> consumer/src/monitors.rs:204:13
+    |
+204 |         let gate = receive(9);
+    |             ^^^^ help: if this is intentional, prefix it with an underscore: `_gate`
+
+warning: unused variable: `gate`
+   --> consumer/src/monitors.rs:218:13
+    |
+218 |         let gate = receive(9);
+    |             ^^^^ help: if this is intentional, prefix it with an underscore: `_gate`
+
+warning: unused variable: `attempt`
+   --> consumer/src/monitors.rs:222:13
+    |
+222 |         for attempt in 0..2 {
+    |             ^^^^^^^ help: if this is intentional, prefix it with an underscore: `_attempt`
+
+warning: unused variable: `unexpected_exit_5`
+   --> consumer/src/monitors.rs:225:33
+    |
+225 |                     Event::Exit(unexpected_exit_5) => {
+    |                                 ^^^^^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_unexpected_exit_5`
+
+warning: unused variable: `unexpected`
+   --> consumer/src/monitors.rs:236:36
+    |
+236 |                     Event::Message(unexpected) => {
+    |                                    ^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_unexpected`
+
+warning: `bream-spawn-consumer` (bin "bream-spawn-consumer") generated 41 warnings (run `cargo fix --bin "bream-spawn-consumer" -p bream-spawn-consumer` to apply 41 suggestions)
+    Finished `release` profile [optimized] target(s) in 8.94s

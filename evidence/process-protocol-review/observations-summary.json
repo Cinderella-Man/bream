@@ -146,14 +146,12 @@
             1000,
             1000
           ],
-          "resume_read_elapsed_ms": 0,
           "resumed_cancel_separate_ref": false,
           "resumed_read_only_refs": [
             false,
             false,
             false
           ],
-          "suspend_elapsed_ms": 0,
           "untouched_during_pause_delivered_original_ref": true,
           "untouched_send_after_delivered": true,
           "untouched_start_delivered_original_ref": true
@@ -397,14 +395,12 @@
             1000,
             1000
           ],
-          "resume_read_elapsed_ms": 0,
           "resumed_cancel_separate_ref": false,
           "resumed_read_only_refs": [
             false,
             false,
             false
           ],
-          "suspend_elapsed_ms": 0,
           "untouched_during_pause_delivered_original_ref": true,
           "untouched_send_after_delivered": true,
           "untouched_start_delivered_original_ref": true
@@ -646,7 +642,6 @@
           "resumed_cancel_separate_ref": false,
           "created_and_canceled_while_paused_delivered": true,
           "delivery_count": 6,
-          "suspend_elapsed_ms": 0,
           "paused_cancel_separate_ref": false,
           "canceled_after_resume_delivered": true,
           "untouched_during_pause_delivered_original_ref": true,
@@ -656,7 +651,6 @@
             false,
             false
           ],
-          "resume_read_elapsed_ms": 0,
           "created_during_pause_cancel_separate_ref": false,
           "untouched_send_after_delivered": true
         },

@@ -2,6 +2,8 @@
 
 ## Verdict
 
+**Implementation checkpoint, 2026-10-08:** five restricted milestones pass: [useful owned buffers](../experiments/process-milestone/README.md), [structured state/helpers](../experiments/structured-process/README.md), [identity/lifecycle](../experiments/identity-lifecycle/README.md), [mailboxes/parking](../experiments/mailbox-process/README.md) and [receive timeouts](../experiments/receive-timeout/README.md). The latest preserves scan/wait semantics and cancelled-timer identity, with an injected clock, bounded expiry service and ownership cleanup. Thirty-five unit tests per profile and six timeout invocations pass, including 96 send/timeout and 96 kill/timeout races. A missing nested-match checkpoint was exposed by a failing logical-budget control and fixed. The [progress view](milestones.md) tracks partial G1/G2/G3 and the next monitor/Down milestone; real-time timer driving remains open. No speed tests or comparisons may run here, and prior local timings are unsuitable performance indicators.
+
 **Native preemptive scheduling is demonstrated, and a generated native subset also demonstrates safe stop/cleanup. The complete general-purpose library remains a research problem.** One fresh probe interrupts ordinary native Rust loops on one worker; a second uses mandatory generated checkpoints and normal destruction to stop an infinite process and reclaim its tracked buffer. The existing lab is a useful source of requirements and test scenarios, but it does not contain an engine satisfying the clarified native execution and kill contract.
 
 The next engineering investment should establish an enforceable process-ownership and termination model before selecting the production engine. Existing native mechanisms remain useful comparators, but their scheduling success does not establish safe destruction. The research does not establish a safe general-purpose library, BEAM-equivalent density, or a production-ready engine. [Executed probe](../experiments/native-preemption/README.md), [scope decisions](design-tree.md).
@@ -123,3 +125,15 @@ Conversely, successful safety qualification, useful density under realistic stac
 ## Naming
 
 **Bream** is the user-selected working name: BEAM with an R for Rust, with a quiet fish joke. The project, probe crates and proposed APIs now use Bream. No package or remote repository has been published. [Naming decision and checks](naming.md).
+
+## Latest source continuation — 2026-10-08
+
+The [new reports 50–53](process-runtime-inventory.md) add system-task/completion ownership, code/literal retirement and typed registry routing. The plan now contains 523 stable cases and 99 performance experiments. New execution covers eight local naming families on three pinned VM profiles and narrow Rust variance controls; no performance treatment or production runtime was executed.
+
+Concrete Rust candidates are typed owned maintenance requests, resumable reply settlement, permanent-static immutable bytes and carefully validated name/protocol routing. The source already coalesces some GC requests and hashes names by atom identity, so those costs cannot be claimed as new Rust wins without an equivalent baseline. Useful generated admission, preemptible helpers and safe forced stop remain the decisive implementation gate.
+
+## Measured alternatives and the responsiveness priority — 2026-10-08
+
+The [worker/async source pass](process-runtime-inventory.md) shows mechanisms Bream may simplify but cannot merely erase: disabled application dispatch can leave runtime service obligations, native job completion can outlive its recipient, and OS-process exit can conceal cleanup an embedded library must finish.
+
+The user selected responsiveness first. All speed-test results and derived gains/regressions were subsequently removed at their request. The static-payload and worker-notification alternatives need fresh performance qualification. Their source and finite correctness models remain useful. The plan contains 537 cases and 107 tasks. [Removal record](../evidence/performance-reset/README.md).

@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-08",
+  "milestone": "Useful owned-data process, checked public boundary, single-worker sharing and external stop",
+  "allowances": [
+    1,
+    32,
+    256
+  ],
+  "work": "8192-word transform/checksum peer beside a nonterminating 1024-word transform; kill hog after peer completes, then run another peer.",
+  "correctness": "Independent digest; repeated sharing; exactly-once capacity-byte release; queued kill without poll; no post-stop resume; empty and nested loops; contained bounds panic; shutdown; zero/oversize/spare-capacity input; separate-consumer rejection and lexical shadowing controls.",
+  "limits": [
+    "restricted primitive/owned-buffer grammar",
+    "trusted Rust dependencies and host allocator",
+    "instrumentation affects costs",
+    "no hard wall-clock bound",
+    "no messages or waiting I/O",
+    "no reusable identity registry",
+    "no complete G1/G2 qualification"
+  ],
+  "development": "Unrecorded development compilation and debug smoke checks preceded this fixed release evidence protocol. They are not included as timing evidence.",
+  "evidence_revision": "2026-10-08: timing protocol and results removed; this is the correctness subset of the original run.",
+  "performance_status": "redo_required",
+  "local_speed_tests_allowed": false
+}

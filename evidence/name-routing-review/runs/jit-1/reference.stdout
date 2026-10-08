@@ -1,0 +1,10 @@
+VM otp=29 erts=17.1 schedulers=1
+PASS cached_vs_dynamic
+PASS named_monitor_incarnation
+PASS missing_named_monitor
+PASS missing_address_forms
+PASS detached_name_snapshot
+PASS timer_late_binding
+PASS competing_names
+PASS competing_targets
+COMPLETE families=8 race_rounds=100

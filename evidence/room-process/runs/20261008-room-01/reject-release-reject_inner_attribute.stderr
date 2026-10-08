@@ -1,0 +1,8 @@
+   Compiling bream-room-consumer v0.0.0 (/home/bat/projects/bream/experiments/room-process/consumer)
+error: bream milestone subset: attributes are forbidden
+ --> consumer/examples/reject_inner_attribute.rs:4:5
+  |
+4 |     #[allow(unused)]
+  |     ^
+
+error: could not compile `bream-room-consumer` (example "reject_inner_attribute") due to 1 previous error

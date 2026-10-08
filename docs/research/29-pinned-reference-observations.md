@@ -41,7 +41,7 @@ All three VM profiles agree. This confirms the specific prediction in [report 16
 
 ## 2. Paused timer lookup identity can disappear while delivery survives
 
-Separate cohorts avoid confounding cancellation with read-only observation. Four 1,000 ms timers are created for another process; all must still have more than 500 ms remaining before suspension, and suspension must occur within 500 ms of setup. Separate timers are created while suspended. Post-resume observations must also complete within 500 ms. These setup checks reject ordinary pre-observation expiry; measured setup/resume intervals were zero milliseconds in the retained runs.
+Separate cohorts avoid confounding cancellation with read-only observation. Four 1,000 ms timers are created for another process; all must still have more than 500 ms remaining before suspension, and suspension must occur within 500 ms of setup. Separate timers are created while suspended. Post-resume observations must also complete within 500 ms. These are the original semantic setup checks against ordinary pre-observation expiry. Recorded elapsed intervals were removed with the user-requested performance-evidence reset.
 
 Across all profiles:
 

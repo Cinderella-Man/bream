@@ -1,0 +1,8 @@
+   Compiling bream-room-consumer v0.0.0 (/home/bat/projects/bream/experiments/room-process/consumer)
+error: bream milestone subset: builtin requires an owned buffer with matching mutability
+ --> consumer/examples/reject_scalar_read.rs:5:17
+  |
+5 |     result(read(word, 0));
+  |                 ^^^^
+
+error: could not compile `bream-room-consumer` (example "reject_scalar_read") due to 1 previous error

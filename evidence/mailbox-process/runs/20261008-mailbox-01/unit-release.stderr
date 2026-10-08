@@ -1,0 +1,3 @@
+   Compiling bream-mailbox-runtime v0.0.0 (/home/bat/projects/bream/experiments/mailbox-process/runtime)
+    Finished `release` profile [optimized] target(s) in 1.08s
+     Running unittests src/lib.rs (.tools/mailbox-process/20261008-mailbox-01/release/deps/bream_mailbox_runtime-f261124952ebcc46)

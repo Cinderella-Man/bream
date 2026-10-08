@@ -1,0 +1,222 @@
+{
+  "date": "2026-10-08",
+  "scope": "Retained finite notification correctness models only; all speed-test commands and measurements removed.",
+  "platform": "Linux-7.0.0-34-generic-x86_64-with-glibc2.43",
+  "environment_overrides": {
+    "RUSTC": "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/rustc",
+    "RUSTFLAGS": "",
+    "RUSTDOCFLAGS": "",
+    "RUSTC_WRAPPER": "",
+    "RUSTC_WORKSPACE_WRAPPER": "",
+    "RUST_BACKTRACE": "0",
+    "CARGO_HOME": "/home/bat/projects/bream/.tools/cargo-cache",
+    "CARGO_TARGET_DIR": "/home/bat/projects/bream/.tools/worker-notification"
+  },
+  "removed_environment": "LOOM_* and CARGO_ENCODED_RUSTFLAGS",
+  "protocol": {
+    "path": "evidence/worker-notification-review/protocol.json",
+    "sha256": "d7673a807c15834e8912c4b79e95ed31e8e23ff67c64b69cf11fb02e570f6a7a"
+  },
+  "builder": {
+    "max_threads": 2,
+    "max_branches": 1000,
+    "location": true,
+    "log": false,
+    "max_permutations": null,
+    "max_duration": null,
+    "preemption_bound": null,
+    "checkpoint_file": null
+  },
+  "inputs": [
+    {
+      "path": "experiments/worker-notification/Cargo.toml",
+      "sha256": "39584abb699bf6e932f4d2e8e2d3669af31448bd1a82e882f729f6059f99b7a8"
+    },
+    {
+      "path": "experiments/worker-notification/Cargo.lock",
+      "sha256": "ec41058fbd60a9cc8756e147ba43312338a5b9387e12846010270abe7bcd4800"
+    },
+    {
+      "path": "experiments/worker-notification/src/model.rs",
+      "sha256": "79a67824c54a597b5e0ababcbc3e940774fbfb2e06b240a9ebefea693fcd1076"
+    },
+    {
+      "path": "experiments/worker-notification/src/probe.rs",
+      "sha256": "9e61df702436635745b83d6a601434731df638f0d57bfde70bc2ab7fe567d909"
+    },
+    {
+      "path": "evidence/worker-notification-review/run_experiment.py",
+      "sha256": "7bc914956a5e46d570c23dfcda296c8885d859c5063cb83955cfc7cc91b02c46"
+    }
+  ],
+  "tools": [
+    {
+      "path": "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/rustc",
+      "sha256": "859254978c0a0402c32f949f6de0d99aee73be8d15f45aac00ae1448aac51e74"
+    },
+    {
+      "path": "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/cargo",
+      "sha256": "da77c8b33849312255ccde3179198ada4c8deb370488d050286146b1d1b27e14"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": ".tools/worker-notification/release/notification-model",
+      "sha256": "86763d5e2920d17a437cc46060b750329e3e23c98e50d8efc66a2ad57a880d17"
+    }
+  ],
+  "commands": [
+    {
+      "name": "rustc-version",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/rustc",
+        "-vV"
+      ],
+      "cwd": "/home/bat/projects/bream",
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 30,
+      "stdout": {
+        "path": "evidence/worker-notification-review/runs/rustc-version.stdout",
+        "sha256": "778fbc643a806f0dd123c056e66201d7e8a56a61928ec0a33171be8d6c2d5a37"
+      },
+      "stderr": {
+        "path": "evidence/worker-notification-review/runs/rustc-version.stderr",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "build",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/cargo",
+        "build",
+        "--release",
+        "--locked",
+        "--offline",
+        "--manifest-path",
+        "/home/bat/projects/bream/experiments/worker-notification/Cargo.toml"
+      ],
+      "cwd": "/home/bat/projects/bream",
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 120,
+      "stdout": {
+        "path": "evidence/worker-notification-review/runs/build.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "evidence/worker-notification-review/runs/build.stderr",
+        "sha256": "6bd69f045013adc6f57c59f44d9bac573f8eb3b9ba5ffa1fa7f7e7ff03078024"
+      }
+    },
+    {
+      "name": "model-condvar_locked",
+      "argv": [
+        "/home/bat/projects/bream/.tools/worker-notification/release/notification-model",
+        "condvar_locked"
+      ],
+      "cwd": "/home/bat/projects/bream",
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 30,
+      "stdout": {
+        "path": "evidence/worker-notification-review/runs/model-condvar_locked.stdout",
+        "sha256": "46698f944028185ef23ed781424142e6fcef3a5ae9f28dcb12dc40a4522dddd2"
+      },
+      "stderr": {
+        "path": "evidence/worker-notification-review/runs/model-condvar_locked.stderr",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "model-park_locked",
+      "argv": [
+        "/home/bat/projects/bream/.tools/worker-notification/release/notification-model",
+        "park_locked"
+      ],
+      "cwd": "/home/bat/projects/bream",
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 30,
+      "stdout": {
+        "path": "evidence/worker-notification-review/runs/model-park_locked.stdout",
+        "sha256": "d476605577b7fd9f36789aad0a2025c6983c69fb7ba04657edbcd93c5df90793"
+      },
+      "stderr": {
+        "path": "evidence/worker-notification-review/runs/model-park_locked.stderr",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "model-park_split_enrollment",
+      "argv": [
+        "/home/bat/projects/bream/.tools/worker-notification/release/notification-model",
+        "park_split_enrollment"
+      ],
+      "cwd": "/home/bat/projects/bream",
+      "exit_code": -6,
+      "timed_out": false,
+      "watchdog_seconds": 30,
+      "stdout": {
+        "path": "evidence/worker-notification-review/runs/model-park_split_enrollment.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "evidence/worker-notification-review/runs/model-park_split_enrollment.stderr",
+        "sha256": "f169339e87e1e5e2c4ee60ae8f833c769605ece1cbd6ed1403644365a3cc0f07"
+      }
+    },
+    {
+      "name": "model-park_token_consumed",
+      "argv": [
+        "/home/bat/projects/bream/.tools/worker-notification/release/notification-model",
+        "park_token_consumed"
+      ],
+      "cwd": "/home/bat/projects/bream",
+      "exit_code": -6,
+      "timed_out": false,
+      "watchdog_seconds": 30,
+      "stdout": {
+        "path": "evidence/worker-notification-review/runs/model-park_token_consumed.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "evidence/worker-notification-review/runs/model-park_token_consumed.stderr",
+        "sha256": "96a80a4116821ad1cf5858c6f48f86aa38093c1f85825df3af64ef4fa2a8e128"
+      }
+    }
+  ],
+  "models": [
+    {
+      "name": "condvar_locked",
+      "positive": true,
+      "expected_observation": true,
+      "executions_started": 8
+    },
+    {
+      "name": "park_locked",
+      "positive": true,
+      "expected_observation": true,
+      "executions_started": 6
+    },
+    {
+      "name": "park_split_enrollment",
+      "positive": false,
+      "expected_observation": true,
+      "executions_started": 3
+    },
+    {
+      "name": "park_token_consumed",
+      "positive": false,
+      "expected_observation": true,
+      "executions_started": 1
+    }
+  ],
+  "all_expected_observations": true,
+  "evidence_revision": {
+    "date": "2026-10-08",
+    "reason": "User requested removal of all speed-test evidence.",
+    "scope": "Filtered correctness records; performance commands, outputs and summaries removed. Not a fresh execution.",
+    "performance_status": "redo_required"
+  }
+}

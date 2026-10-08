@@ -1,0 +1,10 @@
+[package]
+name = "bream-identity-consumer"
+version = "0.0.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+bream-identity-runtime = { path = "../runtime" }
+bream-identity-macros = { path = "../macros" }
+

@@ -1,0 +1,8 @@
+   Compiling bream-monitor-consumer v0.0.0 (/home/bat/projects/bream/experiments/monitor-process/consumer)
+error: bream structured subset: message operation requires concrete Message
+ --> consumer/examples/reject_timeout_message_operation.rs:5:20
+  |
+5 |         let data = message_words(receive_for(7, 5));
+  |                    ^^^^^^^^^^^^^
+
+error: could not compile `bream-monitor-consumer` (example "reject_timeout_message_operation") due to 1 previous error

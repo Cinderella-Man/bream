@@ -8,4 +8,4 @@ Recorded result: **2 compilations and 10 executions, all expected observations**
 
 These sequential probes do not implement Bream, invoke BEAM, test concurrent memory ordering, establish a complete I/O cancellation protocol or measure performance. A copied event remaining in a local variable is an intentionally simple negative control for cancellation-as-retroactive-erasure. Real concurrent dispatch, teardown and generation-wrap qualification remain planned.
 
-[Prior case IDs](prior-case-ids.json) and [prior task IDs](prior-task-ids.json) preserve the 447-case/54-task catalogue before this pass. [Prior evidence hashes](prior-evidence-hashes.json) retain historical records. The new [validation record](review-validation.json) checks this pass without rewriting previous results.
+The historical validation output is superseded after the user-requested removal of speed-test evidence. The read-only validator entry point now delegates to the [performance-reset audit](../performance-reset/README.md), which checks the surviving file inventory, correctness records and documentation links. Hash inventories describe the filtered files; no runtime or benchmark is executed.

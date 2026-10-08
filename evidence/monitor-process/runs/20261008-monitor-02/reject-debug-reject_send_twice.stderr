@@ -1,0 +1,13 @@
+   Compiling bream-monitor-consumer v0.0.0 (/home/bat/projects/bream/experiments/monitor-process/consumer)
+error[E0382]: use of moved value: `words`
+ --> consumer/examples/reject_send_twice.rs:7:28
+  |
+5 |         let words = owned_input();
+  |             ----- move occurs because `words` has type `OwnedWords`, which does not implement the `Copy` trait
+6 |         send(self_id(), 1, words);
+  |                            ----- value moved here
+7 |         send(self_id(), 2, words);
+  |                            ^^^^^ value used here after move
+
+For more information about this error, try `rustc --explain E0382`.
+error: could not compile `bream-monitor-consumer` (example "reject_send_twice") due to 1 previous error

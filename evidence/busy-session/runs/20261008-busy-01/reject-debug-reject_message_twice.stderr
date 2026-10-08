@@ -1,0 +1,21 @@
+   Compiling bream-busy-consumer v0.0.0 (/home/bat/projects/bream/experiments/busy-session/consumer)
+error[E0382]: use of moved value: `message`
+  --> consumer/examples/reject_message_twice.rs:7:36
+   |
+ 2 | #[process_module]
+   | ----------------- `message` moved due to this method call
+...
+ 5 |         let message = receive_any();
+   |             ------- move occurs because `message` has type `Envelope`, which does not implement the `Copy` trait
+ 6 |         let first = message_words(message);
+ 7 |         let second = message_words(message);
+   |                                    ^^^^^^^ value used here after move
+   |
+note: `Envelope::into_words` takes ownership of the receiver `self`, which moves `message`
+  --> runtime/src/mailbox.rs:50:23
+   |
+50 |     pub fn into_words(self) -> OwnedWords {
+   |                       ^^^^
+
+For more information about this error, try `rustc --explain E0382`.
+error: could not compile `bream-busy-consumer` (example "reject_message_twice") due to 2 previous errors

@@ -1,0 +1,8 @@
+   Compiling bream-room-consumer v0.0.0 (/home/bat/projects/bream/experiments/room-process/consumer)
+error: bream structured subset: data attributes/visibility/generics forbidden
+ --> consumer/examples/reject_struct_public_type.rs:4:5
+  |
+4 |     pub struct State {
+  |     ^^^
+
+error: could not compile `bream-room-consumer` (example "reject_struct_public_type") due to 1 previous error

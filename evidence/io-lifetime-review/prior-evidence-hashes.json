@@ -5,11 +5,11 @@
   },
   {
     "path": "evidence/rust-ownership-review/review-validation.json",
-    "sha256": "b1f4f5d6ada3e23db9560dab0cfbe39fedd373ae22b88dbd71c86ea14b9af5e5"
+    "sha256": "89f486509a1cf37c3ccc611dc367ec6655cbf0ff7704d844088f1d2e0284d805"
   },
   {
     "path": "evidence/process-performance-review/review-validation.json",
-    "sha256": "bf461870d544bd6870abc3e4dcd20aa0adade6b087f1fdc6f02876a2e5d98ae8"
+    "sha256": "89f486509a1cf37c3ccc611dc367ec6655cbf0ff7704d844088f1d2e0284d805"
   },
   {
     "path": "evidence/process-interleaving-review/model-results.json",

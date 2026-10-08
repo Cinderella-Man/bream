@@ -1,0 +1,16 @@
+   Compiling bream-timeout-consumer v0.0.0 (/home/bat/projects/bream/experiments/receive-timeout/consumer)
+error[E0603]: struct `State` is private
+ --> consumer/examples/reject_struct_private_type.rs:9:24
+  |
+9 | impl Drop for checked::State {
+  |                        ^^^^^ private struct
+  |
+note: the struct `State` is defined here
+ --> consumer/examples/reject_struct_private_type.rs:2:1
+  |
+2 | #[process_module]
+  | ^^^^^^^^^^^^^^^^^
+  = note: this error originates in the attribute macro `process_module` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+For more information about this error, try `rustc --explain E0603`.
+error: could not compile `bream-timeout-consumer` (example "reject_struct_private_type") due to 1 previous error

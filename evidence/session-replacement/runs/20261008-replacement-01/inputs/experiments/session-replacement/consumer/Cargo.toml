@@ -1,0 +1,10 @@
+[package]
+name = "bream-replacement-consumer"
+version = "0.0.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+bream-replacement-runtime = { path = "../runtime" }
+bream-replacement-macros = { path = "../macros" }
+

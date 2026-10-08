@@ -1,0 +1,1 @@
+{"kind":"identity_controls","passed":true,"allowance":32,"reuse_cycles":128,"kill_races":200,"kill_accepted":94,"kill_too_late":106,"capacity_accepted":4,"capacity_rejected":4,"shutdown_accepted":25,"shutdown_rejected":8,"live_after_shutdown":0,"stale_handles_isolated":true,"cross_runtime_rejected":true}

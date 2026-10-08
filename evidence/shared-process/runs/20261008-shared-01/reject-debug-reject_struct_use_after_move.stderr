@@ -1,0 +1,48 @@
+   Compiling bream-shared-consumer v0.0.0 (/home/bat/projects/bream/experiments/shared-process/consumer)
+error[E0382]: use of moved value: `state`
+  --> consumer/examples/reject_struct_use_after_move.rs:2:1
+   |
+ 2 | #[process_module]
+   | ^^^^^^^^^^^^^^^^^ value used here after move
+...
+12 |         let state = State {
+   |             ----- move occurs because `state` has type `State`, which does not implement the `Copy` trait
+...
+16 |         let moved = consume(state);
+   |                             ----- value moved here
+   |
+note: consider changing this parameter type in function `__bream_helper_consume` to borrow instead if owning the value isn't necessary
+  --> consumer/examples/reject_struct_use_after_move.rs:4:12
+   |
+ 2 | #[process_module]
+   | ----------------- in this function
+ 3 | mod checked {
+ 4 |     struct State {
+   |            ^^^^^ this parameter takes ownership of the value
+note: if `State` implemented `Clone`, you could clone the value
+  --> consumer/examples/reject_struct_use_after_move.rs:2:1
+   |
+ 2 | #[process_module]
+   | ^^^^^^^^^^^^^^^^^ consider implementing `Clone` for this type
+...
+16 |         let moved = consume(state);
+   |                             ----- you could clone this value
+   = note: this error originates in the attribute macro `process_module` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: unused variable: `moved`
+  --> consumer/examples/reject_struct_use_after_move.rs:16:13
+   |
+16 |         let moved = consume(state);
+   |             ^^^^^ help: if this is intentional, prefix it with an underscore: `_moved`
+   |
+   = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `moved`
+  --> consumer/examples/reject_struct_use_after_move.rs:16:13
+   |
+16 |         let moved = consume(state);
+   |             ^^^^^ help: if this is intentional, prefix it with an underscore: `_moved`
+
+For more information about this error, try `rustc --explain E0382`.
+warning: `bream-shared-consumer` (example "reject_struct_use_after_move") generated 2 warnings
+error: could not compile `bream-shared-consumer` (example "reject_struct_use_after_move") due to 2 previous errors; 2 warnings emitted

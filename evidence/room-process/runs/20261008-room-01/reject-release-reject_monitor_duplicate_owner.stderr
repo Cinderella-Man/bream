@@ -1,0 +1,23 @@
+   Compiling bream-room-consumer v0.0.0 (/home/bat/projects/bream/experiments/room-process/consumer)
+error[E0382]: use of moved value: `event`
+  --> consumer/examples/reject_monitor_duplicate_owner.rs:20:17
+   |
+18 |         let event = receive_event();
+   |             ----- move occurs because `event` has type `__bream_runtime::Event`, which does not implement the `Copy` trait
+19 |         consume(event);
+   |                 ----- value moved here
+20 |         consume(event);
+   |                 ^^^^^ value used here after move
+   |
+note: consider changing this parameter type in function `__bream_helper_consume` to borrow instead if owning the value isn't necessary
+  --> consumer/examples/reject_monitor_duplicate_owner.rs:2:1
+   |
+ 2 | #[process_module]
+   | ^^^^^^^^^^^^^^^^^
+   | |
+   | this parameter takes ownership of the value
+   | in this function
+   = note: this error originates in the attribute macro `process_module` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+For more information about this error, try `rustc --explain E0382`.
+error: could not compile `bream-room-consumer` (example "reject_monitor_duplicate_owner") due to 1 previous error

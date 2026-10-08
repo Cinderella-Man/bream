@@ -1,0 +1,8 @@
+   Compiling bream-timeout-consumer v0.0.0 (/home/bat/projects/bream/experiments/receive-timeout/consumer)
+error: bream structured subset: only private synchronous nongeneric checked functions
+ --> consumer/examples/reject_struct_generic.rs:4:5
+  |
+4 |     fn generic<T>(value: T) -> u64 {
+  |     ^^
+
+error: could not compile `bream-timeout-consumer` (example "reject_struct_generic") due to 1 previous error

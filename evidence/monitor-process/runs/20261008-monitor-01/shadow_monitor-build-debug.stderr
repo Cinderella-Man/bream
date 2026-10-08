@@ -1,0 +1,11 @@
+   Compiling bream-monitor-consumer v0.0.0 (/home/bat/projects/bream/experiments/monitor-process/consumer)
+warning: unused variable: `target_id`
+  --> consumer/examples/shadow_monitor.rs:39:13
+   |
+39 |         let target_id = down_target(down);
+   |             ^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_target_id`
+   |
+   = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: `bream-monitor-consumer` (example "shadow_monitor") generated 1 warning (run `cargo fix --example "shadow_monitor" -p bream-monitor-consumer` to apply 1 suggestion)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.51s

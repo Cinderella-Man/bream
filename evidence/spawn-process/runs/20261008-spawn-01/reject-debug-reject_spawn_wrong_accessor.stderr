@@ -1,0 +1,8 @@
+   Compiling bream-spawn-consumer v0.0.0 (/home/bat/projects/bream/experiments/spawn-process/consumer)
+error: bream structured subset: spawn result operation requires concrete Spawned
+ --> consumer/examples/reject_spawn_wrong_accessor.rs:4:31
+  |
+4 |     fn run() { let identity = spawned_pid(self_id()); }
+  |                               ^^^^^^^^^^^
+
+error: could not compile `bream-spawn-consumer` (example "reject_spawn_wrong_accessor") due to 1 previous error

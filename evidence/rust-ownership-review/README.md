@@ -12,12 +12,10 @@ The runner uses the existing lab's Rust 1.98.1 compiler directly and read-only, 
 
 `pinned_borrow_cleanup` uses an explicit `await` to inspect Rust-generated storage, not to propose user-authored yielding for Bream. `forget_cleanup` deliberately leaks a tiny allocation until its isolated executable exits; the observed destructor counter is a language-contract counterexample, not a leak in Bream. Pointer equality in `owned_transfer` establishes only that fixture's retained backing allocation, not a performance result.
 
-`prior-case-ids.json` snapshots the pre-pass 423-case catalogue. Reports 38–41 contain the deeper source review and its applicability. The pass's validation checks links, source ranges, case/task indexes and these recorded artifacts; prior reference and model evidence is preserved separately.
+The historical validation output is superseded after the user-requested removal of speed-test evidence. The read-only validator entry point now delegates to the [performance-reset audit](../performance-reset/README.md), which checks the surviving file inventory, correctness records and documentation links. Hash inventories describe the filtered files; no runtime or benchmark is executed.
 
 Validate current documentation, indexes and recorded probe artifacts without rerunning the probes:
 
 ```sh
 python3 /home/bat/projects/bream/evidence/rust-ownership-review/validate_evidence.py
 ```
-
-[Validation result](review-validation.json) checks recorded evidence consistency. It does not prove Rust runtime soundness or complete BEAM coverage.

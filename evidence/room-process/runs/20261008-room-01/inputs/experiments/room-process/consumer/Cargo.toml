@@ -1,0 +1,10 @@
+[package]
+name = "bream-room-consumer"
+version = "0.0.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+bream-room-runtime = { path = "../runtime" }
+bream-room-macros = { path = "../macros" }
+

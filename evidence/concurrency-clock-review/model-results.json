@@ -70,12 +70,12 @@
   "builder": {
     "max_threads": 2,
     "max_branches": 1000,
+    "location": true,
+    "log": false,
     "max_permutations": null,
     "max_duration": null,
     "preemption_bound": null,
-    "checkpoint_file": null,
-    "location": true,
-    "log": false
+    "checkpoint_file": null
   },
   "inputs": [
     {
@@ -121,7 +121,6 @@
   "models": [
     {
       "name": "publication_release_acquire",
-      "expected_failure_marker": null,
       "command": {
         "argv": [
           "/home/bat/projects/bream/.tools/atomic-protocol-models/release/bream-atomic-protocol-models",
@@ -141,7 +140,8 @@
         }
       },
       "expected_observation": true,
-      "executions_started": 6
+      "executions_started": 6,
+      "expected_failure_marker": null
     },
     {
       "name": "publication_relaxed_store",
@@ -193,7 +193,6 @@
     },
     {
       "name": "final_owner_acquire_fence",
-      "expected_failure_marker": null,
       "command": {
         "argv": [
           "/home/bat/projects/bream/.tools/atomic-protocol-models/release/bream-atomic-protocol-models",
@@ -213,7 +212,8 @@
         }
       },
       "expected_observation": true,
-      "executions_started": 4
+      "executions_started": 4,
+      "expected_failure_marker": null
     },
     {
       "name": "final_owner_no_fence",
@@ -241,7 +241,6 @@
     },
     {
       "name": "parking_locked",
-      "expected_failure_marker": null,
       "command": {
         "argv": [
           "/home/bat/projects/bream/.tools/atomic-protocol-models/release/bream-atomic-protocol-models",
@@ -261,7 +260,8 @@
         }
       },
       "expected_observation": true,
-      "executions_started": 4
+      "executions_started": 4,
+      "expected_failure_marker": null
     },
     {
       "name": "parking_separate_acqrel",

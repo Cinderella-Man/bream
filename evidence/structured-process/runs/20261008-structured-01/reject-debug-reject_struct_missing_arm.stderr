@@ -1,0 +1,24 @@
+   Compiling bream-structured-consumer v0.0.0 (/home/bat/projects/bream/experiments/structured-process/consumer)
+error[E0004]: non-exhaustive patterns: `Action::Second` not covered
+  --> consumer/examples/reject_struct_missing_arm.rs:10:15
+   |
+10 |         match action {
+   |               ^^^^^^ pattern `Action::Second` not covered
+   |
+note: `Action` defined here
+  --> consumer/examples/reject_struct_missing_arm.rs:4:10
+   |
+ 4 |     enum Action {
+   |          ^^^^^^
+ 5 |         First,
+ 6 |         Second,
+   |         ------ not covered
+   = note: the matched value is of type `Action`
+help: ensure that all possible cases are being handled by adding a match arm with a wildcard pattern or an explicit pattern as shown
+   |
+ 2 ~ #[process_module],
+ 3 + Action::Second => todo!()
+   |
+
+For more information about this error, try `rustc --explain E0004`.
+error: could not compile `bream-structured-consumer` (example "reject_struct_missing_arm") due to 1 previous error

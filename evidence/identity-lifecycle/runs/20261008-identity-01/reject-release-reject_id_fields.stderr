@@ -1,0 +1,15 @@
+   Compiling bream-identity-consumer v0.0.0 (/home/bat/projects/bream/experiments/identity-lifecycle/consumer)
+error[E0451]: fields `runtime`, `slot` and `generation` of struct `ProcessId` are private
+ --> consumer/examples/reject_id_fields.rs:4:9
+  |
+3 |     let _ = ProcessId {
+  |             --------- in this type
+4 |         runtime: 1,
+  |         ^^^^^^^ private field
+5 |         slot: 0,
+  |         ^^^^ private field
+6 |         generation: 1,
+  |         ^^^^^^^^^^ private field
+
+For more information about this error, try `rustc --explain E0451`.
+error: could not compile `bream-identity-consumer` (example "reject_id_fields") due to 1 previous error

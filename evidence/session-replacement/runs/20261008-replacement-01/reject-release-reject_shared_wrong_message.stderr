@@ -1,0 +1,8 @@
+   Compiling bream-replacement-consumer v0.0.0 (/home/bat/projects/bream/experiments/session-replacement/consumer)
+error: bream structured subset: shared message operation requires concrete SharedMessage
+ --> consumer/examples/reject_shared_wrong_message.rs:5:16
+  |
+5 |         result(shared_tag(receive_any()));
+  |                ^^^^^^^^^^
+
+error: could not compile `bream-replacement-consumer` (example "reject_shared_wrong_message") due to 1 previous error

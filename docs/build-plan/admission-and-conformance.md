@@ -1,6 +1,6 @@
 # Admission, reference tests and the room fixture
 
-Part of the [Bream build plan](../build-plan.md). All features and cases below are **planned, not implemented or passed**. Earlier mechanism probes are evidence only for their documented closed inputs. Behavior follows the pinned BEAM reference; implementation sketches and unresolved Rust mappings are labelled separately. Case IDs are stable references for future work and test results.
+Part of the [Bream build plan](../build-plan.md). Full feature/case qualification remains **planned**. The [useful-process milestone](../../experiments/process-milestone/README.md) now implements and tests a restricted public buffer/primitive profile; it does not complete these broader cases. Behavior follows the pinned BEAM reference; implementation sketches and unresolved Rust mappings are labelled separately. Case IDs remain stable.
 
 ## REF-01 — Reference contract and case catalogue
 
@@ -28,7 +28,7 @@ Build tasks:
 
 ## LANG-01 — Public process admission boundary
 
-**Purpose:** ordinary safe construction cannot label arbitrary uninstrumented Rust computation as a guaranteed Bream process. Dependencies: LANG-02's proposed surface; REF-01. The current prototype explicitly lacks this public boundary. [Prototype contract](/home/bat/projects/bream/experiments/generated-process/runtime/src/lib.rs:1), [generated-model investigation](../generated-process-model.md).
+**Purpose:** ordinary safe construction cannot label arbitrary uninstrumented Rust computation as a guaranteed Bream process. Dependencies: LANG-02's proposed surface; REF-01. The original probe lacks this boundary; the [new separate-consumer milestone](../../experiments/process-milestone/README.md) now tests an opaque Program and checked buffer/primitive profile. Broader operation/type qualification remains open. [Generated-model investigation](../generated-process-model.md).
 
 Build tasks:
 
@@ -169,4 +169,3 @@ The benchmark output is an operating-range report, not a hard latency, universal
 |---|---|
 | MEASURE-01.C06 | Cold first-use allocation versus warmed state, and disabled versus enabled instrumentation. Separate cohorts, retain compiler/configuration/artifact identity and report observer overhead; do not merge modes into one claimed latency. |
 | MEASURE-01.C07 | Offered rate exceeds service capacity, or the load generator itself stalls. Record offered/completed rates, enqueue delay, response time, horizon and retained backlog; preserve growing-mailbox semantics and expose coordinated omission. |
-

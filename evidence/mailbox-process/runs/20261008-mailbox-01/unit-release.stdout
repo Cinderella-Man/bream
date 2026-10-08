@@ -1,0 +1,26 @@
+
+running 21 tests
+test lifecycle::tests::accepted_kill_after_actual_ready_poll_wins_terminal_claim ... ok
+test lifecycle::tests::accepted_kill_wins_over_uncommitted_ready_or_panic ... ok
+test lifecycle::tests::accepted_spawn_precedes_shutdown_marker ... ok
+test lifecycle::tests::allocation_receipt_cannot_retain_a_process_record ... ok
+test lifecycle::tests::committed_completion_or_failure_cannot_be_rewritten ... ok
+test lifecycle::tests::disconnected_enqueue_rolls_back_exact_record_and_input ... ok
+test lifecycle::tests::full_registry_rejection_does_not_replace_owner ... ok
+test lifecycle::tests::generation_exhaustion_retires_slot_instead_of_wrapping ... ok
+test lifecycle::tests::kill_of_parked_process_schedules_only_terminal_work ... ok
+test lifecycle::tests::lookup_validates_namespace_slot_and_generation ... ok
+test lifecycle::tests::lookup_before_close_cannot_publish_into_retired_mailbox ... ok
+test lifecycle::tests::namespace_exhaustion_never_reuses_a_number ... ok
+test lifecycle::tests::prepared_before_shutdown_but_published_after_is_rejected ... ok
+test lifecycle::tests::selective_scan_spends_budget_and_preserves_prefix_without_rescan ... ok
+test lifecycle::tests::rejected_scan_transfers_existing_nodes_without_rebuilding_prefix ... ok
+test lifecycle::tests::send_after_park_and_repeated_wakes_keep_single_execution_owner ... ok
+test lifecycle::tests::send_before_park_commit_forces_requeue_even_if_wake_was_consumed ... ok
+test lifecycle::tests::slot_reuse_between_stop_and_old_cleanup ... ok
+test lifecycle::tests::stale_wake_after_reuse_cannot_unpark_replacement ... ok
+test lifecycle::tests::stop_detaches_saved_and_incoming_then_cleanup_is_batched ... ok
+test lifecycle::tests::unmatched_arrival_does_not_rescan_saved_messages ... ok
+
+test result: ok. 21 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

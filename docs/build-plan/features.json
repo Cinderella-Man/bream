@@ -16,7 +16,7 @@
     "note": "Initial catalogue before deeper process-runtime expansion; preserved IDs remain valid."
   },
   "feature_count": 40,
-  "case_count": 500,
+  "case_count": 537,
   "features": [
     {
       "id": "REF-01",
@@ -338,7 +338,7 @@
         "G7"
       ],
       "detail_document": "docs/build-plan/execution-and-resources.md",
-      "case_count": 21,
+      "case_count": 28,
       "case_ids": [
         "EXEC-07.C01",
         "EXEC-07.C02",
@@ -360,7 +360,14 @@
         "EXEC-07.C18",
         "EXEC-07.C19",
         "EXEC-07.C20",
-        "EXEC-07.C21"
+        "EXEC-07.C21",
+        "EXEC-07.C22",
+        "EXEC-07.C23",
+        "EXEC-07.C24",
+        "EXEC-07.C25",
+        "EXEC-07.C26",
+        "EXEC-07.C27",
+        "EXEC-07.C28"
       ]
     },
     {
@@ -491,7 +498,7 @@
         "G4"
       ],
       "detail_document": "docs/build-plan/lifecycle.md",
-      "case_count": 20,
+      "case_count": 21,
       "case_ids": [
         "LIFE-05.C01",
         "LIFE-05.C02",
@@ -512,7 +519,8 @@
         "LIFE-05.C17",
         "LIFE-05.C18",
         "LIFE-05.C19",
-        "LIFE-05.C20"
+        "LIFE-05.C20",
+        "LIFE-05.C21"
       ]
     },
     {
@@ -629,7 +637,7 @@
         "G7"
       ],
       "detail_document": "docs/build-plan/process-runtime-expansion.md",
-      "case_count": 22,
+      "case_count": 29,
       "case_ids": [
         "EXEC-08.C01",
         "EXEC-08.C02",
@@ -652,7 +660,14 @@
         "EXEC-08.C19",
         "EXEC-08.C20",
         "EXEC-08.C21",
-        "EXEC-08.C22"
+        "EXEC-08.C22",
+        "EXEC-08.C23",
+        "EXEC-08.C24",
+        "EXEC-08.C25",
+        "EXEC-08.C26",
+        "EXEC-08.C27",
+        "EXEC-08.C28",
+        "EXEC-08.C29"
       ]
     },
     {
@@ -880,7 +895,7 @@
         "G4"
       ],
       "detail_document": "docs/build-plan/process-runtime-expansion.md",
-      "case_count": 8,
+      "case_count": 14,
       "case_ids": [
         "NAME-01.C01",
         "NAME-01.C02",
@@ -889,7 +904,13 @@
         "NAME-01.C05",
         "NAME-01.C06",
         "NAME-01.C07",
-        "NAME-01.C08"
+        "NAME-01.C08",
+        "NAME-01.C09",
+        "NAME-01.C10",
+        "NAME-01.C11",
+        "NAME-01.C12",
+        "NAME-01.C13",
+        "NAME-01.C14"
       ]
     },
     {
@@ -1009,12 +1030,21 @@
         "G7"
       ],
       "detail_document": "docs/build-plan/process-runtime-expansion.md",
-      "case_count": 4,
+      "case_count": 13,
       "case_ids": [
         "CODE-01.C01",
         "CODE-01.C02",
         "CODE-01.C03",
-        "CODE-01.C04"
+        "CODE-01.C04",
+        "CODE-01.C05",
+        "CODE-01.C06",
+        "CODE-01.C07",
+        "CODE-01.C08",
+        "CODE-01.C09",
+        "CODE-01.C10",
+        "CODE-01.C11",
+        "CODE-01.C12",
+        "CODE-01.C13"
       ]
     },
     {
@@ -1046,14 +1076,21 @@
         "G2"
       ],
       "detail_document": "docs/build-plan/process-runtime-expansion.md",
-      "case_count": 6,
+      "case_count": 13,
       "case_ids": [
         "RES-01.C01",
         "RES-01.C02",
         "RES-01.C03",
         "RES-01.C04",
         "RES-01.C05",
-        "RES-01.C06"
+        "RES-01.C06",
+        "RES-01.C07",
+        "RES-01.C08",
+        "RES-01.C09",
+        "RES-01.C10",
+        "RES-01.C11",
+        "RES-01.C12",
+        "RES-01.C13"
       ]
     }
   ],
@@ -1072,5 +1109,20 @@
     "docs/research/40-allocator-ownership-and-rust-runtime-storage.md",
     "docs/research/41-rust-guarantees-and-process-admission.md"
   ],
-  "rust_language_observations": "evidence/rust-ownership-review/probe-results.json"
+  "rust_language_observations": "evidence/rust-ownership-review/probe-results.json",
+  "last_research_update": "2026-10-08",
+  "branch_continuation_reports": [
+    "docs/research/50-system-task-dispatch-and-dirty-handoff.md",
+    "docs/research/51-code-literal-retirement-and-rust-lifetimes.md",
+    "docs/research/52-name-resolution-and-typed-routing.md",
+    "docs/research/53-name-routing-reference-and-variance-observations.md"
+  ],
+  "branch_continuation_observations": "evidence/name-routing-review/probe-results.json",
+  "worker_service_reports": [
+    "docs/research/54-worker-sleep-wake-and-controller-boundaries.md",
+    "docs/research/55-port-tasks-async-jobs-and-shutdown.md",
+    "docs/research/56-static-payload-cost-observations.md",
+    "docs/research/57-worker-notification-models-and-load-observations.md"
+  ],
+  "worker_service_evidence": "evidence/worker-service-review/review-validation.json"
 }

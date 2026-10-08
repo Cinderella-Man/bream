@@ -62,8 +62,8 @@
   {
     "name": "no_drop_callback",
     "kind": "compile",
-    "expected": null,
-    "source": "fixtures/no_drop_callback.rs"
+    "source": "fixtures/no_drop_callback.rs",
+    "expected": null
   },
   {
     "name": "pinned_borrow_cleanup",

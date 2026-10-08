@@ -1,0 +1,8 @@
+   Compiling bream-room-consumer v0.0.0 (/home/bat/projects/bream/experiments/room-process/consumer)
+error: bream structured subset: unsupported expression or unqualified execution
+ --> consumer/examples/reject_monitor_predicate.rs:5:33
+  |
+5 |         let down = receive_down(|value| value == 1);
+  |                                 ^
+
+error: could not compile `bream-room-consumer` (example "reject_monitor_predicate") due to 1 previous error

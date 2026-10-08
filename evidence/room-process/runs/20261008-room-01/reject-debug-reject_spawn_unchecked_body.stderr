@@ -1,0 +1,8 @@
+   Compiling bream-room-consumer v0.0.0 (/home/bat/projects/bream/experiments/room-process/consumer)
+error: bream structured subset: unknown/unqualified helper
+ --> consumer/examples/reject_spawn_unchecked_body.rs:4:18
+  |
+4 |     fn child() { external_work(); } fn run() { spawn_monitor(child, owned_input(), 0, 0); }
+  |                  ^^^^^^^^^^^^^
+
+error: could not compile `bream-room-consumer` (example "reject_spawn_unchecked_body") due to 1 previous error

@@ -1,0 +1,8 @@
+   Compiling bream-busy-consumer v0.0.0 (/home/bat/projects/bream/experiments/busy-session/consumer)
+error: bream structured subset: unknown enum variant
+ --> consumer/examples/reject_shared_new.rs:5:21
+  |
+5 |         let bytes = SharedBytes::new(owned_input());
+  |                     ^^^^^^^^^^^
+
+error: could not compile `bream-busy-consumer` (example "reject_shared_new") due to 1 previous error

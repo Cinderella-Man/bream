@@ -1,0 +1,490 @@
+{
+  "date": "2026-10-08",
+  "source_commit": "ad05823719d77c8faee87348ea39513d4e2f99c5",
+  "build_tracked_clean": true,
+  "platform": "Linux-7.0.0-34-generic-x86_64-with-glibc2.43",
+  "environment_overrides": {
+    "ERL_FLAGS": "",
+    "ERL_AFLAGS": "",
+    "ERL_ZFLAGS": "",
+    "ERL_COMPILER_OPTIONS": ""
+  },
+  "scope": "Eight targeted local BEAM families in three VM profiles and Rust variance controls in two optimization profiles; not exhaustive concurrency, Bream conformance or speed measurements.",
+  "commands": [
+    {
+      "name": "compile",
+      "argv": [
+        "/home/bat/projects/bream/upstream/otp-reference-build/bin/erlc",
+        "+debug_info",
+        "-o",
+        "/home/bat/projects/bream/evidence/name-routing-review/runs/jit-1",
+        "/home/bat/projects/bream/evidence/name-routing-review/name_routing_probe.erl"
+      ],
+      "cwd": "/home/bat/projects/bream",
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 45,
+      "stdout": {
+        "path": "evidence/name-routing-review/runs/jit-1/compile.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "evidence/name-routing-review/runs/jit-1/compile.stderr",
+        "sha256": "f69bfbce7486f8b12f7a790372b30082df98caad90cc99d3aa5f44f9e10878e3"
+      }
+    },
+    {
+      "name": "reference",
+      "argv": [
+        "/home/bat/projects/bream/upstream/otp-reference-build/bin/erl",
+        "+S",
+        "1:1",
+        "+SDcpu",
+        "1",
+        "+SDio",
+        "1",
+        "-noshell",
+        "-pa",
+        "/home/bat/projects/bream/evidence/name-routing-review/runs/jit-1",
+        "-s",
+        "name_routing_probe",
+        "run"
+      ],
+      "cwd": "/home/bat/projects/bream",
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 45,
+      "stdout": {
+        "path": "evidence/name-routing-review/runs/jit-1/reference.stdout",
+        "sha256": "af1f2df5320ee261311e0900306ee12702d8c07a8fd2bfad2c9ef03a1c2494b3"
+      },
+      "stderr": {
+        "path": "evidence/name-routing-review/runs/jit-1/reference.stderr",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "compile",
+      "argv": [
+        "/home/bat/projects/bream/upstream/otp-reference-build/bin/erlc",
+        "+debug_info",
+        "-o",
+        "/home/bat/projects/bream/evidence/name-routing-review/runs/jit-4",
+        "/home/bat/projects/bream/evidence/name-routing-review/name_routing_probe.erl"
+      ],
+      "cwd": "/home/bat/projects/bream",
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 45,
+      "stdout": {
+        "path": "evidence/name-routing-review/runs/jit-4/compile.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "evidence/name-routing-review/runs/jit-4/compile.stderr",
+        "sha256": "f69bfbce7486f8b12f7a790372b30082df98caad90cc99d3aa5f44f9e10878e3"
+      }
+    },
+    {
+      "name": "reference",
+      "argv": [
+        "/home/bat/projects/bream/upstream/otp-reference-build/bin/erl",
+        "+S",
+        "4:4",
+        "+SDcpu",
+        "1",
+        "+SDio",
+        "1",
+        "-noshell",
+        "-pa",
+        "/home/bat/projects/bream/evidence/name-routing-review/runs/jit-4",
+        "-s",
+        "name_routing_probe",
+        "run"
+      ],
+      "cwd": "/home/bat/projects/bream",
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 45,
+      "stdout": {
+        "path": "evidence/name-routing-review/runs/jit-4/reference.stdout",
+        "sha256": "d9ccc2d857a93d1cd2b54f34a9c8e9bc1efad6cfee1e0a0364b935ab176005a8"
+      },
+      "stderr": {
+        "path": "evidence/name-routing-review/runs/jit-4/reference.stderr",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "compile",
+      "argv": [
+        "/home/bat/projects/bream/upstream/otp-reference-build/bin/erlc",
+        "+debug_info",
+        "-o",
+        "/home/bat/projects/bream/evidence/name-routing-review/runs/debug-emu-4",
+        "/home/bat/projects/bream/evidence/name-routing-review/name_routing_probe.erl"
+      ],
+      "cwd": "/home/bat/projects/bream",
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 45,
+      "stdout": {
+        "path": "evidence/name-routing-review/runs/debug-emu-4/compile.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "evidence/name-routing-review/runs/debug-emu-4/compile.stderr",
+        "sha256": "f69bfbce7486f8b12f7a790372b30082df98caad90cc99d3aa5f44f9e10878e3"
+      }
+    },
+    {
+      "name": "reference",
+      "argv": [
+        "/home/bat/projects/bream/upstream/otp-reference-build/bin/erl",
+        "-emu_type",
+        "debug",
+        "-emu_flavor",
+        "emu",
+        "+S",
+        "4:4",
+        "+SDcpu",
+        "1",
+        "+SDio",
+        "1",
+        "-noshell",
+        "-pa",
+        "/home/bat/projects/bream/evidence/name-routing-review/runs/debug-emu-4",
+        "-s",
+        "name_routing_probe",
+        "run"
+      ],
+      "cwd": "/home/bat/projects/bream",
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 45,
+      "stdout": {
+        "path": "evidence/name-routing-review/runs/debug-emu-4/reference.stdout",
+        "sha256": "d9ccc2d857a93d1cd2b54f34a9c8e9bc1efad6cfee1e0a0364b935ab176005a8"
+      },
+      "stderr": {
+        "path": "evidence/name-routing-review/runs/debug-emu-4/reference.stderr",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "rustc-version",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/rustc",
+        "--version",
+        "--verbose"
+      ],
+      "cwd": "/home/bat/projects/bream",
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 45,
+      "stdout": {
+        "path": "evidence/name-routing-review/runs/rustc-version.stdout",
+        "sha256": "778fbc643a806f0dd123c056e66201d7e8a56a61928ec0a33171be8d6c2d5a37"
+      },
+      "stderr": {
+        "path": "evidence/name-routing-review/runs/rustc-version.stderr",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "variance-compile",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/rustc",
+        "--edition=2021",
+        "-C",
+        "opt-level=0",
+        "/home/bat/projects/bream/evidence/name-routing-review/variance_probe.rs",
+        "-o",
+        "/home/bat/projects/bream/.tools/name-routing-review/variance-opt-0"
+      ],
+      "cwd": "/home/bat/projects/bream",
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 45,
+      "stdout": {
+        "path": "evidence/name-routing-review/runs/rust-opt-0/variance-compile.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "evidence/name-routing-review/runs/rust-opt-0/variance-compile.stderr",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "variance-execute",
+      "argv": [
+        "/home/bat/projects/bream/.tools/name-routing-review/variance-opt-0"
+      ],
+      "cwd": "/home/bat/projects/bream",
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 45,
+      "stdout": {
+        "path": "evidence/name-routing-review/runs/rust-opt-0/variance-execute.stdout",
+        "sha256": "e5e46c59c78255f6750ed6fe179fe82e2ba01cd204f2ac4be5389f24c57a5c38"
+      },
+      "stderr": {
+        "path": "evidence/name-routing-review/runs/rust-opt-0/variance-execute.stderr",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "invariant-reject",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/rustc",
+        "--edition=2021",
+        "-C",
+        "opt-level=0",
+        "/home/bat/projects/bream/evidence/name-routing-review/invariant_reject.rs",
+        "-o",
+        "/home/bat/projects/bream/.tools/name-routing-review/rejected-0"
+      ],
+      "cwd": "/home/bat/projects/bream",
+      "exit_code": 1,
+      "timed_out": false,
+      "watchdog_seconds": 45,
+      "stdout": {
+        "path": "evidence/name-routing-review/runs/rust-opt-0/invariant-reject.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "evidence/name-routing-review/runs/rust-opt-0/invariant-reject.stderr",
+        "sha256": "54a984184904707d42f63c288220ace5489ee8a8207f180adc84a3eeeb7c0dd6"
+      }
+    },
+    {
+      "name": "variance-compile",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/rustc",
+        "--edition=2021",
+        "-C",
+        "opt-level=3",
+        "/home/bat/projects/bream/evidence/name-routing-review/variance_probe.rs",
+        "-o",
+        "/home/bat/projects/bream/.tools/name-routing-review/variance-opt-3"
+      ],
+      "cwd": "/home/bat/projects/bream",
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 45,
+      "stdout": {
+        "path": "evidence/name-routing-review/runs/rust-opt-3/variance-compile.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "evidence/name-routing-review/runs/rust-opt-3/variance-compile.stderr",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "variance-execute",
+      "argv": [
+        "/home/bat/projects/bream/.tools/name-routing-review/variance-opt-3"
+      ],
+      "cwd": "/home/bat/projects/bream",
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 45,
+      "stdout": {
+        "path": "evidence/name-routing-review/runs/rust-opt-3/variance-execute.stdout",
+        "sha256": "e5e46c59c78255f6750ed6fe179fe82e2ba01cd204f2ac4be5389f24c57a5c38"
+      },
+      "stderr": {
+        "path": "evidence/name-routing-review/runs/rust-opt-3/variance-execute.stderr",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "invariant-reject",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/rustc",
+        "--edition=2021",
+        "-C",
+        "opt-level=3",
+        "/home/bat/projects/bream/evidence/name-routing-review/invariant_reject.rs",
+        "-o",
+        "/home/bat/projects/bream/.tools/name-routing-review/rejected-3"
+      ],
+      "cwd": "/home/bat/projects/bream",
+      "exit_code": 1,
+      "timed_out": false,
+      "watchdog_seconds": 45,
+      "stdout": {
+        "path": "evidence/name-routing-review/runs/rust-opt-3/invariant-reject.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "evidence/name-routing-review/runs/rust-opt-3/invariant-reject.stderr",
+        "sha256": "54a984184904707d42f63c288220ace5489ee8a8207f180adc84a3eeeb7c0dd6"
+      }
+    }
+  ],
+  "results": [
+    {
+      "kind": "pinned_beam",
+      "profile": "jit-1",
+      "expected_families": [
+        "cached_vs_dynamic",
+        "named_monitor_incarnation",
+        "missing_named_monitor",
+        "missing_address_forms",
+        "detached_name_snapshot",
+        "timer_late_binding",
+        "competing_names",
+        "competing_targets"
+      ],
+      "observed_families": [
+        "cached_vs_dynamic",
+        "named_monitor_incarnation",
+        "missing_named_monitor",
+        "missing_address_forms",
+        "detached_name_snapshot",
+        "timer_late_binding",
+        "competing_names",
+        "competing_targets"
+      ],
+      "race_rounds": 100,
+      "expected_observation": true
+    },
+    {
+      "kind": "pinned_beam",
+      "profile": "jit-4",
+      "expected_families": [
+        "cached_vs_dynamic",
+        "named_monitor_incarnation",
+        "missing_named_monitor",
+        "missing_address_forms",
+        "detached_name_snapshot",
+        "timer_late_binding",
+        "competing_names",
+        "competing_targets"
+      ],
+      "observed_families": [
+        "cached_vs_dynamic",
+        "named_monitor_incarnation",
+        "missing_named_monitor",
+        "missing_address_forms",
+        "detached_name_snapshot",
+        "timer_late_binding",
+        "competing_names",
+        "competing_targets"
+      ],
+      "race_rounds": 100,
+      "expected_observation": true
+    },
+    {
+      "kind": "pinned_beam",
+      "profile": "debug-emu-4",
+      "expected_families": [
+        "cached_vs_dynamic",
+        "named_monitor_incarnation",
+        "missing_named_monitor",
+        "missing_address_forms",
+        "detached_name_snapshot",
+        "timer_late_binding",
+        "competing_names",
+        "competing_targets"
+      ],
+      "observed_families": [
+        "cached_vs_dynamic",
+        "named_monitor_incarnation",
+        "missing_named_monitor",
+        "missing_address_forms",
+        "detached_name_snapshot",
+        "timer_late_binding",
+        "competing_names",
+        "competing_targets"
+      ],
+      "race_rounds": 100,
+      "expected_observation": true
+    },
+    {
+      "kind": "rust_covariance_counterexample",
+      "opt_level": "0",
+      "expected_observation": true
+    },
+    {
+      "kind": "rust_invariance_compile_rejection",
+      "opt_level": "0",
+      "expected_observation": true
+    },
+    {
+      "kind": "rust_covariance_counterexample",
+      "opt_level": "3",
+      "expected_observation": true
+    },
+    {
+      "kind": "rust_invariance_compile_rejection",
+      "opt_level": "3",
+      "expected_observation": true
+    }
+  ],
+  "all_expected_observations": true,
+  "inputs": [
+    {
+      "path": "evidence/name-routing-review/name_routing_probe.erl",
+      "sha256": "4715145ca268f3d67b020be4836c1772b437c12bb0e4f3cf65ff2c432d5df599"
+    },
+    {
+      "path": "evidence/name-routing-review/variance_probe.rs",
+      "sha256": "f0d9d381717041f3ba5a5bedcf6e0c01824bc0a2ee7c622dfe2479de711e89ca"
+    },
+    {
+      "path": "evidence/name-routing-review/invariant_reject.rs",
+      "sha256": "8c7a8c002e0c67b9985150c6e6984af22358d640c0344f44e2a28d3993e7df72"
+    },
+    {
+      "path": "evidence/name-routing-review/run_probes.py",
+      "sha256": "e923240eb4f731b73a1a17852356272953cb05f287dbb4e966db07d86e6c3516"
+    }
+  ],
+  "tools": [
+    {
+      "path": "upstream/otp-reference-build/bin/x86_64-pc-linux-gnu/beam.jit",
+      "sha256": "36b57fc442e2829f217403d2f2859dd782d28e910d5a96a411d07b5d577150aa"
+    },
+    {
+      "path": "upstream/otp-reference-build/bin/x86_64-pc-linux-gnu/beam.debug.emu",
+      "sha256": "cfb447a49cd279777325512cda0695cf91d2d52834b4e257c85858988b885d48"
+    },
+    {
+      "path": "upstream/otp-reference-build/bin/erl",
+      "sha256": "12c142c54d5605bb29cb9f5015d40fd12cb6c3e199a2c69ecee33946d0d4b2b9"
+    },
+    {
+      "path": "upstream/otp-reference-build/bin/erlc",
+      "sha256": "4f75f3b2aaa9c3b3500b0852462df89dfd9f3244a72d817d616c325130110be0"
+    },
+    {
+      "path": "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/rustc",
+      "sha256": "859254978c0a0402c32f949f6de0d99aee73be8d15f45aac00ae1448aac51e74"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "evidence/name-routing-review/runs/jit-1/name_routing_probe.beam",
+      "sha256": "b947e3108615679201e210f07f6b0cc603bc720ed86788d7caa461aecd0aa5ff"
+    },
+    {
+      "path": "evidence/name-routing-review/runs/jit-4/name_routing_probe.beam",
+      "sha256": "b947e3108615679201e210f07f6b0cc603bc720ed86788d7caa461aecd0aa5ff"
+    },
+    {
+      "path": "evidence/name-routing-review/runs/debug-emu-4/name_routing_probe.beam",
+      "sha256": "b947e3108615679201e210f07f6b0cc603bc720ed86788d7caa461aecd0aa5ff"
+    },
+    {
+      "path": ".tools/name-routing-review/variance-opt-0",
+      "sha256": "62be98a73b2966fd1003b71b5eaa355ac99426e6d9dfda59143ba7649474dbd2"
+    },
+    {
+      "path": ".tools/name-routing-review/variance-opt-3",
+      "sha256": "917c1bdfe092cf3d2e620db1ec2b1b37329610b614eb1dd890fdb54053e019ff"
+    }
+  ]
+}

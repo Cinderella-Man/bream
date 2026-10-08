@@ -1,0 +1,9 @@
+   Compiling bream-milestone-consumer v0.0.0 (/home/bat/projects/bream/experiments/process-milestone/consumer)
+error[E0308]: mismatched types
+ --> consumer/examples/reject_drop_input.rs:5:65
+  |
+5 | fn main() { let r = Runtime::new(32); r.spawn(safe_body(), vec![Evil]).unwrap(); }
+  |                                                                 ^^^^ expected `u64`, found `Evil`
+
+For more information about this error, try `rustc --explain E0308`.
+error: could not compile `bream-milestone-consumer` (example "reject_drop_input") due to 1 previous error

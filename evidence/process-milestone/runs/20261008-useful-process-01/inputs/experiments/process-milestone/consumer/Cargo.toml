@@ -1,0 +1,10 @@
+[package]
+name = "bream-milestone-consumer"
+version = "0.0.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+bream-milestone-runtime = { path = "../runtime" }
+bream-milestone-macros = { path = "../macros" }
+

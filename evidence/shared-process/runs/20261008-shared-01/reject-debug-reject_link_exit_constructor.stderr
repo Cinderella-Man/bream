@@ -1,0 +1,8 @@
+   Compiling bream-shared-consumer v0.0.0 (/home/bat/projects/bream/experiments/shared-process/consumer)
+error: bream structured subset: unknown record
+ --> consumer/examples/reject_link_exit_constructor.rs:5:20
+  |
+5 |         let exit = Exit {
+  |                    ^^^^
+
+error: could not compile `bream-shared-consumer` (example "reject_link_exit_constructor") due to 1 previous error

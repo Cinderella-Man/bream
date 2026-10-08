@@ -1,0 +1,11 @@
+   Compiling bream-milestone-consumer v0.0.0 (/home/bat/projects/bream/experiments/process-milestone/consumer)
+error[E0133]: call to unsafe function `Program::__from_generated` is unsafe and requires unsafe function or block
+ --> consumer/examples/reject_safe_constructor.rs:2:21
+  |
+2 | fn main() { let _ = Program::__from_generated(|_| Box::pin(async { loop {} })); }
+  |                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ call to unsafe function
+  |
+  = note: consult the function's documentation for information on how to avoid undefined behavior
+
+For more information about this error, try `rustc --explain E0133`.
+error: could not compile `bream-milestone-consumer` (example "reject_safe_constructor") due to 1 previous error

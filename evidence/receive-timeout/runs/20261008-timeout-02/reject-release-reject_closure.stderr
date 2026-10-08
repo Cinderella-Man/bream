@@ -1,0 +1,8 @@
+   Compiling bream-timeout-consumer v0.0.0 (/home/bat/projects/bream/experiments/receive-timeout/consumer)
+error: bream milestone subset: unsupported expression; arbitrary calls, methods, macros, references, unsafe, closures and custom types are forbidden
+ --> consumer/examples/reject_closure.rs:5:20
+  |
+5 |     let callback = || loop {};
+  |                    ^
+
+error: could not compile `bream-timeout-consumer` (example "reject_closure") due to 1 previous error

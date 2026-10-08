@@ -1,0 +1,8 @@
+   Compiling bream-shared-consumer v0.0.0 (/home/bat/projects/bream/experiments/shared-process/consumer)
+error: bream structured subset: down receive requires a fixed MonitorRef, not a predicate
+ --> consumer/examples/reject_monitor_pid_selector.rs:5:20
+  |
+5 |         let down = receive_down(self_id());
+  |                    ^^^^^^^^^^^^
+
+error: could not compile `bream-shared-consumer` (example "reject_monitor_pid_selector") due to 1 previous error

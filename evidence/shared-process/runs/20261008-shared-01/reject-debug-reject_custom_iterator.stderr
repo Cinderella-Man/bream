@@ -1,0 +1,8 @@
+   Compiling bream-shared-consumer v0.0.0 (/home/bat/projects/bream/experiments/shared-process/consumer)
+error: bream milestone subset: for supports only an exclusive u64 range
+ --> consumer/examples/reject_custom_iterator.rs:4:5
+  |
+4 |     for word in std::iter::repeat(1) {
+  |     ^^^
+
+error: could not compile `bream-shared-consumer` (example "reject_custom_iterator") due to 1 previous error

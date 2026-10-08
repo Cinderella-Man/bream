@@ -1,0 +1,8 @@
+   Compiling bream-replacement-consumer v0.0.0 (/home/bat/projects/bream/experiments/session-replacement/consumer)
+error: bream structured subset: reserved or raw identifier
+ --> consumer/examples/reject_message_builtin_shadow.rs:4:8
+  |
+4 |     fn message_words(value: u64) -> u64 {
+  |        ^^^^^^^^^^^^^
+
+error: could not compile `bream-replacement-consumer` (example "reject_message_builtin_shadow") due to 1 previous error

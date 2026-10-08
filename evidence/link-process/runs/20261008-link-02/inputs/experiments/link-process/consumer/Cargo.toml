@@ -1,0 +1,10 @@
+[package]
+name = "bream-link-consumer"
+version = "0.0.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+bream-link-runtime = { path = "../runtime" }
+bream-link-macros = { path = "../macros" }
+

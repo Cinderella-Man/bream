@@ -1,0 +1,17 @@
+   Compiling bream-structured-consumer v0.0.0 (/home/bat/projects/bream/experiments/structured-process/consumer)
+error: bream milestone subset: items and statement macros are forbidden
+ --> consumer/examples/reject_nested_macro.rs:9:5
+  |
+9 |     hidden!();
+  |     ^^^^^^
+
+warning: unused macro definition: `hidden`
+ --> consumer/examples/reject_nested_macro.rs:2:14
+  |
+2 | macro_rules! hidden {
+  |              ^^^^^^
+  |
+  = note: `#[warn(unused_macros)]` (part of `#[warn(unused)]`) on by default
+
+warning: `bream-structured-consumer` (example "reject_nested_macro") generated 1 warning
+error: could not compile `bream-structured-consumer` (example "reject_nested_macro") due to 1 previous error; 1 warning emitted

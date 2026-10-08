@@ -1,0 +1,8 @@
+   Compiling bream-room-consumer v0.0.0 (/home/bat/projects/bream/experiments/room-process/consumer)
+error: bream structured subset: spawn requires a local child, moved Words, u64 tag and u64 argument
+ --> consumer/examples/reject_spawn_arity.rs:4:30
+  |
+4 |     fn child() {} fn run() { spawn_monitor(child, owned_input(), 0); }
+  |                              ^^^^^^^^^^^^^
+
+error: could not compile `bream-room-consumer` (example "reject_spawn_arity") due to 1 previous error

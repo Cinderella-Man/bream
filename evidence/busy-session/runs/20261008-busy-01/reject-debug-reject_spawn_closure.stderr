@@ -1,0 +1,8 @@
+   Compiling bream-busy-consumer v0.0.0 (/home/bat/projects/bream/experiments/busy-session/consumer)
+error: bream structured subset: spawn child must be a bare checked local function
+ --> consumer/examples/reject_spawn_closure.rs:5:23
+  |
+5 |         spawn_monitor(|| {}, owned_input(), 0, 0);
+  |                       ^
+
+error: could not compile `bream-busy-consumer` (example "reject_spawn_closure") due to 1 previous error

@@ -1,0 +1,8 @@
+   Compiling bream-replacement-consumer v0.0.0 (/home/bat/projects/bream/experiments/session-replacement/consumer)
+error: bream structured subset: field access requires a checked record
+ --> consumer/examples/reject_spawn_result_field.rs:7:24
+  |
+7 |         let identity = created.pid;
+  |                        ^^^^^^^
+
+error: could not compile `bream-replacement-consumer` (example "reject_spawn_result_field") due to 1 previous error

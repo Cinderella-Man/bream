@@ -4,7 +4,7 @@
 
 The user's standing rule applies: look up BEAM first and inherit clear observable behavior. An unanswered technical question is work for this investigation; it is not a reason to ask the user to reinvent a process primitive.
 
-The [build plan](build-plan.md) now assigns this work to 40 feature groups and 500 stable branch cases, including conditional extension/reference work. It includes implementation tasks, dependencies, allowed/forbidden observations and qualification gates. The catalogue documents known branches and open obligations; it does not change the incomplete execution and Rust-mapping status below.
+The [build plan](build-plan.md) now assigns this work to 40 feature groups and 537 stable branch cases, including conditional extension/reference work. It includes implementation tasks, dependencies, allowed/forbidden observations and qualification gates. The catalogue documents known branches and open obligations; it does not change the incomplete execution and Rust-mapping status below.
 
 ## Three different completeness claims
 
@@ -104,6 +104,18 @@ Reports 42–44 add 27 refinements to IO-01 and OBS-01/02, bringing the catalogu
 
 ## Thread progress, process locks and clocks
 
-Reports 46–49 add 26 planned cases: nine coordinator/retirement refinements, eight process-lock ownership branches, eight clock/deadline branches and one weak-memory harness qualification. The current catalogue has 500 cases and 85 planned performance experiments. The source work does not require copying BEAM's five locks, global participant registration or every clock mode into the initial runtime.
+Reports 46–49 add 26 planned cases: nine coordinator/retirement refinements, eight process-lock ownership branches, eight clock/deadline branches and one weak-memory harness qualification. At that stage the catalogue reached 500 cases and 85 planned performance experiments. The source work does not require copying BEAM's five locks, global participant registration or every clock mode into the initial runtime.
 
 [Report49](research/49-rust-atomic-protocol-observations.md) records one release build with locked dependencies and seven isolated Loom invocations. Three positive variants complete, while four weakened controls fail at their expected invariant; no watchdog or exploration limit explains those failures. All modeled payloads are atomic and raw storage retirement is absent. No new BEAM fixture, clock fault injection, native lock-backend run or Bream implementation occurred. [Current validation](../evidence/concurrency-clock-review/review-validation.json) checks documentation and retained artifacts, not full safety or coverage.
+
+## System-task, literal-lifetime and naming coverage update
+
+Reports 50–52 add 23 planned cases: eight system-task/native-return branches, nine code/literal-retirement branches and six registry/typed-routing branches. At that stage the catalogue reached 523 cases and 99 planned performance experiments. The original OTP checkout and 375 historical evidence files remain unchanged.
+
+[Report53](research/53-name-routing-reference-and-variance-observations.md) records eight local VM families in each of three profiles, including 300 total registration race rounds. Four Rust compilation attempts produce two running covariance counterexamples and two expected invariant-conversion rejections. These do not establish all race schedules, typed-registry correctness or general process admission. Task completion and literal-retirement branches remain source/test-read only. The apparent upstream literal fixture pattern mismatch is recorded as a source limitation, not a newly executed defect. [Current validation](../evidence/branch-continuation-review/review-validation.json).
+
+## Worker service, async lifetime and measured Rust alternatives
+
+Reports 54–55 add 14 planned cases, reaching 537; the performance backlog has 107 tasks. No new BEAM execution occurred in this pass. Source/test-read findings distinguish physical wake from dispatch permission, offline service ownership, task abort from native completion, keyed invocation order from callback routing, and VM exit from embedded shutdown.
+
+Reports 56–57 add executed evidence: 567 ownership-loop rows; two completing and two deliberately deadlocking Loom variants; 432 measured queue invocations plus 36 warmups over three retained stages. The final queue study corrects startup/order confounds and records intended-arrival delay, but offers no backend winner. Loom here does not inject spurious wakes or model full repeated enrollment. Static-payload timing includes seven local improvements, three regressions and 26 inconclusive comparisons; Bream admission/kill/tail latency remains unqualified. [Current validation](../evidence/worker-service-review/review-validation.json).

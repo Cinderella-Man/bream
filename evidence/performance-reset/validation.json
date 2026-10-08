@@ -1,0 +1,52 @@
+{
+  "status": "passed",
+  "date": "2026-10-08",
+  "scope": "Read-only audit of post-removal evidence; only this audit output is written.",
+  "benchmarks_executed": false,
+  "runtime_tests_executed": false,
+  "performance_status": "redo_required",
+  "counts": {
+    "hashes_verified": 7188,
+    "evidence_files": 3003,
+    "implementation_inputs": 2548,
+    "subsequent_evidence_files": 7664,
+    "deleted_files_absent": 1504,
+    "json_records_scanned": 139,
+    "raw_json_rows_scanned": 452,
+    "archive_source_files": 149,
+    "documents_checked": 145
+  },
+  "retained_correctness_cohorts": [
+    {
+      "run": "20261008-useful-process-01",
+      "commands": 57,
+      "observations": 50
+    },
+    {
+      "run": "20261008-useful-process-02",
+      "commands": 57,
+      "observations": 50
+    },
+    {
+      "run": "20261008-structured-01",
+      "commands": 133,
+      "observations": 122
+    },
+    {
+      "run": "20261008-identity-01",
+      "commands": 145,
+      "observations": 134
+    },
+    {
+      "run": "20261008-mailbox-01",
+      "commands": 155,
+      "observations": 140
+    },
+    {
+      "run": "20261008-timeout-04",
+      "commands": 183,
+      "observations": 164
+    }
+  ],
+  "errors": []
+}

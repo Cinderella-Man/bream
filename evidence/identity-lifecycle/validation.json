@@ -1,0 +1,8 @@
+{
+  "status": "superseded_by_performance_evidence_removal",
+  "date": "2026-10-08",
+  "previous_validation_status": "passed",
+  "reason": "Timing results were deleted and mixed evidence filtered at user request; old hash/count assertions are superseded.",
+  "current_audit": "evidence/performance-reset/validation.json",
+  "runtime_reexecuted": false
+}

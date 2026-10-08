@@ -1,0 +1,6 @@
+
+thread 'main' (245786) panicked at consumer/src/timeouts.rs:175:5:
+assertion `left == right` failed: nested match formatting changed the checkpoint budget
+  left: (999, 3, 3, 2)
+ right: (999, 2, 2, 2)
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace

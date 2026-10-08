@@ -1,0 +1,8 @@
+   Compiling bream-replacement-consumer v0.0.0 (/home/bat/projects/bream/experiments/session-replacement/consumer)
+error: bream structured subset: unsupported primitive operator/types
+ --> consumer/examples/reject_monitor_ref_arithmetic.rs:5:25
+  |
+5 |         let reference = monitor(self_id()) + 1;
+  |                         ^^^^^^^
+
+error: could not compile `bream-replacement-consumer` (example "reject_monitor_ref_arithmetic") due to 1 previous error

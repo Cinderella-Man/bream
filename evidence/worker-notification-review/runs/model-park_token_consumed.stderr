@@ -1,0 +1,39 @@
+MODEL_EXECUTIONS_STARTED=1
+
+thread 'main' (68981) panicked at /home/bat/projects/bream/.tools/cargo-cache/registry/src/index.crates.io-1949cf8c6b5b557f/loom-0.7.2/src/rt/execution.rs:216:13:
+deadlock; threads = [(Id(0), Blocked(Location(Some(Location { file: "src/model.rs", line: 60, column: 17 })))), (Id(1), Terminated)]
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+MODEL_EXECUTIONS_STARTED=1
+
+thread 'main' (68981) panicked at /home/bat/projects/bream/.tools/cargo-cache/registry/src/index.crates.io-1949cf8c6b5b557f/loom-0.7.2/src/rt/thread.rs:276:39:
+called `Option::unwrap()` on a `None` value
+stack backtrace:
+   0:     0x6549b4e194b1 - <<std[6c98fd8553dbae28]::sys::backtrace::BacktraceLock>::print::DisplayBacktrace as core[c0acaeba6ab4c2e0]::fmt::Display>::fmt
+   1:     0x6549b4e2b5da - core[c0acaeba6ab4c2e0]::fmt::write
+   2:     0x6549b4e1dc9c - <std[6c98fd8553dbae28]::sys::stdio::unix::Stderr as std[6c98fd8553dbae28]::io::Write>::write_fmt
+   3:     0x6549b4e03176 - std[6c98fd8553dbae28]::panicking::default_hook::{closure#0}
+   4:     0x6549b4e146c1 - std[6c98fd8553dbae28]::panicking::default_hook
+   5:     0x6549b4dd6d1b - notification_model[e7aefaff9ab17c59]::main::{closure#0}
+   6:     0x6549b4dea1fa - generator[1548897b74be957a]::detail::gen::catch_unwind_filter::<generator[1548897b74be957a]::detail::gen::gen_init_impl::{closure#0}, ()>::{closure#0}::{closure#0}
+   7:     0x6549b4e14a22 - std[6c98fd8553dbae28]::panicking::panic_with_hook
+   8:     0x6549b4e03254 - std[6c98fd8553dbae28]::panicking::panic_handler::{closure#0}
+   9:     0x6549b4df8069 - std[6c98fd8553dbae28]::sys::backtrace::__rust_end_short_backtrace::<std[6c98fd8553dbae28]::panicking::panic_handler::{closure#0}, !>
+  10:     0x6549b4e03b3d - __rustc[100742bb89c490cb]::rust_begin_unwind
+  11:     0x6549b4e2bd3c - core[c0acaeba6ab4c2e0]::panicking::panic_fmt
+  12:     0x6549b4e2bd02 - core[c0acaeba6ab4c2e0]::panicking::panic
+  13:     0x6549b4e2bab9 - core[c0acaeba6ab4c2e0]::option::unwrap_failed
+  14:     0x6549b4ddac2a - <scoped_tls[f1a40773305dbf06]::ScopedKey<core[c0acaeba6ab4c2e0]::cell::RefCell<loom[38c7d338d8ee555a]::rt::scheduler::State>>>::with::<<loom[38c7d338d8ee555a]::rt::scheduler::Scheduler>::with_state<<loom[38c7d338d8ee555a]::rt::scheduler::Scheduler>::with_execution<loom[38c7d338d8ee555a]::rt::branch<<loom[38c7d338d8ee555a]::rt::object::Ref<loom[38c7d338d8ee555a]::rt::arc::State>>::branch_action<loom[38c7d338d8ee555a]::rt::arc::Action>::{closure#0}, ()>::{closure#0}, ((), bool)>::{closure#0}, ((), bool)>::{closure#0}, ((), bool)>
+  15:     0x6549b4de5bb6 - <loom[38c7d338d8ee555a]::rt::arc::Arc>::ref_dec
+  16:     0x6549b4dd9ffc - <loom[38c7d338d8ee555a]::sync::arc::Arc<(loom[38c7d338d8ee555a]::sync::mutex::Mutex<notification_model[e7aefaff9ab17c59]::State>, loom[38c7d338d8ee555a]::sync::condvar::Condvar)> as core[c0acaeba6ab4c2e0]::ops::drop::Drop>::drop
+  17:     0x6549b4dd69e3 - core[c0acaeba6ab4c2e0]::ptr::drop_glue::<loom[38c7d338d8ee555a]::sync::arc::Arc<(loom[38c7d338d8ee555a]::sync::mutex::Mutex<notification_model[e7aefaff9ab17c59]::State>, loom[38c7d338d8ee555a]::sync::condvar::Condvar)>>
+  18:     0x6549b4dd7a0f - notification_model[e7aefaff9ab17c59]::check
+  19:     0x6549b4dd4f03 - <<loom[38c7d338d8ee555a]::model::Builder>::check<notification_model[e7aefaff9ab17c59]::main::{closure#1}>::{closure#0} as core[c0acaeba6ab4c2e0]::ops::function::FnOnce<()>>::call_once::{shim:vtable#0}
+  20:     0x6549b4de72ee - <generator[1548897b74be957a]::stack::StackBox<<generator[1548897b74be957a]::gen_impl::GeneratorImpl<core[c0acaeba6ab4c2e0]::option::Option<alloc[12e961f32105355]::boxed::Box<dyn core[c0acaeba6ab4c2e0]::ops::function::FnOnce<(), Output = ()>>>, ()>>::init_code<loom[38c7d338d8ee555a]::rt::scheduler::spawn_thread::{closure#0}>::{closure#0}>>::call_once
+  21:     0x6549b4dea786 - generator[1548897b74be957a]::detail::gen::gen_init_impl
+  22:     0x6549b4dea729 - generator[1548897b74be957a]::detail::asm::gen_init
+  23:                0x0 - <unknown>
+MODEL_EXECUTIONS_STARTED=1
+
+thread 'main' (68981) panicked at /rustc/48a229ceaefd4985c50990b14116b6d856af0985/library/core/src/panicking.rs:233:5:
+panic in a destructor during cleanup
+thread caused non-unwinding panic. aborting.

@@ -1,0 +1,8 @@
+   Compiling bream-replacement-consumer v0.0.0 (/home/bat/projects/bream/experiments/session-replacement/consumer)
+error: bream structured subset: only private checked structs/enums/functions; no impl/import/alias/macro
+ --> consumer/examples/reject_struct_import.rs:4:5
+  |
+4 |     use std::thread;
+  |     ^^^
+
+error: could not compile `bream-replacement-consumer` (example "reject_struct_import") due to 1 previous error

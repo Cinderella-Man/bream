@@ -1,0 +1,23 @@
+   Compiling bream-spawn-consumer v0.0.0 (/home/bat/projects/bream/experiments/spawn-process/consumer)
+error[E0382]: use of moved value: `words`
+ --> consumer/examples/reject_struct_duplicate_owner.rs:9:28
+  |
+8 |         let words = owned_input();
+  |             ----- move occurs because `words` has type `OwnedWords`, which does not implement the `Copy` trait
+9 |         result(both(words, words));
+  |                     -----  ^^^^^ value used here after move
+  |                     |
+  |                     value moved here
+  |
+note: consider changing this parameter type in function `__bream_helper_both` to borrow instead if owning the value isn't necessary
+ --> consumer/examples/reject_struct_duplicate_owner.rs:2:1
+  |
+2 | #[process_module]
+  | ^^^^^^^^^^^^^^^^^
+  | |
+  | this parameter takes ownership of the value
+  | in this function
+  = note: this error originates in the attribute macro `process_module` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+For more information about this error, try `rustc --explain E0382`.
+error: could not compile `bream-spawn-consumer` (example "reject_struct_duplicate_owner") due to 1 previous error

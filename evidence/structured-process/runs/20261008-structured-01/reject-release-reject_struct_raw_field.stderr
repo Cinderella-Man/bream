@@ -1,0 +1,8 @@
+   Compiling bream-structured-consumer v0.0.0 (/home/bat/projects/bream/experiments/structured-process/consumer)
+error: bream structured subset: reserved or raw identifier
+ --> consumer/examples/reject_struct_raw_field.rs:5:9
+  |
+5 |         r#__bream_context: u64,
+  |         ^^^^^^^^^^^^^^^^^
+
+error: could not compile `bream-structured-consumer` (example "reject_struct_raw_field") due to 1 previous error

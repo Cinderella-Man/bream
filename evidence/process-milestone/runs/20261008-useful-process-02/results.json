@@ -1,0 +1,2096 @@
+{
+  "status": "passed",
+  "errors": [],
+  "protocol": {
+    "path": "evidence/process-milestone/runs/20261008-useful-process-02/protocol.json",
+    "sha256": "3c3cce4f9167100dac6cb15e8a5e3e1201bf504407ce9846e0fea0c2143c7452"
+  },
+  "inputs": [
+    {
+      "original_path": "experiments/process-milestone/Cargo.lock",
+      "path": "evidence/process-milestone/runs/20261008-useful-process-02/inputs/experiments/process-milestone/Cargo.lock",
+      "sha256": "2c8c37e093a21dbf2efa2fe6bf3be1b0b7886867b9cb85e78d499d59b863411f"
+    },
+    {
+      "original_path": "experiments/process-milestone/Cargo.toml",
+      "path": "evidence/process-milestone/runs/20261008-useful-process-02/inputs/experiments/process-milestone/Cargo.toml",
+      "sha256": "3ef7f940bcad0ab49e8984b409a58f99319026aca593fe46e4ed0968f9877a51"
+    },
+    {
+      "original_path": "experiments/process-milestone/consumer/Cargo.toml",
+      "path": "evidence/process-milestone/runs/20261008-useful-process-02/inputs/experiments/process-milestone/consumer/Cargo.toml",
+      "sha256": "67a6764a50afc0163753d65f874535384c982514494a6136f8a29ddd4df6e3c4"
+    },
+    {
+      "original_path": "experiments/process-milestone/consumer/examples/reject_buffer_move.rs",
+      "path": "evidence/process-milestone/runs/20261008-useful-process-02/inputs/experiments/process-milestone/consumer/examples/reject_buffer_move.rs",
+      "sha256": "f7c83c42a6d4d8b87335864d89e102bb468444735ced3dbd3fdd282a35147d53"
+    },
+    {
+      "original_path": "experiments/process-milestone/consumer/examples/reject_buffer_rebind.rs",
+      "path": "evidence/process-milestone/runs/20261008-useful-process-02/inputs/experiments/process-milestone/consumer/examples/reject_buffer_rebind.rs",
+      "sha256": "1edab45e2aa5746047da5ad4d4f7c5bd62e6ba8c77303c62397a0ed02897326d"
+    },
+    {
+      "original_path": "experiments/process-milestone/consumer/examples/reject_closure.rs",
+      "path": "evidence/process-milestone/runs/20261008-useful-process-02/inputs/experiments/process-milestone/consumer/examples/reject_closure.rs",
+      "sha256": "6fd1b036e06762a22fc3cfd6ea63cdba0f607e01113cc53d144a43019fef80fd"
+    },
+    {
+      "original_path": "experiments/process-milestone/consumer/examples/reject_closure_spawn.rs",
+      "path": "evidence/process-milestone/runs/20261008-useful-process-02/inputs/experiments/process-milestone/consumer/examples/reject_closure_spawn.rs",
+      "sha256": "e454692170bcc0bf691248403586e813e86e2efe307011ba03d980ed609f0bf9"
+    },
+    {
+      "original_path": "experiments/process-milestone/consumer/examples/reject_custom_call.rs",
+      "path": "evidence/process-milestone/runs/20261008-useful-process-02/inputs/experiments/process-milestone/consumer/examples/reject_custom_call.rs",
+      "sha256": "028f6e52af21c250963b36a50cd768ec4593988b3525b99e43fc2ad09c1dacdf"
+    },
+    {
+      "original_path": "experiments/process-milestone/consumer/examples/reject_custom_drop.rs",
+      "path": "evidence/process-milestone/runs/20261008-useful-process-02/inputs/experiments/process-milestone/consumer/examples/reject_custom_drop.rs",
+      "sha256": "09ce78d37327b71dc52dbb830156a4e0040675fcbf136ee4f02383042c3ad169"
+    },
+    {
+      "original_path": "experiments/process-milestone/consumer/examples/reject_custom_iterator.rs",
+      "path": "evidence/process-milestone/runs/20261008-useful-process-02/inputs/experiments/process-milestone/consumer/examples/reject_custom_iterator.rs",
+      "sha256": "6d74a77bac023fc7100e9925ecfa6b518d304f64fea0ac23dab67ca78657ab62"
+    },
+    {
+      "original_path": "experiments/process-milestone/consumer/examples/reject_custom_type.rs",
+      "path": "evidence/process-milestone/runs/20261008-useful-process-02/inputs/experiments/process-milestone/consumer/examples/reject_custom_type.rs",
+      "sha256": "f81f6a4d17ef014acffa62ac3c50bd3ddeb2c6c81afd408dc12021729726d592"
+    },
+    {
+      "original_path": "experiments/process-milestone/consumer/examples/reject_drop_input.rs",
+      "path": "evidence/process-milestone/runs/20261008-useful-process-02/inputs/experiments/process-milestone/consumer/examples/reject_drop_input.rs",
+      "sha256": "26ecdda71d13cce44919850a35225747be550f89290eb87fd3217e0df35df30d"
+    },
+    {
+      "original_path": "experiments/process-milestone/consumer/examples/reject_external_method.rs",
+      "path": "evidence/process-milestone/runs/20261008-useful-process-02/inputs/experiments/process-milestone/consumer/examples/reject_external_method.rs",
+      "sha256": "e9d17aa6efca2dc33e1737bb09a32b933ec1ae8ff0a629ff18c8d7698d2daa0f"
+    },
+    {
+      "original_path": "experiments/process-milestone/consumer/examples/reject_future.rs",
+      "path": "evidence/process-milestone/runs/20261008-useful-process-02/inputs/experiments/process-milestone/consumer/examples/reject_future.rs",
+      "sha256": "0d6e195957183777e5e07647f5acffbd0529a8896f01f039b251f62bc9c52aa3"
+    },
+    {
+      "original_path": "experiments/process-milestone/consumer/examples/reject_global_read.rs",
+      "path": "evidence/process-milestone/runs/20261008-useful-process-02/inputs/experiments/process-milestone/consumer/examples/reject_global_read.rs",
+      "sha256": "730e8020d6848714b797823ea7cdb0a7545621761df7ceb70ce1b3d61172f598"
+    },
+    {
+      "original_path": "experiments/process-milestone/consumer/examples/reject_inner_attribute.rs",
+      "path": "evidence/process-milestone/runs/20261008-useful-process-02/inputs/experiments/process-milestone/consumer/examples/reject_inner_attribute.rs",
+      "sha256": "d8aa1787ff83a245c2e213afe9f5db8d2a0d167e776b5574e3d74063d1038843"
+    },
+    {
+      "original_path": "experiments/process-milestone/consumer/examples/reject_macro.rs",
+      "path": "evidence/process-milestone/runs/20261008-useful-process-02/inputs/experiments/process-milestone/consumer/examples/reject_macro.rs",
+      "sha256": "acbf78f5f1ffb96ccfdbc868661617c4e9e8edb7b5ba63d63f171a66339c0e9b"
+    },
+    {
+      "original_path": "experiments/process-milestone/consumer/examples/reject_manual_await.rs",
+      "path": "evidence/process-milestone/runs/20261008-useful-process-02/inputs/experiments/process-milestone/consumer/examples/reject_manual_await.rs",
+      "sha256": "e65af1c068b18f242c3656c17e87f348f46645dab0dec3173e8d680aa124b7b2"
+    },
+    {
+      "original_path": "experiments/process-milestone/consumer/examples/reject_nested_macro.rs",
+      "path": "evidence/process-milestone/runs/20261008-useful-process-02/inputs/experiments/process-milestone/consumer/examples/reject_nested_macro.rs",
+      "sha256": "e1f90528e65f3d0fd1ea5a6fe87b3673375fa5a3e9712573c329a48e2bc17409"
+    },
+    {
+      "original_path": "experiments/process-milestone/consumer/examples/reject_program_fields.rs",
+      "path": "evidence/process-milestone/runs/20261008-useful-process-02/inputs/experiments/process-milestone/consumer/examples/reject_program_fields.rs",
+      "sha256": "b90bbc38c944116a7e3f09c7afe7f253ae35ffc753a3b5bb8bd8f3eca80fca15"
+    },
+    {
+      "original_path": "experiments/process-milestone/consumer/examples/reject_raw_identifier.rs",
+      "path": "evidence/process-milestone/runs/20261008-useful-process-02/inputs/experiments/process-milestone/consumer/examples/reject_raw_identifier.rs",
+      "sha256": "0126185f95ef31b63bee326ad2cd2bd289c8c8f034e82ad881fa8de24ccaf291"
+    },
+    {
+      "original_path": "experiments/process-milestone/consumer/examples/reject_reserved_name.rs",
+      "path": "evidence/process-milestone/runs/20261008-useful-process-02/inputs/experiments/process-milestone/consumer/examples/reject_reserved_name.rs",
+      "sha256": "5ca2d76e0d98be8eb3d22335ac71375eb5f896f71a8abfc61ef55ac9da94330f"
+    },
+    {
+      "original_path": "experiments/process-milestone/consumer/examples/reject_safe_constructor.rs",
+      "path": "evidence/process-milestone/runs/20261008-useful-process-02/inputs/experiments/process-milestone/consumer/examples/reject_safe_constructor.rs",
+      "sha256": "9c1bdabc67c66d3c6fa244cc5b44881579273291318eca9ed2d23d7aa2f49e62"
+    },
+    {
+      "original_path": "experiments/process-milestone/consumer/examples/reject_scalar_read.rs",
+      "path": "evidence/process-milestone/runs/20261008-useful-process-02/inputs/experiments/process-milestone/consumer/examples/reject_scalar_read.rs",
+      "sha256": "db15216d2700d45aff6b5c37ff7c5ea246972141cbeb9dbe5d994f0c85fba803"
+    },
+    {
+      "original_path": "experiments/process-milestone/consumer/examples/reject_unsafe.rs",
+      "path": "evidence/process-milestone/runs/20261008-useful-process-02/inputs/experiments/process-milestone/consumer/examples/reject_unsafe.rs",
+      "sha256": "81789c13fe4428a176428bdb4d37d416d3fc0d056cb54ba4ae34a9ee89c38687"
+    },
+    {
+      "original_path": "experiments/process-milestone/consumer/examples/shadow_paths.rs",
+      "path": "evidence/process-milestone/runs/20261008-useful-process-02/inputs/experiments/process-milestone/consumer/examples/shadow_paths.rs",
+      "sha256": "c0eace8df2fe49c8a5ab81d0712c7269a3a22f84bc450ce535c9bbaf11737a0e"
+    },
+    {
+      "original_path": "experiments/process-milestone/consumer/src/main.rs",
+      "path": "evidence/process-milestone/runs/20261008-useful-process-02/inputs/experiments/process-milestone/consumer/src/main.rs",
+      "sha256": "8612209963a1607d06d59632af80d6cccfab88529ec0cd13892849e6de05eae9"
+    },
+    {
+      "original_path": "experiments/process-milestone/macros/Cargo.toml",
+      "path": "evidence/process-milestone/runs/20261008-useful-process-02/inputs/experiments/process-milestone/macros/Cargo.toml",
+      "sha256": "a0526cb39ef8dae579995a302484b04f027de2d91d1728368561f797ed5fdb2c"
+    },
+    {
+      "original_path": "experiments/process-milestone/macros/src/lib.rs",
+      "path": "evidence/process-milestone/runs/20261008-useful-process-02/inputs/experiments/process-milestone/macros/src/lib.rs",
+      "sha256": "cf073d632f9939a9c334cc124504c1154145ca81416ee5d40c4c4099f421f52f"
+    },
+    {
+      "original_path": "experiments/process-milestone/runtime/Cargo.toml",
+      "path": "evidence/process-milestone/runs/20261008-useful-process-02/inputs/experiments/process-milestone/runtime/Cargo.toml",
+      "sha256": "da54800aeadafd880c1267f39da44245be893e18dce6e276b73239b9d4c1dcfa"
+    },
+    {
+      "original_path": "experiments/process-milestone/runtime/src/lib.rs",
+      "path": "evidence/process-milestone/runs/20261008-useful-process-02/inputs/experiments/process-milestone/runtime/src/lib.rs",
+      "sha256": "5c9d169a5211f48bb7bc0bf9e3f92927fd2204eb3ea4f031da0e48613c0ed195"
+    },
+    {
+      "original_path": "evidence/process-milestone/run.py",
+      "path": "evidence/process-milestone/runs/20261008-useful-process-02/inputs/evidence/process-milestone/run.py",
+      "sha256": "7e289d89d93b9dc886e4324123e3a738c9861cf6f51b675b6664df99c55b0cd6"
+    }
+  ],
+  "tools": [
+    {
+      "path": "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/rustc",
+      "sha256": "859254978c0a0402c32f949f6de0d99aee73be8d15f45aac00ae1448aac51e74"
+    },
+    {
+      "path": "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/cargo",
+      "sha256": "da77c8b33849312255ccde3179198ada4c8deb370488d050286146b1d1b27e14"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": ".tools/process-milestone/20261008-useful-process-02/debug/bream-milestone-consumer",
+      "sha256": "28245ac43372ac4a833d9f3205e4299e5b4ada422d79e7fdc1ccb5f3af86f596"
+    },
+    {
+      "path": ".tools/process-milestone/20261008-useful-process-02/debug/examples/shadow_paths",
+      "sha256": "d0b41ac9572f31938e99e953a6a6daa52c1e7018fd1cedf18da47c81da2c4f96"
+    },
+    {
+      "path": ".tools/process-milestone/20261008-useful-process-02/release/bream-milestone-consumer",
+      "sha256": "1b6aa32c48e6c4e5187097480be95d5c325ae241c1884d579dba809c2396a089"
+    },
+    {
+      "path": ".tools/process-milestone/20261008-useful-process-02/release/examples/shadow_paths",
+      "sha256": "d8bce44d2e754fb42210e74894a0100daf35aa360ecf8da7a91386e7d319c9f9"
+    }
+  ],
+  "commands": [
+    {
+      "name": "rustc-version",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/rustc",
+        "-vV"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 30,
+      "stdout": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/rustc-version.stdout",
+        "sha256": "778fbc643a806f0dd123c056e66201d7e8a56a61928ec0a33171be8d6c2d5a37"
+      },
+      "stderr": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/rustc-version.stderr",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "build-debug",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/cargo",
+        "build",
+        "--offline",
+        "--locked",
+        "--manifest-path",
+        "/home/bat/projects/bream/experiments/process-milestone/Cargo.toml",
+        "-p",
+        "bream-milestone-consumer"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/build-debug.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/build-debug.stderr",
+        "sha256": "bb7ff18823335697716f4d6d972fdf4f8d93680680bb2b6c981c053bc72dd7c3"
+      }
+    },
+    {
+      "name": "controls-debug-1",
+      "argv": [
+        "/home/bat/projects/bream/.tools/process-milestone/20261008-useful-process-02/debug/bream-milestone-consumer",
+        "controls",
+        "1"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 30,
+      "stdout": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/controls-debug-1.stdout",
+        "sha256": "562cf8a03089966310700cb996211219c8a9851b7146eeb8acd3a5bad6e37c16"
+      },
+      "stderr": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/controls-debug-1.stderr",
+        "sha256": "5105b139bdc6e13e4225220179062fc8d7bab51ba8f21b7f9543f9519fa6c5c5"
+      }
+    },
+    {
+      "name": "controls-debug-32",
+      "argv": [
+        "/home/bat/projects/bream/.tools/process-milestone/20261008-useful-process-02/debug/bream-milestone-consumer",
+        "controls",
+        "32"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 30,
+      "stdout": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/controls-debug-32.stdout",
+        "sha256": "a5ae3d2eea72ceac27a48fa68bdc50950d94040e5e5649e849ad7e11c4304790"
+      },
+      "stderr": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/controls-debug-32.stderr",
+        "sha256": "e49bb860361f96db08133a546b99490504ef75d5d92d60ad830090e7814e5558"
+      }
+    },
+    {
+      "name": "controls-debug-256",
+      "argv": [
+        "/home/bat/projects/bream/.tools/process-milestone/20261008-useful-process-02/debug/bream-milestone-consumer",
+        "controls",
+        "256"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 30,
+      "stdout": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/controls-debug-256.stdout",
+        "sha256": "c54be2cf0276ff2cacfe5ab267d908abd7d2eac5c45693af7cfab1fc33c15d47"
+      },
+      "stderr": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/controls-debug-256.stderr",
+        "sha256": "ce6d15b46fef0ae30aecdd7d9ca53f8933a56d817fb04ea63bb207e610f36d7e"
+      }
+    },
+    {
+      "name": "shadow-build-debug",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/cargo",
+        "build",
+        "--offline",
+        "--locked",
+        "--manifest-path",
+        "/home/bat/projects/bream/experiments/process-milestone/Cargo.toml",
+        "-p",
+        "bream-milestone-consumer",
+        "--example",
+        "shadow_paths"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/shadow-build-debug.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/shadow-build-debug.stderr",
+        "sha256": "0c3e3692bce9e29e60ba842dd8dfca374a267c747e7eb89f7bae41a86b59ae96"
+      }
+    },
+    {
+      "name": "shadow-execute-debug",
+      "argv": [
+        "/home/bat/projects/bream/.tools/process-milestone/20261008-useful-process-02/debug/examples/shadow_paths"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 30,
+      "stdout": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/shadow-execute-debug.stdout",
+        "sha256": "0fecd03362e44e9af4d14601a2ffaf02bd1a76bcf71751afe5ea9253220647e6"
+      },
+      "stderr": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/shadow-execute-debug.stderr",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "reject-debug-reject_buffer_move",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/cargo",
+        "build",
+        "--offline",
+        "--locked",
+        "--manifest-path",
+        "/home/bat/projects/bream/experiments/process-milestone/Cargo.toml",
+        "-p",
+        "bream-milestone-consumer",
+        "--example",
+        "reject_buffer_move"
+      ],
+      "exit_code": 101,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-debug-reject_buffer_move.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-debug-reject_buffer_move.stderr",
+        "sha256": "99e6de35a7526e1b9fcaa7bc103afbcfcce522c9db8b99626f09df0326f8305e"
+      }
+    },
+    {
+      "name": "reject-debug-reject_buffer_rebind",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/cargo",
+        "build",
+        "--offline",
+        "--locked",
+        "--manifest-path",
+        "/home/bat/projects/bream/experiments/process-milestone/Cargo.toml",
+        "-p",
+        "bream-milestone-consumer",
+        "--example",
+        "reject_buffer_rebind"
+      ],
+      "exit_code": 101,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-debug-reject_buffer_rebind.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-debug-reject_buffer_rebind.stderr",
+        "sha256": "7e8c36222d6c4834c4cf814c6b76bdb4ac5c96593ee279bdc923fc5ebb053b54"
+      }
+    },
+    {
+      "name": "reject-debug-reject_closure",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/cargo",
+        "build",
+        "--offline",
+        "--locked",
+        "--manifest-path",
+        "/home/bat/projects/bream/experiments/process-milestone/Cargo.toml",
+        "-p",
+        "bream-milestone-consumer",
+        "--example",
+        "reject_closure"
+      ],
+      "exit_code": 101,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-debug-reject_closure.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-debug-reject_closure.stderr",
+        "sha256": "9d5d1f0a5f6d766648afbc48a93b0dfab582e0c7ac688af4fe47ab7aed13a2bf"
+      }
+    },
+    {
+      "name": "reject-debug-reject_closure_spawn",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/cargo",
+        "build",
+        "--offline",
+        "--locked",
+        "--manifest-path",
+        "/home/bat/projects/bream/experiments/process-milestone/Cargo.toml",
+        "-p",
+        "bream-milestone-consumer",
+        "--example",
+        "reject_closure_spawn"
+      ],
+      "exit_code": 101,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-debug-reject_closure_spawn.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-debug-reject_closure_spawn.stderr",
+        "sha256": "253a528438de681c7645e3d2e70ecfbd0f33ef94d7588fee197aba37fbc2601b"
+      }
+    },
+    {
+      "name": "reject-debug-reject_custom_call",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/cargo",
+        "build",
+        "--offline",
+        "--locked",
+        "--manifest-path",
+        "/home/bat/projects/bream/experiments/process-milestone/Cargo.toml",
+        "-p",
+        "bream-milestone-consumer",
+        "--example",
+        "reject_custom_call"
+      ],
+      "exit_code": 101,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-debug-reject_custom_call.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-debug-reject_custom_call.stderr",
+        "sha256": "f0c8581646b633b217280a8320c1aa4ff230ce6f7e3b7b15f60ea5c830adf4dd"
+      }
+    },
+    {
+      "name": "reject-debug-reject_custom_drop",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/cargo",
+        "build",
+        "--offline",
+        "--locked",
+        "--manifest-path",
+        "/home/bat/projects/bream/experiments/process-milestone/Cargo.toml",
+        "-p",
+        "bream-milestone-consumer",
+        "--example",
+        "reject_custom_drop"
+      ],
+      "exit_code": 101,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-debug-reject_custom_drop.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-debug-reject_custom_drop.stderr",
+        "sha256": "183d4603682a3c03907169b8758644100e8edc96552dab1b4e473525917dd8a9"
+      }
+    },
+    {
+      "name": "reject-debug-reject_custom_iterator",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/cargo",
+        "build",
+        "--offline",
+        "--locked",
+        "--manifest-path",
+        "/home/bat/projects/bream/experiments/process-milestone/Cargo.toml",
+        "-p",
+        "bream-milestone-consumer",
+        "--example",
+        "reject_custom_iterator"
+      ],
+      "exit_code": 101,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-debug-reject_custom_iterator.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-debug-reject_custom_iterator.stderr",
+        "sha256": "3711727870eee245c249e92463a9c6cc76a8c1fd2b674ca735d735e46618569e"
+      }
+    },
+    {
+      "name": "reject-debug-reject_custom_type",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/cargo",
+        "build",
+        "--offline",
+        "--locked",
+        "--manifest-path",
+        "/home/bat/projects/bream/experiments/process-milestone/Cargo.toml",
+        "-p",
+        "bream-milestone-consumer",
+        "--example",
+        "reject_custom_type"
+      ],
+      "exit_code": 101,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-debug-reject_custom_type.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-debug-reject_custom_type.stderr",
+        "sha256": "f61fd7f4f325cc604710e2050841ba892852502ca1e3c4e1c2d09c4950d8c224"
+      }
+    },
+    {
+      "name": "reject-debug-reject_drop_input",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/cargo",
+        "build",
+        "--offline",
+        "--locked",
+        "--manifest-path",
+        "/home/bat/projects/bream/experiments/process-milestone/Cargo.toml",
+        "-p",
+        "bream-milestone-consumer",
+        "--example",
+        "reject_drop_input"
+      ],
+      "exit_code": 101,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-debug-reject_drop_input.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-debug-reject_drop_input.stderr",
+        "sha256": "10ff2e5dec2da3cd8d14e8ee1c1fcf6ffe657489302355e1e9126af4d8d61ab0"
+      }
+    },
+    {
+      "name": "reject-debug-reject_external_method",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/cargo",
+        "build",
+        "--offline",
+        "--locked",
+        "--manifest-path",
+        "/home/bat/projects/bream/experiments/process-milestone/Cargo.toml",
+        "-p",
+        "bream-milestone-consumer",
+        "--example",
+        "reject_external_method"
+      ],
+      "exit_code": 101,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-debug-reject_external_method.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-debug-reject_external_method.stderr",
+        "sha256": "80c02ee9a3e5dd24f4d5d0c0d09057a8b4dc580bfb65952b6c9eb946236fd4b1"
+      }
+    },
+    {
+      "name": "reject-debug-reject_future",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/cargo",
+        "build",
+        "--offline",
+        "--locked",
+        "--manifest-path",
+        "/home/bat/projects/bream/experiments/process-milestone/Cargo.toml",
+        "-p",
+        "bream-milestone-consumer",
+        "--example",
+        "reject_future"
+      ],
+      "exit_code": 101,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-debug-reject_future.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-debug-reject_future.stderr",
+        "sha256": "0172db44f8cc766a4b4b1a5073638b45ab1ac95856a5d8db057a89699528452f"
+      }
+    },
+    {
+      "name": "reject-debug-reject_global_read",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/cargo",
+        "build",
+        "--offline",
+        "--locked",
+        "--manifest-path",
+        "/home/bat/projects/bream/experiments/process-milestone/Cargo.toml",
+        "-p",
+        "bream-milestone-consumer",
+        "--example",
+        "reject_global_read"
+      ],
+      "exit_code": 101,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-debug-reject_global_read.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-debug-reject_global_read.stderr",
+        "sha256": "b91879138c23f9728e2f58604f9f48a8c2ad164e8de3bffe5ad58d0fb58efe43"
+      }
+    },
+    {
+      "name": "reject-debug-reject_inner_attribute",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/cargo",
+        "build",
+        "--offline",
+        "--locked",
+        "--manifest-path",
+        "/home/bat/projects/bream/experiments/process-milestone/Cargo.toml",
+        "-p",
+        "bream-milestone-consumer",
+        "--example",
+        "reject_inner_attribute"
+      ],
+      "exit_code": 101,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-debug-reject_inner_attribute.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-debug-reject_inner_attribute.stderr",
+        "sha256": "210180d31ea2513bbcbd6c4f742b358a6a712b8ec42ba1aa0630d7c645106eb1"
+      }
+    },
+    {
+      "name": "reject-debug-reject_macro",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/cargo",
+        "build",
+        "--offline",
+        "--locked",
+        "--manifest-path",
+        "/home/bat/projects/bream/experiments/process-milestone/Cargo.toml",
+        "-p",
+        "bream-milestone-consumer",
+        "--example",
+        "reject_macro"
+      ],
+      "exit_code": 101,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-debug-reject_macro.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-debug-reject_macro.stderr",
+        "sha256": "339f7ffe0e47266ae13d954ca71d710e4d2bc5ebade991b22d980b77ea65f3ac"
+      }
+    },
+    {
+      "name": "reject-debug-reject_manual_await",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/cargo",
+        "build",
+        "--offline",
+        "--locked",
+        "--manifest-path",
+        "/home/bat/projects/bream/experiments/process-milestone/Cargo.toml",
+        "-p",
+        "bream-milestone-consumer",
+        "--example",
+        "reject_manual_await"
+      ],
+      "exit_code": 101,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-debug-reject_manual_await.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-debug-reject_manual_await.stderr",
+        "sha256": "cd072c6efed3c5ac774190f1d8a332795bfca75f7d97fb27748b85715a3ce177"
+      }
+    },
+    {
+      "name": "reject-debug-reject_nested_macro",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/cargo",
+        "build",
+        "--offline",
+        "--locked",
+        "--manifest-path",
+        "/home/bat/projects/bream/experiments/process-milestone/Cargo.toml",
+        "-p",
+        "bream-milestone-consumer",
+        "--example",
+        "reject_nested_macro"
+      ],
+      "exit_code": 101,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-debug-reject_nested_macro.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-debug-reject_nested_macro.stderr",
+        "sha256": "d77aa6030e2495a065aa0c6920de0f889ae66533e0c94f5a7a6b0d3fda816b21"
+      }
+    },
+    {
+      "name": "reject-debug-reject_program_fields",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/cargo",
+        "build",
+        "--offline",
+        "--locked",
+        "--manifest-path",
+        "/home/bat/projects/bream/experiments/process-milestone/Cargo.toml",
+        "-p",
+        "bream-milestone-consumer",
+        "--example",
+        "reject_program_fields"
+      ],
+      "exit_code": 101,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-debug-reject_program_fields.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-debug-reject_program_fields.stderr",
+        "sha256": "e07b94968189276ffd87b87e4c5f593da48ff07f3aad10588039a336226b54c4"
+      }
+    },
+    {
+      "name": "reject-debug-reject_raw_identifier",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/cargo",
+        "build",
+        "--offline",
+        "--locked",
+        "--manifest-path",
+        "/home/bat/projects/bream/experiments/process-milestone/Cargo.toml",
+        "-p",
+        "bream-milestone-consumer",
+        "--example",
+        "reject_raw_identifier"
+      ],
+      "exit_code": 101,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-debug-reject_raw_identifier.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-debug-reject_raw_identifier.stderr",
+        "sha256": "cdb7a40c819d5f3f92ccf9f306bd9e11b5c802c7d9e31283c56ee15b7ea93187"
+      }
+    },
+    {
+      "name": "reject-debug-reject_reserved_name",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/cargo",
+        "build",
+        "--offline",
+        "--locked",
+        "--manifest-path",
+        "/home/bat/projects/bream/experiments/process-milestone/Cargo.toml",
+        "-p",
+        "bream-milestone-consumer",
+        "--example",
+        "reject_reserved_name"
+      ],
+      "exit_code": 101,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-debug-reject_reserved_name.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-debug-reject_reserved_name.stderr",
+        "sha256": "f01cbd53b853031aec0f941481ce27ffd92ab212fcbff8311bf77a03549de515"
+      }
+    },
+    {
+      "name": "reject-debug-reject_safe_constructor",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/cargo",
+        "build",
+        "--offline",
+        "--locked",
+        "--manifest-path",
+        "/home/bat/projects/bream/experiments/process-milestone/Cargo.toml",
+        "-p",
+        "bream-milestone-consumer",
+        "--example",
+        "reject_safe_constructor"
+      ],
+      "exit_code": 101,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-debug-reject_safe_constructor.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-debug-reject_safe_constructor.stderr",
+        "sha256": "5465c44ccc7a10404305852ba306e4794257c50eed36bb05b5aa80430e0dd1b5"
+      }
+    },
+    {
+      "name": "reject-debug-reject_scalar_read",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/cargo",
+        "build",
+        "--offline",
+        "--locked",
+        "--manifest-path",
+        "/home/bat/projects/bream/experiments/process-milestone/Cargo.toml",
+        "-p",
+        "bream-milestone-consumer",
+        "--example",
+        "reject_scalar_read"
+      ],
+      "exit_code": 101,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-debug-reject_scalar_read.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-debug-reject_scalar_read.stderr",
+        "sha256": "49fa620c53d0607c18f0e90fac126ab378b931eed97299ee55a9920d4c5fb67b"
+      }
+    },
+    {
+      "name": "reject-debug-reject_unsafe",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/cargo",
+        "build",
+        "--offline",
+        "--locked",
+        "--manifest-path",
+        "/home/bat/projects/bream/experiments/process-milestone/Cargo.toml",
+        "-p",
+        "bream-milestone-consumer",
+        "--example",
+        "reject_unsafe"
+      ],
+      "exit_code": 101,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-debug-reject_unsafe.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-debug-reject_unsafe.stderr",
+        "sha256": "ebc658f86a23cd42d90e3a92f2c7cbec4977a04b518cc5e288a52fccf5666374"
+      }
+    },
+    {
+      "name": "build-release",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/cargo",
+        "build",
+        "--offline",
+        "--locked",
+        "--manifest-path",
+        "/home/bat/projects/bream/experiments/process-milestone/Cargo.toml",
+        "-p",
+        "bream-milestone-consumer",
+        "--release"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/build-release.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/build-release.stderr",
+        "sha256": "80ceac8f062ff113ea3668a35011ef214adf29ffcaaa354db1c571016708fdad"
+      }
+    },
+    {
+      "name": "controls-release-1",
+      "argv": [
+        "/home/bat/projects/bream/.tools/process-milestone/20261008-useful-process-02/release/bream-milestone-consumer",
+        "controls",
+        "1"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 30,
+      "stdout": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/controls-release-1.stdout",
+        "sha256": "562cf8a03089966310700cb996211219c8a9851b7146eeb8acd3a5bad6e37c16"
+      },
+      "stderr": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/controls-release-1.stderr",
+        "sha256": "e1ac614b8375a48fed155213a389c5536ca224ce885329f890e19bc012699ae5"
+      }
+    },
+    {
+      "name": "controls-release-32",
+      "argv": [
+        "/home/bat/projects/bream/.tools/process-milestone/20261008-useful-process-02/release/bream-milestone-consumer",
+        "controls",
+        "32"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 30,
+      "stdout": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/controls-release-32.stdout",
+        "sha256": "a5ae3d2eea72ceac27a48fa68bdc50950d94040e5e5649e849ad7e11c4304790"
+      },
+      "stderr": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/controls-release-32.stderr",
+        "sha256": "691cb09b831df88a0bc86606367c09b03b682e36a4d138f3e71fafcfcf30d971"
+      }
+    },
+    {
+      "name": "controls-release-256",
+      "argv": [
+        "/home/bat/projects/bream/.tools/process-milestone/20261008-useful-process-02/release/bream-milestone-consumer",
+        "controls",
+        "256"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 30,
+      "stdout": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/controls-release-256.stdout",
+        "sha256": "c54be2cf0276ff2cacfe5ab267d908abd7d2eac5c45693af7cfab1fc33c15d47"
+      },
+      "stderr": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/controls-release-256.stderr",
+        "sha256": "6cecb803de732ee707f01fb661098c70b02f58dfc77cb533319c0af7876ae3e8"
+      }
+    },
+    {
+      "name": "shadow-build-release",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/cargo",
+        "build",
+        "--offline",
+        "--locked",
+        "--manifest-path",
+        "/home/bat/projects/bream/experiments/process-milestone/Cargo.toml",
+        "-p",
+        "bream-milestone-consumer",
+        "--release",
+        "--example",
+        "shadow_paths"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/shadow-build-release.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/shadow-build-release.stderr",
+        "sha256": "ffc6cf517b21d88a03e4a651324e45ae9ecc2421b9263b3d4d98cc000d173d89"
+      }
+    },
+    {
+      "name": "shadow-execute-release",
+      "argv": [
+        "/home/bat/projects/bream/.tools/process-milestone/20261008-useful-process-02/release/examples/shadow_paths"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 30,
+      "stdout": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/shadow-execute-release.stdout",
+        "sha256": "0fecd03362e44e9af4d14601a2ffaf02bd1a76bcf71751afe5ea9253220647e6"
+      },
+      "stderr": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/shadow-execute-release.stderr",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "reject-release-reject_buffer_move",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/cargo",
+        "build",
+        "--offline",
+        "--locked",
+        "--manifest-path",
+        "/home/bat/projects/bream/experiments/process-milestone/Cargo.toml",
+        "-p",
+        "bream-milestone-consumer",
+        "--release",
+        "--example",
+        "reject_buffer_move"
+      ],
+      "exit_code": 101,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-release-reject_buffer_move.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-release-reject_buffer_move.stderr",
+        "sha256": "99e6de35a7526e1b9fcaa7bc103afbcfcce522c9db8b99626f09df0326f8305e"
+      }
+    },
+    {
+      "name": "reject-release-reject_buffer_rebind",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/cargo",
+        "build",
+        "--offline",
+        "--locked",
+        "--manifest-path",
+        "/home/bat/projects/bream/experiments/process-milestone/Cargo.toml",
+        "-p",
+        "bream-milestone-consumer",
+        "--release",
+        "--example",
+        "reject_buffer_rebind"
+      ],
+      "exit_code": 101,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-release-reject_buffer_rebind.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-release-reject_buffer_rebind.stderr",
+        "sha256": "7e8c36222d6c4834c4cf814c6b76bdb4ac5c96593ee279bdc923fc5ebb053b54"
+      }
+    },
+    {
+      "name": "reject-release-reject_closure",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/cargo",
+        "build",
+        "--offline",
+        "--locked",
+        "--manifest-path",
+        "/home/bat/projects/bream/experiments/process-milestone/Cargo.toml",
+        "-p",
+        "bream-milestone-consumer",
+        "--release",
+        "--example",
+        "reject_closure"
+      ],
+      "exit_code": 101,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-release-reject_closure.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-release-reject_closure.stderr",
+        "sha256": "9d5d1f0a5f6d766648afbc48a93b0dfab582e0c7ac688af4fe47ab7aed13a2bf"
+      }
+    },
+    {
+      "name": "reject-release-reject_closure_spawn",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/cargo",
+        "build",
+        "--offline",
+        "--locked",
+        "--manifest-path",
+        "/home/bat/projects/bream/experiments/process-milestone/Cargo.toml",
+        "-p",
+        "bream-milestone-consumer",
+        "--release",
+        "--example",
+        "reject_closure_spawn"
+      ],
+      "exit_code": 101,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-release-reject_closure_spawn.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-release-reject_closure_spawn.stderr",
+        "sha256": "253a528438de681c7645e3d2e70ecfbd0f33ef94d7588fee197aba37fbc2601b"
+      }
+    },
+    {
+      "name": "reject-release-reject_custom_call",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/cargo",
+        "build",
+        "--offline",
+        "--locked",
+        "--manifest-path",
+        "/home/bat/projects/bream/experiments/process-milestone/Cargo.toml",
+        "-p",
+        "bream-milestone-consumer",
+        "--release",
+        "--example",
+        "reject_custom_call"
+      ],
+      "exit_code": 101,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-release-reject_custom_call.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-release-reject_custom_call.stderr",
+        "sha256": "f0c8581646b633b217280a8320c1aa4ff230ce6f7e3b7b15f60ea5c830adf4dd"
+      }
+    },
+    {
+      "name": "reject-release-reject_custom_drop",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/cargo",
+        "build",
+        "--offline",
+        "--locked",
+        "--manifest-path",
+        "/home/bat/projects/bream/experiments/process-milestone/Cargo.toml",
+        "-p",
+        "bream-milestone-consumer",
+        "--release",
+        "--example",
+        "reject_custom_drop"
+      ],
+      "exit_code": 101,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-release-reject_custom_drop.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-release-reject_custom_drop.stderr",
+        "sha256": "183d4603682a3c03907169b8758644100e8edc96552dab1b4e473525917dd8a9"
+      }
+    },
+    {
+      "name": "reject-release-reject_custom_iterator",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/cargo",
+        "build",
+        "--offline",
+        "--locked",
+        "--manifest-path",
+        "/home/bat/projects/bream/experiments/process-milestone/Cargo.toml",
+        "-p",
+        "bream-milestone-consumer",
+        "--release",
+        "--example",
+        "reject_custom_iterator"
+      ],
+      "exit_code": 101,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-release-reject_custom_iterator.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-release-reject_custom_iterator.stderr",
+        "sha256": "3711727870eee245c249e92463a9c6cc76a8c1fd2b674ca735d735e46618569e"
+      }
+    },
+    {
+      "name": "reject-release-reject_custom_type",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/cargo",
+        "build",
+        "--offline",
+        "--locked",
+        "--manifest-path",
+        "/home/bat/projects/bream/experiments/process-milestone/Cargo.toml",
+        "-p",
+        "bream-milestone-consumer",
+        "--release",
+        "--example",
+        "reject_custom_type"
+      ],
+      "exit_code": 101,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-release-reject_custom_type.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-release-reject_custom_type.stderr",
+        "sha256": "f61fd7f4f325cc604710e2050841ba892852502ca1e3c4e1c2d09c4950d8c224"
+      }
+    },
+    {
+      "name": "reject-release-reject_drop_input",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/cargo",
+        "build",
+        "--offline",
+        "--locked",
+        "--manifest-path",
+        "/home/bat/projects/bream/experiments/process-milestone/Cargo.toml",
+        "-p",
+        "bream-milestone-consumer",
+        "--release",
+        "--example",
+        "reject_drop_input"
+      ],
+      "exit_code": 101,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-release-reject_drop_input.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-release-reject_drop_input.stderr",
+        "sha256": "10ff2e5dec2da3cd8d14e8ee1c1fcf6ffe657489302355e1e9126af4d8d61ab0"
+      }
+    },
+    {
+      "name": "reject-release-reject_external_method",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/cargo",
+        "build",
+        "--offline",
+        "--locked",
+        "--manifest-path",
+        "/home/bat/projects/bream/experiments/process-milestone/Cargo.toml",
+        "-p",
+        "bream-milestone-consumer",
+        "--release",
+        "--example",
+        "reject_external_method"
+      ],
+      "exit_code": 101,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-release-reject_external_method.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-release-reject_external_method.stderr",
+        "sha256": "80c02ee9a3e5dd24f4d5d0c0d09057a8b4dc580bfb65952b6c9eb946236fd4b1"
+      }
+    },
+    {
+      "name": "reject-release-reject_future",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/cargo",
+        "build",
+        "--offline",
+        "--locked",
+        "--manifest-path",
+        "/home/bat/projects/bream/experiments/process-milestone/Cargo.toml",
+        "-p",
+        "bream-milestone-consumer",
+        "--release",
+        "--example",
+        "reject_future"
+      ],
+      "exit_code": 101,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-release-reject_future.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-release-reject_future.stderr",
+        "sha256": "0172db44f8cc766a4b4b1a5073638b45ab1ac95856a5d8db057a89699528452f"
+      }
+    },
+    {
+      "name": "reject-release-reject_global_read",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/cargo",
+        "build",
+        "--offline",
+        "--locked",
+        "--manifest-path",
+        "/home/bat/projects/bream/experiments/process-milestone/Cargo.toml",
+        "-p",
+        "bream-milestone-consumer",
+        "--release",
+        "--example",
+        "reject_global_read"
+      ],
+      "exit_code": 101,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-release-reject_global_read.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-release-reject_global_read.stderr",
+        "sha256": "b91879138c23f9728e2f58604f9f48a8c2ad164e8de3bffe5ad58d0fb58efe43"
+      }
+    },
+    {
+      "name": "reject-release-reject_inner_attribute",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/cargo",
+        "build",
+        "--offline",
+        "--locked",
+        "--manifest-path",
+        "/home/bat/projects/bream/experiments/process-milestone/Cargo.toml",
+        "-p",
+        "bream-milestone-consumer",
+        "--release",
+        "--example",
+        "reject_inner_attribute"
+      ],
+      "exit_code": 101,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-release-reject_inner_attribute.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-release-reject_inner_attribute.stderr",
+        "sha256": "210180d31ea2513bbcbd6c4f742b358a6a712b8ec42ba1aa0630d7c645106eb1"
+      }
+    },
+    {
+      "name": "reject-release-reject_macro",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/cargo",
+        "build",
+        "--offline",
+        "--locked",
+        "--manifest-path",
+        "/home/bat/projects/bream/experiments/process-milestone/Cargo.toml",
+        "-p",
+        "bream-milestone-consumer",
+        "--release",
+        "--example",
+        "reject_macro"
+      ],
+      "exit_code": 101,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-release-reject_macro.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-release-reject_macro.stderr",
+        "sha256": "339f7ffe0e47266ae13d954ca71d710e4d2bc5ebade991b22d980b77ea65f3ac"
+      }
+    },
+    {
+      "name": "reject-release-reject_manual_await",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/cargo",
+        "build",
+        "--offline",
+        "--locked",
+        "--manifest-path",
+        "/home/bat/projects/bream/experiments/process-milestone/Cargo.toml",
+        "-p",
+        "bream-milestone-consumer",
+        "--release",
+        "--example",
+        "reject_manual_await"
+      ],
+      "exit_code": 101,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-release-reject_manual_await.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-release-reject_manual_await.stderr",
+        "sha256": "cd072c6efed3c5ac774190f1d8a332795bfca75f7d97fb27748b85715a3ce177"
+      }
+    },
+    {
+      "name": "reject-release-reject_nested_macro",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/cargo",
+        "build",
+        "--offline",
+        "--locked",
+        "--manifest-path",
+        "/home/bat/projects/bream/experiments/process-milestone/Cargo.toml",
+        "-p",
+        "bream-milestone-consumer",
+        "--release",
+        "--example",
+        "reject_nested_macro"
+      ],
+      "exit_code": 101,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-release-reject_nested_macro.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-release-reject_nested_macro.stderr",
+        "sha256": "d77aa6030e2495a065aa0c6920de0f889ae66533e0c94f5a7a6b0d3fda816b21"
+      }
+    },
+    {
+      "name": "reject-release-reject_program_fields",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/cargo",
+        "build",
+        "--offline",
+        "--locked",
+        "--manifest-path",
+        "/home/bat/projects/bream/experiments/process-milestone/Cargo.toml",
+        "-p",
+        "bream-milestone-consumer",
+        "--release",
+        "--example",
+        "reject_program_fields"
+      ],
+      "exit_code": 101,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-release-reject_program_fields.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-release-reject_program_fields.stderr",
+        "sha256": "e07b94968189276ffd87b87e4c5f593da48ff07f3aad10588039a336226b54c4"
+      }
+    },
+    {
+      "name": "reject-release-reject_raw_identifier",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/cargo",
+        "build",
+        "--offline",
+        "--locked",
+        "--manifest-path",
+        "/home/bat/projects/bream/experiments/process-milestone/Cargo.toml",
+        "-p",
+        "bream-milestone-consumer",
+        "--release",
+        "--example",
+        "reject_raw_identifier"
+      ],
+      "exit_code": 101,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-release-reject_raw_identifier.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-release-reject_raw_identifier.stderr",
+        "sha256": "cdb7a40c819d5f3f92ccf9f306bd9e11b5c802c7d9e31283c56ee15b7ea93187"
+      }
+    },
+    {
+      "name": "reject-release-reject_reserved_name",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/cargo",
+        "build",
+        "--offline",
+        "--locked",
+        "--manifest-path",
+        "/home/bat/projects/bream/experiments/process-milestone/Cargo.toml",
+        "-p",
+        "bream-milestone-consumer",
+        "--release",
+        "--example",
+        "reject_reserved_name"
+      ],
+      "exit_code": 101,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-release-reject_reserved_name.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-release-reject_reserved_name.stderr",
+        "sha256": "f01cbd53b853031aec0f941481ce27ffd92ab212fcbff8311bf77a03549de515"
+      }
+    },
+    {
+      "name": "reject-release-reject_safe_constructor",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/cargo",
+        "build",
+        "--offline",
+        "--locked",
+        "--manifest-path",
+        "/home/bat/projects/bream/experiments/process-milestone/Cargo.toml",
+        "-p",
+        "bream-milestone-consumer",
+        "--release",
+        "--example",
+        "reject_safe_constructor"
+      ],
+      "exit_code": 101,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-release-reject_safe_constructor.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-release-reject_safe_constructor.stderr",
+        "sha256": "5465c44ccc7a10404305852ba306e4794257c50eed36bb05b5aa80430e0dd1b5"
+      }
+    },
+    {
+      "name": "reject-release-reject_scalar_read",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/cargo",
+        "build",
+        "--offline",
+        "--locked",
+        "--manifest-path",
+        "/home/bat/projects/bream/experiments/process-milestone/Cargo.toml",
+        "-p",
+        "bream-milestone-consumer",
+        "--release",
+        "--example",
+        "reject_scalar_read"
+      ],
+      "exit_code": 101,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-release-reject_scalar_read.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-release-reject_scalar_read.stderr",
+        "sha256": "49fa620c53d0607c18f0e90fac126ab378b931eed97299ee55a9920d4c5fb67b"
+      }
+    },
+    {
+      "name": "reject-release-reject_unsafe",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/cargo",
+        "build",
+        "--offline",
+        "--locked",
+        "--manifest-path",
+        "/home/bat/projects/bream/experiments/process-milestone/Cargo.toml",
+        "-p",
+        "bream-milestone-consumer",
+        "--release",
+        "--example",
+        "reject_unsafe"
+      ],
+      "exit_code": 101,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-release-reject_unsafe.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "evidence/process-milestone/runs/20261008-useful-process-02/reject-release-reject_unsafe.stderr",
+        "sha256": "ebc658f86a23cd42d90e3a92f2c7cbec4977a04b518cc5e288a52fccf5666374"
+      }
+    }
+  ],
+  "observations": [
+    {
+      "command": "controls-debug-1",
+      "profile": "debug",
+      "kind": "controls",
+      "passed": true,
+      "allowance": 1,
+      "queued_kill": true,
+      "empty_loop": true,
+      "nested_continue": true,
+      "invalid_index_contained": true,
+      "shutdown": true,
+      "input_limit": true,
+      "spare_capacity_accounted": true,
+      "zero_input": true
+    },
+    {
+      "command": "controls-debug-32",
+      "profile": "debug",
+      "kind": "controls",
+      "passed": true,
+      "allowance": 32,
+      "queued_kill": true,
+      "empty_loop": true,
+      "nested_continue": true,
+      "invalid_index_contained": true,
+      "shutdown": true,
+      "input_limit": true,
+      "spare_capacity_accounted": true,
+      "zero_input": true
+    },
+    {
+      "command": "controls-debug-256",
+      "profile": "debug",
+      "kind": "controls",
+      "passed": true,
+      "allowance": 256,
+      "queued_kill": true,
+      "empty_loop": true,
+      "nested_continue": true,
+      "invalid_index_contained": true,
+      "shutdown": true,
+      "input_limit": true,
+      "spare_capacity_accounted": true,
+      "zero_input": true
+    },
+    {
+      "kind": "rejection",
+      "command": "reject-debug-reject_buffer_move",
+      "profile": "debug",
+      "fixture": "reject_buffer_move",
+      "diagnostic": "bream milestone subset:",
+      "passed": true
+    },
+    {
+      "kind": "rejection",
+      "command": "reject-debug-reject_buffer_rebind",
+      "profile": "debug",
+      "fixture": "reject_buffer_rebind",
+      "diagnostic": "bream milestone subset:",
+      "passed": true
+    },
+    {
+      "kind": "rejection",
+      "command": "reject-debug-reject_closure",
+      "profile": "debug",
+      "fixture": "reject_closure",
+      "diagnostic": "bream milestone subset:",
+      "passed": true
+    },
+    {
+      "kind": "rejection",
+      "command": "reject-debug-reject_closure_spawn",
+      "profile": "debug",
+      "fixture": "reject_closure_spawn",
+      "diagnostic": "mismatched types",
+      "passed": true
+    },
+    {
+      "kind": "rejection",
+      "command": "reject-debug-reject_custom_call",
+      "profile": "debug",
+      "fixture": "reject_custom_call",
+      "diagnostic": "bream milestone subset:",
+      "passed": true
+    },
+    {
+      "kind": "rejection",
+      "command": "reject-debug-reject_custom_drop",
+      "profile": "debug",
+      "fixture": "reject_custom_drop",
+      "diagnostic": "bream milestone subset:",
+      "passed": true
+    },
+    {
+      "kind": "rejection",
+      "command": "reject-debug-reject_custom_iterator",
+      "profile": "debug",
+      "fixture": "reject_custom_iterator",
+      "diagnostic": "bream milestone subset:",
+      "passed": true
+    },
+    {
+      "kind": "rejection",
+      "command": "reject-debug-reject_custom_type",
+      "profile": "debug",
+      "fixture": "reject_custom_type",
+      "diagnostic": "bream milestone subset:",
+      "passed": true
+    },
+    {
+      "kind": "rejection",
+      "command": "reject-debug-reject_drop_input",
+      "profile": "debug",
+      "fixture": "reject_drop_input",
+      "diagnostic": "mismatched types",
+      "passed": true
+    },
+    {
+      "kind": "rejection",
+      "command": "reject-debug-reject_external_method",
+      "profile": "debug",
+      "fixture": "reject_external_method",
+      "diagnostic": "bream milestone subset:",
+      "passed": true
+    },
+    {
+      "kind": "rejection",
+      "command": "reject-debug-reject_future",
+      "profile": "debug",
+      "fixture": "reject_future",
+      "diagnostic": "mismatched types",
+      "passed": true
+    },
+    {
+      "kind": "rejection",
+      "command": "reject-debug-reject_global_read",
+      "profile": "debug",
+      "fixture": "reject_global_read",
+      "diagnostic": "bream milestone subset:",
+      "passed": true
+    },
+    {
+      "kind": "rejection",
+      "command": "reject-debug-reject_inner_attribute",
+      "profile": "debug",
+      "fixture": "reject_inner_attribute",
+      "diagnostic": "bream milestone subset:",
+      "passed": true
+    },
+    {
+      "kind": "rejection",
+      "command": "reject-debug-reject_macro",
+      "profile": "debug",
+      "fixture": "reject_macro",
+      "diagnostic": "bream milestone subset:",
+      "passed": true
+    },
+    {
+      "kind": "rejection",
+      "command": "reject-debug-reject_manual_await",
+      "profile": "debug",
+      "fixture": "reject_manual_await",
+      "diagnostic": "bream milestone subset:",
+      "passed": true
+    },
+    {
+      "kind": "rejection",
+      "command": "reject-debug-reject_nested_macro",
+      "profile": "debug",
+      "fixture": "reject_nested_macro",
+      "diagnostic": "bream milestone subset:",
+      "passed": true
+    },
+    {
+      "kind": "rejection",
+      "command": "reject-debug-reject_program_fields",
+      "profile": "debug",
+      "fixture": "reject_program_fields",
+      "diagnostic": "is private",
+      "passed": true
+    },
+    {
+      "kind": "rejection",
+      "command": "reject-debug-reject_raw_identifier",
+      "profile": "debug",
+      "fixture": "reject_raw_identifier",
+      "diagnostic": "bream milestone subset:",
+      "passed": true
+    },
+    {
+      "kind": "rejection",
+      "command": "reject-debug-reject_reserved_name",
+      "profile": "debug",
+      "fixture": "reject_reserved_name",
+      "diagnostic": "bream milestone subset:",
+      "passed": true
+    },
+    {
+      "kind": "rejection",
+      "command": "reject-debug-reject_safe_constructor",
+      "profile": "debug",
+      "fixture": "reject_safe_constructor",
+      "diagnostic": "requires unsafe function or block",
+      "passed": true
+    },
+    {
+      "kind": "rejection",
+      "command": "reject-debug-reject_scalar_read",
+      "profile": "debug",
+      "fixture": "reject_scalar_read",
+      "diagnostic": "bream milestone subset:",
+      "passed": true
+    },
+    {
+      "kind": "rejection",
+      "command": "reject-debug-reject_unsafe",
+      "profile": "debug",
+      "fixture": "reject_unsafe",
+      "diagnostic": "bream milestone subset:",
+      "passed": true
+    },
+    {
+      "command": "controls-release-1",
+      "profile": "release",
+      "kind": "controls",
+      "passed": true,
+      "allowance": 1,
+      "queued_kill": true,
+      "empty_loop": true,
+      "nested_continue": true,
+      "invalid_index_contained": true,
+      "shutdown": true,
+      "input_limit": true,
+      "spare_capacity_accounted": true,
+      "zero_input": true
+    },
+    {
+      "command": "controls-release-32",
+      "profile": "release",
+      "kind": "controls",
+      "passed": true,
+      "allowance": 32,
+      "queued_kill": true,
+      "empty_loop": true,
+      "nested_continue": true,
+      "invalid_index_contained": true,
+      "shutdown": true,
+      "input_limit": true,
+      "spare_capacity_accounted": true,
+      "zero_input": true
+    },
+    {
+      "command": "controls-release-256",
+      "profile": "release",
+      "kind": "controls",
+      "passed": true,
+      "allowance": 256,
+      "queued_kill": true,
+      "empty_loop": true,
+      "nested_continue": true,
+      "invalid_index_contained": true,
+      "shutdown": true,
+      "input_limit": true,
+      "spare_capacity_accounted": true,
+      "zero_input": true
+    },
+    {
+      "kind": "rejection",
+      "command": "reject-release-reject_buffer_move",
+      "profile": "release",
+      "fixture": "reject_buffer_move",
+      "diagnostic": "bream milestone subset:",
+      "passed": true
+    },
+    {
+      "kind": "rejection",
+      "command": "reject-release-reject_buffer_rebind",
+      "profile": "release",
+      "fixture": "reject_buffer_rebind",
+      "diagnostic": "bream milestone subset:",
+      "passed": true
+    },
+    {
+      "kind": "rejection",
+      "command": "reject-release-reject_closure",
+      "profile": "release",
+      "fixture": "reject_closure",
+      "diagnostic": "bream milestone subset:",
+      "passed": true
+    },
+    {
+      "kind": "rejection",
+      "command": "reject-release-reject_closure_spawn",
+      "profile": "release",
+      "fixture": "reject_closure_spawn",
+      "diagnostic": "mismatched types",
+      "passed": true
+    },
+    {
+      "kind": "rejection",
+      "command": "reject-release-reject_custom_call",
+      "profile": "release",
+      "fixture": "reject_custom_call",
+      "diagnostic": "bream milestone subset:",
+      "passed": true
+    },
+    {
+      "kind": "rejection",
+      "command": "reject-release-reject_custom_drop",
+      "profile": "release",
+      "fixture": "reject_custom_drop",
+      "diagnostic": "bream milestone subset:",
+      "passed": true
+    },
+    {
+      "kind": "rejection",
+      "command": "reject-release-reject_custom_iterator",
+      "profile": "release",
+      "fixture": "reject_custom_iterator",
+      "diagnostic": "bream milestone subset:",
+      "passed": true
+    },
+    {
+      "kind": "rejection",
+      "command": "reject-release-reject_custom_type",
+      "profile": "release",
+      "fixture": "reject_custom_type",
+      "diagnostic": "bream milestone subset:",
+      "passed": true
+    },
+    {
+      "kind": "rejection",
+      "command": "reject-release-reject_drop_input",
+      "profile": "release",
+      "fixture": "reject_drop_input",
+      "diagnostic": "mismatched types",
+      "passed": true
+    },
+    {
+      "kind": "rejection",
+      "command": "reject-release-reject_external_method",
+      "profile": "release",
+      "fixture": "reject_external_method",
+      "diagnostic": "bream milestone subset:",
+      "passed": true
+    },
+    {
+      "kind": "rejection",
+      "command": "reject-release-reject_future",
+      "profile": "release",
+      "fixture": "reject_future",
+      "diagnostic": "mismatched types",
+      "passed": true
+    },
+    {
+      "kind": "rejection",
+      "command": "reject-release-reject_global_read",
+      "profile": "release",
+      "fixture": "reject_global_read",
+      "diagnostic": "bream milestone subset:",
+      "passed": true
+    },
+    {
+      "kind": "rejection",
+      "command": "reject-release-reject_inner_attribute",
+      "profile": "release",
+      "fixture": "reject_inner_attribute",
+      "diagnostic": "bream milestone subset:",
+      "passed": true
+    },
+    {
+      "kind": "rejection",
+      "command": "reject-release-reject_macro",
+      "profile": "release",
+      "fixture": "reject_macro",
+      "diagnostic": "bream milestone subset:",
+      "passed": true
+    },
+    {
+      "kind": "rejection",
+      "command": "reject-release-reject_manual_await",
+      "profile": "release",
+      "fixture": "reject_manual_await",
+      "diagnostic": "bream milestone subset:",
+      "passed": true
+    },
+    {
+      "kind": "rejection",
+      "command": "reject-release-reject_nested_macro",
+      "profile": "release",
+      "fixture": "reject_nested_macro",
+      "diagnostic": "bream milestone subset:",
+      "passed": true
+    },
+    {
+      "kind": "rejection",
+      "command": "reject-release-reject_program_fields",
+      "profile": "release",
+      "fixture": "reject_program_fields",
+      "diagnostic": "is private",
+      "passed": true
+    },
+    {
+      "kind": "rejection",
+      "command": "reject-release-reject_raw_identifier",
+      "profile": "release",
+      "fixture": "reject_raw_identifier",
+      "diagnostic": "bream milestone subset:",
+      "passed": true
+    },
+    {
+      "kind": "rejection",
+      "command": "reject-release-reject_reserved_name",
+      "profile": "release",
+      "fixture": "reject_reserved_name",
+      "diagnostic": "bream milestone subset:",
+      "passed": true
+    },
+    {
+      "kind": "rejection",
+      "command": "reject-release-reject_safe_constructor",
+      "profile": "release",
+      "fixture": "reject_safe_constructor",
+      "diagnostic": "requires unsafe function or block",
+      "passed": true
+    },
+    {
+      "kind": "rejection",
+      "command": "reject-release-reject_scalar_read",
+      "profile": "release",
+      "fixture": "reject_scalar_read",
+      "diagnostic": "bream milestone subset:",
+      "passed": true
+    },
+    {
+      "kind": "rejection",
+      "command": "reject-release-reject_unsafe",
+      "profile": "release",
+      "fixture": "reject_unsafe",
+      "diagnostic": "bream milestone subset:",
+      "passed": true
+    }
+  ],
+  "environment_overrides": {
+    "CARGO_HOME": "/home/bat/projects/bream/.tools/cargo-cache",
+    "CARGO_TARGET_DIR": "/home/bat/projects/bream/.tools/process-milestone/20261008-useful-process-02",
+    "RUSTC": "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/rustc",
+    "RUSTFLAGS": "",
+    "RUSTDOCFLAGS": "",
+    "RUSTC_WRAPPER": "",
+    "RUSTC_WORKSPACE_WRAPPER": "",
+    "RUST_BACKTRACE": "0"
+  },
+  "new_beam_execution": false,
+  "production_runtime": false,
+  "evidence_revision": {
+    "date": "2026-10-08",
+    "reason": "User requested removal of all speed-test evidence.",
+    "scope": "Filtered correctness records; performance commands, outputs and summaries removed. Not a fresh execution.",
+    "performance_status": "redo_required"
+  }
+}

@@ -1,0 +1,8 @@
+   Compiling bream-replacement-consumer v0.0.0 (/home/bat/projects/bream/experiments/session-replacement/consumer)
+error: bream milestone subset: raw identifiers are forbidden in this milestone subset
+ --> consumer/examples/reject_raw_identifier.rs:5:9
+  |
+5 |     let r#__bream_context: u64 = 0;
+  |         ^^^^^^^^^^^^^^^^^
+
+error: could not compile `bream-replacement-consumer` (example "reject_raw_identifier") due to 1 previous error

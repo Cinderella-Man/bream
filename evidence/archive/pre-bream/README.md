@@ -1,7 +1,7 @@
 # Evidence before the Bream rename
 
-These raw logs and result records are preserved unchanged from the original project name. Their absolute paths describe the paths at execution time. They are historical evidence, not current build instructions.
+Correctness records and original source identities remain from the earlier project name. On 2026-10-08, the user ordered all speed-test evidence removed. Elapsed-time fields were removed from mixed records; these are filtered historical observations, not byte-identical originals.
 
-`project-snapshot.tar.gz` preserves the original source, documentation, and the three final qualified executables. `snapshot-manifest.json` records the original root and per-file hashes. Map each historical path relative to that root to the corresponding archive member to verify the old results.
+`project-snapshot.tar.gz` now contains only original Rust/Python source and Cargo/configuration files. Historical reports, result records and executables were removed from that archive so it cannot preserve hidden speed data. `snapshot-manifest.json` describes the remaining source members.
 
-Current Bream results live outside this archive and were produced after renaming and rebuilding. Old names inside this archive are intentional historical data.
+[Removal record and current integrity baseline](../../performance-reset/README.md). Old names in retained sources are historical, not current build instructions.

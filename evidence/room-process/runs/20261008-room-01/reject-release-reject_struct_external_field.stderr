@@ -1,0 +1,8 @@
+   Compiling bream-room-consumer v0.0.0 (/home/bat/projects/bream/experiments/room-process/consumer)
+error: bream structured subset: only private checked data or concrete primitive/Words types are admitted
+ --> consumer/examples/reject_struct_external_field.rs:5:16
+  |
+5 |         value: std::string::String,
+  |                ^^^
+
+error: could not compile `bream-room-consumer` (example "reject_struct_external_field") due to 1 previous error

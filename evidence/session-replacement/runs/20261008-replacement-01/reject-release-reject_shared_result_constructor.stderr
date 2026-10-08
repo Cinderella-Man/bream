@@ -1,0 +1,8 @@
+   Compiling bream-replacement-consumer v0.0.0 (/home/bat/projects/bream/experiments/session-replacement/consumer)
+error: bream structured subset: unknown enum variant
+ --> consumer/examples/reject_shared_result_constructor.rs:5:24
+  |
+5 |         let selected = SharedReceiveResult::Message(receive_shared_any());
+  |                        ^^^^^^^^^^^^^^^^^^^
+
+error: could not compile `bream-replacement-consumer` (example "reject_shared_result_constructor") due to 1 previous error

@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-08",
+  "milestone": "Private owning records, tagged enums, shared-budget checked helpers and partial-initialization cancellation",
+  "allowances": [
+    1,
+    32,
+    256
+  ],
+  "work": "8192-word typed-state transform with nested helpers beside a nonterminating helper owning a 1024-word record; kill hog after peer completes, then run another peer.",
+  "correctness": "Independent typed-state digest and enum branches; nested and ordered helpers; shared six-step allowance control; four partial-record/argument/helper ownership kill cases with peer progress; panic cleanup; empty/nested helper loops; baseline controls; separate-consumer rejection and two lexical shadowing routes.",
+  "limits": [
+    "closed private record/enum/acyclic-helper grammar with owning arguments",
+    "trusted Rust dependencies and host allocator",
+    "instrumentation affects costs",
+    "no hard wall-clock bound",
+    "no messages or waiting I/O",
+    "no reusable identity registry",
+    "no complete G1/G2 qualification"
+  ],
+  "development": "Unrecorded development compilation and debug smoke checks preceded this fixed release evidence protocol. They are not included as timing evidence.",
+  "evidence_revision": "2026-10-08: timing protocol and results removed; this is the correctness subset of the original run.",
+  "performance_status": "redo_required",
+  "local_speed_tests_allowed": false
+}

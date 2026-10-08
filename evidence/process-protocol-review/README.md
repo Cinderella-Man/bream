@@ -32,6 +32,4 @@ The timer cohorts check pre-expiry setup and separate read-only from cancellatio
 
 The marker result reproduces an assertion in the specified debug interpreter. Release-JIT controls succeed; this does not demonstrate release message loss or establish behavior on every backend. Source assertions and implementation discrepancies are evidence to investigate, not behavior to reproduce in Bream.
 
-[Review validation](review-validation.json) checks documentation links, case-index consistency, source pins and retained artifact hashes. Its passing status refers to those checks. It does not turn the expected reference abort into a passing conformance case, prove exhaustive coverage or qualify a Bream runtime.
-
-Run `python3 evidence/process-protocol-review/validate_evidence.py` from the repository root to repeat these checks against the local source/build/artifact directories.
+The historical validation output is superseded after the user-requested removal of speed-test evidence. The read-only validator entry point now delegates to the [performance-reset audit](../performance-reset/README.md), which checks the surviving file inventory, correctness records and documentation links. Hash inventories describe the filtered files; no runtime or benchmark is executed.

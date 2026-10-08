@@ -18,7 +18,6 @@
     "task_worker_count": 1,
     "monitor_thread_expected": false,
     "iterations_each": 100000000,
-    "elapsed_ms": 222.643415,
     "sampled_dispatch_changes": 2,
     "same_worker": true,
     "both_observed_overlap": false,
@@ -37,6 +36,5 @@
       91114
     ]
   },
-  "as_expected": true,
-  "elapsed_seconds": 0.22684040400054073
+  "as_expected": true
 }

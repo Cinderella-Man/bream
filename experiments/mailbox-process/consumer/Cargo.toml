@@ -1,0 +1,10 @@
+[package]
+name = "bream-mailbox-consumer"
+version = "0.0.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+bream-mailbox-runtime = { path = "../runtime" }
+bream-mailbox-macros = { path = "../macros" }
+

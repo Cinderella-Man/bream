@@ -1,0 +1,8 @@
+   Compiling bream-mailbox-consumer v0.0.0 (/home/bat/projects/bream/experiments/mailbox-process/consumer)
+error: bream structured subset: only private synchronous nongeneric checked functions
+ --> consumer/examples/reject_struct_helper_attribute.rs:4:5
+  |
+4 |     #[inline]
+  |     ^
+
+error: could not compile `bream-mailbox-consumer` (example "reject_struct_helper_attribute") due to 1 previous error

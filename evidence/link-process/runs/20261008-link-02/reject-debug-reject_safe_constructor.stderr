@@ -1,0 +1,11 @@
+   Compiling bream-link-consumer v0.0.0 (/home/bat/projects/bream/experiments/link-process/consumer)
+error[E0133]: call to unsafe function `Program::__from_generated` is unsafe and requires unsafe function or block
+ --> consumer/examples/reject_safe_constructor.rs:3:13
+  |
+3 |     let _ = Program::__from_generated(|_| Box::pin(async { loop {} }));
+  |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ call to unsafe function
+  |
+  = note: consult the function's documentation for information on how to avoid undefined behavior
+
+For more information about this error, try `rustc --explain E0133`.
+error: could not compile `bream-link-consumer` (example "reject_safe_constructor") due to 1 previous error

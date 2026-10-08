@@ -1,0 +1,8 @@
+   Compiling bream-spawn-consumer v0.0.0 (/home/bat/projects/bream/experiments/spawn-process/consumer)
+error: bream structured subset: unknown record
+ --> consumer/examples/reject_monitor_ref_constructor.rs:5:25
+  |
+5 |         let reference = MonitorRef { value: 1 };
+  |                         ^^^^^^^^^^
+
+error: could not compile `bream-spawn-consumer` (example "reject_monitor_ref_constructor") due to 1 previous error

@@ -1,0 +1,10 @@
+[package]
+name = "bream-timeout-consumer"
+version = "0.0.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+bream-timeout-runtime = { path = "../runtime" }
+bream-timeout-macros = { path = "../macros" }
+

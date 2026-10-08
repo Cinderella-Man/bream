@@ -1,0 +1,8 @@
+   Compiling proc-macro2 v1.0.107
+   Compiling unicode-ident v1.0.26
+   Compiling quote v1.0.47
+   Compiling bream-milestone-runtime v0.0.0 (/home/bat/projects/bream/experiments/process-milestone/runtime)
+   Compiling syn v2.0.119
+   Compiling bream-milestone-macros v0.0.0 (/home/bat/projects/bream/experiments/process-milestone/macros)
+   Compiling bream-milestone-consumer v0.0.0 (/home/bat/projects/bream/experiments/process-milestone/consumer)
+    Finished `release` profile [optimized] target(s) in 2.31s

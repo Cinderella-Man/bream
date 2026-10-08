@@ -1,0 +1,592 @@
+{
+  "status": "failed",
+  "errors": [
+    "AssertionError('   Compiling proc-macro2 v1.0.107\\n   Compiling unicode-ident v1.0.26\\n   Compiling quote v1.0.47\\n   Compiling bream-timeout-runtime v0.0.0 (/home/bat/projects/bream/experiments/receive-timeout/runtime)\\n   Compiling syn v2.0.119\\n   Compiling bream-timeout-macros v0.0.0 (/home/bat/projects/bream/experiments/receive-timeout/macros)\\n   Compiling bream-timeout-consumer v0.0.0 (/home/bat/projects/bream/experiments/receive-timeout/consumer)\\nerror: bream structured subset: match arm needs block\\n  --> consumer/src/timeouts.rs:99:13\\n   |\\n99 |             ReceiveResult::Timeout => match state.selection {\\n   |             ^^^^^^^^^^^^^\\n\\nerror: could not compile `bream-timeout-consumer` (bin \"bream-timeout-consumer\") due to 1 previous error\\n')"
+  ],
+  "protocol": {
+    "path": "evidence/receive-timeout/runs/20261008-timeout-01/protocol.json",
+    "sha256": "94d1f527d0d8333377e78e7834d928dbf34b2ae7915efb9ba781d5b3096cb257"
+  },
+  "inputs": [
+    {
+      "original_path": "experiments/receive-timeout/Cargo.lock",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/Cargo.lock",
+      "sha256": "10794cf824a0d50c271dea9bb0e25befafbd05d673bf8338ba2d77a79aa9ef09"
+    },
+    {
+      "original_path": "experiments/receive-timeout/Cargo.toml",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/Cargo.toml",
+      "sha256": "3ef7f940bcad0ab49e8984b409a58f99319026aca593fe46e4ed0968f9877a51"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/Cargo.toml",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/Cargo.toml",
+      "sha256": "3718416cda3459816f5de24b246a904de180d34e295bf6e5e6ab52afff35ce06"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_buffer_move.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_buffer_move.rs",
+      "sha256": "4e0075d160343ac6a3aed3b9e07bab1e1ea5f7a04984d0c835916efd1d0d664c"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_buffer_rebind.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_buffer_rebind.rs",
+      "sha256": "bbda80beba0a07fd875424e530a4953a868d184cc4879fbc6e9e86fc36d595c9"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_closure.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_closure.rs",
+      "sha256": "09ba01a14cdfc083eda376171a0a98f626ae4cccaa8bff0805c220807145006a"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_closure_spawn.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_closure_spawn.rs",
+      "sha256": "79502a35f4f1c591f152fbded65c199af365953c79a857e5bbafa7cf283963c9"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_custom_call.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_custom_call.rs",
+      "sha256": "be98742c263f840d654c250e66c94eef1622b92db2c7214847b528b686894f44"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_custom_drop.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_custom_drop.rs",
+      "sha256": "2fc3f31b7d688b45f8294304cf1ce85b51db2f3b269cf9bcb133cb722876da24"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_custom_iterator.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_custom_iterator.rs",
+      "sha256": "a0fa9954f9985f1761e2558f3b2f236fbef8a4d8443b66f3ae6b73e66f16f51f"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_custom_type.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_custom_type.rs",
+      "sha256": "eff37afc5700bcbca2d88407f668db81cbd9e26cd6257943c836c40a9027bcab"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_drop_input.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_drop_input.rs",
+      "sha256": "8c9747ecf7500aaf0511a610a43158f9977f83dc290a6f391cf637b7b4c85495"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_envelope_clone.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_envelope_clone.rs",
+      "sha256": "3fb398eaca5a62f02897f8172b7597b0bdbecba16ca23adcc33bca7e32336b02"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_external_method.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_external_method.rs",
+      "sha256": "9b9f694afbf0f3aa5aaf2e66ed131f9dbc89bdfa1d025fc5db234f158bdbefb6"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_future.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_future.rs",
+      "sha256": "88daacc1b6171a276cbd050962002451ae0418e31c777808615998baa17df74a"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_global_read.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_global_read.rs",
+      "sha256": "37f2671bc2944e059f12bfc79808676f59c7551904939148c29ab01558894a80"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_id_fields.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_id_fields.rs",
+      "sha256": "58563421e20c25aa0448134fca3e850422400e182af7f6842132fa764f9baea5"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_id_mutation.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_id_mutation.rs",
+      "sha256": "fa2a1d56dd75c2d6364077c9a6c36ea6cd59670424b53af567e7d146e4da4929"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_inner_attribute.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_inner_attribute.rs",
+      "sha256": "7a652e6587551fada16d9bfed5b57e82b784d97e139a103ac41ed3011124f0ce"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_macro.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_macro.rs",
+      "sha256": "9bf5d97ef64689011dd2bdaf237259ec4fd0bd3ccc7b2f723130a69670b2f36e"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_manual_await.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_manual_await.rs",
+      "sha256": "214f6a9f62490891f517adacefc687028609e632f6da06b07323ed9dccdf5e93"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_message_builtin_shadow.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_message_builtin_shadow.rs",
+      "sha256": "882295c96d49df09053a949d50215381cb08af1498768533324fd0f5c8a1dc14"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_message_constructor.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_message_constructor.rs",
+      "sha256": "2a2cc3b96b139a9bebeb7c53f038c2bad8999e683618a16402833b8f4539a77c"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_message_twice.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_message_twice.rs",
+      "sha256": "bb3c8f8b47390bebd1b17ad124944cc40ced10c21450db2e19ea8c0c939fdb35"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_nested_macro.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_nested_macro.rs",
+      "sha256": "84d8591aa7beb136f58e68fd87f5b78b8c3534fe8304d30bd147a060a36afbd4"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_pid_arithmetic.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_pid_arithmetic.rs",
+      "sha256": "c52e5868281ed6814c3188031318837472e69decc7c8a178aeaf3af5eba1678f"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_program_fields.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_program_fields.rs",
+      "sha256": "cf837a5b1056e5550c881539ad3b1d075a7913816bf9960c4e4ff80f0e140672"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_raw_identifier.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_raw_identifier.rs",
+      "sha256": "7b7207acbf5ad78d6f8a1b238cd2a698dfab3451be5588b4d2316974d7c34a0e"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_receive_predicate.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_receive_predicate.rs",
+      "sha256": "4c31bdb7cd2cfe48776fca3c60da58a3b3e8ba1000789ad5f61007df698dbc54"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_reserved_name.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_reserved_name.rs",
+      "sha256": "e1436a1096ff235dcfd2d429aa0b5ed869b2ea598d6d9f6d5ab962bca5da03a2"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_safe_constructor.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_safe_constructor.rs",
+      "sha256": "de0f20dceea5482216446ad39bf6a6f59a8ff4451991c92a6b7745d0b0e80bec"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_scalar_read.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_scalar_read.rs",
+      "sha256": "9dff7c201bdc2c079b2a7411aa6e13fd691037d6f5c57d92af1e5717047247d7"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_send_custom_payload.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_send_custom_payload.rs",
+      "sha256": "020d3d90d60201f300874be21927e67cbda89eaaf3585b5edb7fc8908eab12f8"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_send_numeric_pid.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_send_numeric_pid.rs",
+      "sha256": "5163d954cc0b16c0fab49c7fb7e9bebdda8e7e226d9b7a126770b33b30cb427f"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_send_twice.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_send_twice.rs",
+      "sha256": "db39fdff4d3e820b8086b3ec47bcabea669370777e44a9d2525a9ae510963efb"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_struct_async.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_struct_async.rs",
+      "sha256": "4254c3fb01d21aeae9a078f62eb20de8dc78fe236b8af4619670893b8456c8ee"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_struct_body_item.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_struct_body_item.rs",
+      "sha256": "ff8602fbac8419aff34958f61cd7024faec156da48a7bf19577c9aa42260e409"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_struct_closure.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_struct_closure.rs",
+      "sha256": "ff28f8f001b6bb14b5807ca55ed3c1048452bfc01a035782b87c6d4d496f657c"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_struct_custom_drop.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_struct_custom_drop.rs",
+      "sha256": "96c16472e08eef3cf12880dbea478610f0a07a07c22d93224cfd019c2cb2da2d"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_struct_depth.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_struct_depth.rs",
+      "sha256": "7bc6078c9b61258618701094a17225b5bbe5426f440c8b87b466d79139930365"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_struct_derive.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_struct_derive.rs",
+      "sha256": "cb5f37fcdc0dfc3afe481036cdd83bd79a92d28f3a285e6c101c76c00103e956"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_struct_duplicate_owner.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_struct_duplicate_owner.rs",
+      "sha256": "cbc4a43862b61b43394ac7e50f61eb3010182c9116c2c688b1d8f90acc8393e3"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_struct_external_field.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_struct_external_field.rs",
+      "sha256": "35aabdb73c20a503b168724c94be37d097563d713fc402fa39f5270d9bfdc2dc"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_struct_function_value.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_struct_function_value.rs",
+      "sha256": "065030ba9b501ef1a5911ca779ff9f37870b07d8f9f510a0b39afe77f5885eb2"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_struct_generic.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_struct_generic.rs",
+      "sha256": "d6d83abe7e7477ea2b9b8a68f5b644097112822b816cf5f0dc35f350fedfeec9"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_struct_global.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_struct_global.rs",
+      "sha256": "d486f984f1dc83f27d8c294713bc90c19cdf8cf153154e06dd3c618f93f41781"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_struct_helper_attribute.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_struct_helper_attribute.rs",
+      "sha256": "17d5e288c20dde03f357d99b6650af8dca5eb64511ed7c837a31e59d633b1acb"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_struct_import.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_struct_import.rs",
+      "sha256": "4ec318db5866c068e2c2f9780e94e4d0250f5282d2853712d4e22d7cda041b58"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_struct_leaf_count.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_struct_leaf_count.rs",
+      "sha256": "aa211d7a23f0cbbb1a58b18a4b6cbec14393aee161aac50bcb2280019ffa22a2"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_struct_macro.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_struct_macro.rs",
+      "sha256": "771af866f67d0270daee78aa43880c55b21a620166af353b2eac2a3ca9ca52bf"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_struct_manual_await.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_struct_manual_await.rs",
+      "sha256": "8b1d1088eaa83933c3df19f98c9014a53c566fa20647ba5910059d1c4c91edb9"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_struct_missing_arm.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_struct_missing_arm.rs",
+      "sha256": "6926b597afa4b4e08cced3063f6d5383fe6041f133473b63db4cca8708c56f45"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_struct_mutual_recursion.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_struct_mutual_recursion.rs",
+      "sha256": "1ed88e53375baad8d1637ddebdc6f95519d9662445666f0d5e1806af4ad325d4"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_struct_owning_tag.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_struct_owning_tag.rs",
+      "sha256": "aca01aefb0bf866dc3970470e2a27d4e4d8dae450808dff40fc9f79248f86121"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_struct_primitive_alias.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_struct_primitive_alias.rs",
+      "sha256": "c2ed16d5df551edf31e1c3e757d88624f98569331ceb281c76646b06cddad173"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_struct_private_helper.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_struct_private_helper.rs",
+      "sha256": "c2fb291576af8d38b6abdd8fdef1bc06b836e3626b57c09f8d1e12eeba738560"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_struct_private_type.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_struct_private_type.rs",
+      "sha256": "1304ab29bf29ab23872dfac31f3d8476032a6a2036adba721e482615e32d55b9"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_struct_public_type.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_struct_public_type.rs",
+      "sha256": "8f185c83a0fd86b4cabaf238df954f639847e58f1433412f368b8161b74b392a"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_struct_raw_field.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_struct_raw_field.rs",
+      "sha256": "2ddd9866a649410466fe47ed4807d0aa5a41075b0177729a38cd15ba06665b66"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_struct_record_depth.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_struct_record_depth.rs",
+      "sha256": "074ef4cb5e810954ba8ee94a1299229506f85dbaf939f545d82ebca74c3a9574"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_struct_recursion.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_struct_recursion.rs",
+      "sha256": "e8aaf255d0fb937b50472223325154685097206f066841ed1dd2555f368c3f53"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_struct_recursive_type.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_struct_recursive_type.rs",
+      "sha256": "aaae15d3e2893d5c3a79a0bc3f617c7ffe3891e9e9470b11030c1119ca3f1c4b"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_struct_reference.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_struct_reference.rs",
+      "sha256": "ab5f6cf6cc23a6cd61c61f053e9c6523de638d30e617046248aa6b6f9492a4e0"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_struct_trait.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_struct_trait.rs",
+      "sha256": "4cf91edc3f0073c2a367ae6733f860ab087e3397054c8701285cca51704ae989"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_struct_unsafe.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_struct_unsafe.rs",
+      "sha256": "fe431bd0c04c9be2df682d067628377ed4d6232b2218b37ae3e6188fad2965ce"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_struct_use_after_move.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_struct_use_after_move.rs",
+      "sha256": "d774a90753317ddaee7e1bb9babd38858327891b4588f7b7e94a2858f442901d"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_struct_wrong_field.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_struct_wrong_field.rs",
+      "sha256": "f8f4c527ac2c9a4252c8ea28ac5815e8f6e0991d99746c090aafb23f05b005d0"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_struct_wrong_tag.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_struct_wrong_tag.rs",
+      "sha256": "8e7f9cac442a1362dd765b615c7b1e0451c798c227be4e4a8c39c6507a1500a4"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_timeout_builtin_shadow.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_timeout_builtin_shadow.rs",
+      "sha256": "048aeaf907f490ebaae6a22fc374d9aeb008d436ce3b53e94c1611f77d99a9a1"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_timeout_clock_access.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_timeout_clock_access.rs",
+      "sha256": "015611c48286ff8f6bec5cd9aa9cd91aaf2acd123bc93e646965d7663a027708"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_timeout_constructor.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_timeout_constructor.rs",
+      "sha256": "81b3c13ba3caec01a7146b8d0e80634813a224c0e4a7498ccd75844c6729b225"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_timeout_duplicate_owner.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_timeout_duplicate_owner.rs",
+      "sha256": "ca2e28fec28e90a0ef8d8ab02a3c9d3f2911d59dd254487f231e998b9d81cf2f"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_timeout_message_operation.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_timeout_message_operation.rs",
+      "sha256": "eed19dda79ba42bfb80be8f1f814a99095d0a291d23b9bc4d14d4ba0a499a573"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_timeout_missing_arm.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_timeout_missing_arm.rs",
+      "sha256": "64455000bbdefd2f1d94c29c089fe6319c57705bbba74e2281be26bcb5ae9dff"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_timeout_predicate.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_timeout_predicate.rs",
+      "sha256": "83d4af6f9d72f3071157bb0ed6969ad99212dda4577b9792c9c0dec00bcf4466"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_timeout_type.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_timeout_type.rs",
+      "sha256": "ad79d9c4f718370bee0d098206bc3286bd6af6f58687a84b6ceee2243700aa69"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_timeout_wrong_pattern.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_timeout_wrong_pattern.rs",
+      "sha256": "0a84d3ad6b0ff388bd73d53ac91c1ea5705ef393d465ad85da9afae3db89339a"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/reject_unsafe.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/reject_unsafe.rs",
+      "sha256": "47c9dc8edd85d8bfd62507898d76dfa24e94026cd4ac83fbab816636d9226144"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/shadow_mailbox.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/shadow_mailbox.rs",
+      "sha256": "7ee313237852f13008ae295850cd5ace1fedd24977943ad7311c7c61912963e1"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/shadow_paths.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/shadow_paths.rs",
+      "sha256": "576da86cc25b6a6abbfd1be98b397dab84ed3e5e8b240b5c1a963b507daaea9a"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/shadow_structured.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/shadow_structured.rs",
+      "sha256": "af2dd8eebe4f04fd23e8d4b79d75cbda0f6c6d1674b49e7af2675c0115004b1c"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/examples/shadow_timeout.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/examples/shadow_timeout.rs",
+      "sha256": "295b447c73111d2a6b67bbf959cc5fd424fa515dc3043e394e8bd1518e24518b"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/src/main.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/src/main.rs",
+      "sha256": "86c50b9c8873255b577a205c3a52ceffc9e1f62aff4798e2c2d2968f97f740ef"
+    },
+    {
+      "original_path": "experiments/receive-timeout/consumer/src/timeouts.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/consumer/src/timeouts.rs",
+      "sha256": "317960f7b03149cc9ca9ce15188aaf8e4aee04b46e6fbeae182243c35d008525"
+    },
+    {
+      "original_path": "experiments/receive-timeout/macros/Cargo.toml",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/macros/Cargo.toml",
+      "sha256": "9ee8801b3e2697c1590d2a0a888f7b0c006cef6443a3a5e519cedc07f5345393"
+    },
+    {
+      "original_path": "experiments/receive-timeout/macros/src/lib.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/macros/src/lib.rs",
+      "sha256": "e19a4765c49a36c0bb5537fd30da27e19ac6f3db1124b85f8c69c6b917c987fb"
+    },
+    {
+      "original_path": "experiments/receive-timeout/macros/src/structured.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/macros/src/structured.rs",
+      "sha256": "f88e200f8726a7a75628ce5da017229f6e5138bb6ed5559b4a79470a9cb0a65e"
+    },
+    {
+      "original_path": "experiments/receive-timeout/runtime/Cargo.toml",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/runtime/Cargo.toml",
+      "sha256": "38fba3e9899011bb5355db778e72ae135ef731776307098b9cce80c358fcbb8f"
+    },
+    {
+      "original_path": "experiments/receive-timeout/runtime/src/lib.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/runtime/src/lib.rs",
+      "sha256": "93adbacdc921b90c169feceff235dcaae660e2281844097bb6469ef813161bc3"
+    },
+    {
+      "original_path": "experiments/receive-timeout/runtime/src/lifecycle/tests/timeouts.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/runtime/src/lifecycle/tests/timeouts.rs",
+      "sha256": "d60c8d648c0c92d6f67c8c90bf3750aba48af5570e218bbcb56e50e1a3406b36"
+    },
+    {
+      "original_path": "experiments/receive-timeout/runtime/src/lifecycle/tests.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/runtime/src/lifecycle/tests.rs",
+      "sha256": "aad40c508290fd0dcae16ef0a353ea36516b388eb873dc9325efa2e8b724977f"
+    },
+    {
+      "original_path": "experiments/receive-timeout/runtime/src/lifecycle.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/runtime/src/lifecycle.rs",
+      "sha256": "5c0db65f81c7ca3db592fce5efab71267b71ccbcf7333b011c75376f39634125"
+    },
+    {
+      "original_path": "experiments/receive-timeout/runtime/src/mailbox.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/runtime/src/mailbox.rs",
+      "sha256": "b09aca4da1339e1529cd19e841cab45bc2f120831caf0abe3105d24eb1127481"
+    },
+    {
+      "original_path": "experiments/receive-timeout/runtime/src/timer.rs",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/experiments/receive-timeout/runtime/src/timer.rs",
+      "sha256": "1217d34012645bc8c804d84c246df529d4bc27a18e60815918dc2bb7d78584ad"
+    },
+    {
+      "original_path": "evidence/receive-timeout/run.py",
+      "path": "evidence/receive-timeout/runs/20261008-timeout-01/inputs/evidence/receive-timeout/run.py",
+      "sha256": "1dc41837dc8cfbebc05139062aacb029a42102708904b0f267e58dee94b5515f"
+    }
+  ],
+  "tools": [
+    {
+      "path": "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/rustc",
+      "sha256": "859254978c0a0402c32f949f6de0d99aee73be8d15f45aac00ae1448aac51e74"
+    },
+    {
+      "path": "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/cargo",
+      "sha256": "da77c8b33849312255ccde3179198ada4c8deb370488d050286146b1d1b27e14"
+    }
+  ],
+  "artifacts": [],
+  "commands": [
+    {
+      "name": "rustc-version",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/rustc",
+        "-vV"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/receive-timeout/runs/20261008-timeout-01/rustc-version.stdout",
+        "sha256": "778fbc643a806f0dd123c056e66201d7e8a56a61928ec0a33171be8d6c2d5a37"
+      },
+      "stderr": {
+        "path": "evidence/receive-timeout/runs/20261008-timeout-01/rustc-version.stderr",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "unit-debug",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/cargo",
+        "test",
+        "--offline",
+        "--locked",
+        "--manifest-path",
+        "/home/bat/projects/bream/experiments/receive-timeout/Cargo.toml",
+        "-p",
+        "bream-timeout-runtime",
+        "--lib"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/receive-timeout/runs/20261008-timeout-01/unit-debug.stdout",
+        "sha256": "8ff1af036724e0871ebdd6a5ab3fcdd3b49384f85f72d8f6ed6bcc3a6d257e28"
+      },
+      "stderr": {
+        "path": "evidence/receive-timeout/runs/20261008-timeout-01/unit-debug.stderr",
+        "sha256": "d9d45ca5aee54a3f80c09c703e1158dacaa92ccb2355c9d1afa673367983bfa9"
+      }
+    },
+    {
+      "name": "build-debug",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/cargo",
+        "build",
+        "--offline",
+        "--locked",
+        "--manifest-path",
+        "/home/bat/projects/bream/experiments/receive-timeout/Cargo.toml",
+        "-p",
+        "bream-timeout-consumer"
+      ],
+      "exit_code": 101,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/receive-timeout/runs/20261008-timeout-01/build-debug.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "evidence/receive-timeout/runs/20261008-timeout-01/build-debug.stderr",
+        "sha256": "2bfa12665d5fca8194fa741fe06249de8d7ebb0d41c98fc7631be40a54151e7a"
+      }
+    }
+  ],
+  "observations": [
+    {
+      "kind": "unit_tests",
+      "command": "unit-debug",
+      "profile": "debug",
+      "tests": 35,
+      "passed": true
+    }
+  ],
+  "environment_overrides": {
+    "CARGO_HOME": "/home/bat/projects/bream/.tools/cargo-cache",
+    "CARGO_TARGET_DIR": "/home/bat/projects/bream/.tools/receive-timeout/20261008-timeout-01",
+    "RUSTC": "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/rustc",
+    "CARGO_BUILD_JOBS": "2",
+    "RUSTFLAGS": "",
+    "RUSTDOCFLAGS": "",
+    "RUSTC_WRAPPER": "",
+    "RUSTC_WORKSPACE_WRAPPER": "",
+    "RUST_BACKTRACE": "0"
+  },
+  "correctness_only": true,
+  "speed_tests": false,
+  "performance_comparisons": false,
+  "new_beam_execution": false,
+  "production_runtime": false
+}

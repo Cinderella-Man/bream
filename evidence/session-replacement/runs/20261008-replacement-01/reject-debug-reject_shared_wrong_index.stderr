@@ -1,0 +1,8 @@
+   Compiling bream-replacement-consumer v0.0.0 (/home/bat/projects/bream/experiments/session-replacement/consumer)
+error: bream structured subset: shared byte index requires u64
+ --> consumer/examples/reject_shared_wrong_index.rs:6:16
+  |
+6 |         result(shared_read(bytes, true));
+  |                ^^^^^^^^^^^
+
+error: could not compile `bream-replacement-consumer` (example "reject_shared_wrong_index") due to 1 previous error

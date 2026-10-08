@@ -1,0 +1,8 @@
+   Compiling bream-mailbox-consumer v0.0.0 (/home/bat/projects/bream/experiments/mailbox-process/consumer)
+error: bream structured subset: field type mismatch
+ --> consumer/examples/reject_struct_wrong_field.rs:8:29
+  |
+8 |         let state = State { value: true };
+  |                             ^^^^^
+
+error: could not compile `bream-mailbox-consumer` (example "reject_struct_wrong_field") due to 1 previous error

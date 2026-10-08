@@ -1,0 +1,10 @@
+[package]
+name = "bream-busy-consumer"
+version = "0.0.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+bream-busy-runtime = { path = "../runtime" }
+bream-busy-macros = { path = "../macros" }
+

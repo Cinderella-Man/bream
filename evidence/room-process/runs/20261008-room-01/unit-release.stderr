@@ -1,0 +1,3 @@
+   Compiling bream-room-runtime v0.0.0 (/home/bat/projects/bream/experiments/room-process/runtime)
+    Finished `release` profile [optimized] target(s) in 5.69s
+     Running unittests src/lib.rs (.tools/room-process/20261008-room-01/release/deps/bream_room_runtime-098cb8e135da5fc4)

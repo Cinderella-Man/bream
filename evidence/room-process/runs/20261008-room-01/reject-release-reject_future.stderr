@@ -1,0 +1,19 @@
+   Compiling bream-room-consumer v0.0.0 (/home/bat/projects/bream/experiments/room-process/consumer)
+error[E0308]: mismatched types
+   --> consumer/examples/reject_future.rs:4:13
+    |
+  4 |     r.spawn(async { loop {} }, vec![]).unwrap();
+    |       ----- ^^^^^^^^^^^^^^^^^ expected `Program`, found `async` block
+    |       |
+    |       arguments to this method are incorrect
+    |
+    = note:     expected struct `Program`
+            found `async` block `{async block@consumer/examples/reject_future.rs:4:13: 4:18}`
+note: method defined here
+   --> runtime/src/lifecycle.rs:641:12
+    |
+641 |     pub fn spawn(&self, program: Program, words: Vec<u64>) -> Result<ProcessHandle, SpawnError> {
+    |            ^^^^^
+
+For more information about this error, try `rustc --explain E0308`.
+error: could not compile `bream-room-consumer` (example "reject_future") due to 1 previous error

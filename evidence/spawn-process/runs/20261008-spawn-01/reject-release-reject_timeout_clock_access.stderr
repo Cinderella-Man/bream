@@ -1,0 +1,8 @@
+   Compiling bream-spawn-consumer v0.0.0 (/home/bat/projects/bream/experiments/spawn-process/consumer)
+error: bream structured subset: unknown/unqualified helper
+ --> consumer/examples/reject_timeout_clock_access.rs:5:9
+  |
+5 |         advance_to(5);
+  |         ^^^^^^^^^^
+
+error: could not compile `bream-spawn-consumer` (example "reject_timeout_clock_access") due to 1 previous error

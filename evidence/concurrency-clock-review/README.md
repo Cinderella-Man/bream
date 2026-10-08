@@ -8,4 +8,4 @@ The builder permits two threads, 1,000 branches per execution, no configured pre
 
 The dependency/toolchain build had a 180-second watchdog and succeeded. Build time and model execution count are not speed benchmarks. Loom cannot model all weak-memory behaviors; kernel calls and code not using its primitives are outside its exploration. No new BEAM execution, Bream implementation or clock fault-injection experiment occurred.
 
-[Prior case IDs](prior-case-ids.json), [prior task IDs](prior-task-ids.json) and [prior evidence hashes](prior-evidence-hashes.json) retain the previous 474-case/70-task state and evidence. [Validation](review-validation.json) checks the new documentation and artifacts without rewriting those historical results.
+The historical validation output is superseded after the user-requested removal of speed-test evidence. The read-only validator entry point now delegates to the [performance-reset audit](../performance-reset/README.md), which checks the surviving file inventory, correctness records and documentation links. Hash inventories describe the filtered files; no runtime or benchmark is executed.

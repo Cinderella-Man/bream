@@ -1,0 +1,1 @@
+{"kind":"mailbox_controls","passed":true,"allowance":4,"ordered_digest":20103040,"scan_candidates":129,"scan_peer_progress":true,"cleanup_peer_progress":true,"cleanup_batch_limit":8,"send_kill_races":16,"concurrent_messages":16,"transfer_outlives_sender":true,"held_and_queued_cleanup":true,"stale_send_isolated":true,"parked_no_spin":true,"speed_tests":false}

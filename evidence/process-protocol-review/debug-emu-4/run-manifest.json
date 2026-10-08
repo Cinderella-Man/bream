@@ -16,7 +16,6 @@
       ],
       "exit_code": 0,
       "timed_out": false,
-      "elapsed_seconds": 1.549,
       "log": "evidence/process-protocol-review/debug-emu-4/compile-normal.log"
     },
     {
@@ -32,7 +31,6 @@
       ],
       "exit_code": 0,
       "timed_out": false,
-      "elapsed_seconds": 0.734,
       "log": "evidence/process-protocol-review/debug-emu-4/compile-no_recv_opt.log"
     },
     {
@@ -59,7 +57,6 @@
       ],
       "exit_code": 0,
       "timed_out": false,
-      "elapsed_seconds": 3.962,
       "log": "evidence/process-protocol-review/debug-emu-4/observations.log"
     },
     {
@@ -88,7 +85,6 @@
       ],
       "exit_code": 0,
       "timed_out": false,
-      "elapsed_seconds": 1.683,
       "log": "evidence/process-protocol-review/debug-emu-4/hibernate-255.log"
     },
     {
@@ -117,7 +113,6 @@
       ],
       "exit_code": 0,
       "timed_out": false,
-      "elapsed_seconds": 0.805,
       "log": "evidence/process-protocol-review/debug-emu-4/hibernate-256.log"
     },
     {
@@ -146,7 +141,6 @@
       ],
       "exit_code": 0,
       "timed_out": false,
-      "elapsed_seconds": 0.887,
       "log": "evidence/process-protocol-review/debug-emu-4/hibernate-257.log"
     },
     {
@@ -169,7 +163,6 @@
       ],
       "exit_code": 0,
       "timed_out": false,
-      "elapsed_seconds": 0.945,
       "log": "evidence/process-protocol-review/debug-emu-4/disassembly-normal.log"
     },
     {
@@ -194,7 +187,6 @@
       ],
       "exit_code": -6,
       "timed_out": false,
-      "elapsed_seconds": 2.02,
       "log": "evidence/process-protocol-review/debug-emu-4/priority-marker-normal.log"
     },
     {
@@ -217,7 +209,6 @@
       ],
       "exit_code": 0,
       "timed_out": false,
-      "elapsed_seconds": 1.014,
       "log": "evidence/process-protocol-review/debug-emu-4/disassembly-no_recv_opt.log"
     },
     {
@@ -242,7 +233,6 @@
       ],
       "exit_code": 0,
       "timed_out": false,
-      "elapsed_seconds": 1.835,
       "log": "evidence/process-protocol-review/debug-emu-4/priority-marker-no_recv_opt.log"
     }
   ],
@@ -285,7 +275,7 @@
     },
     {
       "path": "evidence/process-protocol-review/debug-emu-4/observations.json",
-      "sha256": "b2d7f80ab02d8aa768806995ef023f3d209fd9c02572d673d9eb2365daf949a5"
+      "sha256": "0a1a445d28f2d01adc115ff20acca7193f346a38e4f370d08da0015a1da0eeff"
     },
     {
       "path": "evidence/process-protocol-review/debug-emu-4/hibernate-257.json",

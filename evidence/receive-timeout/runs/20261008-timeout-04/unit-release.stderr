@@ -1,0 +1,3 @@
+   Compiling bream-timeout-runtime v0.0.0 (/home/bat/projects/bream/experiments/receive-timeout/runtime)
+    Finished `release` profile [optimized] target(s) in 1.58s
+     Running unittests src/lib.rs (.tools/receive-timeout/20261008-timeout-04/release/deps/bream_timeout_runtime-22c626cb8dc7a81e)

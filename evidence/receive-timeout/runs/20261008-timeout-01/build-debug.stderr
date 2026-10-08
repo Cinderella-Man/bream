@@ -1,0 +1,14 @@
+   Compiling proc-macro2 v1.0.107
+   Compiling unicode-ident v1.0.26
+   Compiling quote v1.0.47
+   Compiling bream-timeout-runtime v0.0.0 (/home/bat/projects/bream/experiments/receive-timeout/runtime)
+   Compiling syn v2.0.119
+   Compiling bream-timeout-macros v0.0.0 (/home/bat/projects/bream/experiments/receive-timeout/macros)
+   Compiling bream-timeout-consumer v0.0.0 (/home/bat/projects/bream/experiments/receive-timeout/consumer)
+error: bream structured subset: match arm needs block
+  --> consumer/src/timeouts.rs:99:13
+   |
+99 |             ReceiveResult::Timeout => match state.selection {
+   |             ^^^^^^^^^^^^^
+
+error: could not compile `bream-timeout-consumer` (bin "bream-timeout-consumer") due to 1 previous error

@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "date": "2026-10-08",
+  "cohort": "evidence/session-replacement/runs/20261008-replacement-01",
+  "retained_cohorts": 1,
+  "hash_records_verified": 1951,
+  "current_inputs_verified": 187,
+  "prior_busy_hashes_verified": 969,
+  "inherited_runtime_compiler_files_verified": 18,
+  "commands": 387,
+  "observations": 352,
+  "runtime_tests_executed_by_audit": false,
+  "benchmarks_executed": false,
+  "performance_qualification": "prohibited on this machine",
+  "errors": []
+}

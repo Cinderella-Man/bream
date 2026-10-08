@@ -1,0 +1,8 @@
+   Compiling proc-macro2 v1.0.107
+   Compiling unicode-ident v1.0.26
+   Compiling quote v1.0.47
+   Compiling bream-structured-runtime v0.0.0 (/home/bat/projects/bream/experiments/structured-process/runtime)
+   Compiling syn v2.0.119
+   Compiling bream-structured-macros v0.0.0 (/home/bat/projects/bream/experiments/structured-process/macros)
+   Compiling bream-structured-consumer v0.0.0 (/home/bat/projects/bream/experiments/structured-process/consumer)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 3.48s

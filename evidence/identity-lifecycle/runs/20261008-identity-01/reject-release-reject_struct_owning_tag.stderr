@@ -1,0 +1,8 @@
+   Compiling bream-identity-consumer v0.0.0 (/home/bat/projects/bream/experiments/identity-lifecycle/consumer)
+error: bream structured subset: tag payload must be primitive
+ --> consumer/examples/reject_struct_owning_tag.rs:5:16
+  |
+5 |         Update(Words),
+  |                ^^^^^
+
+error: could not compile `bream-identity-consumer` (example "reject_struct_owning_tag") due to 1 previous error

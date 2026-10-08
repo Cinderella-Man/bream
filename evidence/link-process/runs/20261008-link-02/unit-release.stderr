@@ -1,0 +1,3 @@
+   Compiling bream-link-runtime v0.0.0 (/home/bat/projects/bream/experiments/link-process/runtime)
+    Finished `release` profile [optimized] target(s) in 5.65s
+     Running unittests src/lib.rs (.tools/link-process/20261008-link-02/release/deps/bream_link_runtime-c499e1ee184806e3)

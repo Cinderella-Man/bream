@@ -1,78 +1,10 @@
 {
-  "created_at": "2026-10-07T16:47:06.376655+00:00",
+  "revision": "2026-10-08: source-only archive after performance-evidence removal",
   "original_root": "/home/bat/projects/impish",
   "snapshot_files": [
     {
       "path": ".gitignore",
       "sha256": "13b45c154aea7917bc7c62f26e56ec7dedb43e7308bcd2794d1e83bf8db5fa03"
-    },
-    {
-      "path": "CONTEXT.md",
-      "sha256": "95d330e6630db65d41cbb6fa1beddb31930addd73b1268aeff9eba07d66a4352"
-    },
-    {
-      "path": "README.md",
-      "sha256": "51a3b37919056472c063cd8ae4f1278e289d587bbf65e1916522513c48efbaaf"
-    },
-    {
-      "path": "docs/adr/0001-native-preemptive-processes.md",
-      "sha256": "a4636ec9d57ca69fbaa2e5878d0df738a0a8a975fef59344ed5be9f6a9f0abd4"
-    },
-    {
-      "path": "docs/adr/0002-runtime-aware-operations.md",
-      "sha256": "6ddd961452a7d5feab70730771b3178f08c02b2ab5d635cdb112142396dcd5a4"
-    },
-    {
-      "path": "docs/adr/0003-library-build-and-forced-termination.md",
-      "sha256": "b7955bc49412f0b9ea2b2be53ac025e960168d2979298d9750e3034edb881734"
-    },
-    {
-      "path": "docs/design-tree.md",
-      "sha256": "a3522d2bc81ed8202ba701c31bb80ee36f5c968b673d542bf7e878aa891b5bb2"
-    },
-    {
-      "path": "docs/findings.md",
-      "sha256": "8420c40d330b475eb8149f7c18c273a45e5f6eb6118215b39740103764f4ea62"
-    },
-    {
-      "path": "docs/generated-process-model.md",
-      "sha256": "d41591d674288eb25a85573711ca07704ee2b95fbf70da7bc6f9bfc4205fe0b7"
-    },
-    {
-      "path": "docs/naming.md",
-      "sha256": "80ce1faac7d2dcb2fb944809413852dd4a0d744af31c391979cb1bbdc0c253bd"
-    },
-    {
-      "path": "docs/native-design.md",
-      "sha256": "3e14384261ceb5dc945ab771e5f4ff94a28904712d86ecc6ab293cce20ed51c6"
-    },
-    {
-      "path": "docs/qualification-plan.md",
-      "sha256": "4a5182519b8dfc11be194c956fb2d1feede86383737b310c618c9b927f2545fb"
-    },
-    {
-      "path": "docs/research/01-lab-extraction-audit.md",
-      "sha256": "5df8b7289dbd9431bca802da712e60439d627c71e86355d5a01c41e2d8dd1b3f"
-    },
-    {
-      "path": "docs/research/02-native-mechanisms.md",
-      "sha256": "f99078228c3486a4e4546784ea77d0e5b017e8ddacfb20c3a778036826f8fce0"
-    },
-    {
-      "path": "docs/research/03-runtime-landscape.md",
-      "sha256": "21e420a4c14c807e9d4c999aa3728b68fc9c5956bebf1d46db66e75f10b0245d"
-    },
-    {
-      "path": "docs/research/04-preemptible-functions.md",
-      "sha256": "8b56e9cd9d6140d82bf47bcf0ff43a68dfba6c3ea06cd27715f73e52660a226c"
-    },
-    {
-      "path": "docs/research/05-forced-termination.md",
-      "sha256": "3c3afa2da16382843546faa7ef5a475ecd332ea1bb18b2d7806416b4b3ae696d"
-    },
-    {
-      "path": "docs/research/06-cancellation-candidates.md",
-      "sha256": "ee89bbadb7fefa3257031dd225ee4de6da601ef3a9665733be443f99d0816eb9"
     },
     {
       "path": "experiments/generated-process/.gitignore",
@@ -85,10 +17,6 @@
     {
       "path": "experiments/generated-process/Cargo.toml",
       "sha256": "a86bba10c233fd3fadf2d2af098fb453af41d1270ad6ba5eeed43e629bd8aaec"
-    },
-    {
-      "path": "experiments/generated-process/README.md",
-      "sha256": "bd024597dd16dceca97632d60908de6876e092a6e400a3eebb812cfe593629a2"
     },
     {
       "path": "experiments/generated-process/macros/Cargo.toml",
@@ -155,10 +83,6 @@
       "sha256": "2c6c391799b0de0cbf4943bdd127fecd9ddc3d7faff9944dccb54ad7a0c5be8e"
     },
     {
-      "path": "experiments/generated-process/target/release/impish-probe-runtime",
-      "sha256": "f914daab53c8f2b94fee0c8698db87c8592118ac1f8d51cdf61edf43ef5c6590"
-    },
-    {
       "path": "experiments/native-preemption/.gitignore",
       "sha256": "9dec2c58d108a98a24c0a843b5e78ccbb88cb4d1a20537722c7a67bc115e5fb8"
     },
@@ -171,10 +95,6 @@
       "sha256": "db461fb43677055ce4490729e84076174612de7c391e4d67b7b04eec3657bdab"
     },
     {
-      "path": "experiments/native-preemption/README.md",
-      "sha256": "d72993469698c19607ad03eb322fada09dac6d218494745f3466b4de7b269c5b"
-    },
-    {
       "path": "experiments/native-preemption/run.py",
       "sha256": "4a046eac54d997ad48ed35dee5e191ce18df3572daa83c5b583b3c3242fa3906"
     },
@@ -183,36 +103,12 @@
       "sha256": "13ba81a738a39c929386b748a42ca7f596f38c7fca762e526fbcfafccc960bf5"
     },
     {
-      "path": "experiments/native-preemption/target/no-preemptive/release/impish-native-preemption-probe",
-      "sha256": "b337e45e788843d99c85f4074fb923e7ccab3ac14385ad2f6fa2cb97ca5f01a4"
-    },
-    {
-      "path": "experiments/native-preemption/target/release/impish-native-preemption-probe",
-      "sha256": "db34868b036f488949c4bc11c00e0ec9a199a788033661c35f882fe1fc76a26b"
-    },
-    {
-      "path": "experiments/native-preemption/vendor/open-coroutine-0.7.0.crate",
-      "sha256": "02e5b3d18b67037a5f8b5e7f6c3bc10d0862e7c63c3c28ef181e7bfbf428e6e9"
-    },
-    {
-      "path": "experiments/native-preemption/vendor/open-coroutine-0.7.0/.cargo_vcs_info.json",
-      "sha256": "50edb05048afe1fc95dff4ab517b42b5a9968eb58043527ca04ec7f6a16a28cd"
-    },
-    {
       "path": "experiments/native-preemption/vendor/open-coroutine-0.7.0/Cargo.lock",
       "sha256": "138d868c90d6b2df5dd537c0820432275916239b53702582cb61b8c4bdfd6229"
     },
     {
       "path": "experiments/native-preemption/vendor/open-coroutine-0.7.0/Cargo.toml",
       "sha256": "a1eaacf5fe657b71c952aba0c84f7ae4311487b2b6f82d0d18535a1346e42dba"
-    },
-    {
-      "path": "experiments/native-preemption/vendor/open-coroutine-0.7.0/Cargo.toml.orig",
-      "sha256": "bdf5af5184a3e3ee20776869fc6840e20d2d1d097106255ac46f0615a5a58d4a"
-    },
-    {
-      "path": "experiments/native-preemption/vendor/open-coroutine-0.7.0/README.md",
-      "sha256": "caa0025715ba0bb8f252a09fc29ab3b5326eccd22c6b3ed08ff4e2b5629d0cc1"
     },
     {
       "path": "experiments/native-preemption/vendor/open-coroutine-0.7.0/build.rs",
@@ -303,14 +199,6 @@
       "sha256": "95d6d8f844f104e96da8341f5219ec98ab83239df0b3485acf47b71cceb9514d"
     },
     {
-      "path": "experiments/native-preemption/vendor/open-coroutine-core-0.7.0.crate",
-      "sha256": "1d9fd5c9e3e6555e1122ba1d0bc8c4f48b49b38754bc5b7adf4cf24b3f368428"
-    },
-    {
-      "path": "experiments/native-preemption/vendor/open-coroutine-core-0.7.0/.cargo_vcs_info.json",
-      "sha256": "1588d7cb18a0fe21c09627788c49949c390afd24a1f619bf9e722a2c72e2fd6f"
-    },
-    {
       "path": "experiments/native-preemption/vendor/open-coroutine-core-0.7.0/Cargo.lock",
       "sha256": "40ab7cdbf7e42acfee589957670ed4b20fb83f51da959093e1b4c63fe1565b80"
     },
@@ -319,84 +207,8 @@
       "sha256": "578b9750c329eadf0e41c749f8b3c98298b109c44d423f294f0420ae25270779"
     },
     {
-      "path": "experiments/native-preemption/vendor/open-coroutine-core-0.7.0/Cargo.toml.orig",
-      "sha256": "6a16fb0356df0712a848219b2de93ee6ade5beef47988ad11a589e35db1446a5"
-    },
-    {
-      "path": "experiments/native-preemption/vendor/open-coroutine-core-0.7.0/README.md",
-      "sha256": "caa0025715ba0bb8f252a09fc29ab3b5326eccd22c6b3ed08ff4e2b5629d0cc1"
-    },
-    {
       "path": "experiments/native-preemption/vendor/open-coroutine-core-0.7.0/build.rs",
       "sha256": "10d44e6506710c6009febaaf3a69aa1c2ffcc6b42aff74e530e2bbb1ce132687"
-    },
-    {
-      "path": "experiments/native-preemption/vendor/open-coroutine-core-0.7.0/c_src/version.c",
-      "sha256": "916d081e33e7acd96a2d00363408077073148c5ff7d632711bd4e75cbb7d10ca"
-    },
-    {
-      "path": "experiments/native-preemption/vendor/open-coroutine-core-0.7.0/docs/cn/coroutine-pool.md",
-      "sha256": "2ae6c0ba5916cad167996896ad7788895141358ca01eeef939b85ac6917ee82a"
-    },
-    {
-      "path": "experiments/native-preemption/vendor/open-coroutine-core-0.7.0/docs/cn/coroutine.md",
-      "sha256": "3aee022adc0adc688a4dc479bd95d1b7369263a786372a6f43aae82fbe0cec23"
-    },
-    {
-      "path": "experiments/native-preemption/vendor/open-coroutine-core-0.7.0/docs/cn/monitor.md",
-      "sha256": "11c478a5afd5ac92912eb1cfff4c5a58e4d2249ff1ee2b99a9472a3b1c339739"
-    },
-    {
-      "path": "experiments/native-preemption/vendor/open-coroutine-core-0.7.0/docs/cn/ordered-work-steal.md",
-      "sha256": "a4c1d479176fe8192a22617fcfca9898caeed57b2841a3f607e0fdf176105531"
-    },
-    {
-      "path": "experiments/native-preemption/vendor/open-coroutine-core-0.7.0/docs/cn/overview.md",
-      "sha256": "9dd91b5e033413837e89d1d0a47d7b8d5b7a1b9a50b66e75b09c8878256cad8b"
-    },
-    {
-      "path": "experiments/native-preemption/vendor/open-coroutine-core-0.7.0/docs/cn/scalable-stack.md",
-      "sha256": "08cb3e7e6c6a3976d275c077cf0db7f0ff928c68cea17e2a09ceaff3cdf86bb7"
-    },
-    {
-      "path": "experiments/native-preemption/vendor/open-coroutine-core-0.7.0/docs/cn/why-better.md",
-      "sha256": "ae85e6cbd3a7f9d03c118e1c823c3f40e88070549f4d17a7596365be529c7d13"
-    },
-    {
-      "path": "experiments/native-preemption/vendor/open-coroutine-core-0.7.0/docs/cn/work-steal.md",
-      "sha256": "c4b72e1db1fa12a3d28d32224d4679773bb64646a76891642f5ef9674ee71278"
-    },
-    {
-      "path": "experiments/native-preemption/vendor/open-coroutine-core-0.7.0/docs/en/coroutine-pool.md",
-      "sha256": "f38d49a6b392b41f58bd73ed8d0b4c0f098d9d3d351babecaa9d9f9227b71b55"
-    },
-    {
-      "path": "experiments/native-preemption/vendor/open-coroutine-core-0.7.0/docs/en/coroutine.md",
-      "sha256": "829bee5d0048c8b6a6172625d2a61e1a29c8c4092f32f35f50c9622751391a72"
-    },
-    {
-      "path": "experiments/native-preemption/vendor/open-coroutine-core-0.7.0/docs/en/monitor.md",
-      "sha256": "0450d81fdeeddccaeb91aa387041a40e6dff44dfc2901ef731727e173239a9e7"
-    },
-    {
-      "path": "experiments/native-preemption/vendor/open-coroutine-core-0.7.0/docs/en/ordered-work-steal.md",
-      "sha256": "3b745de004cb0d708af70f6c7ca83d6041e4204aec26f70a27f75e5b77e8afa2"
-    },
-    {
-      "path": "experiments/native-preemption/vendor/open-coroutine-core-0.7.0/docs/en/overview.md",
-      "sha256": "be3d218bd259a1cd45fd8a0e2368067a63d781299214003d3dd0cfdd40480a4e"
-    },
-    {
-      "path": "experiments/native-preemption/vendor/open-coroutine-core-0.7.0/docs/en/scalable-stack.md",
-      "sha256": "dda06fdf2163679b42e529206c8421dfbe928f15f53ebbbaaf670e1f89cf6f9e"
-    },
-    {
-      "path": "experiments/native-preemption/vendor/open-coroutine-core-0.7.0/docs/en/why-better.md",
-      "sha256": "3ebb31bc3c85d2c2aaf95eee4f2ef1753a5be7e2ae9f47be0fa01a6db9b8b8bc"
-    },
-    {
-      "path": "experiments/native-preemption/vendor/open-coroutine-core-0.7.0/docs/en/work-steal.md",
-      "sha256": "1c57fc10d9ae4bf030061edc292a95d2443a5cabc2ea8cace9896cdceb8f3178"
     },
     {
       "path": "experiments/native-preemption/vendor/open-coroutine-core-0.7.0/src/co_pool/creator.rs",
@@ -786,5 +598,6 @@
       "path": "experiments/native-preemption/vendor/open-coroutine-core-0.7.0/tests/scheduler.rs",
       "sha256": "6a90afae9deb49e9e86eadc82c83442d6711e4c2722f4508ef2c44dca5a987ef"
     }
-  ]
+  ],
+  "contains_reports_results_or_binaries": false
 }

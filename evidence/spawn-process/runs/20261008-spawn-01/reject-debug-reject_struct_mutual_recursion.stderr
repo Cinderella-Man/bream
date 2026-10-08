@@ -1,0 +1,8 @@
+   Compiling bream-spawn-consumer v0.0.0 (/home/bat/projects/bream/experiments/spawn-process/consumer)
+error: bream structured subset: recursive helper/spawn cycle forbidden
+ --> consumer/examples/reject_struct_mutual_recursion.rs:3:1
+  |
+3 | mod checked {
+  | ^^^
+
+error: could not compile `bream-spawn-consumer` (example "reject_struct_mutual_recursion") due to 1 previous error

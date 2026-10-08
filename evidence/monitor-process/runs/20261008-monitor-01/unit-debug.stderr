@@ -1,0 +1,3 @@
+   Compiling bream-monitor-runtime v0.0.0 (/home/bat/projects/bream/experiments/monitor-process/runtime)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 4.12s
+     Running unittests src/lib.rs (.tools/monitor-process/20261008-monitor-01/debug/deps/bream_monitor_runtime-943004d3d596b521)

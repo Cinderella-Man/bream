@@ -1,0 +1,13 @@
+
+thread '<unnamed>' (322484) panicked at runtime/src/lib.rs:114:19:
+index out of bounds: the len is 0 but the index is 0
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+thread '<unnamed>' (322487) panicked at runtime/src/lib.rs:114:19:
+index out of bounds: the len is 0 but the index is 0
+
+thread '<unnamed>' (322489) panicked at runtime/src/lib.rs:196:13:
+link failed: NoProcess
+
+thread '<unnamed>' (322489) panicked at runtime/src/lib.rs:196:13:
+link failed: NoProcess

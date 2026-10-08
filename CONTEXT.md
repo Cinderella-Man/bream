@@ -10,6 +10,8 @@ Ask only when research leaves a genuine ambiguity or a concrete conflict with Ru
 
 ## Working rule: investigate performance alongside behavior
 
+**Machine constraint, user instruction 2026-10-08:** never run speed tests, benchmarks or performance comparisons on this machine, which is concurrently used for other work. Continue source analysis, implementation and bounded correctness checks. Watchdogs may detect hangs but supply no performance evidence. The user ordered earlier speed-test evidence removed and redone; do not restore its results or derived claims. Timing-based qualification requires a separate suitable environment and explicit authorization. [Persistent instructions](AGENTS.md).
+
 For each process-runtime branch reviewed, consider allocation, copying, synchronization, cache locality, scheduling overhead and cleanup cost. Record plausible improvements as falsifiable experiments in the [performance backlog](docs/performance-plan.md), with baseline, workload, dependencies and acceptance evidence. Distinguish source facts, optimization hypotheses and measured results. Preserve automatic scheduling, safe forced termination and supported BEAM semantics; a throughput gain alone cannot justify worse unaccounted scheduling or cleanup behavior. Keep expanding this inventory when new evidence appears rather than claiming every possible speed improvement is known.
 
 Always examine what Rust can eliminate or check earlier than the reference implementation: ownership transfers, typed protocols, invalid state transitions and unnecessary dynamic representation work. Record exactly what the compiler guarantees, what the public API must enforce and what still requires runtime coordination. Do not equate safe Rust, `Send`, pinning or destructor behavior with Bream admission, preemption or complete reclamation.
@@ -44,6 +46,16 @@ Always examine what Rust can eliminate or check earlier than the reference imple
 
 **Address publication**: The point at which a process incarnation becomes discoverable through the runtime's applicable identity lookup. _Avoid_: its first application instruction or the creator receiving its address; these observations can occur at different times.
 
+**Atomic relationship spawn**: Creation of a process with its initial link, monitor, or both established before it can execute. _Avoid_: creating a process and attaching the relationship afterward, which can miss an immediate exit.
+
+**Name binding**: The current association between a registered local name and one process incarnation. _Avoid_: the process lifetime itself or a promise that a later lookup finds the same owner.
+
+**Name resolution**: Selecting the identity currently associated with a name for a particular operation. _Avoid_: reserving that binding, retaining execution or automatically following future replacements through a previously returned identity.
+
+**Room**: An application process that owns membership and the policy for routing participant messages. _Avoid_: a runtime supervisor or automatic failure group.
+
+**Session**: A participant process whose membership and communication last for its own process incarnation. _Avoid_: a durable user identity or an implied network connection.
+
 **Resident state**: A process's state retained between interactions, without implying recovery after failure. _Avoid_: durable state.
 
 **Owned message**: A message whose transferable contents become the receiving process's responsibility, without exposing mutable state shared between process lifetimes. _Avoid_: shared mutable handle as an equivalent transfer.
@@ -68,6 +80,8 @@ Always examine what Rust can eliminate or check earlier than the reference imple
 
 **Monitor**: A one-way observation of a process lifetime, identified separately from the process, that reports its termination without automatically propagating that failure to the observer. _Avoid_: link or supervisor.
 
+**Monitor reference**: The identity of one observer's particular watch of a process lifetime. Separate watches of the same target have different references; retaining or discarding a reference does not keep the target alive or cancel the watch. _Avoid_: process identity, address, or ownership of the target.
+
 **Cancellation barrier**: The point after which a removed relationship can no longer cause new effects on the cancelling process, subject to the reference operation's rules about re-establishment. _Avoid_: peer cleanup completion, retraction of already accepted notifications, or termination of the peer.
 
 **Death notification**: A monitor's report that a process has stopped executing and is no longer addressable as a live lifetime. _Avoid_: proof of completed memory reclamation or of rolled-back external effects.
@@ -89,6 +103,10 @@ Always examine what Rust can eliminate or check earlier than the reference imple
 **Quiescent interval**: An interval in which a participant makes no accesses protected by the relevant reclamation domain. _Avoid_: idle, inactive or blocked as sufficient evidence without the domain's access contract.
 
 **Lock authority**: Permission to access particular shared state while its required protection is held. _Avoid_: process-record retention or permission to execute application code as interchangeable rights.
+
+**Service ownership**: Responsibility for completing or transferring pending runtime work, including timer service, wakeups and deferred cleanup. _Avoid_: assuming that disabling a worker’s application execution removes its outstanding service obligations.
+
+**Dispatch permission**: Authorization for a runtime worker to select and claim application-process execution under the current scheduling policy. _Avoid_: a wake notification, OS-thread liveness or ownership of a particular process’s execution.
 
 **Clock domain**: A time reference with its own origin and progression rules, against which instants and deadlines have meaning. _Avoid_: treating equal numeric timestamps from wall time and monotonic time as interchangeable instants.
 

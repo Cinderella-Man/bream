@@ -1,0 +1,8 @@
+   Compiling bream-monitor-consumer v0.0.0 (/home/bat/projects/bream/experiments/monitor-process/consumer)
+error: bream structured subset: unknown record
+ --> consumer/examples/reject_monitor_down_constructor.rs:5:20
+  |
+5 |         let down = Down { reason: 1 };
+  |                    ^^^^
+
+error: could not compile `bream-monitor-consumer` (example "reject_monitor_down_constructor") due to 1 previous error

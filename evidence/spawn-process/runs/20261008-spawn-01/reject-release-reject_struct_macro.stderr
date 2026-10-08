@@ -1,0 +1,8 @@
+   Compiling bream-spawn-consumer v0.0.0 (/home/bat/projects/bream/experiments/spawn-process/consumer)
+error: bream structured subset: local items, attributes and macros forbidden
+ --> consumer/examples/reject_struct_macro.rs:5:9
+  |
+5 |         println!("escape");
+  |         ^^^^^^^
+
+error: could not compile `bream-spawn-consumer` (example "reject_struct_macro") due to 1 previous error

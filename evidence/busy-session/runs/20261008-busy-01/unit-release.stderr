@@ -1,0 +1,3 @@
+   Compiling bream-busy-runtime v0.0.0 (/home/bat/projects/bream/experiments/busy-session/runtime)
+    Finished `release` profile [optimized] target(s) in 4.31s
+     Running unittests src/lib.rs (.tools/busy-session/20261008-busy-01/release/deps/bream_busy_runtime-16b8ecfb73262045)

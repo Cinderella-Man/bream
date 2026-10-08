@@ -61,7 +61,7 @@ Each case ID is also its future test identifier. Expand cases across applicable 
 | LIFE-02.C09 | Info after removal/notification/consumption | False means absent; it does not prove a notification remains queued. Cover all three histories. |
 | LIFE-02.C10 | Repeated default demonitor/unused local reference | Successful no-op; info returns false when absent. Typed-token representation may exclude arbitrary reference construction; record exact supported mapping. |
 | LIFE-02.C11 | Info plus flush | Return reflects origin removal, not number of messages removed. Check active, queued, consumed, and repeated calls. |
-| LIFE-02.C12 | Synthetic reference-bearing notification | **Unresolved:** pinned source predicts active-origin flush skips synthetic tuple, absent-origin flush scans; docs describe broader equivalence. Execute exact-version oracle before mapping typed look-alikes. |
+| LIFE-02.C12 | Synthetic reference-bearing notification | [Pinned VM observations](../research/29-pinned-reference-observations.md) confirm active-origin flush skips the synthetic tuple while absent-origin flush scans. Typed look-alike constructibility remains unresolved and outside the restricted genuine-Down milestone. |
 | LIFE-02.C13 | Wrong-owner/invalid/foreign reference | Preserve documented validity distinctions where exposed; never corrupt another observer's monitor. Enumerate representable errors versus compile-time exclusions. |
 | LIFE-02.C14 | Observer exits; target concurrently dies | Remove observer-owned relationships and release both endpoint obligations exactly once; no retained dead observer. Test crossing demonitor/DOWN. |
 
@@ -164,6 +164,12 @@ Each case ID is also its future test identifier. Expand cases across applicable 
 **Deeper evidence:** [Report 27](../research/27-process-lookup-reclamation-protocol.md) extends this group with protocol invariants and remaining limits.
 
 **Evidence/gaps:** [exit transition](https://github.com/erlang/otp/blob/ad05823719d77c8faee87348ea39513d4e2f99c5/erts/emulator/beam/erl_process.c#L13485-L13547); [cleanup continuation](https://github.com/erlang/otp/blob/ad05823719d77c8faee87348ea39513d4e2f99c5/erts/emulator/beam/erl_process.c#L14234-L14315); [later exits released during cleanup](https://github.com/erlang/otp/blob/ad05823719d77c8faee87348ea39513d4e2f99c5/erts/emulator/beam/erl_proc_sig_queue.c#L7311-L7338); [live identity removal](https://github.com/erlang/otp/blob/ad05823719d77c8faee87348ea39513d4e2f99c5/erts/emulator/beam/erl_process.c#L14420-L14469). BEAM final destruction is not universally budgeted; Bream needs its own EXEC-03 proof. Safe kill requires closure of admitted code/resources, not arbitrary stack destruction or arbitrary user Drop.
+
+**System-task, code-lifetime and routing refinements:** [report 50](../research/50-system-task-dispatch-and-dirty-handoff.md). These are planned cases; source-only, executed reference and Rust compiler evidence remain separate. Optional naming, native jobs and code replacement do not become initial requirements.
+
+| Case | Branch, required treatment and acceptance evidence |
+|---|---|
+| LIFE-05.C21 | At an admitted helper's completion gate, race committed death with result/exception/continuation publication and partial owned allocation transfer. Use dirty-native return only as reference lifetime evidence. Publishing a continuation after committed death, freeing still-owned partial allocations, or treating record retention as permission to resume. Bream must stop admitted application/helper execution before `Down`; broad host jobs remain unselected. |
 
 ## Completion gates and traceability
 
