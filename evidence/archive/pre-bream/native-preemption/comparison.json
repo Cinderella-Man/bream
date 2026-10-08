@@ -1,0 +1,12 @@
+{
+  "preemptive_as_expected": true,
+  "negative_control_as_expected": true,
+  "equal_checksums": true,
+  "checksums": [
+    8956703282129858646,
+    17801881488120503101
+  ],
+  "all_final_input_hashes_match": true,
+  "observed_task_to_task_changes": 30,
+  "note": "sampled dispatch changes include initial idle-to-task transition; subtract one to report observed task-to-task changes; this is not total context switches."
+}

@@ -1,0 +1,830 @@
+{
+  "scope": "Finite sequentially consistent abstractions; not upstream execution, weak-memory verification, Rust soundness or runtime implementation.",
+  "python": "3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0]",
+  "platform": "Linux-7.0.0-34-generic-x86_64-with-glibc2.43",
+  "source_reference": "ad05823719d77c8faee87348ea39513d4e2f99c5",
+  "script_sha256": "747c9b331ad0e17f8f238fe42b2d957a94135349e87d8c467c6efa0ce8989c88",
+  "expected_controls_observed": true,
+  "results": [
+    {
+      "kind": "retention",
+      "variant": "correct",
+      "result": "no_counterexample_in_model",
+      "search_exhausted": true,
+      "states_seen": 41,
+      "transitions_examined": 60,
+      "terminal_states": 2,
+      "retained_record_after_body_reclamation_witness": [
+        {
+          "event": "reader.enter",
+          "state": {
+            "reader": 1,
+            "exit": 0,
+            "guard": true,
+            "found": false,
+            "pinned": false,
+            "published": true,
+            "body": true,
+            "baseline": true,
+            "record": true
+          }
+        },
+        {
+          "event": "reader.lookup",
+          "state": {
+            "reader": 2,
+            "exit": 0,
+            "guard": true,
+            "found": true,
+            "pinned": false,
+            "published": true,
+            "body": true,
+            "baseline": true,
+            "record": true
+          }
+        },
+        {
+          "event": "reader.pin",
+          "state": {
+            "reader": 3,
+            "exit": 0,
+            "guard": true,
+            "found": true,
+            "pinned": true,
+            "published": true,
+            "body": true,
+            "baseline": true,
+            "record": true
+          }
+        },
+        {
+          "event": "exit.unpublish",
+          "state": {
+            "reader": 3,
+            "exit": 1,
+            "guard": true,
+            "found": true,
+            "pinned": true,
+            "published": false,
+            "body": true,
+            "baseline": true,
+            "record": true
+          }
+        },
+        {
+          "event": "exit.reclaim_body",
+          "state": {
+            "reader": 3,
+            "exit": 2,
+            "guard": true,
+            "found": true,
+            "pinned": true,
+            "published": false,
+            "body": false,
+            "baseline": true,
+            "record": true
+          }
+        }
+      ]
+    },
+    {
+      "kind": "retention",
+      "variant": "release_guard_before_pin",
+      "result": "counterexample",
+      "search_exhausted": false,
+      "states_seen": 33,
+      "transitions_examined": 46,
+      "fault": "increment_reference_after_record_free",
+      "trace": [
+        {
+          "event": "reader.enter",
+          "state": {
+            "reader": 1,
+            "exit": 0,
+            "guard": true,
+            "found": false,
+            "pinned": false,
+            "published": true,
+            "body": true,
+            "baseline": true,
+            "record": true
+          }
+        },
+        {
+          "event": "reader.lookup",
+          "state": {
+            "reader": 2,
+            "exit": 0,
+            "guard": true,
+            "found": true,
+            "pinned": false,
+            "published": true,
+            "body": true,
+            "baseline": true,
+            "record": true
+          }
+        },
+        {
+          "event": "reader.leave",
+          "state": {
+            "reader": 3,
+            "exit": 0,
+            "guard": false,
+            "found": true,
+            "pinned": false,
+            "published": true,
+            "body": true,
+            "baseline": true,
+            "record": true
+          }
+        },
+        {
+          "event": "exit.unpublish",
+          "state": {
+            "reader": 3,
+            "exit": 1,
+            "guard": false,
+            "found": true,
+            "pinned": false,
+            "published": false,
+            "body": true,
+            "baseline": true,
+            "record": true
+          }
+        },
+        {
+          "event": "exit.reclaim_body",
+          "state": {
+            "reader": 3,
+            "exit": 2,
+            "guard": false,
+            "found": true,
+            "pinned": false,
+            "published": false,
+            "body": false,
+            "baseline": true,
+            "record": true
+          }
+        },
+        {
+          "event": "exit.release_baseline_after_grace",
+          "state": {
+            "reader": 3,
+            "exit": 3,
+            "guard": false,
+            "found": true,
+            "pinned": false,
+            "published": false,
+            "body": false,
+            "baseline": false,
+            "record": false
+          }
+        },
+        {
+          "event": "reader.pin",
+          "state": {
+            "reader": 4,
+            "exit": 3,
+            "guard": false,
+            "found": true,
+            "pinned": true,
+            "published": false,
+            "body": false,
+            "baseline": false,
+            "record": false
+          }
+        }
+      ]
+    },
+    {
+      "kind": "retention",
+      "variant": "skip_grace_period",
+      "result": "counterexample",
+      "search_exhausted": false,
+      "states_seen": 20,
+      "transitions_examined": 27,
+      "fault": "borrowed_record_freed_inside_guard",
+      "trace": [
+        {
+          "event": "reader.enter",
+          "state": {
+            "reader": 1,
+            "exit": 0,
+            "guard": true,
+            "found": false,
+            "pinned": false,
+            "published": true,
+            "body": true,
+            "baseline": true,
+            "record": true
+          }
+        },
+        {
+          "event": "reader.lookup",
+          "state": {
+            "reader": 2,
+            "exit": 0,
+            "guard": true,
+            "found": true,
+            "pinned": false,
+            "published": true,
+            "body": true,
+            "baseline": true,
+            "record": true
+          }
+        },
+        {
+          "event": "exit.unpublish",
+          "state": {
+            "reader": 2,
+            "exit": 1,
+            "guard": true,
+            "found": true,
+            "pinned": false,
+            "published": false,
+            "body": true,
+            "baseline": true,
+            "record": true
+          }
+        },
+        {
+          "event": "exit.reclaim_body",
+          "state": {
+            "reader": 2,
+            "exit": 2,
+            "guard": true,
+            "found": true,
+            "pinned": false,
+            "published": false,
+            "body": false,
+            "baseline": true,
+            "record": true
+          }
+        },
+        {
+          "event": "exit.release_baseline_after_grace",
+          "state": {
+            "reader": 2,
+            "exit": 3,
+            "guard": true,
+            "found": true,
+            "pinned": false,
+            "published": false,
+            "body": false,
+            "baseline": false,
+            "record": false
+          }
+        }
+      ]
+    },
+    {
+      "kind": "retention",
+      "variant": "reference_authorizes_heap_access",
+      "result": "counterexample",
+      "search_exhausted": false,
+      "states_seen": 31,
+      "transitions_examined": 42,
+      "fault": "heap_access_after_body_reclamation",
+      "trace": [
+        {
+          "event": "reader.enter",
+          "state": {
+            "reader": 1,
+            "exit": 0,
+            "guard": true,
+            "found": false,
+            "pinned": false,
+            "published": true,
+            "body": true,
+            "baseline": true,
+            "record": true
+          }
+        },
+        {
+          "event": "reader.lookup",
+          "state": {
+            "reader": 2,
+            "exit": 0,
+            "guard": true,
+            "found": true,
+            "pinned": false,
+            "published": true,
+            "body": true,
+            "baseline": true,
+            "record": true
+          }
+        },
+        {
+          "event": "reader.pin",
+          "state": {
+            "reader": 3,
+            "exit": 0,
+            "guard": true,
+            "found": true,
+            "pinned": true,
+            "published": true,
+            "body": true,
+            "baseline": true,
+            "record": true
+          }
+        },
+        {
+          "event": "reader.leave",
+          "state": {
+            "reader": 4,
+            "exit": 0,
+            "guard": false,
+            "found": true,
+            "pinned": true,
+            "published": true,
+            "body": true,
+            "baseline": true,
+            "record": true
+          }
+        },
+        {
+          "event": "exit.unpublish",
+          "state": {
+            "reader": 4,
+            "exit": 1,
+            "guard": false,
+            "found": true,
+            "pinned": true,
+            "published": false,
+            "body": true,
+            "baseline": true,
+            "record": true
+          }
+        },
+        {
+          "event": "exit.reclaim_body",
+          "state": {
+            "reader": 4,
+            "exit": 2,
+            "guard": false,
+            "found": true,
+            "pinned": true,
+            "published": false,
+            "body": false,
+            "baseline": true,
+            "record": true
+          }
+        },
+        {
+          "event": "reader.inspect",
+          "state": {
+            "reader": 5,
+            "exit": 2,
+            "guard": false,
+            "found": true,
+            "pinned": true,
+            "published": false,
+            "body": false,
+            "baseline": true,
+            "record": true
+          }
+        }
+      ]
+    },
+    {
+      "kind": "parking",
+      "variant": "correct",
+      "result": "no_counterexample_in_model",
+      "search_exhausted": true,
+      "states_seen": 44,
+      "transitions_examined": 64,
+      "terminal_states": 2,
+      "retained_record_after_body_reclamation_witness": null
+    },
+    {
+      "kind": "parking",
+      "variant": "clear_active_after_unlock",
+      "result": "counterexample",
+      "search_exhausted": false,
+      "states_seen": 56,
+      "transitions_examined": 83,
+      "fault": "lost_wakeup_with_unexamined_input_and_no_pending_notification",
+      "trace": [
+        {
+          "event": "receiver.lock_MSGQ",
+          "state": {
+            "receiver": 1,
+            "sender": 0,
+            "lock": "receiver",
+            "fresh_input": false,
+            "receiver_observed": false,
+            "active": true,
+            "running": true,
+            "reserved": false,
+            "queued": false,
+            "enqueue_owner": "",
+            "snapshot": []
+          }
+        },
+        {
+          "event": "receiver.final_fetch_empty",
+          "state": {
+            "receiver": 2,
+            "sender": 0,
+            "lock": "receiver",
+            "fresh_input": false,
+            "receiver_observed": false,
+            "active": true,
+            "running": true,
+            "reserved": false,
+            "queued": false,
+            "enqueue_owner": "",
+            "snapshot": []
+          }
+        },
+        {
+          "event": "receiver.unlock_too_early",
+          "state": {
+            "receiver": 3,
+            "sender": 0,
+            "lock": "",
+            "fresh_input": false,
+            "receiver_observed": false,
+            "active": true,
+            "running": true,
+            "reserved": false,
+            "queued": false,
+            "enqueue_owner": "",
+            "snapshot": []
+          }
+        },
+        {
+          "event": "sender.lock_MSGQ",
+          "state": {
+            "receiver": 3,
+            "sender": 1,
+            "lock": "sender",
+            "fresh_input": false,
+            "receiver_observed": false,
+            "active": true,
+            "running": true,
+            "reserved": false,
+            "queued": false,
+            "enqueue_owner": "",
+            "snapshot": []
+          }
+        },
+        {
+          "event": "sender.append_fresh_input",
+          "state": {
+            "receiver": 3,
+            "sender": 2,
+            "lock": "sender",
+            "fresh_input": true,
+            "receiver_observed": false,
+            "active": true,
+            "running": true,
+            "reserved": false,
+            "queued": false,
+            "enqueue_owner": "",
+            "snapshot": []
+          }
+        },
+        {
+          "event": "sender.unlock_MSGQ",
+          "state": {
+            "receiver": 3,
+            "sender": 3,
+            "lock": "",
+            "fresh_input": true,
+            "receiver_observed": false,
+            "active": true,
+            "running": true,
+            "reserved": false,
+            "queued": false,
+            "enqueue_owner": "",
+            "snapshot": []
+          }
+        },
+        {
+          "event": "sender.notify_activate_and_reserve_if_needed",
+          "state": {
+            "receiver": 3,
+            "sender": 4,
+            "lock": "",
+            "fresh_input": true,
+            "receiver_observed": false,
+            "active": true,
+            "running": true,
+            "reserved": false,
+            "queued": false,
+            "enqueue_owner": "",
+            "snapshot": []
+          }
+        },
+        {
+          "event": "receiver.clear_ACTIVE_too_late",
+          "state": {
+            "receiver": 4,
+            "sender": 4,
+            "lock": "",
+            "fresh_input": true,
+            "receiver_observed": false,
+            "active": false,
+            "running": true,
+            "reserved": false,
+            "queued": false,
+            "enqueue_owner": "",
+            "snapshot": []
+          }
+        },
+        {
+          "event": "receiver.load_schedule_state",
+          "state": {
+            "receiver": 5,
+            "sender": 4,
+            "lock": "",
+            "fresh_input": true,
+            "receiver_observed": false,
+            "active": false,
+            "running": true,
+            "reserved": false,
+            "queued": false,
+            "enqueue_owner": "",
+            "snapshot": [
+              false,
+              true,
+              false
+            ]
+          }
+        },
+        {
+          "event": "receiver.commit_schedule_out",
+          "state": {
+            "receiver": 6,
+            "sender": 4,
+            "lock": "",
+            "fresh_input": true,
+            "receiver_observed": false,
+            "active": false,
+            "running": false,
+            "reserved": false,
+            "queued": false,
+            "enqueue_owner": "",
+            "snapshot": []
+          }
+        },
+        {
+          "event": "receiver.publish_reserved_queue_entry_or_finish",
+          "state": {
+            "receiver": 8,
+            "sender": 4,
+            "lock": "",
+            "fresh_input": true,
+            "receiver_observed": false,
+            "active": false,
+            "running": false,
+            "reserved": false,
+            "queued": false,
+            "enqueue_owner": "",
+            "snapshot": []
+          }
+        },
+        {
+          "event": "sender.publish_reserved_queue_entry_or_finish",
+          "state": {
+            "receiver": 8,
+            "sender": 5,
+            "lock": "",
+            "fresh_input": true,
+            "receiver_observed": false,
+            "active": false,
+            "running": false,
+            "reserved": false,
+            "queued": false,
+            "enqueue_owner": "",
+            "snapshot": []
+          }
+        }
+      ]
+    },
+    {
+      "kind": "parking",
+      "variant": "blind_schedule_out_store",
+      "result": "counterexample",
+      "search_exhausted": false,
+      "states_seen": 47,
+      "transitions_examined": 65,
+      "fault": "lost_wakeup_with_unexamined_input_and_no_pending_notification",
+      "trace": [
+        {
+          "event": "receiver.lock_MSGQ",
+          "state": {
+            "receiver": 1,
+            "sender": 0,
+            "lock": "receiver",
+            "fresh_input": false,
+            "receiver_observed": false,
+            "active": true,
+            "running": true,
+            "reserved": false,
+            "queued": false,
+            "enqueue_owner": "",
+            "snapshot": []
+          }
+        },
+        {
+          "event": "receiver.final_fetch_empty",
+          "state": {
+            "receiver": 2,
+            "sender": 0,
+            "lock": "receiver",
+            "fresh_input": false,
+            "receiver_observed": false,
+            "active": true,
+            "running": true,
+            "reserved": false,
+            "queued": false,
+            "enqueue_owner": "",
+            "snapshot": []
+          }
+        },
+        {
+          "event": "receiver.clear_ACTIVE_under_MSGQ",
+          "state": {
+            "receiver": 3,
+            "sender": 0,
+            "lock": "receiver",
+            "fresh_input": false,
+            "receiver_observed": false,
+            "active": false,
+            "running": true,
+            "reserved": false,
+            "queued": false,
+            "enqueue_owner": "",
+            "snapshot": []
+          }
+        },
+        {
+          "event": "receiver.unlock_MSGQ",
+          "state": {
+            "receiver": 4,
+            "sender": 0,
+            "lock": "",
+            "fresh_input": false,
+            "receiver_observed": false,
+            "active": false,
+            "running": true,
+            "reserved": false,
+            "queued": false,
+            "enqueue_owner": "",
+            "snapshot": []
+          }
+        },
+        {
+          "event": "receiver.load_schedule_state",
+          "state": {
+            "receiver": 5,
+            "sender": 0,
+            "lock": "",
+            "fresh_input": false,
+            "receiver_observed": false,
+            "active": false,
+            "running": true,
+            "reserved": false,
+            "queued": false,
+            "enqueue_owner": "",
+            "snapshot": [
+              false,
+              true,
+              false
+            ]
+          }
+        },
+        {
+          "event": "sender.lock_MSGQ",
+          "state": {
+            "receiver": 5,
+            "sender": 1,
+            "lock": "sender",
+            "fresh_input": false,
+            "receiver_observed": false,
+            "active": false,
+            "running": true,
+            "reserved": false,
+            "queued": false,
+            "enqueue_owner": "",
+            "snapshot": [
+              false,
+              true,
+              false
+            ]
+          }
+        },
+        {
+          "event": "sender.append_fresh_input",
+          "state": {
+            "receiver": 5,
+            "sender": 2,
+            "lock": "sender",
+            "fresh_input": true,
+            "receiver_observed": false,
+            "active": false,
+            "running": true,
+            "reserved": false,
+            "queued": false,
+            "enqueue_owner": "",
+            "snapshot": [
+              false,
+              true,
+              false
+            ]
+          }
+        },
+        {
+          "event": "sender.unlock_MSGQ",
+          "state": {
+            "receiver": 5,
+            "sender": 3,
+            "lock": "",
+            "fresh_input": true,
+            "receiver_observed": false,
+            "active": false,
+            "running": true,
+            "reserved": false,
+            "queued": false,
+            "enqueue_owner": "",
+            "snapshot": [
+              false,
+              true,
+              false
+            ]
+          }
+        },
+        {
+          "event": "sender.notify_activate_and_reserve_if_needed",
+          "state": {
+            "receiver": 5,
+            "sender": 4,
+            "lock": "",
+            "fresh_input": true,
+            "receiver_observed": false,
+            "active": true,
+            "running": true,
+            "reserved": false,
+            "queued": false,
+            "enqueue_owner": "",
+            "snapshot": [
+              false,
+              true,
+              false
+            ]
+          }
+        },
+        {
+          "event": "receiver.commit_schedule_out",
+          "state": {
+            "receiver": 6,
+            "sender": 4,
+            "lock": "",
+            "fresh_input": true,
+            "receiver_observed": false,
+            "active": false,
+            "running": false,
+            "reserved": false,
+            "queued": false,
+            "enqueue_owner": "",
+            "snapshot": []
+          }
+        },
+        {
+          "event": "receiver.publish_reserved_queue_entry_or_finish",
+          "state": {
+            "receiver": 8,
+            "sender": 4,
+            "lock": "",
+            "fresh_input": true,
+            "receiver_observed": false,
+            "active": false,
+            "running": false,
+            "reserved": false,
+            "queued": false,
+            "enqueue_owner": "",
+            "snapshot": []
+          }
+        },
+        {
+          "event": "sender.publish_reserved_queue_entry_or_finish",
+          "state": {
+            "receiver": 8,
+            "sender": 5,
+            "lock": "",
+            "fresh_input": true,
+            "receiver_observed": false,
+            "active": false,
+            "running": false,
+            "reserved": false,
+            "queued": false,
+            "enqueue_owner": "",
+            "snapshot": []
+          }
+        }
+      ]
+    }
+  ]
+}

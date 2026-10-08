@@ -1,0 +1,7 @@
+[workspace]
+members = ["macros", "runtime"]
+resolver = "2"
+
+[profile.release]
+panic = "unwind"
+

@@ -1,0 +1,5 @@
+MODEL_EXECUTIONS_STARTED=1
+
+thread 'main' (282551) panicked at src/main.rs:90:5:
+PARKING_LOST_WAKE saw_message=false issued_wake=false
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace

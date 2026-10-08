@@ -1,0 +1,1076 @@
+{
+  "schema_version": 1,
+  "planning_date": "2026-10-07",
+  "project": "Bream",
+  "reference": {
+    "release": "OTP-29.1.1",
+    "commit": "ad05823719d77c8faee87348ea39513d4e2f99c5"
+  },
+  "status": "planned_not_implemented_or_qualified",
+  "master_document": "docs/build-plan.md",
+  "case_definitions": "The Markdown branch tables are authoritative. This index extracts their IDs; it is not test evidence. Every indexed case is planned. Initial refinements, conditional optimizations, later extensions and representation-specific reference research are distinguished in each group.",
+  "dependency_model": "Gates define incremental build slices. Detailed feature dependencies are shared integration obligations, not a feature-completion DAG.",
+  "baseline": {
+    "feature_count": 23,
+    "case_count": 199,
+    "note": "Initial catalogue before deeper process-runtime expansion; preserved IDs remain valid."
+  },
+  "feature_count": 40,
+  "case_count": 500,
+  "features": [
+    {
+      "id": "REF-01",
+      "title": "Reference contract and case catalogue",
+      "status": "planned",
+      "scope": "initial_profile_with_explicit_conditional_cases",
+      "start_gates": [
+        "G0"
+      ],
+      "detail_document": "docs/build-plan/admission-and-conformance.md",
+      "case_count": 7,
+      "case_ids": [
+        "REF-01.C01",
+        "REF-01.C02",
+        "REF-01.C03",
+        "REF-01.C04",
+        "REF-01.C05",
+        "REF-01.C06",
+        "REF-01.C07"
+      ]
+    },
+    {
+      "id": "LANG-01",
+      "title": "Public process admission boundary",
+      "status": "planned",
+      "scope": "initial_profile_with_explicit_conditional_cases",
+      "start_gates": [
+        "G1"
+      ],
+      "detail_document": "docs/build-plan/admission-and-conformance.md",
+      "case_count": 8,
+      "case_ids": [
+        "LANG-01.C01",
+        "LANG-01.C02",
+        "LANG-01.C03",
+        "LANG-01.C04",
+        "LANG-01.C05",
+        "LANG-01.C06",
+        "LANG-01.C07",
+        "LANG-01.C08"
+      ]
+    },
+    {
+      "id": "LANG-02",
+      "title": "Useful owned state and data operations",
+      "status": "planned",
+      "scope": "initial_profile_with_explicit_conditional_cases",
+      "start_gates": [
+        "G0"
+      ],
+      "detail_document": "docs/build-plan/admission-and-conformance.md",
+      "case_count": 10,
+      "case_ids": [
+        "LANG-02.C01",
+        "LANG-02.C02",
+        "LANG-02.C03",
+        "LANG-02.C04",
+        "LANG-02.C05",
+        "LANG-02.C06",
+        "LANG-02.C07",
+        "LANG-02.C08",
+        "LANG-02.C09",
+        "LANG-02.C10"
+      ]
+    },
+    {
+      "id": "LANG-03",
+      "title": "Generated suspension and resumable helpers",
+      "status": "planned",
+      "scope": "initial_profile_with_explicit_conditional_cases",
+      "start_gates": [
+        "G1"
+      ],
+      "detail_document": "docs/build-plan/admission-and-conformance.md",
+      "case_count": 12,
+      "case_ids": [
+        "LANG-03.C01",
+        "LANG-03.C02",
+        "LANG-03.C03",
+        "LANG-03.C04",
+        "LANG-03.C05",
+        "LANG-03.C06",
+        "LANG-03.C07",
+        "LANG-03.C08",
+        "LANG-03.C09",
+        "LANG-03.C10",
+        "LANG-03.C11",
+        "LANG-03.C12"
+      ]
+    },
+    {
+      "id": "REF-02",
+      "title": "Executable conformance and interleaving harness",
+      "status": "planned",
+      "scope": "initial_profile_with_explicit_conditional_cases",
+      "start_gates": [
+        "G0"
+      ],
+      "detail_document": "docs/build-plan/admission-and-conformance.md",
+      "case_count": 9,
+      "case_ids": [
+        "REF-02.C01",
+        "REF-02.C02",
+        "REF-02.C03",
+        "REF-02.C04",
+        "REF-02.C05",
+        "REF-02.C06",
+        "REF-02.C07",
+        "REF-02.C08",
+        "REF-02.C09"
+      ]
+    },
+    {
+      "id": "APP-01",
+      "title": "Raw room/session integration",
+      "status": "planned",
+      "scope": "initial_profile_with_explicit_conditional_cases",
+      "start_gates": [
+        "G0",
+        "G5"
+      ],
+      "detail_document": "docs/build-plan/admission-and-conformance.md",
+      "case_count": 7,
+      "case_ids": [
+        "APP-01.C01",
+        "APP-01.C02",
+        "APP-01.C03",
+        "APP-01.C04",
+        "APP-01.C05",
+        "APP-01.C06",
+        "APP-01.C07"
+      ]
+    },
+    {
+      "id": "MEASURE-01",
+      "title": "Density, fairness and cost report",
+      "status": "planned",
+      "scope": "initial_profile_with_explicit_conditional_cases",
+      "start_gates": [
+        "G6"
+      ],
+      "detail_document": "docs/build-plan/admission-and-conformance.md",
+      "case_count": 7,
+      "case_ids": [
+        "MEASURE-01.C01",
+        "MEASURE-01.C02",
+        "MEASURE-01.C03",
+        "MEASURE-01.C04",
+        "MEASURE-01.C05",
+        "MEASURE-01.C06",
+        "MEASURE-01.C07"
+      ]
+    },
+    {
+      "id": "EXEC-01",
+      "title": "scheduler turns and execution ownership",
+      "status": "planned",
+      "scope": "initial_profile_with_explicit_conditional_cases",
+      "start_gates": [
+        "G2"
+      ],
+      "detail_document": "docs/build-plan/execution-and-resources.md",
+      "case_count": 23,
+      "case_ids": [
+        "EXEC-01.C01",
+        "EXEC-01.C02",
+        "EXEC-01.C03",
+        "EXEC-01.C04",
+        "EXEC-01.C05",
+        "EXEC-01.C06",
+        "EXEC-01.C07",
+        "EXEC-01.C08",
+        "EXEC-01.C09",
+        "EXEC-01.C10",
+        "EXEC-01.C11",
+        "EXEC-01.C12",
+        "EXEC-01.C13",
+        "EXEC-01.C14",
+        "EXEC-01.C15",
+        "EXEC-01.C16",
+        "EXEC-01.C17",
+        "EXEC-01.C18",
+        "EXEC-01.C19",
+        "EXEC-01.C20",
+        "EXEC-01.C21",
+        "EXEC-01.C22",
+        "EXEC-01.C23"
+      ]
+    },
+    {
+      "id": "EXEC-02",
+      "title": "runtime operations and work budgets",
+      "status": "planned",
+      "scope": "initial_profile_with_explicit_conditional_cases",
+      "start_gates": [
+        "G1",
+        "G2"
+      ],
+      "detail_document": "docs/build-plan/execution-and-resources.md",
+      "case_count": 11,
+      "case_ids": [
+        "EXEC-02.C01",
+        "EXEC-02.C02",
+        "EXEC-02.C03",
+        "EXEC-02.C04",
+        "EXEC-02.C05",
+        "EXEC-02.C06",
+        "EXEC-02.C07",
+        "EXEC-02.C08",
+        "EXEC-02.C09",
+        "EXEC-02.C10",
+        "EXEC-02.C11"
+      ]
+    },
+    {
+      "id": "EXEC-03",
+      "title": "cleanup and immutable shared buffers",
+      "status": "planned",
+      "scope": "initial_profile_with_explicit_conditional_cases",
+      "start_gates": [
+        "G1",
+        "G2"
+      ],
+      "detail_document": "docs/build-plan/execution-and-resources.md",
+      "case_count": 22,
+      "case_ids": [
+        "EXEC-03.C01",
+        "EXEC-03.C02",
+        "EXEC-03.C03",
+        "EXEC-03.C04",
+        "EXEC-03.C05",
+        "EXEC-03.C06",
+        "EXEC-03.C07",
+        "EXEC-03.C08",
+        "EXEC-03.C09",
+        "EXEC-03.C10",
+        "EXEC-03.C11",
+        "EXEC-03.C12",
+        "EXEC-03.C13",
+        "EXEC-03.C14",
+        "EXEC-03.C15",
+        "EXEC-03.C16",
+        "EXEC-03.C17",
+        "EXEC-03.C18",
+        "EXEC-03.C19",
+        "EXEC-03.C20",
+        "EXEC-03.C21",
+        "EXEC-03.C22"
+      ]
+    },
+    {
+      "id": "EXEC-04",
+      "title": "panic, allocation and capacity failures",
+      "status": "planned",
+      "scope": "initial_profile_with_explicit_conditional_cases",
+      "start_gates": [
+        "G0",
+        "G2"
+      ],
+      "detail_document": "docs/build-plan/execution-and-resources.md",
+      "case_count": 9,
+      "case_ids": [
+        "EXEC-04.C01",
+        "EXEC-04.C02",
+        "EXEC-04.C03",
+        "EXEC-04.C04",
+        "EXEC-04.C05",
+        "EXEC-04.C06",
+        "EXEC-04.C07",
+        "EXEC-04.C08",
+        "EXEC-04.C09"
+      ]
+    },
+    {
+      "id": "EXEC-05",
+      "title": "runtime embedding and shutdown",
+      "status": "planned",
+      "scope": "initial_profile_with_explicit_conditional_cases",
+      "start_gates": [
+        "G2"
+      ],
+      "detail_document": "docs/build-plan/execution-and-resources.md",
+      "case_count": 9,
+      "case_ids": [
+        "EXEC-05.C01",
+        "EXEC-05.C02",
+        "EXEC-05.C03",
+        "EXEC-05.C04",
+        "EXEC-05.C05",
+        "EXEC-05.C06",
+        "EXEC-05.C07",
+        "EXEC-05.C08",
+        "EXEC-05.C09"
+      ]
+    },
+    {
+      "id": "EXEC-06",
+      "title": "initial inspection and measurements",
+      "status": "planned",
+      "scope": "initial_profile_with_explicit_conditional_cases",
+      "start_gates": [
+        "G2"
+      ],
+      "detail_document": "docs/build-plan/execution-and-resources.md",
+      "case_count": 4,
+      "case_ids": [
+        "EXEC-06.C01",
+        "EXEC-06.C02",
+        "EXEC-06.C03",
+        "EXEC-06.C04"
+      ]
+    },
+    {
+      "id": "EXEC-07",
+      "title": "later worker scaling",
+      "status": "planned",
+      "scope": "later_multiworker_qualification",
+      "start_gates": [
+        "G7"
+      ],
+      "detail_document": "docs/build-plan/execution-and-resources.md",
+      "case_count": 21,
+      "case_ids": [
+        "EXEC-07.C01",
+        "EXEC-07.C02",
+        "EXEC-07.C03",
+        "EXEC-07.C04",
+        "EXEC-07.C05",
+        "EXEC-07.C06",
+        "EXEC-07.C07",
+        "EXEC-07.C08",
+        "EXEC-07.C09",
+        "EXEC-07.C10",
+        "EXEC-07.C11",
+        "EXEC-07.C12",
+        "EXEC-07.C13",
+        "EXEC-07.C14",
+        "EXEC-07.C15",
+        "EXEC-07.C16",
+        "EXEC-07.C17",
+        "EXEC-07.C18",
+        "EXEC-07.C19",
+        "EXEC-07.C20",
+        "EXEC-07.C21"
+      ]
+    },
+    {
+      "id": "LIFE-01",
+      "title": "Spawn and incarnation identity",
+      "status": "planned",
+      "scope": "initial_profile_with_explicit_conditional_cases",
+      "start_gates": [
+        "G2",
+        "G4"
+      ],
+      "detail_document": "docs/build-plan/lifecycle.md",
+      "case_count": 18,
+      "case_ids": [
+        "LIFE-01.C01",
+        "LIFE-01.C02",
+        "LIFE-01.C03",
+        "LIFE-01.C04",
+        "LIFE-01.C05",
+        "LIFE-01.C06",
+        "LIFE-01.C07",
+        "LIFE-01.C08",
+        "LIFE-01.C09",
+        "LIFE-01.C10",
+        "LIFE-01.C11",
+        "LIFE-01.C12",
+        "LIFE-01.C13",
+        "LIFE-01.C14",
+        "LIFE-01.C15",
+        "LIFE-01.C16",
+        "LIFE-01.C17",
+        "LIFE-01.C18"
+      ]
+    },
+    {
+      "id": "LIFE-02",
+      "title": "Monitor, demonitor, flush, and info",
+      "status": "planned",
+      "scope": "initial_profile_with_explicit_conditional_cases",
+      "start_gates": [
+        "G4"
+      ],
+      "detail_document": "docs/build-plan/lifecycle.md",
+      "case_count": 18,
+      "case_ids": [
+        "LIFE-02.C01",
+        "LIFE-02.C02",
+        "LIFE-02.C03",
+        "LIFE-02.C04",
+        "LIFE-02.C05",
+        "LIFE-02.C06",
+        "LIFE-02.C07",
+        "LIFE-02.C08",
+        "LIFE-02.C09",
+        "LIFE-02.C10",
+        "LIFE-02.C11",
+        "LIFE-02.C12",
+        "LIFE-02.C13",
+        "LIFE-02.C14",
+        "LIFE-02.C15",
+        "LIFE-02.C16",
+        "LIFE-02.C17",
+        "LIFE-02.C18"
+      ]
+    },
+    {
+      "id": "LIFE-03",
+      "title": "Link, unlink, and relink",
+      "status": "planned",
+      "scope": "initial_profile_with_explicit_conditional_cases",
+      "start_gates": [
+        "G4"
+      ],
+      "detail_document": "docs/build-plan/lifecycle.md",
+      "case_count": 16,
+      "case_ids": [
+        "LIFE-03.C01",
+        "LIFE-03.C02",
+        "LIFE-03.C03",
+        "LIFE-03.C04",
+        "LIFE-03.C05",
+        "LIFE-03.C06",
+        "LIFE-03.C07",
+        "LIFE-03.C08",
+        "LIFE-03.C09",
+        "LIFE-03.C10",
+        "LIFE-03.C11",
+        "LIFE-03.C12",
+        "LIFE-03.C13",
+        "LIFE-03.C14",
+        "LIFE-03.C15",
+        "LIFE-03.C16"
+      ]
+    },
+    {
+      "id": "LIFE-04",
+      "title": "Exit reasons and trapping",
+      "status": "planned",
+      "scope": "initial_profile_with_explicit_conditional_cases",
+      "start_gates": [
+        "G4"
+      ],
+      "detail_document": "docs/build-plan/lifecycle.md",
+      "case_count": 13,
+      "case_ids": [
+        "LIFE-04.C01",
+        "LIFE-04.C02",
+        "LIFE-04.C03",
+        "LIFE-04.C04",
+        "LIFE-04.C05",
+        "LIFE-04.C06",
+        "LIFE-04.C07",
+        "LIFE-04.C08",
+        "LIFE-04.C09",
+        "LIFE-04.C10",
+        "LIFE-04.C11",
+        "LIFE-04.C12",
+        "LIFE-04.C13"
+      ]
+    },
+    {
+      "id": "LIFE-05",
+      "title": "Kill, death observation, and reclamation",
+      "status": "planned",
+      "scope": "initial_profile_with_explicit_conditional_cases",
+      "start_gates": [
+        "G2",
+        "G4"
+      ],
+      "detail_document": "docs/build-plan/lifecycle.md",
+      "case_count": 20,
+      "case_ids": [
+        "LIFE-05.C01",
+        "LIFE-05.C02",
+        "LIFE-05.C03",
+        "LIFE-05.C04",
+        "LIFE-05.C05",
+        "LIFE-05.C06",
+        "LIFE-05.C07",
+        "LIFE-05.C08",
+        "LIFE-05.C09",
+        "LIFE-05.C10",
+        "LIFE-05.C11",
+        "LIFE-05.C12",
+        "LIFE-05.C13",
+        "LIFE-05.C14",
+        "LIFE-05.C15",
+        "LIFE-05.C16",
+        "LIFE-05.C17",
+        "LIFE-05.C18",
+        "LIFE-05.C19",
+        "LIFE-05.C20"
+      ]
+    },
+    {
+      "id": "MSG-01",
+      "title": "Typed envelope, sending and ownership",
+      "status": "planned",
+      "scope": "initial_profile_with_explicit_conditional_cases",
+      "start_gates": [
+        "G3"
+      ],
+      "detail_document": "docs/build-plan/messaging.md",
+      "case_count": 12,
+      "case_ids": [
+        "MSG-01.C01",
+        "MSG-01.C02",
+        "MSG-01.C03",
+        "MSG-01.C04",
+        "MSG-01.C05",
+        "MSG-01.C06",
+        "MSG-01.C07",
+        "MSG-01.C08",
+        "MSG-01.C09",
+        "MSG-01.C10",
+        "MSG-01.C11",
+        "MSG-01.C12"
+      ]
+    },
+    {
+      "id": "MSG-02",
+      "title": "Selective receive, guards and scan state",
+      "status": "planned",
+      "scope": "initial_profile_with_explicit_conditional_cases",
+      "start_gates": [
+        "G3"
+      ],
+      "detail_document": "docs/build-plan/messaging.md",
+      "case_count": 9,
+      "case_ids": [
+        "MSG-02.C01",
+        "MSG-02.C02",
+        "MSG-02.C03",
+        "MSG-02.C04",
+        "MSG-02.C05",
+        "MSG-02.C06",
+        "MSG-02.C07",
+        "MSG-02.C08",
+        "MSG-02.C09"
+      ]
+    },
+    {
+      "id": "MSG-03",
+      "title": "Receive timeout and wakeup protocol",
+      "status": "planned",
+      "scope": "initial_profile_with_explicit_conditional_cases",
+      "start_gates": [
+        "G3"
+      ],
+      "detail_document": "docs/build-plan/messaging.md",
+      "case_count": 13,
+      "case_ids": [
+        "MSG-03.C01",
+        "MSG-03.C02",
+        "MSG-03.C03",
+        "MSG-03.C04",
+        "MSG-03.C05",
+        "MSG-03.C06",
+        "MSG-03.C07",
+        "MSG-03.C08",
+        "MSG-03.C09",
+        "MSG-03.C10",
+        "MSG-03.C11",
+        "MSG-03.C12",
+        "MSG-03.C13"
+      ]
+    },
+    {
+      "id": "MSG-04",
+      "title": "Internal signals, ordering and work budgets",
+      "status": "planned",
+      "scope": "initial_profile_with_explicit_conditional_cases",
+      "start_gates": [
+        "G2",
+        "G3"
+      ],
+      "detail_document": "docs/build-plan/messaging.md",
+      "case_count": 17,
+      "case_ids": [
+        "MSG-04.C01",
+        "MSG-04.C02",
+        "MSG-04.C03",
+        "MSG-04.C04",
+        "MSG-04.C05",
+        "MSG-04.C06",
+        "MSG-04.C07",
+        "MSG-04.C08",
+        "MSG-04.C09",
+        "MSG-04.C10",
+        "MSG-04.C11",
+        "MSG-04.C12",
+        "MSG-04.C13",
+        "MSG-04.C14",
+        "MSG-04.C15",
+        "MSG-04.C16",
+        "MSG-04.C17"
+      ]
+    },
+    {
+      "id": "EXEC-08",
+      "title": "Advanced scheduling and explicit suspension",
+      "status": "planned",
+      "scope": "initial_invariants_with_later_scheduler_extensions",
+      "start_gates": [
+        "G2",
+        "G7"
+      ],
+      "detail_document": "docs/build-plan/process-runtime-expansion.md",
+      "case_count": 22,
+      "case_ids": [
+        "EXEC-08.C01",
+        "EXEC-08.C02",
+        "EXEC-08.C03",
+        "EXEC-08.C04",
+        "EXEC-08.C05",
+        "EXEC-08.C06",
+        "EXEC-08.C07",
+        "EXEC-08.C08",
+        "EXEC-08.C09",
+        "EXEC-08.C10",
+        "EXEC-08.C11",
+        "EXEC-08.C12",
+        "EXEC-08.C13",
+        "EXEC-08.C14",
+        "EXEC-08.C15",
+        "EXEC-08.C16",
+        "EXEC-08.C17",
+        "EXEC-08.C18",
+        "EXEC-08.C19",
+        "EXEC-08.C20",
+        "EXEC-08.C21",
+        "EXEC-08.C22"
+      ]
+    },
+    {
+      "id": "MEM-01",
+      "title": "Owned memory, GC reference branches and hibernation",
+      "status": "planned",
+      "scope": "initial_ownership_with_conditional_representation_features",
+      "start_gates": [
+        "G1",
+        "G2"
+      ],
+      "detail_document": "docs/build-plan/process-runtime-expansion.md",
+      "case_count": 22,
+      "case_ids": [
+        "MEM-01.C01",
+        "MEM-01.C02",
+        "MEM-01.C03",
+        "MEM-01.C04",
+        "MEM-01.C05",
+        "MEM-01.C06",
+        "MEM-01.C07",
+        "MEM-01.C08",
+        "MEM-01.C09",
+        "MEM-01.C10",
+        "MEM-01.C11",
+        "MEM-01.C12",
+        "MEM-01.C13",
+        "MEM-01.C14",
+        "MEM-01.C15",
+        "MEM-01.C16",
+        "MEM-01.C17",
+        "MEM-01.C18",
+        "MEM-01.C19",
+        "MEM-01.C20",
+        "MEM-01.C21",
+        "MEM-01.C22"
+      ]
+    },
+    {
+      "id": "STATE-01",
+      "title": "Process-local dictionary and metadata",
+      "status": "planned",
+      "scope": "initial_state_invariants_with_later_dictionary",
+      "start_gates": [
+        "G1"
+      ],
+      "detail_document": "docs/build-plan/process-runtime-expansion.md",
+      "case_count": 6,
+      "case_ids": [
+        "STATE-01.C01",
+        "STATE-01.C02",
+        "STATE-01.C03",
+        "STATE-01.C04",
+        "STATE-01.C05",
+        "STATE-01.C06"
+      ]
+    },
+    {
+      "id": "MSG-05",
+      "title": "Aliases and reply-address lifetime",
+      "status": "planned",
+      "scope": "later_addressing_extension",
+      "start_gates": [
+        "G3",
+        "G4"
+      ],
+      "detail_document": "docs/build-plan/process-runtime-expansion.md",
+      "case_count": 4,
+      "case_ids": [
+        "MSG-05.C01",
+        "MSG-05.C02",
+        "MSG-05.C03",
+        "MSG-05.C04"
+      ]
+    },
+    {
+      "id": "MSG-06",
+      "title": "Priority message reception",
+      "status": "planned",
+      "scope": "later_mailbox_priority_extension",
+      "start_gates": [
+        "G3",
+        "G4"
+      ],
+      "detail_document": "docs/build-plan/process-runtime-expansion.md",
+      "case_count": 9,
+      "case_ids": [
+        "MSG-06.C01",
+        "MSG-06.C02",
+        "MSG-06.C03",
+        "MSG-06.C04",
+        "MSG-06.C05",
+        "MSG-06.C06",
+        "MSG-06.C07",
+        "MSG-06.C08",
+        "MSG-06.C09"
+      ]
+    },
+    {
+      "id": "MSG-07",
+      "title": "Receive-marker optimization",
+      "status": "planned",
+      "scope": "conditional_receive_optimization",
+      "start_gates": [
+        "G3"
+      ],
+      "detail_document": "docs/build-plan/process-runtime-expansion.md",
+      "case_count": 7,
+      "case_ids": [
+        "MSG-07.C01",
+        "MSG-07.C02",
+        "MSG-07.C03",
+        "MSG-07.C04",
+        "MSG-07.C05",
+        "MSG-07.C06",
+        "MSG-07.C07"
+      ]
+    },
+    {
+      "id": "TIME-01",
+      "title": "General message timers and paused-timer identity",
+      "status": "planned",
+      "scope": "later_timer_extension",
+      "start_gates": [
+        "G3"
+      ],
+      "detail_document": "docs/build-plan/process-runtime-expansion.md",
+      "case_count": 24,
+      "case_ids": [
+        "TIME-01.C01",
+        "TIME-01.C02",
+        "TIME-01.C03",
+        "TIME-01.C04",
+        "TIME-01.C05",
+        "TIME-01.C06",
+        "TIME-01.C07",
+        "TIME-01.C08",
+        "TIME-01.C09",
+        "TIME-01.C10",
+        "TIME-01.C11",
+        "TIME-01.C12",
+        "TIME-01.C13",
+        "TIME-01.C14",
+        "TIME-01.C15",
+        "TIME-01.C16",
+        "TIME-01.C17",
+        "TIME-01.C18",
+        "TIME-01.C19",
+        "TIME-01.C20",
+        "TIME-01.C21",
+        "TIME-01.C22",
+        "TIME-01.C23",
+        "TIME-01.C24"
+      ]
+    },
+    {
+      "id": "LIFE-06",
+      "title": "Expanded spawn options and request lifetime",
+      "status": "planned",
+      "scope": "initial_spawn_refinements_with_later_requests_distribution",
+      "start_gates": [
+        "G2",
+        "G4"
+      ],
+      "detail_document": "docs/build-plan/process-runtime-expansion.md",
+      "case_count": 17,
+      "case_ids": [
+        "LIFE-06.C01",
+        "LIFE-06.C02",
+        "LIFE-06.C03",
+        "LIFE-06.C04",
+        "LIFE-06.C05",
+        "LIFE-06.C06",
+        "LIFE-06.C07",
+        "LIFE-06.C08",
+        "LIFE-06.C09",
+        "LIFE-06.C10",
+        "LIFE-06.C11",
+        "LIFE-06.C12",
+        "LIFE-06.C13",
+        "LIFE-06.C14",
+        "LIFE-06.C15",
+        "LIFE-06.C16",
+        "LIFE-06.C17"
+      ]
+    },
+    {
+      "id": "LIFE-07",
+      "title": "Relationship options, references and exit continuations",
+      "status": "planned",
+      "scope": "initial_lifecycle_refinements_with_conditional_options",
+      "start_gates": [
+        "G2",
+        "G4"
+      ],
+      "detail_document": "docs/build-plan/process-runtime-expansion.md",
+      "case_count": 18,
+      "case_ids": [
+        "LIFE-07.C01",
+        "LIFE-07.C02",
+        "LIFE-07.C03",
+        "LIFE-07.C04",
+        "LIFE-07.C05",
+        "LIFE-07.C06",
+        "LIFE-07.C07",
+        "LIFE-07.C08",
+        "LIFE-07.C09",
+        "LIFE-07.C10",
+        "LIFE-07.C11",
+        "LIFE-07.C12",
+        "LIFE-07.C13",
+        "LIFE-07.C14",
+        "LIFE-07.C15",
+        "LIFE-07.C16",
+        "LIFE-07.C17",
+        "LIFE-07.C18"
+      ]
+    },
+    {
+      "id": "NAME-01",
+      "title": "Local name registration lifetime",
+      "status": "planned",
+      "scope": "later_name_registry",
+      "start_gates": [
+        "G4"
+      ],
+      "detail_document": "docs/build-plan/process-runtime-expansion.md",
+      "case_count": 8,
+      "case_ids": [
+        "NAME-01.C01",
+        "NAME-01.C02",
+        "NAME-01.C03",
+        "NAME-01.C04",
+        "NAME-01.C05",
+        "NAME-01.C06",
+        "NAME-01.C07",
+        "NAME-01.C08"
+      ]
+    },
+    {
+      "id": "OBS-01",
+      "title": "Ordered inspection and process enumeration",
+      "status": "planned",
+      "scope": "initial_inspection_with_later_items_enumeration",
+      "start_gates": [
+        "G2"
+      ],
+      "detail_document": "docs/build-plan/process-runtime-expansion.md",
+      "case_count": 13,
+      "case_ids": [
+        "OBS-01.C01",
+        "OBS-01.C02",
+        "OBS-01.C03",
+        "OBS-01.C04",
+        "OBS-01.C05",
+        "OBS-01.C06",
+        "OBS-01.C07",
+        "OBS-01.C08",
+        "OBS-01.C09",
+        "OBS-01.C10",
+        "OBS-01.C11",
+        "OBS-01.C12",
+        "OBS-01.C13"
+      ]
+    },
+    {
+      "id": "OBS-02",
+      "title": "Process diagnostics, sensitivity and event lifetime",
+      "status": "planned",
+      "scope": "later_diagnostic_extension",
+      "start_gates": [
+        "G2"
+      ],
+      "detail_document": "docs/build-plan/process-runtime-expansion.md",
+      "case_count": 11,
+      "case_ids": [
+        "OBS-02.C01",
+        "OBS-02.C02",
+        "OBS-02.C03",
+        "OBS-02.C04",
+        "OBS-02.C05",
+        "OBS-02.C06",
+        "OBS-02.C07",
+        "OBS-02.C08",
+        "OBS-02.C09",
+        "OBS-02.C10",
+        "OBS-02.C11"
+      ]
+    },
+    {
+      "id": "IO-01",
+      "title": "Process I/O routing and native resource boundary",
+      "status": "planned",
+      "scope": "initial_native_boundary_with_later_io",
+      "start_gates": [
+        "G1",
+        "G2"
+      ],
+      "detail_document": "docs/build-plan/process-runtime-expansion.md",
+      "case_count": 25,
+      "case_ids": [
+        "IO-01.C01",
+        "IO-01.C02",
+        "IO-01.C03",
+        "IO-01.C04",
+        "IO-01.C05",
+        "IO-01.C06",
+        "IO-01.C07",
+        "IO-01.C08",
+        "IO-01.C09",
+        "IO-01.C10",
+        "IO-01.C11",
+        "IO-01.C12",
+        "IO-01.C13",
+        "IO-01.C14",
+        "IO-01.C15",
+        "IO-01.C16",
+        "IO-01.C17",
+        "IO-01.C18",
+        "IO-01.C19",
+        "IO-01.C20",
+        "IO-01.C21",
+        "IO-01.C22",
+        "IO-01.C23",
+        "IO-01.C24",
+        "IO-01.C25"
+      ]
+    },
+    {
+      "id": "LANG-04",
+      "title": "Catchable failures and lifecycle handoff",
+      "status": "planned",
+      "scope": "initial_language_failure_mapping",
+      "start_gates": [
+        "G0",
+        "G1",
+        "G4"
+      ],
+      "detail_document": "docs/build-plan/process-runtime-expansion.md",
+      "case_count": 4,
+      "case_ids": [
+        "LANG-04.C01",
+        "LANG-04.C02",
+        "LANG-04.C03",
+        "LANG-04.C04"
+      ]
+    },
+    {
+      "id": "CODE-01",
+      "title": "Executable-code lifetime and purge boundary",
+      "status": "planned",
+      "scope": "later_optional_code_lifetime",
+      "start_gates": [
+        "G7"
+      ],
+      "detail_document": "docs/build-plan/process-runtime-expansion.md",
+      "case_count": 4,
+      "case_ids": [
+        "CODE-01.C01",
+        "CODE-01.C02",
+        "CODE-01.C03",
+        "CODE-01.C04"
+      ]
+    },
+    {
+      "id": "SIG-01",
+      "title": "Control dispatch through process death",
+      "status": "planned",
+      "scope": "initial_control_totality_with_conditional_variants",
+      "start_gates": [
+        "G2",
+        "G3",
+        "G4"
+      ],
+      "detail_document": "docs/build-plan/process-runtime-expansion.md",
+      "case_count": 5,
+      "case_ids": [
+        "SIG-01.C01",
+        "SIG-01.C02",
+        "SIG-01.C03",
+        "SIG-01.C04",
+        "SIG-01.C05"
+      ]
+    },
+    {
+      "id": "RES-01",
+      "title": "Process-owned external state and ownership transfer",
+      "status": "planned",
+      "scope": "later_external_state_boundary",
+      "start_gates": [
+        "G2"
+      ],
+      "detail_document": "docs/build-plan/process-runtime-expansion.md",
+      "case_count": 6,
+      "case_ids": [
+        "RES-01.C01",
+        "RES-01.C02",
+        "RES-01.C03",
+        "RES-01.C04",
+        "RES-01.C05",
+        "RES-01.C06"
+      ]
+    }
+  ],
+  "reference_observation_report": "docs/research/29-pinned-reference-observations.md",
+  "interleaving_observation_report": "docs/research/33-finite-ownership-interleavings.md",
+  "performance_source_reports": [
+    "docs/research/34-message-allocation-and-copy-costs.md",
+    "docs/research/35-scheduler-locality-and-load-balancing.md",
+    "docs/research/36-timer-service-costs-and-batching.md",
+    "docs/research/37-checkpoint-and-continuation-costs.md"
+  ],
+  "performance_task_index": "docs/build-plan/performance-tasks.json",
+  "rust_ownership_reports": [
+    "docs/research/38-process-heap-roots-and-rust-ownership.md",
+    "docs/research/39-process-table-and-spawn-publication.md",
+    "docs/research/40-allocator-ownership-and-rust-runtime-storage.md",
+    "docs/research/41-rust-guarantees-and-process-admission.md"
+  ],
+  "rust_language_observations": "evidence/rust-ownership-review/probe-results.json"
+}

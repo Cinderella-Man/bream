@@ -1,0 +1,308 @@
+{
+  "profile": "jit-4",
+  "source_commit": "ad05823719d77c8faee87348ea39513d4e2f99c5",
+  "otp_version_file": "29.1.1",
+  "platform": "Linux-7.0.0-34-generic-x86_64-with-glibc2.43",
+  "commands": [
+    {
+      "name": "compile-normal",
+      "argv": [
+        "/home/bat/projects/bream/upstream/otp-reference-build/bin/erlc",
+        "+debug_info",
+        "-o",
+        "/home/bat/projects/bream/.tools/reference-fixtures/normal",
+        "/home/bat/projects/bream/evidence/process-protocol-review/fixtures/bream_reference_probe.erl",
+        "/home/bat/projects/bream/evidence/process-protocol-review/priority_marker_probe.erl"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 0.737,
+      "log": "evidence/process-protocol-review/jit-4/compile-normal.log"
+    },
+    {
+      "name": "compile-no_recv_opt",
+      "argv": [
+        "/home/bat/projects/bream/upstream/otp-reference-build/bin/erlc",
+        "+debug_info",
+        "+no_recv_opt",
+        "-o",
+        "/home/bat/projects/bream/.tools/reference-fixtures/no_recv_opt",
+        "/home/bat/projects/bream/evidence/process-protocol-review/fixtures/bream_reference_probe.erl",
+        "/home/bat/projects/bream/evidence/process-protocol-review/priority_marker_probe.erl"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 0.84,
+      "log": "evidence/process-protocol-review/jit-4/compile-no_recv_opt.log"
+    },
+    {
+      "name": "observations",
+      "argv": [
+        "/home/bat/projects/bream/upstream/otp-reference-build/bin/erl",
+        "+S",
+        "4:4",
+        "+SDcpu",
+        "1",
+        "+SDio",
+        "1",
+        "-noshell",
+        "-pa",
+        "/home/bat/projects/bream/.tools/reference-fixtures/normal",
+        "-run",
+        "bream_reference_probe",
+        "run",
+        "/home/bat/projects/bream/evidence/process-protocol-review/jit-4/observations.json"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 3.361,
+      "log": "evidence/process-protocol-review/jit-4/observations.log"
+    },
+    {
+      "name": "hibernate-255",
+      "argv": [
+        "/home/bat/projects/bream/upstream/otp-reference-build/bin/erl",
+        "+S",
+        "4:4",
+        "+SDcpu",
+        "1",
+        "+SDio",
+        "1",
+        "-noshell",
+        "-pa",
+        "/home/bat/projects/bream/.tools/reference-fixtures/normal",
+        "-run",
+        "bream_reference_probe",
+        "run",
+        "/home/bat/projects/bream/evidence/process-protocol-review/jit-4/hibernate-255.json",
+        "hibernate",
+        "255"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 0.482,
+      "log": "evidence/process-protocol-review/jit-4/hibernate-255.log"
+    },
+    {
+      "name": "hibernate-256",
+      "argv": [
+        "/home/bat/projects/bream/upstream/otp-reference-build/bin/erl",
+        "+S",
+        "4:4",
+        "+SDcpu",
+        "1",
+        "+SDio",
+        "1",
+        "-noshell",
+        "-pa",
+        "/home/bat/projects/bream/.tools/reference-fixtures/normal",
+        "-run",
+        "bream_reference_probe",
+        "run",
+        "/home/bat/projects/bream/evidence/process-protocol-review/jit-4/hibernate-256.json",
+        "hibernate",
+        "256"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 0.538,
+      "log": "evidence/process-protocol-review/jit-4/hibernate-256.log"
+    },
+    {
+      "name": "hibernate-257",
+      "argv": [
+        "/home/bat/projects/bream/upstream/otp-reference-build/bin/erl",
+        "+S",
+        "4:4",
+        "+SDcpu",
+        "1",
+        "+SDio",
+        "1",
+        "-noshell",
+        "-pa",
+        "/home/bat/projects/bream/.tools/reference-fixtures/normal",
+        "-run",
+        "bream_reference_probe",
+        "run",
+        "/home/bat/projects/bream/evidence/process-protocol-review/jit-4/hibernate-257.json",
+        "hibernate",
+        "257"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 0.304,
+      "log": "evidence/process-protocol-review/jit-4/hibernate-257.log"
+    },
+    {
+      "name": "disassembly-normal",
+      "argv": [
+        "/home/bat/projects/bream/upstream/otp-reference-build/bin/erl",
+        "+S",
+        "4:4",
+        "+SDcpu",
+        "1",
+        "+SDio",
+        "1",
+        "-noshell",
+        "-eval",
+        "io:format(\"~p.~n\",[beam_disasm:file(\"/home/bat/projects/bream/.tools/reference-fixtures/normal/priority_marker_probe.beam\")]),halt()."
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 0.377,
+      "log": "evidence/process-protocol-review/jit-4/disassembly-normal.log"
+    },
+    {
+      "name": "priority-marker-normal",
+      "argv": [
+        "/home/bat/projects/bream/upstream/otp-reference-build/bin/erl",
+        "+S",
+        "4:4",
+        "+SDcpu",
+        "1",
+        "+SDio",
+        "1",
+        "-noshell",
+        "-pa",
+        "/home/bat/projects/bream/.tools/reference-fixtures/normal",
+        "-eval",
+        "io:format(\"BREAM_PRIORITY_RESULT ~p~n\",[priority_marker_probe:run()]),halt()."
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 0.452,
+      "log": "evidence/process-protocol-review/jit-4/priority-marker-normal.log"
+    },
+    {
+      "name": "disassembly-no_recv_opt",
+      "argv": [
+        "/home/bat/projects/bream/upstream/otp-reference-build/bin/erl",
+        "+S",
+        "4:4",
+        "+SDcpu",
+        "1",
+        "+SDio",
+        "1",
+        "-noshell",
+        "-eval",
+        "io:format(\"~p.~n\",[beam_disasm:file(\"/home/bat/projects/bream/.tools/reference-fixtures/no_recv_opt/priority_marker_probe.beam\")]),halt()."
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 0.541,
+      "log": "evidence/process-protocol-review/jit-4/disassembly-no_recv_opt.log"
+    },
+    {
+      "name": "priority-marker-no_recv_opt",
+      "argv": [
+        "/home/bat/projects/bream/upstream/otp-reference-build/bin/erl",
+        "+S",
+        "4:4",
+        "+SDcpu",
+        "1",
+        "+SDio",
+        "1",
+        "-noshell",
+        "-pa",
+        "/home/bat/projects/bream/.tools/reference-fixtures/no_recv_opt",
+        "-eval",
+        "io:format(\"BREAM_PRIORITY_RESULT ~p~n\",[priority_marker_probe:run()]),halt()."
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 0.569,
+      "log": "evidence/process-protocol-review/jit-4/priority-marker-no_recv_opt.log"
+    }
+  ],
+  "fixtures": [
+    {
+      "path": "evidence/process-protocol-review/fixtures/bream_reference_probe.erl",
+      "sha256": "09a1425b579d38c5fbe3ca987439adf9875bbc8bb19c49a4534a6fd400289c39"
+    },
+    {
+      "path": "evidence/process-protocol-review/priority_marker_probe.erl",
+      "sha256": "a1d42d2988b7468332e3adac224e3b4ae111ce153aff54e1a27a464a0efe7c3f"
+    },
+    {
+      "path": "evidence/process-protocol-review/run_reference.py",
+      "sha256": "e7375a73f08f49cbb6a9a761851bc974097c1e533121d526f3585a6a96259d39"
+    }
+  ],
+  "compiled_fixture_hashes": [
+    {
+      "path": ".tools/reference-fixtures/no_recv_opt/priority_marker_probe.beam",
+      "sha256": "95c19857db5b8bdda7693f3ae1e92c9e6623c3397c60936ae3b7ec435eb36941"
+    },
+    {
+      "path": ".tools/reference-fixtures/no_recv_opt/bream_reference_probe.beam",
+      "sha256": "080f9a6d6162b3981c116fa88001685ac3b8aacc3af2d8c88cc6eadb84f59229"
+    },
+    {
+      "path": ".tools/reference-fixtures/normal/priority_marker_probe.beam",
+      "sha256": "7d687d3db9c4d4af705679cafd7a4727d48e757404705a4bcf67366779bf9819"
+    },
+    {
+      "path": ".tools/reference-fixtures/normal/bream_reference_probe.beam",
+      "sha256": "8a2230ae6c21359da10e60324fcda8783e2ac61fed52636e8d44718c73da6890"
+    }
+  ],
+  "artifact_hashes": [
+    {
+      "path": "evidence/process-protocol-review/jit-4/hibernate-255.json",
+      "sha256": "e6bd13b36163edce3b5c8d72ddf9e61381b9ceea5548ae686619672028b0eff8"
+    },
+    {
+      "path": "evidence/process-protocol-review/jit-4/observations.json",
+      "sha256": "d73d694cd7fec39beafb350d2ec4c4f0abb3d1e9df34a311c8cdfb34eaf1c318"
+    },
+    {
+      "path": "evidence/process-protocol-review/jit-4/hibernate-257.json",
+      "sha256": "92eaa810fc4f825734a3c7677c47ebe2985b52dc4566fd5636f24d2d5767f483"
+    },
+    {
+      "path": "evidence/process-protocol-review/jit-4/hibernate-256.json",
+      "sha256": "04ed56d06263b185319e4851f658e3cc567e9f80ccaeb7381ade0977537b78c1"
+    },
+    {
+      "path": "evidence/process-protocol-review/jit-4/observations.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/process-protocol-review/jit-4/priority-marker-normal.log",
+      "sha256": "d4d9ed87606a847e5a234f7162aadb31c840bcec4899117756b6f9dea6f91963"
+    },
+    {
+      "path": "evidence/process-protocol-review/jit-4/hibernate-256.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/process-protocol-review/jit-4/disassembly-no_recv_opt.log",
+      "sha256": "3e139c5231805f0e96905ba9f4ed83b37d0303e6209e4c260c1c2d28cee3421a"
+    },
+    {
+      "path": "evidence/process-protocol-review/jit-4/compile-no_recv_opt.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/process-protocol-review/jit-4/compile-normal.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/process-protocol-review/jit-4/priority-marker-no_recv_opt.log",
+      "sha256": "d4d9ed87606a847e5a234f7162aadb31c840bcec4899117756b6f9dea6f91963"
+    },
+    {
+      "path": "evidence/process-protocol-review/jit-4/disassembly-normal.log",
+      "sha256": "8e416b3859efad394ce92571ec8eda80120fb51ca2737ec86619a17e6bddad4c"
+    },
+    {
+      "path": "evidence/process-protocol-review/jit-4/hibernate-255.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/process-protocol-review/jit-4/hibernate-257.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "qualification": "Bounded BEAM reference observations. A completed command is not a Bream conformance pass; assertion failures and precondition errors require separate interpretation."
+}

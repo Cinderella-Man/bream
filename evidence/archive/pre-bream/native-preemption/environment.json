@@ -1,0 +1,13 @@
+{
+  "kernel": "Linux-7.0.0-34-generic-x86_64-with-glibc2.43",
+  "architecture": "x86_64",
+  "rustc": "rustc 1.98.1 (48a229cea 2026-09-01)\nbinary: rustc\ncommit-hash: 48a229ceaefd4985c50990b14116b6d856af0985\ncommit-date: 2026-09-01\nhost: x86_64-unknown-linux-gnu\nrelease: 1.98.1\nLLVM version: 22.1.8\n",
+  "upstream_version": "open-coroutine-core 0.7.0",
+  "upstream_vcs_commit": "10431e991ab60ea1cd0bcadfe454adca511e268e",
+  "hook_overview_url": "https://raw.githubusercontent.com/acl-dev/open-coroutine/10431e991ab60ea1cd0bcadfe454adca511e268e/hook/docs/en/hook.md",
+  "archives": {
+    "/home/bat/projects/impish/experiments/native-preemption/vendor/open-coroutine-0.7.0.crate": "02e5b3d18b67037a5f8b5e7f6c3bc10d0862e7c63c3c28ef181e7bfbf428e6e9",
+    "/home/bat/projects/impish/experiments/native-preemption/vendor/open-coroutine-core-0.7.0.crate": "1d9fd5c9e3e6555e1122ba1d0bc8c4f48b49b38754bc5b7adf4cf24b3f368428"
+  },
+  "hook_overview_fetch_error": "HTTP 404; report cites bundled monitor/coroutine docs instead"
+}

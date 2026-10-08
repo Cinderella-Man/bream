@@ -1,0 +1,165 @@
+{
+  "reference_commit": "ad05823719d77c8faee87348ea39513d4e2f99c5",
+  "declarations_file": "erts/emulator/beam/erl_proc_sig_queue.h",
+  "declaration_range": [
+    174,
+    196
+  ],
+  "dispatch_file": "erts/emulator/beam/erl_proc_sig_queue.c",
+  "operation_count": 21,
+  "all_declared_operations_present_in_both_dispatchers": true,
+  "coverage": "Source-dispatch inventory, not branch execution or complete subtype/helper audit. NIF_SELECT live dispatch is conditional on scheduler polling.",
+  "source_hashes": {
+    "erts/emulator/beam/erl_proc_sig_queue.h": "ca6c71cbfd860260cd218f2443d176000ff216bc0f8941ace4a7f3debb485168",
+    "erts/emulator/beam/erl_proc_sig_queue.c": "8c09013466104034a847e3439df4d31c4d5184d2c46430a3cdb0f86710f2c519"
+  },
+  "operations": [
+    {
+      "operation": "EXIT",
+      "declaration_line": 176,
+      "live_dispatch_line": 6338,
+      "exit_dispatch_line": 7311,
+      "helper_coverage": "See reports18\u201324; dispatcher coverage is not transitive helper coverage."
+    },
+    {
+      "operation": "EXIT_LINKED",
+      "declaration_line": 177,
+      "live_dispatch_line": 6339,
+      "exit_dispatch_line": 7312,
+      "helper_coverage": "See reports18\u201324; dispatcher coverage is not transitive helper coverage."
+    },
+    {
+      "operation": "MONITOR_DOWN",
+      "declaration_line": 178,
+      "live_dispatch_line": 6355,
+      "exit_dispatch_line": 7313,
+      "helper_coverage": "See reports18\u201324; dispatcher coverage is not transitive helper coverage."
+    },
+    {
+      "operation": "MONITOR",
+      "declaration_line": 179,
+      "live_dispatch_line": 6544,
+      "exit_dispatch_line": 7347,
+      "helper_coverage": "See reports18\u201324; dispatcher coverage is not transitive helper coverage."
+    },
+    {
+      "operation": "DEMONITOR",
+      "declaration_line": 180,
+      "live_dispatch_line": 6564,
+      "exit_dispatch_line": 7356,
+      "helper_coverage": "See reports18\u201324; dispatcher coverage is not transitive helper coverage."
+    },
+    {
+      "operation": "LINK",
+      "declaration_line": 181,
+      "live_dispatch_line": 6635,
+      "exit_dispatch_line": 7363,
+      "helper_coverage": "See reports18\u201324; dispatcher coverage is not transitive helper coverage."
+    },
+    {
+      "operation": "UNLINK",
+      "declaration_line": 182,
+      "live_dispatch_line": 6665,
+      "exit_dispatch_line": 7369,
+      "helper_coverage": "See reports18\u201324; dispatcher coverage is not transitive helper coverage."
+    },
+    {
+      "operation": "GROUP_LEADER",
+      "declaration_line": 183,
+      "live_dispatch_line": 6778,
+      "exit_dispatch_line": 7394,
+      "helper_coverage": "See reports18\u201324; dispatcher coverage is not transitive helper coverage."
+    },
+    {
+      "operation": "TRACE_CHANGE_STATE",
+      "declaration_line": 184,
+      "live_dispatch_line": 6867,
+      "exit_dispatch_line": 7445,
+      "helper_coverage": "See reports18\u201324; dispatcher coverage is not transitive helper coverage."
+    },
+    {
+      "operation": "PERSISTENT_MON_MSG",
+      "declaration_line": 185,
+      "live_dispatch_line": 6516,
+      "exit_dispatch_line": 7341,
+      "helper_coverage": "See reports18\u201324; dispatcher coverage is not transitive helper coverage."
+    },
+    {
+      "operation": "IS_ALIVE",
+      "declaration_line": 186,
+      "live_dispatch_line": 6787,
+      "exit_dispatch_line": 7400,
+      "helper_coverage": "See reports18\u201324; dispatcher coverage is not transitive helper coverage."
+    },
+    {
+      "operation": "PROCESS_INFO",
+      "declaration_line": 187,
+      "live_dispatch_line": 6794,
+      "exit_dispatch_line": 7404,
+      "helper_coverage": "See reports18\u201324; dispatcher coverage is not transitive helper coverage."
+    },
+    {
+      "operation": "SYNC_SUSPEND",
+      "declaration_line": 188,
+      "live_dispatch_line": 6800,
+      "exit_dispatch_line": 7408,
+      "helper_coverage": "See reports18\u201324; dispatcher coverage is not transitive helper coverage."
+    },
+    {
+      "operation": "RPC",
+      "declaration_line": 189,
+      "live_dispatch_line": 6807,
+      "exit_dispatch_line": 7412,
+      "helper_coverage": "See reports18\u201324; dispatcher coverage is not transitive helper coverage."
+    },
+    {
+      "operation": "DIST_SPAWN_REPLY",
+      "declaration_line": 190,
+      "live_dispatch_line": 6879,
+      "exit_dispatch_line": 7418,
+      "helper_coverage": "See reports18\u201324; dispatcher coverage is not transitive helper coverage."
+    },
+    {
+      "operation": "ALTACT_MSG",
+      "declaration_line": 191,
+      "live_dispatch_line": 6886,
+      "exit_dispatch_line": 7342,
+      "helper_coverage": "See reports18\u201324; dispatcher coverage is not transitive helper coverage."
+    },
+    {
+      "operation": "RECV_MARK",
+      "declaration_line": 192,
+      "live_dispatch_line": 6893,
+      "exit_dispatch_line": 7449,
+      "helper_coverage": "See reports18\u201324; dispatcher coverage is not transitive helper coverage."
+    },
+    {
+      "operation": "UNLINK_ACK",
+      "declaration_line": 193,
+      "live_dispatch_line": 6733,
+      "exit_dispatch_line": 7387,
+      "helper_coverage": "See reports18\u201324; dispatcher coverage is not transitive helper coverage."
+    },
+    {
+      "operation": "ADJ_MSGQ",
+      "declaration_line": 194,
+      "live_dispatch_line": 6815,
+      "exit_dispatch_line": 7424,
+      "helper_coverage": "See reports18\u201324; dispatcher coverage is not transitive helper coverage."
+    },
+    {
+      "operation": "FLUSH",
+      "declaration_line": 195,
+      "live_dispatch_line": 6853,
+      "exit_dispatch_line": 7439,
+      "helper_coverage": "See reports18\u201324; dispatcher coverage is not transitive helper coverage."
+    },
+    {
+      "operation": "NIF_SELECT",
+      "declaration_line": 196,
+      "live_dispatch_line": 6949,
+      "exit_dispatch_line": 7340,
+      "helper_coverage": "See reports18\u201324; dispatcher coverage is not transitive helper coverage."
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+BREAM_PRIORITY_RESULT {ok,#{priority_messages => false,reply => reply,
+                            remaining => [sentinel]}}

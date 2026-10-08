@@ -1,0 +1,7 @@
+MODEL_EXECUTIONS_STARTED=3
+
+thread 'main' (282547) panicked at src/main.rs:21:9:
+assertion `left == right` failed: PUBLICATION_STALE ready=true payload=0
+  left: 0
+ right: 42
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace

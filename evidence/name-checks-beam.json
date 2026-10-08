@@ -1,0 +1,70 @@
+{
+  "checked_at": "2026-10-07T16:41:03.156589+00:00",
+  "purpose": "Registry results recorded during BEAM-related naming exploration, before the user selected Bream.",
+  "results": [
+    {
+      "name": "beamlet",
+      "status": 404,
+      "url": "https://crates.io/api/v1/crates/beamlet"
+    },
+    {
+      "name": "beamline",
+      "status": 404,
+      "url": "https://crates.io/api/v1/crates/beamline"
+    },
+    {
+      "name": "bream",
+      "status": 404,
+      "url": "https://crates.io/api/v1/crates/bream"
+    },
+    {
+      "name": "beamy",
+      "status": 404,
+      "url": "https://crates.io/api/v1/crates/beamy"
+    },
+    {
+      "name": "beamish",
+      "status": 404,
+      "url": "https://crates.io/api/v1/crates/beamish"
+    },
+    {
+      "name": "sunbeam",
+      "status": 200,
+      "url": "https://crates.io/api/v1/crates/sunbeam",
+      "description": "A dynamic CSS class library",
+      "repository": "https://github.com/chinedufn/sunbeam"
+    },
+    {
+      "name": "moonbeam",
+      "status": 200,
+      "url": "https://crates.io/api/v1/crates/moonbeam",
+      "description": "A single-threaded-first async HTTP server",
+      "repository": "https://github.com/jensyt/moonbeam"
+    },
+    {
+      "name": "highbeam",
+      "status": 404,
+      "url": "https://crates.io/api/v1/crates/highbeam"
+    },
+    {
+      "name": "beamtime",
+      "status": 404,
+      "url": "https://crates.io/api/v1/crates/beamtime"
+    },
+    {
+      "name": "microbeam",
+      "status": 404,
+      "url": "https://crates.io/api/v1/crates/microbeam"
+    },
+    {
+      "name": "beamup",
+      "status": 404,
+      "url": "https://crates.io/api/v1/crates/beamup"
+    },
+    {
+      "name": "beambit",
+      "status": 404,
+      "url": "https://crates.io/api/v1/crates/beambit"
+    }
+  ]
+}

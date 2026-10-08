@@ -1,0 +1,8 @@
+    Checking impish-probe-runtime v0.0.0 (/home/bat/projects/impish/experiments/generated-process/runtime)
+error: impish research subset: items and statement macros are forbidden
+ --> runtime/examples/reject_macro.rs:5:5
+  |
+5 |     println!("not an approved builtin");
+  |     ^^^^^^^
+
+error: could not compile `impish-probe-runtime` (example "reject_macro") due to 1 previous error

@@ -1,0 +1,8 @@
+    Checking bream-probe-runtime v0.0.0 (/home/bat/projects/bream/experiments/generated-process/runtime)
+error: bream research subset: unsupported statement; arbitrary calls, macros, unsafe, closures, references, explicit await and custom types are forbidden
+ --> runtime/examples/reject_unsafe.rs:5:5
+  |
+5 |     unsafe { loop {} }
+  |     ^^^^^^
+
+error: could not compile `bream-probe-runtime` (example "reject_unsafe") due to 1 previous error

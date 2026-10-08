@@ -1,0 +1,8 @@
+    Checking impish-probe-runtime v0.0.0 (/home/bat/projects/impish/experiments/generated-process/runtime)
+error: impish research subset: raw identifiers are forbidden in this research subset
+ --> runtime/examples/reject_raw_identifier.rs:5:9
+  |
+5 |     let r#__impish_context: u64 = 0;
+  |         ^^^^^^^^^^^^^^^^^^
+
+error: could not compile `impish-probe-runtime` (example "reject_raw_identifier") due to 1 previous error

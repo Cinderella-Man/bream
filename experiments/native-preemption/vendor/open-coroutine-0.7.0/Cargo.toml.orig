@@ -1,0 +1,71 @@
+[package]
+name = "open-coroutine"
+version.workspace = true
+edition.workspace = true
+authors = ["zhangzicheng@apache.org"]
+description = "The open-coroutine is a simple, efficient and generic stackfull-coroutine library."
+repository = "https://github.com/acl-dev/open-coroutine"
+keywords = ["coroutine", "fiber", "stackfull", "hook"]
+categories = ["data-structures", "concurrency", "asynchronous", "web-programming", "wasm"]
+license.workspace = true
+readme.workspace = true
+exclude.workspace = true
+
+[dependencies]
+libc.workspace = true
+open-coroutine-core.workspace = true
+open-coroutine-hook.workspace = true
+open-coroutine-macros.workspace = true
+
+[target.'cfg(windows)'.dependencies]
+windows-sys = { workspace = true, features = [
+    "Win32_Foundation",
+    "Win32_System_Kernel",
+    "Win32_System_Threading",
+    "Win32_System_SystemInformation",
+    "Win32_System_Diagnostics_Debug",
+] }
+
+[build-dependencies]
+tracing = { workspace = true, default-features = false }
+tracing-subscriber = { workspace = true, features = [
+    "fmt",
+    "local-time"
+], default-features = false }
+tracing-appender.workspace = true
+time.workspace = true
+cargo_metadata.workspace = true
+
+[dev-dependencies]
+tempfile.workspace = true
+cfg-if.workspace = true
+
+[features]
+default = ["open-coroutine-hook/default", "open-coroutine-core/default"]
+
+# Print some help log.
+# Enable for default.
+log = ["open-coroutine-hook/log", "open-coroutine-core/log"]
+
+# This feature only used in open-coroutine inner, don't use it in your project.
+ci = ["open-coroutine-hook/ci", "open-coroutine-core/ci"]
+
+# Provide preemptive scheduling implementation.
+# Enable for default.
+preemptive = ["open-coroutine-hook/preemptive", "open-coroutine-core/preemptive"]
+
+# Provide net API abstraction and implementation.
+net = ["open-coroutine-hook/net", "open-coroutine-core/net"]
+
+# Provide io_uring abstraction and implementation.
+# This feature only works in linux.
+io_uring = ["open-coroutine-hook/io_uring", "open-coroutine-core/io_uring"]
+
+# Provide IOCP adaptation, this feature only works in windows.
+iocp = ["open-coroutine-hook/iocp", "open-coroutine-core/iocp"]
+
+# Provide completion IO adaptation
+completion_io = ["open-coroutine-hook/completion_io", "open-coroutine-core/completion_io"]
+
+# Provide syscall implementation.
+syscall = ["open-coroutine-hook/syscall", "open-coroutine-core/syscall"]

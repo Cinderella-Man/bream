@@ -1,0 +1,8 @@
+    Checking bream-probe-runtime v0.0.0 (/home/bat/projects/bream/experiments/generated-process/runtime)
+error: bream research subset: items and statement macros are forbidden
+ --> runtime/examples/reject_custom_drop.rs:5:5
+  |
+5 |     struct Custom;
+  |     ^^^^^^
+
+error: could not compile `bream-probe-runtime` (example "reject_custom_drop") due to 1 previous error

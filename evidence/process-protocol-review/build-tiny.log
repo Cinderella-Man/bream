@@ -1,0 +1,186 @@
+ MAKE	depend
+make[1]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator'
+ MAKE	generate
+make[2]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator'
+make[2]: Nothing to be done for 'generate'.
+make[2]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator'
+make[1]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator'
+make[1]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator'
+ MAKE	depend
+make[2]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator'
+make[2]: Nothing to be done for 'depend'.
+make[2]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator'
+make[1]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator'
+make[1]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/lib_src'
+ MAKE	depend
+make[2]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/lib_src'
+make[2]: Nothing to be done for 'depend'.
+make[2]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/lib_src'
+make[1]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/lib_src'
+ MAKE	erl_interface_build
+make[1]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface'
+=== Entering application erl_interface
+make[2]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/src'
+ MAKE	opt
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/src'
+make[3]: Nothing to be done for 'opt'.
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/src'
+make[2]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/src'
+make[2]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/doc'
+make[2]: Nothing to be done for 'opt'.
+make[2]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/doc'
+=== Leaving application erl_interface
+make[1]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface'
+ MAKE	emulator
+make[1]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/erts'
+make[2]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/erts'
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator'
+ MAKE	opt
+make[4]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator'
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator'
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/etc'
+make[4]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/etc/common'
+ MAKE	opt
+make[5]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/etc/common'
+make[5]: Nothing to be done for 'etc'.
+make[5]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/etc/common'
+make[4]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/etc/common'
+make[4]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/etc/unix'
+make[4]: Nothing to be done for 'opt'.
+make[4]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/etc/unix'
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/etc'
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/epmd'
+make[4]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/epmd/src'
+ MAKE	opt
+make[5]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/epmd/src'
+make[5]: Nothing to be done for 'all'.
+make[5]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/epmd/src'
+make[4]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/epmd/src'
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/epmd'
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/lib_src'
+ MAKE	opt
+make[4]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/lib_src'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/lib_src'
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/lib_src'
+(cd preloaded/src && make ../../ebin/erts.app)
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/preloaded/src'
+make[3]: '../../ebin/erts.app' is up to date.
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/preloaded/src'
+make[2]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/erts'
+make[1]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/erts'
+ MAKE	tiny_secondary_bootstrap
+make[1]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib'
+make[2]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/parsetools'
+=== Entering application parsetools
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/parsetools/src'
+make[3]: Nothing to be done for 'opt'.
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/parsetools/src'
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/parsetools/doc'
+make[3]: Nothing to be done for 'opt'.
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/parsetools/doc'
+=== Leaving application parsetools
+make[2]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/parsetools'
+make[2]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/sasl'
+=== Entering application sasl
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/sasl/src'
+make[3]: Nothing to be done for 'opt'.
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/sasl/src'
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/sasl/doc'
+make[3]: Nothing to be done for 'opt'.
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/sasl/doc'
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/sasl/examples/src'
+make[3]: Nothing to be done for 'opt'.
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/sasl/examples/src'
+=== Leaving application sasl
+make[2]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/sasl'
+make[1]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib'
+ MAKE	erts
+make[1]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/preloaded/src'
+make[1]: Nothing to be done for 'opt'.
+make[1]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/preloaded/src'
+ MAKE	libs
+make[1]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib'
+make[2]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/stdlib'
+=== Entering application stdlib
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/stdlib/src'
+make[3]: Nothing to be done for 'opt'.
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/stdlib/src'
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/stdlib/doc'
+make[3]: Nothing to be done for 'opt'.
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/stdlib/doc'
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/stdlib/examples'
+make[3]: Nothing to be done for 'opt'.
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/stdlib/examples'
+=== Leaving application stdlib
+make[2]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/stdlib'
+make[2]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/sasl'
+=== Entering application sasl
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/sasl/src'
+make[3]: Nothing to be done for 'opt'.
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/sasl/src'
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/sasl/doc'
+make[3]: Nothing to be done for 'opt'.
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/sasl/doc'
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/sasl/examples/src'
+make[3]: Nothing to be done for 'opt'.
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/sasl/examples/src'
+=== Leaving application sasl
+make[2]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/sasl'
+make[2]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/kernel'
+=== Entering application kernel
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/kernel/src'
+make[3]: Nothing to be done for 'opt'.
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/kernel/src'
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/kernel/doc'
+make[3]: Nothing to be done for 'opt'.
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/kernel/doc'
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/kernel/examples'
+make[3]: Nothing to be done for 'opt'.
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/kernel/examples'
+=== Leaving application kernel
+make[2]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/kernel'
+make[2]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/compiler'
+=== Entering application compiler
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/compiler/src'
+make[3]: Nothing to be done for 'opt'.
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/compiler/src'
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/compiler/doc'
+make[3]: Nothing to be done for 'opt'.
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/compiler/doc'
+=== Leaving application compiler
+make[2]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/compiler'
+make[2]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/parsetools'
+=== Entering application parsetools
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/parsetools/src'
+make[3]: Nothing to be done for 'opt'.
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/parsetools/src'
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/parsetools/doc'
+make[3]: Nothing to be done for 'opt'.
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/parsetools/doc'
+=== Leaving application parsetools
+make[2]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/parsetools'
+make[1]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib'
+make[1]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/erts'
+make[2]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/start_scripts'
+ GEN	/home/bat/projects/bream/upstream/otp-reference-build/erts/start_scripts/start_clean.rel
+ GEN	/home/bat/projects/bream/upstream/otp-reference-build/erts/start_scripts/start_sasl.rel
+ GEN	/home/bat/projects/bream/upstream/otp-reference-build/erts/start_scripts/start_all_example.rel
+ GEN	/home/bat/projects/bream/upstream/otp-reference-build/erts/start_scripts/no_dot_erlang.rel
+ GEN	/home/bat/projects/bream/upstream/otp-reference-build/erts/start_scripts/start_clean.script
+ GEN	/home/bat/projects/bream/upstream/otp-reference-build/erts/start_scripts/start_sasl.boot
+ GEN	/home/bat/projects/bream/upstream/otp-reference-build/erts/start_scripts/no_dot_erlang.boot
+ GEN	RELEASES.src
+make[2]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/start_scripts'
+make[2]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/etc/unix'
+make[2]: Nothing to be done for 'opt'.
+make[2]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/etc/unix'
+make[2]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/start_scripts'
+ GEN	/home/bat/projects/bream/upstream/otp-reference-build/bin/start.script
+ GEN	/home/bat/projects/bream/upstream/otp-reference-build/bin/start_sasl.script
+ GEN	/home/bat/projects/bream/upstream/otp-reference-build/bin/start_clean.script
+ GEN	/home/bat/projects/bream/upstream/otp-reference-build/bin/no_dot_erlang.script
+make[2]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/start_scripts'
+make[1]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/erts'

@@ -1,0 +1,329 @@
+    Updating crates.io index
+     Locking 106 packages to latest compatible versions
+ Downloading crates ...
+  Downloaded ar_archive_writer v0.5.3
+  Downloaded cpufeatures v0.3.1
+  Downloaded num_cpus v1.17.0
+  Downloaded enum-ordinalize v4.4.2
+  Downloaded cfg-if v1.0.5
+  Downloaded cfg_aliases v0.2.2
+  Downloaded enum-ordinalize-derive v4.4.2
+  Downloaded ppv-lite86 v0.2.21
+  Downloaded rand_core v0.10.1
+  Downloaded find-msvc-tools v0.1.14
+  Downloaded rand_chacha v0.9.0
+  Downloaded scopeguard v1.2.0
+  Downloaded psm v0.1.32
+  Downloaded autocfg v1.5.1
+  Downloaded dashmap v6.2.1
+  Downloaded chacha20 v0.10.2
+  Downloaded lock_api v0.4.14
+  Downloaded rand_core v0.9.5
+  Downloaded shlex v2.0.1
+  Downloaded crossbeam-deque v0.8.8
+  Downloaded quote v1.0.47
+  Downloaded crossbeam-epoch v0.9.21
+  Downloaded crossbeam-skiplist v0.1.3
+  Downloaded parking_lot_core v0.9.12
+  Downloaded unicode-ident v1.0.26
+  Downloaded educe v0.6.0
+  Downloaded crossbeam-utils v0.8.23
+  Downloaded bitflags v2.13.2
+  Downloaded getrandom v0.4.3
+  Downloaded once_cell v1.21.4
+  Downloaded getrandom v0.3.4
+  Downloaded proc-macro2 v1.0.107
+  Downloaded smallvec v1.16.2
+  Downloaded uuid v1.27.0
+  Downloaded open-coroutine-core v0.7.0
+  Downloaded rand v0.9.5
+  Downloaded rand v0.10.3
+  Downloaded memchr v2.8.3
+  Downloaded cc v1.6.0
+  Downloaded hashbrown v0.14.5
+  Downloaded syn v2.0.119
+  Downloaded zerocopy v0.8.61
+  Downloaded object v0.39.1
+  Downloaded syn v3.0.6
+  Downloaded nix v0.30.1
+  Downloaded libc v0.2.190
+  Downloaded corosensei v0.2.2
+  Downloaded st3 v0.4.1
+   Compiling libc v0.2.190
+   Compiling cfg-if v1.0.5
+   Compiling proc-macro2 v1.0.107
+   Compiling unicode-ident v1.0.26
+   Compiling crossbeam-utils v0.8.23
+   Compiling quote v1.0.47
+   Compiling find-msvc-tools v0.1.14
+   Compiling object v0.39.1
+   Compiling shlex v2.0.1
+   Compiling cc v1.6.0
+   Compiling zerocopy v0.8.61
+   Compiling memchr v2.8.3
+   Compiling getrandom v0.3.4
+   Compiling crossbeam-epoch v0.9.21
+   Compiling getrandom v0.4.3
+   Compiling rand_core v0.10.1
+   Compiling syn v3.0.6
+   Compiling cfg_aliases v0.2.2
+   Compiling autocfg v1.5.1
+   Compiling cpufeatures v0.3.1
+   Compiling scopeguard v1.2.0
+   Compiling parking_lot_core v0.9.12
+   Compiling chacha20 v0.10.2
+   Compiling ar_archive_writer v0.5.3
+   Compiling corosensei v0.2.2
+   Compiling nix v0.30.1
+   Compiling enum-ordinalize-derive v4.4.2
+   Compiling ppv-lite86 v0.2.21
+   Compiling psm v0.1.32
+   Compiling rand_core v0.9.5
+   Compiling smallvec v1.16.2
+   Compiling crossbeam-deque v0.8.8
+   Compiling open-coroutine-core v0.7.0
+   Compiling rand v0.10.3
+   Compiling rand_chacha v0.9.0
+   Compiling enum-ordinalize v4.4.2
+   Compiling lock_api v0.4.14
+   Compiling syn v2.0.119
+   Compiling bitflags v2.13.2
+   Compiling hashbrown v0.14.5
+   Compiling once_cell v1.21.4
+   Compiling dashmap v6.2.1
+   Compiling uuid v1.27.0
+   Compiling rand v0.9.5
+   Compiling educe v0.6.0
+   Compiling crossbeam-skiplist v0.1.3
+   Compiling num_cpus v1.17.0
+   Compiling st3 v0.4.1
+error[E0433]: cannot find module or crate `crossbeam_utils` in this scope
+ --> /home/bat/projects/impish/experiments/native-preemption/.cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/open-coroutine-core-0.7.0/src/coroutine/suspender.rs:7:23
+  |
+7 |     static TIMESTAMP: crossbeam_utils::atomic::AtomicCell<std::collections::VecDeque<u64>> =
+  |                       ^^^^^^^^^^^^^^^ use of unresolved module or unlinked crate `crossbeam_utils`
+  |
+help: there is a crate or module with a similar name
+  |
+7 -     static TIMESTAMP: crossbeam_utils::atomic::AtomicCell<std::collections::VecDeque<u64>> =
+7 +     static TIMESTAMP: crossbeam_deque::atomic::AtomicCell<std::collections::VecDeque<u64>> =
+  |
+
+error[E0433]: cannot find module or crate `crossbeam_utils` in this scope
+ --> /home/bat/projects/impish/experiments/native-preemption/.cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/open-coroutine-core-0.7.0/src/coroutine/suspender.rs:8:17
+  |
+8 |         const { crossbeam_utils::atomic::AtomicCell::new(std::collections::VecDeque::new()) };
+  |                 ^^^^^^^^^^^^^^^ use of unresolved module or unlinked crate `crossbeam_utils`
+  |
+help: there is a crate or module with a similar name
+  |
+8 -         const { crossbeam_utils::atomic::AtomicCell::new(std::collections::VecDeque::new()) };
+8 +         const { crossbeam_deque::atomic::AtomicCell::new(std::collections::VecDeque::new()) };
+  |
+
+error[E0433]: cannot find module or crate `crossbeam_utils` in this scope
+  --> /home/bat/projects/impish/experiments/native-preemption/.cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/open-coroutine-core-0.7.0/src/coroutine/suspender.rs:11:20
+   |
+11 |     static CANCEL: crossbeam_utils::atomic::AtomicCell<std::collections::VecDeque<bool>> =
+   |                    ^^^^^^^^^^^^^^^ use of unresolved module or unlinked crate `crossbeam_utils`
+   |
+help: there is a crate or module with a similar name
+   |
+11 -     static CANCEL: crossbeam_utils::atomic::AtomicCell<std::collections::VecDeque<bool>> =
+11 +     static CANCEL: crossbeam_deque::atomic::AtomicCell<std::collections::VecDeque<bool>> =
+   |
+
+error[E0433]: cannot find module or crate `crossbeam_utils` in this scope
+  --> /home/bat/projects/impish/experiments/native-preemption/.cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/open-coroutine-core-0.7.0/src/coroutine/suspender.rs:12:17
+   |
+12 |         const { crossbeam_utils::atomic::AtomicCell::new(std::collections::VecDeque::new()) };
+   |                 ^^^^^^^^^^^^^^^ use of unresolved module or unlinked crate `crossbeam_utils`
+   |
+help: there is a crate or module with a similar name
+   |
+12 -         const { crossbeam_utils::atomic::AtomicCell::new(std::collections::VecDeque::new()) };
+12 +         const { crossbeam_deque::atomic::AtomicCell::new(std::collections::VecDeque::new()) };
+   |
+
+error[E0433]: cannot find module or crate `crossbeam_utils` in this scope
+   --> /home/bat/projects/impish/experiments/native-preemption/.cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/open-coroutine-core-0.7.0/src/common/macros.rs:91:27
+    |
+ 91 |             static $name: crossbeam_utils::atomic::AtomicCell<std::collections::VecDeque<*const std::ffi::c_void>> =
+    |                           ^^^^^^^^^^^^^^^ use of unresolved module or unlinked crate `crossbeam_utils`
+    |
+   ::: /home/bat/projects/impish/experiments/native-preemption/.cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/open-coroutine-core-0.7.0/src/coroutine/suspender.rs:105:1
+    |
+105 | impl_current_for!(SUSPENDER, Suspender<'s, Param, Yield>);
+    | --------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `impl_current_for` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: there is a crate or module with a similar name
+    |
+ 91 -             static $name: crossbeam_utils::atomic::AtomicCell<std::collections::VecDeque<*const std::ffi::c_void>> =
+ 91 +             static $name: crossbeam_deque::atomic::AtomicCell<std::collections::VecDeque<*const std::ffi::c_void>> =
+    |
+
+error[E0433]: cannot find module or crate `crossbeam_utils` in this scope
+   --> /home/bat/projects/impish/experiments/native-preemption/.cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/open-coroutine-core-0.7.0/src/common/macros.rs:92:25
+    |
+ 92 |                 const { crossbeam_utils::atomic::AtomicCell::new(std::collections::VecDeque::new()) };
+    |                         ^^^^^^^^^^^^^^^ use of unresolved module or unlinked crate `crossbeam_utils`
+    |
+   ::: /home/bat/projects/impish/experiments/native-preemption/.cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/open-coroutine-core-0.7.0/src/coroutine/suspender.rs:105:1
+    |
+105 | impl_current_for!(SUSPENDER, Suspender<'s, Param, Yield>);
+    | --------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `impl_current_for` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: there is a crate or module with a similar name
+    |
+ 92 -                 const { crossbeam_utils::atomic::AtomicCell::new(std::collections::VecDeque::new()) };
+ 92 +                 const { crossbeam_deque::atomic::AtomicCell::new(std::collections::VecDeque::new()) };
+    |
+
+error[E0433]: cannot find module or crate `crossbeam_utils` in this scope
+   --> /home/bat/projects/impish/experiments/native-preemption/.cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/open-coroutine-core-0.7.0/src/common/macros.rs:91:27
+    |
+ 91 |             static $name: crossbeam_utils::atomic::AtomicCell<std::collections::VecDeque<*const std::ffi::c_void>> =
+    |                           ^^^^^^^^^^^^^^^ use of unresolved module or unlinked crate `crossbeam_utils`
+    |
+   ::: /home/bat/projects/impish/experiments/native-preemption/.cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/open-coroutine-core-0.7.0/src/coroutine/mod.rs:255:1
+    |
+255 | impl_current_for!(COROUTINE, Coroutine<'c, Param, Yield, Return>);
+    | ----------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `impl_current_for` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: there is a crate or module with a similar name
+    |
+ 91 -             static $name: crossbeam_utils::atomic::AtomicCell<std::collections::VecDeque<*const std::ffi::c_void>> =
+ 91 +             static $name: crossbeam_deque::atomic::AtomicCell<std::collections::VecDeque<*const std::ffi::c_void>> =
+    |
+
+error[E0433]: cannot find module or crate `crossbeam_utils` in this scope
+   --> /home/bat/projects/impish/experiments/native-preemption/.cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/open-coroutine-core-0.7.0/src/common/macros.rs:92:25
+    |
+ 92 |                 const { crossbeam_utils::atomic::AtomicCell::new(std::collections::VecDeque::new()) };
+    |                         ^^^^^^^^^^^^^^^ use of unresolved module or unlinked crate `crossbeam_utils`
+    |
+   ::: /home/bat/projects/impish/experiments/native-preemption/.cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/open-coroutine-core-0.7.0/src/coroutine/mod.rs:255:1
+    |
+255 | impl_current_for!(COROUTINE, Coroutine<'c, Param, Yield, Return>);
+    | ----------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `impl_current_for` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: there is a crate or module with a similar name
+    |
+ 92 -                 const { crossbeam_utils::atomic::AtomicCell::new(std::collections::VecDeque::new()) };
+ 92 +                 const { crossbeam_deque::atomic::AtomicCell::new(std::collections::VecDeque::new()) };
+    |
+
+error[E0433]: cannot find module or crate `crossbeam_utils` in this scope
+   --> /home/bat/projects/impish/experiments/native-preemption/.cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/open-coroutine-core-0.7.0/src/common/macros.rs:91:27
+    |
+ 91 |             static $name: crossbeam_utils::atomic::AtomicCell<std::collections::VecDeque<*const std::ffi::c_void>> =
+    |                           ^^^^^^^^^^^^^^^ use of unresolved module or unlinked crate `crossbeam_utils`
+    |
+   ::: /home/bat/projects/impish/experiments/native-preemption/.cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/open-coroutine-core-0.7.0/src/monitor.rs:203:1
+    |
+203 | impl_current_for!(MONITOR, Monitor);
+    | ----------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `impl_current_for` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: there is a crate or module with a similar name
+    |
+ 91 -             static $name: crossbeam_utils::atomic::AtomicCell<std::collections::VecDeque<*const std::ffi::c_void>> =
+ 91 +             static $name: crossbeam_deque::atomic::AtomicCell<std::collections::VecDeque<*const std::ffi::c_void>> =
+    |
+
+error[E0433]: cannot find module or crate `crossbeam_utils` in this scope
+   --> /home/bat/projects/impish/experiments/native-preemption/.cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/open-coroutine-core-0.7.0/src/common/macros.rs:92:25
+    |
+ 92 |                 const { crossbeam_utils::atomic::AtomicCell::new(std::collections::VecDeque::new()) };
+    |                         ^^^^^^^^^^^^^^^ use of unresolved module or unlinked crate `crossbeam_utils`
+    |
+   ::: /home/bat/projects/impish/experiments/native-preemption/.cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/open-coroutine-core-0.7.0/src/monitor.rs:203:1
+    |
+203 | impl_current_for!(MONITOR, Monitor);
+    | ----------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `impl_current_for` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: there is a crate or module with a similar name
+    |
+ 92 -                 const { crossbeam_utils::atomic::AtomicCell::new(std::collections::VecDeque::new()) };
+ 92 +                 const { crossbeam_deque::atomic::AtomicCell::new(std::collections::VecDeque::new()) };
+    |
+
+error[E0433]: cannot find module or crate `crossbeam_utils` in this scope
+   --> /home/bat/projects/impish/experiments/native-preemption/.cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/open-coroutine-core-0.7.0/src/common/macros.rs:91:27
+    |
+ 91 |             static $name: crossbeam_utils::atomic::AtomicCell<std::collections::VecDeque<*const std::ffi::c_void>> =
+    |                           ^^^^^^^^^^^^^^^ use of unresolved module or unlinked crate `crossbeam_utils`
+    |
+   ::: /home/bat/projects/impish/experiments/native-preemption/.cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/open-coroutine-core-0.7.0/src/scheduler.rs:143:1
+    |
+143 | impl_current_for!(SCHEDULER, Scheduler<'s>);
+    | ------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `impl_current_for` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: there is a crate or module with a similar name
+    |
+ 91 -             static $name: crossbeam_utils::atomic::AtomicCell<std::collections::VecDeque<*const std::ffi::c_void>> =
+ 91 +             static $name: crossbeam_deque::atomic::AtomicCell<std::collections::VecDeque<*const std::ffi::c_void>> =
+    |
+
+error[E0433]: cannot find module or crate `crossbeam_utils` in this scope
+   --> /home/bat/projects/impish/experiments/native-preemption/.cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/open-coroutine-core-0.7.0/src/common/macros.rs:92:25
+    |
+ 92 |                 const { crossbeam_utils::atomic::AtomicCell::new(std::collections::VecDeque::new()) };
+    |                         ^^^^^^^^^^^^^^^ use of unresolved module or unlinked crate `crossbeam_utils`
+    |
+   ::: /home/bat/projects/impish/experiments/native-preemption/.cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/open-coroutine-core-0.7.0/src/scheduler.rs:143:1
+    |
+143 | impl_current_for!(SCHEDULER, Scheduler<'s>);
+    | ------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `impl_current_for` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: there is a crate or module with a similar name
+    |
+ 92 -                 const { crossbeam_utils::atomic::AtomicCell::new(std::collections::VecDeque::new()) };
+ 92 +                 const { crossbeam_deque::atomic::AtomicCell::new(std::collections::VecDeque::new()) };
+    |
+
+error[E0433]: cannot find module or crate `crossbeam_utils` in this scope
+   --> /home/bat/projects/impish/experiments/native-preemption/.cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/open-coroutine-core-0.7.0/src/common/macros.rs:91:27
+    |
+ 91 |             static $name: crossbeam_utils::atomic::AtomicCell<std::collections::VecDeque<*const std::ffi::c_void>> =
+    |                           ^^^^^^^^^^^^^^^ use of unresolved module or unlinked crate `crossbeam_utils`
+    |
+   ::: /home/bat/projects/impish/experiments/native-preemption/.cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/open-coroutine-core-0.7.0/src/co_pool/mod.rs:116:1
+    |
+116 | impl_current_for!(COROUTINE_POOL, CoroutinePool<'p>);
+    | ---------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `impl_current_for` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: there is a crate or module with a similar name
+    |
+ 91 -             static $name: crossbeam_utils::atomic::AtomicCell<std::collections::VecDeque<*const std::ffi::c_void>> =
+ 91 +             static $name: crossbeam_deque::atomic::AtomicCell<std::collections::VecDeque<*const std::ffi::c_void>> =
+    |
+
+error[E0433]: cannot find module or crate `crossbeam_utils` in this scope
+   --> /home/bat/projects/impish/experiments/native-preemption/.cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/open-coroutine-core-0.7.0/src/common/macros.rs:92:25
+    |
+ 92 |                 const { crossbeam_utils::atomic::AtomicCell::new(std::collections::VecDeque::new()) };
+    |                         ^^^^^^^^^^^^^^^ use of unresolved module or unlinked crate `crossbeam_utils`
+    |
+   ::: /home/bat/projects/impish/experiments/native-preemption/.cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/open-coroutine-core-0.7.0/src/co_pool/mod.rs:116:1
+    |
+116 | impl_current_for!(COROUTINE_POOL, CoroutinePool<'p>);
+    | ---------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `impl_current_for` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: there is a crate or module with a similar name
+    |
+ 92 -                 const { crossbeam_utils::atomic::AtomicCell::new(std::collections::VecDeque::new()) };
+ 92 +                 const { crossbeam_deque::atomic::AtomicCell::new(std::collections::VecDeque::new()) };
+    |
+
+For more information about this error, try `rustc --explain E0433`.
+error: could not compile `open-coroutine-core` (lib) due to 14 previous errors

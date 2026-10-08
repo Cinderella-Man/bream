@@ -1,0 +1,296 @@
+{
+  "scope": "Three finite Rust synchronization projections, not BEAM/Bream implementation, hardware stress, fairness proof or performance evidence.",
+  "platform": {
+    "system": "Linux",
+    "node": "CrosshairA16",
+    "release": "7.0.0-34-generic",
+    "version": "#34-Ubuntu SMP PREEMPT_DYNAMIC Wed Sep  2 14:29:37 UTC 2026",
+    "machine": "x86_64",
+    "processor": ""
+  },
+  "tools": {
+    "rustc": {
+      "path": "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/rustc",
+      "sha256": "859254978c0a0402c32f949f6de0d99aee73be8d15f45aac00ae1448aac51e74",
+      "version": "rustc 1.98.1 (48a229cea 2026-09-01)\nbinary: rustc\ncommit-hash: 48a229ceaefd4985c50990b14116b6d856af0985\ncommit-date: 2026-09-01\nhost: x86_64-unknown-linux-gnu\nrelease: 1.98.1\nLLVM version: 22.1.8\n",
+      "command": {
+        "argv": [
+          "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/rustc",
+          "-vV"
+        ],
+        "cwd": "/home/bat/projects/bream",
+        "exit_code": 0,
+        "timeout_seconds": 10,
+        "timed_out": false,
+        "stdout": {
+          "path": "evidence/concurrency-clock-review/runs/rustc-version.stdout",
+          "sha256": "778fbc643a806f0dd123c056e66201d7e8a56a61928ec0a33171be8d6c2d5a37"
+        },
+        "stderr": {
+          "path": "evidence/concurrency-clock-review/runs/rustc-version.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      }
+    },
+    "cargo": {
+      "path": "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/cargo",
+      "sha256": "da77c8b33849312255ccde3179198ada4c8deb370488d050286146b1d1b27e14",
+      "version": "cargo 1.98.1 (797e8a9bc 2026-08-05)\nrelease: 1.98.1\ncommit-hash: 797e8a9bca276c1c9f9f738d2a20f484fa4eea9d\ncommit-date: 2026-08-05\nhost: x86_64-unknown-linux-gnu\nlibgit2: 1.9.4 (sys:0.21.0 vendored)\nlibcurl: 8.21.0-DEV (sys:0.4.90+curl-8.21.0 vendored ssl:OpenSSL/3.6.3)\nssl: OpenSSL 3.6.3 9 Jun 2026\nos: Ubuntu 26.4.0 (resolute) [64-bit]\n",
+      "command": {
+        "argv": [
+          "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/cargo",
+          "-vV"
+        ],
+        "cwd": "/home/bat/projects/bream",
+        "exit_code": 0,
+        "timeout_seconds": 10,
+        "timed_out": false,
+        "stdout": {
+          "path": "evidence/concurrency-clock-review/runs/cargo-version.stdout",
+          "sha256": "cbaa13afbe8fe8c872923ef36e9e3391bb82167baab148257abd74636dfbb849"
+        },
+        "stderr": {
+          "path": "evidence/concurrency-clock-review/runs/cargo-version.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      }
+    }
+  },
+  "environment_overrides": {
+    "RUSTC": "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/rustc",
+    "RUSTFLAGS": "",
+    "RUSTDOCFLAGS": "",
+    "RUSTC_WRAPPER": "",
+    "RUSTC_WORKSPACE_WRAPPER": "",
+    "CARGO_HOME": "/home/bat/projects/bream/.tools/cargo-cache",
+    "CARGO_TARGET_DIR": "/home/bat/projects/bream/.tools/atomic-protocol-models",
+    "RUST_BACKTRACE": "0"
+  },
+  "removed_environment": "All inherited LOOM_* and CARGO_ENCODED_RUSTFLAGS",
+  "builder": {
+    "max_threads": 2,
+    "max_branches": 1000,
+    "max_permutations": null,
+    "max_duration": null,
+    "preemption_bound": null,
+    "checkpoint_file": null,
+    "location": true,
+    "log": false
+  },
+  "inputs": [
+    {
+      "path": "experiments/atomic-protocol-models/Cargo.toml",
+      "sha256": "1c2d57ff7c799faab46764c90348f2d58e24415a95be721a9bc97700824fb512"
+    },
+    {
+      "path": "experiments/atomic-protocol-models/Cargo.lock",
+      "sha256": "5d5f2352ed1c572b4e31afdf52f907705e04263405956adc0f5c799c508e652a"
+    },
+    {
+      "path": "experiments/atomic-protocol-models/src/main.rs",
+      "sha256": "6e84f963f33994fb945c18ec11e76a291583d468bcb65ac4792c841c19c08729"
+    }
+  ],
+  "runner": {
+    "path": "evidence/concurrency-clock-review/run_models.py",
+    "sha256": "923b6820d827c60a1956406a73fb1d5d70542350a347fde099c1829d70aff371"
+  },
+  "build": {
+    "argv": [
+      "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/cargo",
+      "build",
+      "--release",
+      "--locked",
+      "--manifest-path",
+      "/home/bat/projects/bream/experiments/atomic-protocol-models/Cargo.toml",
+      "--message-format=json"
+    ],
+    "cwd": "/home/bat/projects/bream",
+    "exit_code": 0,
+    "timeout_seconds": 180,
+    "timed_out": false,
+    "stdout": {
+      "path": "evidence/concurrency-clock-review/runs/build.stdout",
+      "sha256": "d6ea889e626ccad90a3f7f04d11eb8e7b650f710b94b3e9ee28490e5dc5d2e3c"
+    },
+    "stderr": {
+      "path": "evidence/concurrency-clock-review/runs/build.stderr",
+      "sha256": "21f2184155ce19174a18e707249508a6f0442fd43e94d8df431a9f3852fdfb36"
+    }
+  },
+  "models": [
+    {
+      "name": "publication_release_acquire",
+      "expected_failure_marker": null,
+      "command": {
+        "argv": [
+          "/home/bat/projects/bream/.tools/atomic-protocol-models/release/bream-atomic-protocol-models",
+          "publication_release_acquire"
+        ],
+        "cwd": "/home/bat/projects/bream",
+        "exit_code": 0,
+        "timeout_seconds": 45,
+        "timed_out": false,
+        "stdout": {
+          "path": "evidence/concurrency-clock-review/runs/publication_release_acquire.stdout",
+          "sha256": "cb03222fb8578b78c2f8d95a952c8faa79965c235730036c69a1dabf4d7996b2"
+        },
+        "stderr": {
+          "path": "evidence/concurrency-clock-review/runs/publication_release_acquire.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "expected_observation": true,
+      "executions_started": 6
+    },
+    {
+      "name": "publication_relaxed_store",
+      "expected_failure_marker": "PUBLICATION_STALE",
+      "command": {
+        "argv": [
+          "/home/bat/projects/bream/.tools/atomic-protocol-models/release/bream-atomic-protocol-models",
+          "publication_relaxed_store"
+        ],
+        "cwd": "/home/bat/projects/bream",
+        "exit_code": 101,
+        "timeout_seconds": 45,
+        "timed_out": false,
+        "stdout": {
+          "path": "evidence/concurrency-clock-review/runs/publication_relaxed_store.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stderr": {
+          "path": "evidence/concurrency-clock-review/runs/publication_relaxed_store.stderr",
+          "sha256": "377f4322f5b1c35f49f342adb92af71e859ddac7c6e298655a84305cf48aa267"
+        }
+      },
+      "expected_observation": true,
+      "executions_started": 3
+    },
+    {
+      "name": "publication_relaxed_load",
+      "expected_failure_marker": "PUBLICATION_STALE",
+      "command": {
+        "argv": [
+          "/home/bat/projects/bream/.tools/atomic-protocol-models/release/bream-atomic-protocol-models",
+          "publication_relaxed_load"
+        ],
+        "cwd": "/home/bat/projects/bream",
+        "exit_code": 101,
+        "timeout_seconds": 45,
+        "timed_out": false,
+        "stdout": {
+          "path": "evidence/concurrency-clock-review/runs/publication_relaxed_load.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stderr": {
+          "path": "evidence/concurrency-clock-review/runs/publication_relaxed_load.stderr",
+          "sha256": "b54675714d2461877f34ec480d1390bab5fa0f078131e448280604e0f70ab2f7"
+        }
+      },
+      "expected_observation": true,
+      "executions_started": 3
+    },
+    {
+      "name": "final_owner_acquire_fence",
+      "expected_failure_marker": null,
+      "command": {
+        "argv": [
+          "/home/bat/projects/bream/.tools/atomic-protocol-models/release/bream-atomic-protocol-models",
+          "final_owner_acquire_fence"
+        ],
+        "cwd": "/home/bat/projects/bream",
+        "exit_code": 0,
+        "timeout_seconds": 45,
+        "timed_out": false,
+        "stdout": {
+          "path": "evidence/concurrency-clock-review/runs/final_owner_acquire_fence.stdout",
+          "sha256": "8e63280e852c8d54a059fabea65744c56537bc0eb69ef33c90c15cf719036840"
+        },
+        "stderr": {
+          "path": "evidence/concurrency-clock-review/runs/final_owner_acquire_fence.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "expected_observation": true,
+      "executions_started": 4
+    },
+    {
+      "name": "final_owner_no_fence",
+      "expected_failure_marker": "LAST_OWNER_STALE",
+      "command": {
+        "argv": [
+          "/home/bat/projects/bream/.tools/atomic-protocol-models/release/bream-atomic-protocol-models",
+          "final_owner_no_fence"
+        ],
+        "cwd": "/home/bat/projects/bream",
+        "exit_code": 101,
+        "timeout_seconds": 45,
+        "timed_out": false,
+        "stdout": {
+          "path": "evidence/concurrency-clock-review/runs/final_owner_no_fence.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stderr": {
+          "path": "evidence/concurrency-clock-review/runs/final_owner_no_fence.stderr",
+          "sha256": "8d57c0136d3f6bc6a514b37f0fd6466c22e94774dfb3c718c99eb0a9bf4c0276"
+        }
+      },
+      "expected_observation": true,
+      "executions_started": 1
+    },
+    {
+      "name": "parking_locked",
+      "expected_failure_marker": null,
+      "command": {
+        "argv": [
+          "/home/bat/projects/bream/.tools/atomic-protocol-models/release/bream-atomic-protocol-models",
+          "parking_locked"
+        ],
+        "cwd": "/home/bat/projects/bream",
+        "exit_code": 0,
+        "timeout_seconds": 45,
+        "timed_out": false,
+        "stdout": {
+          "path": "evidence/concurrency-clock-review/runs/parking_locked.stdout",
+          "sha256": "956ddd163c36c755f3aed79990ebd0edd1106ad5bf4cabc60100d20690504f82"
+        },
+        "stderr": {
+          "path": "evidence/concurrency-clock-review/runs/parking_locked.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "expected_observation": true,
+      "executions_started": 4
+    },
+    {
+      "name": "parking_separate_acqrel",
+      "expected_failure_marker": "PARKING_LOST_WAKE",
+      "command": {
+        "argv": [
+          "/home/bat/projects/bream/.tools/atomic-protocol-models/release/bream-atomic-protocol-models",
+          "parking_separate_acqrel"
+        ],
+        "cwd": "/home/bat/projects/bream",
+        "exit_code": 101,
+        "timeout_seconds": 45,
+        "timed_out": false,
+        "stdout": {
+          "path": "evidence/concurrency-clock-review/runs/parking_separate_acqrel.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stderr": {
+          "path": "evidence/concurrency-clock-review/runs/parking_separate_acqrel.stderr",
+          "sha256": "d9a270d8e4a5388475100ee2fed3ec5f96b8bca50fa25ab4f40c6890409abda2"
+        }
+      },
+      "expected_observation": true,
+      "executions_started": 1
+    }
+  ],
+  "artifact": {
+    "path": ".tools/atomic-protocol-models/release/bream-atomic-protocol-models",
+    "sha256": "4b1cf14a0d332782bc873742cca4cb8f8757fce5cc4a48ee2d5424cb3e223fb1"
+  },
+  "all_expected_observations": true
+}

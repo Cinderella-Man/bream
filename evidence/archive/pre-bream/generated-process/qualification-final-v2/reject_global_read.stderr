@@ -1,0 +1,8 @@
+    Checking impish-probe-runtime v0.0.0 (/home/bat/projects/impish/experiments/generated-process/runtime)
+error: impish research subset: only local primitive bindings may be read
+ --> runtime/examples/reject_global_read.rs:6:22
+  |
+6 |     let value: u64 = GLOBAL;
+  |                      ^^^^^^
+
+error: could not compile `impish-probe-runtime` (example "reject_global_read") due to 1 previous error

@@ -1,0 +1,18 @@
+[package]
+name = "bream-native-preemption-probe"
+version = "0.0.0"
+edition = "2021"
+publish = false
+
+[workspace]
+
+[features]
+default = ["preemptive"]
+preemptive = ["open-coroutine-core/preemptive"]
+
+[dependencies]
+open-coroutine-core = { version = "=0.7.0", default-features = false, features = ["korosensei", "crossbeam-utils"] }
+libc = "0.2"
+
+[profile.release]
+debug = 0

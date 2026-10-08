@@ -1,0 +1,371 @@
+ MAKE	emulator
+make[1]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/erts'
+make[2]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator'
+ MAKE	debug
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator'
+ GEN	x86_64-pc-linux-gnu/debug/emu/OPCODES-GENERATED
+ GEN	x86_64-pc-linux-gnu/debug/emu/TABLES-GENERATED
+ GEN	x86_64-pc-linux-gnu/debug/emu/erl_alloc_types.h
+ GEN	x86_64-pc-linux-gnu/debug/emu/driver_tab.c
+ GEN	x86_64-pc-linux-gnu/debug/emu/preload.c
+make[4]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/lib_src'
+ MAKE	debug
+make[5]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/lib_src'
+ GEN	obj/x86_64-pc-linux-gnu/debug/depend.mk
+ CC	obj/x86_64-pc-linux-gnu/debug/r/ethr_aux.o
+ CC	obj/x86_64-pc-linux-gnu/debug/r/ethr_atomics.o
+ CC	obj/x86_64-pc-linux-gnu/debug/r/ethr_mutex.o
+ CC	obj/x86_64-pc-linux-gnu/debug/r/ethr_cbf.o
+ CC	obj/x86_64-pc-linux-gnu/debug/r/ethread.o
+ CC	obj/x86_64-pc-linux-gnu/debug/r/ethr_event.o
+ CC	obj/x86_64-pc-linux-gnu/debug/erl_printf_format.o
+ CC	obj/x86_64-pc-linux-gnu/debug/erl_printf.o
+ CC	obj/x86_64-pc-linux-gnu/debug/erl_misc_utils.o
+ CC	obj/x86_64-pc-linux-gnu/debug/r/erl_printf_format.o
+ CC	obj/x86_64-pc-linux-gnu/debug/r/erl_printf.o
+ CC	obj/x86_64-pc-linux-gnu/debug/r/erl_misc_utils.o
+ AR	../lib/internal/x86_64-pc-linux-gnu/liberts_internal.debug.a
+ RANLIB	../lib/internal/x86_64-pc-linux-gnu/liberts_internal.debug.a
+ AR	../lib/internal/x86_64-pc-linux-gnu/liberts_internal_r.debug.a
+ RANLIB	../lib/internal/x86_64-pc-linux-gnu/liberts_internal_r.debug.a
+ AR	../lib/internal/x86_64-pc-linux-gnu/libethread.debug.a
+ RANLIB	../lib/internal/x86_64-pc-linux-gnu/libethread.debug.a
+ GEN	obj/x86_64-pc-linux-gnu/debug/MADE
+make[5]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/lib_src'
+make[4]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/lib_src'
+ GEN	x86_64-pc-linux-gnu/debug/emu/erl_db_insert_list.ycf.h
+ GEN	x86_64-pc-linux-gnu/debug/emu/erl_map.ycf.h
+ GEN	x86_64-pc-linux-gnu/debug/emu/utils.ycf.h
+ GEN	x86_64-pc-linux-gnu/debug/emu/GENERATED
+ GEN	x86_64-pc-linux-gnu/debug/emu/jit.depend.mk
+ GEN	x86_64-pc-linux-gnu/debug/emu/src.depend.mk
+ GEN	x86_64-pc-linux-gnu/debug/emu/drv.depend.mk
+ GEN	x86_64-pc-linux-gnu/debug/emu/nif.depend.mk
+ GEN	x86_64-pc-linux-gnu/debug/emu/sys.depend.mk
+ GEN	x86_64-pc-linux-gnu/debug/emu/target.depend.mk
+ GEN	x86_64-pc-linux-gnu/debug/emu/zlib.depend.mk
+ GEN	x86_64-pc-linux-gnu/debug/emu/zstd.depend.mk
+ GEN	x86_64-pc-linux-gnu/debug/emu/ryu.depend.mk
+ GEN	x86_64-pc-linux-gnu/debug/emu/depend.mk
+make[4]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/lib_src'
+ MAKE	depend
+make[5]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/lib_src'
+make[5]: Nothing to be done for 'depend'.
+make[5]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/lib_src'
+make[4]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/lib_src'
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/preload.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_process.o
+ EMU_CC	obj/x86_64-pc-linux-gnu/debug/emu/beam_emu.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/emu_load.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/beam_common.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/beam_bif_load.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/beam_bp.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/beam_catches.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/beam_debug.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/beam_load.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/beam_opcodes.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/beam_ranges.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/beam_transform_helpers.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/code_ix.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_alloc.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_alloc_util.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_goodfit_alloc.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_bestfit_alloc.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_afit_alloc.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_init.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_atom_table.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_bif_table.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_bif_ddll.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_bif_guard.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_bif_info.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_bif_op.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_bif_os.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_bif_lists.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_bif_persistent.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_bif_atomics.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_bif_counters.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_bif_trace.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_bif_unique.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_guard_bifs.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_dirty_bif_wrap.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_trace.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/copy.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/utils.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/bif.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/io.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_printf_term.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_debug.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_debugger.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_message.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_proc_sig_queue.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_process_dict.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_process_lock.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_port_task.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_arith.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/time.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_time_sup.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/external.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/dist.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/binary.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_db.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_db_util.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_db_hash.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_db_tree.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_thr_progress.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/big.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/hash.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/index.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/atom.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/module.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/export.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/register.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/break.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_async.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_lock_check.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_dyn_lock_check.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_gc.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_lock_count.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_errno_str.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_bits.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_math.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_fun.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_bif_port.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_term.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_node_tables.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_monitor_link.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_process_dump.o
+beam/erl_gc.c: In function ‘garbage_collect_hibernate’:
+beam/erl_gc.c:1104:5: warning: pointer ‘heap_area’ used after ‘erts_free’ [-Wuse-after-free]
+ 1104 |     offset_rootset(p,
+      |     ^~~~~~~~~~~~~~~~~
+ 1105 |                    heap_offset, heap_area, heap_area_sz,
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1106 |                    stack_offset, stack_area, stack_area_sz,
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1107 |                    p->arg_reg, p->arity);
+      |                    ~~~~~~~~~~~~~~~~~~~~~
+beam/erl_gc.c:1091:5: note: call to ‘erts_free’ here
+ 1091 |     erts_free(ERTS_ALC_T_TMP_HEAP, collection_heap);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+beam/erl_gc.c:1103:5: warning: pointer ‘heap_area’ used after ‘erts_free’ [-Wuse-after-free]
+ 1103 |     offset_heap(final_heap, heap_size, heap_offset, heap_area, heap_area_sz);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+beam/erl_gc.c:1091:5: note: call to ‘erts_free’ here
+ 1091 |     erts_free(ERTS_ALC_T_TMP_HEAP, collection_heap);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+beam/erl_bits.c:508:26: warning: ‘f16_to_f32’ defined but not used [-Wunused-function]
+  508 | static ERTS_INLINE float f16_to_f32(Uint16 fp)
+      |                          ^~~~~~~~~~
+beam/erl_bits.c:431:27: warning: ‘f64_to_f16’ defined but not used [-Wunused-function]
+  431 | static ERTS_INLINE Uint16 f64_to_f16(double fp)
+      |                           ^~~~~~~~~~
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_hl_timer.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_cpu_topology.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_drv_thread.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_bif_chksum.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_md5.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_bif_re.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_unicode.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/packet_parser.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/safe_hash.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_zlib.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_nif.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_bif_binary.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_ao_firstfit_alloc.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_thr_queue.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_sched_spec_pre_alloc.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_ptab.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_map.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_msacc.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_lock_flags.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_io_queue.o
+beam/erl_bif_binary.c: In function ‘bm_find_first_match’:
+beam/erl_bif_binary.c:862:17: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  862 |     pos_pointer = memchr(&haystack[j + needle_last], needle[needle_last], mem_read);
+      |                 ^
+beam/erl_bif_binary.c: In function ‘bm_find_all_non_overlapping’:
+beam/erl_bif_binary.c:948:25: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  948 |             pos_pointer = memchr(&haystack[j + needle_last], needle[needle_last], mem_read);
+      |                         ^
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_db_catree.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/socket_dbg.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/socket_tarray.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/socket_util.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_flxctr.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_nfunc_sched.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_global_literals.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/beam_file.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/beam_types.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_term_hashing.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_bif_coverage.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_iolist.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_etp.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_internal_test.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_record.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_crash_dump.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/sys.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/sys_drivers.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/sys_env.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/sys_uds.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/driver_tab.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/unix_prim_file.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/sys_float.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/sys_time.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/sys_signal_stack.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/unix_socket_syncio.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_poll.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_check_io.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_mseg.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_mmap.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_osenv.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_unix_sys_ddll.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_sys_common_misc.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_os_monotonic_time_extender.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erlang_lttng.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/inet_drv.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/ram_file_drv.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/prim_tty_nif.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_tracer_nif.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/prim_buffer_nif.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/prim_file_nif.o
+drivers/common/inet_drv.c: In function ‘inet_async_binary_data’:
+drivers/common/inet_drv.c:3875:15: warning: unused variable ‘spec_size’ [-Wunused-variable]
+ 3875 |     const int spec_size = PACKET_ERL_DRV_TERM_DATA_LEN;
+      |               ^~~~~~~~~
+drivers/common/inet_drv.c: In function ‘packet_binary_message’:
+drivers/common/inet_drv.c:4111:15: warning: unused variable ‘spec_size’ [-Wunused-variable]
+ 4111 |     const int spec_size = PACKET_ERL_DRV_TERM_DATA_LEN;
+      |               ^~~~~~~~~
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/zlib_nif.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/zstd_nif.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/prim_socket_nif.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/prim_net_nif.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/pcre/obj/x86_64-pc-linux-gnu/debug/pcre2_auto_possess.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/pcre/obj/x86_64-pc-linux-gnu/debug/pcre2_chartables.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/pcre/obj/x86_64-pc-linux-gnu/debug/pcre2_chkdint.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/pcre/obj/x86_64-pc-linux-gnu/debug/pcre2_compile.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/pcre/obj/x86_64-pc-linux-gnu/debug/pcre2_compile_cgroup.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/pcre/obj/x86_64-pc-linux-gnu/debug/pcre2_compile_class.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/pcre/obj/x86_64-pc-linux-gnu/debug/pcre2_config.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/pcre/obj/x86_64-pc-linux-gnu/debug/pcre2_context.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/pcre/obj/x86_64-pc-linux-gnu/debug/pcre2_error.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/pcre/obj/x86_64-pc-linux-gnu/debug/pcre2_extuni.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/pcre/obj/x86_64-pc-linux-gnu/debug/pcre2_find_bracket.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/pcre/obj/x86_64-pc-linux-gnu/debug/pcre2_match.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/pcre/obj/x86_64-pc-linux-gnu/debug/pcre2_match_data.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/pcre/obj/x86_64-pc-linux-gnu/debug/pcre2_newline.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/pcre/obj/x86_64-pc-linux-gnu/debug/pcre2_ord2utf.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/pcre/obj/x86_64-pc-linux-gnu/debug/pcre2_pattern_info.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/pcre/obj/x86_64-pc-linux-gnu/debug/pcre2_script_run.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/pcre/obj/x86_64-pc-linux-gnu/debug/pcre2_serialize.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/pcre/obj/x86_64-pc-linux-gnu/debug/pcre2_string_utils.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/pcre/obj/x86_64-pc-linux-gnu/debug/pcre2_study.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/pcre/obj/x86_64-pc-linux-gnu/debug/pcre2_substring.o
+/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/pcre/pcre2_match.c: In function ‘memchr_erlang’:
+/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/pcre/pcre2_match.c:7330:15: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 7330 |         found = memchr(from, c, left);
+      |               ^
+/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/pcre/pcre2_match.c:7336:15: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 7336 |         found = memchr(from, c, max_bytes);
+      |               ^
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/pcre/obj/x86_64-pc-linux-gnu/debug/pcre2_tables.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/pcre/obj/x86_64-pc-linux-gnu/debug/pcre2_ucd.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/pcre/obj/x86_64-pc-linux-gnu/debug/pcre2_valid_utf.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/pcre/obj/x86_64-pc-linux-gnu/debug/pcre2_xclass.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/ryu/obj/x86_64-pc-linux-gnu/debug/d2s.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/zstd/obj/x86_64-pc-linux-gnu/debug/debug.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/zstd/obj/x86_64-pc-linux-gnu/debug/entropy_common.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/zstd/obj/x86_64-pc-linux-gnu/debug/error_private.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/zstd/obj/x86_64-pc-linux-gnu/debug/fse_decompress.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/zstd/obj/x86_64-pc-linux-gnu/debug/pool.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/zstd/obj/x86_64-pc-linux-gnu/debug/threading.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/zstd/obj/x86_64-pc-linux-gnu/debug/xxhash.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/zstd/obj/x86_64-pc-linux-gnu/debug/zstd_common.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/zstd/obj/x86_64-pc-linux-gnu/debug/fse_compress.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/zstd/obj/x86_64-pc-linux-gnu/debug/hist.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/zstd/obj/x86_64-pc-linux-gnu/debug/huf_compress.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/zstd/obj/x86_64-pc-linux-gnu/debug/zstd_compress.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/zstd/obj/x86_64-pc-linux-gnu/debug/zstd_compress_literals.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/zstd/obj/x86_64-pc-linux-gnu/debug/zstd_compress_sequences.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/zstd/obj/x86_64-pc-linux-gnu/debug/zstd_compress_superblock.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/zstd/obj/x86_64-pc-linux-gnu/debug/zstd_double_fast.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/zstd/obj/x86_64-pc-linux-gnu/debug/zstd_fast.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/zstd/obj/x86_64-pc-linux-gnu/debug/zstd_lazy.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/zstd/obj/x86_64-pc-linux-gnu/debug/zstd_ldm.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/zstd/obj/x86_64-pc-linux-gnu/debug/zstd_opt.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/zstd/obj/x86_64-pc-linux-gnu/debug/zstd_preSplit.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/zstd/obj/x86_64-pc-linux-gnu/debug/zstdmt_compress.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/zstd/obj/x86_64-pc-linux-gnu/debug/huf_decompress.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/zstd/obj/x86_64-pc-linux-gnu/debug/zstd_ddict.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/zstd/obj/x86_64-pc-linux-gnu/debug/zstd_decompress.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/zstd/obj/x86_64-pc-linux-gnu/debug/zstd_decompress_block.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/zstd/obj/x86_64-pc-linux-gnu/debug/huf_decompress_amd64.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_main.o
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_poll.flbk.o
+ AR	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/ryu/obj/x86_64-pc-linux-gnu/debug/libryu.a
+ CC	obj/x86_64-pc-linux-gnu/debug/emu/erl_child_setup.o
+ LD	/home/bat/projects/bream/upstream/otp-reference-build/bin/x86_64-pc-linux-gnu/erl_child_setup.debug
+ AR	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/pcre/obj/x86_64-pc-linux-gnu/debug/libepcre.a
+ AR	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/zstd/obj/x86_64-pc-linux-gnu/debug/libzstd.a
+ AR	/home/bat/projects/bream/upstream/otp-reference-build/bin/x86_64-pc-linux-gnu/libbeam.a
+ LD	/home/bat/projects/bream/upstream/otp-reference-build/bin/x86_64-pc-linux-gnu/beam.debug.emu
+ RANLIB	/home/bat/projects/bream/upstream/otp-reference-build/bin/x86_64-pc-linux-gnu/libbeam.a
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator'
+make[2]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator'
+make[2]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/etc'
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/etc/common'
+ MAKE	debug
+make[4]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/etc/common'
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/obj.debug/x86_64-pc-linux-gnu/inet_gethost.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/obj.debug/x86_64-pc-linux-gnu/heart.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/obj.debug/x86_64-pc-linux-gnu/erlexec.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/obj.debug/x86_64-pc-linux-gnu/typer.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/obj.debug/x86_64-pc-linux-gnu/dialyzer.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/obj.debug/x86_64-pc-linux-gnu/erlc.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/obj.debug/x86_64-pc-linux-gnu/escript.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/obj.debug/x86_64-pc-linux-gnu/ct_run.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/obj.debug/x86_64-pc-linux-gnu/safe_string.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/obj.debug/x86_64-pc-linux-gnu/run_erl.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/obj.debug/x86_64-pc-linux-gnu/to_erl.o
+./erlexec.c: In function ‘main’:
+./erlexec.c:596:27: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  596 |         while ((sep_index = strstr(in_index, PATHSEP))) {
+      |                           ^
+ LD	/home/bat/projects/bream/upstream/otp-reference-build/bin/x86_64-pc-linux-gnu/typer
+ LD	/home/bat/projects/bream/upstream/otp-reference-build/bin/x86_64-pc-linux-gnu/dialyzer
+ LD	/home/bat/projects/bream/upstream/otp-reference-build/bin/x86_64-pc-linux-gnu/ct_run
+ LD	/home/bat/projects/bream/upstream/otp-reference-build/bin/x86_64-pc-linux-gnu/escript
+ LD	/home/bat/projects/bream/upstream/otp-reference-build/bin/x86_64-pc-linux-gnu/to_erl
+ LD	/home/bat/projects/bream/upstream/otp-reference-build/bin/x86_64-pc-linux-gnu/heart
+ LD	/home/bat/projects/bream/upstream/otp-reference-build/bin/x86_64-pc-linux-gnu/erlc
+ LD	/home/bat/projects/bream/upstream/otp-reference-build/bin/x86_64-pc-linux-gnu/run_erl
+ LD	/home/bat/projects/bream/upstream/otp-reference-build/bin/x86_64-pc-linux-gnu/inet_gethost
+ LD	/home/bat/projects/bream/upstream/otp-reference-build/bin/x86_64-pc-linux-gnu/erlexec
+make[4]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/etc/common'
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/etc/common'
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/etc/unix'
+make[3]: Nothing to be done for 'debug'.
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/etc/unix'
+make[2]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/etc'
+make[2]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/epmd'
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/epmd/src'
+ MAKE	debug
+make[4]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/epmd/src'
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/obj.debug/x86_64-pc-linux-gnu/epmd.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/obj.debug/x86_64-pc-linux-gnu/epmd_cli.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/obj.debug/x86_64-pc-linux-gnu/epmd_srv.o
+ LD	/home/bat/projects/bream/upstream/otp-reference-build/bin/x86_64-pc-linux-gnu/epmd
+make[4]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/epmd/src'
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/epmd/src'
+make[2]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/epmd'
+make[2]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/lib_src'
+ MAKE	debug
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/lib_src'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/lib_src'
+make[2]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/lib_src'
+(cd preloaded/src && make ../../ebin/erts.app)
+make[2]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/preloaded/src'
+make[2]: '../../ebin/erts.app' is up to date.
+make[2]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/preloaded/src'
+make[1]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/erts'

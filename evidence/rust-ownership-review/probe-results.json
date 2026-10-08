@@ -1,0 +1,934 @@
+{
+  "date": "2026-10-07",
+  "scope": "Rust type/ownership/compiler observations only; no Bream implementation, preemption qualification or benchmark.",
+  "rustc": {
+    "path": "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/rustc",
+    "version_verbose": "rustc 1.98.1 (48a229cea 2026-09-01)\nbinary: rustc\ncommit-hash: 48a229ceaefd4985c50990b14116b6d856af0985\ncommit-date: 2026-09-01\nhost: x86_64-unknown-linux-gnu\nrelease: 1.98.1\nLLVM version: 22.1.8\n",
+    "sha256": "859254978c0a0402c32f949f6de0d99aee73be8d15f45aac00ae1448aac51e74"
+  },
+  "runner": {
+    "path": "evidence/rust-ownership-review/run_probes.py",
+    "sha256": "20a644471a3b9c6b1b6901b0b780fcf0b7cbc73d42766c5166d0f3d821834d73"
+  },
+  "manifest_sha256": "20f415346da34855b560161fa6e4aaf15a07b2bf4065c8f0b7144c15a68839c5",
+  "profiles": [
+    "unoptimized",
+    "optimized"
+  ],
+  "compile_invocations": 24,
+  "execution_invocations": 12,
+  "all_expected_observations": true,
+  "results": [
+    {
+      "profile": "unoptimized",
+      "name": "moved_value",
+      "kind": "reject",
+      "source": "evidence/rust-ownership-review/fixtures/moved_value.rs",
+      "source_sha256": "41935cad8023bab500a679f67566564fd7b5d4465d615dfbb3691de3148dd63d",
+      "compile": {
+        "command": [
+          "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/rustc",
+          "--edition=2024",
+          "-C",
+          "opt-level=0",
+          "--error-format=json",
+          "/home/bat/projects/bream/evidence/rust-ownership-review/fixtures/moved_value.rs",
+          "-o",
+          "/home/bat/projects/bream/.tools/rust-ownership-review/unoptimized/moved_value"
+        ],
+        "cwd": "/home/bat/projects/bream/evidence/rust-ownership-review",
+        "exit_code": 1,
+        "timed_out": false,
+        "stdout": "evidence/rust-ownership-review/runs/unoptimized/moved_value.compile.stdout",
+        "stderr": "evidence/rust-ownership-review/runs/unoptimized/moved_value.compile.stderr",
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "648e140f79de848ccf976b4a8d19b8f37065dee5ea0b01254bb2699aadca6ede"
+      },
+      "diagnostic_codes": [
+        "E0382"
+      ],
+      "expected_observation": true
+    },
+    {
+      "profile": "unoptimized",
+      "name": "borrow_escape",
+      "kind": "reject",
+      "source": "evidence/rust-ownership-review/fixtures/borrow_escape.rs",
+      "source_sha256": "0a58e413fcf58ba6e321139320afcc2e8aa3d0edbeb5ce6a3db7e811abe94836",
+      "compile": {
+        "command": [
+          "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/rustc",
+          "--edition=2024",
+          "-C",
+          "opt-level=0",
+          "--error-format=json",
+          "/home/bat/projects/bream/evidence/rust-ownership-review/fixtures/borrow_escape.rs",
+          "-o",
+          "/home/bat/projects/bream/.tools/rust-ownership-review/unoptimized/borrow_escape"
+        ],
+        "cwd": "/home/bat/projects/bream/evidence/rust-ownership-review",
+        "exit_code": 1,
+        "timed_out": false,
+        "stdout": "evidence/rust-ownership-review/runs/unoptimized/borrow_escape.compile.stdout",
+        "stderr": "evidence/rust-ownership-review/runs/unoptimized/borrow_escape.compile.stderr",
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "659f3ea98b1a9ae4da31cf4f1fdf113c2e8cd5eea3a360b76896ac14bf988f17"
+      },
+      "diagnostic_codes": [
+        "E0597"
+      ],
+      "expected_observation": true
+    },
+    {
+      "profile": "unoptimized",
+      "name": "rc_cross_worker",
+      "kind": "reject",
+      "source": "evidence/rust-ownership-review/fixtures/rc_cross_worker.rs",
+      "source_sha256": "b2a09c02e0c5aa05b04825759df39a8120e5cce68046d8d6c3a91086bdfb2af0",
+      "compile": {
+        "command": [
+          "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/rustc",
+          "--edition=2024",
+          "-C",
+          "opt-level=0",
+          "--error-format=json",
+          "/home/bat/projects/bream/evidence/rust-ownership-review/fixtures/rc_cross_worker.rs",
+          "-o",
+          "/home/bat/projects/bream/.tools/rust-ownership-review/unoptimized/rc_cross_worker"
+        ],
+        "cwd": "/home/bat/projects/bream/evidence/rust-ownership-review",
+        "exit_code": 1,
+        "timed_out": false,
+        "stdout": "evidence/rust-ownership-review/runs/unoptimized/rc_cross_worker.compile.stdout",
+        "stderr": "evidence/rust-ownership-review/runs/unoptimized/rc_cross_worker.compile.stderr",
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "82eec23afefa8e9337e1395553a4fbebfc03d6210133395d41ea7d47e3a3a25b"
+      },
+      "diagnostic_codes": [
+        "E0277"
+      ],
+      "expected_observation": true
+    },
+    {
+      "profile": "unoptimized",
+      "name": "wrong_protocol",
+      "kind": "reject",
+      "source": "evidence/rust-ownership-review/fixtures/wrong_protocol.rs",
+      "source_sha256": "ee0dbd6c863a4a3bb1494a66e26f7c980bb84435169fa3eab286a2d970965f02",
+      "compile": {
+        "command": [
+          "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/rustc",
+          "--edition=2024",
+          "-C",
+          "opt-level=0",
+          "--error-format=json",
+          "/home/bat/projects/bream/evidence/rust-ownership-review/fixtures/wrong_protocol.rs",
+          "-o",
+          "/home/bat/projects/bream/.tools/rust-ownership-review/unoptimized/wrong_protocol"
+        ],
+        "cwd": "/home/bat/projects/bream/evidence/rust-ownership-review",
+        "exit_code": 1,
+        "timed_out": false,
+        "stdout": "evidence/rust-ownership-review/runs/unoptimized/wrong_protocol.compile.stdout",
+        "stderr": "evidence/rust-ownership-review/runs/unoptimized/wrong_protocol.compile.stderr",
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "d065cf6895bc4304b86c4fd582d146f5359596f09d8247817f3e2d8c46da0bdf"
+      },
+      "diagnostic_codes": [
+        "E0308"
+      ],
+      "expected_observation": true
+    },
+    {
+      "profile": "unoptimized",
+      "name": "pinned_move",
+      "kind": "reject",
+      "source": "evidence/rust-ownership-review/fixtures/pinned_move.rs",
+      "source_sha256": "d11cf00ace2909ce540aaed001adf9151639ef1395f709752a68c81cc7c6db14",
+      "compile": {
+        "command": [
+          "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/rustc",
+          "--edition=2024",
+          "-C",
+          "opt-level=0",
+          "--error-format=json",
+          "/home/bat/projects/bream/evidence/rust-ownership-review/fixtures/pinned_move.rs",
+          "-o",
+          "/home/bat/projects/bream/.tools/rust-ownership-review/unoptimized/pinned_move"
+        ],
+        "cwd": "/home/bat/projects/bream/evidence/rust-ownership-review",
+        "exit_code": 1,
+        "timed_out": false,
+        "stdout": "evidence/rust-ownership-review/runs/unoptimized/pinned_move.compile.stdout",
+        "stderr": "evidence/rust-ownership-review/runs/unoptimized/pinned_move.compile.stderr",
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "c47940613e4b841cb0617c227afd7e24e72992099c0ee07a341d2ed056a5787c"
+      },
+      "diagnostic_codes": [
+        "E0277"
+      ],
+      "expected_observation": true
+    },
+    {
+      "profile": "unoptimized",
+      "name": "owned_transfer",
+      "kind": "run",
+      "source": "evidence/rust-ownership-review/fixtures/owned_transfer.rs",
+      "source_sha256": "15edb9a09876b7779f16ce4e5bcfef14c9322eb9bffb67cc96e3ce941b717aad",
+      "compile": {
+        "command": [
+          "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/rustc",
+          "--edition=2024",
+          "-C",
+          "opt-level=0",
+          "--error-format=json",
+          "/home/bat/projects/bream/evidence/rust-ownership-review/fixtures/owned_transfer.rs",
+          "-o",
+          "/home/bat/projects/bream/.tools/rust-ownership-review/unoptimized/owned_transfer"
+        ],
+        "cwd": "/home/bat/projects/bream/evidence/rust-ownership-review",
+        "exit_code": 0,
+        "timed_out": false,
+        "stdout": "evidence/rust-ownership-review/runs/unoptimized/owned_transfer.compile.stdout",
+        "stderr": "evidence/rust-ownership-review/runs/unoptimized/owned_transfer.compile.stderr",
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "diagnostic_codes": [],
+      "artifact": {
+        "path": ".tools/rust-ownership-review/unoptimized/owned_transfer",
+        "sha256": "5c261573a13a6a619cc3329ab8219faa7de848354a0b769581991bf489edb8ee"
+      },
+      "execution": {
+        "command": [
+          "/home/bat/projects/bream/.tools/rust-ownership-review/unoptimized/owned_transfer"
+        ],
+        "cwd": "/home/bat/projects/bream/evidence/rust-ownership-review",
+        "exit_code": 0,
+        "timed_out": false,
+        "stdout": "evidence/rust-ownership-review/runs/unoptimized/owned_transfer.execute.stdout",
+        "stderr": "evidence/rust-ownership-review/runs/unoptimized/owned_transfer.execute.stderr",
+        "stdout_sha256": "357398687a34d356d207937d2b1aca323f648b20c7c716097a31a6fe1979d6b7",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "observed_stdout": "same_allocation=true bytes=4\n",
+      "expected_observation": true
+    },
+    {
+      "profile": "unoptimized",
+      "name": "send_sync_shared_mutation",
+      "kind": "run",
+      "source": "evidence/rust-ownership-review/fixtures/send_sync_shared_mutation.rs",
+      "source_sha256": "96568dc09d33668b667da44c05c834bfaa8097087dcfc22a584f820636746538",
+      "compile": {
+        "command": [
+          "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/rustc",
+          "--edition=2024",
+          "-C",
+          "opt-level=0",
+          "--error-format=json",
+          "/home/bat/projects/bream/evidence/rust-ownership-review/fixtures/send_sync_shared_mutation.rs",
+          "-o",
+          "/home/bat/projects/bream/.tools/rust-ownership-review/unoptimized/send_sync_shared_mutation"
+        ],
+        "cwd": "/home/bat/projects/bream/evidence/rust-ownership-review",
+        "exit_code": 0,
+        "timed_out": false,
+        "stdout": "evidence/rust-ownership-review/runs/unoptimized/send_sync_shared_mutation.compile.stdout",
+        "stderr": "evidence/rust-ownership-review/runs/unoptimized/send_sync_shared_mutation.compile.stderr",
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "diagnostic_codes": [],
+      "artifact": {
+        "path": ".tools/rust-ownership-review/unoptimized/send_sync_shared_mutation",
+        "sha256": "9fa7f324162b3164d239d6f083887e27cbdcc42d6607831ef3b0371e18f394f8"
+      },
+      "execution": {
+        "command": [
+          "/home/bat/projects/bream/.tools/rust-ownership-review/unoptimized/send_sync_shared_mutation"
+        ],
+        "cwd": "/home/bat/projects/bream/evidence/rust-ownership-review",
+        "exit_code": 0,
+        "timed_out": false,
+        "stdout": "evidence/rust-ownership-review/runs/unoptimized/send_sync_shared_mutation.execute.stdout",
+        "stderr": "evidence/rust-ownership-review/runs/unoptimized/send_sync_shared_mutation.execute.stderr",
+        "stdout_sha256": "9ccf675741f0a6e213d378ef63d64c2b0f999682ac4cd3067c5dd817ca6c2f75",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "observed_stdout": "shared_counter=1\n",
+      "expected_observation": true
+    },
+    {
+      "profile": "unoptimized",
+      "name": "forget_cleanup",
+      "kind": "run",
+      "source": "evidence/rust-ownership-review/fixtures/forget_cleanup.rs",
+      "source_sha256": "b091370f5c73f0eb625f802b743164b3c4e077dab230aa37f61d0ae67bbc7b6a",
+      "compile": {
+        "command": [
+          "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/rustc",
+          "--edition=2024",
+          "-C",
+          "opt-level=0",
+          "--error-format=json",
+          "/home/bat/projects/bream/evidence/rust-ownership-review/fixtures/forget_cleanup.rs",
+          "-o",
+          "/home/bat/projects/bream/.tools/rust-ownership-review/unoptimized/forget_cleanup"
+        ],
+        "cwd": "/home/bat/projects/bream/evidence/rust-ownership-review",
+        "exit_code": 0,
+        "timed_out": false,
+        "stdout": "evidence/rust-ownership-review/runs/unoptimized/forget_cleanup.compile.stdout",
+        "stderr": "evidence/rust-ownership-review/runs/unoptimized/forget_cleanup.compile.stderr",
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "diagnostic_codes": [],
+      "artifact": {
+        "path": ".tools/rust-ownership-review/unoptimized/forget_cleanup",
+        "sha256": "94e88e3d8a25c06101e8b5af561d9b73b8539e890bc67fe867dd6a6135945f50"
+      },
+      "execution": {
+        "command": [
+          "/home/bat/projects/bream/.tools/rust-ownership-review/unoptimized/forget_cleanup"
+        ],
+        "cwd": "/home/bat/projects/bream/evidence/rust-ownership-review",
+        "exit_code": 0,
+        "timed_out": false,
+        "stdout": "evidence/rust-ownership-review/runs/unoptimized/forget_cleanup.execute.stdout",
+        "stderr": "evidence/rust-ownership-review/runs/unoptimized/forget_cleanup.execute.stderr",
+        "stdout_sha256": "44990b4ae447e9d74196a518f101752acbaa91f231c674415d772baef60cd8cc",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "observed_stdout": "drops=0\n",
+      "expected_observation": true
+    },
+    {
+      "profile": "unoptimized",
+      "name": "manually_drop_cleanup",
+      "kind": "run",
+      "source": "evidence/rust-ownership-review/fixtures/manually_drop_cleanup.rs",
+      "source_sha256": "1f909c1f9b57c393d9c64d3c458f73e0cf12c0c1206345dc641563555f089c8d",
+      "compile": {
+        "command": [
+          "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/rustc",
+          "--edition=2024",
+          "-C",
+          "opt-level=0",
+          "--error-format=json",
+          "/home/bat/projects/bream/evidence/rust-ownership-review/fixtures/manually_drop_cleanup.rs",
+          "-o",
+          "/home/bat/projects/bream/.tools/rust-ownership-review/unoptimized/manually_drop_cleanup"
+        ],
+        "cwd": "/home/bat/projects/bream/evidence/rust-ownership-review",
+        "exit_code": 0,
+        "timed_out": false,
+        "stdout": "evidence/rust-ownership-review/runs/unoptimized/manually_drop_cleanup.compile.stdout",
+        "stderr": "evidence/rust-ownership-review/runs/unoptimized/manually_drop_cleanup.compile.stderr",
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "diagnostic_codes": [],
+      "artifact": {
+        "path": ".tools/rust-ownership-review/unoptimized/manually_drop_cleanup",
+        "sha256": "c28af41e31c3650a19e0adbd3aea8166855b2826fc5dfb1bb539afc1f22bd461"
+      },
+      "execution": {
+        "command": [
+          "/home/bat/projects/bream/.tools/rust-ownership-review/unoptimized/manually_drop_cleanup"
+        ],
+        "cwd": "/home/bat/projects/bream/evidence/rust-ownership-review",
+        "exit_code": 0,
+        "timed_out": false,
+        "stdout": "evidence/rust-ownership-review/runs/unoptimized/manually_drop_cleanup.execute.stdout",
+        "stderr": "evidence/rust-ownership-review/runs/unoptimized/manually_drop_cleanup.execute.stderr",
+        "stdout_sha256": "44990b4ae447e9d74196a518f101752acbaa91f231c674415d772baef60cd8cc",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "observed_stdout": "drops=0\n",
+      "expected_observation": true
+    },
+    {
+      "profile": "unoptimized",
+      "name": "captureless_global",
+      "kind": "run",
+      "source": "evidence/rust-ownership-review/fixtures/captureless_global.rs",
+      "source_sha256": "4ebf49b2840bd870a730255f42b0674cc1d42ffc1a4970bf4e985d206d045807",
+      "compile": {
+        "command": [
+          "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/rustc",
+          "--edition=2024",
+          "-C",
+          "opt-level=0",
+          "--error-format=json",
+          "/home/bat/projects/bream/evidence/rust-ownership-review/fixtures/captureless_global.rs",
+          "-o",
+          "/home/bat/projects/bream/.tools/rust-ownership-review/unoptimized/captureless_global"
+        ],
+        "cwd": "/home/bat/projects/bream/evidence/rust-ownership-review",
+        "exit_code": 0,
+        "timed_out": false,
+        "stdout": "evidence/rust-ownership-review/runs/unoptimized/captureless_global.compile.stdout",
+        "stderr": "evidence/rust-ownership-review/runs/unoptimized/captureless_global.compile.stderr",
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "diagnostic_codes": [],
+      "artifact": {
+        "path": ".tools/rust-ownership-review/unoptimized/captureless_global",
+        "sha256": "771aac908d213a3b8ff0e5099331e67c29baf54f4515b809df13a4b51cba9ed9"
+      },
+      "execution": {
+        "command": [
+          "/home/bat/projects/bream/.tools/rust-ownership-review/unoptimized/captureless_global"
+        ],
+        "cwd": "/home/bat/projects/bream/evidence/rust-ownership-review",
+        "exit_code": 0,
+        "timed_out": false,
+        "stdout": "evidence/rust-ownership-review/runs/unoptimized/captureless_global.execute.stdout",
+        "stderr": "evidence/rust-ownership-review/runs/unoptimized/captureless_global.execute.stderr",
+        "stdout_sha256": "97d41b5e5688c59e8a4fa152b3004e3c15f9e5e20219f7b66490ec7d8d48b84d",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "observed_stdout": "global=1\n",
+      "expected_observation": true
+    },
+    {
+      "profile": "unoptimized",
+      "name": "no_drop_callback",
+      "kind": "compile",
+      "source": "evidence/rust-ownership-review/fixtures/no_drop_callback.rs",
+      "source_sha256": "a57d7cc5418873dee0372d25f06d64278bf31cf1ba91e1417d0b44bb9d097860",
+      "compile": {
+        "command": [
+          "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/rustc",
+          "--edition=2024",
+          "-C",
+          "opt-level=0",
+          "--error-format=json",
+          "/home/bat/projects/bream/evidence/rust-ownership-review/fixtures/no_drop_callback.rs",
+          "-o",
+          "/home/bat/projects/bream/.tools/rust-ownership-review/unoptimized/no_drop_callback"
+        ],
+        "cwd": "/home/bat/projects/bream/evidence/rust-ownership-review",
+        "exit_code": 0,
+        "timed_out": false,
+        "stdout": "evidence/rust-ownership-review/runs/unoptimized/no_drop_callback.compile.stdout",
+        "stderr": "evidence/rust-ownership-review/runs/unoptimized/no_drop_callback.compile.stderr",
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "diagnostic_codes": [],
+      "artifact": {
+        "path": ".tools/rust-ownership-review/unoptimized/no_drop_callback",
+        "sha256": "e69a465fc59d6d672380bb80ea37914ee232b495d3ae0b2c9666bb36e21c9645"
+      },
+      "expected_observation": true
+    },
+    {
+      "profile": "unoptimized",
+      "name": "pinned_borrow_cleanup",
+      "kind": "run",
+      "source": "evidence/rust-ownership-review/fixtures/pinned_borrow_cleanup.rs",
+      "source_sha256": "8a5c53a017bab1d8d859d1770aa741afa0bd391133e296e43968fcc651841581",
+      "compile": {
+        "command": [
+          "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/rustc",
+          "--edition=2024",
+          "-C",
+          "opt-level=0",
+          "--error-format=json",
+          "/home/bat/projects/bream/evidence/rust-ownership-review/fixtures/pinned_borrow_cleanup.rs",
+          "-o",
+          "/home/bat/projects/bream/.tools/rust-ownership-review/unoptimized/pinned_borrow_cleanup"
+        ],
+        "cwd": "/home/bat/projects/bream/evidence/rust-ownership-review",
+        "exit_code": 0,
+        "timed_out": false,
+        "stdout": "evidence/rust-ownership-review/runs/unoptimized/pinned_borrow_cleanup.compile.stdout",
+        "stderr": "evidence/rust-ownership-review/runs/unoptimized/pinned_borrow_cleanup.compile.stderr",
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "diagnostic_codes": [],
+      "artifact": {
+        "path": ".tools/rust-ownership-review/unoptimized/pinned_borrow_cleanup",
+        "sha256": "8dc2c2072a1270932844b9e9088ae2c279e5a7c4021a5c91fac8e7e895b23b86"
+      },
+      "execution": {
+        "command": [
+          "/home/bat/projects/bream/.tools/rust-ownership-review/unoptimized/pinned_borrow_cleanup"
+        ],
+        "cwd": "/home/bat/projects/bream/evidence/rust-ownership-review",
+        "exit_code": 0,
+        "timed_out": false,
+        "stdout": "evidence/rust-ownership-review/runs/unoptimized/pinned_borrow_cleanup.execute.stdout",
+        "stderr": "evidence/rust-ownership-review/runs/unoptimized/pinned_borrow_cleanup.execute.stderr",
+        "stdout_sha256": "6fb058e64258fa61c12e2b6c52f5133ebe5347a368341e2a9fa1175eda7f7288",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "observed_stdout": "pending=true drops=1\n",
+      "expected_observation": true
+    },
+    {
+      "profile": "optimized",
+      "name": "moved_value",
+      "kind": "reject",
+      "source": "evidence/rust-ownership-review/fixtures/moved_value.rs",
+      "source_sha256": "41935cad8023bab500a679f67566564fd7b5d4465d615dfbb3691de3148dd63d",
+      "compile": {
+        "command": [
+          "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/rustc",
+          "--edition=2024",
+          "-C",
+          "opt-level=3",
+          "--error-format=json",
+          "/home/bat/projects/bream/evidence/rust-ownership-review/fixtures/moved_value.rs",
+          "-o",
+          "/home/bat/projects/bream/.tools/rust-ownership-review/optimized/moved_value"
+        ],
+        "cwd": "/home/bat/projects/bream/evidence/rust-ownership-review",
+        "exit_code": 1,
+        "timed_out": false,
+        "stdout": "evidence/rust-ownership-review/runs/optimized/moved_value.compile.stdout",
+        "stderr": "evidence/rust-ownership-review/runs/optimized/moved_value.compile.stderr",
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "648e140f79de848ccf976b4a8d19b8f37065dee5ea0b01254bb2699aadca6ede"
+      },
+      "diagnostic_codes": [
+        "E0382"
+      ],
+      "expected_observation": true
+    },
+    {
+      "profile": "optimized",
+      "name": "borrow_escape",
+      "kind": "reject",
+      "source": "evidence/rust-ownership-review/fixtures/borrow_escape.rs",
+      "source_sha256": "0a58e413fcf58ba6e321139320afcc2e8aa3d0edbeb5ce6a3db7e811abe94836",
+      "compile": {
+        "command": [
+          "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/rustc",
+          "--edition=2024",
+          "-C",
+          "opt-level=3",
+          "--error-format=json",
+          "/home/bat/projects/bream/evidence/rust-ownership-review/fixtures/borrow_escape.rs",
+          "-o",
+          "/home/bat/projects/bream/.tools/rust-ownership-review/optimized/borrow_escape"
+        ],
+        "cwd": "/home/bat/projects/bream/evidence/rust-ownership-review",
+        "exit_code": 1,
+        "timed_out": false,
+        "stdout": "evidence/rust-ownership-review/runs/optimized/borrow_escape.compile.stdout",
+        "stderr": "evidence/rust-ownership-review/runs/optimized/borrow_escape.compile.stderr",
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "659f3ea98b1a9ae4da31cf4f1fdf113c2e8cd5eea3a360b76896ac14bf988f17"
+      },
+      "diagnostic_codes": [
+        "E0597"
+      ],
+      "expected_observation": true
+    },
+    {
+      "profile": "optimized",
+      "name": "rc_cross_worker",
+      "kind": "reject",
+      "source": "evidence/rust-ownership-review/fixtures/rc_cross_worker.rs",
+      "source_sha256": "b2a09c02e0c5aa05b04825759df39a8120e5cce68046d8d6c3a91086bdfb2af0",
+      "compile": {
+        "command": [
+          "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/rustc",
+          "--edition=2024",
+          "-C",
+          "opt-level=3",
+          "--error-format=json",
+          "/home/bat/projects/bream/evidence/rust-ownership-review/fixtures/rc_cross_worker.rs",
+          "-o",
+          "/home/bat/projects/bream/.tools/rust-ownership-review/optimized/rc_cross_worker"
+        ],
+        "cwd": "/home/bat/projects/bream/evidence/rust-ownership-review",
+        "exit_code": 1,
+        "timed_out": false,
+        "stdout": "evidence/rust-ownership-review/runs/optimized/rc_cross_worker.compile.stdout",
+        "stderr": "evidence/rust-ownership-review/runs/optimized/rc_cross_worker.compile.stderr",
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "82eec23afefa8e9337e1395553a4fbebfc03d6210133395d41ea7d47e3a3a25b"
+      },
+      "diagnostic_codes": [
+        "E0277"
+      ],
+      "expected_observation": true
+    },
+    {
+      "profile": "optimized",
+      "name": "wrong_protocol",
+      "kind": "reject",
+      "source": "evidence/rust-ownership-review/fixtures/wrong_protocol.rs",
+      "source_sha256": "ee0dbd6c863a4a3bb1494a66e26f7c980bb84435169fa3eab286a2d970965f02",
+      "compile": {
+        "command": [
+          "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/rustc",
+          "--edition=2024",
+          "-C",
+          "opt-level=3",
+          "--error-format=json",
+          "/home/bat/projects/bream/evidence/rust-ownership-review/fixtures/wrong_protocol.rs",
+          "-o",
+          "/home/bat/projects/bream/.tools/rust-ownership-review/optimized/wrong_protocol"
+        ],
+        "cwd": "/home/bat/projects/bream/evidence/rust-ownership-review",
+        "exit_code": 1,
+        "timed_out": false,
+        "stdout": "evidence/rust-ownership-review/runs/optimized/wrong_protocol.compile.stdout",
+        "stderr": "evidence/rust-ownership-review/runs/optimized/wrong_protocol.compile.stderr",
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "d065cf6895bc4304b86c4fd582d146f5359596f09d8247817f3e2d8c46da0bdf"
+      },
+      "diagnostic_codes": [
+        "E0308"
+      ],
+      "expected_observation": true
+    },
+    {
+      "profile": "optimized",
+      "name": "pinned_move",
+      "kind": "reject",
+      "source": "evidence/rust-ownership-review/fixtures/pinned_move.rs",
+      "source_sha256": "d11cf00ace2909ce540aaed001adf9151639ef1395f709752a68c81cc7c6db14",
+      "compile": {
+        "command": [
+          "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/rustc",
+          "--edition=2024",
+          "-C",
+          "opt-level=3",
+          "--error-format=json",
+          "/home/bat/projects/bream/evidence/rust-ownership-review/fixtures/pinned_move.rs",
+          "-o",
+          "/home/bat/projects/bream/.tools/rust-ownership-review/optimized/pinned_move"
+        ],
+        "cwd": "/home/bat/projects/bream/evidence/rust-ownership-review",
+        "exit_code": 1,
+        "timed_out": false,
+        "stdout": "evidence/rust-ownership-review/runs/optimized/pinned_move.compile.stdout",
+        "stderr": "evidence/rust-ownership-review/runs/optimized/pinned_move.compile.stderr",
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "c47940613e4b841cb0617c227afd7e24e72992099c0ee07a341d2ed056a5787c"
+      },
+      "diagnostic_codes": [
+        "E0277"
+      ],
+      "expected_observation": true
+    },
+    {
+      "profile": "optimized",
+      "name": "owned_transfer",
+      "kind": "run",
+      "source": "evidence/rust-ownership-review/fixtures/owned_transfer.rs",
+      "source_sha256": "15edb9a09876b7779f16ce4e5bcfef14c9322eb9bffb67cc96e3ce941b717aad",
+      "compile": {
+        "command": [
+          "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/rustc",
+          "--edition=2024",
+          "-C",
+          "opt-level=3",
+          "--error-format=json",
+          "/home/bat/projects/bream/evidence/rust-ownership-review/fixtures/owned_transfer.rs",
+          "-o",
+          "/home/bat/projects/bream/.tools/rust-ownership-review/optimized/owned_transfer"
+        ],
+        "cwd": "/home/bat/projects/bream/evidence/rust-ownership-review",
+        "exit_code": 0,
+        "timed_out": false,
+        "stdout": "evidence/rust-ownership-review/runs/optimized/owned_transfer.compile.stdout",
+        "stderr": "evidence/rust-ownership-review/runs/optimized/owned_transfer.compile.stderr",
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "diagnostic_codes": [],
+      "artifact": {
+        "path": ".tools/rust-ownership-review/optimized/owned_transfer",
+        "sha256": "8bf35563f8c12814c1b05d8f5c78c1c794019c46bee5f32fc7be6f67175379b3"
+      },
+      "execution": {
+        "command": [
+          "/home/bat/projects/bream/.tools/rust-ownership-review/optimized/owned_transfer"
+        ],
+        "cwd": "/home/bat/projects/bream/evidence/rust-ownership-review",
+        "exit_code": 0,
+        "timed_out": false,
+        "stdout": "evidence/rust-ownership-review/runs/optimized/owned_transfer.execute.stdout",
+        "stderr": "evidence/rust-ownership-review/runs/optimized/owned_transfer.execute.stderr",
+        "stdout_sha256": "357398687a34d356d207937d2b1aca323f648b20c7c716097a31a6fe1979d6b7",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "observed_stdout": "same_allocation=true bytes=4\n",
+      "expected_observation": true
+    },
+    {
+      "profile": "optimized",
+      "name": "send_sync_shared_mutation",
+      "kind": "run",
+      "source": "evidence/rust-ownership-review/fixtures/send_sync_shared_mutation.rs",
+      "source_sha256": "96568dc09d33668b667da44c05c834bfaa8097087dcfc22a584f820636746538",
+      "compile": {
+        "command": [
+          "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/rustc",
+          "--edition=2024",
+          "-C",
+          "opt-level=3",
+          "--error-format=json",
+          "/home/bat/projects/bream/evidence/rust-ownership-review/fixtures/send_sync_shared_mutation.rs",
+          "-o",
+          "/home/bat/projects/bream/.tools/rust-ownership-review/optimized/send_sync_shared_mutation"
+        ],
+        "cwd": "/home/bat/projects/bream/evidence/rust-ownership-review",
+        "exit_code": 0,
+        "timed_out": false,
+        "stdout": "evidence/rust-ownership-review/runs/optimized/send_sync_shared_mutation.compile.stdout",
+        "stderr": "evidence/rust-ownership-review/runs/optimized/send_sync_shared_mutation.compile.stderr",
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "diagnostic_codes": [],
+      "artifact": {
+        "path": ".tools/rust-ownership-review/optimized/send_sync_shared_mutation",
+        "sha256": "d79de12f06f789f763ac6f375d1373707a17ff577357f0ade63a8d459cf421fa"
+      },
+      "execution": {
+        "command": [
+          "/home/bat/projects/bream/.tools/rust-ownership-review/optimized/send_sync_shared_mutation"
+        ],
+        "cwd": "/home/bat/projects/bream/evidence/rust-ownership-review",
+        "exit_code": 0,
+        "timed_out": false,
+        "stdout": "evidence/rust-ownership-review/runs/optimized/send_sync_shared_mutation.execute.stdout",
+        "stderr": "evidence/rust-ownership-review/runs/optimized/send_sync_shared_mutation.execute.stderr",
+        "stdout_sha256": "9ccf675741f0a6e213d378ef63d64c2b0f999682ac4cd3067c5dd817ca6c2f75",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "observed_stdout": "shared_counter=1\n",
+      "expected_observation": true
+    },
+    {
+      "profile": "optimized",
+      "name": "forget_cleanup",
+      "kind": "run",
+      "source": "evidence/rust-ownership-review/fixtures/forget_cleanup.rs",
+      "source_sha256": "b091370f5c73f0eb625f802b743164b3c4e077dab230aa37f61d0ae67bbc7b6a",
+      "compile": {
+        "command": [
+          "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/rustc",
+          "--edition=2024",
+          "-C",
+          "opt-level=3",
+          "--error-format=json",
+          "/home/bat/projects/bream/evidence/rust-ownership-review/fixtures/forget_cleanup.rs",
+          "-o",
+          "/home/bat/projects/bream/.tools/rust-ownership-review/optimized/forget_cleanup"
+        ],
+        "cwd": "/home/bat/projects/bream/evidence/rust-ownership-review",
+        "exit_code": 0,
+        "timed_out": false,
+        "stdout": "evidence/rust-ownership-review/runs/optimized/forget_cleanup.compile.stdout",
+        "stderr": "evidence/rust-ownership-review/runs/optimized/forget_cleanup.compile.stderr",
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "diagnostic_codes": [],
+      "artifact": {
+        "path": ".tools/rust-ownership-review/optimized/forget_cleanup",
+        "sha256": "f52f533bfc6587cc04773e70a4af7f199961d8df574789bc14839d59f392ac8b"
+      },
+      "execution": {
+        "command": [
+          "/home/bat/projects/bream/.tools/rust-ownership-review/optimized/forget_cleanup"
+        ],
+        "cwd": "/home/bat/projects/bream/evidence/rust-ownership-review",
+        "exit_code": 0,
+        "timed_out": false,
+        "stdout": "evidence/rust-ownership-review/runs/optimized/forget_cleanup.execute.stdout",
+        "stderr": "evidence/rust-ownership-review/runs/optimized/forget_cleanup.execute.stderr",
+        "stdout_sha256": "44990b4ae447e9d74196a518f101752acbaa91f231c674415d772baef60cd8cc",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "observed_stdout": "drops=0\n",
+      "expected_observation": true
+    },
+    {
+      "profile": "optimized",
+      "name": "manually_drop_cleanup",
+      "kind": "run",
+      "source": "evidence/rust-ownership-review/fixtures/manually_drop_cleanup.rs",
+      "source_sha256": "1f909c1f9b57c393d9c64d3c458f73e0cf12c0c1206345dc641563555f089c8d",
+      "compile": {
+        "command": [
+          "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/rustc",
+          "--edition=2024",
+          "-C",
+          "opt-level=3",
+          "--error-format=json",
+          "/home/bat/projects/bream/evidence/rust-ownership-review/fixtures/manually_drop_cleanup.rs",
+          "-o",
+          "/home/bat/projects/bream/.tools/rust-ownership-review/optimized/manually_drop_cleanup"
+        ],
+        "cwd": "/home/bat/projects/bream/evidence/rust-ownership-review",
+        "exit_code": 0,
+        "timed_out": false,
+        "stdout": "evidence/rust-ownership-review/runs/optimized/manually_drop_cleanup.compile.stdout",
+        "stderr": "evidence/rust-ownership-review/runs/optimized/manually_drop_cleanup.compile.stderr",
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "diagnostic_codes": [],
+      "artifact": {
+        "path": ".tools/rust-ownership-review/optimized/manually_drop_cleanup",
+        "sha256": "5f3cba595df9cfbefe973821d118baee11210420771284a29bbe35c7a943acd7"
+      },
+      "execution": {
+        "command": [
+          "/home/bat/projects/bream/.tools/rust-ownership-review/optimized/manually_drop_cleanup"
+        ],
+        "cwd": "/home/bat/projects/bream/evidence/rust-ownership-review",
+        "exit_code": 0,
+        "timed_out": false,
+        "stdout": "evidence/rust-ownership-review/runs/optimized/manually_drop_cleanup.execute.stdout",
+        "stderr": "evidence/rust-ownership-review/runs/optimized/manually_drop_cleanup.execute.stderr",
+        "stdout_sha256": "44990b4ae447e9d74196a518f101752acbaa91f231c674415d772baef60cd8cc",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "observed_stdout": "drops=0\n",
+      "expected_observation": true
+    },
+    {
+      "profile": "optimized",
+      "name": "captureless_global",
+      "kind": "run",
+      "source": "evidence/rust-ownership-review/fixtures/captureless_global.rs",
+      "source_sha256": "4ebf49b2840bd870a730255f42b0674cc1d42ffc1a4970bf4e985d206d045807",
+      "compile": {
+        "command": [
+          "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/rustc",
+          "--edition=2024",
+          "-C",
+          "opt-level=3",
+          "--error-format=json",
+          "/home/bat/projects/bream/evidence/rust-ownership-review/fixtures/captureless_global.rs",
+          "-o",
+          "/home/bat/projects/bream/.tools/rust-ownership-review/optimized/captureless_global"
+        ],
+        "cwd": "/home/bat/projects/bream/evidence/rust-ownership-review",
+        "exit_code": 0,
+        "timed_out": false,
+        "stdout": "evidence/rust-ownership-review/runs/optimized/captureless_global.compile.stdout",
+        "stderr": "evidence/rust-ownership-review/runs/optimized/captureless_global.compile.stderr",
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "diagnostic_codes": [],
+      "artifact": {
+        "path": ".tools/rust-ownership-review/optimized/captureless_global",
+        "sha256": "ca8a1ac211cca3df7483c9f8b3c4408dfaa3d023da0b2dc2cab063ff2ff34b14"
+      },
+      "execution": {
+        "command": [
+          "/home/bat/projects/bream/.tools/rust-ownership-review/optimized/captureless_global"
+        ],
+        "cwd": "/home/bat/projects/bream/evidence/rust-ownership-review",
+        "exit_code": 0,
+        "timed_out": false,
+        "stdout": "evidence/rust-ownership-review/runs/optimized/captureless_global.execute.stdout",
+        "stderr": "evidence/rust-ownership-review/runs/optimized/captureless_global.execute.stderr",
+        "stdout_sha256": "97d41b5e5688c59e8a4fa152b3004e3c15f9e5e20219f7b66490ec7d8d48b84d",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "observed_stdout": "global=1\n",
+      "expected_observation": true
+    },
+    {
+      "profile": "optimized",
+      "name": "no_drop_callback",
+      "kind": "compile",
+      "source": "evidence/rust-ownership-review/fixtures/no_drop_callback.rs",
+      "source_sha256": "a57d7cc5418873dee0372d25f06d64278bf31cf1ba91e1417d0b44bb9d097860",
+      "compile": {
+        "command": [
+          "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/rustc",
+          "--edition=2024",
+          "-C",
+          "opt-level=3",
+          "--error-format=json",
+          "/home/bat/projects/bream/evidence/rust-ownership-review/fixtures/no_drop_callback.rs",
+          "-o",
+          "/home/bat/projects/bream/.tools/rust-ownership-review/optimized/no_drop_callback"
+        ],
+        "cwd": "/home/bat/projects/bream/evidence/rust-ownership-review",
+        "exit_code": 0,
+        "timed_out": false,
+        "stdout": "evidence/rust-ownership-review/runs/optimized/no_drop_callback.compile.stdout",
+        "stderr": "evidence/rust-ownership-review/runs/optimized/no_drop_callback.compile.stderr",
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "diagnostic_codes": [],
+      "artifact": {
+        "path": ".tools/rust-ownership-review/optimized/no_drop_callback",
+        "sha256": "2d0ec99d9d18dd654ad1e7bb8436e96ca30347b3b09e3d8305287687dc9aee3c"
+      },
+      "expected_observation": true
+    },
+    {
+      "profile": "optimized",
+      "name": "pinned_borrow_cleanup",
+      "kind": "run",
+      "source": "evidence/rust-ownership-review/fixtures/pinned_borrow_cleanup.rs",
+      "source_sha256": "8a5c53a017bab1d8d859d1770aa741afa0bd391133e296e43968fcc651841581",
+      "compile": {
+        "command": [
+          "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/rustc",
+          "--edition=2024",
+          "-C",
+          "opt-level=3",
+          "--error-format=json",
+          "/home/bat/projects/bream/evidence/rust-ownership-review/fixtures/pinned_borrow_cleanup.rs",
+          "-o",
+          "/home/bat/projects/bream/.tools/rust-ownership-review/optimized/pinned_borrow_cleanup"
+        ],
+        "cwd": "/home/bat/projects/bream/evidence/rust-ownership-review",
+        "exit_code": 0,
+        "timed_out": false,
+        "stdout": "evidence/rust-ownership-review/runs/optimized/pinned_borrow_cleanup.compile.stdout",
+        "stderr": "evidence/rust-ownership-review/runs/optimized/pinned_borrow_cleanup.compile.stderr",
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "diagnostic_codes": [],
+      "artifact": {
+        "path": ".tools/rust-ownership-review/optimized/pinned_borrow_cleanup",
+        "sha256": "a8e8b53fc66023a7a38d64f7f0d2d3391f18642487024c17663aa3a283ea473c"
+      },
+      "execution": {
+        "command": [
+          "/home/bat/projects/bream/.tools/rust-ownership-review/optimized/pinned_borrow_cleanup"
+        ],
+        "cwd": "/home/bat/projects/bream/evidence/rust-ownership-review",
+        "exit_code": 0,
+        "timed_out": false,
+        "stdout": "evidence/rust-ownership-review/runs/optimized/pinned_borrow_cleanup.execute.stdout",
+        "stderr": "evidence/rust-ownership-review/runs/optimized/pinned_borrow_cleanup.execute.stderr",
+        "stdout_sha256": "6fb058e64258fa61c12e2b6c52f5133ebe5347a368341e2a9fa1175eda7f7288",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "observed_stdout": "pending=true drops=1\n",
+      "expected_observation": true
+    }
+  ],
+  "limits": [
+    "Compiler rejection does not prove Bream admission soundness.",
+    "Accepted counterexamples are intentionally ordinary safe Rust, not admitted Bream programs.",
+    "The non-returning callback fixture was compiled but never executed.",
+    "The async fixture uses an explicit await to inspect Rust-generated storage; it is not Bream user syntax or an automatic preemption test.",
+    "No speed, allocator cost, arbitrary destruction bound or concurrent reclamation result was measured."
+  ]
+}

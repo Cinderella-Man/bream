@@ -1,0 +1,7 @@
+MODEL_EXECUTIONS_STARTED=1
+
+thread 'main' (282549) panicked at src/main.rs:40:9:
+assertion `left == right` failed: LAST_OWNER_STALE writes=(1,0)
+  left: (1, 0)
+ right: (1, 1)
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace

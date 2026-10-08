@@ -1,0 +1,148 @@
+{
+  "checked_at": "2026-10-07T16:40:31.080990+00:00",
+  "purpose": "Second naming round; Impish rejected by user. No replacement selected.",
+  "results": [
+    {
+      "name": "jostle",
+      "status": 404,
+      "url": "https://crates.io/api/v1/crates/jostle"
+    },
+    {
+      "name": "tussle",
+      "status": 404,
+      "url": "https://crates.io/api/v1/crates/tussle"
+    },
+    {
+      "name": "bustle",
+      "status": 200,
+      "url": "https://crates.io/api/v1/crates/bustle",
+      "description": "Benchmarking harness for concurrent key-value collections",
+      "repository": "https://github.com/jonhoo/bustle.git"
+    },
+    {
+      "name": "skitter",
+      "status": 200,
+      "url": "https://crates.io/api/v1/crates/skitter",
+      "description": "Reserving this name. If I don't publish soon-ish free to harass me for it.",
+      "repository": null
+    },
+    {
+      "name": "scamper",
+      "status": 200,
+      "url": "https://crates.io/api/v1/crates/scamper",
+      "description": "Monte Carlo simulation stack: scheduling framework plus classical and quantum kernels",
+      "repository": "https://github.com/UynajGI/scamper"
+    },
+    {
+      "name": "caper",
+      "status": 200,
+      "url": "https://crates.io/api/v1/crates/caper",
+      "description": "Minimalist game framework",
+      "repository": "https://github.com/shockham/caper"
+    },
+    {
+      "name": "fidget",
+      "status": 200,
+      "url": "https://crates.io/api/v1/crates/fidget",
+      "description": "Infrastructure for complex closed-form implicit surfaces",
+      "repository": "https://github.com/mkeeter/fidget"
+    },
+    {
+      "name": "nudge",
+      "status": 200,
+      "url": "https://crates.io/api/v1/crates/nudge",
+      "description": "A collection of optimization hints to improve performance",
+      "repository": "https://github.com/mtak-/nudge"
+    },
+    {
+      "name": "hopscotch",
+      "status": 200,
+      "url": "https://crates.io/api/v1/crates/hopscotch",
+      "description": "A FIFO queue for efficiently hopping and skipping between tagged items",
+      "repository": "http://www.github.com/kwf/hopscotch"
+    },
+    {
+      "name": "tagalong",
+      "status": 404,
+      "url": "https://crates.io/api/v1/crates/tagalong"
+    },
+    {
+      "name": "roundabout",
+      "status": 200,
+      "url": "https://crates.io/api/v1/crates/roundabout",
+      "description": "An message oriented concurrent runtime",
+      "repository": "https://github.com/tmzint/roundabout/"
+    },
+    {
+      "name": "whisk",
+      "status": 200,
+      "url": "https://crates.io/api/v1/crates/whisk",
+      "description": "Simple and fast lockless async channels",
+      "repository": "https://github.com/ardaku/whisk"
+    },
+    {
+      "name": "quibble",
+      "status": 200,
+      "url": "https://crates.io/api/v1/crates/quibble",
+      "description": "A container security tool written in Rust focusing on compose based configuration as code",
+      "repository": "https://github.com/GeekMasher/quibble"
+    },
+    {
+      "name": "thimble",
+      "status": 200,
+      "url": "https://crates.io/api/v1/crates/thimble",
+      "description": "A minimal terminal IDE: directory tree + git status + preview",
+      "repository": "https://github.com/johnwesley/thimble"
+    },
+    {
+      "name": "skiff",
+      "status": 200,
+      "url": "https://crates.io/api/v1/crates/skiff",
+      "description": "An immutability-first, functional scripting language with a friendly syntax and compiler/interpreter written in Rust!",
+      "repository": "https://github.com/P-bibs/skiff"
+    },
+    {
+      "name": "dally",
+      "status": 404,
+      "url": "https://crates.io/api/v1/crates/dally"
+    },
+    {
+      "name": "sprocket",
+      "status": 200,
+      "url": "https://crates.io/api/v1/crates/sprocket",
+      "description": "A command line tool for working with Workflow Description Language (WDL) documents",
+      "repository": "https://github.com/stjude-rust-labs/sprocket"
+    },
+    {
+      "name": "noodle",
+      "status": 200,
+      "url": "https://crates.io/api/v1/crates/noodle",
+      "description": "Streaming parser utilities",
+      "repository": "https://github.com/bodyweightenergy/noodle"
+    },
+    {
+      "name": "twitch",
+      "status": 404,
+      "url": "https://crates.io/api/v1/crates/twitch"
+    },
+    {
+      "name": "meddle",
+      "status": 404,
+      "url": "https://crates.io/api/v1/crates/meddle"
+    },
+    {
+      "name": "interlude",
+      "status": 200,
+      "url": "https://crates.io/api/v1/crates/interlude",
+      "description": "Convert share links of different music streaming services.",
+      "repository": "https://github.com/antoniomikley/interlude_server"
+    },
+    {
+      "name": "shoo",
+      "status": 200,
+      "url": "https://crates.io/api/v1/crates/shoo",
+      "description": "Library for blackjack games and trainers",
+      "repository": "https://github.com/matth2k/shoo"
+    }
+  ]
+}

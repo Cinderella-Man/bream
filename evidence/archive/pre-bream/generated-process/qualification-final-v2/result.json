@@ -1,0 +1,361 @@
+{
+  "started_at": "2026-10-07T16:29:59.187510+00:00",
+  "platform": "Linux-7.0.0-34-generic-x86_64-with-glibc2.43",
+  "passed": true,
+  "steps": [
+    {
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/cargo/bin/cargo",
+        "build",
+        "--release",
+        "--locked",
+        "--bin",
+        "impish-probe-runtime",
+        "-j3"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "external_deadline_seconds": 120,
+      "stdout": "/home/bat/projects/impish/evidence/generated-process/qualification-final-v2/build.stdout",
+      "stderr": "/home/bat/projects/impish/evidence/generated-process/qualification-final-v2/build.stderr"
+    },
+    {
+      "argv": [
+        "/home/bat/projects/impish/experiments/generated-process/target/release/impish-probe-runtime"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "external_deadline_seconds": 10,
+      "stdout": "/home/bat/projects/impish/evidence/generated-process/qualification-final-v2/execution.stdout",
+      "stderr": "/home/bat/projects/impish/evidence/generated-process/qualification-final-v2/execution.stderr"
+    },
+    {
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/cargo/bin/cargo",
+        "check",
+        "--release",
+        "--locked",
+        "-p",
+        "impish-probe-runtime",
+        "--example",
+        "reject_closure",
+        "-j3"
+      ],
+      "exit_code": 101,
+      "timed_out": false,
+      "external_deadline_seconds": 60,
+      "stdout": "/home/bat/projects/impish/evidence/generated-process/qualification-final-v2/reject_closure.stdout",
+      "stderr": "/home/bat/projects/impish/evidence/generated-process/qualification-final-v2/reject_closure.stderr"
+    },
+    {
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/cargo/bin/cargo",
+        "check",
+        "--release",
+        "--locked",
+        "-p",
+        "impish-probe-runtime",
+        "--example",
+        "reject_custom_call",
+        "-j3"
+      ],
+      "exit_code": 101,
+      "timed_out": false,
+      "external_deadline_seconds": 60,
+      "stdout": "/home/bat/projects/impish/evidence/generated-process/qualification-final-v2/reject_custom_call.stdout",
+      "stderr": "/home/bat/projects/impish/evidence/generated-process/qualification-final-v2/reject_custom_call.stderr"
+    },
+    {
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/cargo/bin/cargo",
+        "check",
+        "--release",
+        "--locked",
+        "-p",
+        "impish-probe-runtime",
+        "--example",
+        "reject_custom_drop",
+        "-j3"
+      ],
+      "exit_code": 101,
+      "timed_out": false,
+      "external_deadline_seconds": 60,
+      "stdout": "/home/bat/projects/impish/evidence/generated-process/qualification-final-v2/reject_custom_drop.stdout",
+      "stderr": "/home/bat/projects/impish/evidence/generated-process/qualification-final-v2/reject_custom_drop.stderr"
+    },
+    {
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/cargo/bin/cargo",
+        "check",
+        "--release",
+        "--locked",
+        "-p",
+        "impish-probe-runtime",
+        "--example",
+        "reject_custom_type",
+        "-j3"
+      ],
+      "exit_code": 101,
+      "timed_out": false,
+      "external_deadline_seconds": 60,
+      "stdout": "/home/bat/projects/impish/evidence/generated-process/qualification-final-v2/reject_custom_type.stdout",
+      "stderr": "/home/bat/projects/impish/evidence/generated-process/qualification-final-v2/reject_custom_type.stderr"
+    },
+    {
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/cargo/bin/cargo",
+        "check",
+        "--release",
+        "--locked",
+        "-p",
+        "impish-probe-runtime",
+        "--example",
+        "reject_global_read",
+        "-j3"
+      ],
+      "exit_code": 101,
+      "timed_out": false,
+      "external_deadline_seconds": 60,
+      "stdout": "/home/bat/projects/impish/evidence/generated-process/qualification-final-v2/reject_global_read.stdout",
+      "stderr": "/home/bat/projects/impish/evidence/generated-process/qualification-final-v2/reject_global_read.stderr"
+    },
+    {
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/cargo/bin/cargo",
+        "check",
+        "--release",
+        "--locked",
+        "-p",
+        "impish-probe-runtime",
+        "--example",
+        "reject_macro",
+        "-j3"
+      ],
+      "exit_code": 101,
+      "timed_out": false,
+      "external_deadline_seconds": 60,
+      "stdout": "/home/bat/projects/impish/evidence/generated-process/qualification-final-v2/reject_macro.stdout",
+      "stderr": "/home/bat/projects/impish/evidence/generated-process/qualification-final-v2/reject_macro.stderr"
+    },
+    {
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/cargo/bin/cargo",
+        "check",
+        "--release",
+        "--locked",
+        "-p",
+        "impish-probe-runtime",
+        "--example",
+        "reject_manual_await",
+        "-j3"
+      ],
+      "exit_code": 101,
+      "timed_out": false,
+      "external_deadline_seconds": 60,
+      "stdout": "/home/bat/projects/impish/evidence/generated-process/qualification-final-v2/reject_manual_await.stdout",
+      "stderr": "/home/bat/projects/impish/evidence/generated-process/qualification-final-v2/reject_manual_await.stderr"
+    },
+    {
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/cargo/bin/cargo",
+        "check",
+        "--release",
+        "--locked",
+        "-p",
+        "impish-probe-runtime",
+        "--example",
+        "reject_raw_identifier",
+        "-j3"
+      ],
+      "exit_code": 101,
+      "timed_out": false,
+      "external_deadline_seconds": 60,
+      "stdout": "/home/bat/projects/impish/evidence/generated-process/qualification-final-v2/reject_raw_identifier.stdout",
+      "stderr": "/home/bat/projects/impish/evidence/generated-process/qualification-final-v2/reject_raw_identifier.stderr"
+    },
+    {
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/cargo/bin/cargo",
+        "check",
+        "--release",
+        "--locked",
+        "-p",
+        "impish-probe-runtime",
+        "--example",
+        "reject_reserved_name",
+        "-j3"
+      ],
+      "exit_code": 101,
+      "timed_out": false,
+      "external_deadline_seconds": 60,
+      "stdout": "/home/bat/projects/impish/evidence/generated-process/qualification-final-v2/reject_reserved_name.stdout",
+      "stderr": "/home/bat/projects/impish/evidence/generated-process/qualification-final-v2/reject_reserved_name.stderr"
+    },
+    {
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/cargo/bin/cargo",
+        "check",
+        "--release",
+        "--locked",
+        "-p",
+        "impish-probe-runtime",
+        "--example",
+        "reject_unsafe",
+        "-j3"
+      ],
+      "exit_code": 101,
+      "timed_out": false,
+      "external_deadline_seconds": 60,
+      "stdout": "/home/bat/projects/impish/evidence/generated-process/qualification-final-v2/reject_unsafe.stdout",
+      "stderr": "/home/bat/projects/impish/evidence/generated-process/qualification-final-v2/reject_unsafe.stderr"
+    }
+  ],
+  "rustc": "rustc 1.98.1 (48a229cea 2026-09-01)\nbinary: rustc\ncommit-hash: 48a229ceaefd4985c50990b14116b6d856af0985\ncommit-date: 2026-09-01\nhost: x86_64-unknown-linux-gnu\nrelease: 1.98.1\nLLVM version: 22.1.8\n",
+  "observation": {
+    "passed": true,
+    "task_workers": 1,
+    "worker_thread": "ThreadId(1)",
+    "polls": [
+      21,
+      70
+    ],
+    "killed_after_pending": true,
+    "infinite_process_completed": false,
+    "infinite_progress_at_kill": 20,
+    "survivor_progress_at_kill": 14,
+    "survivor_final_progress": 64,
+    "allocated_bytes": 4096,
+    "freed_bytes": 4096,
+    "live_bytes_after_drop": 0,
+    "buffer_drops": 1,
+    "buffer_drops_during_poll": 0,
+    "custom_context_switching": false,
+    "generated_future_bytes": [
+      72,
+      64
+    ],
+    "empty_loop_pending_polls": 2,
+    "empty_loop_dropped_after_poll": true
+  },
+  "compile_fail": [
+    {
+      "fixture": "/home/bat/projects/impish/experiments/generated-process/runtime/examples/reject_closure.rs",
+      "rejected_by_subset": true
+    },
+    {
+      "fixture": "/home/bat/projects/impish/experiments/generated-process/runtime/examples/reject_custom_call.rs",
+      "rejected_by_subset": true
+    },
+    {
+      "fixture": "/home/bat/projects/impish/experiments/generated-process/runtime/examples/reject_custom_drop.rs",
+      "rejected_by_subset": true
+    },
+    {
+      "fixture": "/home/bat/projects/impish/experiments/generated-process/runtime/examples/reject_custom_type.rs",
+      "rejected_by_subset": true
+    },
+    {
+      "fixture": "/home/bat/projects/impish/experiments/generated-process/runtime/examples/reject_global_read.rs",
+      "rejected_by_subset": true
+    },
+    {
+      "fixture": "/home/bat/projects/impish/experiments/generated-process/runtime/examples/reject_macro.rs",
+      "rejected_by_subset": true
+    },
+    {
+      "fixture": "/home/bat/projects/impish/experiments/generated-process/runtime/examples/reject_manual_await.rs",
+      "rejected_by_subset": true
+    },
+    {
+      "fixture": "/home/bat/projects/impish/experiments/generated-process/runtime/examples/reject_raw_identifier.rs",
+      "rejected_by_subset": true
+    },
+    {
+      "fixture": "/home/bat/projects/impish/experiments/generated-process/runtime/examples/reject_reserved_name.rs",
+      "rejected_by_subset": true
+    },
+    {
+      "fixture": "/home/bat/projects/impish/experiments/generated-process/runtime/examples/reject_unsafe.rs",
+      "rejected_by_subset": true
+    }
+  ],
+  "inputs": [
+    {
+      "path": "/home/bat/projects/impish/experiments/generated-process/Cargo.toml",
+      "sha256": "a86bba10c233fd3fadf2d2af098fb453af41d1270ad6ba5eeed43e629bd8aaec"
+    },
+    {
+      "path": "/home/bat/projects/impish/experiments/generated-process/Cargo.lock",
+      "sha256": "8b2dc2a0e8f18c23aac741fb0d4dfe0e0b2bd122202d7eef3dda22e6e7ff69ec"
+    },
+    {
+      "path": "/home/bat/projects/impish/experiments/generated-process/run.py",
+      "sha256": "885a2912a43a1311a22981ad24a383867394da1cb45b5b8ed1a11fb5864cb39b"
+    },
+    {
+      "path": "/home/bat/projects/impish/experiments/generated-process/target/release/impish-probe-runtime",
+      "sha256": "f914daab53c8f2b94fee0c8698db87c8592118ac1f8d51cdf61edf43ef5c6590"
+    },
+    {
+      "path": "/home/bat/projects/impish/experiments/generated-process/macros/src/lib.rs",
+      "sha256": "cac9ab04a9487537a720bc6280833f911554f0fc07965f1df3e3f37521388da5"
+    },
+    {
+      "path": "/home/bat/projects/impish/experiments/generated-process/macros/Cargo.toml",
+      "sha256": "0f5e3c9c1689e2e8e3e53b80ef7681fa2cbc42b7879e1c5ff9ee8c7403324671"
+    },
+    {
+      "path": "/home/bat/projects/impish/experiments/generated-process/runtime/examples/reject_closure.rs",
+      "sha256": "6cbfdcd6ba4a0e38a9842a2fc54c599b3b2dfe2d57a55052f68ec732018cbe2d"
+    },
+    {
+      "path": "/home/bat/projects/impish/experiments/generated-process/runtime/examples/reject_custom_call.rs",
+      "sha256": "785d3667313d62f3962f5ad17be1c2874ce20231c50f783900e7ddf459805fc1"
+    },
+    {
+      "path": "/home/bat/projects/impish/experiments/generated-process/runtime/examples/reject_custom_drop.rs",
+      "sha256": "2863690bf1ee2dbada0e62da1978da5c27c2ffe9b57fc235e507943ff2640176"
+    },
+    {
+      "path": "/home/bat/projects/impish/experiments/generated-process/runtime/examples/reject_custom_type.rs",
+      "sha256": "66d97e4d30acd8c5883152eac95d6bbe7e2fb9c55dae0a0abbdb066d6607a9ed"
+    },
+    {
+      "path": "/home/bat/projects/impish/experiments/generated-process/runtime/examples/reject_global_read.rs",
+      "sha256": "f1d8ecbd51a520ea7bf125fb2052e6de7ec0079bf8472b7520c8960b3aebea46"
+    },
+    {
+      "path": "/home/bat/projects/impish/experiments/generated-process/runtime/examples/reject_macro.rs",
+      "sha256": "020ef06bb3f2ac1ddd25ac4ee6fbf6daae02db8b89abd8243e8a8c29992a60e2"
+    },
+    {
+      "path": "/home/bat/projects/impish/experiments/generated-process/runtime/examples/reject_manual_await.rs",
+      "sha256": "e08233ce8a9566d6574461e61d6c258adea1735204560aab0cfdbf013dfd765d"
+    },
+    {
+      "path": "/home/bat/projects/impish/experiments/generated-process/runtime/examples/reject_raw_identifier.rs",
+      "sha256": "9dd63cd648c025feb22bcdf46a0650fe3673bb064baf5fde15c4830bf5bb9c72"
+    },
+    {
+      "path": "/home/bat/projects/impish/experiments/generated-process/runtime/examples/reject_reserved_name.rs",
+      "sha256": "311a73e897333463bcc805bc39a4e78bd48ee9dbdd09e71d91a89ccfc4698d05"
+    },
+    {
+      "path": "/home/bat/projects/impish/experiments/generated-process/runtime/examples/reject_unsafe.rs",
+      "sha256": "64235716c770ca7b7bd4b61751dc06a8bd0fe98ea8e177eac2e99d316eec7057"
+    },
+    {
+      "path": "/home/bat/projects/impish/experiments/generated-process/runtime/src/lib.rs",
+      "sha256": "729f1b40a5ddabacd8f04939faefd423fae80d0e56da951ab0e67785e709e273"
+    },
+    {
+      "path": "/home/bat/projects/impish/experiments/generated-process/runtime/src/main.rs",
+      "sha256": "2c6c391799b0de0cbf4943bdd127fecd9ddc3d7faff9944dccb54ad7a0c5be8e"
+    },
+    {
+      "path": "/home/bat/projects/impish/experiments/generated-process/runtime/Cargo.toml",
+      "sha256": "9f2b5f044e93b3ccaa7d21c0387643bdee4b0c5fd7b9dced6d916ae916deb570"
+    }
+  ],
+  "elapsed_seconds": 1.0518448689981597
+}

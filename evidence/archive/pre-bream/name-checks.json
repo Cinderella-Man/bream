@@ -1,0 +1,83 @@
+{
+  "checked_at": "2026-10-07T15:51:09.665800+00:00",
+  "results": [
+    {
+      "name": "impish",
+      "status": 404,
+      "url": "https://crates.io/api/v1/crates/impish"
+    },
+    {
+      "name": "mischief",
+      "status": 404,
+      "url": "https://crates.io/api/v1/crates/mischief"
+    },
+    {
+      "name": "skedaddle",
+      "status": 404,
+      "url": "https://crates.io/api/v1/crates/skedaddle"
+    },
+    {
+      "name": "scurry",
+      "status": 200,
+      "description": "A component-based object-oriented language",
+      "repository": "https://github.com/dzfrias/scurry",
+      "version": "0.5.0",
+      "url": "https://crates.io/api/v1/crates/scurry"
+    },
+    {
+      "name": "scuttle",
+      "status": 200,
+      "description": "A multi-objective MaxSAT solver.",
+      "repository": "https://github.com/chrjabs/scuttle",
+      "version": "0.4.0",
+      "url": "https://crates.io/api/v1/crates/scuttle"
+    },
+    {
+      "name": "pipkin",
+      "status": 404,
+      "url": "https://crates.io/api/v1/crates/pipkin"
+    },
+    {
+      "name": "rascal",
+      "status": 200,
+      "description": "A parser and compiler for Flash ActionScript 2 files into SWFs",
+      "repository": "https://github.com/Dinnerbone/Rascal",
+      "version": "0.3.6",
+      "url": "https://crates.io/api/v1/crates/rascal"
+    },
+    {
+      "name": "runt",
+      "status": 200,
+      "description": "A lightweight and parallel snapshot testing framework.",
+      "repository": "https://github.com/rachitnigam/runt",
+      "version": "0.4.1",
+      "url": "https://crates.io/api/v1/crates/runt"
+    },
+    {
+      "name": "ruckus",
+      "status": 404,
+      "url": "https://crates.io/api/v1/crates/ruckus"
+    },
+    {
+      "name": "mote",
+      "status": 200,
+      "description": "Mote library.\n",
+      "repository": "https://github.com/tiziano88/mote-rs",
+      "version": "0.1.2",
+      "url": "https://crates.io/api/v1/crates/mote"
+    },
+    {
+      "name": "beamish",
+      "status": 404,
+      "url": "https://crates.io/api/v1/crates/beamish"
+    },
+    {
+      "name": "sprig",
+      "status": 200,
+      "description": "Template functions for Go templates for Rust",
+      "repository": "https://github.com/fiji-flo/sprig-rust",
+      "version": "0.3.0",
+      "url": "https://crates.io/api/v1/crates/sprig"
+    }
+  ]
+}

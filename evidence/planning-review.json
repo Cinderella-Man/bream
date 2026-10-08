@@ -1,0 +1,166 @@
+{
+  "checked_at": "2026-10-07T17:46:46.881589+00:00",
+  "passed": true,
+  "markdown_files_checked": 36,
+  "local_file_links_checked": 338,
+  "local_line_links_checked": 177,
+  "immutable_otp_source_links_checked": 161,
+  "checks": [
+    "file link targets and referenced line ranges exist (Markdown heading anchors not checked)",
+    "final newlines and trailing whitespace",
+    "manual source/claim and scope review",
+    "OTP checkout unchanged"
+  ],
+  "otp_commit": "ad05823719d77c8faee87348ea39513d4e2f99c5",
+  "otp_checkout_clean": true,
+  "otp_built_or_executed": false,
+  "new_runtime_experiments_executed_in_planning_session": false,
+  "plan_status": "Interview reopened for source review; Q18-Q21 accepted, Q22-Q23 pending; BEAM semantics default. No production architecture selected.",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "9c5995616b684184fa1336078c254ff8207e1754a9894420e5966f8aabda7996"
+    },
+    {
+      "path": "CONTEXT.md",
+      "sha256": "9452dcaa9567e64e897da39c3bdadd974811cd241b33b44c4e958802358de51c"
+    },
+    {
+      "path": "docs/adr/0001-native-preemptive-processes.md",
+      "sha256": "5e4551a842e20aa4a50488fe94fcd3fcfb882e8e28ac562484bd9c025c9d5a56"
+    },
+    {
+      "path": "docs/adr/0002-runtime-aware-operations.md",
+      "sha256": "143bcd517d86e2ca4e8da9cf4bd4723bbd31570e97a8e797fd8a9bf050de524c"
+    },
+    {
+      "path": "docs/adr/0003-library-build-and-forced-termination.md",
+      "sha256": "b7955bc49412f0b9ea2b2be53ac025e960168d2979298d9750e3034edb881734"
+    },
+    {
+      "path": "docs/adr/0004-beam-primitives-first.md",
+      "sha256": "033380e3c32792cbdfff0c1fddb2beba23d6e68701d4a77e13ab208b08818c60"
+    },
+    {
+      "path": "docs/adr/0005-typed-growing-mailboxes.md",
+      "sha256": "83864be130700bd3784c5c8b959b3e47838bf2d652d95fc99e969a7a1a46a002"
+    },
+    {
+      "path": "docs/adr/0006-beam-exits-and-trapping.md",
+      "sha256": "49de8ae88c8c47637a1c8117bc3b2a72482e1474cef1fe95f862ea98d7f40bcc"
+    },
+    {
+      "path": "docs/adr/0007-unified-runtime-envelope.md",
+      "sha256": "df01a0a5c228fafe6ce708faa446d1859c4bdbc13bda67e7a475ba3db18100f3"
+    },
+    {
+      "path": "docs/adr/0008-immutable-buffer-sharing.md",
+      "sha256": "46d45186640d1e6e40dc01f1a713abf86562fe623348afbb831e71802a5dad1c"
+    },
+    {
+      "path": "docs/adr/0009-death-and-reclamation-observation.md",
+      "sha256": "6e6f860b0aba2a36c14e84f28803ae6dcd4be3dfc0c7fa5a7d892652e81da21b"
+    },
+    {
+      "path": "docs/adr/0010-beam-observable-semantics-by-default.md",
+      "sha256": "51a1cff64e1b31e30e680c2a48e89d147eb114529df534d4ddf5c58c8e8ac697"
+    },
+    {
+      "path": "docs/beam-source-map.md",
+      "sha256": "b7a3b81b325fe4594e8e5edea5fb0de197a259fee4987af5f29ba06f733ae3be"
+    },
+    {
+      "path": "docs/design-tree.md",
+      "sha256": "e6d4b4f7b153225fda911d221096fa0136e15836176d57514b26fcfe361a4755"
+    },
+    {
+      "path": "docs/findings.md",
+      "sha256": "3b4cfebc4df532d75c3acbf4bc0dded0bb856c2560aaf0cb7218cb8bdb410155"
+    },
+    {
+      "path": "docs/generated-process-model.md",
+      "sha256": "d41591d674288eb25a85573711ca07704ee2b95fbf70da7bc6f9bfc4205fe0b7"
+    },
+    {
+      "path": "docs/naming.md",
+      "sha256": "49270152ee9722d65e8a71e69e75e618ec708bb6c30a5935c6854b57c51f949a"
+    },
+    {
+      "path": "docs/native-design.md",
+      "sha256": "c5e2e0cea106c5c9b854ac3c756b81922ea14b1774d583668ee3c2ce06cd607d"
+    },
+    {
+      "path": "docs/qualification-plan.md",
+      "sha256": "9a22a4b8f451d02e03522567a4c053b39805b2090fe8436562843bb7c69450d4"
+    },
+    {
+      "path": "docs/research/01-lab-extraction-audit.md",
+      "sha256": "3fcfb91c61d34baee3e53b1e4ab689e5c1fec7d5527784a1a32c6a769841ea79"
+    },
+    {
+      "path": "docs/research/02-native-mechanisms.md",
+      "sha256": "f99078228c3486a4e4546784ea77d0e5b017e8ddacfb20c3a778036826f8fce0"
+    },
+    {
+      "path": "docs/research/03-runtime-landscape.md",
+      "sha256": "21e420a4c14c807e9d4c999aa3728b68fc9c5956bebf1d46db66e75f10b0245d"
+    },
+    {
+      "path": "docs/research/04-preemptible-functions.md",
+      "sha256": "b8349f32090d07c4c584421bedd7bd81e8cb003f7cf9b4ec91772a1cff1f6479"
+    },
+    {
+      "path": "docs/research/05-forced-termination.md",
+      "sha256": "3c3afa2da16382843546faa7ef5a475ecd332ea1bb18b2d7806416b4b3ae696d"
+    },
+    {
+      "path": "docs/research/06-cancellation-candidates.md",
+      "sha256": "edfeffd62099c5bb7076f439ed87dadbed3cd5685a106a54391d04be86c7ab56"
+    },
+    {
+      "path": "docs/research/07-beam-otp-experience.md",
+      "sha256": "966349c199b2b796495e0c33bc5dfb313075845397d4845b72d5606f8c9a8469"
+    },
+    {
+      "path": "docs/research/08-beamlet-and-go.md",
+      "sha256": "6c73b333b8ba7fd00dab40fcd35096d43b01016196958cfcb4ba5d1ea37ed6bc"
+    },
+    {
+      "path": "docs/research/09-typed-process-experience.md",
+      "sha256": "0095ccaeadadc0e82ca6eb4ff9d6e52e06baca3d01e97b7cfb1822b046337cb4"
+    },
+    {
+      "path": "docs/research/10-beam-versus-otp-boundary.md",
+      "sha256": "6e29eec4b082966c60b8d544c87d2d8fff6151a1d5be04a433efb01be533c8f9"
+    },
+    {
+      "path": "docs/research/11-beam-scheduling-source.md",
+      "sha256": "bf816189fd3afa9d49e21ff38065e5333da3d2c61b4973ee78349baa9d7cd45d"
+    },
+    {
+      "path": "docs/research/12-beam-mailboxes-source.md",
+      "sha256": "89a7f67d749f2c7f51b1b939de6a081ca058922b960dc915d57e1d910381db70"
+    },
+    {
+      "path": "docs/research/13-beam-lifecycle-source.md",
+      "sha256": "05e142ee980296958989a09d3e0267c54907807e3ce7cfede7c2b28b8bb49dee"
+    },
+    {
+      "path": "docs/research/14-beam-memory-native-io-source.md",
+      "sha256": "2e60aaa5ed58160b53f8fa2aac4da2b0b6773b9f348a3b64680c11d28bf21461"
+    },
+    {
+      "path": "docs/roadmap.md",
+      "sha256": "0a5e85d4ae125cf611191ef7c9f33fea996a2ba9b71aad69bc1ed5d0c112d6a6"
+    },
+    {
+      "path": "experiments/native-preemption/README.md",
+      "sha256": "cae7f4d7694de0eaf803bebb090db1893b072d14e2375869811e7a0744425a71"
+    },
+    {
+      "path": "experiments/generated-process/README.md",
+      "sha256": "4850e87e254abb81f2de0b745c2f8b1a4484bf19a8e062ca46782f3d8aaba932"
+    }
+  ],
+  "errors": []
+}

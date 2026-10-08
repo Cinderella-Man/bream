@@ -1,0 +1,374 @@
+{
+  "scope": "Sequential Linux epoll contract observations, not BEAM/Bream, concurrency or performance qualification.",
+  "platform": {
+    "system": "Linux",
+    "node": "CrosshairA16",
+    "release": "7.0.0-34-generic",
+    "version": "#34-Ubuntu SMP PREEMPT_DYNAMIC Wed Sep  2 14:29:37 UTC 2026",
+    "machine": "x86_64",
+    "processor": ""
+  },
+  "compiler": {
+    "path": "/usr/bin/x86_64-linux-gnu-gcc-15",
+    "sha256": "b5f1b773a7c733738352000c92a077dc5852a1a2fc6d836b1e411be1e9ec5f88",
+    "version": "x86_64-linux-gnu-gcc-15 (Ubuntu 15.2.0-16ubuntu1) 15.2.0\nCopyright (C) 2025 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+    "command": {
+      "argv": [
+        "/usr/bin/x86_64-linux-gnu-gcc-15",
+        "--version"
+      ],
+      "cwd": "/home/bat/projects/bream",
+      "exit_code": 0,
+      "timeout_seconds": 5,
+      "timed_out": false,
+      "stdout": "evidence/io-lifetime-review/runs/compiler-version.stdout",
+      "stdout_sha256": "60f7dc07ed00e918c903d995b6f86bfcd5452856f75f2816cc8ca379ce2b5344",
+      "stderr": "evidence/io-lifetime-review/runs/compiler-version.stderr",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "runner": {
+    "path": "evidence/io-lifetime-review/run_probes.py",
+    "sha256": "4e6243965a55ee8ab548dbe7d504b62b723b70072ab67d8cc66c2bb5db7d5b50"
+  },
+  "source": {
+    "path": "evidence/io-lifetime-review/epoll_contract.c",
+    "sha256": "58aba477e2189790d96e8b7fa0a813d6ee254cd88f421e4e527fdd9581dd5053"
+  },
+  "expected": {
+    "copied_event_reuse": {
+      "case": "copied_event_reuse",
+      "old_token": 101,
+      "new_token": 202,
+      "same_fd_reused": true,
+      "read_from_reused_fd": "b"
+    },
+    "duplicate_lifetime": {
+      "case": "duplicate_lifetime",
+      "event_after_original_close": true,
+      "delete_via_duplicate": "ENOENT",
+      "empty_after_last_close": true
+    },
+    "consumed_readiness": {
+      "case": "consumed_readiness",
+      "readiness_observed": true,
+      "second_read": "EAGAIN"
+    },
+    "oneshot_rearm": {
+      "case": "oneshot_rearm",
+      "disabled_before_mod": true,
+      "ready_after_mod": true,
+      "rearmed_token": 506
+    },
+    "hup_with_data": {
+      "case": "hup_with_data",
+      "readable_and_hup": true,
+      "data_before_eof": true
+    }
+  },
+  "profiles": [
+    {
+      "name": "unoptimized",
+      "compile": {
+        "argv": [
+          "/usr/bin/x86_64-linux-gnu-gcc-15",
+          "-std=c11",
+          "-Wall",
+          "-Wextra",
+          "-Werror",
+          "-O0",
+          "-g",
+          "/home/bat/projects/bream/evidence/io-lifetime-review/epoll_contract.c",
+          "-o",
+          "/home/bat/projects/bream/.tools/io-lifetime-review/unoptimized"
+        ],
+        "cwd": "/home/bat/projects/bream",
+        "exit_code": 0,
+        "timeout_seconds": 30,
+        "timed_out": false,
+        "stdout": "evidence/io-lifetime-review/runs/unoptimized-compile.stdout",
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr": "evidence/io-lifetime-review/runs/unoptimized-compile.stderr",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "executions": [
+        {
+          "case": "copied_event_reuse",
+          "command": {
+            "argv": [
+              "/home/bat/projects/bream/.tools/io-lifetime-review/unoptimized",
+              "copied_event_reuse"
+            ],
+            "cwd": "/home/bat/projects/bream",
+            "exit_code": 0,
+            "timeout_seconds": 5,
+            "timed_out": false,
+            "stdout": "evidence/io-lifetime-review/runs/unoptimized-copied_event_reuse.stdout",
+            "stdout_sha256": "a5dec71b90ff61d4c67d65d6883c6fa9e39851f646d23b0971b8888a8da6302d",
+            "stderr": "evidence/io-lifetime-review/runs/unoptimized-copied_event_reuse.stderr",
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "observed": {
+            "case": "copied_event_reuse",
+            "old_token": 101,
+            "new_token": 202,
+            "same_fd_reused": true,
+            "read_from_reused_fd": "b"
+          },
+          "expected_observation": true
+        },
+        {
+          "case": "duplicate_lifetime",
+          "command": {
+            "argv": [
+              "/home/bat/projects/bream/.tools/io-lifetime-review/unoptimized",
+              "duplicate_lifetime"
+            ],
+            "cwd": "/home/bat/projects/bream",
+            "exit_code": 0,
+            "timeout_seconds": 5,
+            "timed_out": false,
+            "stdout": "evidence/io-lifetime-review/runs/unoptimized-duplicate_lifetime.stdout",
+            "stdout_sha256": "e0e50a7b100b1ee3790009bbd01555acb882990c16e3d902566f46b368a8d824",
+            "stderr": "evidence/io-lifetime-review/runs/unoptimized-duplicate_lifetime.stderr",
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "observed": {
+            "case": "duplicate_lifetime",
+            "event_after_original_close": true,
+            "delete_via_duplicate": "ENOENT",
+            "empty_after_last_close": true
+          },
+          "expected_observation": true
+        },
+        {
+          "case": "consumed_readiness",
+          "command": {
+            "argv": [
+              "/home/bat/projects/bream/.tools/io-lifetime-review/unoptimized",
+              "consumed_readiness"
+            ],
+            "cwd": "/home/bat/projects/bream",
+            "exit_code": 0,
+            "timeout_seconds": 5,
+            "timed_out": false,
+            "stdout": "evidence/io-lifetime-review/runs/unoptimized-consumed_readiness.stdout",
+            "stdout_sha256": "7e96e8dae06ce506225c5d987d9c0b8e99d78bd02e2e3316d660e4c1903e3eb6",
+            "stderr": "evidence/io-lifetime-review/runs/unoptimized-consumed_readiness.stderr",
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "observed": {
+            "case": "consumed_readiness",
+            "readiness_observed": true,
+            "second_read": "EAGAIN"
+          },
+          "expected_observation": true
+        },
+        {
+          "case": "oneshot_rearm",
+          "command": {
+            "argv": [
+              "/home/bat/projects/bream/.tools/io-lifetime-review/unoptimized",
+              "oneshot_rearm"
+            ],
+            "cwd": "/home/bat/projects/bream",
+            "exit_code": 0,
+            "timeout_seconds": 5,
+            "timed_out": false,
+            "stdout": "evidence/io-lifetime-review/runs/unoptimized-oneshot_rearm.stdout",
+            "stdout_sha256": "3991b99180fb0effbaddf9db82bb4cd801a8b6431c0aea72469ac930237638a5",
+            "stderr": "evidence/io-lifetime-review/runs/unoptimized-oneshot_rearm.stderr",
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "observed": {
+            "case": "oneshot_rearm",
+            "disabled_before_mod": true,
+            "ready_after_mod": true,
+            "rearmed_token": 506
+          },
+          "expected_observation": true
+        },
+        {
+          "case": "hup_with_data",
+          "command": {
+            "argv": [
+              "/home/bat/projects/bream/.tools/io-lifetime-review/unoptimized",
+              "hup_with_data"
+            ],
+            "cwd": "/home/bat/projects/bream",
+            "exit_code": 0,
+            "timeout_seconds": 5,
+            "timed_out": false,
+            "stdout": "evidence/io-lifetime-review/runs/unoptimized-hup_with_data.stdout",
+            "stdout_sha256": "4eec1678ed5bfc837a7b6596ffe33ce8191864ae0d5eabc8f6399d5e96eae0d1",
+            "stderr": "evidence/io-lifetime-review/runs/unoptimized-hup_with_data.stderr",
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "observed": {
+            "case": "hup_with_data",
+            "readable_and_hup": true,
+            "data_before_eof": true
+          },
+          "expected_observation": true
+        }
+      ],
+      "artifact": {
+        "path": ".tools/io-lifetime-review/unoptimized",
+        "sha256": "ea45468413cf2e82f65a8ebe475a060249404284ff204a918b9ce666c6d2b39f"
+      }
+    },
+    {
+      "name": "optimized",
+      "compile": {
+        "argv": [
+          "/usr/bin/x86_64-linux-gnu-gcc-15",
+          "-std=c11",
+          "-Wall",
+          "-Wextra",
+          "-Werror",
+          "-O2",
+          "-g",
+          "/home/bat/projects/bream/evidence/io-lifetime-review/epoll_contract.c",
+          "-o",
+          "/home/bat/projects/bream/.tools/io-lifetime-review/optimized"
+        ],
+        "cwd": "/home/bat/projects/bream",
+        "exit_code": 0,
+        "timeout_seconds": 30,
+        "timed_out": false,
+        "stdout": "evidence/io-lifetime-review/runs/optimized-compile.stdout",
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr": "evidence/io-lifetime-review/runs/optimized-compile.stderr",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "executions": [
+        {
+          "case": "copied_event_reuse",
+          "command": {
+            "argv": [
+              "/home/bat/projects/bream/.tools/io-lifetime-review/optimized",
+              "copied_event_reuse"
+            ],
+            "cwd": "/home/bat/projects/bream",
+            "exit_code": 0,
+            "timeout_seconds": 5,
+            "timed_out": false,
+            "stdout": "evidence/io-lifetime-review/runs/optimized-copied_event_reuse.stdout",
+            "stdout_sha256": "a5dec71b90ff61d4c67d65d6883c6fa9e39851f646d23b0971b8888a8da6302d",
+            "stderr": "evidence/io-lifetime-review/runs/optimized-copied_event_reuse.stderr",
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "observed": {
+            "case": "copied_event_reuse",
+            "old_token": 101,
+            "new_token": 202,
+            "same_fd_reused": true,
+            "read_from_reused_fd": "b"
+          },
+          "expected_observation": true
+        },
+        {
+          "case": "duplicate_lifetime",
+          "command": {
+            "argv": [
+              "/home/bat/projects/bream/.tools/io-lifetime-review/optimized",
+              "duplicate_lifetime"
+            ],
+            "cwd": "/home/bat/projects/bream",
+            "exit_code": 0,
+            "timeout_seconds": 5,
+            "timed_out": false,
+            "stdout": "evidence/io-lifetime-review/runs/optimized-duplicate_lifetime.stdout",
+            "stdout_sha256": "e0e50a7b100b1ee3790009bbd01555acb882990c16e3d902566f46b368a8d824",
+            "stderr": "evidence/io-lifetime-review/runs/optimized-duplicate_lifetime.stderr",
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "observed": {
+            "case": "duplicate_lifetime",
+            "event_after_original_close": true,
+            "delete_via_duplicate": "ENOENT",
+            "empty_after_last_close": true
+          },
+          "expected_observation": true
+        },
+        {
+          "case": "consumed_readiness",
+          "command": {
+            "argv": [
+              "/home/bat/projects/bream/.tools/io-lifetime-review/optimized",
+              "consumed_readiness"
+            ],
+            "cwd": "/home/bat/projects/bream",
+            "exit_code": 0,
+            "timeout_seconds": 5,
+            "timed_out": false,
+            "stdout": "evidence/io-lifetime-review/runs/optimized-consumed_readiness.stdout",
+            "stdout_sha256": "7e96e8dae06ce506225c5d987d9c0b8e99d78bd02e2e3316d660e4c1903e3eb6",
+            "stderr": "evidence/io-lifetime-review/runs/optimized-consumed_readiness.stderr",
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "observed": {
+            "case": "consumed_readiness",
+            "readiness_observed": true,
+            "second_read": "EAGAIN"
+          },
+          "expected_observation": true
+        },
+        {
+          "case": "oneshot_rearm",
+          "command": {
+            "argv": [
+              "/home/bat/projects/bream/.tools/io-lifetime-review/optimized",
+              "oneshot_rearm"
+            ],
+            "cwd": "/home/bat/projects/bream",
+            "exit_code": 0,
+            "timeout_seconds": 5,
+            "timed_out": false,
+            "stdout": "evidence/io-lifetime-review/runs/optimized-oneshot_rearm.stdout",
+            "stdout_sha256": "3991b99180fb0effbaddf9db82bb4cd801a8b6431c0aea72469ac930237638a5",
+            "stderr": "evidence/io-lifetime-review/runs/optimized-oneshot_rearm.stderr",
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "observed": {
+            "case": "oneshot_rearm",
+            "disabled_before_mod": true,
+            "ready_after_mod": true,
+            "rearmed_token": 506
+          },
+          "expected_observation": true
+        },
+        {
+          "case": "hup_with_data",
+          "command": {
+            "argv": [
+              "/home/bat/projects/bream/.tools/io-lifetime-review/optimized",
+              "hup_with_data"
+            ],
+            "cwd": "/home/bat/projects/bream",
+            "exit_code": 0,
+            "timeout_seconds": 5,
+            "timed_out": false,
+            "stdout": "evidence/io-lifetime-review/runs/optimized-hup_with_data.stdout",
+            "stdout_sha256": "4eec1678ed5bfc837a7b6596ffe33ce8191864ae0d5eabc8f6399d5e96eae0d1",
+            "stderr": "evidence/io-lifetime-review/runs/optimized-hup_with_data.stderr",
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "observed": {
+            "case": "hup_with_data",
+            "readable_and_hup": true,
+            "data_before_eof": true
+          },
+          "expected_observation": true
+        }
+      ],
+      "artifact": {
+        "path": ".tools/io-lifetime-review/optimized",
+        "sha256": "fe035faea412063bc4922c6f5c03145441d66d8a776b8b30e721e41dad3201e3"
+      }
+    }
+  ],
+  "compile_invocations": 2,
+  "execution_invocations": 10,
+  "all_expected_observations": true
+}

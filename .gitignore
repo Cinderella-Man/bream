@@ -1,0 +1,6 @@
+**/target/
+**/core
+**/core.*
+**/__pycache__/
+.tools/
+upstream/

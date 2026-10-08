@@ -1,0 +1,1 @@
+{"name":["hibernate_arity",257],"observations":{"arity":257,"phase":"caught_before_stack_discard","result":["raised","error","system_limit"]},"status":"completed"}

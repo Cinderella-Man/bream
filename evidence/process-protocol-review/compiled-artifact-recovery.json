@@ -1,0 +1,173 @@
+{
+  "purpose": "Recover separately retained compiled artifacts after shared output paths were overwritten by later profiles. Exact original compiler commands and working directories are reused; no behavioral fixtures are rerun.",
+  "commands": [
+    {
+      "profile": "jit-1",
+      "name": "compile-normal",
+      "argv": [
+        "/home/bat/projects/bream/upstream/otp-reference-build/bin/erlc",
+        "+debug_info",
+        "-o",
+        "/home/bat/projects/bream/.tools/reference-fixtures/normal",
+        "/home/bat/projects/bream/evidence/process-protocol-review/fixtures/bream_reference_probe.erl",
+        "/home/bat/projects/bream/evidence/process-protocol-review/priority_marker_probe.erl"
+      ],
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "profile": "jit-1",
+      "name": "compile-no_recv_opt",
+      "argv": [
+        "/home/bat/projects/bream/upstream/otp-reference-build/bin/erlc",
+        "+debug_info",
+        "+no_recv_opt",
+        "-o",
+        "/home/bat/projects/bream/.tools/reference-fixtures/no_recv_opt",
+        "/home/bat/projects/bream/evidence/process-protocol-review/fixtures/bream_reference_probe.erl",
+        "/home/bat/projects/bream/evidence/process-protocol-review/priority_marker_probe.erl"
+      ],
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "profile": "jit-4",
+      "name": "compile-normal",
+      "argv": [
+        "/home/bat/projects/bream/upstream/otp-reference-build/bin/erlc",
+        "+debug_info",
+        "-o",
+        "/home/bat/projects/bream/.tools/reference-fixtures/normal",
+        "/home/bat/projects/bream/evidence/process-protocol-review/fixtures/bream_reference_probe.erl",
+        "/home/bat/projects/bream/evidence/process-protocol-review/priority_marker_probe.erl"
+      ],
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "profile": "jit-4",
+      "name": "compile-no_recv_opt",
+      "argv": [
+        "/home/bat/projects/bream/upstream/otp-reference-build/bin/erlc",
+        "+debug_info",
+        "+no_recv_opt",
+        "-o",
+        "/home/bat/projects/bream/.tools/reference-fixtures/no_recv_opt",
+        "/home/bat/projects/bream/evidence/process-protocol-review/fixtures/bream_reference_probe.erl",
+        "/home/bat/projects/bream/evidence/process-protocol-review/priority_marker_probe.erl"
+      ],
+      "exit_code": 0,
+      "output": ""
+    }
+  ],
+  "artifacts": [
+    {
+      "profile": "debug-emu-4",
+      "original_path": ".tools/reference-fixtures/no_recv_opt/priority_marker_probe.beam",
+      "retained_path": ".tools/reference-fixture-artifacts/debug-emu-4/no_recv_opt/priority_marker_probe.beam",
+      "recorded_sha256": "5d8a588476d6f8b019c153f304056ddab5c2064361e2719ede564d084c5aabd8",
+      "recovered_sha256": "5d8a588476d6f8b019c153f304056ddab5c2064361e2719ede564d084c5aabd8",
+      "matches_recorded_hash": true,
+      "provenance": "retained final-run bytes"
+    },
+    {
+      "profile": "debug-emu-4",
+      "original_path": ".tools/reference-fixtures/no_recv_opt/bream_reference_probe.beam",
+      "retained_path": ".tools/reference-fixture-artifacts/debug-emu-4/no_recv_opt/bream_reference_probe.beam",
+      "recorded_sha256": "4a42efad6bf963875b1134c95d19dae4fc8d098dfe1a966a6bf3d10a8ca2fc92",
+      "recovered_sha256": "4a42efad6bf963875b1134c95d19dae4fc8d098dfe1a966a6bf3d10a8ca2fc92",
+      "matches_recorded_hash": true,
+      "provenance": "retained final-run bytes"
+    },
+    {
+      "profile": "debug-emu-4",
+      "original_path": ".tools/reference-fixtures/normal/priority_marker_probe.beam",
+      "retained_path": ".tools/reference-fixture-artifacts/debug-emu-4/normal/priority_marker_probe.beam",
+      "recorded_sha256": "0651e0b4bfc33f68b32dbc5196c7f51750446c9ff3bec6061ed6557f1c5e7d4b",
+      "recovered_sha256": "0651e0b4bfc33f68b32dbc5196c7f51750446c9ff3bec6061ed6557f1c5e7d4b",
+      "matches_recorded_hash": true,
+      "provenance": "retained final-run bytes"
+    },
+    {
+      "profile": "debug-emu-4",
+      "original_path": ".tools/reference-fixtures/normal/bream_reference_probe.beam",
+      "retained_path": ".tools/reference-fixture-artifacts/debug-emu-4/normal/bream_reference_probe.beam",
+      "recorded_sha256": "74b2615a1f64761d572a9fe549093241c5acaf6fd834545121e41a15492be52f",
+      "recovered_sha256": "74b2615a1f64761d572a9fe549093241c5acaf6fd834545121e41a15492be52f",
+      "matches_recorded_hash": true,
+      "provenance": "retained final-run bytes"
+    },
+    {
+      "profile": "jit-1",
+      "original_path": ".tools/reference-fixtures/no_recv_opt/priority_marker_probe.beam",
+      "retained_path": ".tools/reference-fixture-artifacts/jit-1/no_recv_opt/priority_marker_probe.beam",
+      "recorded_sha256": "abb0112e87d15db895188b9d036d4c42ff21f106c52341fb659b86ce99d461a2",
+      "recovered_sha256": "abb0112e87d15db895188b9d036d4c42ff21f106c52341fb659b86ce99d461a2",
+      "matches_recorded_hash": true,
+      "provenance": "recompiled with original command/cwd"
+    },
+    {
+      "profile": "jit-1",
+      "original_path": ".tools/reference-fixtures/no_recv_opt/bream_reference_probe.beam",
+      "retained_path": ".tools/reference-fixture-artifacts/jit-1/no_recv_opt/bream_reference_probe.beam",
+      "recorded_sha256": "ca32498a5bc557ad95698f20afc3c137201057c8962fec03c907b796fbc7e7c6",
+      "recovered_sha256": "ca32498a5bc557ad95698f20afc3c137201057c8962fec03c907b796fbc7e7c6",
+      "matches_recorded_hash": true,
+      "provenance": "recompiled with original command/cwd"
+    },
+    {
+      "profile": "jit-1",
+      "original_path": ".tools/reference-fixtures/normal/priority_marker_probe.beam",
+      "retained_path": ".tools/reference-fixture-artifacts/jit-1/normal/priority_marker_probe.beam",
+      "recorded_sha256": "a00d18b3b94d69c65c7476dc5ecba1c48477128e3e707827f097f911e24b054c",
+      "recovered_sha256": "a00d18b3b94d69c65c7476dc5ecba1c48477128e3e707827f097f911e24b054c",
+      "matches_recorded_hash": true,
+      "provenance": "recompiled with original command/cwd"
+    },
+    {
+      "profile": "jit-1",
+      "original_path": ".tools/reference-fixtures/normal/bream_reference_probe.beam",
+      "retained_path": ".tools/reference-fixture-artifacts/jit-1/normal/bream_reference_probe.beam",
+      "recorded_sha256": "26f5f0dd21bc42938b5b42e72bc52ef883c38a1b7b4e33512034f18b29d41629",
+      "recovered_sha256": "26f5f0dd21bc42938b5b42e72bc52ef883c38a1b7b4e33512034f18b29d41629",
+      "matches_recorded_hash": true,
+      "provenance": "recompiled with original command/cwd"
+    },
+    {
+      "profile": "jit-4",
+      "original_path": ".tools/reference-fixtures/no_recv_opt/priority_marker_probe.beam",
+      "retained_path": ".tools/reference-fixture-artifacts/jit-4/no_recv_opt/priority_marker_probe.beam",
+      "recorded_sha256": "95c19857db5b8bdda7693f3ae1e92c9e6623c3397c60936ae3b7ec435eb36941",
+      "recovered_sha256": "95c19857db5b8bdda7693f3ae1e92c9e6623c3397c60936ae3b7ec435eb36941",
+      "matches_recorded_hash": true,
+      "provenance": "recompiled with original command/cwd"
+    },
+    {
+      "profile": "jit-4",
+      "original_path": ".tools/reference-fixtures/no_recv_opt/bream_reference_probe.beam",
+      "retained_path": ".tools/reference-fixture-artifacts/jit-4/no_recv_opt/bream_reference_probe.beam",
+      "recorded_sha256": "080f9a6d6162b3981c116fa88001685ac3b8aacc3af2d8c88cc6eadb84f59229",
+      "recovered_sha256": "080f9a6d6162b3981c116fa88001685ac3b8aacc3af2d8c88cc6eadb84f59229",
+      "matches_recorded_hash": true,
+      "provenance": "recompiled with original command/cwd"
+    },
+    {
+      "profile": "jit-4",
+      "original_path": ".tools/reference-fixtures/normal/priority_marker_probe.beam",
+      "retained_path": ".tools/reference-fixture-artifacts/jit-4/normal/priority_marker_probe.beam",
+      "recorded_sha256": "7d687d3db9c4d4af705679cafd7a4727d48e757404705a4bcf67366779bf9819",
+      "recovered_sha256": "7d687d3db9c4d4af705679cafd7a4727d48e757404705a4bcf67366779bf9819",
+      "matches_recorded_hash": true,
+      "provenance": "recompiled with original command/cwd"
+    },
+    {
+      "profile": "jit-4",
+      "original_path": ".tools/reference-fixtures/normal/bream_reference_probe.beam",
+      "retained_path": ".tools/reference-fixture-artifacts/jit-4/normal/bream_reference_probe.beam",
+      "recorded_sha256": "8a2230ae6c21359da10e60324fcda8783e2ac61fed52636e8d44718c73da6890",
+      "recovered_sha256": "8a2230ae6c21359da10e60324fcda8783e2ac61fed52636e8d44718c73da6890",
+      "matches_recorded_hash": true,
+      "provenance": "recompiled with original command/cwd"
+    }
+  ]
+}

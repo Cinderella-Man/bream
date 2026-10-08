@@ -1,0 +1,81 @@
+{
+  "all_final_inputs_match": true,
+  "inputs": [
+    {
+      "path": "/home/bat/projects/bream/experiments/generated-process/Cargo.toml",
+      "matches": true
+    },
+    {
+      "path": "/home/bat/projects/bream/experiments/generated-process/Cargo.lock",
+      "matches": true
+    },
+    {
+      "path": "/home/bat/projects/bream/experiments/generated-process/run.py",
+      "matches": true
+    },
+    {
+      "path": "/home/bat/projects/bream/experiments/generated-process/target/release/bream-probe-runtime",
+      "matches": true
+    },
+    {
+      "path": "/home/bat/projects/bream/experiments/generated-process/macros/src/lib.rs",
+      "matches": true
+    },
+    {
+      "path": "/home/bat/projects/bream/experiments/generated-process/macros/Cargo.toml",
+      "matches": true
+    },
+    {
+      "path": "/home/bat/projects/bream/experiments/generated-process/runtime/examples/reject_closure.rs",
+      "matches": true
+    },
+    {
+      "path": "/home/bat/projects/bream/experiments/generated-process/runtime/examples/reject_custom_call.rs",
+      "matches": true
+    },
+    {
+      "path": "/home/bat/projects/bream/experiments/generated-process/runtime/examples/reject_custom_drop.rs",
+      "matches": true
+    },
+    {
+      "path": "/home/bat/projects/bream/experiments/generated-process/runtime/examples/reject_custom_type.rs",
+      "matches": true
+    },
+    {
+      "path": "/home/bat/projects/bream/experiments/generated-process/runtime/examples/reject_global_read.rs",
+      "matches": true
+    },
+    {
+      "path": "/home/bat/projects/bream/experiments/generated-process/runtime/examples/reject_macro.rs",
+      "matches": true
+    },
+    {
+      "path": "/home/bat/projects/bream/experiments/generated-process/runtime/examples/reject_manual_await.rs",
+      "matches": true
+    },
+    {
+      "path": "/home/bat/projects/bream/experiments/generated-process/runtime/examples/reject_raw_identifier.rs",
+      "matches": true
+    },
+    {
+      "path": "/home/bat/projects/bream/experiments/generated-process/runtime/examples/reject_reserved_name.rs",
+      "matches": true
+    },
+    {
+      "path": "/home/bat/projects/bream/experiments/generated-process/runtime/examples/reject_unsafe.rs",
+      "matches": true
+    },
+    {
+      "path": "/home/bat/projects/bream/experiments/generated-process/runtime/src/lib.rs",
+      "matches": true
+    },
+    {
+      "path": "/home/bat/projects/bream/experiments/generated-process/runtime/src/main.rs",
+      "matches": true
+    },
+    {
+      "path": "/home/bat/projects/bream/experiments/generated-process/runtime/Cargo.toml",
+      "matches": true
+    }
+  ]
+}

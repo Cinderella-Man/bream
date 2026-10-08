@@ -1,0 +1,13 @@
+{
+  "review_started_at": "2026-10-07T17:33:15.043838+00:00",
+  "upstream": "https://github.com/erlang/otp.git",
+  "local_checkout": "upstream/otp",
+  "tag": "OTP-29.1.1",
+  "tag_object": "906667d86dc2a4b1b8de33e39844bba257b0bb76",
+  "commit": "ad05823719d77c8faee87348ea39513d4e2f99c5",
+  "commit_date": "2026-09-21",
+  "clean_at_start": true,
+  "clone_mode": "depth 1, single branch/tag, detached HEAD",
+  "build_or_execution_performed": false,
+  "scope": "source traces for selected BEAM/ERTS process runtime subsystems; not an exhaustive audit of Erlang/OTP"
+}

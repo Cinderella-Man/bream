@@ -1,0 +1,42 @@
+{
+  "started_at": "2026-10-07T16:04:18.567919+00:00",
+  "argv": [
+    "/home/bat/projects/impish/experiments/native-preemption/target/release/impish-native-preemption-probe"
+  ],
+  "external_deadline_seconds": 10,
+  "expect_preemption": "yes",
+  "input_hashes": {
+    "/home/bat/projects/impish/experiments/native-preemption/target/release/impish-native-preemption-probe": "db34868b036f488949c4bc11c00e0ec9a199a788033661c35f882fe1fc76a26b",
+    "/home/bat/projects/impish/experiments/native-preemption/Cargo.toml": "db461fb43677055ce4490729e84076174612de7c391e4d67b7b04eec3657bdab",
+    "/home/bat/projects/impish/experiments/native-preemption/Cargo.lock": "80d8ae699b46d8430ca9b718d9d28fd08f630120adf0b5cdf8535f215a29fcbd",
+    "/home/bat/projects/impish/experiments/native-preemption/src/main.rs": "13ba81a738a39c929386b748a42ca7f596f38c7fca762e526fbcfafccc960bf5"
+  },
+  "exit_code": 0,
+  "observation": {
+    "preemptive_feature": true,
+    "worker_tid": 72600,
+    "task_worker_count": 1,
+    "monitor_thread_expected": true,
+    "iterations_each": 100000000,
+    "elapsed_ms": 316.12775999999997,
+    "sampled_dispatch_changes": 31,
+    "same_worker": true,
+    "both_observed_overlap": true,
+    "complete": true,
+    "passed": true,
+    "checksums": [
+      8956703282129858646,
+      17801881488120503101
+    ],
+    "started_on_tids": [
+      72600,
+      72600
+    ],
+    "finished_on_tids": [
+      72600,
+      72600
+    ]
+  },
+  "as_expected": true,
+  "elapsed_seconds": 0.32440703099928214
+}

@@ -1,0 +1,42 @@
+{
+  "started_at": "2026-10-07T16:49:03.155047+00:00",
+  "argv": [
+    "/home/bat/projects/bream/experiments/native-preemption/target/no-preemptive/release/bream-native-preemption-probe"
+  ],
+  "external_deadline_seconds": 10,
+  "expect_preemption": "no",
+  "input_hashes": {
+    "/home/bat/projects/bream/experiments/native-preemption/target/no-preemptive/release/bream-native-preemption-probe": "0135e5589b091d32d7c80a1fcb2f784e717efe15289c0aa0bd54fa621b94f4bb",
+    "/home/bat/projects/bream/experiments/native-preemption/Cargo.toml": "0c98cdc5a7afacc3d2b28e020fe9ac389fde089ab0b4f7d4e45e97e50f0aebba",
+    "/home/bat/projects/bream/experiments/native-preemption/Cargo.lock": "e8a5ab1f96a239f493da7743b93354424eed85f86d9c2d237b845716275de6ea",
+    "/home/bat/projects/bream/experiments/native-preemption/src/main.rs": "13ba81a738a39c929386b748a42ca7f596f38c7fca762e526fbcfafccc960bf5"
+  },
+  "exit_code": 1,
+  "observation": {
+    "preemptive_feature": false,
+    "worker_tid": 91114,
+    "task_worker_count": 1,
+    "monitor_thread_expected": false,
+    "iterations_each": 100000000,
+    "elapsed_ms": 222.643415,
+    "sampled_dispatch_changes": 2,
+    "same_worker": true,
+    "both_observed_overlap": false,
+    "complete": true,
+    "passed": false,
+    "checksums": [
+      8956703282129858646,
+      17801881488120503101
+    ],
+    "started_on_tids": [
+      91114,
+      91114
+    ],
+    "finished_on_tids": [
+      91114,
+      91114
+    ]
+  },
+  "as_expected": true,
+  "elapsed_seconds": 0.22684040400054073
+}

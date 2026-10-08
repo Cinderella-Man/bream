@@ -1,0 +1,234 @@
+{
+  "evidence/resident-rust/qualification-final/result.json": {
+    "passed": true,
+    "checks": [
+      {
+        "path": "experiments/resident-rust/host/target/debug/resident-host",
+        "exists": true,
+        "matches": true
+      },
+      {
+        "path": "experiments/resident-rust/host/Cargo.lock",
+        "exists": true,
+        "matches": true
+      },
+      {
+        "path": "experiments/resident-rust/protocol/src/lib.rs",
+        "exists": true,
+        "matches": true
+      },
+      {
+        "path": "experiments/resident-rust/host/src/lib.rs",
+        "exists": true,
+        "matches": true
+      },
+      {
+        "path": "experiments/resident-rust/host/src/main.rs",
+        "exists": true,
+        "matches": true
+      },
+      {
+        "path": "experiments/resident-rust/guest/artifacts/bad_abi.wasm",
+        "exists": true,
+        "matches": true
+      },
+      {
+        "path": "experiments/resident-rust/guest/artifacts/reject.wasm",
+        "exists": true,
+        "matches": true
+      },
+      {
+        "path": "experiments/resident-rust/guest/artifacts/v1.wasm",
+        "exists": true,
+        "matches": true
+      },
+      {
+        "path": "experiments/resident-rust/guest/artifacts/v2.wasm",
+        "exists": true,
+        "matches": true
+      }
+    ]
+  },
+  "evidence/resident-rust/qualification-compact-final/result.json": {
+    "passed": true,
+    "checks": [
+      {
+        "path": "experiments/resident-rust/host/target/debug/resident-host",
+        "exists": true,
+        "matches": true
+      },
+      {
+        "path": "experiments/resident-rust/host/Cargo.lock",
+        "exists": true,
+        "matches": true
+      },
+      {
+        "path": "experiments/resident-rust/protocol/src/lib.rs",
+        "exists": true,
+        "matches": true
+      },
+      {
+        "path": "experiments/resident-rust/host/src/lib.rs",
+        "exists": true,
+        "matches": true
+      },
+      {
+        "path": "experiments/resident-rust/host/src/main.rs",
+        "exists": true,
+        "matches": true
+      },
+      {
+        "path": "experiments/resident-rust/guest/artifacts/bad_abi.wasm",
+        "exists": true,
+        "matches": true
+      },
+      {
+        "path": "experiments/resident-rust/guest/artifacts/reject.wasm",
+        "exists": true,
+        "matches": true
+      },
+      {
+        "path": "experiments/resident-rust/guest/artifacts/v1.wasm",
+        "exists": true,
+        "matches": true
+      },
+      {
+        "path": "experiments/resident-rust/guest/artifacts/v2.wasm",
+        "exists": true,
+        "matches": true
+      }
+    ]
+  },
+  "evidence/portable-component/qualification-v5/result.json": {
+    "passed": true,
+    "checks": [
+      {
+        "path": "experiments/elixir-clock-port/Cargo.toml",
+        "exists": true,
+        "matches": true
+      },
+      {
+        "path": "experiments/elixir-clock-port/src/lib.rs",
+        "exists": true,
+        "matches": true
+      },
+      {
+        "path": "experiments/elixir-clock-port/src/main.rs",
+        "exists": true,
+        "matches": true
+      },
+      {
+        "path": "experiments/portable-component/CONTRACT.md",
+        "exists": true,
+        "matches": true
+      },
+      {
+        "path": "experiments/portable-component/Cargo.lock",
+        "exists": true,
+        "matches": true
+      },
+      {
+        "path": "experiments/portable-component/Cargo.toml",
+        "exists": true,
+        "matches": true
+      },
+      {
+        "path": "experiments/portable-component/README.md",
+        "exists": true,
+        "matches": true
+      },
+      {
+        "path": "experiments/portable-component/contract.exs",
+        "exists": true,
+        "matches": true
+      },
+      {
+        "path": "experiments/portable-component/core/Cargo.toml",
+        "exists": true,
+        "matches": true
+      },
+      {
+        "path": "experiments/portable-component/core/src/lib.rs",
+        "exists": true,
+        "matches": true
+      },
+      {
+        "path": "experiments/portable-component/facade.exs",
+        "exists": true,
+        "matches": true
+      },
+      {
+        "path": "experiments/portable-component/guest/Cargo.toml",
+        "exists": true,
+        "matches": true
+      },
+      {
+        "path": "experiments/portable-component/guest/src/lib.rs",
+        "exists": true,
+        "matches": true
+      },
+      {
+        "path": "experiments/portable-component/host/Cargo.toml",
+        "exists": true,
+        "matches": true
+      },
+      {
+        "path": "experiments/portable-component/host/src/main.rs",
+        "exists": true,
+        "matches": true
+      },
+      {
+        "path": "experiments/portable-component/native/Cargo.toml",
+        "exists": true,
+        "matches": true
+      },
+      {
+        "path": "experiments/portable-component/native/src/main.rs",
+        "exists": true,
+        "matches": true
+      },
+      {
+        "path": "experiments/portable-component/oracle.exs",
+        "exists": true,
+        "matches": true
+      },
+      {
+        "path": "experiments/portable-component/run.py",
+        "exists": true,
+        "matches": true
+      },
+      {
+        "path": "experiments/portable-component/target/wasm32-unknown-unknown/release/portable_guest.wasm",
+        "exists": true,
+        "matches": true
+      },
+      {
+        "path": "experiments/portable-component/transport/Cargo.toml",
+        "exists": true,
+        "matches": true
+      },
+      {
+        "path": "experiments/portable-component/transport/src/lib.rs",
+        "exists": true,
+        "matches": true
+      },
+      {
+        "path": "experiments/resident-rust/host/target/debug/portable-host",
+        "exists": true,
+        "matches": true
+      },
+      {
+        "path": "experiments/resident-rust/host/target/debug/portable-native",
+        "exists": true,
+        "matches": true
+      },
+      {
+        "path": "upstream/elixir-corpus-phoenix-pubsub/lib/phoenix/tracker/clock.ex",
+        "exists": true,
+        "matches": true
+      }
+    ],
+    "observations": 495,
+    "failed_observations": 0
+  }
+}

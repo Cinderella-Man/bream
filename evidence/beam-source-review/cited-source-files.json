@@ -1,0 +1,238 @@
+{
+  "commit": "ad05823719d77c8faee87348ea39513d4e2f99c5",
+  "meaning": "Hashes of source files linked by the notes; inclusion alone does not mean every line was reviewed. Coverage depth is recorded in docs/beam-source-map.md.",
+  "files": [
+    {
+      "path": "erts/doc/references/erl_nif.md",
+      "sha256": "833fa2cc14a6776a46b288964893efce91a94d21f6a0a6456e515b00a43813be"
+    },
+    {
+      "path": "erts/emulator/beam/beam_common.c",
+      "sha256": "1af6cf2d371975b0d9944b5857062a90091298373b3802639b25d03003ab3c47"
+    },
+    {
+      "path": "erts/emulator/beam/beam_load.c",
+      "sha256": "0d62ff28f300a9a37cb09c9ad8d29a1942a7fc521793c02330c4a69370e00334"
+    },
+    {
+      "path": "erts/emulator/beam/bif.c",
+      "sha256": "4df5e1065391f693f73e5a7303f0c1993e67c7dd4b4af151c43121ca913ef9cc"
+    },
+    {
+      "path": "erts/emulator/beam/bif.h",
+      "sha256": "0c5dfffa51c20698d33473c8e7e5bc48bc748411d9782767928fa90d50b29f4e"
+    },
+    {
+      "path": "erts/emulator/beam/code_ix.c",
+      "sha256": "398b7ae5b8bf312539408c1e2f19a03c7ad9fa307abcf060181cbc2a4e89be13"
+    },
+    {
+      "path": "erts/emulator/beam/copy.c",
+      "sha256": "3a545dd7dc73c816a70897d07d4c353d27f7c8589938073c87da414f3d43e860"
+    },
+    {
+      "path": "erts/emulator/beam/dist.c",
+      "sha256": "67711ab6a7c9fce0f4d5b40b06d4dde5f61e9c8bdfaafb1d0a22988d04657eeb"
+    },
+    {
+      "path": "erts/emulator/beam/emu/beam_emu.c",
+      "sha256": "47c1453c9b1c2224eba6fc00406847ee0609fe6ff4adcba4b233d37f230a633d"
+    },
+    {
+      "path": "erts/emulator/beam/emu/bif_instrs.tab",
+      "sha256": "efa0551d5ffa27a197de60fb6759530a00a891031627b58d948442fe0f313aee"
+    },
+    {
+      "path": "erts/emulator/beam/emu/instrs.tab",
+      "sha256": "35f9fdbb899b39e765123f14561075a8c4fc7a56bba363a7df930a8c2144f4c2"
+    },
+    {
+      "path": "erts/emulator/beam/emu/macros.tab",
+      "sha256": "7cdce7719cde9115a88c8a4dd0299d4dbda31be2fb40c6eea5f045d293d212c4"
+    },
+    {
+      "path": "erts/emulator/beam/emu/msg_instrs.tab",
+      "sha256": "c1e0c3b7572890a0354c66a79233614b16ae2cf1c543841b45dda2c30da8e830"
+    },
+    {
+      "path": "erts/emulator/beam/erl_alloc.c",
+      "sha256": "f55a12ff711d71aa53fb8981e1df5642b76a11fdbe4383e7562eaf2503a0c61a"
+    },
+    {
+      "path": "erts/emulator/beam/erl_bif_info.c",
+      "sha256": "9a86723f7bce38bcb64b4cf3e7759ffc51cefa9973cb11b36dc26a263a329149"
+    },
+    {
+      "path": "erts/emulator/beam/erl_bif_lists.c",
+      "sha256": "473804029cbf4fe37c47637e5a7310bab334872910e71933ad7c07cce7d571b3"
+    },
+    {
+      "path": "erts/emulator/beam/erl_bits.c",
+      "sha256": "2b803014c329c7c2c30e60c0bffda90911985b9ce1703952e7315e28694ccdb6"
+    },
+    {
+      "path": "erts/emulator/beam/erl_db.c",
+      "sha256": "2a10d2a1124796fe3bdf428cffcc3d4dba99397e482034e9f16008b369885fea"
+    },
+    {
+      "path": "erts/emulator/beam/erl_gc.c",
+      "sha256": "d83220568588cfad8ebeef5d399d43d04a6e79d7a002404c1a503d274ab8381d"
+    },
+    {
+      "path": "erts/emulator/beam/erl_hl_timer.c",
+      "sha256": "f5a55450631accad33f43de99a8679d0e526e7687b6058fc3dda7e74e16d49d2"
+    },
+    {
+      "path": "erts/emulator/beam/erl_init.c",
+      "sha256": "427b8918b7300b6998b2b1d5123a2904c59a67ba917e20461c9300b62d38b027"
+    },
+    {
+      "path": "erts/emulator/beam/erl_message.c",
+      "sha256": "b35e3f0a62dcd86e02f2249d917c801f8c16dc8d35f810c46581212e7d9bab49"
+    },
+    {
+      "path": "erts/emulator/beam/erl_message.h",
+      "sha256": "ce7b97ef8dcb560430ee5e2a0f5886b34ac62d51444c0d22a2ecef194329bdfd"
+    },
+    {
+      "path": "erts/emulator/beam/erl_monitor_link.c",
+      "sha256": "47addb89c2cf25d430aeea803d335c28980641fac9e06029b5cbd10c258904f9"
+    },
+    {
+      "path": "erts/emulator/beam/erl_nif.c",
+      "sha256": "66f06ab32aedb5d1e02140c37e0215e797fb80d78c1aa4091eb52be01465299a"
+    },
+    {
+      "path": "erts/emulator/beam/erl_port_task.c",
+      "sha256": "7ce239ceb49ae5dc0c51955ce4023f351179f0d43cf963a6e4e1a89b786031aa"
+    },
+    {
+      "path": "erts/emulator/beam/erl_proc_sig_queue.c",
+      "sha256": "8c09013466104034a847e3439df4d31c4d5184d2c46430a3cdb0f86710f2c519"
+    },
+    {
+      "path": "erts/emulator/beam/erl_proc_sig_queue.h",
+      "sha256": "ca6c71cbfd860260cd218f2443d176000ff216bc0f8941ace4a7f3debb485168"
+    },
+    {
+      "path": "erts/emulator/beam/erl_process.c",
+      "sha256": "89cbdb55be2a97e77b2450bb3d339ca6db934b9c4bf556ead29b4eae88072dc9"
+    },
+    {
+      "path": "erts/emulator/beam/erl_process.h",
+      "sha256": "df0079f48c4c05e2bf453ba29d03cf656c9a6817f6bf88f5014873256dffe0d5"
+    },
+    {
+      "path": "erts/emulator/beam/erl_process_lock.h",
+      "sha256": "43ced660d93b11bece618bf2cf50c25a7b42acc7c4ba42a2fe480eb737c60f3a"
+    },
+    {
+      "path": "erts/emulator/beam/erl_ptab.c",
+      "sha256": "08743809f78709c07810a678cad30808927b03215c4e2c12ffd4d4b43532629f"
+    },
+    {
+      "path": "erts/emulator/beam/erl_term.h",
+      "sha256": "8e016126fb7a1bc1db8d31111601c0bea21d72207211bf91e1f3c127e943b5c2"
+    },
+    {
+      "path": "erts/emulator/beam/erl_thr_progress.c",
+      "sha256": "3881d6d461bfbd89922070303ee7486d3c0480ae6baa822b99e766f2d69920b6"
+    },
+    {
+      "path": "erts/emulator/beam/erl_vm.h",
+      "sha256": "c362c2c222f5342bc0edd3b666ba58ef571dff6d6f37542169316c208fab9816"
+    },
+    {
+      "path": "erts/emulator/beam/jit/beam_jit_common.cpp",
+      "sha256": "b8ff4cfbe3afb033b060bb0e0b013dc6e02e7280a4b7ac8d195ca4e6ac5248ae"
+    },
+    {
+      "path": "erts/emulator/beam/jit/x86/beam_asm.hpp",
+      "sha256": "24781abc258530726d8c13802a2f886712adef82f5fb59f9c810ad682e6ba6c1"
+    },
+    {
+      "path": "erts/emulator/beam/jit/x86/instr_bif.cpp",
+      "sha256": "26684c37bdfff302268e081b0bbd2a14b2215e4b0c1650cffe4ea75ac5a0df5e"
+    },
+    {
+      "path": "erts/emulator/beam/jit/x86/instr_call.cpp",
+      "sha256": "adcd796480ef284ee20cf7d16efc7a3f281f4cf4b015c08ab9ff6dd9a3e13f86"
+    },
+    {
+      "path": "erts/emulator/beam/jit/x86/instr_common.cpp",
+      "sha256": "abdd8d5b22f406fa9c8d0aa972d3962b62a34a93c6783703d3d8f0a6e383a2a3"
+    },
+    {
+      "path": "erts/emulator/beam/jit/x86/instr_msg.cpp",
+      "sha256": "8cc2b44bd42d3702ab5d241a45f9dd24241593b7afd759ce13d3c20f1c89a3e1"
+    },
+    {
+      "path": "erts/emulator/beam/jit/x86/ops.tab",
+      "sha256": "bf6c0f5cb09db030486713b3923bf0bba1a9fbc98fe2684f425ab60b8fcad711"
+    },
+    {
+      "path": "erts/emulator/beam/jit/x86/process_main.cpp",
+      "sha256": "24dc0eb908a9adc8c9e0d1456368ced88015d083dc4a39d018d6ce67d428a5b0"
+    },
+    {
+      "path": "erts/emulator/beam/register.c",
+      "sha256": "604ba0db2a1d0d4063671368738fa8a6d409333f596bf8385e30ce419b376ad9"
+    },
+    {
+      "path": "erts/emulator/sys/common/erl_check_io.c",
+      "sha256": "fe24e718e0324c305c87621a4d2f71392d5f511630b8cf5edec1806bed21da05"
+    },
+    {
+      "path": "erts/emulator/test/binary_SUITE.erl",
+      "sha256": "a255862b2fa8291ef4b7dd9ee8236735d235bebde5a19fd4358032df4db7161b"
+    },
+    {
+      "path": "erts/emulator/test/dirty_nif_SUITE.erl",
+      "sha256": "e11456d9f0e961b2cdca3e71ea3a00f1e416e9c6bdbd6e34d88e8312b9efcaf1"
+    },
+    {
+      "path": "erts/emulator/test/nif_SUITE.erl",
+      "sha256": "389539c96b2034c9b18af8973ee8145f962f1a1262859d716b8599665a5dccc6"
+    },
+    {
+      "path": "erts/emulator/test/receive_SUITE.erl",
+      "sha256": "6bc6941c80e732ccb04a784093024ca72920950f6a3ac49f2007894e19bccd04"
+    },
+    {
+      "path": "erts/emulator/test/signal_SUITE.erl",
+      "sha256": "9300779fb8a28da2a8c505f41f9a830f84da4d55b175dabf603bf8de49368c30"
+    },
+    {
+      "path": "erts/emulator/test/timer_bif_SUITE.erl",
+      "sha256": "9e05d690e77cd990acb5074135fbc320633cef1c2986d9d41b2fbfae0a5d54c3"
+    },
+    {
+      "path": "erts/preloaded/src/erlang.erl",
+      "sha256": "00d7672a16325e43ca221c6d6ceb4200390e2a961a243c2e31ddc141ac145047"
+    },
+    {
+      "path": "erts/preloaded/src/erts_internal.erl",
+      "sha256": "22b6a291c32778edb84dc1e9bb2cfd5af44ca7e9f0ae53cb01f3a674218bc260"
+    },
+    {
+      "path": "lib/compiler/src/beam_ssa_recv.erl",
+      "sha256": "b52f7ae2cc5efc2430e6fcdf2fd9f89a7154b85a1839e07e2eb1547dcebf0246"
+    },
+    {
+      "path": "lib/stdlib/src/gen_server.erl",
+      "sha256": "45e1cea8e87a49c8f6cec49ec50e082dde6690c3696f9e67de376947fc8f34a3"
+    },
+    {
+      "path": "lib/stdlib/src/supervisor.erl",
+      "sha256": "04fdda99f90614123811c2da0fa38b9cc192937ab583d790e0ccb6ab1bc6d9bb"
+    },
+    {
+      "path": "system/doc/reference_manual/data_types.md",
+      "sha256": "1bd21a7cdcb3df934a97dcd6681e109c781d3327a66aad693159c8459867545c"
+    },
+    {
+      "path": "system/doc/reference_manual/ref_man_processes.md",
+      "sha256": "8e6550f654b3be8aa8d9847be8c3e1e149751c227540f9751359acba2635c287"
+    }
+  ]
+}

@@ -1,0 +1,1899 @@
+ MAKE	depend
+make[1]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator'
+ MAKE	generate
+make[2]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator'
+ GEN	x86_64-pc-linux-gnu/opt/jit/OPCODES-GENERATED
+ GEN	x86_64-pc-linux-gnu/opt/jit/beam_asm_global.hpp
+ GEN	x86_64-pc-linux-gnu/opt/jit/TABLES-GENERATED
+ GEN	x86_64-pc-linux-gnu/opt/jit/erl_alloc_types.h
+ GEN	x86_64-pc-linux-gnu/erl_version.h
+ GEN	x86_64-pc-linux-gnu/opt/jit/driver_tab.c
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/lib_src'
+ MAKE	opt
+make[4]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/lib_src'
+ GEN	obj/x86_64-pc-linux-gnu/opt/depend.mk
+ GEN	x86_64-pc-linux-gnu/opt/jit/preload.c
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/lib_src/yielding_c_fun/x86_64-pc-linux-gnu/ycf_lexer.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/lib_src/yielding_c_fun/x86_64-pc-linux-gnu/ycf_main.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/lib_src/yielding_c_fun/x86_64-pc-linux-gnu/ycf_node.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/lib_src/yielding_c_fun/x86_64-pc-linux-gnu/ycf_parser.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/lib_src/yielding_c_fun/x86_64-pc-linux-gnu/ycf_printers.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/lib_src/yielding_c_fun/x86_64-pc-linux-gnu/ycf_string.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/lib_src/yielding_c_fun/x86_64-pc-linux-gnu/ycf_symbol.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/lib_src/yielding_c_fun/x86_64-pc-linux-gnu/ycf_utils.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/lib_src/yielding_c_fun/x86_64-pc-linux-gnu/ycf_yield_fun.o
+ CC	obj/x86_64-pc-linux-gnu/opt/r/ethr_aux.o
+ CC	obj/x86_64-pc-linux-gnu/opt/r/ethr_atomics.o
+ CC	obj/x86_64-pc-linux-gnu/opt/r/ethr_mutex.o
+ CC	obj/x86_64-pc-linux-gnu/opt/r/ethr_cbf.o
+ CC	obj/x86_64-pc-linux-gnu/opt/r/ethread.o
+ CC	obj/x86_64-pc-linux-gnu/opt/r/ethr_event.o
+ CC	obj/x86_64-pc-linux-gnu/opt/erl_printf_format.o
+ CC	obj/x86_64-pc-linux-gnu/opt/erl_printf.o
+ CC	obj/x86_64-pc-linux-gnu/opt/erl_misc_utils.o
+ CC	obj/x86_64-pc-linux-gnu/opt/r/erl_printf_format.o
+ CC	obj/x86_64-pc-linux-gnu/opt/r/erl_printf.o
+ CC	obj/x86_64-pc-linux-gnu/opt/r/erl_misc_utils.o
+ AR	../lib/internal/x86_64-pc-linux-gnu/liberts_internal.a
+ RANLIB	../lib/internal/x86_64-pc-linux-gnu/liberts_internal.a
+ AR	../lib/internal/x86_64-pc-linux-gnu/liberts_internal_r.a
+ RANLIB	../lib/internal/x86_64-pc-linux-gnu/liberts_internal_r.a
+ AR	../lib/internal/x86_64-pc-linux-gnu/libethread.a
+ RANLIB	../lib/internal/x86_64-pc-linux-gnu/libethread.a
+ LD	/home/bat/projects/bream/upstream/otp-reference-build/erts/lib_src/yielding_c_fun/bin/x86_64-pc-linux-gnu/yielding_c_fun
+ GEN	obj/x86_64-pc-linux-gnu/opt/MADE
+make[4]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/lib_src'
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/lib_src'
+ GEN	x86_64-pc-linux-gnu/opt/jit/erl_db_insert_list.ycf.h
+ GEN	x86_64-pc-linux-gnu/opt/jit/erl_map.ycf.h
+ GEN	x86_64-pc-linux-gnu/opt/jit/utils.ycf.h
+ GEN	x86_64-pc-linux-gnu/opt/jit/GENERATED
+make[2]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator'
+make[1]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator'
+make[1]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator'
+ MAKE	depend
+make[2]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator'
+ GEN	x86_64-pc-linux-gnu/opt/jit/jit.depend.mk
+ GEN	x86_64-pc-linux-gnu/opt/jit/src.depend.mk
+ GEN	x86_64-pc-linux-gnu/opt/jit/drv.depend.mk
+ GEN	x86_64-pc-linux-gnu/opt/jit/nif.depend.mk
+ GEN	x86_64-pc-linux-gnu/opt/jit/sys.depend.mk
+ GEN	x86_64-pc-linux-gnu/opt/jit/target.depend.mk
+ GEN	x86_64-pc-linux-gnu/opt/jit/zlib.depend.mk
+ GEN	x86_64-pc-linux-gnu/opt/jit/zstd.depend.mk
+ GEN	x86_64-pc-linux-gnu/opt/jit/ryu.depend.mk
+ GEN	x86_64-pc-linux-gnu/opt/jit/depend.mk
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/lib_src'
+ MAKE	depend
+make[4]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/lib_src'
+make[4]: Nothing to be done for 'depend'.
+make[4]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/lib_src'
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/lib_src'
+make[2]: Nothing to be done for 'depend'.
+make[2]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator'
+make[1]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator'
+make[1]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/lib_src'
+ MAKE	depend
+make[2]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/lib_src'
+make[2]: Nothing to be done for 'depend'.
+make[2]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/lib_src'
+make[1]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/lib_src'
+ MAKE	erl_interface_build
+make[1]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface'
+=== Entering application erl_interface
+make[2]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/src'
+ MAKE	opt
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/src'
+mkdir -p erts
+cp /home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/beam/erl_md5.c erts/
+cp /home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/beam/erl_md5.h erts/
+ GEN	x86_64-pc-linux-gnu/depend.mk
+ CC	x86_64-pc-linux-gnu/depend.mk
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.st/x86_64-pc-linux-gnu/ei_connect.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.st/x86_64-pc-linux-gnu/ei_resolve.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.st/x86_64-pc-linux-gnu/eirecv.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.st/x86_64-pc-linux-gnu/send.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.st/x86_64-pc-linux-gnu/send_exit.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.st/x86_64-pc-linux-gnu/send_reg.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.st/x86_64-pc-linux-gnu/decode_atom.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.st/x86_64-pc-linux-gnu/decode_big.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.st/x86_64-pc-linux-gnu/decode_bignum.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.st/x86_64-pc-linux-gnu/decode_binary.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.st/x86_64-pc-linux-gnu/decode_boolean.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.st/x86_64-pc-linux-gnu/decode_char.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.st/x86_64-pc-linux-gnu/decode_double.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.st/x86_64-pc-linux-gnu/decode_fun.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.st/x86_64-pc-linux-gnu/decode_intlist.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.st/x86_64-pc-linux-gnu/decode_iodata.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.st/x86_64-pc-linux-gnu/decode_list_header.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.st/x86_64-pc-linux-gnu/decode_long.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.st/x86_64-pc-linux-gnu/decode_pid.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.st/x86_64-pc-linux-gnu/decode_port.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.st/x86_64-pc-linux-gnu/decode_ref.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.st/x86_64-pc-linux-gnu/decode_skip.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.st/x86_64-pc-linux-gnu/decode_string.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.st/x86_64-pc-linux-gnu/decode_trace.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.st/x86_64-pc-linux-gnu/decode_tuple_header.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.st/x86_64-pc-linux-gnu/decode_ulong.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.st/x86_64-pc-linux-gnu/decode_version.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.st/x86_64-pc-linux-gnu/decode_longlong.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.st/x86_64-pc-linux-gnu/decode_ulonglong.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.st/x86_64-pc-linux-gnu/encode_atom.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.st/x86_64-pc-linux-gnu/encode_big.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.st/x86_64-pc-linux-gnu/encode_bignum.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.st/x86_64-pc-linux-gnu/encode_binary.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.st/x86_64-pc-linux-gnu/encode_boolean.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.st/x86_64-pc-linux-gnu/encode_char.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.st/x86_64-pc-linux-gnu/encode_double.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.st/x86_64-pc-linux-gnu/encode_fun.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.st/x86_64-pc-linux-gnu/encode_list_header.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.st/x86_64-pc-linux-gnu/encode_long.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.st/x86_64-pc-linux-gnu/encode_pid.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.st/x86_64-pc-linux-gnu/encode_port.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.st/x86_64-pc-linux-gnu/encode_ref.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.st/x86_64-pc-linux-gnu/encode_string.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.st/x86_64-pc-linux-gnu/encode_trace.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.st/x86_64-pc-linux-gnu/encode_tuple_header.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.st/x86_64-pc-linux-gnu/encode_ulong.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.st/x86_64-pc-linux-gnu/encode_version.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.st/x86_64-pc-linux-gnu/encode_longlong.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.st/x86_64-pc-linux-gnu/encode_ulonglong.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.st/x86_64-pc-linux-gnu/epmd_port.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.st/x86_64-pc-linux-gnu/epmd_publish.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.st/x86_64-pc-linux-gnu/epmd_unpublish.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.st/x86_64-pc-linux-gnu/ei_decode_term.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.st/x86_64-pc-linux-gnu/ei_format.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.st/x86_64-pc-linux-gnu/ei_locking.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.st/x86_64-pc-linux-gnu/ei_malloc.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.st/x86_64-pc-linux-gnu/ei_portio.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.st/x86_64-pc-linux-gnu/ei_printterm.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.st/x86_64-pc-linux-gnu/ei_pthreads.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.st/x86_64-pc-linux-gnu/ei_trace.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.st/x86_64-pc-linux-gnu/ei_x_encode.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.st/x86_64-pc-linux-gnu/get_type.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.st/x86_64-pc-linux-gnu/show_msg.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.st/x86_64-pc-linux-gnu/ei_compat.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.st/x86_64-pc-linux-gnu/ei_init.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.st/x86_64-pc-linux-gnu/ei_cmp_nc.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.st/x86_64-pc-linux-gnu/global_names.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.st/x86_64-pc-linux-gnu/global_register.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.st/x86_64-pc-linux-gnu/global_unregister.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.st/x86_64-pc-linux-gnu/global_whereis.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.st/x86_64-pc-linux-gnu/erl_md5.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.mt/x86_64-pc-linux-gnu/ei_connect.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.mt/x86_64-pc-linux-gnu/ei_resolve.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.mt/x86_64-pc-linux-gnu/eirecv.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.mt/x86_64-pc-linux-gnu/send.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.mt/x86_64-pc-linux-gnu/send_exit.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.mt/x86_64-pc-linux-gnu/send_reg.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.mt/x86_64-pc-linux-gnu/decode_atom.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.mt/x86_64-pc-linux-gnu/decode_big.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.mt/x86_64-pc-linux-gnu/decode_bignum.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.mt/x86_64-pc-linux-gnu/decode_binary.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.mt/x86_64-pc-linux-gnu/decode_boolean.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.mt/x86_64-pc-linux-gnu/decode_char.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.mt/x86_64-pc-linux-gnu/decode_double.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.mt/x86_64-pc-linux-gnu/decode_fun.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.mt/x86_64-pc-linux-gnu/decode_intlist.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.mt/x86_64-pc-linux-gnu/decode_iodata.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.mt/x86_64-pc-linux-gnu/decode_list_header.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.mt/x86_64-pc-linux-gnu/decode_long.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.mt/x86_64-pc-linux-gnu/decode_pid.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.mt/x86_64-pc-linux-gnu/decode_port.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.mt/x86_64-pc-linux-gnu/decode_ref.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.mt/x86_64-pc-linux-gnu/decode_skip.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.mt/x86_64-pc-linux-gnu/decode_string.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.mt/x86_64-pc-linux-gnu/decode_trace.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.mt/x86_64-pc-linux-gnu/decode_tuple_header.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.mt/x86_64-pc-linux-gnu/decode_ulong.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.mt/x86_64-pc-linux-gnu/decode_version.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.mt/x86_64-pc-linux-gnu/decode_longlong.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.mt/x86_64-pc-linux-gnu/decode_ulonglong.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.mt/x86_64-pc-linux-gnu/encode_atom.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.mt/x86_64-pc-linux-gnu/encode_big.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.mt/x86_64-pc-linux-gnu/encode_bignum.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.mt/x86_64-pc-linux-gnu/encode_binary.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.mt/x86_64-pc-linux-gnu/encode_boolean.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.mt/x86_64-pc-linux-gnu/encode_char.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.mt/x86_64-pc-linux-gnu/encode_double.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.mt/x86_64-pc-linux-gnu/encode_fun.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.mt/x86_64-pc-linux-gnu/encode_list_header.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.mt/x86_64-pc-linux-gnu/encode_long.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.mt/x86_64-pc-linux-gnu/encode_pid.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.mt/x86_64-pc-linux-gnu/encode_port.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.mt/x86_64-pc-linux-gnu/encode_ref.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.mt/x86_64-pc-linux-gnu/encode_string.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.mt/x86_64-pc-linux-gnu/encode_trace.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.mt/x86_64-pc-linux-gnu/encode_tuple_header.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.mt/x86_64-pc-linux-gnu/encode_ulong.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.mt/x86_64-pc-linux-gnu/encode_version.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.mt/x86_64-pc-linux-gnu/encode_longlong.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.mt/x86_64-pc-linux-gnu/encode_ulonglong.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.mt/x86_64-pc-linux-gnu/epmd_port.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.mt/x86_64-pc-linux-gnu/epmd_publish.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.mt/x86_64-pc-linux-gnu/epmd_unpublish.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.mt/x86_64-pc-linux-gnu/ei_decode_term.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.mt/x86_64-pc-linux-gnu/ei_format.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.mt/x86_64-pc-linux-gnu/ei_locking.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.mt/x86_64-pc-linux-gnu/ei_malloc.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.mt/x86_64-pc-linux-gnu/ei_portio.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.mt/x86_64-pc-linux-gnu/ei_printterm.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.mt/x86_64-pc-linux-gnu/ei_pthreads.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.mt/x86_64-pc-linux-gnu/ei_trace.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.mt/x86_64-pc-linux-gnu/ei_x_encode.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.mt/x86_64-pc-linux-gnu/get_type.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.mt/x86_64-pc-linux-gnu/show_msg.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.mt/x86_64-pc-linux-gnu/ei_compat.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.mt/x86_64-pc-linux-gnu/ei_init.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.mt/x86_64-pc-linux-gnu/ei_cmp_nc.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.mt/x86_64-pc-linux-gnu/global_names.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.mt/x86_64-pc-linux-gnu/global_register.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.mt/x86_64-pc-linux-gnu/global_unregister.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.mt/x86_64-pc-linux-gnu/global_whereis.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj.mt/x86_64-pc-linux-gnu/erl_md5.o
+ VSN	../ebin/erl_interface.app
+ VSN	../ebin/erl_interface.appup
+ AR	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj/x86_64-pc-linux-gnu/libei_st.a
+ RANLIB	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj/x86_64-pc-linux-gnu/libei_st.a
+ AR	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj/x86_64-pc-linux-gnu/libei.a
+ RANLIB	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/obj/x86_64-pc-linux-gnu/libei.a
+ LD	/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/bin/x86_64-pc-linux-gnu/erl_call
+prog/erl_call.c: In function ‘main’:
+prog/erl_call.c:497:11: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  497 |         p = strchr((const char *)flags.node, (int) '@');
+      |           ^
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/src'
+make[2]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/src'
+make[2]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/doc'
+make[2]: Nothing to be done for 'opt'.
+make[2]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/doc'
+=== Leaving application erl_interface
+make[1]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface'
+ MAKE	emulator
+make[1]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/erts'
+make[2]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/erts'
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator'
+ MAKE	opt
+make[4]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator'
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_main.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/preload.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_process.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/asm_load.o
+ CXX	x86_64-pc-linux-gnu/opt/jit/asmjit/core.h.gch
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/beam_common.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/beam_bif_load.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/beam_bp.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/beam_catches.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/beam_debug.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/beam_load.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/beam_opcodes.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/beam_ranges.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/beam_transform_helpers.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/code_ix.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_alloc.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_alloc_util.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_goodfit_alloc.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_bestfit_alloc.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_afit_alloc.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_init.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_atom_table.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_bif_table.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_bif_ddll.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_bif_guard.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_bif_info.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_bif_op.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_bif_os.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_bif_lists.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_bif_persistent.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_bif_atomics.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_bif_counters.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_bif_trace.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_bif_unique.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_guard_bifs.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_dirty_bif_wrap.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_trace.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/copy.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/utils.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/bif.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/io.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_printf_term.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_debug.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_debugger.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_message.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_proc_sig_queue.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_process_dict.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_process_lock.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_port_task.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_arith.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/time.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_time_sup.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/external.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/dist.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/binary.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_db.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_db_util.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_db_hash.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_db_tree.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_thr_progress.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/big.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/hash.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/index.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/atom.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/module.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/export.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/register.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/break.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_async.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_lock_check.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_dyn_lock_check.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_gc.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_lock_count.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_errno_str.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_bits.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_math.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_fun.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_bif_port.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_term.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_node_tables.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_monitor_link.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_process_dump.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_hl_timer.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_cpu_topology.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_drv_thread.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_bif_chksum.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_md5.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_bif_re.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_unicode.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/packet_parser.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/safe_hash.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_zlib.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_nif.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_bif_binary.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_ao_firstfit_alloc.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_thr_queue.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_sched_spec_pre_alloc.o
+beam/erl_bif_binary.c: In function ‘bm_find_first_match’:
+beam/erl_bif_binary.c:862:17: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  862 |     pos_pointer = memchr(&haystack[j + needle_last], needle[needle_last], mem_read);
+      |                 ^
+beam/erl_bif_binary.c: In function ‘bm_find_all_non_overlapping’:
+beam/erl_bif_binary.c:948:25: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  948 |             pos_pointer = memchr(&haystack[j + needle_last], needle[needle_last], mem_read);
+      |                         ^
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_ptab.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_map.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_msacc.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_lock_flags.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_io_queue.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_db_catree.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/socket_dbg.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/socket_tarray.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/socket_util.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_flxctr.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_nfunc_sched.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_global_literals.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/beam_file.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/beam_types.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_term_hashing.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_bif_coverage.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_iolist.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_etp.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_internal_test.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_record.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_crash_dump.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/sys.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/sys_drivers.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/sys_env.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/sys_uds.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/driver_tab.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/unix_prim_file.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/sys_float.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/sys_time.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/sys_signal_stack.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/unix_socket_syncio.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_poll.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_check_io.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_mseg.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_mmap.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_osenv.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_unix_sys_ddll.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_sys_common_misc.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_os_monotonic_time_extender.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erlang_lttng.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/inet_drv.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/ram_file_drv.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/prim_tty_nif.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_tracer_nif.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/prim_buffer_nif.o
+drivers/common/inet_drv.c: In function ‘inet_async_binary_data’:
+drivers/common/inet_drv.c:3875:15: warning: unused variable ‘spec_size’ [-Wunused-variable]
+ 3875 |     const int spec_size = PACKET_ERL_DRV_TERM_DATA_LEN;
+      |               ^~~~~~~~~
+drivers/common/inet_drv.c: In function ‘packet_binary_message’:
+drivers/common/inet_drv.c:4111:15: warning: unused variable ‘spec_size’ [-Wunused-variable]
+ 4111 |     const int spec_size = PACKET_ERL_DRV_TERM_DATA_LEN;
+      |               ^~~~~~~~~
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/prim_file_nif.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/zlib_nif.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/zstd_nif.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/prim_socket_nif.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/prim_net_nif.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/pcre/obj/x86_64-pc-linux-gnu/opt/pcre2_auto_possess.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/pcre/obj/x86_64-pc-linux-gnu/opt/pcre2_chartables.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/pcre/obj/x86_64-pc-linux-gnu/opt/pcre2_chkdint.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/pcre/obj/x86_64-pc-linux-gnu/opt/pcre2_compile.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/pcre/obj/x86_64-pc-linux-gnu/opt/pcre2_compile_cgroup.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/pcre/obj/x86_64-pc-linux-gnu/opt/pcre2_compile_class.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/pcre/obj/x86_64-pc-linux-gnu/opt/pcre2_config.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/pcre/obj/x86_64-pc-linux-gnu/opt/pcre2_context.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/pcre/obj/x86_64-pc-linux-gnu/opt/pcre2_error.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/pcre/obj/x86_64-pc-linux-gnu/opt/pcre2_extuni.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/pcre/obj/x86_64-pc-linux-gnu/opt/pcre2_find_bracket.o
+ GEN	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/pcre/pcre2_match_yield_coverage.gen.h
+ GEN	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/pcre/pcre2_match_loop_break_cases.gen.h
+ GEN	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/pcre/pcre2_match_memchr_break_cases.gen.h
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/pcre/obj/x86_64-pc-linux-gnu/opt/pcre2_match_data.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/pcre/obj/x86_64-pc-linux-gnu/opt/pcre2_newline.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/pcre/obj/x86_64-pc-linux-gnu/opt/pcre2_ord2utf.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/pcre/obj/x86_64-pc-linux-gnu/opt/pcre2_pattern_info.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/pcre/obj/x86_64-pc-linux-gnu/opt/pcre2_script_run.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/pcre/obj/x86_64-pc-linux-gnu/opt/pcre2_serialize.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/pcre/obj/x86_64-pc-linux-gnu/opt/pcre2_string_utils.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/pcre/obj/x86_64-pc-linux-gnu/opt/pcre2_study.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/pcre/obj/x86_64-pc-linux-gnu/opt/pcre2_substring.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/pcre/obj/x86_64-pc-linux-gnu/opt/pcre2_tables.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/pcre/obj/x86_64-pc-linux-gnu/opt/pcre2_ucd.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/pcre/obj/x86_64-pc-linux-gnu/opt/pcre2_valid_utf.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/pcre/obj/x86_64-pc-linux-gnu/opt/pcre2_xclass.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/ryu/obj/x86_64-pc-linux-gnu/opt/d2s.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/zstd/obj/x86_64-pc-linux-gnu/opt/debug.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/zstd/obj/x86_64-pc-linux-gnu/opt/entropy_common.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/zstd/obj/x86_64-pc-linux-gnu/opt/error_private.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/zstd/obj/x86_64-pc-linux-gnu/opt/fse_decompress.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/zstd/obj/x86_64-pc-linux-gnu/opt/pool.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/zstd/obj/x86_64-pc-linux-gnu/opt/threading.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/zstd/obj/x86_64-pc-linux-gnu/opt/xxhash.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/zstd/obj/x86_64-pc-linux-gnu/opt/zstd_common.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/zstd/obj/x86_64-pc-linux-gnu/opt/fse_compress.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/zstd/obj/x86_64-pc-linux-gnu/opt/hist.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/zstd/obj/x86_64-pc-linux-gnu/opt/huf_compress.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/zstd/obj/x86_64-pc-linux-gnu/opt/zstd_compress.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/zstd/obj/x86_64-pc-linux-gnu/opt/zstd_compress_literals.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/zstd/obj/x86_64-pc-linux-gnu/opt/zstd_compress_sequences.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/zstd/obj/x86_64-pc-linux-gnu/opt/zstd_compress_superblock.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/zstd/obj/x86_64-pc-linux-gnu/opt/zstd_double_fast.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/zstd/obj/x86_64-pc-linux-gnu/opt/zstd_fast.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/zstd/obj/x86_64-pc-linux-gnu/opt/zstd_lazy.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/zstd/obj/x86_64-pc-linux-gnu/opt/zstd_ldm.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/zstd/obj/x86_64-pc-linux-gnu/opt/zstd_opt.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/zstd/obj/x86_64-pc-linux-gnu/opt/zstd_preSplit.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/zstd/obj/x86_64-pc-linux-gnu/opt/zstdmt_compress.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/zstd/obj/x86_64-pc-linux-gnu/opt/huf_decompress.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/zstd/obj/x86_64-pc-linux-gnu/opt/zstd_ddict.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/zstd/obj/x86_64-pc-linux-gnu/opt/zstd_decompress.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/zstd/obj/x86_64-pc-linux-gnu/opt/zstd_decompress_block.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/zstd/obj/x86_64-pc-linux-gnu/opt/huf_decompress_amd64.o
+ CXX	obj/x86_64-pc-linux-gnu/opt/jit/beam_asm_global.o
+ CXX	obj/x86_64-pc-linux-gnu/opt/jit/beam_asm_module.o
+ CXX	obj/x86_64-pc-linux-gnu/opt/jit/beam_jit_bs.o
+ CXX	obj/x86_64-pc-linux-gnu/opt/jit/beam_jit_common.o
+ CXX	obj/x86_64-pc-linux-gnu/opt/jit/beam_jit_main.o
+ CXX	obj/x86_64-pc-linux-gnu/opt/jit/beam_jit_metadata.o
+ CXX	obj/x86_64-pc-linux-gnu/opt/jit/process_main.o
+ CXX	obj/x86_64-pc-linux-gnu/opt/jit/instr_arith.o
+ CXX	obj/x86_64-pc-linux-gnu/opt/jit/instr_bs.o
+ CXX	obj/x86_64-pc-linux-gnu/opt/jit/instr_bif.o
+ CXX	obj/x86_64-pc-linux-gnu/opt/jit/instr_call.o
+ CXX	obj/x86_64-pc-linux-gnu/opt/jit/instr_common.o
+ CXX	obj/x86_64-pc-linux-gnu/opt/jit/instr_float.o
+ CXX	obj/x86_64-pc-linux-gnu/opt/jit/instr_fun.o
+ CXX	obj/x86_64-pc-linux-gnu/opt/jit/instr_guard_bifs.o
+ CXX	obj/x86_64-pc-linux-gnu/opt/jit/instr_map.o
+ CXX	obj/x86_64-pc-linux-gnu/opt/jit/instr_msg.o
+ CXX	obj/x86_64-pc-linux-gnu/opt/jit/instr_records.o
+ CXX	obj/x86_64-pc-linux-gnu/opt/jit/instr_select.o
+ CXX	obj/x86_64-pc-linux-gnu/opt/jit/instr_trace.o
+ CXX	obj/x86_64-pc-linux-gnu/opt/jit/asmjit/core/archtraits.o
+ CXX	obj/x86_64-pc-linux-gnu/opt/jit/asmjit/core/assembler.o
+ CXX	obj/x86_64-pc-linux-gnu/opt/jit/asmjit/core/builder.o
+ CXX	obj/x86_64-pc-linux-gnu/opt/jit/asmjit/core/codeholder.o
+ CXX	obj/x86_64-pc-linux-gnu/opt/jit/asmjit/core/codewriter.o
+ CXX	obj/x86_64-pc-linux-gnu/opt/jit/asmjit/core/compiler.o
+ CXX	obj/x86_64-pc-linux-gnu/opt/jit/asmjit/core/constpool.o
+ CXX	obj/x86_64-pc-linux-gnu/opt/jit/asmjit/core/cpuinfo.o
+ CXX	obj/x86_64-pc-linux-gnu/opt/jit/asmjit/core/emithelper.o
+ CXX	obj/x86_64-pc-linux-gnu/opt/jit/asmjit/core/emitter.o
+ CXX	obj/x86_64-pc-linux-gnu/opt/jit/asmjit/core/emitterutils.o
+ CXX	obj/x86_64-pc-linux-gnu/opt/jit/asmjit/core/environment.o
+ CXX	obj/x86_64-pc-linux-gnu/opt/jit/asmjit/core/errorhandler.o
+ CXX	obj/x86_64-pc-linux-gnu/opt/jit/asmjit/core/formatter.o
+ CXX	obj/x86_64-pc-linux-gnu/opt/jit/asmjit/core/func.o
+ CXX	obj/x86_64-pc-linux-gnu/opt/jit/asmjit/core/funcargscontext.o
+ CXX	obj/x86_64-pc-linux-gnu/opt/jit/asmjit/core/globals.o
+ CXX	obj/x86_64-pc-linux-gnu/opt/jit/asmjit/core/inst.o
+ CXX	obj/x86_64-pc-linux-gnu/opt/jit/asmjit/core/instdb.o
+ CXX	obj/x86_64-pc-linux-gnu/opt/jit/asmjit/core/jitallocator.o
+ CXX	obj/x86_64-pc-linux-gnu/opt/jit/asmjit/core/jitruntime.o
+ CXX	obj/x86_64-pc-linux-gnu/opt/jit/asmjit/core/logger.o
+ CXX	obj/x86_64-pc-linux-gnu/opt/jit/asmjit/core/operand.o
+ CXX	obj/x86_64-pc-linux-gnu/opt/jit/asmjit/core/osutils.o
+ CXX	obj/x86_64-pc-linux-gnu/opt/jit/asmjit/core/ralocal.o
+ CXX	obj/x86_64-pc-linux-gnu/opt/jit/asmjit/core/rapass.o
+ CXX	obj/x86_64-pc-linux-gnu/opt/jit/asmjit/core/rastack.o
+ CXX	obj/x86_64-pc-linux-gnu/opt/jit/asmjit/core/string.o
+ CXX	obj/x86_64-pc-linux-gnu/opt/jit/asmjit/core/target.o
+ CXX	obj/x86_64-pc-linux-gnu/opt/jit/asmjit/core/type.o
+ CXX	obj/x86_64-pc-linux-gnu/opt/jit/asmjit/core/virtmem.o
+ CXX	obj/x86_64-pc-linux-gnu/opt/jit/asmjit/support/arena.o
+ CXX	obj/x86_64-pc-linux-gnu/opt/jit/asmjit/support/arenabitset.o
+ CXX	obj/x86_64-pc-linux-gnu/opt/jit/asmjit/support/arenahash.o
+ CXX	obj/x86_64-pc-linux-gnu/opt/jit/asmjit/support/arenalist.o
+ CXX	obj/x86_64-pc-linux-gnu/opt/jit/asmjit/support/arenatree.o
+ CXX	obj/x86_64-pc-linux-gnu/opt/jit/asmjit/support/arenavector.o
+ CXX	obj/x86_64-pc-linux-gnu/opt/jit/asmjit/support/support.o
+ CXX	obj/x86_64-pc-linux-gnu/opt/jit/asmjit/x86/x86assembler.o
+ CXX	obj/x86_64-pc-linux-gnu/opt/jit/asmjit/x86/x86builder.o
+ CXX	obj/x86_64-pc-linux-gnu/opt/jit/asmjit/x86/x86compiler.o
+ CXX	obj/x86_64-pc-linux-gnu/opt/jit/asmjit/x86/x86emithelper.o
+ CXX	obj/x86_64-pc-linux-gnu/opt/jit/asmjit/x86/x86formatter.o
+ CXX	obj/x86_64-pc-linux-gnu/opt/jit/asmjit/x86/x86func.o
+ CXX	obj/x86_64-pc-linux-gnu/opt/jit/asmjit/x86/x86instapi.o
+ CXX	obj/x86_64-pc-linux-gnu/opt/jit/asmjit/x86/x86instdb.o
+ CXX	obj/x86_64-pc-linux-gnu/opt/jit/asmjit/x86/x86operand.o
+ CXX	obj/x86_64-pc-linux-gnu/opt/jit/asmjit/x86/x86rapass.o
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_poll.flbk.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/pcre/obj/x86_64-pc-linux-gnu/opt/pcre2_match.o
+/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/pcre/pcre2_match.c: In function ‘memchr_erlang’:
+/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/pcre/pcre2_match.c:7330:15: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 7330 |         found = memchr(from, c, left);
+      |               ^
+/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/pcre/pcre2_match.c:7336:15: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 7336 |         found = memchr(from, c, max_bytes);
+      |               ^
+ AR	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/ryu/obj/x86_64-pc-linux-gnu/opt/libryu.a
+ CC	obj/x86_64-pc-linux-gnu/opt/jit/erl_child_setup.o
+ LD	/home/bat/projects/bream/upstream/otp-reference-build/bin/x86_64-pc-linux-gnu/erl_child_setup
+ AR	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/zstd/obj/x86_64-pc-linux-gnu/opt/libzstd.a
+ AR	/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator/pcre/obj/x86_64-pc-linux-gnu/opt/libepcre.a
+ LD	/home/bat/projects/bream/upstream/otp-reference-build/bin/x86_64-pc-linux-gnu/beam.jit
+ AR	/home/bat/projects/bream/upstream/otp-reference-build/bin/x86_64-pc-linux-gnu/libbeam.a
+ RANLIB	/home/bat/projects/bream/upstream/otp-reference-build/bin/x86_64-pc-linux-gnu/libbeam.a
+/usr/bin/install -c /home/bat/projects/bream/upstream/otp-reference-build/bin/x86_64-pc-linux-gnu/beam.jit /home/bat/projects/bream/upstream/otp-reference-build/bin/x86_64-pc-linux-gnu/beam.smp
+make[4]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator'
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/emulator'
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/etc'
+make[4]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/etc/common'
+ MAKE	opt
+make[5]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/etc/common'
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/obj/x86_64-pc-linux-gnu/inet_gethost.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/obj/x86_64-pc-linux-gnu/heart.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/obj/x86_64-pc-linux-gnu/erlexec.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/obj/x86_64-pc-linux-gnu/typer.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/obj/x86_64-pc-linux-gnu/dialyzer.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/obj/x86_64-pc-linux-gnu/erlc.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/obj/x86_64-pc-linux-gnu/escript.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/obj/x86_64-pc-linux-gnu/ct_run.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/obj/x86_64-pc-linux-gnu/safe_string.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/obj/x86_64-pc-linux-gnu/run_erl.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/obj/x86_64-pc-linux-gnu/to_erl.o
+ LD	/home/bat/projects/bream/upstream/otp-reference-build/bin/x86_64-pc-linux-gnu/erl_call
+ LD	/home/bat/projects/bream/upstream/otp-reference-build/bin/x86_64-pc-linux-gnu/erl_call
+ VSN	Install
+ VSN	erl.src
+./erlexec.c: In function ‘main’:
+./erlexec.c:596:27: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  596 |         while ((sep_index = strstr(in_index, PATHSEP))) {
+      |                           ^
+ LD	/home/bat/projects/bream/upstream/otp-reference-build/bin/x86_64-pc-linux-gnu/typer
+ LD	/home/bat/projects/bream/upstream/otp-reference-build/bin/x86_64-pc-linux-gnu/dialyzer
+ LD	/home/bat/projects/bream/upstream/otp-reference-build/bin/x86_64-pc-linux-gnu/ct_run
+ LD	/home/bat/projects/bream/upstream/otp-reference-build/bin/x86_64-pc-linux-gnu/escript
+ LD	/home/bat/projects/bream/upstream/otp-reference-build/bin/x86_64-pc-linux-gnu/to_erl
+ LD	/home/bat/projects/bream/upstream/otp-reference-build/bin/x86_64-pc-linux-gnu/heart
+ LD	/home/bat/projects/bream/upstream/otp-reference-build/bin/x86_64-pc-linux-gnu/erlc
+ LD	/home/bat/projects/bream/upstream/otp-reference-build/bin/x86_64-pc-linux-gnu/run_erl
+ LD	/home/bat/projects/bream/upstream/otp-reference-build/bin/x86_64-pc-linux-gnu/inet_gethost
+ LD	/home/bat/projects/bream/upstream/otp-reference-build/bin/x86_64-pc-linux-gnu/erlexec
+make[5]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/etc/common'
+make[4]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/etc/common'
+make[4]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/etc/unix'
+ GEN	etp-commands
+make[4]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/etc/unix'
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/etc'
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/epmd'
+make[4]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/epmd/src'
+ MAKE	opt
+make[5]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/epmd/src'
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/obj/x86_64-pc-linux-gnu/epmd.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/obj/x86_64-pc-linux-gnu/epmd_cli.o
+ CC	/home/bat/projects/bream/upstream/otp-reference-build/erts/obj/x86_64-pc-linux-gnu/epmd_srv.o
+ LD	/home/bat/projects/bream/upstream/otp-reference-build/bin/x86_64-pc-linux-gnu/epmd
+make[5]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/epmd/src'
+make[4]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/epmd/src'
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/epmd'
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/lib_src'
+ MAKE	opt
+make[4]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/lib_src'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/lib_src'
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/lib_src'
+(cd preloaded/src && make ../../ebin/erts.app)
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/preloaded/src'
+ GEN	deps/deps.mk
+ VSN	../../ebin/erts.app
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/preloaded/src'
+make[2]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/erts'
+make[1]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/erts'
+ MAKE	secondary_bootstrap
+make[1]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib'
+make[2]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/parsetools'
+=== Entering application parsetools
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/parsetools/src'
+ GEN	deps/deps.mk
+ ERLC	../ebin/leex.beam
+ ERLC	../ebin/yecc.beam
+ ERLC	../ebin/yeccparser.beam
+ ERLC	../ebin/yeccscan.beam
+ VSN	../ebin/parsetools.app
+ VSN	../ebin/parsetools.appup
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/parsetools/src'
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/parsetools/doc'
+make[3]: Nothing to be done for 'opt'.
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/parsetools/doc'
+=== Leaving application parsetools
+make[2]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/parsetools'
+make[2]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/sasl'
+=== Entering application sasl
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/sasl/src'
+ GEN	deps/deps.mk
+ ERLC	../ebin/alarm_handler.beam
+ ERLC	../ebin/sasl.beam
+ ERLC	../ebin/sasl_report.beam
+ ERLC	../ebin/sasl_report_file_h.beam
+ ERLC	../ebin/sasl_report_tty_h.beam
+ ERLC	../ebin/format_lib_supp.beam
+ ERLC	../ebin/misc_supp.beam
+ ERLC	../ebin/rb.beam
+ ERLC	../ebin/rb_format_supp.beam
+ ERLC	../ebin/release_handler.beam
+ ERLC	../ebin/release_handler_1.beam
+ ERLC	../ebin/systools.beam
+ ERLC	../ebin/systools_make.beam
+ ERLC	../ebin/systools_rc.beam
+ ERLC	../ebin/systools_relup.beam
+ ERLC	../ebin/systools_lib.beam
+ ERLC	../ebin/erlsrv.beam
+ VSN	../ebin/sasl.app
+ VSN	../ebin/sasl.appup
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/sasl/src'
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/sasl/doc'
+make[3]: Nothing to be done for 'opt'.
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/sasl/doc'
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/sasl/examples/src'
+ ERLC	../ebin/target_system.beam
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/sasl/examples/src'
+=== Leaving application sasl
+make[2]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/sasl'
+make[2]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/asn1/src'
+ ERLC	prepare_templates.beam
+ ERLC	asn1rtt_check.beam
+ ERLC	asn1rtt_ext.beam
+ ERLC	asn1rtt_per_common.beam
+ ERLC	asn1rtt_real_common.beam
+ ERLC	asn1rtt_ber.beam
+ ERLC	asn1rtt_jer.beam
+ ERLC	asn1rtt_per.beam
+ ERLC	asn1rtt_uper.beam
+ ERLC	../ebin/asn1ct_func.beam
+ GEN	asn1ct_rtt.erl
+ ERLC	../ebin/asn1ct_rtt.beam
+ GEN	asn1ct_eval_ext.erl
+ GEN	deps/deps.mk
+ ERLC	../ebin/asn1ct.beam
+ ERLC	../ebin/asn1ct_check.beam
+ ERLC	../ebin/asn1_db.beam
+ ERLC	../ebin/asn1ct_pretty_format.beam
+ ERLC	../ebin/asn1ct_gen.beam
+ ERLC	../ebin/asn1ct_gen_check.beam
+ ERLC	../ebin/asn1ct_gen_per.beam
+ ERLC	../ebin/asn1ct_name.beam
+ ERLC	../ebin/asn1ct_constructed_per.beam
+ ERLC	../ebin/asn1ct_constructed_ber_bin_v2.beam
+ ERLC	../ebin/asn1ct_gen_ber_bin_v2.beam
+ ERLC	../ebin/asn1ct_gen_jer.beam
+ ERLC	../ebin/asn1ct_imm.beam
+ ERLC	../ebin/asn1ct_value.beam
+ ERLC	../ebin/asn1ct_tok.beam
+ ERLC	../ebin/asn1ct_parser2.beam
+ ERLC	../ebin/asn1ct_table.beam
+ ERLC	../ebin/asn1ct_partial_decode.beam
+ ERLC	../ebin/asn1ct_eval_ext.beam
+ ERLC	../ebin/asn1rt_nif.beam
+ VSN	../ebin/asn1.app
+ VSN	../ebin/asn1.appup
+make[2]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/asn1/src'
+make[1]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib'
+ MAKE	tertiary_bootstrap
+make[1]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib'
+make[2]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/parsetools'
+=== Entering application parsetools
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/parsetools/src'
+make[3]: Nothing to be done for 'opt'.
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/parsetools/src'
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/parsetools/doc'
+make[3]: Nothing to be done for 'opt'.
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/parsetools/doc'
+=== Leaving application parsetools
+make[2]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/parsetools'
+make[2]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/public_key'
+=== Entering application public_key
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/public_key/asn1'
+ ASN	../src/PKCS-FRAME.erl
+ GEN	../include/PKCS-FRAME.hrl
+ ERLC	../ebin/PKCS-FRAME.beam
+ ASN	../src/AlgorithmInformation-2009.erl
+ ERLC	../ebin/AlgorithmInformation-2009.beam
+ ASN	../src/AttributeCertificateVersion1-2009.erl
+ ERLC	../ebin/AttributeCertificateVersion1-2009.beam
+ ASN	../src/CryptographicMessageSyntax-2009.erl
+ ERLC	../ebin/CryptographicMessageSyntax-2009.beam
+ ASN	../src/CryptographicMessageSyntaxAlgorithms-2009.erl
+ ERLC	../ebin/CryptographicMessageSyntaxAlgorithms-2009.beam
+ ASN	../src/CMSAesRsaesOaep-2009.erl
+ ERLC	../ebin/CMSAesRsaesOaep-2009.beam
+ ASN	../src/DSS.erl
+ ERLC	../ebin/DSS.beam
+ ASN	../src/ECPrivateKey.erl
+ ERLC	../ebin/ECPrivateKey.beam
+ ASN	../src/KEMAlgorithmInformation-2023.erl
+Makefile:129: warning: pattern recipe did not update peer target '../src/KEMAlgorithmInformation-2023.hrl'.
+ ERLC	../ebin/KEMAlgorithmInformation-2023.beam
+ ASN	../src/X509-ML-DSA-2025.erl
+ ERLC	../ebin/X509-ML-DSA-2025.beam
+ ASN	../src/X509-ML-KEM-2025.erl
+ ERLC	../ebin/X509-ML-KEM-2025.beam
+ ASN	../src/SLH-DSA-Module-2024.erl
+ ERLC	../ebin/SLH-DSA-Module-2024.beam
+ ASN	../src/OCSP-2024-08.erl
+ ERLC	../ebin/OCSP-2024-08.beam
+ ASN	../src/OTP-PKIX.erl
+ ERLC	../ebin/OTP-PKIX.beam
+ ASN	../src/OTP-PKIX-Relaxed.erl
+ ERLC	../ebin/OTP-PKIX-Relaxed.beam
+ ASN	../src/PKCS-1.erl
+ ERLC	../ebin/PKCS-1.beam
+ ASN	../src/PKCS-3.erl
+ ERLC	../ebin/PKCS-3.beam
+ ASN	../src/PKCS-10.erl
+ ERLC	../ebin/PKCS-10.beam
+ ASN	../src/PKIX-CommonTypes-2009.erl
+ ERLC	../ebin/PKIX-CommonTypes-2009.beam
+ ASN	../src/PKIX-X400Address-2009.erl
+ ERLC	../ebin/PKIX-X400Address-2009.beam
+ ASN	../src/PKIX1-PSS-OAEP-Algorithms-2009.erl
+ ERLC	../ebin/PKIX1-PSS-OAEP-Algorithms-2009.beam
+ ASN	../src/PKIX1Explicit-2009.erl
+ ERLC	../ebin/PKIX1Explicit-2009.beam
+ ASN	../src/PKIX1Implicit-2009.erl
+ ERLC	../ebin/PKIX1Implicit-2009.beam
+ ASN	../src/PKIXAlgs-2009.erl
+ ERLC	../ebin/PKIXAlgs-2009.beam
+ ASN	../src/PKIXCMP-2023.erl
+ ERLC	../ebin/PKIXCMP-2023.beam
+ ASN	../src/PKIXCRMF-2009.erl
+ ERLC	../ebin/PKIXCRMF-2009.beam
+ ASN	../src/EnrollmentMessageSyntax-2009.erl
+ ERLC	../ebin/EnrollmentMessageSyntax-2009.beam
+ ASN	../src/PKIXAttributeCertificate-2009.erl
+ ERLC	../ebin/PKIXAttributeCertificate-2009.beam
+ ASN	../src/RFC5639.erl
+ ERLC	../ebin/RFC5639.beam
+ ASN	../src/Safecurves-pkix-18.erl
+ ERLC	../ebin/Safecurves-pkix-18.beam
+ ASN	../src/SecureMimeMessageV3dot1-2009.erl
+ ERLC	../ebin/SecureMimeMessageV3dot1-2009.beam
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/public_key/asn1'
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/public_key/src'
+ GEN	deps/deps.mk
+ ERLC	../ebin/public_key.beam
+ ERLC	../ebin/pubkey_pem.beam
+ ERLC	../ebin/pubkey_ssh.beam
+ ERLC	../ebin/pubkey_cert_records.beam
+ ERLC	../ebin/pubkey_crl.beam
+ ERLC	../ebin/pubkey_os_cacerts.beam
+ ERLC	../ebin/pubkey_translation.beam
+ ERLC	../ebin/pubkey_pbe.beam
+ ERLC	../ebin/pubkey_ocsp.beam
+ ERLC	../ebin/pubkey_cert.beam
+ ERLC	../ebin/pubkey_policy_tree.beam
+ VSN	../ebin/public_key.app
+ VSN	../ebin/public_key.appup
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/public_key/src'
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/public_key/c_src'
+make[3]: Nothing to be done for 'opt'.
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/public_key/c_src'
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/public_key/doc'
+make[3]: Nothing to be done for 'opt'.
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/public_key/doc'
+=== Leaving application public_key
+make[2]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/public_key'
+make[2]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface'
+=== Entering application erl_interface
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/src'
+ MAKE	opt
+make[4]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/src'
+make[4]: Nothing to be done for 'opt'.
+make[4]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/src'
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/src'
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/doc'
+make[3]: Nothing to be done for 'opt'.
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/doc'
+=== Leaving application erl_interface
+make[2]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface'
+make[2]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/syntax_tools'
+=== Entering application syntax_tools
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/syntax_tools/src'
+ ERLC	../ebin/merl.beam
+ ERLC	../ebin/erl_comment_scan.beam
+ ERLC	../ebin/erl_syntax.beam
+ ERLC	../ebin/erl_syntax_lib.beam
+ ERLC	merl_transform.beam
+ ERLC	../ebin/merl_transform.beam
+ GEN	deps/deps.mk
+ ERLC	../ebin/erl_prettypr.beam
+ ERLC	../ebin/erl_recomment.beam
+ ERLC	../ebin/epp_dodger.beam
+ ERLC	../ebin/prettypr.beam
+ VSN	../ebin/syntax_tools.app
+ VSN	../ebin/syntax_tools.appup
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/syntax_tools/src'
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/syntax_tools/examples'
+make[3]: Nothing to be done for 'opt'.
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/syntax_tools/examples'
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/syntax_tools/doc'
+make[3]: Nothing to be done for 'opt'.
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/syntax_tools/doc'
+=== Leaving application syntax_tools
+make[2]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/syntax_tools'
+make[2]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp'
+=== Entering application snmp
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/src/compile'
+ YECC	snmpc_mib_gram.erl
+ ERLC	../../ebin/snmpc.beam
+ ERLC	../../ebin/snmpc_lib.beam
+ ERLC	../../ebin/snmpc_mib_to_hrl.beam
+ ERLC	../../ebin/snmpc_misc.beam
+ ERLC	../../ebin/snmpc_tok.beam
+ VSN	../../bin/snmpc
+ ERLC	../../ebin/snmpc_mib_gram.beam
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/src/compile'
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/mibs'
+ GEN	/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/bin/snmp-v2tov1
+ SNMP	../priv/mibs/RFC1213-MIB.bin
+ SNMP	../priv/mibs/SNMPv2-TM.bin
+ SNMP	../priv/mibs/SNMPv2-MIB.bin
+ SNMP	../priv/mibs/SNMP-FRAMEWORK-MIB.bin
+ SNMP	../priv/mibs/SNMP-MPD-MIB.bin
+ SNMP	../priv/mibs/INET-ADDRESS-MIB.bin
+ SNMP	../priv/mibs/TRANSPORT-ADDRESS-MIB.bin
+ SNMP	../priv/mibs/OTP-REG.bin
+ GEN	v1/OTP-SNMPEA-MIB.mib.v1
+Assigning non-zero to $[ is no longer possible at /home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/bin/snmp-v2tov1.pl line 27.
+version: snmp-5.20.5
+version: snmp-5.20.5
+version: snmp-5.20.5
+version: snmp-5.20.5
+version: snmp-5.20.5
+version: snmp-5.20.5
+version: snmp-5.20.5
+version: snmp-5.20.5
+ SNMP	../include/TRANSPORT-ADDRESS-MIB.hrl
+ SNMP	../include/SNMPv2-TM.hrl
+ SNMP	../priv/mibs/SNMP-TARGET-MIB.bin
+ SNMP	../priv/mibs/SNMP-USER-BASED-SM-MIB.bin
+ SNMP	../priv/mibs/SNMP-VIEW-BASED-ACM-MIB.bin
+ SNMP	../priv/mibs/SNMP-USM-AES-MIB.bin
+ SNMP	../priv/mibs/SNMP-USM-HMAC-SHA2-MIB.bin
+ SNMP	../include/SNMP-FRAMEWORK-MIB.hrl
+ SNMP	../include/INET-ADDRESS-MIB.hrl
+ SNMP	../include/OTP-REG.hrl
+ SNMP	../priv/mibs/OTP-TC.bin
+[RFC1213-MIB.mib:657][WAR]: Index columns must be first for the default functions to work properly. atPhysAddress is no index column.
+[RFC1213-MIB.mib:1424][WAR]: Index columns must be first for the default functions to work properly. ipNetToMediaPhysAddress is no index column.
+[RFC1213-MIB.mib:1981][WAR]: Index columns must be first for the default functions to work properly. tcpConnState is no index column.
+[RFC1213-MIB.mib:2289][WAR]: Index columns must be first for the default functions to work properly. egpNeighState is no index column.
+[RFC1213-MIB.mib][WAR]: No RowStatus column in table ifTable => The default functions won't work properly
+[RFC1213-MIB.mib][WAR]: No RowStatus column in table atTable => The default functions won't work properly
+[RFC1213-MIB.mib][WAR]: No RowStatus column in table ipAddrTable => The default functions won't work properly
+[RFC1213-MIB.mib][WAR]: No RowStatus column in table ipRouteTable => The default functions won't work properly
+[RFC1213-MIB.mib][WAR]: No RowStatus column in table ipNetToMediaTable => The default functions won't work properly
+[RFC1213-MIB.mib][WAR]: No RowStatus column in table tcpConnTable => The default functions won't work properly
+[RFC1213-MIB.mib][WAR]: No RowStatus column in table udpTable => The default functions won't work properly
+[RFC1213-MIB.mib][WAR]: No RowStatus column in table egpNeighTable => The default functions won't work properly
+ SNMP	../priv/mibs/OTP-SNMPEA-MIB.bin
+version: snmp-5.20.5
+version: snmp-5.20.5
+version: snmp-5.20.5
+version: snmp-5.20.5
+ SNMP	../include/RFC1213-MIB.hrl
+ SNMP	../include/SNMPv2-MIB.hrl
+ SNMP	../include/SNMP-MPD-MIB.hrl
+version: snmp-5.20.5
+ SNMP	../priv/mibs/STANDARD-MIB.bin
+version: snmp-5.20.5
+ SNMP	../include/SNMP-USM-AES-MIB.hrl
+version: snmp-5.20.5
+ SNMP	../include/OTP-TC.hrl
+ SNMP	../include/SNMP-USER-BASED-SM-MIB.hrl
+ SNMP	../include/SNMP-USM-HMAC-SHA2-MIB.hrl
+ SNMP	../include/SNMP-VIEW-BASED-ACM-MIB.hrl
+ SNMP	../priv/mibs/SNMP-NOTIFICATION-MIB.bin
+ SNMP	../priv/mibs/SNMP-COMMUNITY-MIB.bin
+[OTP-SNMPEA-MIB.mib:130][WAR]: Unexpected SEQUENCE 'IntCommunityEntry' => ignoring
+[OTP-SNMPEA-MIB.mib:230][WAR]: Unexpected SEQUENCE 'IntAddressEntry' => ignoring
+[OTP-SNMPEA-MIB.mib:294][WAR]: Unexpected SEQUENCE 'IntTrapDestEntry' => ignoring
+[OTP-SNMPEA-MIB.mib:399][WAR]: Unexpected SEQUENCE 'IntViewEntry' => ignoring
+ SNMP	../include/SNMP-TARGET-MIB.hrl
+ SNMP	../include/OTP-SNMPEA-MIB.hrl
+version: snmp-5.20.5
+version: snmp-5.20.5
+ SNMP	../include/STANDARD-MIB.hrl
+version: snmp-5.20.5
+ SNMP	../include/SNMP-COMMUNITY-MIB.hrl
+ SNMP	../include/SNMP-NOTIFICATION-MIB.hrl
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/mibs'
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/src'
+make[4]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/src/compile'
+make[4]: Nothing to be done for 'opt'.
+make[4]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/src/compile'
+make[4]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/src/app'
+ ERLC	../../ebin/snmp.beam
+ ERLC	../../ebin/snmp_app.beam
+ ERLC	../../ebin/snmp_app_sup.beam
+ VSN	../../ebin/snmp.app
+ VSN	../../ebin/snmp.appup
+make[4]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/src/app'
+make[4]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/src/misc'
+ ERLC	../../ebin/snmp_conf.beam
+ ERLC	../../ebin/snmp_config.beam
+ ASN	snmp_pdus_basic.erl
+ ERLC	../../ebin/snmp_log.beam
+ ERLC	../../ebin/snmp_mini_mib.beam
+ ERLC	../../ebin/snmp_misc.beam
+ ERLC	../../ebin/snmp_note_store.beam
+ ERLC	../../ebin/snmp_pdus.beam
+ ERLC	../../ebin/snmp_usm.beam
+ ERLC	../../ebin/snmp_verbosity.beam
+ ERLC	../../ebin/snmp_pdus_basic.beam
+make[4]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/src/misc'
+make[4]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/src/agent'
+make[5]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/src/agent'
+ ERLC	../../ebin/snmpa_authentication_service.beam
+ ERLC	../../ebin/snmpa_discovery_handler.beam
+ ERLC	../../ebin/snmpa_error_report.beam
+ ERLC	../../ebin/snmpa_get_mechanism.beam
+ ERLC	../../ebin/snmpa_mib_storage.beam
+ ERLC	../../ebin/snmpa_mib_data.beam
+ ERLC	../../ebin/snmpa_network_interface.beam
+ ERLC	../../ebin/snmpa_network_interface_filter.beam
+ ERLC	../../ebin/snmpa_notification_delivery_info_receiver.beam
+ ERLC	../../ebin/snmpa_notification_filter.beam
+ ERLC	../../ebin/snmpa_set_mechanism.beam
+make[5]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/src/agent'
+make[5]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/src/agent'
+ ERLC	../../ebin/snmpa.beam
+ ERLC	../../ebin/snmp_community_mib.beam
+ ERLC	../../ebin/snmp_framework_mib.beam
+ ERLC	../../ebin/snmp_notification_mib.beam
+ ERLC	../../ebin/snmp_standard_mib.beam
+ ERLC	../../ebin/snmp_target_mib.beam
+ ERLC	../../ebin/snmp_user_based_sm_mib.beam
+ ERLC	../../ebin/snmp_view_based_acm_mib.beam
+ ERLC	../../ebin/snmpa_acm.beam
+ ERLC	../../ebin/snmpa_agent.beam
+ ERLC	../../ebin/snmpa_agent_sup.beam
+ ERLC	../../ebin/snmpa_app.beam
+ ERLC	../../ebin/snmpa_conf.beam
+ ERLC	../../ebin/snmpa_discovery_handler_default.beam
+ ERLC	../../ebin/snmpa_error.beam
+ ERLC	../../ebin/snmpa_error_io.beam
+ ERLC	../../ebin/snmpa_error_logger.beam
+ ERLC	../../ebin/snmpa_get.beam
+ ERLC	../../ebin/snmpa_get_lib.beam
+ ERLC	../../ebin/snmpa_local_db.beam
+ ERLC	../../ebin/snmpa_mib_storage_ets.beam
+ ERLC	../../ebin/snmpa_mib_storage_dets.beam
+ ERLC	../../ebin/snmpa_mib_storage_mnesia.beam
+ ERLC	../../ebin/snmpa_mib.beam
+ ERLC	../../ebin/snmpa_mib_data_tttn.beam
+ ERLC	../../ebin/snmpa_mib_lib.beam
+ ERLC	../../ebin/snmpa_misc_sup.beam
+ ERLC	../../ebin/snmpa_mpd.beam
+ ERLC	../../ebin/snmpa_net_if.beam
+ ERLC	../../ebin/snmpa_net_if_filter.beam
+ ERLC	../../ebin/snmpa_set.beam
+ ERLC	../../ebin/snmpa_set_lib.beam
+ ERLC	../../ebin/snmpa_supervisor.beam
+ ERLC	../../ebin/snmpa_svbl.beam
+ ERLC	../../ebin/snmpa_symbolic_store.beam
+ ERLC	../../ebin/snmpa_target_cache.beam
+ ERLC	../../ebin/snmpa_trap.beam
+ ERLC	../../ebin/snmpa_usm.beam
+ ERLC	../../ebin/snmpa_vacm.beam
+ ERLC	../../ebin/snmp_generic.beam
+ ERLC	../../ebin/snmp_generic_mnesia.beam
+ ERLC	../../ebin/snmp_index.beam
+ ERLC	../../ebin/snmp_shadow_table.beam
+make[5]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/src/agent'
+make[4]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/src/agent'
+make[4]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/src/manager'
+make[5]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/src/manager'
+ ERLC	../../ebin/snmpm_user.beam
+ ERLC	../../ebin/snmpm_user_old.beam
+ ERLC	../../ebin/snmpm_network_interface.beam
+ ERLC	../../ebin/snmpm_network_interface_filter.beam
+make[5]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/src/manager'
+make[5]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/src/manager'
+ ERLC	../../ebin/snmpm.beam
+ ERLC	../../ebin/snmpm_conf.beam
+ ERLC	../../ebin/snmpm_config.beam
+ ERLC	../../ebin/snmpm_mpd.beam
+ ERLC	../../ebin/snmpm_misc_sup.beam
+ ERLC	../../ebin/snmpm_net_if.beam
+ ERLC	../../ebin/snmpm_net_if_mt.beam
+ ERLC	../../ebin/snmpm_net_if_filter.beam
+ ERLC	../../ebin/snmpm_server.beam
+ ERLC	../../ebin/snmpm_server_sup.beam
+ ERLC	../../ebin/snmpm_supervisor.beam
+ ERLC	../../ebin/snmpm_user_default.beam
+ ERLC	../../ebin/snmpm_usm.beam
+make[5]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/src/manager'
+make[4]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/src/manager'
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/src'
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/examples'
+make[4]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/examples/ex1'
+ SNMP	EX1-MIB.bin
+ ERLC	ex1.beam
+make[4]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/examples/ex1'
+make[4]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/examples/ex2'
+ ERLC	snmp_ex2_manager.beam
+ ERLC	snmp_ex2_simple_standard_test.beam
+make[4]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/examples/ex2'
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/examples'
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/priv/conf'
+make[4]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/priv/conf/agent'
+make[4]: Nothing to be done for 'opt'.
+make[4]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/priv/conf/agent'
+make[4]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/priv/conf/manager'
+make[4]: Nothing to be done for 'opt'.
+make[4]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/priv/conf/manager'
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/priv/conf'
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/doc'
+make[3]: Nothing to be done for 'opt'.
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/doc'
+=== Leaving application snmp
+make[2]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp'
+make[1]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib'
+ MAKE	erts
+make[1]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/preloaded/src'
+ ERLC	../../ebin/erl_prim_loader.beam
+ ERLC	../../ebin/init.beam
+ ERLC	../../ebin/prim_buffer.beam
+ ERLC	../../ebin/prim_file.beam
+ ERLC	../../ebin/prim_inet.beam
+ ERLC	../../ebin/socket_registry.beam
+ ERLC	../../ebin/prim_socket.beam
+ ERLC	../../ebin/prim_net.beam
+ ERLC	../../ebin/zlib.beam
+ ERLC	../../ebin/prim_zip.beam
+ ERLC	../../ebin/erl_init.beam
+ ERLC	../../ebin/erts_code_purger.beam
+ ERLC	../../ebin/erlang.beam
+ ERLC	../../ebin/erts_internal.beam
+ ERLC	../../ebin/erl_tracer.beam
+ ERLC	../../ebin/erts_literal_area_collector.beam
+ ERLC	../../ebin/erts_trace_cleaner.beam
+ ERLC	../../ebin/erts_dirty_process_signal_handler.beam
+ ERLC	../../ebin/atomics.beam
+ ERLC	../../ebin/counters.beam
+ ERLC	../../ebin/persistent_term.beam
+ ERLC	prim_eval.abstr
+ GEN	../../ebin/prim_eval.beam
+make[1]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/erts/preloaded/src'
+ MAKE	libs
+make[1]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib'
+make[2]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/stdlib'
+=== Entering application stdlib
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/stdlib/src'
+ YECC	erl_parse.erl
+escript ../uc_spec/gen_unicode_mod.escript
+ GEN	deps/deps.mk
+ ERLC	../ebin/array.beam
+ ERLC	../ebin/argparse.beam
+ ERLC	../ebin/base64.beam
+ ERLC	../ebin/beam_lib.beam
+ ERLC	../ebin/binary.beam
+ ERLC	../ebin/c.beam
+ ERLC	../ebin/calendar.beam
+ ERLC	../ebin/dets.beam
+ ERLC	../ebin/dets_server.beam
+ ERLC	../ebin/dets_sup.beam
+ ERLC	../ebin/dets_utils.beam
+ ERLC	../ebin/dets_v9.beam
+ ERLC	../ebin/dict.beam
+ ERLC	../ebin/graph.beam
+ ERLC	../ebin/digraph.beam
+ ERLC	../ebin/digraph_utils.beam
+ ERLC	../ebin/edlin.beam
+ ERLC	../ebin/edlin_key.beam
+ ERLC	../ebin/edlin_context.beam
+ ERLC	../ebin/edlin_expand.beam
+ ERLC	../ebin/edlin_type_suggestion.beam
+ ERLC	../ebin/epp.beam
+ ERLC	../ebin/erl_abstract_code.beam
+ ERLC	../ebin/erl_anno.beam
+ ERLC	../ebin/erl_bits.beam
+ ERLC	../ebin/erl_compile.beam
+ ERLC	../ebin/erl_error.beam
+ ERLC	../ebin/erl_eval.beam
+ ERLC	../ebin/erl_expand_records.beam
+ ERLC	../ebin/erl_features.beam
+ ERLC	../ebin/erl_internal.beam
+ ERLC	../ebin/erl_lint.beam
+ ERLC	../ebin/erl_parse.beam
+ ERLC	../ebin/erl_posix_msg.beam
+ ERLC	../ebin/erl_pp.beam
+ ERLC	../ebin/erl_scan.beam
+ ERLC	../ebin/erl_stdlib_errors.beam
+ ERLC	../ebin/erl_tar.beam
+ ERLC	../ebin/error_logger_file_h.beam
+ ERLC	../ebin/error_logger_tty_h.beam
+ ERLC	../ebin/escript.beam
+ ERLC	../ebin/ets.beam
+ ERLC	../ebin/eval_bits.beam
+ ERLC	../ebin/file_sorter.beam
+ ERLC	../ebin/filelib.beam
+ ERLC	../ebin/filename.beam
+ ERLC	../ebin/gb_trees.beam
+ ERLC	../ebin/gb_sets.beam
+ ERLC	../ebin/gen.beam
+ ERLC	../ebin/gen_event.beam
+ ERLC	../ebin/gen_fsm.beam
+ ERLC	../ebin/gen_server.beam
+ ERLC	../ebin/gen_statem.beam
+ ERLC	../ebin/io.beam
+ ERLC	../ebin/io_ansi.beam
+ ERLC	../ebin/io_lib.beam
+ ERLC	../ebin/io_lib_format.beam
+ ERLC	../ebin/io_lib_fread.beam
+ ERLC	../ebin/io_lib_pretty.beam
+ ERLC	../ebin/json.beam
+ ERLC	../ebin/lists.beam
+ ERLC	../ebin/log_mf_h.beam
+ ERLC	../ebin/man_docs.beam
+ ERLC	../ebin/maps.beam
+ ERLC	../ebin/math.beam
+ ERLC	../ebin/ms_transform.beam
+ ERLC	../ebin/otp_internal.beam
+ ERLC	../ebin/orddict.beam
+ ERLC	../ebin/ordsets.beam
+ ERLC	../ebin/re.beam
+ ERLC	../ebin/records.beam
+ ERLC	../ebin/peer.beam
+ ERLC	../ebin/pool.beam
+ ERLC	../ebin/proc_lib.beam
+ ERLC	../ebin/proplists.beam
+ ERLC	../ebin/qlc.beam
+ ERLC	../ebin/qlc_pt.beam
+ ERLC	../ebin/queue.beam
+ ERLC	../ebin/rand.beam
+ ERLC	../ebin/random.beam
+ ERLC	../ebin/sets.beam
+ ERLC	../ebin/shell.beam
+ ERLC	../ebin/shell_default.beam
+ ERLC	../ebin/shell_docs.beam
+ ERLC	../ebin/shell_docs_markdown.beam
+ ERLC	../ebin/slave.beam
+ ERLC	../ebin/sofs.beam
+ ERLC	../ebin/string.beam
+ ERLC	../ebin/supervisor.beam
+ ERLC	../ebin/supervisor_bridge.beam
+ ERLC	../ebin/sys.beam
+ ERLC	../ebin/timer.beam
+ ERLC	../ebin/unicode.beam
+ ERLC	../ebin/unicode_util.beam
+ ERLC	../ebin/uri_string.beam
+ ERLC	../ebin/win32reg.beam
+ ERLC	../ebin/zip.beam
+ ERLC	../ebin/zstd.beam
+ VSN	../ebin/stdlib.app
+ VSN	../ebin/stdlib.appup
+ ERLC	../ebin/erl_id_trans.beam
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/stdlib/src'
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/stdlib/doc'
+make[3]: Nothing to be done for 'opt'.
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/stdlib/doc'
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/stdlib/examples'
+make[3]: Nothing to be done for 'opt'.
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/stdlib/examples'
+=== Leaving application stdlib
+make[2]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/stdlib'
+make[2]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/sasl'
+=== Entering application sasl
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/sasl/src'
+make[3]: Nothing to be done for 'opt'.
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/sasl/src'
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/sasl/doc'
+make[3]: Nothing to be done for 'opt'.
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/sasl/doc'
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/sasl/examples/src'
+make[3]: Nothing to be done for 'opt'.
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/sasl/examples/src'
+=== Leaving application sasl
+make[2]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/sasl'
+make[2]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/kernel'
+=== Entering application kernel
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/kernel/src'
+ GEN	inet_dns_record_adts.hrl
+ GEN	deps/deps.mk
+ ERLC	../ebin/application.beam
+ ERLC	../ebin/application_controller.beam
+ ERLC	../ebin/application_master.beam
+ ERLC	../ebin/application_starter.beam
+ ERLC	../ebin/auth.beam
+ ERLC	../ebin/code.beam
+ ERLC	../ebin/code_server.beam
+ ERLC	../ebin/data_publisher.beam
+ ERLC	../ebin/disk_log.beam
+ ERLC	../ebin/disk_log_1.beam
+ ERLC	../ebin/disk_log_server.beam
+ ERLC	../ebin/disk_log_sup.beam
+ ERLC	../ebin/dist_ac.beam
+ ERLC	../ebin/dist_util.beam
+ ERLC	../ebin/erl_boot_server.beam
+ ERLC	../ebin/erl_compile_server.beam
+ ERLC	../ebin/erl_ddll.beam
+ ERLC	../ebin/erl_debugger.beam
+ ERLC	../ebin/erl_distribution.beam
+ ERLC	../ebin/erl_erts_errors.beam
+ ERLC	../ebin/erl_epmd.beam
+ ERLC	../ebin/erl_kernel_errors.beam
+ ERLC	../ebin/erl_reply.beam
+ ERLC	../ebin/erl_signal_handler.beam
+ ERLC	../ebin/erpc.beam
+ ERLC	../ebin/erts_debug.beam
+ ERLC	../ebin/error_handler.beam
+ ERLC	../ebin/error_logger.beam
+ ERLC	../ebin/file.beam
+ ERLC	../ebin/file_io_server.beam
+ ERLC	../ebin/file_server.beam
+ ERLC	../ebin/gen_tcp.beam
+ ERLC	../ebin/gen_tcp_socket.beam
+ ERLC	../ebin/gen_udp.beam
+ ERLC	../ebin/gen_udp_socket.beam
+ ERLC	../ebin/gen_sctp.beam
+ ERLC	../ebin/global.beam
+ ERLC	../ebin/global_group.beam
+ ERLC	../ebin/global_search.beam
+ ERLC	../ebin/group.beam
+ ERLC	../ebin/group_history.beam
+ ERLC	../ebin/heart.beam
+ ERLC	../ebin/inet.beam
+ ERLC	../ebin/inet6_tcp.beam
+ ERLC	../ebin/inet6_tcp_dist.beam
+ ERLC	../ebin/inet6_udp.beam
+ ERLC	../ebin/inet6_sctp.beam
+ ERLC	../ebin/inet_config.beam
+ ERLC	../ebin/inet_db.beam
+ ERLC	../ebin/inet_dns.beam
+ ERLC	../ebin/inet_dns_tsig.beam
+ ERLC	../ebin/inet_epmd_dist.beam
+ ERLC	../ebin/inet_epmd_socket.beam
+ ERLC	../ebin/inet_gethost_native.beam
+ ERLC	../ebin/inet_hosts.beam
+ ERLC	../ebin/inet_parse.beam
+ ERLC	../ebin/inet_res.beam
+ ERLC	../ebin/inet_tcp.beam
+ ERLC	../ebin/inet_tcp_dist.beam
+ ERLC	../ebin/inet_udp.beam
+ ERLC	../ebin/inet_sctp.beam
+ ERLC	../ebin/kernel.beam
+ ERLC	../ebin/kernel_config.beam
+ ERLC	../ebin/kernel_refc.beam
+ ERLC	../ebin/local_udp.beam
+ ERLC	../ebin/local_tcp.beam
+ ERLC	../ebin/logger.beam
+ ERLC	../ebin/logger_backend.beam
+ ERLC	../ebin/logger_config.beam
+ ERLC	../ebin/logger_handler.beam
+ ERLC	../ebin/logger_handler_watcher.beam
+ ERLC	../ebin/logger_std_h.beam
+ ERLC	../ebin/logger_disk_log_h.beam
+ ERLC	../ebin/logger_h_common.beam
+ ERLC	../ebin/logger_filters.beam
+ ERLC	../ebin/logger_formatter.beam
+ ERLC	../ebin/logger_olp.beam
+ ERLC	../ebin/logger_proxy.beam
+ ERLC	../ebin/logger_server.beam
+ ERLC	../ebin/logger_simple_h.beam
+ ERLC	../ebin/logger_sup.beam
+ ERLC	../ebin/net.beam
+ ERLC	../ebin/net_adm.beam
+ ERLC	../ebin/net_kernel.beam
+ ERLC	../ebin/os.beam
+ ERLC	../ebin/pg.beam
+ ERLC	../ebin/pg2.beam
+ ERLC	../ebin/ram_file.beam
+ ERLC	../ebin/rpc.beam
+ ERLC	../ebin/seq_trace.beam
+ ERLC	../ebin/socket.beam
+ ERLC	../ebin/standard_error.beam
+ ERLC	../ebin/trace.beam
+ ERLC	../ebin/user_drv.beam
+ ERLC	../ebin/user_sup.beam
+ ERLC	../ebin/prim_tty.beam
+ ERLC	../ebin/prim_tty_sighandler.beam
+ ERLC	../ebin/raw_file_io.beam
+ ERLC	../ebin/raw_file_io_compressed.beam
+ ERLC	../ebin/raw_file_io_inflate.beam
+ ERLC	../ebin/raw_file_io_deflate.beam
+ ERLC	../ebin/raw_file_io_delayed.beam
+ ERLC	../ebin/raw_file_io_list.beam
+ ERLC	../ebin/wrap_log_reader.beam
+ VSN	../ebin/kernel.app
+ VSN	../ebin/kernel.appup
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/kernel/src'
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/kernel/doc'
+make[3]: Nothing to be done for 'opt'.
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/kernel/doc'
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/kernel/examples'
+make[3]: Nothing to be done for 'opt'.
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/kernel/examples'
+=== Leaving application kernel
+make[2]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/kernel'
+make[2]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/compiler'
+=== Entering application compiler
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/compiler/src'
+ GEN	OPCODES-GENERATED
+ YECC	core_parse.erl
+ GEN	deps/deps.mk
+ ERLC	../ebin/beam_a.beam
+ ERLC	../ebin/beam_asm.beam
+ ERLC	../ebin/beam_bounds.beam
+ ERLC	../ebin/beam_block.beam
+ ERLC	../ebin/beam_call_types.beam
+ ERLC	../ebin/beam_core_to_ssa.beam
+ ERLC	../ebin/beam_clean.beam
+ ERLC	../ebin/beam_dict.beam
+ ERLC	../ebin/beam_disasm.beam
+ ERLC	../ebin/beam_doc.beam
+ ERLC	../ebin/beam_flatten.beam
+ ERLC	../ebin/beam_jump.beam
+ ERLC	../ebin/beam_listing.beam
+ ERLC	../ebin/beam_opcodes.beam
+ ERLC	../ebin/beam_ssa.beam
+ ERLC	../ebin/beam_ssa_alias.beam
+ ERLC	../ebin/beam_ssa_bc_size.beam
+ ERLC	../ebin/beam_ssa_bool.beam
+ ERLC	../ebin/beam_ssa_bsm.beam
+ ERLC	../ebin/beam_ssa_check.beam
+ ERLC	../ebin/beam_ssa_codegen.beam
+ ERLC	../ebin/beam_ssa_dead.beam
+ ERLC	../ebin/beam_ssa_destructive_update.beam
+ ERLC	../ebin/beam_ssa_lint.beam
+ ERLC	../ebin/beam_ssa_opt.beam
+ ERLC	../ebin/beam_ssa_pp.beam
+ ERLC	../ebin/beam_ssa_pre_codegen.beam
+ ERLC	../ebin/beam_ssa_recv.beam
+ ERLC	../ebin/beam_ssa_share.beam
+ ERLC	../ebin/beam_ssa_ss.beam
+ ERLC	../ebin/beam_ssa_throw.beam
+ ERLC	../ebin/beam_ssa_type.beam
+ ERLC	../ebin/beam_trim.beam
+ ERLC	../ebin/beam_types.beam
+ ERLC	../ebin/beam_utils.beam
+ ERLC	../ebin/beam_validator.beam
+ ERLC	../ebin/beam_z.beam
+ ERLC	../ebin/cerl.beam
+ ERLC	../ebin/cerl_clauses.beam
+ ERLC	../ebin/cerl_inline.beam
+ ERLC	../ebin/cerl_trees.beam
+ ERLC	../ebin/compile.beam
+ ERLC	../ebin/core_lib.beam
+ ERLC	../ebin/core_lint.beam
+ ERLC	../ebin/core_parse.beam
+ ERLC	../ebin/core_pp.beam
+ ERLC	../ebin/core_scan.beam
+ ERLC	../ebin/erl_bifs.beam
+ ERLC	../ebin/rec_env.beam
+ ERLC	../ebin/sys_core_alias.beam
+ ERLC	../ebin/sys_core_bsm.beam
+ ERLC	../ebin/sys_core_fold.beam
+ ERLC	../ebin/sys_core_fold_lists.beam
+ ERLC	../ebin/sys_core_inline.beam
+ ERLC	../ebin/sys_core_prepare.beam
+ ERLC	../ebin/sys_coverage.beam
+ ERLC	../ebin/sys_messages.beam
+ ERLC	../ebin/sys_pre_attributes.beam
+ ERLC	../ebin/v3_core.beam
+ VSN	../ebin/compiler.app
+ VSN	../ebin/compiler.appup
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/compiler/src'
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/compiler/doc'
+make[3]: Nothing to be done for 'opt'.
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/compiler/doc'
+=== Leaving application compiler
+make[2]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/compiler'
+make[2]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/tools'
+=== Entering application tools
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/tools/src'
+ YECC	xref_parser.erl
+ GEN	deps/deps.mk
+ ERLC	../ebin/cover.beam
+ ERLC	../ebin/crashdump.beam
+ ERLC	../ebin/eprof.beam
+ ERLC	../ebin/tprof.beam
+ ERLC	../ebin/fprof.beam
+ ERLC	../ebin/cprof.beam
+ ERLC	../ebin/lcnt.beam
+ ERLC	../ebin/make.beam
+ ERLC	../ebin/tags.beam
+ ERLC	../ebin/xref.beam
+ ERLC	../ebin/xref_base.beam
+ ERLC	../ebin/xref_compiler.beam
+ ERLC	../ebin/xref_parser.beam
+ ERLC	../ebin/xref_reader.beam
+ ERLC	../ebin/xref_scanner.beam
+ ERLC	../ebin/xref_utils.beam
+ VSN	../ebin/tools.app
+ VSN	../ebin/tools.appup
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/tools/src'
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/tools/doc'
+make[3]: Nothing to be done for 'opt'.
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/tools/doc'
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/tools/examples'
+make[3]: Nothing to be done for 'opt'.
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/tools/examples'
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/tools/emacs'
+make[3]: Nothing to be done for 'opt'.
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/tools/emacs'
+=== Leaving application tools
+make[2]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/tools'
+make[2]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/common_test'
+=== Entering application common_test
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/common_test/doc'
+make[3]: Nothing to be done for 'opt'.
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/common_test/doc'
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/common_test/src'
+ GEN	deps/deps.mk
+ ERLC	../ebin/ct.beam
+ ERLC	../ebin/ct_logs.beam
+ ERLC	../ebin/ct_framework.beam
+ ERLC	../ebin/ct_ftp.beam
+ ERLC	../ebin/ct_ssh.beam
+ ERLC	../ebin/ct_snmp.beam
+ ERLC	../ebin/ct_gen_conn.beam
+ ERLC	../ebin/ct_rpc.beam
+ ERLC	../ebin/ct_run.beam
+ ERLC	../ebin/ct_master.beam
+ ERLC	../ebin/ct_telnet.beam
+ ERLC	../ebin/ct_util.beam
+ ERLC	../ebin/ct_cover.beam
+ ERLC	../ebin/ct_doctest.beam
+ ERLC	../ebin/ct_testspec.beam
+ ERLC	../ebin/ct_event.beam
+ ERLC	../ebin/ct_master_event.beam
+ ERLC	../ebin/ct_master_logs.beam
+ ERLC	../ebin/ct_master_status.beam
+ ERLC	../ebin/ct_repeat.beam
+ ERLC	../ebin/ct_telnet_client.beam
+ ERLC	../ebin/ct_make.beam
+ ERLC	../ebin/unix_telnet.beam
+ ERLC	../ebin/ct_config.beam
+ ERLC	../ebin/ct_config_plain.beam
+ ERLC	../ebin/ct_config_xml.beam
+ ERLC	../ebin/ct_slave.beam
+ ERLC	../ebin/ct_hooks_lock.beam
+ ERLC	../ebin/cte_track.beam
+ ERLC	../ebin/ct_hooks.beam
+ ERLC	../ebin/ct_netconfc.beam
+ ERLC	../ebin/ct_conn_log_h.beam
+ ERLC	../ebin/ct_groups.beam
+ ERLC	../ebin/ct_property_test.beam
+ ERLC	../ebin/ct_release_test.beam
+ ERLC	../ebin/ct_default_gl.beam
+ ERLC	../ebin/erl2html2.beam
+ ERLC	../ebin/test_server_ctrl.beam
+ ERLC	../ebin/test_server_gl.beam
+ ERLC	../ebin/test_server_io.beam
+ ERLC	../ebin/test_server_node.beam
+ ERLC	../ebin/test_server.beam
+ ERLC	../ebin/test_server_sup.beam
+ ERLC	../ebin/ct_suite.beam
+ VSN	../ebin/common_test.app
+ VSN	../ebin/common_test.appup
+ ERLC	../ebin/cth_log_redirect.beam
+ ERLC	../ebin/cth_surefire.beam
+ ERLC	../ebin/cth_conn_log.beam
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/common_test/src'
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/common_test/priv'
+ MAKE	opt
+make[4]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/common_test/priv'
+make[4]: Nothing to be done for 'debug'.
+make[4]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/common_test/priv'
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/common_test/priv'
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/common_test/proper_ext'
+ ERLC	ct_proper_ext.beam
+ ERLC	ct_quickcheck_ext.beam
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/common_test/proper_ext'
+=== Leaving application common_test
+make[2]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/common_test'
+make[2]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/runtime_tools'
+=== Entering application runtime_tools
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/runtime_tools/src'
+ GEN	deps/deps.mk
+ ERLC	../ebin/appmon_info.beam
+ ERLC	../ebin/erts_alloc_config.beam
+ ERLC	../ebin/instrument.beam
+ ERLC	../ebin/runtime_tools.beam
+ ERLC	../ebin/runtime_tools_sup.beam
+ ERLC	../ebin/dbg.beam
+ ERLC	../ebin/dyntrace.beam
+ ERLC	../ebin/system_information.beam
+ ERLC	../ebin/observer_backend.beam
+ ERLC	../ebin/ttb_autostart.beam
+ ERLC	../ebin/scheduler.beam
+ ERLC	../ebin/msacc.beam
+ ERLC	../ebin/versions.beam
+ VSN	../ebin/runtime_tools.app
+ VSN	../ebin/runtime_tools.appup
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/runtime_tools/src'
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/runtime_tools/c_src'
+ MAKE	opt
+make[4]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/runtime_tools/c_src'
+ CC	../priv/obj/x86_64-pc-linux-gnu/dyntrace.o
+ CC	../priv/obj/x86_64-pc-linux-gnu/trace_file_drv.o
+ CC	../priv/obj/x86_64-pc-linux-gnu/trace_ip_drv.o
+ LD	../priv/lib/x86_64-pc-linux-gnu/dyntrace.so
+ LD	../priv/lib/x86_64-pc-linux-gnu/trace_file_drv.so
+ LD	../priv/lib/x86_64-pc-linux-gnu/trace_ip_drv.so
+rm ../priv/obj/x86_64-pc-linux-gnu/trace_ip_drv.o ../priv/obj/x86_64-pc-linux-gnu/dyntrace.o ../priv/obj/x86_64-pc-linux-gnu/trace_file_drv.o
+make[4]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/runtime_tools/c_src'
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/runtime_tools/c_src'
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/runtime_tools/doc'
+make[3]: Nothing to be done for 'opt'.
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/runtime_tools/doc'
+=== Leaving application runtime_tools
+make[2]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/runtime_tools'
+make[2]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/inets'
+=== Entering application inets
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/inets/src'
+make[4]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/inets/src/inets_app'
+SED x86_64-pc-linux-gnu /home/bat/projects/bream/upstream/otp-reference-build
+ GEN	deps/inets_app.d
+ ERLC	../../ebin/inets.beam
+ ERLC	../../ebin/inets_service.beam
+ ERLC	../../ebin/inets_app.beam
+ ERLC	../../ebin/inets_sup.beam
+ ERLC	../../ebin/inets_trace.beam
+ ERLC	../../ebin/inets_lib.beam
+ VSN	../../ebin/inets.app
+ VSN	../../ebin/inets.appup
+make[4]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/inets/src/inets_app'
+make[4]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/inets/src/http_lib'
+SED x86_64-pc-linux-gnu /home/bat/projects/bream/upstream/otp-reference-build
+ GEN	deps/http_lib.d
+ ERLC	../../ebin/http_chunk.beam
+ ERLC	../../ebin/http_transport.beam
+ ERLC	../../ebin/http_util.beam
+ ERLC	../../ebin/http_request.beam
+ ERLC	../../ebin/http_response.beam
+ ERLC	../../ebin/http_uri.beam
+make[4]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/inets/src/http_lib'
+make[4]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/inets/src/http_client'
+SED x86_64-pc-linux-gnu /home/bat/projects/bream/upstream/otp-reference-build
+ GEN	deps/http_client.d
+ ERLC	../../ebin/httpc.beam
+ ERLC	../../ebin/httpc_cookie.beam
+ ERLC	../../ebin/httpc_manager.beam
+ ERLC	../../ebin/httpc_handler.beam
+ ERLC	../../ebin/httpc_sup.beam
+ ERLC	../../ebin/httpc_handler_sup.beam
+ ERLC	../../ebin/httpc_profile_sup.beam
+ ERLC	../../ebin/httpc_response.beam
+ ERLC	../../ebin/httpc_request.beam
+make[4]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/inets/src/http_client'
+make[4]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/inets/src/http_server'
+SED x86_64-pc-linux-gnu /home/bat/projects/bream/upstream/otp-reference-build
+ GEN	deps/http_server.d
+ ERLC	../../ebin/httpd_custom_api.beam
+ ERLC	../../ebin/httpd.beam
+ ERLC	../../ebin/httpd_acceptor.beam
+ ERLC	../../ebin/httpd_acceptor_sup.beam
+ ERLC	../../ebin/httpd_connection_sup.beam
+ ERLC	../../ebin/httpd_cgi.beam
+ ERLC	../../ebin/httpd_conf.beam
+ ERLC	../../ebin/httpd_custom.beam
+ ERLC	../../ebin/httpd_example.beam
+ ERLC	../../ebin/httpd_esi.beam
+ ERLC	../../ebin/httpd_instance_sup.beam
+ ERLC	../../ebin/httpd_file.beam
+ ERLC	../../ebin/httpd_log.beam
+ ERLC	../../ebin/httpd_logger.beam
+ ERLC	../../ebin/httpd_manager.beam
+ ERLC	../../ebin/httpd_misc_sup.beam
+ ERLC	../../ebin/httpd_request.beam
+ ERLC	../../ebin/httpd_request_handler.beam
+ ERLC	../../ebin/httpd_response.beam
+ ERLC	../../ebin/httpd_script_env.beam
+ ERLC	../../ebin/httpd_socket.beam
+ ERLC	../../ebin/httpd_sup.beam
+ ERLC	../../ebin/httpd_util.beam
+ ERLC	../../ebin/mod_actions.beam
+ ERLC	../../ebin/mod_alias.beam
+ ERLC	../../ebin/mod_auth.beam
+ ERLC	../../ebin/mod_auth_plain.beam
+ ERLC	../../ebin/mod_auth_dets.beam
+ ERLC	../../ebin/mod_auth_mnesia.beam
+ ERLC	../../ebin/mod_auth_server.beam
+ ERLC	../../ebin/mod_cgi.beam
+ ERLC	../../ebin/mod_dir.beam
+ ERLC	../../ebin/mod_disk_log.beam
+ ERLC	../../ebin/mod_esi.beam
+ ERLC	../../ebin/mod_get.beam
+ ERLC	../../ebin/mod_head.beam
+ ERLC	../../ebin/mod_log.beam
+ ERLC	../../ebin/mod_range.beam
+ ERLC	../../ebin/mod_responsecontrol.beam
+ ERLC	../../ebin/mod_trace.beam
+ ERLC	../../ebin/mod_security.beam
+ ERLC	../../ebin/mod_security_server.beam
+make[4]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/inets/src/http_server'
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/inets/src'
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/inets/examples'
+make[4]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/inets/examples/server_root'
+make[4]: Nothing to be done for 'opt'.
+make[4]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/inets/examples/server_root'
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/inets/examples'
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/inets/doc'
+make[3]: Nothing to be done for 'opt'.
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/inets/doc'
+=== Leaving application inets
+make[2]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/inets'
+make[2]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/parsetools'
+=== Entering application parsetools
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/parsetools/src'
+make[3]: Nothing to be done for 'opt'.
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/parsetools/src'
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/parsetools/doc'
+make[3]: Nothing to be done for 'opt'.
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/parsetools/doc'
+=== Leaving application parsetools
+make[2]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/parsetools'
+make[2]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/xmerl'
+=== Entering application xmerl
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/xmerl/src'
+ YECC	xmerl_b64Bin.erl
+ YECC	xmerl_xpath_parse.erl
+ GEN	xmerl_sax_parser_list.erl
+ GEN	xmerl_sax_parser_latin1.erl
+ GEN	xmerl_sax_parser_utf8.erl
+ GEN	xmerl_sax_parser_utf16be.erl
+ GEN	xmerl_sax_parser_utf16le.erl
+ YECC	xmerl_xsd_re_parse.erl
+ GEN	deps/deps.mk
+ ERLC	../ebin/xmerl_scan.beam
+ ERLC	../ebin/xmerl.beam
+ ERLC	../ebin/xmerl_xs.beam
+ ERLC	../ebin/xmerl_eventp.beam
+ ERLC	../ebin/xmerl_xpath.beam
+ ERLC	../ebin/xmerl_xsd.beam
+ ERLC	../ebin/xmerl_b64Bin.beam
+ ERLC	../ebin/xmerl_b64Bin_scan.beam
+ ERLC	../ebin/xmerl_html.beam
+ ERLC	../ebin/xmerl_lib.beam
+ ERLC	../ebin/xmerl_otpsgml.beam
+ ERLC	../ebin/xmerl_sgml.beam
+ ERLC	../ebin/xmerl_simple.beam
+ ERLC	../ebin/xmerl_text.beam
+ ERLC	../ebin/xmerl_ucs.beam
+ ERLC	../ebin/xmerl_uri.beam
+ ERLC	../ebin/xmerl_validate.beam
+ ERLC	../ebin/xmerl_xlate.beam
+ ERLC	../ebin/xmerl_xml.beam
+ ERLC	../ebin/xmerl_xml_indent.beam
+ ERLC	../ebin/xmerl_xpath_lib.beam
+ ERLC	../ebin/xmerl_xpath_parse.beam
+ ERLC	../ebin/xmerl_xpath_pred.beam
+ ERLC	../ebin/xmerl_xpath_scan.beam
+ ERLC	../ebin/xmerl_xsd_type.beam
+ ERLC	../ebin/xmerl_sax_parser.beam
+ ERLC	../ebin/xmerl_sax_parser_list.beam
+ ERLC	../ebin/xmerl_sax_parser_latin1.beam
+ ERLC	../ebin/xmerl_sax_parser_utf8.beam
+ ERLC	../ebin/xmerl_sax_parser_utf16be.beam
+ ERLC	../ebin/xmerl_sax_parser_utf16le.beam
+ ERLC	../ebin/xmerl_sax_simple_dom.beam
+ ERLC	../ebin/xmerl_sax_old_dom.beam
+ ERLC	../ebin/xmerl_xsd_re.beam
+ ERLC	../ebin/xmerl_xsd_re_parse.beam
+ VSN	../ebin/xmerl.app
+ VSN	../ebin/xmerl.appup
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/xmerl/src'
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/xmerl/doc'
+make[3]: Nothing to be done for 'opt'.
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/xmerl/doc'
+=== Leaving application xmerl
+make[2]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/xmerl'
+make[2]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/edoc'
+=== Entering application edoc
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/edoc/bin'
+make[3]: Nothing to be done for 'opt'.
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/edoc/bin'
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/edoc/src'
+ YECC	edoc_parser.erl
+ GEN	deps/deps.mk
+ ERLC	../ebin/edoc.beam
+ ERLC	../ebin/edoc_cli.beam
+ ERLC	../ebin/edoc_data.beam
+ ERLC	../ebin/edoc_doclet.beam
+ ERLC	../ebin/edoc_doclet_chunks.beam
+ ERLC	../ebin/edoc_extract.beam
+ ERLC	../ebin/edoc_layout.beam
+ ERLC	../ebin/edoc_layout_chunks.beam
+ ERLC	../ebin/edoc_lib.beam
+ ERLC	../ebin/edoc_macros.beam
+ ERLC	../ebin/edoc_parser.beam
+ ERLC	../ebin/edoc_refs.beam
+ ERLC	../ebin/edoc_report.beam
+ ERLC	../ebin/edoc_run.beam
+ ERLC	../ebin/edoc_scanner.beam
+ ERLC	../ebin/edoc_specs.beam
+ ERLC	../ebin/edoc_tags.beam
+ ERLC	../ebin/edoc_types.beam
+ ERLC	../ebin/edoc_wiki.beam
+ ERLC	../ebin/edoc_html_to_markdown.beam
+ ERLC	../ebin/edoc_doclet_markdown.beam
+ VSN	../ebin/edoc.app
+ VSN	../ebin/edoc.appup
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/edoc/src'
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/edoc/include'
+make[3]: Nothing to be done for 'opt'.
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/edoc/include'
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/edoc/priv'
+make[3]: Nothing to be done for 'opt'.
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/edoc/priv'
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/edoc/doc'
+make[3]: Nothing to be done for 'opt'.
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/edoc/doc'
+=== Leaving application edoc
+make[2]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/edoc'
+make[2]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp'
+=== Entering application snmp
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/src/compile'
+make[3]: Nothing to be done for 'opt'.
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/src/compile'
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/mibs'
+make[3]: Nothing to be done for 'opt'.
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/mibs'
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/src'
+make[4]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/src/compile'
+make[4]: Nothing to be done for 'opt'.
+make[4]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/src/compile'
+make[4]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/src/app'
+make[4]: Nothing to be done for 'opt'.
+make[4]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/src/app'
+make[4]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/src/misc'
+make[4]: Nothing to be done for 'opt'.
+make[4]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/src/misc'
+make[4]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/src/agent'
+make[5]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/src/agent'
+make[5]: Nothing to be done for 'behaviour_targets'.
+make[5]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/src/agent'
+make[5]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/src/agent'
+make[5]: Nothing to be done for 'targets'.
+make[5]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/src/agent'
+make[4]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/src/agent'
+make[4]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/src/manager'
+make[5]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/src/manager'
+make[5]: Nothing to be done for 'behaviour_targets'.
+make[5]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/src/manager'
+make[5]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/src/manager'
+make[5]: Nothing to be done for 'targets'.
+make[5]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/src/manager'
+make[4]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/src/manager'
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/src'
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/examples'
+make[4]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/examples/ex1'
+make[4]: Nothing to be done for 'opt'.
+make[4]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/examples/ex1'
+make[4]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/examples/ex2'
+make[4]: Nothing to be done for 'opt'.
+make[4]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/examples/ex2'
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/examples'
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/priv/conf'
+make[4]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/priv/conf/agent'
+make[4]: Nothing to be done for 'opt'.
+make[4]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/priv/conf/agent'
+make[4]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/priv/conf/manager'
+make[4]: Nothing to be done for 'opt'.
+make[4]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/priv/conf/manager'
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/priv/conf'
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/doc'
+make[3]: Nothing to be done for 'opt'.
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp/doc'
+=== Leaving application snmp
+make[2]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/snmp'
+make[2]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface'
+=== Entering application erl_interface
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/src'
+ MAKE	opt
+make[4]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/src'
+make[4]: Nothing to be done for 'opt'.
+make[4]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/src'
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/src'
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/doc'
+make[3]: Nothing to be done for 'opt'.
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface/doc'
+=== Leaving application erl_interface
+make[2]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/erl_interface'
+make[2]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/asn1'
+=== Entering application asn1
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/asn1/src'
+make[3]: Nothing to be done for 'opt'.
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/asn1/src'
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/asn1/doc'
+make[3]: Nothing to be done for 'opt'.
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/asn1/doc'
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/asn1/c_src'
+ CC	../priv/obj/x86_64-pc-linux-gnu/asn1_erl_nif.o
+ LD	../priv/lib/x86_64-pc-linux-gnu/asn1rt_nif.so
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/asn1/c_src'
+=== Leaving application asn1
+make[2]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/asn1'
+=== Skipping subdir jinterface, reason:
+Java compiler disabled by user
+===
+make[2]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/debugger'
+=== Entering application debugger
+make[3]: Entering directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/debugger/src'
+ GEN	deps/deps.mk
+ ERLC	../ebin/debugger.beam
+ ERLC	../ebin/i.beam
+ ERLC	../ebin/int.beam
+ ERLC	../ebin/dbg_debugged.beam
+ ERLC	../ebin/dbg_icmd.beam
+ ERLC	../ebin/dbg_idb.beam
+ ERLC	../ebin/dbg_ieval.beam
+ ERLC	../ebin/dbg_iload.beam
+ ERLC	../ebin/dbg_iserver.beam
+ ERLC	../ebin/dbg_istk.beam
+ ERLC	../ebin/dbg_wx_break.beam
+ ERLC	../ebin/dbg_wx_break_win.beam
+ ERLC	../ebin/dbg_wx_code.beam
+ ERLC	../ebin/dbg_wx_filedialog_win.beam
+ ERLC	../ebin/dbg_wx_interpret.beam
+ ERLC	../ebin/dbg_wx_mon.beam
+ ERLC	../ebin/dbg_wx_mon_win.beam
+ ERLC	../ebin/dbg_wx_settings.beam
+ ERLC	../ebin/dbg_wx_src_view.beam
+ ERLC	../ebin/dbg_wx_trace.beam
+ ERLC	../ebin/dbg_wx_trace_win.beam
+ ERLC	../ebin/dbg_wx_view.beam
+ ERLC	../ebin/dbg_wx_win.beam
+ ERLC	../ebin/dbg_wx_winman.beam
+ VSN	../ebin/debugger.app
+ VSN	../ebin/debugger.appup
+compile: warnings being treated as errors
+dbg_wx_filedialog_win.erl:25:2: behaviour wx_object undefined
+%   25| -behaviour(wx_object).
+%     |  ^
+
+make[3]: *** [/home/bat/projects/bream/upstream/otp-reference-build/make/x86_64-pc-linux-gnu/otp.mk:138: ../ebin/dbg_wx_filedialog_win.beam] Error 1
+make[3]: *** Waiting for unfinished jobs....
+make[3]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/debugger/src'
+make[2]: *** [/home/bat/projects/bream/upstream/otp-reference-build/make/otp_subdir.mk:31: opt] Error 2
+make[2]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib/debugger'
+make[1]: *** [/home/bat/projects/bream/upstream/otp-reference-build/make/otp_subdir.mk:31: opt] Error 2
+make[1]: Leaving directory '/home/bat/projects/bream/upstream/otp-reference-build/lib'
+make: *** [Makefile:512: libs] Error 2

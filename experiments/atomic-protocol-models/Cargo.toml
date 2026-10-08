@@ -1,0 +1,10 @@
+[package]
+name = "bream-atomic-protocol-models"
+version = "0.0.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+loom = "=0.7.2"
+
+[workspace]

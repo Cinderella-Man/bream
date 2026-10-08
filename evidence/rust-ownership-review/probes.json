@@ -1,0 +1,74 @@
+[
+  {
+    "name": "moved_value",
+    "kind": "reject",
+    "expected": "E0382",
+    "source": "fixtures/moved_value.rs"
+  },
+  {
+    "name": "borrow_escape",
+    "kind": "reject",
+    "expected": "E0597",
+    "source": "fixtures/borrow_escape.rs"
+  },
+  {
+    "name": "rc_cross_worker",
+    "kind": "reject",
+    "expected": "E0277",
+    "source": "fixtures/rc_cross_worker.rs"
+  },
+  {
+    "name": "wrong_protocol",
+    "kind": "reject",
+    "expected": "E0308",
+    "source": "fixtures/wrong_protocol.rs"
+  },
+  {
+    "name": "pinned_move",
+    "kind": "reject",
+    "expected": "E0277",
+    "source": "fixtures/pinned_move.rs"
+  },
+  {
+    "name": "owned_transfer",
+    "kind": "run",
+    "expected": "same_allocation=true bytes=4\n",
+    "source": "fixtures/owned_transfer.rs"
+  },
+  {
+    "name": "send_sync_shared_mutation",
+    "kind": "run",
+    "expected": "shared_counter=1\n",
+    "source": "fixtures/send_sync_shared_mutation.rs"
+  },
+  {
+    "name": "forget_cleanup",
+    "kind": "run",
+    "expected": "drops=0\n",
+    "source": "fixtures/forget_cleanup.rs"
+  },
+  {
+    "name": "manually_drop_cleanup",
+    "kind": "run",
+    "expected": "drops=0\n",
+    "source": "fixtures/manually_drop_cleanup.rs"
+  },
+  {
+    "name": "captureless_global",
+    "kind": "run",
+    "expected": "global=1\n",
+    "source": "fixtures/captureless_global.rs"
+  },
+  {
+    "name": "no_drop_callback",
+    "kind": "compile",
+    "expected": null,
+    "source": "fixtures/no_drop_callback.rs"
+  },
+  {
+    "name": "pinned_borrow_cleanup",
+    "kind": "run",
+    "expected": "pending=true drops=1\n",
+    "source": "fixtures/pinned_borrow_cleanup.rs"
+  }
+]
