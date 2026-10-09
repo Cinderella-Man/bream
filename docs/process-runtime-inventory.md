@@ -68,6 +68,8 @@ Runtime primitives and OTP behaviours remain separate. An implementation residin
 | [67 — Executed owned-read milestone](research/67-owned-read-milestone.md) | Runtime-owned one-shot endpoint/buffer, typed read result, bounded pending/ready admission, actor stop, late completion, control failure and shutdown |
 | [68 — Persistent-read source contract](research/68-persistent-read-source-contract.md) | Endpoint versus reader/request ownership, operation-reference cancellation, partial receive, EOF policy and poll snapshot lifetime |
 | [69 — Executed persistent-read milestone](research/69-persistent-read-milestone.md) | Sequential reads, retained earlier bytes, stale-request isolation, stop between requests, idle capacity, captured poll snapshot and shutdown |
+| [70 — Timed-read source contract](research/70-timed-read-source-contract.md) | OTP read/cancel serialization, fixed deadlines, zero/infinity, stale references and claimed-result versus expiry policy |
+| [71 — Executed timed-read milestone](research/71-timed-read-milestone.md) | Injected-clock stream expiry, typed timer destinations, settlement before reuse, retained earlier data, stop/shutdown and six BEAM socket cases |
 
 The original [reports 11–17](beam-source-map.md) retain the ordinary execution, message and lifecycle traces and their edge-case audits. The [expanded build catalogue](build-plan/process-runtime-expansion.md) assigns the newly identified branches feature/case IDs and integration work.
 
@@ -154,7 +156,7 @@ The concurrency/clock pass distinguishes inactive participants from quiescent ac
 
 ## Latest checkpoint and next source frontier
 
-**Implementation update, 2026-10-09:** fifteen bounded milestones now pass through [persistent local reads](../experiments/persistent-read/README.md). Source report 68 and execution report 69 support the latest profile; read timeouts using the existing injected clock are next. That step must define data/timeout arbitration and preserve request settlement before endpoint reuse. [Current milestones](milestones.md) take priority for the next work selection. The source frontier below remains available when it answers a question needed by those milestones.
+**Implementation update, 2026-10-09:** sixteen bounded milestones now pass through [timed persistent reads](../experiments/timed-read/README.md). Source report 70 and execution report 71 support the latest profile; bounded runtime-owned writes are next. That step must preserve partial-write offsets, claimed storage and exact request identity while acknowledging irreversible external effects. [Current milestones](milestones.md) take priority for the next work selection. The source frontier below remains available when it answers a question needed by those milestones.
 
 As of 2026-10-08, reports 54–57 are integrated: 537 planned cases and 107 performance tasks. Q24 selects responsiveness first; no numeric SLO or backend is chosen. Source-only worker/async traces and executed Rust observations remain separate. Offline workers can still own service, aborting delivery does not stop native execution, and VM process exit cannot substitute for embedded-runtime cleanup.
 

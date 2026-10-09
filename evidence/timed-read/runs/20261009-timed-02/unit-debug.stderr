@@ -1,0 +1,4 @@
+   Compiling libc v0.2.190
+   Compiling bream-timed-runtime v0.0.0 (/home/bat/projects/bream/experiments/timed-read/runtime)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 4.02s
+     Running unittests src/lib.rs (.tools/timed-read/20261009-timed-02/debug/deps/bream_timed_runtime-2f4a48feb0134ae2)

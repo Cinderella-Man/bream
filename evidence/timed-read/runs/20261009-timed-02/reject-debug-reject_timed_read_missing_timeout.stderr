@@ -1,0 +1,24 @@
+   Compiling bream-timed-consumer v0.0.0 (/home/bat/projects/bream/experiments/timed-read/consumer)
+error[E0004]: non-exhaustive patterns: `TimedStreamResult::Timeout` not covered
+   --> consumer/examples/reject_timed_read_missing_timeout.rs:2:1
+    |
+  2 | #[process_module]
+    | ^^^^^^^^^^^^^^^^^ pattern `TimedStreamResult::Timeout` not covered
+    |
+note: `TimedStreamResult` defined here
+   --> runtime/src/stream_read.rs:97:1
+    |
+ 97 | pub enum TimedStreamResult {
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+...
+103 |     Timeout,
+    |     ------- not covered
+    = note: the matched value is of type `TimedStreamResult`
+    = note: this error originates in the attribute macro `process_module` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: ensure that all possible cases are being handled by adding a match arm with a wildcard pattern or an explicit pattern as shown
+    |
+  2 | #[process_module], TimedStreamResult::Timeout => todo!()
+    |                  +++++++++++++++++++++++++++++++++++++++
+
+For more information about this error, try `rustc --explain E0004`.
+error: could not compile `bream-timed-consumer` (example "reject_timed_read_missing_timeout") due to 2 previous errors

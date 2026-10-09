@@ -1,0 +1,8 @@
+   Compiling bream-timed-consumer v0.0.0 (/home/bat/projects/bream/experiments/timed-read/consumer)
+error: bream structured subset: shared byte operation requires concrete SharedBytes place
+ --> consumer/examples/reject_stream_clone.rs:7:30
+  |
+7 |                 let copied = clone_shared(bytes);
+  |                              ^^^^^^^^^^^^
+
+error: could not compile `bream-timed-consumer` (example "reject_stream_clone") due to 1 previous error

@@ -1,0 +1,7 @@
+use bream_timed_macros::process_module;
+#[process_module]
+mod checked {
+    fn read_next_for() {}
+    fn run() {}
+}
+fn main() {}

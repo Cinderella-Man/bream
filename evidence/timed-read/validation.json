@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "date": "2026-10-09",
+  "cohort": "evidence/timed-read/runs/20261009-timed-02",
+  "retained_cohorts": 2,
+  "hash_records_verified": 1651,
+  "current_inputs_verified": 247,
+  "previous_inputs_preserved": 233,
+  "commands": 517,
+  "observations": 462,
+  "rust_exit_configurations": 6,
+  "rust_read_configurations": 6,
+  "rust_stream_configurations": 6,
+  "rust_timed_read_configurations": 6,
+  "beam_socket_observations": 12,
+  "beam_reference_observations": 78,
+  "experiments_executed_by_audit": false,
+  "benchmarks_executed": false,
+  "errors": []
+}

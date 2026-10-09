@@ -1,0 +1,6 @@
+
+thread 'main' (563529) panicked at consumer/src/exits.rs:221:5:
+assertion `left == right` failed
+  left: Snapshot { polls: 1, steps: 2, progress: 0, stage: 1, input_taken: false, result: 0, live_bytes: 0, freed_bytes: 0, drops: 0, kill_event: 0, stop_event: 0, cleanup_event: 0, terminal: 0, exit_reason: 0, pending_exit: 0, trap_exit: false, polling: false, waiting: true, queued: 0, scanned_prefix: 0, scans: 0, receives: 0, parks: 1, wakes: 0, cleanup_batches: 0, cleanup_messages: 0, timeouts: 0, timer_generation: None, timer_deadline: None, timer_expired: false }
+ right: Snapshot { polls: 1, steps: 2, progress: 0, stage: 1, input_taken: false, result: 0, live_bytes: 0, freed_bytes: 0, drops: 0, kill_event: 0, stop_event: 0, cleanup_event: 0, terminal: 0, exit_reason: 0, pending_exit: 0, trap_exit: false, polling: false, waiting: true, queued: 0, scanned_prefix: 0, scans: 0, receives: 0, parks: 0, wakes: 0, cleanup_batches: 0, cleanup_messages: 0, timeouts: 0, timer_generation: None, timer_deadline: None, timer_expired: false }
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace

@@ -1,0 +1,8 @@
+   Compiling bream-timed-consumer v0.0.0 (/home/bat/projects/bream/experiments/timed-read/consumer)
+error: bream structured subset: unknown read result variant
+ --> consumer/examples/reject_read_unknown_variant.rs:6:13
+  |
+6 |             ReadResult::Other => {}
+  |             ^^^^^^^^^^
+
+error: could not compile `bream-timed-consumer` (example "reject_read_unknown_variant") due to 1 previous error

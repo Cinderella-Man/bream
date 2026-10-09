@@ -1,0 +1,8 @@
+   Compiling bream-timed-consumer v0.0.0 (/home/bat/projects/bream/experiments/timed-read/consumer)
+error: bream structured subset: only local or checked-record places are admitted
+ --> consumer/examples/reject_shared_clone_temporary.rs:5:34
+  |
+5 |         let bytes = clone_shared(shared_bytes(receive_shared_any()));
+  |                                  ^^^^^^^^^^^^
+
+error: could not compile `bream-timed-consumer` (example "reject_shared_clone_temporary") due to 1 previous error

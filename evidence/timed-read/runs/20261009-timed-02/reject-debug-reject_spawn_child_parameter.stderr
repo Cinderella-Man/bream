@@ -1,0 +1,8 @@
+   Compiling bream-timed-consumer v0.0.0 (/home/bat/projects/bream/experiments/timed-read/consumer)
+error: bream structured subset: spawn child requires no parameters and unit output
+ --> consumer/examples/reject_spawn_child_parameter.rs:6:20
+  |
+6 |         spawn_link(child, owned_input(), 0, 0);
+  |                    ^^^^^
+
+error: could not compile `bream-timed-consumer` (example "reject_spawn_child_parameter") due to 1 previous error

@@ -1,0 +1,6625 @@
+{
+  "status": "failed",
+  "errors": [
+    "AssertionError(('', \"\\nthread 'main' (563529) panicked at consumer/src/exits.rs:221:5:\\nassertion `left == right` failed\\n  left: Snapshot { polls: 1, steps: 2, progress: 0, stage: 1, input_taken: false, result: 0, live_bytes: 0, freed_bytes: 0, drops: 0, kill_event: 0, stop_event: 0, cleanup_event: 0, terminal: 0, exit_reason: 0, pending_exit: 0, trap_exit: false, polling: false, waiting: true, queued: 0, scanned_prefix: 0, scans: 0, receives: 0, parks: 1, wakes: 0, cleanup_batches: 0, cleanup_messages: 0, timeouts: 0, timer_generation: None, timer_deadline: None, timer_expired: false }\\n right: Snapshot { polls: 1, steps: 2, progress: 0, stage: 1, input_taken: false, result: 0, live_bytes: 0, freed_bytes: 0, drops: 0, kill_event: 0, stop_event: 0, cleanup_event: 0, terminal: 0, exit_reason: 0, pending_exit: 0, trap_exit: false, polling: false, waiting: true, queued: 0, scanned_prefix: 0, scans: 0, receives: 0, parks: 0, wakes: 0, cleanup_batches: 0, cleanup_messages: 0, timeouts: 0, timer_generation: None, timer_deadline: None, timer_expired: false }\\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\\n\"))"
+  ],
+  "protocol": {
+    "path": "evidence/timed-read/runs/20261009-timed-01/protocol.json",
+    "sha256": "83e9fa77b4a7c3b05d7962f9c4806d29cd5fe7345997a903589046fdc55bc07f"
+  },
+  "inputs": [
+    {
+      "original_path": "experiments/timed-read/Cargo.lock",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/Cargo.lock",
+      "sha256": "5b582174a99cf27a72dcb25bd23cbf1c5b7b454fb0f801422274a7b65217de5d"
+    },
+    {
+      "original_path": "experiments/timed-read/Cargo.toml",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/Cargo.toml",
+      "sha256": "3ef7f940bcad0ab49e8984b409a58f99319026aca593fe46e4ed0968f9877a51"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/Cargo.toml",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/Cargo.toml",
+      "sha256": "ab8711bd570e7a9cf7b3b1501ed67906a17c5919ee9f895a62eea251ba0daa7f"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_buffer_move.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_buffer_move.rs",
+      "sha256": "ef863d871b2404006e87bcc9c9c31f997628e241bfafa0edd8754e85425b781c"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_buffer_rebind.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_buffer_rebind.rs",
+      "sha256": "14ad1274e9ee79971997eea2bb2f21b5693b8c5a093e24343547d06f62e1b4fb"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_closure.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_closure.rs",
+      "sha256": "acef5410142b76ec14a833b0cc6e3a023b0aa37bdcd766fdf8d6a0ca12b3e1ab"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_closure_spawn.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_closure_spawn.rs",
+      "sha256": "45dd2b9ac1d21adbf27f1082c697b87a2642cd804bdb4484eb0f682439f46ccf"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_custom_call.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_custom_call.rs",
+      "sha256": "4512f95b84fbe751f14c4efd8d2ac31637ddfd3427aaa64acf48145aa78bba14"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_custom_drop.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_custom_drop.rs",
+      "sha256": "7cc1d83e00f93974c9619d1f27cec35cbd55a8b3c3a419b76b89d1646d5e3fd6"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_custom_iterator.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_custom_iterator.rs",
+      "sha256": "bf84dd1ea816c341a28bb04cf3faaa755f31d5f0e8a30e85bb352c27b5325469"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_custom_type.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_custom_type.rs",
+      "sha256": "f3f44625f4d2874e166a9af213ea7691e06d636488b5b263ad0a00ca6530c46e"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_drop_input.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_drop_input.rs",
+      "sha256": "e04f439192a8ab9fe023dec209d55d37edda753842b7f600627cb0364725e538"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_envelope_clone.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_envelope_clone.rs",
+      "sha256": "e10997ad0abb449352a4cebaa12ca177fec14ef38266d1b8db44bb91dc2e2d08"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_exit_arity.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_exit_arity.rs",
+      "sha256": "577a6857185aadbd96b59c16cf577fa386037aa85c81368dbbd1e7ffce1e3adf"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_exit_constructor.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_exit_constructor.rs",
+      "sha256": "423b25f0467cf25c726d763476f9d1487d1eaa13ce54c354bd786ee45d53c9c1"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_exit_helper_shadow.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_exit_helper_shadow.rs",
+      "sha256": "7e7dee3f0f63965883e5381fa97613253fea6f63e5a1eb322aa6e37799cecfd2"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_exit_missing_arm.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_exit_missing_arm.rs",
+      "sha256": "a0841783968c9710bf8c25e5c39cee2aa9e16f6868f969e6efee423b277f2b99"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_exit_numeric_reason.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_exit_numeric_reason.rs",
+      "sha256": "d4a285ed2c0beb6251660d337b8124b2ed2324a09dfa09114c60c152ec763343"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_exit_numeric_target.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_exit_numeric_target.rs",
+      "sha256": "21b1156a9e3ccdcb2f98414d433cc8b55f0f2f2a1ca34d9b07129810bd09e841"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_exit_reason_arithmetic.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_exit_reason_arithmetic.rs",
+      "sha256": "46859f0d68898def2ef300bd760694a5ca6cf90c56356a96fcdbb123aea88870"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_exit_reserved.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_exit_reserved.rs",
+      "sha256": "1f5c51a314b7f4651f5d1ec25956bc98404ada50c7bcc4f23ef96cb92f93f6d8"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_exit_self_arity.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_exit_self_arity.rs",
+      "sha256": "9973e06989cd27efb5642dd95f7c15aa8fa758b4e066b8603e71848f74abdd94"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_exit_unit_binding.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_exit_unit_binding.rs",
+      "sha256": "7ac269dd091e0f8a9f98a6aa164e2b6765d2490f9b160ea17b23aefcb0f17b85"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_exit_unknown_reason.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_exit_unknown_reason.rs",
+      "sha256": "564f27d7f5f0ea9429988575267de28d24dc9fa4753b8a39647ad9642e220b68"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_external_method.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_external_method.rs",
+      "sha256": "feda0e90b081b9b9a8f33c5b540039d9062bcd2133d1dbafe9e9890ebdb401b0"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_future.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_future.rs",
+      "sha256": "48eb5c5a663832835886831877b835f954054400ed3c995dd11cd59b1ee1222f"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_global_read.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_global_read.rs",
+      "sha256": "563c73a4fe3d620938e2b53a5a106544f73666786c1bc90dc6642a2291a32b0e"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_id_fields.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_id_fields.rs",
+      "sha256": "bfc2b26e6c6088f64da5851251216c6acda882bc034557893184a861602457c1"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_id_mutation.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_id_mutation.rs",
+      "sha256": "e585815cd3187cf919d7fb12891291cee148ed846d3c33065ea7ba90c07ccfb1"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_inner_attribute.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_inner_attribute.rs",
+      "sha256": "0df03bfb4b291731241db4913d22182b154b9e638c074186e7315d1d0e8d0213"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_link_builtin_shadow.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_link_builtin_shadow.rs",
+      "sha256": "67adaecd747cbf836f51194cedea97ac1726ae3cdd88c501e5ac9cec82268b5c"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_link_exit_constructor.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_link_exit_constructor.rs",
+      "sha256": "1f33699afff545bf7a7af0aee359871a90fd3b33387f18fba20c7b618cba8103"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_link_exit_fields.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_link_exit_fields.rs",
+      "sha256": "43332aa2ae653e5901870a434d691fe1f9f94bc6a3eded8e93f2831314728997"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_link_exit_operation.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_link_exit_operation.rs",
+      "sha256": "a6d2433ee94eb589484cfdef0c5b07c32becfcc8c3c290dfccb9d25fd53c5ce9"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_link_explicit_signal.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_link_explicit_signal.rs",
+      "sha256": "01fcbb47074aa630d29527010395f598972f318891ac95ad5235d97546f9d69d"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_link_missing_arm.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_link_missing_arm.rs",
+      "sha256": "eacdc2d3c32b9b7eb81cce4552ad15f1826820114a80148667934f960a12fa9b"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_link_numeric_target.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_link_numeric_target.rs",
+      "sha256": "3bdcac45d0dc7267ffcfbc99e27e5c3daccb48a32ad184d33d687066b3f47770"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_link_predicate.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_link_predicate.rs",
+      "sha256": "5f6906b4b432160f37e807df9eca95df05e0f10d615a4e1d33a67ab41027d2e7"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_link_result_constructor.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_link_result_constructor.rs",
+      "sha256": "da6580c6bd0dffa29bee26310cb391f410c5f7509695df64552669b27cc3fe2b"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_link_timeout_type.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_link_timeout_type.rs",
+      "sha256": "84baef6fe41e570e429d3282dced26c0153f060006a3fd147d20fca798cc21f7"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_link_trap_type.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_link_trap_type.rs",
+      "sha256": "5f62cfd17515a5af11b0665a8481938202df6f9a79750e6ee0fd26e400707cf7"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_link_try_constructor.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_link_try_constructor.rs",
+      "sha256": "0860650a69fa8457aaceeb2a820dcaba7a016dd72cb9b98baa573413cc622015"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_link_try_missing_arm.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_link_try_missing_arm.rs",
+      "sha256": "f1b2f5daa60b78fe1cb852f53838b914287ffaa9a85ad757230f3ccc29a91b70"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_link_try_target.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_link_try_target.rs",
+      "sha256": "4c0933fa86ca7c763f11a02486331ad42c036e5f33010a94c333d0405b8b3bc6"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_link_unlink_reference.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_link_unlink_reference.rs",
+      "sha256": "f36abb51885f46462b2a1e9e4361557f6f3ab9fba6cd75989a16ecc6bf4fc738"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_link_wrong_pattern.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_link_wrong_pattern.rs",
+      "sha256": "eae8e2356adbd30fca24e0bf16f7dbf58a1425d32c8c9466723ff12458c16e88"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_macro.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_macro.rs",
+      "sha256": "5bf32bd579edabca9eca9a0dea659b6f6ce009ee26b2a765bc4fd72be12b05f4"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_manual_await.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_manual_await.rs",
+      "sha256": "ab0d663265713b65467fad445ded39b446fc0d6b9044a035bcbde8faf71ee1a3"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_message_builtin_shadow.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_message_builtin_shadow.rs",
+      "sha256": "2efdf9451f9904ab434291499bdf08f3a3f19839cfb4321b8a7126fb12f7916c"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_message_constructor.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_message_constructor.rs",
+      "sha256": "b513aaf9d620ee8fe1922bb87ffc8176102c80c23a4627289e54dfc339ed7430"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_message_twice.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_message_twice.rs",
+      "sha256": "d46e5608359e4379371db3be9df0452227f21a342ed46b694772fcb262729dad"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_monitor_builtin_shadow.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_monitor_builtin_shadow.rs",
+      "sha256": "b43bab1b17bb080655537b4cf1dbed7b8812b360249d0f9a60c466577dfb9ca5"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_monitor_down_constructor.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_monitor_down_constructor.rs",
+      "sha256": "4b165d96a42da56a1ff895143cc3870be794e3c2af39e9d57530d8197c9e5d1d"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_monitor_down_operation.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_monitor_down_operation.rs",
+      "sha256": "256c5a1ed91ac5afa957f83433f9c60c9b550cc22050976a881b3b162f0a74df"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_monitor_duplicate_owner.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_monitor_duplicate_owner.rs",
+      "sha256": "23654820fd47f8b53060d5bb423d68c0255b939469930cbc593ad899669e5a93"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_monitor_event_constructor.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_monitor_event_constructor.rs",
+      "sha256": "74d7207f885b8bd0586cfb2dd8925a1543f535f65a6d143354584223561b9e03"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_monitor_event_timeout_type.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_monitor_event_timeout_type.rs",
+      "sha256": "609c3680cbd0ccee10279568aef584d22ab5b880f61df461fd055e36f493c844"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_monitor_missing_arm.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_monitor_missing_arm.rs",
+      "sha256": "a6477df88ad05ae32a1e55aa7f788d5dcb528cd711f1ac5cb703df1d3b5f092f"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_monitor_numeric_target.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_monitor_numeric_target.rs",
+      "sha256": "e8e92e42c79b58c1fe77548ba9d102d2af7e41f36502bb536dd20321d88989e6"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_monitor_pid_selector.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_monitor_pid_selector.rs",
+      "sha256": "996e10913a98936c854f78ea6a52809fcb31aac629bcf884ef9d288f674bea97"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_monitor_predicate.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_monitor_predicate.rs",
+      "sha256": "41ce0e30ce4309f9c65bb8a6e930d30ffb5155ab62ccb6a2707e80e9593353af"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_monitor_ref_arithmetic.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_monitor_ref_arithmetic.rs",
+      "sha256": "ce450f616a19ef91e9fe162a2427e992e85ca5eaa948a760d3ded39b61a25fe2"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_monitor_ref_constructor.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_monitor_ref_constructor.rs",
+      "sha256": "6578b20f11cc04654ce69b71b3e8400a4b6d0d20256cfc06bf04977419919bde"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_monitor_timeout_type.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_monitor_timeout_type.rs",
+      "sha256": "f176c7ce6bbaace2a9321d18cbe71e5c5484b97ade3c731d883f14e8e66d8dfc"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_monitor_wrong_pattern.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_monitor_wrong_pattern.rs",
+      "sha256": "f9f9cdea6e5de1532e29bd37c76625fcbaa125822ffd4a65322cd7549ded8d67"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_nested_macro.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_nested_macro.rs",
+      "sha256": "c840aa767b075c0bb2e55ec0e1ea6bef12689f6d0574cd61ed75ad9ce82260ed"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_pid_arithmetic.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_pid_arithmetic.rs",
+      "sha256": "063de0cb3aaed305ddd1860e70c123b5f0650200ec33e52e7c076f68283c2e02"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_program_fields.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_program_fields.rs",
+      "sha256": "ac58f50d2ad82ddbfb9d7a26de62ed82276407256e4ed2de9aea39744552ca31"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_raw_identifier.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_raw_identifier.rs",
+      "sha256": "744335d81003e06f3a3bc85aef9a8bd36ab4a2d25aa83ddf75a7ac55586e02d9"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_read_arity.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_read_arity.rs",
+      "sha256": "776f74f9814066311785bd44b14047399ab6c824789467ec6e4f4af0c395b396"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_read_clone.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_read_clone.rs",
+      "sha256": "45a6ceb9ab6758f38bd30af5739d904aab1161d1ac71f8983db635ee223be6c6"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_read_constructor.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_read_constructor.rs",
+      "sha256": "76fd3b3f0a793e05a0373c0116b8043b4b2105a192603376062749d5c8361e50"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_read_duplicate_owner.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_read_duplicate_owner.rs",
+      "sha256": "17468b064e3dfd411e41c48fca709f3468f5046beb72bff101c976bd1659c3b9"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_read_index_type.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_read_index_type.rs",
+      "sha256": "4467ddfddebefe88f6a230fca3057ed0034c866da8111cc239b358f4a864bae1"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_read_len_type.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_read_len_type.rs",
+      "sha256": "98808d9620b25408c171dea23ed94478fe42bffae2735545107d185b01ae7ab4"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_read_message.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_read_message.rs",
+      "sha256": "47d1530e29301aabcbcd86d3fb382fb051caf784181ec2e68fb4a2f1ebd4c332"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_read_missing_arm.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_read_missing_arm.rs",
+      "sha256": "57a1c39a600a66efffdb80c3907326dc5ef58ef2ddeb7d7cc8c0b51426ad5ed3"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_read_reserved.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_read_reserved.rs",
+      "sha256": "e1bc1cc597d00b333b451a810a5b21ca94482461ceafdd68766239ed5cab84ba"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_read_unknown_variant.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_read_unknown_variant.rs",
+      "sha256": "22040759360fc1059dd2f6aca7df1e1ab606a6a63188fec60edc3c6a7e588e1c"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_receive_predicate.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_receive_predicate.rs",
+      "sha256": "5ea85804ba515058f6b6f9cb39c2892b0fdf37fb467f1ea903635c00b1797088"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_reserved_name.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_reserved_name.rs",
+      "sha256": "65801cab933d6b0e872378d58fe656a04a5933f12398b0f4e79e9956253c62a2"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_safe_constructor.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_safe_constructor.rs",
+      "sha256": "c80baa400cba8af092af2b33e7f669f008048c69afd27782b703e23b7e9f2f03"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_scalar_read.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_scalar_read.rs",
+      "sha256": "7540812ce43ba1d857a32a1ffd8619cb466a5e59377d881ea45dde07fea56fb6"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_send_custom_payload.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_send_custom_payload.rs",
+      "sha256": "994e419376b04cab48f45a7cac1c4928f7e68483c188c22593f686656c29f650"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_send_numeric_pid.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_send_numeric_pid.rs",
+      "sha256": "bb66dca0012b5281a168d492fa40467fdd72a92e90f2ce160547513b5104ad0c"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_send_twice.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_send_twice.rs",
+      "sha256": "47c3c4cc878a0780409588cd4e176a9ea1e3a61fb3932e1aa72eb8a448f2392f"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_shared_arc.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_shared_arc.rs",
+      "sha256": "b246f20b32f8e400f904dd518d371b6b3d740565c832ecb0da799ef246b72896"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_shared_builtin_shadow.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_shared_builtin_shadow.rs",
+      "sha256": "cb17b566ddd6e9cfc55b8ddb3e223782dc19973ca7479fcd865ce96c95e1afe4"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_shared_clone_temporary.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_shared_clone_temporary.rs",
+      "sha256": "f3ff76d5b4fe0063be49afe1e57878d188338bd12d4f02ed62c02e25a0158ff5"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_shared_constructor.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_shared_constructor.rs",
+      "sha256": "f198a0ab506acaf4e17924c0ff6728b9965404a04908672a81b8e3cbecfa1db4"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_shared_duplicate_message.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_shared_duplicate_message.rs",
+      "sha256": "165474d3166f9431664c38f9e354e07bf79f1f6dbd0f9cd51e0e1a8bd54b95fb"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_shared_duplicate_owner.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_shared_duplicate_owner.rs",
+      "sha256": "65db365488542635fb8f38f588bd9117972fde741d2da0456c7f073d50a5a1db"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_shared_event_missing_arm.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_shared_event_missing_arm.rs",
+      "sha256": "75bf4dcd42e7397e497bf9435f493180a57f5e5744d4021b5b6455c8c1e2f4ae"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_shared_fields.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_shared_fields.rs",
+      "sha256": "3fc3b70bc18717ba7f15506181644f72dc90e32391970e5e28407ac8982984ac"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_shared_message_constructor.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_shared_message_constructor.rs",
+      "sha256": "736e9f627176b6b9d39abbe0d2a3b127b23808087287fd9c22249fdfe8bc9b58"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_shared_missing_arm.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_shared_missing_arm.rs",
+      "sha256": "c7e8ee453161b9f5d609feb5686f31850ac93518a307007406e1d7adb8056f51"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_shared_mutation.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_shared_mutation.rs",
+      "sha256": "21437c2fd3bc631b758b1bda00a07281f44abf11927efa2bea9e77b51de6dd4d"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_shared_new.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_shared_new.rs",
+      "sha256": "941ebb63ceff1829c8285fef8f2b7443db09558506d9510c4522a24fa9160ffb"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_shared_predicate.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_shared_predicate.rs",
+      "sha256": "1540b4f37506c534ea15b1f28021f089a5c26515ba2c468a59d4f452b315818d"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_shared_raw_clone.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_shared_raw_clone.rs",
+      "sha256": "5528a6cbcdfcf312b2d2ca8c01ab7c6223cd539b9cb8e48ca243a544f4dfefa6"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_shared_result_constructor.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_shared_result_constructor.rs",
+      "sha256": "45fcf3f2a748d5d1ef09e6d7a662ba1c3e2ac93b33bad7c6bcc792436dfaf8f0"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_shared_send_words.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_shared_send_words.rs",
+      "sha256": "13d848d9047609370be471c764c3fb60565fe83588a34be1659f05b07fd22691"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_shared_spawn_input.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_shared_spawn_input.rs",
+      "sha256": "5edfc616d5ce64f54c70c1f6f651d29f51482a4ea7f8566f3498742999ccedcd"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_shared_words.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_shared_words.rs",
+      "sha256": "9cd1ce938bab09100a69cd3fa46a5b776f587ff48b0a00c1843bff4c9da9d16b"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_shared_write.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_shared_write.rs",
+      "sha256": "71fd99dea2f090095467adb9979b2de45c68f12e5f5798489074ace2e65d6023"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_shared_wrong_index.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_shared_wrong_index.rs",
+      "sha256": "00e86ed40051a04387e7d19ca06c772bf8c61cb013175686bde6b25a793fb495"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_shared_wrong_message.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_shared_wrong_message.rs",
+      "sha256": "f26de669f8086110e762721eea67876b2de8bdb0451333052759501e039d9d7e"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_shared_wrong_pattern.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_shared_wrong_pattern.rs",
+      "sha256": "b07552f30bfa7b4b10e7c285279db897dabf02e14de81255a905fbbd4230ad0c"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_shared_wrong_tag.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_shared_wrong_tag.rs",
+      "sha256": "4b14e898176180e6aa4e9c0cfac949cde6079e27404485e8d04284a12b2834a3"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_shared_wrong_timeout.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_shared_wrong_timeout.rs",
+      "sha256": "cdf6aebfc43ded85f62892a05627ed0bf16747b350a6aa20d1287d6c400ecd98"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_spawn_argument_type.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_spawn_argument_type.rs",
+      "sha256": "393cfc97e385f2c0fccfa49dec879025231155b1be46007aad52763fcdd4b319"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_spawn_arity.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_spawn_arity.rs",
+      "sha256": "e5936641e243d818406b6956a8ce91aca552fe6e3b8f5a73aaef23116a638ccf"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_spawn_async_child.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_spawn_async_child.rs",
+      "sha256": "f23f01a136773f96c8607e4d49a35ae1e6c7619cbd574624be7f22c1d47b2e9d"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_spawn_child_output.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_spawn_child_output.rs",
+      "sha256": "635dbda9c481b1a1f69e0a951195247915cca21bec7c341ff0427e7314b50b95"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_spawn_child_parameter.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_spawn_child_parameter.rs",
+      "sha256": "1ff2a93383b6dd55a998d2f1cc193aa6cd4ebcfb9c6f8fc14ef29d638b6ddbbc"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_spawn_closure.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_spawn_closure.rs",
+      "sha256": "4f116dc969ee9e22d2c5d3522e245e6e135666692f35f4e75b3ea884f192a105"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_spawn_duplicate_owner.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_spawn_duplicate_owner.rs",
+      "sha256": "1ad86a7f8e1e2e40c4b5998ee455817acedd35ef207e2dfae30922c3d27799a9"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_spawn_external_child.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_spawn_external_child.rs",
+      "sha256": "457eea094f12a33eb1b0eb0a0de0df8f50a4ca33fa0205185bb9347b45042798"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_spawn_external_program.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_spawn_external_program.rs",
+      "sha256": "93105d3773ce96a6f6517fe3deb30bcbf53cc9d1aa8e8ee7336316d4399d6f2a"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_spawn_forged_result.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_spawn_forged_result.rs",
+      "sha256": "f189604b7008218fbdec570de33c05870b29555ffa9f730331c65bfd02a0a973"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_spawn_function_value.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_spawn_function_value.rs",
+      "sha256": "9c56f84bfb5b22d3843465c5eb61f74546ece53cb15447a930c8944ca114ec03"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_spawn_mutual_cycle.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_spawn_mutual_cycle.rs",
+      "sha256": "1d4ec220939829e283c957f02ccf1fd2a07069a72b34f4a1d2ddefd59f8a1238"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_spawn_recursive.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_spawn_recursive.rs",
+      "sha256": "5f20e143999ab278f310d924a101a7b3bdea650860231052eadc532304dc8ea2"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_spawn_reserved.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_spawn_reserved.rs",
+      "sha256": "04622a030c03f383f464a031b82283d9eb50ac7848e3b605e0a120039a00acb9"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_spawn_result_field.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_spawn_result_field.rs",
+      "sha256": "a23ae53bbda0a24baad251cf685f5239dc31a50b17f40ff7e664c9cdd575626b"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_spawn_tag_type.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_spawn_tag_type.rs",
+      "sha256": "fef681a658b316cf861cbff39f1f7e649d8ab1949327e3e212df9958bac2cb4b"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_spawn_unchecked_body.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_spawn_unchecked_body.rs",
+      "sha256": "11d94376e9259e67cf107d8b1402644914479cd92f3c9c594cde1f646b0f05da"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_spawn_words_type.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_spawn_words_type.rs",
+      "sha256": "e120613e2804f29782381662993e0560566da199485bad4f359af39b377aa37f"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_spawn_wrong_accessor.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_spawn_wrong_accessor.rs",
+      "sha256": "06c8fa5279d490a1a89ee94248ccee79d667bcb98bcb2401daa0dfa8b6fafaa2"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_stream_arity.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_stream_arity.rs",
+      "sha256": "615ec972688b54c91a0e520671902ab1583871538c8d4057b46135083644d122"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_stream_clone.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_stream_clone.rs",
+      "sha256": "e58868e4fa5dc32e0fc163fb7f99152e732021848d6ef3bce35f837a173c42cd"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_stream_constructor.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_stream_constructor.rs",
+      "sha256": "24b0520582dcfce78149606cb8c66c002c277c75ff73dbc528e158ed56821f7f"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_stream_duplicate_owner.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_stream_duplicate_owner.rs",
+      "sha256": "fb4e416bb8fe9914ac9dc0a1a06e6ff00d51479c3acc0311efeca2962062127d"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_stream_index_type.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_stream_index_type.rs",
+      "sha256": "8a27d7956ec9bc42a986a61af5bf9477e03252a3cb7403f63d4b5fabb55124f0"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_stream_len_type.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_stream_len_type.rs",
+      "sha256": "2ce9772329abeef97cbe054e6a88439441a6ef1356b1f60949caf1681ad1a773"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_stream_message.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_stream_message.rs",
+      "sha256": "59b3d57f7ef6ccd8333a6db179cfee49d0b455ee21eab0389d7a9d7ae71ff044"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_stream_missing_busy.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_stream_missing_busy.rs",
+      "sha256": "c0b328abee513e857d9516b96f6e68ad19cc054311d66e5e5978b125a7b35d9f"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_stream_reserved.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_stream_reserved.rs",
+      "sha256": "9c7e89f40928927ecc537b4c20c40f680e17d6d04c3162ceaafb9a5e7d7b0fd4"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_stream_unknown_variant.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_stream_unknown_variant.rs",
+      "sha256": "4bca6552fac53605f375ce87f0de42cbd38d129a80a08d48dd80d11ddccc26e2"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_struct_async.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_struct_async.rs",
+      "sha256": "74ac0973dbde38414de6e58f1689fa585dc811740cb2fe0666692f6555800319"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_struct_body_item.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_struct_body_item.rs",
+      "sha256": "0b6ea76dc038ab2e5584a3bf508ef5ac34b6f4a09afb6a2dfde7a1398495528d"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_struct_closure.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_struct_closure.rs",
+      "sha256": "a3575495397475001bdcbe9865b89031acd5d6ea154562b0d6f24efe18b11fa3"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_struct_custom_drop.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_struct_custom_drop.rs",
+      "sha256": "96260ab8f525dfd3d5536a31615d74a74ddd86512f7f4526046b88963bb4ca42"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_struct_depth.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_struct_depth.rs",
+      "sha256": "ad825dabd94152ae3c4f20fd10b2a0a4d80b9258d860f5b0090c90780c7e4856"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_struct_derive.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_struct_derive.rs",
+      "sha256": "7192d0acbe06f373721ca680260f1c1651c743685285ed125309d6b572021245"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_struct_duplicate_owner.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_struct_duplicate_owner.rs",
+      "sha256": "2ddac679117ffa5388c4b1b7cee000c661d8e4e09ff5d5877c29b4633d287a93"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_struct_external_field.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_struct_external_field.rs",
+      "sha256": "807227f8b03be8a3ee019ea00e620632b6df898149093ec3b1ab0a639f736b7e"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_struct_function_value.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_struct_function_value.rs",
+      "sha256": "b6eca9bcded70aa79224a8fa5262d5fa9bfdbd50f1f49c057c77964be75f401a"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_struct_generic.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_struct_generic.rs",
+      "sha256": "3c4470a21f3014f42147c3326da698a9c68aaebec445fdf0bf72fcfbdea6b8dd"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_struct_global.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_struct_global.rs",
+      "sha256": "d364e541487228eb19a74af054951afc679735419d8779e03097956127895752"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_struct_helper_attribute.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_struct_helper_attribute.rs",
+      "sha256": "9d652a4ae1ec8514a04d24e6a6f8e147b2bb53805d9cf989bcfb272e1ef3a8a3"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_struct_import.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_struct_import.rs",
+      "sha256": "3bd75945a92b9e64c9c129bc9c864d10ea895e2bcede1796692fd729c1bf4928"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_struct_leaf_count.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_struct_leaf_count.rs",
+      "sha256": "c8b6c005ae96bc8b2c9855fc4e3ac9083caa20e152fabb4669f53b1d9a49a187"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_struct_macro.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_struct_macro.rs",
+      "sha256": "3af21048c07fc99c48656445e9096cd5b4d02943b473d40ffcd1c0d817105f79"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_struct_manual_await.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_struct_manual_await.rs",
+      "sha256": "097b72c640373e272df4c046219173a0f653c6e5c6aad88954a5cd94b9cfe198"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_struct_missing_arm.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_struct_missing_arm.rs",
+      "sha256": "227c5176aa468dff4d93d46c566283bef2910cb9e38dc7dd389eb4bd11a1a072"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_struct_mutual_recursion.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_struct_mutual_recursion.rs",
+      "sha256": "c21985fa43815e36be73030fde1cf8c82f16915f1a02cf80336049f1f1e1e6af"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_struct_owning_tag.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_struct_owning_tag.rs",
+      "sha256": "591641a772c707383d30ea9c5f965cc7ef4f75be08dc416ee50887df971bdd44"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_struct_primitive_alias.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_struct_primitive_alias.rs",
+      "sha256": "aacb74ae6d5d2135763f946a1df1b53ab3003769cf766b72e9b2b8924c85865f"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_struct_private_helper.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_struct_private_helper.rs",
+      "sha256": "d6d84482b7d50c161769121095fa83e3a54e067865996e8f7377c48ad45d3ab6"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_struct_private_type.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_struct_private_type.rs",
+      "sha256": "a19c6587a345ccfe71d7455daf18908e0a15b64b9680429bf20807c4fcbb15e9"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_struct_public_type.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_struct_public_type.rs",
+      "sha256": "ee7fba99f89d08e21c84f07010a9c320bdaf7d13343dd795c3b4aba2b18b0705"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_struct_raw_field.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_struct_raw_field.rs",
+      "sha256": "3f98f5e1dd9494928af7155bb7f382519cb64166aa18b8e57cb59f6e57d7e3bd"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_struct_record_depth.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_struct_record_depth.rs",
+      "sha256": "2ca8d33900589613820dd813780dde8771717a0749d9c36a58d466456e702cb1"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_struct_recursion.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_struct_recursion.rs",
+      "sha256": "1fa3899365087f6f30a2329e9070caf2fb97e3d683a1c28ae2bc75f8b41c5f46"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_struct_recursive_type.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_struct_recursive_type.rs",
+      "sha256": "d5364d61cd1efd7aae914e0306af14698a7da64f9ac8eacdf4c96119d30f42bc"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_struct_reference.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_struct_reference.rs",
+      "sha256": "0b9a0470bee8347809561469df14da2a7ca921298f812ddc42bdd329b7ef59f4"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_struct_trait.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_struct_trait.rs",
+      "sha256": "e1aa956cd30c091e9441b951d1869f5db572e657cc4c8f7ad6f658df9e2f0c14"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_struct_unsafe.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_struct_unsafe.rs",
+      "sha256": "069e5a58613af4121b2b77d9d7b59515490e1fa9c3a285e85ed6a618945d81dc"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_struct_use_after_move.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_struct_use_after_move.rs",
+      "sha256": "59cc88fd7c86d6ba87a3dfe5938207af18a2e6a06ac704250f2271e87c741117"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_struct_wrong_field.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_struct_wrong_field.rs",
+      "sha256": "e3481d8252395c806686bfb471ed11d6fcd524415e5bf030f2ff2745ae827ef7"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_struct_wrong_tag.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_struct_wrong_tag.rs",
+      "sha256": "1299a6d55f419b7a5548e170ff05b474472e4eaf154fdb140ad8312add5a33dc"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_timed_read_arity.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_timed_read_arity.rs",
+      "sha256": "9be62bda8cb85c5619f627fb2810ada489a72a53a6fc32bb261ff7f4f7d8aea3"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_timed_read_clone.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_timed_read_clone.rs",
+      "sha256": "7947faff044e57a4cf2705541cd155dba5e083d0b22a6cd2e2a6bb05c0b8da41"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_timed_read_constructor.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_timed_read_constructor.rs",
+      "sha256": "6fbf6552ea50a7d0c0a777c7318c30c03168fbecc126fb0c10a904917b5321bb"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_timed_read_delay_type.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_timed_read_delay_type.rs",
+      "sha256": "943964573095c0a8109502a412e7d4a2732d412a54545880118dc56334bb5fc4"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_timed_read_duplicate_owner.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_timed_read_duplicate_owner.rs",
+      "sha256": "134a9f8603b738be11590941f158ac958c9ccfb59de179b1d128f129058d0d7b"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_timed_read_missing_timeout.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_timed_read_missing_timeout.rs",
+      "sha256": "3b12fe36348cada1526b0d40463bfbf598ae5b97d208f85e02cf5e8ef166b135"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_timed_read_reserved.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_timed_read_reserved.rs",
+      "sha256": "9e3ba17e467ea828aaef6d8617a22104401d61da321dfe597e9dfd9fcd48f3ba"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_timed_read_unknown_variant.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_timed_read_unknown_variant.rs",
+      "sha256": "1d403d0b4057aad0bc01bff787e4b3bc182273fe7fee362467e80922fd7e7ecb"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_timed_read_wrong_pattern.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_timed_read_wrong_pattern.rs",
+      "sha256": "9ab252732f17e428333219f06f76683ff4089568eaa3125621bcdbf082764f3c"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_timed_read_wrong_result.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_timed_read_wrong_result.rs",
+      "sha256": "de297c96c0833bce33ed37376a118d366c1cc85c5064a18b4581a498a67e6eb4"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_timeout_builtin_shadow.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_timeout_builtin_shadow.rs",
+      "sha256": "c6700df9c2b43cc9dd9d356c8ca6d0122f5143c654a7a7ca39df7db2d114a05d"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_timeout_clock_access.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_timeout_clock_access.rs",
+      "sha256": "cb7da25d41f2e23c94c4fd23d3e2a4fc0492a20690780d0fd213199c0ec365b6"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_timeout_constructor.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_timeout_constructor.rs",
+      "sha256": "000dbbba6a7c74424c8dd65436789e312b941422b46c83041ecba1ce6da3d078"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_timeout_duplicate_owner.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_timeout_duplicate_owner.rs",
+      "sha256": "5677444b64855df5131054e1fb30b00a66121754e8c7e0c896d9b675de34a4cf"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_timeout_message_operation.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_timeout_message_operation.rs",
+      "sha256": "b610ff2e0da0ec3757c0e81ddfecd1f21c2caa40609bdce3c6f47b3a91eac1cc"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_timeout_missing_arm.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_timeout_missing_arm.rs",
+      "sha256": "036aea35c09e8c5855e443768a48c70f2a93286ed62340463c6eadccff786d10"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_timeout_predicate.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_timeout_predicate.rs",
+      "sha256": "11e4f8c15e1b8370ba8575c23e519466cccfa31c372c6286d7ec5f2d30550657"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_timeout_type.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_timeout_type.rs",
+      "sha256": "74560cf1c5c3e5f0224358a78d89eb997b9181094dd173bb02e8af7d22c31a4d"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_timeout_wrong_pattern.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_timeout_wrong_pattern.rs",
+      "sha256": "a3367ecd82a46dd59a9ec0660cf749d5a04dafccc29333ef336c4390cd383aed"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/reject_unsafe.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/reject_unsafe.rs",
+      "sha256": "17fc78e638e351e8c0f78237bee30e5d3a7bd5abbf7750242e4ef1d22bc6abc1"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/shadow_exit.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/shadow_exit.rs",
+      "sha256": "7c5292979139796d6e72eb4993a2eb059a6131cef93789230005257d36f3a7df"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/shadow_link.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/shadow_link.rs",
+      "sha256": "a3df5bd43258f5305c4a4cae78b560f1c383202b851d4220f412d3510a0bd2e7"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/shadow_mailbox.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/shadow_mailbox.rs",
+      "sha256": "3c0b798dac67518c982e38c8c3a4bfeb2d61a7847ab234a50c0d21b14438a299"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/shadow_monitor.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/shadow_monitor.rs",
+      "sha256": "305147f972782f640d4e0f69bb22dc9c0eb65b20c8d62bc945d2fdafc1df004a"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/shadow_paths.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/shadow_paths.rs",
+      "sha256": "8b43d4d1d0ad1737a27c80f5f7b6ac454f8be5e248228c8b8ca2c013c21a9403"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/shadow_read.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/shadow_read.rs",
+      "sha256": "69939e8c1c2a96fdd2ad07ce6c68cf571cc56f553c63a149168ca881a56c9485"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/shadow_shared.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/shadow_shared.rs",
+      "sha256": "8d7bca3ce2b5d6960b1c9eeea164295ca2fc0052ee1ec7839b5ea54fc4f58cee"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/shadow_spawn.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/shadow_spawn.rs",
+      "sha256": "7e98de1d55ad071f61f0d475ba723faf8bcb1827c4e9a9a0c094a8488d963a51"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/shadow_stream.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/shadow_stream.rs",
+      "sha256": "22ff81edace2a27383f38482b905aa62dd6ddcd415d687e7382e90a88e0fbce8"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/shadow_structured.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/shadow_structured.rs",
+      "sha256": "304c9982afd8e751e56c30b7101d72803606ee88d36335dc3695255410afe732"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/shadow_timed_read.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/shadow_timed_read.rs",
+      "sha256": "af354635df0ded7cedf422521f654a8c4a836f243a7ee033bd0162f62ceda50a"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/examples/shadow_timeout.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/examples/shadow_timeout.rs",
+      "sha256": "cd993b71cd957ff0c7b914a23e3ccb7e5c9be76f327f3807965cbe91dbb212aa"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/src/busy.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/src/busy.rs",
+      "sha256": "94755eb5126cac2e3b5d2c45ece1dbc1375c7202085d0e52726ff65b0dc5bb05"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/src/exits.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/src/exits.rs",
+      "sha256": "76fcd69a9fc164582944ad6a511f28c739eb77826978bd5627932c8d7ad0ec10"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/src/links.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/src/links.rs",
+      "sha256": "c9b359cc87f96b634fb95019698a3b80eb0c00366fda2eabdc052f4b0e299ad9"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/src/main.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/src/main.rs",
+      "sha256": "f849ef2c931dbd077b015c49c44552b12f9d713926517c0691186c23eb3c07e5"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/src/monitors.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/src/monitors.rs",
+      "sha256": "77bf56adcfa6c0ecabdfdbf8ede26ad0e230f0dd5010a5ad2ebda227ea028bf7"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/src/reads.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/src/reads.rs",
+      "sha256": "eb69af0fe4f30013e2e8ba7a4407f3ed182d81e3d7ce820630056666ea1b0a7d"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/src/replacement.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/src/replacement.rs",
+      "sha256": "855e4daf02cd807f7aad78a8469e72f37edd8677fe92d83dce0628bce5863429"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/src/room.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/src/room.rs",
+      "sha256": "2ad4f0a1a44593ffd9589e132846ee131f51de2a26c470081bcebb1a6d3d740b"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/src/shared.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/src/shared.rs",
+      "sha256": "6bbcf00bf6ae988ebfdf34926ab1593c97fb14c8ea9d2fbd785ee4e86e02d283"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/src/spawns.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/src/spawns.rs",
+      "sha256": "bed6d6ed8d5bad2dec4905c9c987cbf4fcf4060801922e3e1fa87ae294b35767"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/src/streams.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/src/streams.rs",
+      "sha256": "97188d174b96e9e25335ceae7d7df03162536aed464fddff865ddc831ddfc32b"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/src/timed_reads.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/src/timed_reads.rs",
+      "sha256": "48f3bbb62a4e882fec54e39397aeed3b55f1f1495cc552778d70af8b4c7d167b"
+    },
+    {
+      "original_path": "experiments/timed-read/consumer/src/timeouts.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/consumer/src/timeouts.rs",
+      "sha256": "a6219dcd89d4578b8004d66645f40da19b1fa0c8a8e778d4718c0220e1ab80d7"
+    },
+    {
+      "original_path": "experiments/timed-read/macros/Cargo.toml",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/macros/Cargo.toml",
+      "sha256": "02a01711a7d3d49c94334831c82c866ae8205ab10bd043a9dd18f557b262aef0"
+    },
+    {
+      "original_path": "experiments/timed-read/macros/src/lib.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/macros/src/lib.rs",
+      "sha256": "5824afd86321bf5860aedf62efa597ec511968c9a1d17ed8139ce184f70c3335"
+    },
+    {
+      "original_path": "experiments/timed-read/macros/src/structured.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/macros/src/structured.rs",
+      "sha256": "9d1f9bdcbbf2b50173e7401957c55ebb60554ce602dafc5527d3e2f05ff9eb20"
+    },
+    {
+      "original_path": "experiments/timed-read/runtime/Cargo.toml",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/runtime/Cargo.toml",
+      "sha256": "b4c290e2bf6fee2b97225d9fd5113065ae567db1769e5c4817a519de813228eb"
+    },
+    {
+      "original_path": "experiments/timed-read/runtime/src/exit.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/runtime/src/exit.rs",
+      "sha256": "103de0d59747039491870d9905006cae11c5b8c48c48ef0f1394a747a5ef1893"
+    },
+    {
+      "original_path": "experiments/timed-read/runtime/src/io_read/tests.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/runtime/src/io_read/tests.rs",
+      "sha256": "1e8aac6e612affab2260226f2c2bd7b4f801657bae5e15dc8ca3776570007883"
+    },
+    {
+      "original_path": "experiments/timed-read/runtime/src/io_read.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/runtime/src/io_read.rs",
+      "sha256": "cd88dbc3957a18e43e1c3fed61f511fb5c8f9c91f86d8d79c442ae342e9837f5"
+    },
+    {
+      "original_path": "experiments/timed-read/runtime/src/lib.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/runtime/src/lib.rs",
+      "sha256": "0080a109ec0c2d0a89cd62b5d9ff60f83e85a43838949317967e527833f6c203"
+    },
+    {
+      "original_path": "experiments/timed-read/runtime/src/lifecycle/tests/exits.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/runtime/src/lifecycle/tests/exits.rs",
+      "sha256": "f6064dd95f490072ba20c8ac49d9b27835f188d22b9b9a3cda18714fb0996872"
+    },
+    {
+      "original_path": "experiments/timed-read/runtime/src/lifecycle/tests/links.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/runtime/src/lifecycle/tests/links.rs",
+      "sha256": "fd61252b2b9030ea8cff085eb432076b75df5722eef24b157267a66130cd464f"
+    },
+    {
+      "original_path": "experiments/timed-read/runtime/src/lifecycle/tests/monitors.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/runtime/src/lifecycle/tests/monitors.rs",
+      "sha256": "d5495170ccc2568725bfe1d6ac1e8fcf4f8c9d027c45d7e42f31e4b7f01f6484"
+    },
+    {
+      "original_path": "experiments/timed-read/runtime/src/lifecycle/tests/shared.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/runtime/src/lifecycle/tests/shared.rs",
+      "sha256": "80881773c1e6db6f53fe96a867fbe5a701e825e70ed31cc199c6394596793b2b"
+    },
+    {
+      "original_path": "experiments/timed-read/runtime/src/lifecycle/tests/spawns.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/runtime/src/lifecycle/tests/spawns.rs",
+      "sha256": "ff40e7d89b6b630279b9a7b8897e42ceb7f99c32047352c2f2e6695aac6e9e37"
+    },
+    {
+      "original_path": "experiments/timed-read/runtime/src/lifecycle/tests/timeouts.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/runtime/src/lifecycle/tests/timeouts.rs",
+      "sha256": "c438c19643c705151cdacaf548dee79f9cea227136fd774ce0465a09eb30930b"
+    },
+    {
+      "original_path": "experiments/timed-read/runtime/src/lifecycle/tests.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/runtime/src/lifecycle/tests.rs",
+      "sha256": "89961de537cf55502a1f9ebdda0ea9ab5b1331c5af46fdcd33fa5988d9c7fae6"
+    },
+    {
+      "original_path": "experiments/timed-read/runtime/src/lifecycle.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/runtime/src/lifecycle.rs",
+      "sha256": "32e4717bdfb738fcffec6d9dde8dcdf457d3e9506400b50d5103fd6e1a94ee44"
+    },
+    {
+      "original_path": "experiments/timed-read/runtime/src/links.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/runtime/src/links.rs",
+      "sha256": "c57d01a9827307198a9ee5bf63fb13e5becb8cf32800e8d2258067f89d1c9b55"
+    },
+    {
+      "original_path": "experiments/timed-read/runtime/src/mailbox.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/runtime/src/mailbox.rs",
+      "sha256": "8eded9073e77ed2599733366bb1392b29598688cf0e6d2384191ef8735ceb147"
+    },
+    {
+      "original_path": "experiments/timed-read/runtime/src/monitor.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/runtime/src/monitor.rs",
+      "sha256": "0d9ebc12f357c355e9bb9d5923e12c60bd61475eda4d91aebbf967bd2f2a11cb"
+    },
+    {
+      "original_path": "experiments/timed-read/runtime/src/shared/tests.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/runtime/src/shared/tests.rs",
+      "sha256": "54bdd60a63a2449dd4520179c489a1a8ed9340612af4a431c9a414f079be07a2"
+    },
+    {
+      "original_path": "experiments/timed-read/runtime/src/shared.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/runtime/src/shared.rs",
+      "sha256": "fb51f33387ba0ef174047a33b8076c7b54331b9c3183ab1f0216de885545c89c"
+    },
+    {
+      "original_path": "experiments/timed-read/runtime/src/stream_read/tests.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/runtime/src/stream_read/tests.rs",
+      "sha256": "d6d6de7ebb939a2dfa2d533cd825282a0e3777654de6d4c86879c15a564a3730"
+    },
+    {
+      "original_path": "experiments/timed-read/runtime/src/stream_read/timed_tests.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/runtime/src/stream_read/timed_tests.rs",
+      "sha256": "5157eef4c825eaf9994b6174d398eb273cc2f097870d7ca6a25b58c8de426751"
+    },
+    {
+      "original_path": "experiments/timed-read/runtime/src/stream_read.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/runtime/src/stream_read.rs",
+      "sha256": "bf644e2250faa62608f3ae2a827074b6cae4d380d0bfb9608814d4b4c6206fb5"
+    },
+    {
+      "original_path": "experiments/timed-read/runtime/src/timer.rs",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/runtime/src/timer.rs",
+      "sha256": "c507686d2118929601b6635a4ff9e9793fd480db7e19348a975061805f0601e2"
+    },
+    {
+      "original_path": "evidence/timed-read/run.py",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/evidence/timed-read/run.py",
+      "sha256": "3c3e32bdee0f03f241c0b2631f7e07404a6c2a181d840014c9415b99f63b0112"
+    },
+    {
+      "original_path": "evidence/timed-read/oracles.py",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/evidence/timed-read/oracles.py",
+      "sha256": "27d1a54f80d4e324fa74a18edf696d7cb123857f0b900ee096c4036ecc3877e1"
+    },
+    {
+      "original_path": "experiments/timed-read/exit_reference.erl",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/exit_reference.erl",
+      "sha256": "e577bdd7958f8e4bd7e738167421bed3d37a40bc074ef38a318005bddaaf7bdf"
+    },
+    {
+      "original_path": "experiments/timed-read/timed_read_reference.erl",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/experiments/timed-read/timed_read_reference.erl",
+      "sha256": "b171ffaa073084df36e2fb8e7f91946d1a6c062dad46bd6af40c0f01277f3925"
+    },
+    {
+      "original_path": "evidence/process-protocol-review/source-build.json",
+      "path": "evidence/timed-read/runs/20261009-timed-01/inputs/evidence/process-protocol-review/source-build.json",
+      "sha256": "21d859181a2b7b385bd5a36509bb5c926533d8395e16fa3bade81bbcfcaaab08"
+    }
+  ],
+  "tools": [
+    {
+      "path": "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/rustc",
+      "sha256": "859254978c0a0402c32f949f6de0d99aee73be8d15f45aac00ae1448aac51e74"
+    },
+    {
+      "path": "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/cargo",
+      "sha256": "da77c8b33849312255ccde3179198ada4c8deb370488d050286146b1d1b27e14"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": ".tools/timed-read/20261009-timed-01/beam/exit_reference.beam",
+      "sha256": "b1f77bfaa9734074ee32bd774bfc8156078fc81e471899716c80f21a6f97dfaf"
+    },
+    {
+      "path": ".tools/timed-read/20261009-timed-01/beam/timed_read_reference.beam",
+      "sha256": "abf0d3b3f29e7e209c97ed7af41bb406a2f3e953903bcb8dc33165956cd58d17"
+    },
+    {
+      "path": ".tools/timed-read/20261009-timed-01/debug/bream-timed-consumer",
+      "sha256": "422a0d09dcdc811d56008653646bb57f27d31524243ec4612ec99d8cfd96b06b"
+    }
+  ],
+  "commands": [
+    {
+      "name": "rustc-version",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/rustc",
+        "-vV"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/rustc-version.stdout",
+        "sha256": "778fbc643a806f0dd123c056e66201d7e8a56a61928ec0a33171be8d6c2d5a37"
+      },
+      "stderr": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/rustc-version.stderr",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "otp-source-commit",
+      "argv": [
+        "git",
+        "-C",
+        "/home/bat/projects/bream/upstream/otp",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/otp-source-commit.stdout",
+        "sha256": "063a85610325bb1993b92255be48c9a95c69dd7dd9bd74855a7480264e608391"
+      },
+      "stderr": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/otp-source-commit.stderr",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "otp-build-commit",
+      "argv": [
+        "git",
+        "-C",
+        "/home/bat/projects/bream/upstream/otp-reference-build",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/otp-build-commit.stdout",
+        "sha256": "063a85610325bb1993b92255be48c9a95c69dd7dd9bd74855a7480264e608391"
+      },
+      "stderr": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/otp-build-commit.stderr",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "beam-compile",
+      "argv": [
+        "/home/bat/projects/bream/upstream/otp-reference-build/bin/erlc",
+        "-Werror",
+        "+debug_info",
+        "-o",
+        "/home/bat/projects/bream/.tools/timed-read/20261009-timed-01/beam",
+        "/home/bat/projects/bream/experiments/timed-read/exit_reference.erl"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/beam-compile.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/beam-compile.stderr",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "beam-jit",
+      "argv": [
+        "/home/bat/projects/bream/upstream/otp-reference-build/bin/erl",
+        "-noshell",
+        "-pa",
+        "/home/bat/projects/bream/.tools/timed-read/20261009-timed-01/beam",
+        "-s",
+        "exit_reference",
+        "run"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/beam-jit.stdout",
+        "sha256": "2f43a140f1d2e30b66ed5961f7fbdedd2da3a8ae78ae7d7842c03909100b8e71"
+      },
+      "stderr": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/beam-jit.stderr",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "beam-debug-emu",
+      "argv": [
+        "/home/bat/projects/bream/upstream/otp-reference-build/bin/erl",
+        "-emu_type",
+        "debug",
+        "-emu_flavor",
+        "emu",
+        "-noshell",
+        "-pa",
+        "/home/bat/projects/bream/.tools/timed-read/20261009-timed-01/beam",
+        "-s",
+        "exit_reference",
+        "run"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/beam-debug-emu.stdout",
+        "sha256": "fb8758f48af3bc6287835bb2744241bcf75975e5514226d1c5f2f6edb2b8d919"
+      },
+      "stderr": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/beam-debug-emu.stderr",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "beam-timed-compile",
+      "argv": [
+        "/home/bat/projects/bream/upstream/otp-reference-build/bin/erlc",
+        "-Werror",
+        "+debug_info",
+        "-o",
+        "/home/bat/projects/bream/.tools/timed-read/20261009-timed-01/beam",
+        "/home/bat/projects/bream/experiments/timed-read/timed_read_reference.erl"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/beam-timed-compile.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/beam-timed-compile.stderr",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "beam-timed-jit",
+      "argv": [
+        "/home/bat/projects/bream/upstream/otp-reference-build/bin/erl",
+        "-noshell",
+        "-pa",
+        "/home/bat/projects/bream/.tools/timed-read/20261009-timed-01/beam",
+        "-s",
+        "timed_read_reference",
+        "run"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/beam-timed-jit.stdout",
+        "sha256": "ff3a529bcb4a901d0e76e8a28445d6ab4dff45b6042818d52f7658aff51df86b"
+      },
+      "stderr": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/beam-timed-jit.stderr",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "beam-timed-debug-emu",
+      "argv": [
+        "/home/bat/projects/bream/upstream/otp-reference-build/bin/erl",
+        "-emu_type",
+        "debug",
+        "-emu_flavor",
+        "emu",
+        "-noshell",
+        "-pa",
+        "/home/bat/projects/bream/.tools/timed-read/20261009-timed-01/beam",
+        "-s",
+        "timed_read_reference",
+        "run"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/beam-timed-debug-emu.stdout",
+        "sha256": "dc8e0073dd7d727d328046854c7b6032d5fc0c96661a2e0da98bdac5df1a5bc0"
+      },
+      "stderr": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/beam-timed-debug-emu.stderr",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "unit-debug",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/cargo",
+        "test",
+        "--offline",
+        "--locked",
+        "--manifest-path",
+        "/home/bat/projects/bream/experiments/timed-read/Cargo.toml",
+        "-p",
+        "bream-timed-runtime",
+        "--lib"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/unit-debug.stdout",
+        "sha256": "f1923cc96500ee81a0fb736b03fa84d539f77d6412cf7df8b5e1ae4878da69e4"
+      },
+      "stderr": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/unit-debug.stderr",
+        "sha256": "1dad43dead400b1550c9d77f4ea59d115cb32be520394ee2ba322c4cb6a05b32"
+      }
+    },
+    {
+      "name": "build-debug",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/cargo",
+        "build",
+        "--offline",
+        "--locked",
+        "--manifest-path",
+        "/home/bat/projects/bream/experiments/timed-read/Cargo.toml",
+        "-p",
+        "bream-timed-consumer"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/build-debug.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/build-debug.stderr",
+        "sha256": "ada79ae73ccece26cdb373fb766b0881cd75c2a69b2fae4e9291125c7cdbe626"
+      }
+    },
+    {
+      "name": "controls-debug-1",
+      "argv": [
+        "/home/bat/projects/bream/.tools/timed-read/20261009-timed-01/debug/bream-timed-consumer",
+        "controls",
+        "1"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/controls-debug-1.stdout",
+        "sha256": "93bea0202f4338b430592ed22b4c644d77b897c78daddb2ca2def51196095756"
+      },
+      "stderr": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/controls-debug-1.stderr",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "controls-debug-4",
+      "argv": [
+        "/home/bat/projects/bream/.tools/timed-read/20261009-timed-01/debug/bream-timed-consumer",
+        "controls",
+        "4"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/controls-debug-4.stdout",
+        "sha256": "2af996da921fccd14b7eb7074f5b904287896cbd52b23be826fd5829d6899fe8"
+      },
+      "stderr": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/controls-debug-4.stderr",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "controls-debug-32",
+      "argv": [
+        "/home/bat/projects/bream/.tools/timed-read/20261009-timed-01/debug/bream-timed-consumer",
+        "controls",
+        "32"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/controls-debug-32.stdout",
+        "sha256": "dfe0e74b8f93e0f1c1759a495f6319125632385b50cb772e71a030164b465f1e"
+      },
+      "stderr": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/controls-debug-32.stderr",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "timeouts-debug-1",
+      "argv": [
+        "/home/bat/projects/bream/.tools/timed-read/20261009-timed-01/debug/bream-timed-consumer",
+        "timeouts",
+        "1"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/timeouts-debug-1.stdout",
+        "sha256": "d944ef9bfbc4b6c09dfe8cfcee1ecd76be43bc7098b2ac5327fd5104cfeae7e1"
+      },
+      "stderr": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/timeouts-debug-1.stderr",
+        "sha256": "d75becc6b3c880dba74c7ff5bf54da8280d28ecd3217cdbd892e1eac9ab9bd9b"
+      }
+    },
+    {
+      "name": "timeouts-debug-4",
+      "argv": [
+        "/home/bat/projects/bream/.tools/timed-read/20261009-timed-01/debug/bream-timed-consumer",
+        "timeouts",
+        "4"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/timeouts-debug-4.stdout",
+        "sha256": "2ba9fce607688950e0fe1e49d66953e0890d6ec8f53b3812aea1a97c9596d037"
+      },
+      "stderr": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/timeouts-debug-4.stderr",
+        "sha256": "23027ebd4903cca81c271f234db964f59bf39074749548ba69ba944fc217c8dd"
+      }
+    },
+    {
+      "name": "timeouts-debug-32",
+      "argv": [
+        "/home/bat/projects/bream/.tools/timed-read/20261009-timed-01/debug/bream-timed-consumer",
+        "timeouts",
+        "32"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/timeouts-debug-32.stdout",
+        "sha256": "0b8916005f5fafac77c29f0e1c96157d604b12a2aa22ddf625f99736d2f23745"
+      },
+      "stderr": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/timeouts-debug-32.stderr",
+        "sha256": "781173ac9ffbef02708d50c5c771caac56ad53a2092bd6b667e8eddbc44230d0"
+      }
+    },
+    {
+      "name": "monitors-debug-1",
+      "argv": [
+        "/home/bat/projects/bream/.tools/timed-read/20261009-timed-01/debug/bream-timed-consumer",
+        "monitors",
+        "1"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/monitors-debug-1.stdout",
+        "sha256": "d1035e6460db6f0adbc35fa98e86f7bb279799141e4cf7002b0489a0f024de78"
+      },
+      "stderr": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/monitors-debug-1.stderr",
+        "sha256": "582893396d86746c30b5506ac86c6844f30e731b825fc9d323005bd0a5d92c8e"
+      }
+    },
+    {
+      "name": "monitors-debug-4",
+      "argv": [
+        "/home/bat/projects/bream/.tools/timed-read/20261009-timed-01/debug/bream-timed-consumer",
+        "monitors",
+        "4"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/monitors-debug-4.stdout",
+        "sha256": "c620dbfb93dd628b3b77d84ede595fe5babf5a1f9390e1a1329096aa7a90ddfb"
+      },
+      "stderr": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/monitors-debug-4.stderr",
+        "sha256": "762462fea514bb6a70d46e89f31cf733f19ffd96b6ba43d739a71484df108c42"
+      }
+    },
+    {
+      "name": "monitors-debug-32",
+      "argv": [
+        "/home/bat/projects/bream/.tools/timed-read/20261009-timed-01/debug/bream-timed-consumer",
+        "monitors",
+        "32"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/monitors-debug-32.stdout",
+        "sha256": "4347aef7174379cef48644e5f96d7f4f1a31e24463b4799cd1ba2867bef147bb"
+      },
+      "stderr": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/monitors-debug-32.stderr",
+        "sha256": "847fe015e062362df268d76c846b2023fb388ab029c09eaed4c92613ecf0a6e4"
+      }
+    },
+    {
+      "name": "links-debug-1",
+      "argv": [
+        "/home/bat/projects/bream/.tools/timed-read/20261009-timed-01/debug/bream-timed-consumer",
+        "links",
+        "1"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/links-debug-1.stdout",
+        "sha256": "7ecda87dcd6b61221cfcf3a41fcac57e1b6f43b8994f67a73bf3ad570f081fb0"
+      },
+      "stderr": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/links-debug-1.stderr",
+        "sha256": "3721abc5182c0e8283ebeb4550f225573b330a128cdcc2854b6ec789e9e36609"
+      }
+    },
+    {
+      "name": "links-debug-4",
+      "argv": [
+        "/home/bat/projects/bream/.tools/timed-read/20261009-timed-01/debug/bream-timed-consumer",
+        "links",
+        "4"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/links-debug-4.stdout",
+        "sha256": "5355a1cb1b28926aab9f664b3b6df1b57dfaa7831079847e829422d464088115"
+      },
+      "stderr": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/links-debug-4.stderr",
+        "sha256": "cd2d6ad46c5130ed3b6fc5a6b1f27e2867d35b708b198bd513d8ba87ae1f723e"
+      }
+    },
+    {
+      "name": "links-debug-32",
+      "argv": [
+        "/home/bat/projects/bream/.tools/timed-read/20261009-timed-01/debug/bream-timed-consumer",
+        "links",
+        "32"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/links-debug-32.stdout",
+        "sha256": "2f35bdabaf3777886cd45308852f5fef7ae350db23481e95e061904fcdd375c2"
+      },
+      "stderr": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/links-debug-32.stderr",
+        "sha256": "40b3b83d5ab890b18166f841dd59353daab9fdd19876bab2bc33809ff2dc8b66"
+      }
+    },
+    {
+      "name": "spawns-debug-1",
+      "argv": [
+        "/home/bat/projects/bream/.tools/timed-read/20261009-timed-01/debug/bream-timed-consumer",
+        "spawns",
+        "1"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/spawns-debug-1.stdout",
+        "sha256": "5fead5a059e789aa95ef02d52a08bcdb56ef4fcd12e338ca2cd2a535d4943da5"
+      },
+      "stderr": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/spawns-debug-1.stderr",
+        "sha256": "add1e9c7c0a37d1d374a45a62f4e016e7b2b01f0ee302436d00020cde0a4d4a8"
+      }
+    },
+    {
+      "name": "spawns-debug-4",
+      "argv": [
+        "/home/bat/projects/bream/.tools/timed-read/20261009-timed-01/debug/bream-timed-consumer",
+        "spawns",
+        "4"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/spawns-debug-4.stdout",
+        "sha256": "9ea261ce5294cd0d53d7da3814cae4886f158dbb1540175e7dfaba452dd51a41"
+      },
+      "stderr": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/spawns-debug-4.stderr",
+        "sha256": "42a9d77e40be8926b45bc74ee2c12ebeb6545d3ae42acf38272e73f58ea21348"
+      }
+    },
+    {
+      "name": "spawns-debug-32",
+      "argv": [
+        "/home/bat/projects/bream/.tools/timed-read/20261009-timed-01/debug/bream-timed-consumer",
+        "spawns",
+        "32"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/spawns-debug-32.stdout",
+        "sha256": "bf275ff84d5f2529927eb8cb1712be00cd6b371a27e5af14a311509a4f201cc5"
+      },
+      "stderr": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/spawns-debug-32.stderr",
+        "sha256": "54aa1977f4d9adf683b21679210d8a21a0ec9332edd801a5930139845e1c4a61"
+      }
+    },
+    {
+      "name": "room-debug-1",
+      "argv": [
+        "/home/bat/projects/bream/.tools/timed-read/20261009-timed-01/debug/bream-timed-consumer",
+        "room",
+        "1"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/room-debug-1.stdout",
+        "sha256": "2636c427daffb750603f9aceb895429e1a2ba6153eb4a3ae9e9c4ff36f6cba3d"
+      },
+      "stderr": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/room-debug-1.stderr",
+        "sha256": "670e7dd7ba7d4f73dc42c48bf1a7682abd8e6c6a28da489e280634dc7dbcc60e"
+      }
+    },
+    {
+      "name": "room-debug-4",
+      "argv": [
+        "/home/bat/projects/bream/.tools/timed-read/20261009-timed-01/debug/bream-timed-consumer",
+        "room",
+        "4"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/room-debug-4.stdout",
+        "sha256": "7ec96e19b0049984c016adc79540148c3be912d6fccb64dc63197a3d4535f5a7"
+      },
+      "stderr": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/room-debug-4.stderr",
+        "sha256": "fd065fa4b60b33afc00e3feaf01d1dac85a79b918c1ab06efe506faccbe91f8a"
+      }
+    },
+    {
+      "name": "room-debug-32",
+      "argv": [
+        "/home/bat/projects/bream/.tools/timed-read/20261009-timed-01/debug/bream-timed-consumer",
+        "room",
+        "32"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/room-debug-32.stdout",
+        "sha256": "042d6f217a815fcbb57783d4da7b95e67e2df741dc4561334f7a3c45571af2f3"
+      },
+      "stderr": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/room-debug-32.stderr",
+        "sha256": "453da11947959b019a6738af225a402bdb4e2e796978a7388466548c93fd4026"
+      }
+    },
+    {
+      "name": "shared-debug-1",
+      "argv": [
+        "/home/bat/projects/bream/.tools/timed-read/20261009-timed-01/debug/bream-timed-consumer",
+        "shared",
+        "1"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/shared-debug-1.stdout",
+        "sha256": "614469ebca6512acb2de96e65401cd5623a4d62fe6bad412a1f147af371d04b2"
+      },
+      "stderr": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/shared-debug-1.stderr",
+        "sha256": "8c86d80ca8483afc0f10b8dd5ec4327df4ddfe34752d61a006478932bc230275"
+      }
+    },
+    {
+      "name": "shared-debug-4",
+      "argv": [
+        "/home/bat/projects/bream/.tools/timed-read/20261009-timed-01/debug/bream-timed-consumer",
+        "shared",
+        "4"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/shared-debug-4.stdout",
+        "sha256": "8671f034ad47a8b8ae9b4ec42e10bc516c7d48371f564139fff16266c951dabf"
+      },
+      "stderr": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/shared-debug-4.stderr",
+        "sha256": "749673a588f2116624c56b03e5092e39ccbc4208d6fc2123f08f194a3abbe661"
+      }
+    },
+    {
+      "name": "shared-debug-32",
+      "argv": [
+        "/home/bat/projects/bream/.tools/timed-read/20261009-timed-01/debug/bream-timed-consumer",
+        "shared",
+        "32"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/shared-debug-32.stdout",
+        "sha256": "2df663c2cf3fcdcd9bb26420ff310460953104d85f754f3239e89c93cc548abb"
+      },
+      "stderr": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/shared-debug-32.stderr",
+        "sha256": "0fd8e7b43f2d5a00f0f07a5da881b390b4036a9fa46e3d044bb454ec4e4d7432"
+      }
+    },
+    {
+      "name": "busy-debug-1",
+      "argv": [
+        "/home/bat/projects/bream/.tools/timed-read/20261009-timed-01/debug/bream-timed-consumer",
+        "busy",
+        "1"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/busy-debug-1.stdout",
+        "sha256": "ea20b3f7b179556c992793c0d5c40e98ae7a942b0f18b04df3fe090a4aa76fcc"
+      },
+      "stderr": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/busy-debug-1.stderr",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "busy-debug-4",
+      "argv": [
+        "/home/bat/projects/bream/.tools/timed-read/20261009-timed-01/debug/bream-timed-consumer",
+        "busy",
+        "4"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/busy-debug-4.stdout",
+        "sha256": "d37efd630211087dc4394fc913cb4597338c4ff833dcb4b8b5249d5ce05284a7"
+      },
+      "stderr": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/busy-debug-4.stderr",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "busy-debug-32",
+      "argv": [
+        "/home/bat/projects/bream/.tools/timed-read/20261009-timed-01/debug/bream-timed-consumer",
+        "busy",
+        "32"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/busy-debug-32.stdout",
+        "sha256": "e20ac7cdff5bd90b39223391642a26f89338ef5750d5e36d085286709ca45a59"
+      },
+      "stderr": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/busy-debug-32.stderr",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "replacement-debug-1",
+      "argv": [
+        "/home/bat/projects/bream/.tools/timed-read/20261009-timed-01/debug/bream-timed-consumer",
+        "replacement",
+        "1"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/replacement-debug-1.stdout",
+        "sha256": "d7c4295e843cdc0bb917ce53d4d6b65cef9cc0864c9cb834d9390fc229c286ad"
+      },
+      "stderr": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/replacement-debug-1.stderr",
+        "sha256": "42b396ea1652470ac9fc4e19eb5bdc98f6f3a72df81a82853167efe471bfca72"
+      }
+    },
+    {
+      "name": "replacement-debug-4",
+      "argv": [
+        "/home/bat/projects/bream/.tools/timed-read/20261009-timed-01/debug/bream-timed-consumer",
+        "replacement",
+        "4"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/replacement-debug-4.stdout",
+        "sha256": "9cbac06013239b97d38d3104b51fba3e3f82a201461d472adc9f91add4ad2810"
+      },
+      "stderr": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/replacement-debug-4.stderr",
+        "sha256": "e6f9632cec320822db615861ce183c26b24a539a4f20ffe1660b43486d0c2087"
+      }
+    },
+    {
+      "name": "replacement-debug-32",
+      "argv": [
+        "/home/bat/projects/bream/.tools/timed-read/20261009-timed-01/debug/bream-timed-consumer",
+        "replacement",
+        "32"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/replacement-debug-32.stdout",
+        "sha256": "a0c3ccf6822ff9166e54f6ca1559c462d3a593aeffe3b5a679972ae9834b43bf"
+      },
+      "stderr": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/replacement-debug-32.stderr",
+        "sha256": "fad8d9afdc57d6e385efeaf69c841a4bde6d3cd2db0704af605d25f2c263d25d"
+      }
+    },
+    {
+      "name": "exits-debug-1",
+      "argv": [
+        "/home/bat/projects/bream/.tools/timed-read/20261009-timed-01/debug/bream-timed-consumer",
+        "exits",
+        "1"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/exits-debug-1.stdout",
+        "sha256": "9350c2de8606c7a41585622e1ebee71ac76b99f53ab4285afcb1f326c18c40cf"
+      },
+      "stderr": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/exits-debug-1.stderr",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "exits-debug-4",
+      "argv": [
+        "/home/bat/projects/bream/.tools/timed-read/20261009-timed-01/debug/bream-timed-consumer",
+        "exits",
+        "4"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/exits-debug-4.stdout",
+        "sha256": "cee6f20d41a032776420da700ed70c74bbe720bdb26b49c4443961ba450f1123"
+      },
+      "stderr": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/exits-debug-4.stderr",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "exits-debug-32",
+      "argv": [
+        "/home/bat/projects/bream/.tools/timed-read/20261009-timed-01/debug/bream-timed-consumer",
+        "exits",
+        "32"
+      ],
+      "exit_code": 101,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/exits-debug-32.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "evidence/timed-read/runs/20261009-timed-01/exits-debug-32.stderr",
+        "sha256": "f949e9ae1bdae020b4cf6e761cc23c699ecf70ebbf39409a755932f8a5ab8939"
+      }
+    }
+  ],
+  "observations": [
+    {
+      "kind": "beam_reference",
+      "command": "beam-jit",
+      "profile": "jit",
+      "emu_flavor": "jit",
+      "otp_release": "29",
+      "cases": [
+        {
+          "reason": 1,
+          "mode": 1,
+          "returned": 0,
+          "kind": "matrix",
+          "observed_reason": 1,
+          "outcome": 2,
+          "trap": 0
+        },
+        {
+          "reason": 1,
+          "mode": 1,
+          "returned": 0,
+          "kind": "matrix",
+          "observed_reason": 1,
+          "outcome": 2,
+          "trap": 1
+        },
+        {
+          "reason": 2,
+          "mode": 1,
+          "returned": 0,
+          "kind": "matrix",
+          "observed_reason": 2,
+          "outcome": 2,
+          "trap": 0
+        },
+        {
+          "reason": 2,
+          "mode": 1,
+          "returned": 0,
+          "kind": "matrix",
+          "observed_reason": 2,
+          "outcome": 2,
+          "trap": 1
+        },
+        {
+          "reason": 3,
+          "mode": 1,
+          "returned": 0,
+          "kind": "matrix",
+          "observed_reason": 3,
+          "outcome": 2,
+          "trap": 0
+        },
+        {
+          "reason": 3,
+          "mode": 1,
+          "returned": 0,
+          "kind": "matrix",
+          "observed_reason": 3,
+          "outcome": 2,
+          "trap": 1
+        },
+        {
+          "reason": 4,
+          "mode": 1,
+          "returned": 0,
+          "kind": "matrix",
+          "observed_reason": 4,
+          "outcome": 2,
+          "trap": 0
+        },
+        {
+          "reason": 4,
+          "mode": 1,
+          "returned": 0,
+          "kind": "matrix",
+          "observed_reason": 4,
+          "outcome": 2,
+          "trap": 1
+        },
+        {
+          "reason": 5,
+          "mode": 1,
+          "returned": 0,
+          "kind": "matrix",
+          "observed_reason": 5,
+          "outcome": 2,
+          "trap": 0
+        },
+        {
+          "reason": 5,
+          "mode": 1,
+          "returned": 0,
+          "kind": "matrix",
+          "observed_reason": 5,
+          "outcome": 2,
+          "trap": 1
+        },
+        {
+          "reason": 1,
+          "mode": 2,
+          "returned": 0,
+          "kind": "matrix",
+          "observed_reason": 1,
+          "outcome": 2,
+          "trap": 0
+        },
+        {
+          "reason": 1,
+          "mode": 2,
+          "returned": 1,
+          "kind": "matrix",
+          "observed_reason": 1,
+          "outcome": 1,
+          "trap": 1
+        },
+        {
+          "reason": 2,
+          "mode": 2,
+          "returned": 0,
+          "kind": "matrix",
+          "observed_reason": 2,
+          "outcome": 2,
+          "trap": 0
+        },
+        {
+          "reason": 2,
+          "mode": 2,
+          "returned": 1,
+          "kind": "matrix",
+          "observed_reason": 2,
+          "outcome": 1,
+          "trap": 1
+        },
+        {
+          "reason": 3,
+          "mode": 2,
+          "returned": 0,
+          "kind": "matrix",
+          "observed_reason": 3,
+          "outcome": 2,
+          "trap": 0
+        },
+        {
+          "reason": 3,
+          "mode": 2,
+          "returned": 1,
+          "kind": "matrix",
+          "observed_reason": 3,
+          "outcome": 1,
+          "trap": 1
+        },
+        {
+          "reason": 4,
+          "mode": 2,
+          "returned": 0,
+          "kind": "matrix",
+          "observed_reason": 4,
+          "outcome": 2,
+          "trap": 0
+        },
+        {
+          "reason": 4,
+          "mode": 2,
+          "returned": 1,
+          "kind": "matrix",
+          "observed_reason": 4,
+          "outcome": 1,
+          "trap": 1
+        },
+        {
+          "reason": 5,
+          "mode": 2,
+          "returned": 0,
+          "kind": "matrix",
+          "observed_reason": 2,
+          "outcome": 2,
+          "trap": 0
+        },
+        {
+          "reason": 5,
+          "mode": 2,
+          "returned": 0,
+          "kind": "matrix",
+          "observed_reason": 2,
+          "outcome": 2,
+          "trap": 1
+        },
+        {
+          "reason": 1,
+          "mode": 3,
+          "returned": 1,
+          "kind": "matrix",
+          "observed_reason": 0,
+          "outcome": 0,
+          "trap": 0
+        },
+        {
+          "reason": 1,
+          "mode": 3,
+          "returned": 1,
+          "kind": "matrix",
+          "observed_reason": 1,
+          "outcome": 1,
+          "trap": 1
+        },
+        {
+          "reason": 2,
+          "mode": 3,
+          "returned": 1,
+          "kind": "matrix",
+          "observed_reason": 2,
+          "outcome": 2,
+          "trap": 0
+        },
+        {
+          "reason": 2,
+          "mode": 3,
+          "returned": 1,
+          "kind": "matrix",
+          "observed_reason": 2,
+          "outcome": 1,
+          "trap": 1
+        },
+        {
+          "reason": 3,
+          "mode": 3,
+          "returned": 1,
+          "kind": "matrix",
+          "observed_reason": 3,
+          "outcome": 2,
+          "trap": 0
+        },
+        {
+          "reason": 3,
+          "mode": 3,
+          "returned": 1,
+          "kind": "matrix",
+          "observed_reason": 3,
+          "outcome": 1,
+          "trap": 1
+        },
+        {
+          "reason": 4,
+          "mode": 3,
+          "returned": 1,
+          "kind": "matrix",
+          "observed_reason": 4,
+          "outcome": 2,
+          "trap": 0
+        },
+        {
+          "reason": 4,
+          "mode": 3,
+          "returned": 1,
+          "kind": "matrix",
+          "observed_reason": 4,
+          "outcome": 1,
+          "trap": 1
+        },
+        {
+          "reason": 5,
+          "mode": 3,
+          "returned": 1,
+          "kind": "matrix",
+          "observed_reason": 2,
+          "outcome": 2,
+          "trap": 0
+        },
+        {
+          "reason": 5,
+          "mode": 3,
+          "returned": 1,
+          "kind": "matrix",
+          "observed_reason": 2,
+          "outcome": 2,
+          "trap": 1
+        },
+        {
+          "kind": "chain",
+          "observed_reason": 5,
+          "outcome": 2,
+          "trap": 0,
+          "direct_kill": 0,
+          "middle_reason": 5,
+          "source_reason": 5
+        },
+        {
+          "kind": "chain",
+          "observed_reason": 5,
+          "outcome": 1,
+          "trap": 1,
+          "direct_kill": 0,
+          "middle_reason": 5,
+          "source_reason": 5
+        },
+        {
+          "kind": "chain",
+          "observed_reason": 2,
+          "outcome": 2,
+          "trap": 0,
+          "direct_kill": 1,
+          "middle_reason": 2,
+          "source_reason": 2
+        },
+        {
+          "kind": "chain",
+          "observed_reason": 2,
+          "outcome": 1,
+          "trap": 1,
+          "direct_kill": 1,
+          "middle_reason": 2,
+          "source_reason": 2
+        },
+        {
+          "mode": 1,
+          "caught": 1,
+          "kind": "catch",
+          "observed_reason": 5
+        },
+        {
+          "mode": 2,
+          "caught": 0,
+          "kind": "catch",
+          "observed_reason": 2
+        },
+        {
+          "kind": "dead_target",
+          "returned_count": 5,
+          "target_alive": 0
+        },
+        {
+          "kind": "ordering",
+          "trap": 0,
+          "same_sender_order": 1
+        },
+        {
+          "kind": "ordering",
+          "trap": 1,
+          "same_sender_order": 1
+        }
+      ]
+    },
+    {
+      "kind": "beam_reference",
+      "command": "beam-debug-emu",
+      "profile": "debug-emu",
+      "emu_flavor": "emu",
+      "otp_release": "29",
+      "cases": [
+        {
+          "trap": 0,
+          "reason": 1,
+          "returned": 0,
+          "kind": "matrix",
+          "outcome": 2,
+          "mode": 1,
+          "observed_reason": 1
+        },
+        {
+          "trap": 1,
+          "reason": 1,
+          "returned": 0,
+          "kind": "matrix",
+          "outcome": 2,
+          "mode": 1,
+          "observed_reason": 1
+        },
+        {
+          "trap": 0,
+          "reason": 2,
+          "returned": 0,
+          "kind": "matrix",
+          "outcome": 2,
+          "mode": 1,
+          "observed_reason": 2
+        },
+        {
+          "trap": 1,
+          "reason": 2,
+          "returned": 0,
+          "kind": "matrix",
+          "outcome": 2,
+          "mode": 1,
+          "observed_reason": 2
+        },
+        {
+          "trap": 0,
+          "reason": 3,
+          "returned": 0,
+          "kind": "matrix",
+          "outcome": 2,
+          "mode": 1,
+          "observed_reason": 3
+        },
+        {
+          "trap": 1,
+          "reason": 3,
+          "returned": 0,
+          "kind": "matrix",
+          "outcome": 2,
+          "mode": 1,
+          "observed_reason": 3
+        },
+        {
+          "trap": 0,
+          "reason": 4,
+          "returned": 0,
+          "kind": "matrix",
+          "outcome": 2,
+          "mode": 1,
+          "observed_reason": 4
+        },
+        {
+          "trap": 1,
+          "reason": 4,
+          "returned": 0,
+          "kind": "matrix",
+          "outcome": 2,
+          "mode": 1,
+          "observed_reason": 4
+        },
+        {
+          "trap": 0,
+          "reason": 5,
+          "returned": 0,
+          "kind": "matrix",
+          "outcome": 2,
+          "mode": 1,
+          "observed_reason": 5
+        },
+        {
+          "trap": 1,
+          "reason": 5,
+          "returned": 0,
+          "kind": "matrix",
+          "outcome": 2,
+          "mode": 1,
+          "observed_reason": 5
+        },
+        {
+          "trap": 0,
+          "reason": 1,
+          "returned": 0,
+          "kind": "matrix",
+          "outcome": 2,
+          "mode": 2,
+          "observed_reason": 1
+        },
+        {
+          "trap": 1,
+          "reason": 1,
+          "returned": 1,
+          "kind": "matrix",
+          "outcome": 1,
+          "mode": 2,
+          "observed_reason": 1
+        },
+        {
+          "trap": 0,
+          "reason": 2,
+          "returned": 0,
+          "kind": "matrix",
+          "outcome": 2,
+          "mode": 2,
+          "observed_reason": 2
+        },
+        {
+          "trap": 1,
+          "reason": 2,
+          "returned": 1,
+          "kind": "matrix",
+          "outcome": 1,
+          "mode": 2,
+          "observed_reason": 2
+        },
+        {
+          "trap": 0,
+          "reason": 3,
+          "returned": 0,
+          "kind": "matrix",
+          "outcome": 2,
+          "mode": 2,
+          "observed_reason": 3
+        },
+        {
+          "trap": 1,
+          "reason": 3,
+          "returned": 1,
+          "kind": "matrix",
+          "outcome": 1,
+          "mode": 2,
+          "observed_reason": 3
+        },
+        {
+          "trap": 0,
+          "reason": 4,
+          "returned": 0,
+          "kind": "matrix",
+          "outcome": 2,
+          "mode": 2,
+          "observed_reason": 4
+        },
+        {
+          "trap": 1,
+          "reason": 4,
+          "returned": 1,
+          "kind": "matrix",
+          "outcome": 1,
+          "mode": 2,
+          "observed_reason": 4
+        },
+        {
+          "trap": 0,
+          "reason": 5,
+          "returned": 0,
+          "kind": "matrix",
+          "outcome": 2,
+          "mode": 2,
+          "observed_reason": 2
+        },
+        {
+          "trap": 1,
+          "reason": 5,
+          "returned": 0,
+          "kind": "matrix",
+          "outcome": 2,
+          "mode": 2,
+          "observed_reason": 2
+        },
+        {
+          "trap": 0,
+          "reason": 1,
+          "returned": 1,
+          "kind": "matrix",
+          "outcome": 0,
+          "mode": 3,
+          "observed_reason": 0
+        },
+        {
+          "trap": 1,
+          "reason": 1,
+          "returned": 1,
+          "kind": "matrix",
+          "outcome": 1,
+          "mode": 3,
+          "observed_reason": 1
+        },
+        {
+          "trap": 0,
+          "reason": 2,
+          "returned": 1,
+          "kind": "matrix",
+          "outcome": 2,
+          "mode": 3,
+          "observed_reason": 2
+        },
+        {
+          "trap": 1,
+          "reason": 2,
+          "returned": 1,
+          "kind": "matrix",
+          "outcome": 1,
+          "mode": 3,
+          "observed_reason": 2
+        },
+        {
+          "trap": 0,
+          "reason": 3,
+          "returned": 1,
+          "kind": "matrix",
+          "outcome": 2,
+          "mode": 3,
+          "observed_reason": 3
+        },
+        {
+          "trap": 1,
+          "reason": 3,
+          "returned": 1,
+          "kind": "matrix",
+          "outcome": 1,
+          "mode": 3,
+          "observed_reason": 3
+        },
+        {
+          "trap": 0,
+          "reason": 4,
+          "returned": 1,
+          "kind": "matrix",
+          "outcome": 2,
+          "mode": 3,
+          "observed_reason": 4
+        },
+        {
+          "trap": 1,
+          "reason": 4,
+          "returned": 1,
+          "kind": "matrix",
+          "outcome": 1,
+          "mode": 3,
+          "observed_reason": 4
+        },
+        {
+          "trap": 0,
+          "reason": 5,
+          "returned": 1,
+          "kind": "matrix",
+          "outcome": 2,
+          "mode": 3,
+          "observed_reason": 2
+        },
+        {
+          "trap": 1,
+          "reason": 5,
+          "returned": 1,
+          "kind": "matrix",
+          "outcome": 2,
+          "mode": 3,
+          "observed_reason": 2
+        },
+        {
+          "trap": 0,
+          "middle_reason": 5,
+          "direct_kill": 0,
+          "kind": "chain",
+          "source_reason": 5,
+          "outcome": 2,
+          "observed_reason": 5
+        },
+        {
+          "trap": 1,
+          "middle_reason": 5,
+          "direct_kill": 0,
+          "kind": "chain",
+          "source_reason": 5,
+          "outcome": 1,
+          "observed_reason": 5
+        },
+        {
+          "trap": 0,
+          "middle_reason": 2,
+          "direct_kill": 1,
+          "kind": "chain",
+          "source_reason": 2,
+          "outcome": 2,
+          "observed_reason": 2
+        },
+        {
+          "trap": 1,
+          "middle_reason": 2,
+          "direct_kill": 1,
+          "kind": "chain",
+          "source_reason": 2,
+          "outcome": 1,
+          "observed_reason": 2
+        },
+        {
+          "caught": 1,
+          "kind": "catch",
+          "mode": 1,
+          "observed_reason": 5
+        },
+        {
+          "caught": 0,
+          "kind": "catch",
+          "mode": 2,
+          "observed_reason": 2
+        },
+        {
+          "kind": "dead_target",
+          "returned_count": 5,
+          "target_alive": 0
+        },
+        {
+          "kind": "ordering",
+          "trap": 0,
+          "same_sender_order": 1
+        },
+        {
+          "kind": "ordering",
+          "trap": 1,
+          "same_sender_order": 1
+        }
+      ]
+    },
+    {
+      "kind": "beam_timed_reference",
+      "command": "beam-timed-jit",
+      "profile": "jit",
+      "emu_flavor": "jit",
+      "otp_release": "29",
+      "cases": [
+        {
+          "kind": "zero_empty",
+          "timed_out": 1
+        },
+        {
+          "data": [
+            2,
+            3,
+            5
+          ],
+          "kind": "zero_buffered"
+        },
+        {
+          "data": [
+            7,
+            11,
+            13
+          ],
+          "kind": "finite_timeout_reuse",
+          "timed_out": 1,
+          "endpoint_reused": 1
+        },
+        {
+          "data": [
+            17,
+            19,
+            23
+          ],
+          "kind": "infinite_buffered"
+        },
+        {
+          "data": [
+            29,
+            31,
+            37
+          ],
+          "kind": "stale_cancel",
+          "completed_handle_rejected": 1,
+          "first_cancelled": 1,
+          "second_select": 1,
+          "stale_rejected": 1
+        },
+        {
+          "data": [
+            41,
+            43
+          ],
+          "difference": "OTP read-exactly partial timeout; Bream read-some success",
+          "kind": "read_exactly_difference",
+          "timed_out": 1,
+          "partial_consumed": 1,
+          "requested": 4
+        }
+      ]
+    },
+    {
+      "kind": "beam_timed_reference",
+      "command": "beam-timed-debug-emu",
+      "profile": "debug-emu",
+      "emu_flavor": "emu",
+      "otp_release": "29",
+      "cases": [
+        {
+          "kind": "zero_empty",
+          "timed_out": 1
+        },
+        {
+          "data": [
+            2,
+            3,
+            5
+          ],
+          "kind": "zero_buffered"
+        },
+        {
+          "kind": "finite_timeout_reuse",
+          "data": [
+            7,
+            11,
+            13
+          ],
+          "timed_out": 1,
+          "endpoint_reused": 1
+        },
+        {
+          "data": [
+            17,
+            19,
+            23
+          ],
+          "kind": "infinite_buffered"
+        },
+        {
+          "second_select": 1,
+          "stale_rejected": 1,
+          "completed_handle_rejected": 1,
+          "kind": "stale_cancel",
+          "first_cancelled": 1,
+          "data": [
+            29,
+            31,
+            37
+          ]
+        },
+        {
+          "partial_consumed": 1,
+          "kind": "read_exactly_difference",
+          "requested": 4,
+          "data": [
+            41,
+            43
+          ],
+          "timed_out": 1,
+          "difference": "OTP read-exactly partial timeout; Bream read-some success"
+        }
+      ]
+    },
+    {
+      "kind": "unit_tests",
+      "command": "unit-debug",
+      "profile": "debug",
+      "tests": 153,
+      "passed": true
+    },
+    {
+      "command": "controls-debug-1",
+      "profile": "debug",
+      "kind": "mailbox_controls",
+      "passed": true,
+      "allowance": 1,
+      "ordered_digest": 20103040,
+      "scan_candidates": 129,
+      "scan_peer_progress": true,
+      "cleanup_peer_progress": true,
+      "cleanup_batch_limit": 8,
+      "send_kill_races": 16,
+      "concurrent_messages": 16,
+      "transfer_outlives_sender": true,
+      "held_and_queued_cleanup": true,
+      "stale_send_isolated": true,
+      "parked_no_spin": true,
+      "speed_tests": false
+    },
+    {
+      "command": "controls-debug-4",
+      "profile": "debug",
+      "kind": "mailbox_controls",
+      "passed": true,
+      "allowance": 4,
+      "ordered_digest": 20103040,
+      "scan_candidates": 129,
+      "scan_peer_progress": true,
+      "cleanup_peer_progress": true,
+      "cleanup_batch_limit": 8,
+      "send_kill_races": 16,
+      "concurrent_messages": 16,
+      "transfer_outlives_sender": true,
+      "held_and_queued_cleanup": true,
+      "stale_send_isolated": true,
+      "parked_no_spin": true,
+      "speed_tests": false
+    },
+    {
+      "command": "controls-debug-32",
+      "profile": "debug",
+      "kind": "mailbox_controls",
+      "passed": true,
+      "allowance": 32,
+      "ordered_digest": 20103040,
+      "scan_candidates": 129,
+      "scan_peer_progress": true,
+      "cleanup_peer_progress": true,
+      "cleanup_batch_limit": 8,
+      "send_kill_races": 16,
+      "concurrent_messages": 16,
+      "transfer_outlives_sender": true,
+      "held_and_queued_cleanup": true,
+      "stale_send_isolated": true,
+      "parked_no_spin": true,
+      "speed_tests": false
+    },
+    {
+      "command": "timeouts-debug-1",
+      "profile": "debug",
+      "kind": "timeout_controls",
+      "passed": true,
+      "allowance": 1,
+      "zero_scan_candidates": 129,
+      "burst_timers": 19,
+      "burst_service_batches": 3,
+      "timer_batch_limit": 8,
+      "application_turn_during_due_work": true,
+      "send_timeout_races": 16,
+      "kill_timeout_races": 16,
+      "held_result_cleanup": true,
+      "shutdown_timer_cleanup": true,
+      "unmatched_no_rearm": true,
+      "operands_evaluated_once": true,
+      "nested_match_budget_equivalent": true,
+      "speed_tests": false
+    },
+    {
+      "command": "timeouts-debug-4",
+      "profile": "debug",
+      "kind": "timeout_controls",
+      "passed": true,
+      "allowance": 4,
+      "zero_scan_candidates": 129,
+      "burst_timers": 19,
+      "burst_service_batches": 3,
+      "timer_batch_limit": 8,
+      "application_turn_during_due_work": true,
+      "send_timeout_races": 16,
+      "kill_timeout_races": 16,
+      "held_result_cleanup": true,
+      "shutdown_timer_cleanup": true,
+      "unmatched_no_rearm": true,
+      "operands_evaluated_once": true,
+      "nested_match_budget_equivalent": true,
+      "speed_tests": false
+    },
+    {
+      "command": "timeouts-debug-32",
+      "profile": "debug",
+      "kind": "timeout_controls",
+      "passed": true,
+      "allowance": 32,
+      "zero_scan_candidates": 129,
+      "burst_timers": 19,
+      "burst_service_batches": 3,
+      "timer_batch_limit": 8,
+      "application_turn_during_due_work": true,
+      "send_timeout_races": 16,
+      "kill_timeout_races": 16,
+      "held_result_cleanup": true,
+      "shutdown_timer_cleanup": true,
+      "unmatched_no_rearm": true,
+      "operands_evaluated_once": true,
+      "nested_match_budget_equivalent": true,
+      "speed_tests": false
+    },
+    {
+      "command": "monitors-debug-1",
+      "profile": "debug",
+      "kind": "monitor_controls",
+      "passed": true,
+      "allowance": 1,
+      "normal_kill_failure_reasons": true,
+      "absent_stale_foreign": true,
+      "exact_generated_reference_and_target": true,
+      "self_monitor_no_relationship": true,
+      "repeated_fresh_references": true,
+      "shared_event_order": true,
+      "selective_reference": true,
+      "plain_cancel_preserves_queued": true,
+      "flush_preserves_other_events": true,
+      "observer_death_cleanup": true,
+      "shutdown_cleanup": true,
+      "owning_event_helper_cleanup": true,
+      "creation_kill_races": 16,
+      "creation_live": 0,
+      "creation_absent": 16,
+      "cancel_kill_races": 16,
+      "cancelled_before_conversion": 16,
+      "converted_before_cancel": 0,
+      "speed_tests": false
+    },
+    {
+      "command": "monitors-debug-4",
+      "profile": "debug",
+      "kind": "monitor_controls",
+      "passed": true,
+      "allowance": 4,
+      "normal_kill_failure_reasons": true,
+      "absent_stale_foreign": true,
+      "exact_generated_reference_and_target": true,
+      "self_monitor_no_relationship": true,
+      "repeated_fresh_references": true,
+      "shared_event_order": true,
+      "selective_reference": true,
+      "plain_cancel_preserves_queued": true,
+      "flush_preserves_other_events": true,
+      "observer_death_cleanup": true,
+      "shutdown_cleanup": true,
+      "owning_event_helper_cleanup": true,
+      "creation_kill_races": 16,
+      "creation_live": 0,
+      "creation_absent": 16,
+      "cancel_kill_races": 16,
+      "cancelled_before_conversion": 16,
+      "converted_before_cancel": 0,
+      "speed_tests": false
+    },
+    {
+      "command": "monitors-debug-32",
+      "profile": "debug",
+      "kind": "monitor_controls",
+      "passed": true,
+      "allowance": 32,
+      "normal_kill_failure_reasons": true,
+      "absent_stale_foreign": true,
+      "exact_generated_reference_and_target": true,
+      "self_monitor_no_relationship": true,
+      "repeated_fresh_references": true,
+      "shared_event_order": true,
+      "selective_reference": true,
+      "plain_cancel_preserves_queued": true,
+      "flush_preserves_other_events": true,
+      "observer_death_cleanup": true,
+      "shutdown_cleanup": true,
+      "owning_event_helper_cleanup": true,
+      "creation_kill_races": 16,
+      "creation_live": 1,
+      "creation_absent": 15,
+      "cancel_kill_races": 16,
+      "cancelled_before_conversion": 16,
+      "converted_before_cancel": 0,
+      "speed_tests": false
+    },
+    {
+      "command": "links-debug-1",
+      "profile": "debug",
+      "kind": "link_controls",
+      "passed": true,
+      "allowance": 1,
+      "self_and_repeated_links": true,
+      "normal_untrapped_ignored": true,
+      "normal_kill_failure_trapping": true,
+      "fatal_link_wakes_parked": true,
+      "host_kill_untrappable": true,
+      "absent_try_link_recovery": true,
+      "uncaught_noproc_reason": true,
+      "trapped_noproc_notification": true,
+      "stale_foreign_isolation": true,
+      "unlink_before_death": true,
+      "unlink_preserves_converted_exit": true,
+      "application_exit_down_order": true,
+      "selective_exit_preserves_prefix": true,
+      "owning_event_helper_cleanup": true,
+      "creation_kill_races": 16,
+      "creation_live": 16,
+      "creation_absent": 0,
+      "unlink_kill_races": 16,
+      "cancelled_before_conversion": 16,
+      "converted_before_cancel": 0,
+      "speed_tests": false
+    },
+    {
+      "command": "links-debug-4",
+      "profile": "debug",
+      "kind": "link_controls",
+      "passed": true,
+      "allowance": 4,
+      "self_and_repeated_links": true,
+      "normal_untrapped_ignored": true,
+      "normal_kill_failure_trapping": true,
+      "fatal_link_wakes_parked": true,
+      "host_kill_untrappable": true,
+      "absent_try_link_recovery": true,
+      "uncaught_noproc_reason": true,
+      "trapped_noproc_notification": true,
+      "stale_foreign_isolation": true,
+      "unlink_before_death": true,
+      "unlink_preserves_converted_exit": true,
+      "application_exit_down_order": true,
+      "selective_exit_preserves_prefix": true,
+      "owning_event_helper_cleanup": true,
+      "creation_kill_races": 16,
+      "creation_live": 16,
+      "creation_absent": 0,
+      "unlink_kill_races": 16,
+      "cancelled_before_conversion": 16,
+      "converted_before_cancel": 0,
+      "speed_tests": false
+    },
+    {
+      "command": "links-debug-32",
+      "profile": "debug",
+      "kind": "link_controls",
+      "passed": true,
+      "allowance": 32,
+      "self_and_repeated_links": true,
+      "normal_untrapped_ignored": true,
+      "normal_kill_failure_trapping": true,
+      "fatal_link_wakes_parked": true,
+      "host_kill_untrappable": true,
+      "absent_try_link_recovery": true,
+      "uncaught_noproc_reason": true,
+      "trapped_noproc_notification": true,
+      "stale_foreign_isolation": true,
+      "unlink_before_death": true,
+      "unlink_preserves_converted_exit": true,
+      "application_exit_down_order": true,
+      "selective_exit_preserves_prefix": true,
+      "owning_event_helper_cleanup": true,
+      "creation_kill_races": 16,
+      "creation_live": 16,
+      "creation_absent": 0,
+      "unlink_kill_races": 16,
+      "cancelled_before_conversion": 15,
+      "converted_before_cancel": 1,
+      "speed_tests": false
+    },
+    {
+      "command": "spawns-debug-1",
+      "profile": "debug",
+      "kind": "spawn_controls",
+      "passed": true,
+      "allowance": 1,
+      "immediate_monitor_reasons": true,
+      "linked_trap_and_fatal": true,
+      "combined_application_exit_down_order": true,
+      "child_trap_defaults_false": true,
+      "owning_spawned_helper": true,
+      "moved_input_released_once": true,
+      "checked_failure_stops_caller": true,
+      "publication_failure_cleanup": true,
+      "stale_foreign_origin_rejection": true,
+      "spawn_parent_kill_races": 16,
+      "parent_race_published": 16,
+      "parent_race_rejected": 0,
+      "spawn_shutdown_races": 16,
+      "shutdown_race_published": 0,
+      "shutdown_race_rejected": 16,
+      "speed_tests": false
+    },
+    {
+      "command": "spawns-debug-4",
+      "profile": "debug",
+      "kind": "spawn_controls",
+      "passed": true,
+      "allowance": 4,
+      "immediate_monitor_reasons": true,
+      "linked_trap_and_fatal": true,
+      "combined_application_exit_down_order": true,
+      "child_trap_defaults_false": true,
+      "owning_spawned_helper": true,
+      "moved_input_released_once": true,
+      "checked_failure_stops_caller": true,
+      "publication_failure_cleanup": true,
+      "stale_foreign_origin_rejection": true,
+      "spawn_parent_kill_races": 16,
+      "parent_race_published": 16,
+      "parent_race_rejected": 0,
+      "spawn_shutdown_races": 16,
+      "shutdown_race_published": 0,
+      "shutdown_race_rejected": 16,
+      "speed_tests": false
+    },
+    {
+      "command": "spawns-debug-32",
+      "profile": "debug",
+      "kind": "spawn_controls",
+      "passed": true,
+      "allowance": 32,
+      "immediate_monitor_reasons": true,
+      "linked_trap_and_fatal": true,
+      "combined_application_exit_down_order": true,
+      "child_trap_defaults_false": true,
+      "owning_spawned_helper": true,
+      "moved_input_released_once": true,
+      "checked_failure_stops_caller": true,
+      "publication_failure_cleanup": true,
+      "stale_foreign_origin_rejection": true,
+      "spawn_parent_kill_races": 16,
+      "parent_race_published": 16,
+      "parent_race_rejected": 0,
+      "spawn_shutdown_races": 16,
+      "shutdown_race_published": 0,
+      "shutdown_race_rejected": 16,
+      "speed_tests": false
+    },
+    {
+      "command": "room-debug-1",
+      "profile": "debug",
+      "kind": "room_controls",
+      "passed": true,
+      "allowance": 1,
+      "expected_transcript": [
+        [
+          1,
+          3,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          3,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0
+        ],
+        [
+          7,
+          3,
+          2,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          3,
+          142
+        ],
+        [
+          5,
+          3,
+          2,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          4,
+          7
+        ],
+        [
+          8,
+          3,
+          2,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          5,
+          0
+        ],
+        [
+          1,
+          2,
+          2,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          6,
+          0
+        ],
+        [
+          4,
+          2,
+          2,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          7,
+          9
+        ],
+        [
+          7,
+          2,
+          2,
+          1,
+          2,
+          0,
+          1,
+          1,
+          0,
+          8,
+          243
+        ],
+        [
+          6,
+          2,
+          2,
+          1,
+          2,
+          0,
+          1,
+          1,
+          0,
+          9,
+          0
+        ],
+        [
+          7,
+          2,
+          2,
+          1,
+          3,
+          0,
+          1,
+          1,
+          0,
+          10,
+          244
+        ],
+        [
+          10,
+          0,
+          2,
+          1,
+          3,
+          1,
+          1,
+          1,
+          0,
+          11,
+          0
+        ],
+        [
+          3,
+          0,
+          2,
+          1,
+          3,
+          1,
+          1,
+          2,
+          0,
+          12,
+          0
+        ],
+        [
+          5,
+          0,
+          2,
+          1,
+          3,
+          1,
+          1,
+          2,
+          0,
+          13,
+          0
+        ],
+        [
+          1,
+          0,
+          2,
+          1,
+          3,
+          1,
+          1,
+          2,
+          0,
+          14,
+          0
+        ],
+        [
+          9,
+          0,
+          2,
+          1,
+          3,
+          1,
+          1,
+          2,
+          0,
+          15,
+          0
+        ]
+      ],
+      "observed_records": 15,
+      "observed_digest": 12665367959916696618,
+      "observed_checkpoints": [
+        [
+          1,
+          10002438057690334615,
+          1
+        ],
+        [
+          2,
+          9580540073880448603,
+          2
+        ],
+        [
+          3,
+          1213773357492167102,
+          3
+        ],
+        [
+          4,
+          8007366149713249785,
+          4
+        ],
+        [
+          5,
+          3133542435298084553,
+          5
+        ],
+        [
+          6,
+          7262145388682216998,
+          6
+        ],
+        [
+          7,
+          17897209158805527132,
+          7
+        ],
+        [
+          8,
+          7451769463948745871,
+          8
+        ],
+        [
+          10,
+          15409561287722429928,
+          10
+        ],
+        [
+          11,
+          13564449173948408554,
+          11
+        ],
+        [
+          12,
+          3530536877653916511,
+          12
+        ],
+        [
+          13,
+          11452228873098182763,
+          13
+        ],
+        [
+          14,
+          7108584906591015694,
+          14
+        ],
+        [
+          15,
+          12665367959916696618,
+          15
+        ]
+      ],
+      "two_session_membership": true,
+      "idempotent_join_leave": true,
+      "session_failure_isolation": true,
+      "exact_incarnation_down": true,
+      "peer_progress_with_hog": true,
+      "selective_timeout_preserves_publish": true,
+      "room_death_observed_by_sessions": true,
+      "held_and_queued_ownership": true,
+      "host_shutdown_settled": true,
+      "speed_tests": false
+    },
+    {
+      "command": "room-debug-4",
+      "profile": "debug",
+      "kind": "room_controls",
+      "passed": true,
+      "allowance": 4,
+      "expected_transcript": [
+        [
+          1,
+          3,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          3,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0
+        ],
+        [
+          7,
+          3,
+          2,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          3,
+          142
+        ],
+        [
+          5,
+          3,
+          2,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          4,
+          7
+        ],
+        [
+          8,
+          3,
+          2,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          5,
+          0
+        ],
+        [
+          1,
+          2,
+          2,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          6,
+          0
+        ],
+        [
+          4,
+          2,
+          2,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          7,
+          9
+        ],
+        [
+          7,
+          2,
+          2,
+          1,
+          2,
+          0,
+          1,
+          1,
+          0,
+          8,
+          243
+        ],
+        [
+          6,
+          2,
+          2,
+          1,
+          2,
+          0,
+          1,
+          1,
+          0,
+          9,
+          0
+        ],
+        [
+          7,
+          2,
+          2,
+          1,
+          3,
+          0,
+          1,
+          1,
+          0,
+          10,
+          244
+        ],
+        [
+          10,
+          0,
+          2,
+          1,
+          3,
+          1,
+          1,
+          1,
+          0,
+          11,
+          0
+        ],
+        [
+          3,
+          0,
+          2,
+          1,
+          3,
+          1,
+          1,
+          2,
+          0,
+          12,
+          0
+        ],
+        [
+          5,
+          0,
+          2,
+          1,
+          3,
+          1,
+          1,
+          2,
+          0,
+          13,
+          0
+        ],
+        [
+          1,
+          0,
+          2,
+          1,
+          3,
+          1,
+          1,
+          2,
+          0,
+          14,
+          0
+        ],
+        [
+          9,
+          0,
+          2,
+          1,
+          3,
+          1,
+          1,
+          2,
+          0,
+          15,
+          0
+        ]
+      ],
+      "observed_records": 15,
+      "observed_digest": 12665367959916696618,
+      "observed_checkpoints": [
+        [
+          1,
+          10002438057690334615,
+          1
+        ],
+        [
+          2,
+          9580540073880448603,
+          2
+        ],
+        [
+          3,
+          1213773357492167102,
+          3
+        ],
+        [
+          4,
+          8007366149713249785,
+          4
+        ],
+        [
+          5,
+          3133542435298084553,
+          5
+        ],
+        [
+          6,
+          7262145388682216998,
+          6
+        ],
+        [
+          7,
+          17897209158805527132,
+          7
+        ],
+        [
+          8,
+          7451769463948745871,
+          8
+        ],
+        [
+          10,
+          15409561287722429928,
+          10
+        ],
+        [
+          11,
+          13564449173948408554,
+          11
+        ],
+        [
+          12,
+          3530536877653916511,
+          12
+        ],
+        [
+          13,
+          11452228873098182763,
+          13
+        ],
+        [
+          14,
+          7108584906591015694,
+          14
+        ],
+        [
+          15,
+          12665367959916696618,
+          15
+        ]
+      ],
+      "two_session_membership": true,
+      "idempotent_join_leave": true,
+      "session_failure_isolation": true,
+      "exact_incarnation_down": true,
+      "peer_progress_with_hog": true,
+      "selective_timeout_preserves_publish": true,
+      "room_death_observed_by_sessions": true,
+      "held_and_queued_ownership": true,
+      "host_shutdown_settled": true,
+      "speed_tests": false
+    },
+    {
+      "command": "room-debug-32",
+      "profile": "debug",
+      "kind": "room_controls",
+      "passed": true,
+      "allowance": 32,
+      "expected_transcript": [
+        [
+          1,
+          3,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          3,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0
+        ],
+        [
+          7,
+          3,
+          2,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          3,
+          142
+        ],
+        [
+          5,
+          3,
+          2,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          4,
+          7
+        ],
+        [
+          8,
+          3,
+          2,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          5,
+          0
+        ],
+        [
+          1,
+          2,
+          2,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          6,
+          0
+        ],
+        [
+          4,
+          2,
+          2,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          7,
+          9
+        ],
+        [
+          7,
+          2,
+          2,
+          1,
+          2,
+          0,
+          1,
+          1,
+          0,
+          8,
+          243
+        ],
+        [
+          6,
+          2,
+          2,
+          1,
+          2,
+          0,
+          1,
+          1,
+          0,
+          9,
+          0
+        ],
+        [
+          7,
+          2,
+          2,
+          1,
+          3,
+          0,
+          1,
+          1,
+          0,
+          10,
+          244
+        ],
+        [
+          10,
+          0,
+          2,
+          1,
+          3,
+          1,
+          1,
+          1,
+          0,
+          11,
+          0
+        ],
+        [
+          3,
+          0,
+          2,
+          1,
+          3,
+          1,
+          1,
+          2,
+          0,
+          12,
+          0
+        ],
+        [
+          5,
+          0,
+          2,
+          1,
+          3,
+          1,
+          1,
+          2,
+          0,
+          13,
+          0
+        ],
+        [
+          1,
+          0,
+          2,
+          1,
+          3,
+          1,
+          1,
+          2,
+          0,
+          14,
+          0
+        ],
+        [
+          9,
+          0,
+          2,
+          1,
+          3,
+          1,
+          1,
+          2,
+          0,
+          15,
+          0
+        ]
+      ],
+      "observed_records": 15,
+      "observed_digest": 12665367959916696618,
+      "observed_checkpoints": [
+        [
+          1,
+          10002438057690334615,
+          1
+        ],
+        [
+          2,
+          9580540073880448603,
+          2
+        ],
+        [
+          3,
+          1213773357492167102,
+          3
+        ],
+        [
+          4,
+          8007366149713249785,
+          4
+        ],
+        [
+          5,
+          3133542435298084553,
+          5
+        ],
+        [
+          6,
+          7262145388682216998,
+          6
+        ],
+        [
+          7,
+          17897209158805527132,
+          7
+        ],
+        [
+          8,
+          7451769463948745871,
+          8
+        ],
+        [
+          10,
+          15409561287722429928,
+          10
+        ],
+        [
+          11,
+          13564449173948408554,
+          11
+        ],
+        [
+          12,
+          3530536877653916511,
+          12
+        ],
+        [
+          13,
+          11452228873098182763,
+          13
+        ],
+        [
+          14,
+          7108584906591015694,
+          14
+        ],
+        [
+          15,
+          12665367959916696618,
+          15
+        ]
+      ],
+      "two_session_membership": true,
+      "idempotent_join_leave": true,
+      "session_failure_isolation": true,
+      "exact_incarnation_down": true,
+      "peer_progress_with_hog": true,
+      "selective_timeout_preserves_publish": true,
+      "room_death_observed_by_sessions": true,
+      "held_and_queued_ownership": true,
+      "host_shutdown_settled": true,
+      "speed_tests": false
+    },
+    {
+      "command": "shared-debug-1",
+      "profile": "debug",
+      "kind": "shared_controls",
+      "passed": true,
+      "allowance": 1,
+      "broadcast_observations": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          62628,
+          1
+        ],
+        [
+          2,
+          0,
+          125257,
+          2
+        ],
+        [
+          2,
+          1,
+          62629,
+          1
+        ]
+      ],
+      "after_publisher_checksum": 62627,
+      "after_receiver_checksum": 62627,
+      "partial_fanout_cancelled": true,
+      "unpublished_operand_cancelled": true,
+      "shared_deadline_preserves_nonmatch": true,
+      "host_reference_survives_shutdown": true,
+      "cleanup_messages": 19,
+      "cleanup_batches": 3,
+      "shared_send_kill_races": 16,
+      "physical_release_once": true,
+      "speed_tests": false
+    },
+    {
+      "command": "shared-debug-4",
+      "profile": "debug",
+      "kind": "shared_controls",
+      "passed": true,
+      "allowance": 4,
+      "broadcast_observations": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          62628,
+          1
+        ],
+        [
+          2,
+          0,
+          125257,
+          2
+        ],
+        [
+          2,
+          1,
+          62629,
+          1
+        ]
+      ],
+      "after_publisher_checksum": 62627,
+      "after_receiver_checksum": 62627,
+      "partial_fanout_cancelled": true,
+      "unpublished_operand_cancelled": true,
+      "shared_deadline_preserves_nonmatch": true,
+      "host_reference_survives_shutdown": true,
+      "cleanup_messages": 19,
+      "cleanup_batches": 3,
+      "shared_send_kill_races": 16,
+      "physical_release_once": true,
+      "speed_tests": false
+    },
+    {
+      "command": "shared-debug-32",
+      "profile": "debug",
+      "kind": "shared_controls",
+      "passed": true,
+      "allowance": 32,
+      "broadcast_observations": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          62628,
+          1
+        ],
+        [
+          2,
+          0,
+          125257,
+          2
+        ],
+        [
+          2,
+          1,
+          62629,
+          1
+        ]
+      ],
+      "after_publisher_checksum": 62627,
+      "after_receiver_checksum": 62627,
+      "partial_fanout_cancelled": true,
+      "unpublished_operand_cancelled": true,
+      "shared_deadline_preserves_nonmatch": true,
+      "host_reference_survives_shutdown": true,
+      "cleanup_messages": 19,
+      "cleanup_batches": 3,
+      "shared_send_kill_races": 16,
+      "physical_release_once": true,
+      "speed_tests": false
+    },
+    {
+      "command": "busy-debug-1",
+      "profile": "debug",
+      "kind": "busy_controls",
+      "passed": true,
+      "allowance": 1,
+      "progress_observations": [
+        [
+          [
+            1,
+            626271,
+            2,
+            3
+          ],
+          [
+            2,
+            626272,
+            3,
+            5
+          ],
+          [
+            3,
+            626273,
+            5,
+            6
+          ]
+        ],
+        [
+          [
+            1,
+            626271,
+            2,
+            3
+          ],
+          [
+            2,
+            626272,
+            3,
+            5
+          ],
+          [
+            3,
+            626273,
+            5,
+            6
+          ]
+        ],
+        [
+          [
+            1,
+            626271,
+            2,
+            3
+          ],
+          [
+            2,
+            626272,
+            3,
+            4
+          ],
+          [
+            3,
+            626273,
+            4,
+            6
+          ]
+        ]
+      ],
+      "post_stop_observations": [
+        [
+          0,
+          4,
+          626274
+        ],
+        [
+          0,
+          5,
+          626275
+        ],
+        [
+          1,
+          4,
+          626274
+        ],
+        [
+          1,
+          5,
+          626275
+        ]
+      ],
+      "stop_observations": [
+        [
+          0,
+          2,
+          2,
+          1,
+          22,
+          3,
+          62627
+        ],
+        [
+          1,
+          3,
+          2,
+          1,
+          22,
+          3,
+          62627
+        ]
+      ],
+      "ownership_observations": [
+        [
+          [
+            4,
+            0,
+            0,
+            3,
+            23,
+            20
+          ],
+          [
+            4,
+            0,
+            0,
+            1,
+            23,
+            22
+          ],
+          [
+            0,
+            4,
+            1,
+            0,
+            23,
+            23
+          ]
+        ],
+        [
+          [
+            4,
+            0,
+            0,
+            3,
+            23,
+            20
+          ],
+          [
+            4,
+            0,
+            0,
+            1,
+            23,
+            22
+          ],
+          [
+            0,
+            4,
+            1,
+            0,
+            23,
+            23
+          ]
+        ]
+      ],
+      "shutdown_ownership": [
+        [
+          4,
+          0,
+          0,
+          1,
+          23,
+          22
+        ],
+        [
+          0,
+          4,
+          1,
+          0,
+          23,
+          23
+        ]
+      ],
+      "shutdown_cleanup": [
+        22,
+        3
+      ],
+      "shutdown_busy_result": 62627,
+      "shutdown_room_result": 626273,
+      "exact_down_without_busy_receive": true,
+      "no_shared_clones_during_computation_or_replies": true,
+      "application_frozen_after_stop": true,
+      "speed_tests": false
+    },
+    {
+      "command": "busy-debug-4",
+      "profile": "debug",
+      "kind": "busy_controls",
+      "passed": true,
+      "allowance": 4,
+      "progress_observations": [
+        [
+          [
+            1,
+            626271,
+            3,
+            6
+          ],
+          [
+            2,
+            626272,
+            9,
+            11
+          ],
+          [
+            3,
+            626273,
+            12,
+            14
+          ]
+        ],
+        [
+          [
+            1,
+            626271,
+            2,
+            4
+          ],
+          [
+            2,
+            626272,
+            4,
+            7
+          ],
+          [
+            3,
+            626273,
+            7,
+            9
+          ]
+        ],
+        [
+          [
+            1,
+            626271,
+            2,
+            4
+          ],
+          [
+            2,
+            626272,
+            4,
+            6
+          ],
+          [
+            3,
+            626273,
+            6,
+            8
+          ]
+        ]
+      ],
+      "post_stop_observations": [
+        [
+          0,
+          4,
+          626274
+        ],
+        [
+          0,
+          5,
+          626275
+        ],
+        [
+          1,
+          4,
+          626274
+        ],
+        [
+          1,
+          5,
+          626275
+        ]
+      ],
+      "stop_observations": [
+        [
+          0,
+          2,
+          2,
+          1,
+          22,
+          3,
+          62627
+        ],
+        [
+          1,
+          3,
+          2,
+          1,
+          22,
+          3,
+          62627
+        ]
+      ],
+      "ownership_observations": [
+        [
+          [
+            4,
+            0,
+            0,
+            3,
+            23,
+            20
+          ],
+          [
+            4,
+            0,
+            0,
+            1,
+            23,
+            22
+          ],
+          [
+            0,
+            4,
+            1,
+            0,
+            23,
+            23
+          ]
+        ],
+        [
+          [
+            4,
+            0,
+            0,
+            3,
+            23,
+            20
+          ],
+          [
+            4,
+            0,
+            0,
+            1,
+            23,
+            22
+          ],
+          [
+            0,
+            4,
+            1,
+            0,
+            23,
+            23
+          ]
+        ]
+      ],
+      "shutdown_ownership": [
+        [
+          4,
+          0,
+          0,
+          1,
+          23,
+          22
+        ],
+        [
+          0,
+          4,
+          1,
+          0,
+          23,
+          23
+        ]
+      ],
+      "shutdown_cleanup": [
+        22,
+        3
+      ],
+      "shutdown_busy_result": 62627,
+      "shutdown_room_result": 626273,
+      "exact_down_without_busy_receive": true,
+      "no_shared_clones_during_computation_or_replies": true,
+      "application_frozen_after_stop": true,
+      "speed_tests": false
+    },
+    {
+      "command": "busy-debug-32",
+      "profile": "debug",
+      "kind": "busy_controls",
+      "passed": true,
+      "allowance": 32,
+      "progress_observations": [
+        [
+          [
+            1,
+            626271,
+            3,
+            8
+          ],
+          [
+            2,
+            626272,
+            9,
+            15
+          ],
+          [
+            3,
+            626273,
+            15,
+            20
+          ]
+        ],
+        [
+          [
+            1,
+            626271,
+            2,
+            13
+          ],
+          [
+            2,
+            626272,
+            13,
+            20
+          ],
+          [
+            3,
+            626273,
+            21,
+            26
+          ]
+        ],
+        [
+          [
+            1,
+            626271,
+            3,
+            9
+          ],
+          [
+            2,
+            626272,
+            10,
+            15
+          ],
+          [
+            3,
+            626273,
+            15,
+            21
+          ]
+        ]
+      ],
+      "post_stop_observations": [
+        [
+          0,
+          4,
+          626274
+        ],
+        [
+          0,
+          5,
+          626275
+        ],
+        [
+          1,
+          4,
+          626274
+        ],
+        [
+          1,
+          5,
+          626275
+        ]
+      ],
+      "stop_observations": [
+        [
+          0,
+          2,
+          2,
+          1,
+          22,
+          3,
+          62627
+        ],
+        [
+          1,
+          3,
+          2,
+          1,
+          22,
+          3,
+          62627
+        ]
+      ],
+      "ownership_observations": [
+        [
+          [
+            4,
+            0,
+            0,
+            3,
+            23,
+            20
+          ],
+          [
+            4,
+            0,
+            0,
+            1,
+            23,
+            22
+          ],
+          [
+            0,
+            4,
+            1,
+            0,
+            23,
+            23
+          ]
+        ],
+        [
+          [
+            4,
+            0,
+            0,
+            3,
+            23,
+            20
+          ],
+          [
+            4,
+            0,
+            0,
+            1,
+            23,
+            22
+          ],
+          [
+            0,
+            4,
+            1,
+            0,
+            23,
+            23
+          ]
+        ]
+      ],
+      "shutdown_ownership": [
+        [
+          4,
+          0,
+          0,
+          1,
+          23,
+          22
+        ],
+        [
+          0,
+          4,
+          1,
+          0,
+          23,
+          23
+        ]
+      ],
+      "shutdown_cleanup": [
+        22,
+        3
+      ],
+      "shutdown_busy_result": 62627,
+      "shutdown_room_result": 626273,
+      "exact_down_without_busy_receive": true,
+      "no_shared_clones_during_computation_or_replies": true,
+      "application_frozen_after_stop": true,
+      "speed_tests": false
+    },
+    {
+      "command": "replacement-debug-1",
+      "profile": "debug",
+      "kind": "replacement_controls",
+      "passed": true,
+      "allowance": 1,
+      "transcripts": [
+        [
+          [
+            10,
+            1,
+            626271,
+            0
+          ],
+          [
+            11,
+            1,
+            626271,
+            2
+          ],
+          [
+            20,
+            1,
+            626271,
+            3
+          ],
+          [
+            30,
+            111,
+            626272,
+            0
+          ],
+          [
+            40,
+            112,
+            626273,
+            0
+          ]
+        ],
+        [
+          [
+            10,
+            1,
+            626271,
+            0
+          ],
+          [
+            11,
+            1,
+            626271,
+            2
+          ],
+          [
+            20,
+            1,
+            626271,
+            3
+          ],
+          [
+            30,
+            111,
+            626272,
+            0
+          ],
+          [
+            40,
+            112,
+            626273,
+            0
+          ]
+        ]
+      ],
+      "ownership": [
+        [
+          [
+            4,
+            0,
+            0,
+            1,
+            6,
+            5
+          ],
+          [
+            0,
+            4,
+            1,
+            0,
+            6,
+            6
+          ]
+        ],
+        [
+          [
+            4,
+            0,
+            0,
+            1,
+            6,
+            5
+          ],
+          [
+            0,
+            4,
+            1,
+            0,
+            6,
+            6
+          ]
+        ],
+        [
+          [
+            4,
+            0,
+            0,
+            1,
+            25,
+            24
+          ],
+          [
+            0,
+            4,
+            1,
+            0,
+            25,
+            25
+          ]
+        ],
+        [
+          [
+            4,
+            0,
+            0,
+            1,
+            25,
+            24
+          ],
+          [
+            0,
+            4,
+            1,
+            0,
+            25,
+            25
+          ]
+        ]
+      ],
+      "terminal_rows": [
+        [
+          0,
+          2,
+          22,
+          3
+        ],
+        [
+          1,
+          2,
+          22,
+          3
+        ]
+      ],
+      "registry_capacity": 3,
+      "same_slot_reuse_forced": true,
+      "fresh_pid_and_monitor_checked": true,
+      "old_down_does_not_evict_replacement": true,
+      "stale_pid_sends_discarded": true,
+      "trusted_epoch_request_rejected": true,
+      "speed_tests": false
+    },
+    {
+      "command": "replacement-debug-4",
+      "profile": "debug",
+      "kind": "replacement_controls",
+      "passed": true,
+      "allowance": 4,
+      "transcripts": [
+        [
+          [
+            10,
+            1,
+            626271,
+            0
+          ],
+          [
+            11,
+            1,
+            626271,
+            2
+          ],
+          [
+            20,
+            1,
+            626271,
+            3
+          ],
+          [
+            30,
+            111,
+            626272,
+            0
+          ],
+          [
+            40,
+            112,
+            626273,
+            0
+          ]
+        ],
+        [
+          [
+            10,
+            1,
+            626271,
+            0
+          ],
+          [
+            11,
+            1,
+            626271,
+            2
+          ],
+          [
+            20,
+            1,
+            626271,
+            3
+          ],
+          [
+            30,
+            111,
+            626272,
+            0
+          ],
+          [
+            40,
+            112,
+            626273,
+            0
+          ]
+        ]
+      ],
+      "ownership": [
+        [
+          [
+            4,
+            0,
+            0,
+            1,
+            6,
+            5
+          ],
+          [
+            0,
+            4,
+            1,
+            0,
+            6,
+            6
+          ]
+        ],
+        [
+          [
+            4,
+            0,
+            0,
+            1,
+            6,
+            5
+          ],
+          [
+            0,
+            4,
+            1,
+            0,
+            6,
+            6
+          ]
+        ],
+        [
+          [
+            4,
+            0,
+            0,
+            1,
+            25,
+            24
+          ],
+          [
+            0,
+            4,
+            1,
+            0,
+            25,
+            25
+          ]
+        ],
+        [
+          [
+            4,
+            0,
+            0,
+            1,
+            25,
+            24
+          ],
+          [
+            0,
+            4,
+            1,
+            0,
+            25,
+            25
+          ]
+        ]
+      ],
+      "terminal_rows": [
+        [
+          0,
+          2,
+          22,
+          3
+        ],
+        [
+          1,
+          2,
+          22,
+          3
+        ]
+      ],
+      "registry_capacity": 3,
+      "same_slot_reuse_forced": true,
+      "fresh_pid_and_monitor_checked": true,
+      "old_down_does_not_evict_replacement": true,
+      "stale_pid_sends_discarded": true,
+      "trusted_epoch_request_rejected": true,
+      "speed_tests": false
+    },
+    {
+      "command": "replacement-debug-32",
+      "profile": "debug",
+      "kind": "replacement_controls",
+      "passed": true,
+      "allowance": 32,
+      "transcripts": [
+        [
+          [
+            10,
+            1,
+            626271,
+            0
+          ],
+          [
+            11,
+            1,
+            626271,
+            2
+          ],
+          [
+            20,
+            1,
+            626271,
+            3
+          ],
+          [
+            30,
+            111,
+            626272,
+            0
+          ],
+          [
+            40,
+            112,
+            626273,
+            0
+          ]
+        ],
+        [
+          [
+            10,
+            1,
+            626271,
+            0
+          ],
+          [
+            11,
+            1,
+            626271,
+            2
+          ],
+          [
+            20,
+            1,
+            626271,
+            3
+          ],
+          [
+            30,
+            111,
+            626272,
+            0
+          ],
+          [
+            40,
+            112,
+            626273,
+            0
+          ]
+        ]
+      ],
+      "ownership": [
+        [
+          [
+            4,
+            0,
+            0,
+            1,
+            6,
+            5
+          ],
+          [
+            0,
+            4,
+            1,
+            0,
+            6,
+            6
+          ]
+        ],
+        [
+          [
+            4,
+            0,
+            0,
+            1,
+            6,
+            5
+          ],
+          [
+            0,
+            4,
+            1,
+            0,
+            6,
+            6
+          ]
+        ],
+        [
+          [
+            4,
+            0,
+            0,
+            1,
+            25,
+            24
+          ],
+          [
+            0,
+            4,
+            1,
+            0,
+            25,
+            25
+          ]
+        ],
+        [
+          [
+            4,
+            0,
+            0,
+            1,
+            25,
+            24
+          ],
+          [
+            0,
+            4,
+            1,
+            0,
+            25,
+            25
+          ]
+        ]
+      ],
+      "terminal_rows": [
+        [
+          0,
+          2,
+          22,
+          3
+        ],
+        [
+          1,
+          2,
+          22,
+          3
+        ]
+      ],
+      "registry_capacity": 3,
+      "same_slot_reuse_forced": true,
+      "fresh_pid_and_monitor_checked": true,
+      "old_down_does_not_evict_replacement": true,
+      "stale_pid_sends_discarded": true,
+      "trusted_epoch_request_rejected": true,
+      "speed_tests": false
+    },
+    {
+      "command": "exits-debug-1",
+      "profile": "debug",
+      "kind": "exit_controls",
+      "passed": true,
+      "speed_tests": false,
+      "allowance": 1,
+      "matrix": [
+        [
+          1,
+          1,
+          0,
+          2,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          2,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          0,
+          2,
+          2,
+          0
+        ],
+        [
+          1,
+          2,
+          1,
+          2,
+          2,
+          0
+        ],
+        [
+          1,
+          3,
+          0,
+          2,
+          3,
+          0
+        ],
+        [
+          1,
+          3,
+          1,
+          2,
+          3,
+          0
+        ],
+        [
+          1,
+          4,
+          0,
+          2,
+          4,
+          0
+        ],
+        [
+          1,
+          4,
+          1,
+          2,
+          4,
+          0
+        ],
+        [
+          1,
+          5,
+          0,
+          2,
+          5,
+          0
+        ],
+        [
+          1,
+          5,
+          1,
+          2,
+          5,
+          0
+        ],
+        [
+          2,
+          1,
+          0,
+          2,
+          1,
+          0
+        ],
+        [
+          2,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          2,
+          2,
+          0,
+          2,
+          2,
+          0
+        ],
+        [
+          2,
+          2,
+          1,
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          0,
+          2,
+          3,
+          0
+        ],
+        [
+          2,
+          3,
+          1,
+          1,
+          3,
+          1
+        ],
+        [
+          2,
+          4,
+          0,
+          2,
+          4,
+          0
+        ],
+        [
+          2,
+          4,
+          1,
+          1,
+          4,
+          1
+        ],
+        [
+          2,
+          5,
+          0,
+          2,
+          2,
+          0
+        ],
+        [
+          2,
+          5,
+          1,
+          2,
+          2,
+          0
+        ],
+        [
+          3,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          3,
+          2,
+          0,
+          2,
+          2,
+          1
+        ],
+        [
+          3,
+          2,
+          1,
+          1,
+          2,
+          1
+        ],
+        [
+          3,
+          3,
+          0,
+          2,
+          3,
+          1
+        ],
+        [
+          3,
+          3,
+          1,
+          1,
+          3,
+          1
+        ],
+        [
+          3,
+          4,
+          0,
+          2,
+          4,
+          1
+        ],
+        [
+          3,
+          4,
+          1,
+          1,
+          4,
+          1
+        ],
+        [
+          3,
+          5,
+          0,
+          2,
+          2,
+          1
+        ],
+        [
+          3,
+          5,
+          1,
+          2,
+          2,
+          1
+        ]
+      ],
+      "cleanup": [
+        [
+          1,
+          1,
+          0,
+          20,
+          1,
+          19,
+          3,
+          21,
+          21,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          20,
+          1,
+          19,
+          3,
+          21,
+          21,
+          1
+        ],
+        [
+          1,
+          2,
+          0,
+          20,
+          1,
+          19,
+          3,
+          21,
+          21,
+          1
+        ],
+        [
+          1,
+          2,
+          1,
+          20,
+          1,
+          19,
+          3,
+          21,
+          21,
+          1
+        ],
+        [
+          1,
+          3,
+          0,
+          20,
+          1,
+          19,
+          3,
+          21,
+          21,
+          1
+        ],
+        [
+          1,
+          3,
+          1,
+          20,
+          1,
+          19,
+          3,
+          21,
+          21,
+          1
+        ],
+        [
+          1,
+          4,
+          0,
+          20,
+          1,
+          19,
+          3,
+          21,
+          21,
+          1
+        ],
+        [
+          1,
+          4,
+          1,
+          20,
+          1,
+          19,
+          3,
+          21,
+          21,
+          1
+        ],
+        [
+          1,
+          5,
+          0,
+          20,
+          1,
+          19,
+          3,
+          21,
+          21,
+          1
+        ],
+        [
+          1,
+          5,
+          1,
+          20,
+          1,
+          19,
+          3,
+          21,
+          21,
+          1
+        ],
+        [
+          2,
+          1,
+          0,
+          20,
+          1,
+          19,
+          3,
+          21,
+          21,
+          1
+        ],
+        [
+          2,
+          1,
+          1,
+          30,
+          1,
+          19,
+          3,
+          21,
+          21,
+          1
+        ],
+        [
+          2,
+          2,
+          0,
+          20,
+          1,
+          19,
+          3,
+          21,
+          21,
+          1
+        ],
+        [
+          2,
+          2,
+          1,
+          30,
+          1,
+          19,
+          3,
+          21,
+          21,
+          1
+        ],
+        [
+          2,
+          3,
+          0,
+          20,
+          1,
+          19,
+          3,
+          21,
+          21,
+          1
+        ],
+        [
+          2,
+          3,
+          1,
+          30,
+          1,
+          19,
+          3,
+          21,
+          21,
+          1
+        ],
+        [
+          2,
+          4,
+          0,
+          20,
+          1,
+          19,
+          3,
+          21,
+          21,
+          1
+        ],
+        [
+          2,
+          4,
+          1,
+          30,
+          1,
+          19,
+          3,
+          21,
+          21,
+          1
+        ],
+        [
+          2,
+          5,
+          0,
+          20,
+          1,
+          19,
+          3,
+          21,
+          21,
+          1
+        ],
+        [
+          2,
+          5,
+          1,
+          20,
+          1,
+          19,
+          3,
+          21,
+          21,
+          1
+        ],
+        [
+          3,
+          1,
+          0,
+          30,
+          1,
+          0,
+          1,
+          2,
+          2,
+          1
+        ],
+        [
+          3,
+          1,
+          1,
+          30,
+          1,
+          0,
+          1,
+          2,
+          2,
+          1
+        ],
+        [
+          3,
+          2,
+          0,
+          10,
+          1,
+          0,
+          1,
+          2,
+          2,
+          1
+        ],
+        [
+          3,
+          2,
+          1,
+          30,
+          1,
+          0,
+          1,
+          2,
+          2,
+          1
+        ],
+        [
+          3,
+          3,
+          0,
+          10,
+          1,
+          0,
+          1,
+          2,
+          2,
+          1
+        ],
+        [
+          3,
+          3,
+          1,
+          30,
+          1,
+          0,
+          1,
+          2,
+          2,
+          1
+        ],
+        [
+          3,
+          4,
+          0,
+          10,
+          1,
+          0,
+          1,
+          2,
+          2,
+          1
+        ],
+        [
+          3,
+          4,
+          1,
+          30,
+          1,
+          0,
+          1,
+          2,
+          2,
+          1
+        ],
+        [
+          3,
+          5,
+          0,
+          10,
+          1,
+          0,
+          1,
+          2,
+          2,
+          1
+        ],
+        [
+          3,
+          5,
+          1,
+          10,
+          1,
+          0,
+          1,
+          2,
+          2,
+          1
+        ]
+      ],
+      "busy": [
+        [
+          3,
+          3,
+          3,
+          10,
+          1,
+          19,
+          3
+        ],
+        [
+          5,
+          2,
+          2,
+          10,
+          1,
+          19,
+          3
+        ]
+      ],
+      "stale_target_ignored": true
+    },
+    {
+      "command": "exits-debug-4",
+      "profile": "debug",
+      "kind": "exit_controls",
+      "passed": true,
+      "speed_tests": false,
+      "allowance": 4,
+      "matrix": [
+        [
+          1,
+          1,
+          0,
+          2,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          2,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          0,
+          2,
+          2,
+          0
+        ],
+        [
+          1,
+          2,
+          1,
+          2,
+          2,
+          0
+        ],
+        [
+          1,
+          3,
+          0,
+          2,
+          3,
+          0
+        ],
+        [
+          1,
+          3,
+          1,
+          2,
+          3,
+          0
+        ],
+        [
+          1,
+          4,
+          0,
+          2,
+          4,
+          0
+        ],
+        [
+          1,
+          4,
+          1,
+          2,
+          4,
+          0
+        ],
+        [
+          1,
+          5,
+          0,
+          2,
+          5,
+          0
+        ],
+        [
+          1,
+          5,
+          1,
+          2,
+          5,
+          0
+        ],
+        [
+          2,
+          1,
+          0,
+          2,
+          1,
+          0
+        ],
+        [
+          2,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          2,
+          2,
+          0,
+          2,
+          2,
+          0
+        ],
+        [
+          2,
+          2,
+          1,
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          0,
+          2,
+          3,
+          0
+        ],
+        [
+          2,
+          3,
+          1,
+          1,
+          3,
+          1
+        ],
+        [
+          2,
+          4,
+          0,
+          2,
+          4,
+          0
+        ],
+        [
+          2,
+          4,
+          1,
+          1,
+          4,
+          1
+        ],
+        [
+          2,
+          5,
+          0,
+          2,
+          2,
+          0
+        ],
+        [
+          2,
+          5,
+          1,
+          2,
+          2,
+          0
+        ],
+        [
+          3,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          3,
+          2,
+          0,
+          2,
+          2,
+          1
+        ],
+        [
+          3,
+          2,
+          1,
+          1,
+          2,
+          1
+        ],
+        [
+          3,
+          3,
+          0,
+          2,
+          3,
+          1
+        ],
+        [
+          3,
+          3,
+          1,
+          1,
+          3,
+          1
+        ],
+        [
+          3,
+          4,
+          0,
+          2,
+          4,
+          1
+        ],
+        [
+          3,
+          4,
+          1,
+          1,
+          4,
+          1
+        ],
+        [
+          3,
+          5,
+          0,
+          2,
+          2,
+          1
+        ],
+        [
+          3,
+          5,
+          1,
+          2,
+          2,
+          1
+        ]
+      ],
+      "cleanup": [
+        [
+          1,
+          1,
+          0,
+          20,
+          1,
+          19,
+          3,
+          21,
+          21,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          20,
+          1,
+          19,
+          3,
+          21,
+          21,
+          1
+        ],
+        [
+          1,
+          2,
+          0,
+          20,
+          1,
+          19,
+          3,
+          21,
+          21,
+          1
+        ],
+        [
+          1,
+          2,
+          1,
+          20,
+          1,
+          19,
+          3,
+          21,
+          21,
+          1
+        ],
+        [
+          1,
+          3,
+          0,
+          20,
+          1,
+          19,
+          3,
+          21,
+          21,
+          1
+        ],
+        [
+          1,
+          3,
+          1,
+          20,
+          1,
+          19,
+          3,
+          21,
+          21,
+          1
+        ],
+        [
+          1,
+          4,
+          0,
+          20,
+          1,
+          19,
+          3,
+          21,
+          21,
+          1
+        ],
+        [
+          1,
+          4,
+          1,
+          20,
+          1,
+          19,
+          3,
+          21,
+          21,
+          1
+        ],
+        [
+          1,
+          5,
+          0,
+          20,
+          1,
+          19,
+          3,
+          21,
+          21,
+          1
+        ],
+        [
+          1,
+          5,
+          1,
+          20,
+          1,
+          19,
+          3,
+          21,
+          21,
+          1
+        ],
+        [
+          2,
+          1,
+          0,
+          20,
+          1,
+          19,
+          3,
+          21,
+          21,
+          1
+        ],
+        [
+          2,
+          1,
+          1,
+          30,
+          1,
+          19,
+          3,
+          21,
+          21,
+          1
+        ],
+        [
+          2,
+          2,
+          0,
+          20,
+          1,
+          19,
+          3,
+          21,
+          21,
+          1
+        ],
+        [
+          2,
+          2,
+          1,
+          30,
+          1,
+          19,
+          3,
+          21,
+          21,
+          1
+        ],
+        [
+          2,
+          3,
+          0,
+          20,
+          1,
+          19,
+          3,
+          21,
+          21,
+          1
+        ],
+        [
+          2,
+          3,
+          1,
+          30,
+          1,
+          19,
+          3,
+          21,
+          21,
+          1
+        ],
+        [
+          2,
+          4,
+          0,
+          20,
+          1,
+          19,
+          3,
+          21,
+          21,
+          1
+        ],
+        [
+          2,
+          4,
+          1,
+          30,
+          1,
+          19,
+          3,
+          21,
+          21,
+          1
+        ],
+        [
+          2,
+          5,
+          0,
+          20,
+          1,
+          19,
+          3,
+          21,
+          21,
+          1
+        ],
+        [
+          2,
+          5,
+          1,
+          20,
+          1,
+          19,
+          3,
+          21,
+          21,
+          1
+        ],
+        [
+          3,
+          1,
+          0,
+          30,
+          1,
+          0,
+          1,
+          2,
+          2,
+          1
+        ],
+        [
+          3,
+          1,
+          1,
+          30,
+          1,
+          0,
+          1,
+          2,
+          2,
+          1
+        ],
+        [
+          3,
+          2,
+          0,
+          10,
+          1,
+          0,
+          1,
+          2,
+          2,
+          1
+        ],
+        [
+          3,
+          2,
+          1,
+          30,
+          1,
+          0,
+          1,
+          2,
+          2,
+          1
+        ],
+        [
+          3,
+          3,
+          0,
+          10,
+          1,
+          0,
+          1,
+          2,
+          2,
+          1
+        ],
+        [
+          3,
+          3,
+          1,
+          30,
+          1,
+          0,
+          1,
+          2,
+          2,
+          1
+        ],
+        [
+          3,
+          4,
+          0,
+          10,
+          1,
+          0,
+          1,
+          2,
+          2,
+          1
+        ],
+        [
+          3,
+          4,
+          1,
+          30,
+          1,
+          0,
+          1,
+          2,
+          2,
+          1
+        ],
+        [
+          3,
+          5,
+          0,
+          10,
+          1,
+          0,
+          1,
+          2,
+          2,
+          1
+        ],
+        [
+          3,
+          5,
+          1,
+          10,
+          1,
+          0,
+          1,
+          2,
+          2,
+          1
+        ]
+      ],
+      "busy": [
+        [
+          3,
+          3,
+          3,
+          10,
+          1,
+          19,
+          3
+        ],
+        [
+          5,
+          2,
+          2,
+          10,
+          1,
+          19,
+          3
+        ]
+      ],
+      "stale_target_ignored": true
+    }
+  ],
+  "environment_overrides": {
+    "CARGO_HOME": "/home/bat/projects/bream/.tools/cargo-cache",
+    "CARGO_TARGET_DIR": "/home/bat/projects/bream/.tools/timed-read/20261009-timed-01",
+    "RUSTC": "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/rustc",
+    "CARGO_BUILD_JOBS": "2",
+    "RUSTFLAGS": "",
+    "RUSTDOCFLAGS": "",
+    "RUSTC_WRAPPER": "",
+    "RUSTC_WORKSPACE_WRAPPER": "",
+    "RUST_BACKTRACE": "0",
+    "RUST_TEST_THREADS": "2",
+    "ERL_FLAGS": "+S 1:1 +SDcpu 1 +SDio 1",
+    "ERL_CRASH_DUMP": "/home/bat/projects/bream/.tools/timed-read/20261009-timed-01/erl_crash.dump"
+  },
+  "correctness_only": true,
+  "speed_tests": false,
+  "performance_comparisons": false,
+  "new_beam_execution": true,
+  "production_runtime": false
+}

@@ -1,0 +1,8 @@
+   Compiling bream-timed-consumer v0.0.0 (/home/bat/projects/bream/experiments/timed-read/consumer)
+error: bream structured subset: unknown record
+ --> consumer/examples/reject_exit_constructor.rs:3:39
+  |
+3 | mod rejected { fn run() { let value = ExitReason { code: 1 }; self_exit(value); } }
+  |                                       ^^^^^^^^^^
+
+error: could not compile `bream-timed-consumer` (example "reject_exit_constructor") due to 1 previous error

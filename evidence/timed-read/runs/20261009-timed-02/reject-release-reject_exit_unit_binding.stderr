@@ -1,0 +1,8 @@
+   Compiling bream-timed-consumer v0.0.0 (/home/bat/projects/bream/experiments/timed-read/consumer)
+error: bream structured subset: unit locals not admitted
+ --> consumer/examples/reject_exit_unit_binding.rs:3:27
+  |
+3 | mod rejected { fn run() { let value = self_exit(ExitReason::Normal); } }
+  |                           ^^^
+
+error: could not compile `bream-timed-consumer` (example "reject_exit_unit_binding") due to 1 previous error

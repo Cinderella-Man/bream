@@ -1,0 +1,8 @@
+   Compiling bream-timed-consumer v0.0.0 (/home/bat/projects/bream/experiments/timed-read/consumer)
+error: bream structured subset: annotation type mismatch
+ --> consumer/examples/reject_timed_read_wrong_result.rs:5:20
+  |
+5 |         let value: StreamResult = read_next_for(5);
+  |                    ^^^^^^^^^^^^
+
+error: could not compile `bream-timed-consumer` (example "reject_timed_read_wrong_result") due to 1 previous error

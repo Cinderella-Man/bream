@@ -1,0 +1,4 @@
+   Compiling libc v0.2.190
+   Compiling bream-timed-runtime v0.0.0 (/home/bat/projects/bream/experiments/timed-read/runtime)
+    Finished `release` profile [optimized] target(s) in 10.38s
+     Running unittests src/lib.rs (.tools/timed-read/20261009-timed-02/release/deps/bream_timed_runtime-4c5a4df68faa32ad)
