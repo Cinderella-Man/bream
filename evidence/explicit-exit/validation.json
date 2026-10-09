@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "date": "2026-10-09",
+  "cohort": "evidence/explicit-exit/runs/20261009-exit-01",
+  "retained_cohorts": 1,
+  "hash_records_verified": 1081,
+  "current_inputs_verified": 205,
+  "previous_inputs_preserved": 187,
+  "commands": 424,
+  "observations": 382,
+  "rust_exit_configurations": 6,
+  "beam_reference_observations": 78,
+  "experiments_executed_by_audit": false,
+  "benchmarks_executed": false,
+  "errors": []
+}

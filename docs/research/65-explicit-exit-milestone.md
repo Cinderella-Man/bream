@@ -1,0 +1,17 @@
+# Explicit exit: implementation findings
+
+Completed **2026-10-09**. The [source contract](64-explicit-exit-source-contract.md) now has an executed [thirteenth implementation milestone](../../experiments/explicit-exit/README.md). This is a restricted local, single-worker profile; broader G1–G5 qualification remains open.
+
+The meaningful distinction is the operation, not just its reason. Checked `self_exit(Kill)` models uncaught exit/1 and preserves Kill; checked `exit_to(pid, Kill)` requests an untrappable direct kill and produces Killed. Either resulting reason can be trapped when subsequently propagated through a link. Legacy self-targeted normal exit is fatal without trapping, while normal exit sent to another nontrapping process is ignored. The thirty-case public matrix agrees with pinned BEAM execution under both its JIT and debug emulator.
+
+The Rust implementation uses generated suspension rather than unwinding through arbitrary native frames. After self-exit claims its reason, its internal future returns Pending and cannot resume application code. The worker then retires the frame outside polling. Existing cleanup settles held Words, shared handles, queued envelopes and relationships. Two public controls also send a fatal exit to a computing process that does not receive again. This qualifies the admitted generated code, not unrestricted dependency calls or arbitrary native destruction.
+
+Review found a lifecycle bug in an inherited path: a failed synchronous link could overwrite an earlier pending fatal reason. A common guarded claim now checks terminal, host-kill and pending-exit state under lifecycle arbitration. Both event orders have regression controls. Thirty-two host-kill/direct-exit races across the two compiler profiles also require one final reason and one Down per monitored target.
+
+The implementation deliberately has **eager direct local receipt** under registry/lifecycle locks. It checks the target's current trapping flag and full namespace/slot/generation there; it does not expose OTP's queued direct-signal delay. Converted trapped exits retain their identity and queue position. Missing or stale targets do nothing, including when a checked sender directs Kill at a reused slot's old PID. Multi-worker lock composition remains unqualified.
+
+Evidence comprises 424 expected command outcomes, 105 runtime tests per compiler profile, 159 rejected consumers per profile, six public exit configurations and 78 BEAM reference observations. Held/queued cleanup and stale-target controls pass. The [read-only audit](../../evidence/explicit-exit/validation.json) verifies the retained cohort and preservation of the previous milestone's inputs. No speed measurements or performance comparisons ran.
+
+The next resource experiment should apply the [green-runtime investigation](63-rust-green-runtime-lessons-and-experiments.md): let a real pending operation own its request and buffer independently of an actor. Require stop/completion races, late-result identity checks and separate accounting for actor death, operation settlement and storage release. That work can establish a useful Rust ownership advantage without assuming that Drop alone is a complete cancellation protocol.
+
+Follow-up: the proposed ownership experiment subsequently passed as [milestone fourteen](67-owned-read-milestone.md), with an explicitly one-shot readiness-based local read.

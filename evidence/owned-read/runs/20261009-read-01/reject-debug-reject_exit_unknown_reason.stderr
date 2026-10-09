@@ -1,0 +1,8 @@
+   Compiling bream-read-consumer v0.0.0 (/home/bat/projects/bream/experiments/owned-read/consumer)
+error: bream structured subset: unknown exit reason
+ --> consumer/examples/reject_exit_unknown_reason.rs:3:37
+  |
+3 | mod rejected { fn run() { self_exit(ExitReason::Arbitrary); } }
+  |                                     ^^^^^^^^^^
+
+error: could not compile `bream-read-consumer` (example "reject_exit_unknown_reason") due to 1 previous error

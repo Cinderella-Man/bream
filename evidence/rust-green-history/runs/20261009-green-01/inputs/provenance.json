@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "official_compiler": {
+    "url": "https://static.rust-lang.org/dist/rust-0.12.0-x86_64-unknown-linux-gnu.tar.gz",
+    "archive_sha256": "bb3e2eda2bd25690c58a3925ca175dedc27fedada33af4159fdb63dae9cc41a3",
+    "checksum_source": "https://internals.rust-lang.org/t/0-12-0-release-candidates/618",
+    "compiler_revision": "ba4081a5a8573875fed17545846f6f6902c8ba8d",
+    "archive_path": ".tools/rust-green-history/rust-0.12.0-x86_64-unknown-linux-gnu.tar.gz",
+    "unpacked_path": ".tools/rust-green-history/rust-0.12.0-x86_64-unknown-linux-gnu",
+    "installation": "Unpacked beneath ignored workspace .tools; no installer, global toolchain, or environment modification."
+  },
+  "source_snapshots": [
+    {
+      "checkout": "upstream/rust-green-history/770378a313a573776b16237a46b75bafa49072c1",
+      "manifest": "evidence/rust-green-history/sources/770378a313a573776b16237a46b75bafa49072c1.json"
+    },
+    {
+      "checkout": "upstream/rust-green-history/ba4081a5a8573875fed17545846f6f6902c8ba8d",
+      "manifest": "evidence/rust-green-history/sources/ba4081a5a8573875fed17545846f6f6902c8ba8d.json"
+    },
+    {
+      "checkout": "upstream/rust-green-history/linked-failure-85a1eff3a99c5d60bf34ca6f08f87ed341329af0",
+      "manifest": "evidence/rust-green-history/sources/linked-failure-85a1eff3a99c5d60bf34ca6f08f87ed341329af0.json"
+    }
+  ]
+}

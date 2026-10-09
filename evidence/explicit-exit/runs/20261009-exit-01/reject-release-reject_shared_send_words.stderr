@@ -1,0 +1,8 @@
+   Compiling bream-exit-consumer v0.0.0 (/home/bat/projects/bream/experiments/explicit-exit/consumer)
+error: bream structured subset: send_shared requires Pid, u64 tag and moved SharedBytes
+ --> consumer/examples/reject_shared_send_words.rs:5:9
+  |
+5 |         send_shared(self_id(), 1, owned_input());
+  |         ^^^^^^^^^^^
+
+error: could not compile `bream-exit-consumer` (example "reject_shared_send_words") due to 1 previous error

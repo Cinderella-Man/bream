@@ -1,0 +1,9 @@
+{
+  "schema": 1,
+  "run": "evidence/rust-green-history/runs/20261009-green-02",
+  "passed": true,
+  "checks": 434,
+  "commands": 26,
+  "observations": 20,
+  "scope": "source, tool, binary, output and exact semantic-oracle audit; no execution or performance data"
+}

@@ -1,0 +1,8 @@
+   Compiling bream-exit-consumer v0.0.0 (/home/bat/projects/bream/experiments/explicit-exit/consumer)
+error: bream structured subset: self_exit requires ExitReason
+ --> consumer/examples/reject_exit_numeric_reason.rs:3:27
+  |
+3 | mod rejected { fn run() { self_exit(3); } }
+  |                           ^^^^^^^^^
+
+error: could not compile `bream-exit-consumer` (example "reject_exit_numeric_reason") due to 1 previous error

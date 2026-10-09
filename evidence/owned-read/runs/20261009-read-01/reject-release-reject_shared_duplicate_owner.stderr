@@ -1,0 +1,13 @@
+   Compiling bream-read-consumer v0.0.0 (/home/bat/projects/bream/experiments/owned-read/consumer)
+error[E0382]: use of moved value: `bytes`
+ --> consumer/examples/reject_shared_duplicate_owner.rs:7:35
+  |
+5 |         let bytes = shared_bytes(receive_shared_any());
+  |             ----- move occurs because `bytes` has type `SharedBytes`, which does not implement the `Copy` trait
+6 |         send_shared(self_id(), 1, bytes);
+  |                                   ----- value moved here
+7 |         send_shared(self_id(), 2, bytes);
+  |                                   ^^^^^ value used here after move
+
+For more information about this error, try `rustc --explain E0382`.
+error: could not compile `bream-read-consumer` (example "reject_shared_duplicate_owner") due to 1 previous error

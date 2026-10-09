@@ -1,0 +1,8 @@
+   Compiling bream-exit-consumer v0.0.0 (/home/bat/projects/bream/experiments/explicit-exit/consumer)
+error: bream structured subset: unsupported expression or unqualified execution
+ --> consumer/examples/reject_shared_raw_clone.rs:6:22
+  |
+6 |         let copied = bytes.clone();
+  |                      ^^^^^
+
+error: could not compile `bream-exit-consumer` (example "reject_shared_raw_clone") due to 1 previous error

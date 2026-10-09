@@ -1,0 +1,8 @@
+   Compiling bream-read-consumer v0.0.0 (/home/bat/projects/bream/experiments/owned-read/consumer)
+error: bream milestone subset: owned buffers cannot be read, moved, borrowed, or passed by user code
+ --> consumer/examples/reject_buffer_move.rs:5:17
+  |
+5 |     let moved = words;
+  |                 ^^^^^
+
+error: could not compile `bream-read-consumer` (example "reject_buffer_move") due to 1 previous error

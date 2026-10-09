@@ -1,0 +1,10 @@
+[package]
+name = "bream-read-consumer"
+version = "0.0.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+bream-read-runtime = { path = "../runtime" }
+bream-read-macros = { path = "../macros" }
+

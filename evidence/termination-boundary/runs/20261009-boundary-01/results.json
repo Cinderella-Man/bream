@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "recorded_at_utc": "2026-10-08T22:18:17.434082+00:00",
+  "scope": "bounded cancellation/ownership/peer semantic probes; no timing or performance comparisons",
+  "source_inputs": [
+    {
+      "source": "experiments/termination-boundary/Cargo.toml",
+      "retained": "evidence/termination-boundary/runs/20261009-boundary-01/inputs/Cargo.toml",
+      "sha256": "8327a00043ca2eecc7f310e891fbc366d003f14b7704f461ca45f7c210502e93"
+    },
+    {
+      "source": "experiments/termination-boundary/src/main.rs",
+      "retained": "evidence/termination-boundary/runs/20261009-boundary-01/inputs/src/main.rs",
+      "sha256": "a2baf34be3f35e5442b6f3d7ed4e31fcd00702b1eb8cef552feb90b5b0aaad54"
+    },
+    {
+      "source": "experiments/termination-boundary/termination_reference.erl",
+      "retained": "evidence/termination-boundary/runs/20261009-boundary-01/inputs/termination_reference.erl",
+      "sha256": "0a9e436bdd39484defa11a6e45af2b786eea3881c655e8ae45878555a203d6f7"
+    },
+    {
+      "source": "experiments/termination-boundary/run.py",
+      "retained": "evidence/termination-boundary/runs/20261009-boundary-01/inputs/run.py",
+      "sha256": "da918ff993148dca138971071b99c097bbbcc248f6f57495aa8c5c6bd1b8d43d"
+    }
+  ],
+  "commands": [
+    {
+      "name": "rustc-version",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/rustc",
+        "--version",
+        "--verbose"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 30,
+      "stdout": "evidence/termination-boundary/runs/20261009-boundary-01/rustc-version.stdout",
+      "stdout_sha256": "778fbc643a806f0dd123c056e66201d7e8a56a61928ec0a33171be8d6c2d5a37",
+      "stderr": "evidence/termination-boundary/runs/20261009-boundary-01/rustc-version.stderr",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "succeeded": true
+    },
+    {
+      "name": "otp-commit",
+      "argv": [
+        "git",
+        "-C",
+        "/home/bat/projects/bream/upstream/otp",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 30,
+      "stdout": "evidence/termination-boundary/runs/20261009-boundary-01/otp-commit.stdout",
+      "stdout_sha256": "063a85610325bb1993b92255be48c9a95c69dd7dd9bd74855a7480264e608391",
+      "stderr": "evidence/termination-boundary/runs/20261009-boundary-01/otp-commit.stderr",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "succeeded": true
+    }
+  ],
+  "observations": [],
+  "all_expected_observations": false,
+  "limits": [
+    "Rust probes use standard-library futures and explicit test gates, not the checked Bream API.",
+    "Rust cancellation happens only after poll returns Pending; no live native stack is abandoned.",
+    "The original native preemption experiment is not rerun and arbitrary native preemption is not qualified.",
+    "Shared-state cancellation demonstrates lost application invariants, not memory unsafety.",
+    "Explicit rollback and joining are controls for these bounded protocols, not universal cancellation solutions.",
+    "BEAM controls do not exercise NIFs, speed, scheduler latency, or full resource cleanup.",
+    "External watchdogs only detect hangs; their values and elapsed time are not performance evidence."
+  ],
+  "rustc": {
+    "path": "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/rustc",
+    "sha256": "859254978c0a0402c32f949f6de0d99aee73be8d15f45aac00ae1448aac51e74",
+    "version": "rustc 1.98.1 (48a229cea 2026-09-01)\nbinary: rustc\ncommit-hash: 48a229ceaefd4985c50990b14116b6d856af0985\ncommit-date: 2026-09-01\nhost: x86_64-unknown-linux-gnu\nrelease: 1.98.1\nLLVM version: 22.1.8\n"
+  },
+  "otp": {
+    "commit": "ad05823719d77c8faee87348ea39513d4e2f99c5",
+    "erl_path": "/home/bat/projects/bream/upstream/otp-reference-build/bin/erl",
+    "erl_sha256": "12c142c54d5605bb29cb9f5015d40fd12cb6c3e199a2c69ecee33946d0d4b2b9",
+    "erlc_sha256": "4f75f3b2aaa9c3b3500b0852462df89dfd9f3244a72d817d616c325130110be0",
+    "environment": {
+      "ERL_FLAGS": "+S 1:1 +SDcpu 1 +SDio 1"
+    },
+    "emulators": []
+  },
+  "error": "AssertionError('no reference emulator binaries found')"
+}

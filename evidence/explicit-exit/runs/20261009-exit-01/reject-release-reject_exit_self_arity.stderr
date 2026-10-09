@@ -1,0 +1,8 @@
+   Compiling bream-exit-consumer v0.0.0 (/home/bat/projects/bream/experiments/explicit-exit/consumer)
+error: bream structured subset: unknown/unqualified helper
+ --> consumer/examples/reject_exit_self_arity.rs:3:27
+  |
+3 | mod rejected { fn run() { self_exit(ExitReason::Normal, ExitReason::Kill); } }
+  |                           ^^^^^^^^^
+
+error: could not compile `bream-exit-consumer` (example "reject_exit_self_arity") due to 1 previous error

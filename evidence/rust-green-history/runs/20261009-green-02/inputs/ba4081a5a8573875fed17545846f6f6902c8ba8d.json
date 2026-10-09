@@ -1,0 +1,334 @@
+{
+  "revision": "ba4081a5a8573875fed17545846f6f6902c8ba8d",
+  "resolved_from": "git ls-remote https://github.com/rust-lang/rust.git refs/tags/0.12.0 refs/tags/0.12.0^{}",
+  "tag_object": "f0c419429ef30723ceaf6b42f9b5a2aeb5d2e2d1",
+  "archive_url": "https://codeload.github.com/rust-lang/rust/tar.gz/ba4081a5a8573875fed17545846f6f6902c8ba8d",
+  "archive_sha256": "f9fd61ea00214568078c6cb99da527d65ec8e91eecb639b39340c952b5e2e686",
+  "files": [
+    {
+      "path": "LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+    },
+    {
+      "path": "LICENSE-MIT",
+      "sha256": "6485b8ed310d3f0340bf1ad1f47645069ce4069dcc6bb46c7d5c6faf41de1fdb"
+    },
+    {
+      "path": "src/doc/guide-tasks.md",
+      "sha256": "f99e2f13d9830d69d53429e084f370583c3067a79f693c2e7e53b53d7411de6a"
+    },
+    {
+      "path": "src/libgreen/basic.rs",
+      "sha256": "ef47de7cf5057d716bdc22acb0102a59c05c1fb02b2cfc8edd3184b293a87ba8"
+    },
+    {
+      "path": "src/libgreen/context.rs",
+      "sha256": "e2041b057bec16a6cecf8b498491dd3344b6f77aa2ea9528c271ea11ede1704b"
+    },
+    {
+      "path": "src/libgreen/coroutine.rs",
+      "sha256": "f6fbce1509c7bebcc3420bc4912e7187511690cbcd5313207cd297e21c3e9fb2"
+    },
+    {
+      "path": "src/libgreen/lib.rs",
+      "sha256": "e3fd958378cb8df9d631f3a017892ae5b2d8272c84e928ffff1dd1f063a84d8f"
+    },
+    {
+      "path": "src/libgreen/macros.rs",
+      "sha256": "2a1d852ecfe1979889775198945c80e8cf1e56296214bbe60f853b9feec49727"
+    },
+    {
+      "path": "src/libgreen/message_queue.rs",
+      "sha256": "ab3af247d0c08aac833c0a3b4017782f69e6e2deaf9cb703f1198f08d47c2b8b"
+    },
+    {
+      "path": "src/libgreen/sched.rs",
+      "sha256": "c02a8721693f5498ef01e965b1878a9689132e939d8bea77d6941bdf333c6ded"
+    },
+    {
+      "path": "src/libgreen/simple.rs",
+      "sha256": "8e7837257603e9ae3f7d427d21a3ef9e6be4625398737b57df6a0019a876fc4c"
+    },
+    {
+      "path": "src/libgreen/sleeper_list.rs",
+      "sha256": "5daf4c412dd697da932051c887209da7bbbc023afcd62b839db3cfcb465fffe4"
+    },
+    {
+      "path": "src/libgreen/stack.rs",
+      "sha256": "31d34b6b90814a4d1b15622e6a8e239c066d8b2145a10639ece24d18fbc8b162"
+    },
+    {
+      "path": "src/libgreen/task.rs",
+      "sha256": "ec305000069119f0408522f4977918857c0842f0b13f14ba97d60280f93999ef"
+    },
+    {
+      "path": "src/libnative/io/addrinfo.rs",
+      "sha256": "983cf885c710d1aa62de00789cec33b197aa51e7f403af8b51003f0f5c20211a"
+    },
+    {
+      "path": "src/libnative/io/c_unix.rs",
+      "sha256": "124a9120e5cb4219d34f8d27cf894bf82fea0ca9d20b0c72a5cbc40d5eee3330"
+    },
+    {
+      "path": "src/libnative/io/c_windows.rs",
+      "sha256": "a33f668f11065b35789549ecb4198d3aaa251aca969776bd33cc0ed4e23bb4c4"
+    },
+    {
+      "path": "src/libnative/io/file_unix.rs",
+      "sha256": "08ef84502d48f3470f5a6b41ebaf850a720cfc314c003fbc070e66e5d7ddbc5c"
+    },
+    {
+      "path": "src/libnative/io/file_windows.rs",
+      "sha256": "2bcc6aecc163d4e005964e25df8936ca0b7a73c64257fb5dd8d3503d2be2e917"
+    },
+    {
+      "path": "src/libnative/io/helper_thread.rs",
+      "sha256": "bd31464098d8cf1e800c4ea025540d6b79ee67ec728fc134ef6540c5e4f918fa"
+    },
+    {
+      "path": "src/libnative/io/mod.rs",
+      "sha256": "3307df0c65508b1ffd9ee1063e62c1c60e1a4860a32673e67a3f9ebe3da87ada"
+    },
+    {
+      "path": "src/libnative/io/net.rs",
+      "sha256": "e1bd92b2704cce741e9a41378d03d67539f39b84aecbfe388e2e4e6432b243fb"
+    },
+    {
+      "path": "src/libnative/io/pipe_unix.rs",
+      "sha256": "327566fb052b8134ad84bb78da01447a3df9c509d3a49dd4bbea821586f2d563"
+    },
+    {
+      "path": "src/libnative/io/pipe_windows.rs",
+      "sha256": "e19a60eacd986589570b046a5934addaac820b2215241eacb81acb82afb702e8"
+    },
+    {
+      "path": "src/libnative/io/process.rs",
+      "sha256": "7205c083d658fbd579fa22bae5164dc74df0e34412a039683a606e98d33e5968"
+    },
+    {
+      "path": "src/libnative/io/timer_unix.rs",
+      "sha256": "b4219041f38d1b38eaac40a9d598d743779a14767a44a569f3d28d388896a574"
+    },
+    {
+      "path": "src/libnative/io/timer_windows.rs",
+      "sha256": "dc14d1333101248fdfc775a47abd94925b4c7a78f0eda719f2acc737fd3a2f87"
+    },
+    {
+      "path": "src/libnative/io/tty_windows.rs",
+      "sha256": "dc022d89e892cc20f0b09cbda37a3e23707dee1130ffa18612526f9252ab2942"
+    },
+    {
+      "path": "src/libnative/io/util.rs",
+      "sha256": "35837044dc442b52a033ee659d00a315f996b60c10c53d36f9ca4d68a5ac2e2c"
+    },
+    {
+      "path": "src/libnative/lib.rs",
+      "sha256": "731761f4f77241f69056aef1bfe30c294510979033c129cea8f1500c2378ee36"
+    },
+    {
+      "path": "src/libnative/task.rs",
+      "sha256": "8c8d363ff64382ea114a1eeb339d154ced1ccf1d8973e3784c59a7795cf5a456"
+    },
+    {
+      "path": "src/librustrt/args.rs",
+      "sha256": "9da7a984cb2350b4d0ef756ec63490883669a3103a8ae5d049f7908294b248bf"
+    },
+    {
+      "path": "src/librustrt/at_exit_imp.rs",
+      "sha256": "1c204fd8d7d4fc4bbc846e029edb5cdd6a4d3bc12e5178317b545113e1dfd16b"
+    },
+    {
+      "path": "src/librustrt/bookkeeping.rs",
+      "sha256": "72cd904cc1efd9c9d65713120b97cbf9f0968ff417ff51c0c345164282e28072"
+    },
+    {
+      "path": "src/librustrt/c_str.rs",
+      "sha256": "83978484e056ae0e0d83d5156fc2beb7a4902f9158959a30892ac4f315e98dae"
+    },
+    {
+      "path": "src/librustrt/exclusive.rs",
+      "sha256": "c09acadbd989121466f8c0ac3d56c6543e5f2ce573a71c2fc01a82f6f98fd3c1"
+    },
+    {
+      "path": "src/librustrt/lib.rs",
+      "sha256": "538f2b44eb5328ff8dd6617ba8a715132f90d9ea5d1969772a29f39bbafcd624"
+    },
+    {
+      "path": "src/librustrt/libunwind.rs",
+      "sha256": "801c6bce53cc243228020daa071afabdda72840029ec7350b2d2dbc0f33eb2f4"
+    },
+    {
+      "path": "src/librustrt/local.rs",
+      "sha256": "beb911376d4430d5eba71228e5b11115e2aed5fd9f0ee6adcfcba047859577ba"
+    },
+    {
+      "path": "src/librustrt/local_data.rs",
+      "sha256": "175500cdb2d97716e966686483f13a980118679396ee9fb19acbb298883cccb3"
+    },
+    {
+      "path": "src/librustrt/local_ptr.rs",
+      "sha256": "26187526128e28df7ce8cd9fc9e1ec5a26ab3b43325386b81c9c3e69f3d88c89"
+    },
+    {
+      "path": "src/librustrt/macros.rs",
+      "sha256": "d6c3310afddca8129e2d3f96b4a777578a961659ca98f0bde9f3801783352c7b"
+    },
+    {
+      "path": "src/librustrt/mutex.rs",
+      "sha256": "dcad08bde00b5da52cc5989ae343c323ab6f01599fdc6846e969937c0671d775"
+    },
+    {
+      "path": "src/librustrt/rtio.rs",
+      "sha256": "62067ed206e8e7fb9b9a0e0e2ef4014a0d4d30835efe6e66435aa675b6409917"
+    },
+    {
+      "path": "src/librustrt/stack.rs",
+      "sha256": "9207b8ef3bf001b4d2185a4ced79b8f8d39c2529e8b443feb9a33365a92c48f4"
+    },
+    {
+      "path": "src/librustrt/task.rs",
+      "sha256": "b4232fffc56ce5a6fcbac3ae3fb2b581623240ee22d0d693c2aa2f3002f48a06"
+    },
+    {
+      "path": "src/librustrt/thread.rs",
+      "sha256": "07ba7b39be09155c19aaeb0e41419d05ab689d66f499038e1a587ee5132830a9"
+    },
+    {
+      "path": "src/librustrt/thread_local_storage.rs",
+      "sha256": "6db0d2287bed682c1a76e69b7efabfcd25266e27a8a52d1cdb8900d98f224a43"
+    },
+    {
+      "path": "src/librustrt/unwind.rs",
+      "sha256": "9a38bee4f32b3c86bbc4760ad514f10b14ea1f362afba277317bd110828125eb"
+    },
+    {
+      "path": "src/librustrt/util.rs",
+      "sha256": "91c7af4f425e13d11540dd37a385027519e24029fbc0b4231d6a6742dcfb441f"
+    },
+    {
+      "path": "src/libstd/io/net/tcp.rs",
+      "sha256": "8b69af740a67bcdc0219e9296e5f2737eaadd511437f6d8b68c09e7e771a1475"
+    },
+    {
+      "path": "src/libstd/io/timer.rs",
+      "sha256": "10ba8373abd5065da5b03d846319b267e091c68f9311b5a391cd2089d4038d97"
+    },
+    {
+      "path": "src/libstd/lib.rs",
+      "sha256": "d3229d959259f920605a983851a8e870cfe22466d339f4ff84728fd079972d78"
+    },
+    {
+      "path": "src/libstd/macros.rs",
+      "sha256": "2e14a04b861937d92e3d860cc1434abddf369ade85eee15e0e7ae6e2c7f59e28"
+    },
+    {
+      "path": "src/libstd/prelude.rs",
+      "sha256": "910401c4eb3188fd10c66d79da19d11c234d0e25e1122a6561c06e86bf5fd0f5"
+    },
+    {
+      "path": "src/libstd/rt/backtrace.rs",
+      "sha256": "dcc30d35f423adcebcf47160c855668145ad73f6ea7a8d2d2f3a5806636ec615"
+    },
+    {
+      "path": "src/libstd/rt/mod.rs",
+      "sha256": "14542054817c7ff941193b41d5e3396c9f48ea563f0be95c7dde99bb9138fe4c"
+    },
+    {
+      "path": "src/libstd/rt/util.rs",
+      "sha256": "0fff3c10badd0415b0ea43e477654e8b38b1bf4e3bdc837dd2fb4959b53f561f"
+    },
+    {
+      "path": "src/libstd/sync/future.rs",
+      "sha256": "02afdf81037966818d13e29cf27da85d4c65f1058eb82ba13e780ccbd11b00ed"
+    },
+    {
+      "path": "src/libstd/sync/mod.rs",
+      "sha256": "c7296aacfa2aa9a93ccf379243109bfd973cfe8123f967e3017e043e0d10164f"
+    },
+    {
+      "path": "src/libstd/sync/task_pool.rs",
+      "sha256": "67dcecdd13049be2de74a6cf70770055f112fa98f73198df10f5726affa49ea7"
+    },
+    {
+      "path": "src/libstd/task.rs",
+      "sha256": "2c9a91173451ea8f5dd17621d9e7337f7900c5006d1c86e0cf8053f2ae47ec95"
+    },
+    {
+      "path": "src/libsync/atomic.rs",
+      "sha256": "ed5cc20555991c77e729d7ea6acdc8d2f364b57d2b1101c52ef9fc8ddd295947"
+    },
+    {
+      "path": "src/libsync/comm/duplex.rs",
+      "sha256": "53b41da123cb40350b8cd8a4950a3c52e30d5f1ce714d70081f6388d3d381621"
+    },
+    {
+      "path": "src/libsync/comm/mod.rs",
+      "sha256": "5372a9372736de4d18138b0e5aefaebadd9aa2211a65fcdf150075c39f54c454"
+    },
+    {
+      "path": "src/libsync/comm/oneshot.rs",
+      "sha256": "11f41976a4ef8f8dd39672e7281f3e2b6401fe7d672c364a1c506bced4199c54"
+    },
+    {
+      "path": "src/libsync/comm/select.rs",
+      "sha256": "2dd1f3f234f6c5d582730abd0a921f3ebae9d6cc779f616777e7295dd0eb369d"
+    },
+    {
+      "path": "src/libsync/comm/shared.rs",
+      "sha256": "2c41d78870981c53a151499f5876bc072f386e07047bd31343a5c4779edb3e8f"
+    },
+    {
+      "path": "src/libsync/comm/stream.rs",
+      "sha256": "e4c75486f20d5b154286999b536312cd279316d8fdfaf4bda268e6f633f42b89"
+    },
+    {
+      "path": "src/libsync/comm/sync.rs",
+      "sha256": "6c6e6c1aa4c8ab52d80aef7c1b3fc4492b32be9aa2431dd387aea6547889d099"
+    },
+    {
+      "path": "src/libsync/deque.rs",
+      "sha256": "ef34e38c5aa563cc70b8702a09b09559c8b01d4130ba34469cf4085aaf2bc776"
+    },
+    {
+      "path": "src/libsync/lib.rs",
+      "sha256": "57d91e2c99e6a5d6aa8f33dc43c0915422de376c426f4fee3ff24de1d35d4325"
+    },
+    {
+      "path": "src/libsync/lock.rs",
+      "sha256": "875568e1e1e4997804d1b6def232176c9718c9091948e3b1b8516b42d792ba31"
+    },
+    {
+      "path": "src/libsync/mpmc_bounded_queue.rs",
+      "sha256": "f544596a233408891759e80824b8d4197b2bc5c825c8a5270ddf53826a1136d3"
+    },
+    {
+      "path": "src/libsync/mpsc_intrusive.rs",
+      "sha256": "d5714267d4731ffcbdab0c400aed8da49ef4b5e0c302668872ade83f628d2858"
+    },
+    {
+      "path": "src/libsync/mpsc_queue.rs",
+      "sha256": "bd88000dab5184880b5d3af646a1cd999a2ed340489d4b04b02816518576585a"
+    },
+    {
+      "path": "src/libsync/mutex.rs",
+      "sha256": "724d80dfa994ed17a2f5b0cea2277c53b42062880a526364a876fcd19d726dff"
+    },
+    {
+      "path": "src/libsync/one.rs",
+      "sha256": "efe6d16536419baf32f60989044a7cedf948acfa59ae488195f2c55fddd09f04"
+    },
+    {
+      "path": "src/libsync/raw.rs",
+      "sha256": "4726f70d1917765fefafadb1e1c49c13203743e992fd5041366b989c6b5a57f2"
+    },
+    {
+      "path": "src/libsync/spsc_queue.rs",
+      "sha256": "42343d752716c44a88189aa190c9d2285652795b44d720c55da66ed896f3fc58"
+    }
+  ],
+  "additional_raw_downloads": [
+    "src/libstd/macros.rs",
+    "src/libstd/lib.rs",
+    "src/libstd/prelude.rs"
+  ]
+}

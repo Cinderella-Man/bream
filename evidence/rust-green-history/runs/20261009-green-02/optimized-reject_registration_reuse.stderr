@@ -1,0 +1,19 @@
+error[E0382]: borrow of moved value: `registration`
+  --> /home/bat/projects/bream/evidence/rust-green-history/runs/20261009-green-02/inputs/reject_registration_reuse.rs:9:5
+   |
+ 7 |     let mut registration = Registration::new(&mut environment);
+   |         ---------------- move occurs because `registration` has type `Registration<'_>`, which does not implement the `Copy` trait
+ 8 |     let _publishable_ticket = registration.finish();
+   |                                            -------- `registration` moved due to this method call
+ 9 |     registration.touch();
+   |     ^^^^^^^^^^^^ value borrowed here after move
+   |
+note: `Registration::<'a>::finish` takes ownership of the receiver `self`, which moves `registration`
+  --> /home/bat/projects/bream/evidence/rust-green-history/runs/20261009-green-02/inputs/registration.rs:22:19
+   |
+22 |     pub fn finish(self) -> WakeTicket {
+   |                   ^^^^
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0382`.

@@ -1,0 +1,8 @@
+   Compiling bream-read-consumer v0.0.0 (/home/bat/projects/bream/experiments/owned-read/consumer)
+error: bream structured subset: recursive record types forbidden
+ --> consumer/examples/reject_struct_recursive_type.rs:4:12
+  |
+4 |     struct State {
+  |            ^^^^^
+
+error: could not compile `bream-read-consumer` (example "reject_struct_recursive_type") due to 1 previous error

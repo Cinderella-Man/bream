@@ -1,0 +1,8 @@
+   Compiling bream-read-consumer v0.0.0 (/home/bat/projects/bream/experiments/owned-read/consumer)
+error: bream structured subset: reserved or raw identifier
+ --> consumer/examples/reject_read_reserved.rs:4:8
+  |
+4 |     fn read_input() {}
+  |        ^^^^^^^^^^
+
+error: could not compile `bream-read-consumer` (example "reject_read_reserved") due to 1 previous error

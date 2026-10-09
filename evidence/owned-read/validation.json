@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "date": "2026-10-09",
+  "cohort": "evidence/owned-read/runs/20261009-read-01",
+  "retained_cohorts": 1,
+  "hash_records_verified": 1157,
+  "current_inputs_verified": 219,
+  "previous_inputs_preserved": 205,
+  "commands": 454,
+  "observations": 408,
+  "rust_exit_configurations": 6,
+  "rust_read_configurations": 6,
+  "beam_reference_observations": 78,
+  "experiments_executed_by_audit": false,
+  "benchmarks_executed": false,
+  "errors": []
+}

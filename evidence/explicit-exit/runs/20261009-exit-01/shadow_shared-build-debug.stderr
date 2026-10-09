@@ -1,0 +1,41 @@
+   Compiling bream-exit-consumer v0.0.0 (/home/bat/projects/bream/experiments/explicit-exit/consumer)
+warning: unused variable: `unexpected_any`
+  --> consumer/examples/shadow_shared.rs:96:42
+   |
+96 |             SharedReceiveResult::Message(unexpected_any) => {
+   |                                          ^^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_unexpected_any`
+   |
+   = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `unexpected_tagged`
+   --> consumer/examples/shadow_shared.rs:103:42
+    |
+103 |             SharedReceiveResult::Message(unexpected_tagged) => {
+    |                                          ^^^^^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_unexpected_tagged`
+
+warning: unused variable: `unexpected_words`
+   --> consumer/examples/shadow_shared.rs:116:28
+    |
+116 |             Event::Message(unexpected_words) => {
+    |                            ^^^^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_unexpected_words`
+
+warning: unused variable: `unexpected_down`
+   --> consumer/examples/shadow_shared.rs:119:25
+    |
+119 |             Event::Down(unexpected_down) => {
+    |                         ^^^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_unexpected_down`
+
+warning: unused variable: `unexpected_exit`
+   --> consumer/examples/shadow_shared.rs:122:25
+    |
+122 |             Event::Exit(unexpected_exit) => {
+    |                         ^^^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_unexpected_exit`
+
+warning: unused variable: `unexpected_any`
+  --> consumer/examples/shadow_shared.rs:96:42
+   |
+96 |             SharedReceiveResult::Message(unexpected_any) => {
+   |                                          ^^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_unexpected_any`
+
+warning: `bream-exit-consumer` (example "shadow_shared") generated 10 warnings (4 duplicates) (run `cargo fix --example "shadow_shared" -p bream-exit-consumer` to apply 6 suggestions)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.76s

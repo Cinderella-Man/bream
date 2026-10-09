@@ -56,6 +56,16 @@ Runtime primitives and OTP behaviours remain separate. An implementation residin
 | [55 — Port tasks, async jobs and shutdown](research/55-port-tasks-async-jobs-and-shutdown.md) | Claim/cancel distinction, callback ownership, invocation versus delivery order, and embedded shutdown obligations |
 | [56 — Static payload cost observations](research/56-static-payload-cost-observations.md) | Speed evidence removed; source retained and PERF-091 rerun required |
 | [57 — Worker notification observations](research/57-worker-notification-models-and-load-observations.md) | Two positive/two failing Loom controls retained; all timing stages removed; no selected backend |
+| [58 — Native termination claim source audit](research/58-native-termination-boundary-source-audit.md) | Ownership versus disposal, native child/Drop obligations, BEAM exit/NIF/ETS qualifications and limits of the preemption claim |
+| [59 — Executed termination-boundary observations](research/59-termination-boundary-observations.md) | Eighteen Rust and twelve BEAM semantic observations: shared protocols, child lifetime, cleanup blocking and positive controls; no performance measurements |
+| [60 — Rust green-runtime removal history](research/60-rust-green-runtime-removal-history.md) | Separate linked-failure/runtime removals, RFC and PR rationale, external continuation and architectural lessons |
+| [61 — Historical scheduler source contracts](research/61-rust-green-runtime-source-contracts.md) | Cooperative switching, wake/callback lifetime, cleanup, task-local storage and original Rust 0.12 baseline |
+| [62 — Earlier linked-failure source contracts](research/62-rust-linked-failure-source-contracts.md) | Deferred kill, cancellation masks, I/O lifetime failures, single-owner arbitration and taskgroup completion |
+| [63 — Executed historical probes and Bream lessons](research/63-rust-green-runtime-lessons-and-experiments.md) | Original Rust 0.12 execution; modern operation-owned buffers, stale completion and consuming registration controls; twenty expected observations |
+| [64 — Explicit exit source contract](research/64-explicit-exit-source-contract.md) | Uncaught self-exit versus direct/linked signals, legacy self-normal behavior, Kill/Killed distinction, trapping, ordering and exact identity |
+| [65 — Executed explicit-exit milestone](research/65-explicit-exit-milestone.md) | Checked exit APIs, thirty-case public/reference agreement, first-fatal arbitration fix, computing-target stop, stale PID and shared cleanup; eager local receipt limit |
+| [66 — Owned-read source contract](research/66-owned-read-source-contract.md) | BEAM reader/selection ownership, nonblocking read classification, poll descriptor lifetime, request identity and cancellation limits |
+| [67 — Executed owned-read milestone](research/67-owned-read-milestone.md) | Runtime-owned one-shot endpoint/buffer, typed read result, bounded pending/ready admission, actor stop, late completion, control failure and shutdown |
 
 The original [reports 11–17](beam-source-map.md) retain the ordinary execution, message and lifecycle traces and their edge-case audits. The [expanded build catalogue](build-plan/process-runtime-expansion.md) assigns the newly identified branches feature/case IDs and integration work.
 
@@ -142,7 +152,7 @@ The concurrency/clock pass distinguishes inactive participants from quiescent ac
 
 ## Latest checkpoint and next source frontier
 
-**Implementation update:** following the user's request to make progress milestone-based, the [useful-process experiment](../experiments/process-milestone/README.md) now executes and passes its restricted data-processing/sharing/stop profile. [Current milestones](milestones.md) take priority for the next work selection. The source frontier below remains available when it answers a question needed by those milestones.
+**Implementation update, 2026-10-09:** fourteen bounded milestones now pass through [runtime-owned local reads](../experiments/owned-read/README.md). Source report 66 and execution report 67 support the latest profile; bounded sequential reads through a persistent endpoint are next. [Current milestones](milestones.md) take priority for the next work selection. The source frontier below remains available when it answers a question needed by those milestones.
 
 As of 2026-10-08, reports 54–57 are integrated: 537 planned cases and 107 performance tasks. Q24 selects responsiveness first; no numeric SLO or backend is chosen. Source-only worker/async traces and executed Rust observations remain separate. Offline workers can still own service, aborting delivery does not stop native execution, and VM process exit cannot substitute for embedded-runtime cleanup.
 

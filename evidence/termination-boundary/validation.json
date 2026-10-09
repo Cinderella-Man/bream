@@ -1,0 +1,676 @@
+{
+  "scope": "read-only hashes, retained observations and provenance; no execution or speed evidence",
+  "result": "evidence/termination-boundary/runs/20261009-boundary-03/results.json",
+  "result_sha256": "7859685074623fa1ebe8ffd81efe32094d8721eb567fd8a62781f1bb44d57a8d",
+  "checks": [
+    {
+      "check": "passing cohort",
+      "passed": true
+    },
+    {
+      "check": "command count",
+      "passed": true
+    },
+    {
+      "check": "observation count",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/experiments/termination-boundary/Cargo.toml",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/evidence/termination-boundary/runs/20261009-boundary-03/inputs/Cargo.toml",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/experiments/termination-boundary/src/main.rs",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/evidence/termination-boundary/runs/20261009-boundary-03/inputs/src/main.rs",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/experiments/termination-boundary/termination_reference.erl",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/evidence/termination-boundary/runs/20261009-boundary-03/inputs/termination_reference.erl",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/experiments/termination-boundary/run.py",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/evidence/termination-boundary/runs/20261009-boundary-03/inputs/run.py",
+      "passed": true
+    },
+    {
+      "check": "rustc-version: successful",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/evidence/termination-boundary/runs/20261009-boundary-03/rustc-version.stdout",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/evidence/termination-boundary/runs/20261009-boundary-03/rustc-version.stderr",
+      "passed": true
+    },
+    {
+      "check": "otp-commit: successful",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/evidence/termination-boundary/runs/20261009-boundary-03/otp-commit.stdout",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/evidence/termination-boundary/runs/20261009-boundary-03/otp-commit.stderr",
+      "passed": true
+    },
+    {
+      "check": "otp-build-commit: successful",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/evidence/termination-boundary/runs/20261009-boundary-03/otp-build-commit.stdout",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/evidence/termination-boundary/runs/20261009-boundary-03/otp-build-commit.stderr",
+      "passed": true
+    },
+    {
+      "check": "unoptimized-compile: successful",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/evidence/termination-boundary/runs/20261009-boundary-03/unoptimized-compile.stdout",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/evidence/termination-boundary/runs/20261009-boundary-03/unoptimized-compile.stderr",
+      "passed": true
+    },
+    {
+      "check": "unoptimized-owned_cancel: successful",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/evidence/termination-boundary/runs/20261009-boundary-03/unoptimized-owned_cancel.stdout",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/evidence/termination-boundary/runs/20261009-boundary-03/unoptimized-owned_cancel.stderr",
+      "passed": true
+    },
+    {
+      "check": "unoptimized-shared_cancel: successful",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/evidence/termination-boundary/runs/20261009-boundary-03/unoptimized-shared_cancel.stdout",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/evidence/termination-boundary/runs/20261009-boundary-03/unoptimized-shared_cancel.stderr",
+      "passed": true
+    },
+    {
+      "check": "unoptimized-shared_complete: successful",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/evidence/termination-boundary/runs/20261009-boundary-03/unoptimized-shared_complete.stdout",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/evidence/termination-boundary/runs/20261009-boundary-03/unoptimized-shared_complete.stderr",
+      "passed": true
+    },
+    {
+      "check": "unoptimized-atomic_commit_cancel: successful",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/evidence/termination-boundary/runs/20261009-boundary-03/unoptimized-atomic_commit_cancel.stdout",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/evidence/termination-boundary/runs/20261009-boundary-03/unoptimized-atomic_commit_cancel.stderr",
+      "passed": true
+    },
+    {
+      "check": "unoptimized-rollback_cancel: successful",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/evidence/termination-boundary/runs/20261009-boundary-03/unoptimized-rollback_cancel.stdout",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/evidence/termination-boundary/runs/20261009-boundary-03/unoptimized-rollback_cancel.stderr",
+      "passed": true
+    },
+    {
+      "check": "unoptimized-child_survives: successful",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/evidence/termination-boundary/runs/20261009-boundary-03/unoptimized-child_survives.stdout",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/evidence/termination-boundary/runs/20261009-boundary-03/unoptimized-child_survives.stderr",
+      "passed": true
+    },
+    {
+      "check": "unoptimized-managed_child_cancel: successful",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/evidence/termination-boundary/runs/20261009-boundary-03/unoptimized-managed_child_cancel.stdout",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/evidence/termination-boundary/runs/20261009-boundary-03/unoptimized-managed_child_cancel.stderr",
+      "passed": true
+    },
+    {
+      "check": "unoptimized-blocking_drop: successful",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/evidence/termination-boundary/runs/20261009-boundary-03/unoptimized-blocking_drop.stdout",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/evidence/termination-boundary/runs/20261009-boundary-03/unoptimized-blocking_drop.stderr",
+      "passed": true
+    },
+    {
+      "check": "unoptimized-bounded_drop: successful",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/evidence/termination-boundary/runs/20261009-boundary-03/unoptimized-bounded_drop.stdout",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/evidence/termination-boundary/runs/20261009-boundary-03/unoptimized-bounded_drop.stderr",
+      "passed": true
+    },
+    {
+      "check": "optimized-compile: successful",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/evidence/termination-boundary/runs/20261009-boundary-03/optimized-compile.stdout",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/evidence/termination-boundary/runs/20261009-boundary-03/optimized-compile.stderr",
+      "passed": true
+    },
+    {
+      "check": "optimized-owned_cancel: successful",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/evidence/termination-boundary/runs/20261009-boundary-03/optimized-owned_cancel.stdout",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/evidence/termination-boundary/runs/20261009-boundary-03/optimized-owned_cancel.stderr",
+      "passed": true
+    },
+    {
+      "check": "optimized-shared_cancel: successful",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/evidence/termination-boundary/runs/20261009-boundary-03/optimized-shared_cancel.stdout",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/evidence/termination-boundary/runs/20261009-boundary-03/optimized-shared_cancel.stderr",
+      "passed": true
+    },
+    {
+      "check": "optimized-shared_complete: successful",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/evidence/termination-boundary/runs/20261009-boundary-03/optimized-shared_complete.stdout",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/evidence/termination-boundary/runs/20261009-boundary-03/optimized-shared_complete.stderr",
+      "passed": true
+    },
+    {
+      "check": "optimized-atomic_commit_cancel: successful",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/evidence/termination-boundary/runs/20261009-boundary-03/optimized-atomic_commit_cancel.stdout",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/evidence/termination-boundary/runs/20261009-boundary-03/optimized-atomic_commit_cancel.stderr",
+      "passed": true
+    },
+    {
+      "check": "optimized-rollback_cancel: successful",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/evidence/termination-boundary/runs/20261009-boundary-03/optimized-rollback_cancel.stdout",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/evidence/termination-boundary/runs/20261009-boundary-03/optimized-rollback_cancel.stderr",
+      "passed": true
+    },
+    {
+      "check": "optimized-child_survives: successful",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/evidence/termination-boundary/runs/20261009-boundary-03/optimized-child_survives.stdout",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/evidence/termination-boundary/runs/20261009-boundary-03/optimized-child_survives.stderr",
+      "passed": true
+    },
+    {
+      "check": "optimized-managed_child_cancel: successful",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/evidence/termination-boundary/runs/20261009-boundary-03/optimized-managed_child_cancel.stdout",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/evidence/termination-boundary/runs/20261009-boundary-03/optimized-managed_child_cancel.stderr",
+      "passed": true
+    },
+    {
+      "check": "optimized-blocking_drop: successful",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/evidence/termination-boundary/runs/20261009-boundary-03/optimized-blocking_drop.stdout",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/evidence/termination-boundary/runs/20261009-boundary-03/optimized-blocking_drop.stderr",
+      "passed": true
+    },
+    {
+      "check": "optimized-bounded_drop: successful",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/evidence/termination-boundary/runs/20261009-boundary-03/optimized-bounded_drop.stdout",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/evidence/termination-boundary/runs/20261009-boundary-03/optimized-bounded_drop.stderr",
+      "passed": true
+    },
+    {
+      "check": "beam-compile: successful",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/evidence/termination-boundary/runs/20261009-boundary-03/beam-compile.stdout",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/evidence/termination-boundary/runs/20261009-boundary-03/beam-compile.stderr",
+      "passed": true
+    },
+    {
+      "check": "beam-jit: successful",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/evidence/termination-boundary/runs/20261009-boundary-03/beam-jit.stdout",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/evidence/termination-boundary/runs/20261009-boundary-03/beam-jit.stderr",
+      "passed": true
+    },
+    {
+      "check": "beam-debug-emu: successful",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/evidence/termination-boundary/runs/20261009-boundary-03/beam-debug-emu.stdout",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/evidence/termination-boundary/runs/20261009-boundary-03/beam-debug-emu.stderr",
+      "passed": true
+    },
+    {
+      "check": "('rust', 'unoptimized', 'owned_cancel'): unique and exact",
+      "passed": true
+    },
+    {
+      "check": "('rust', 'unoptimized', 'owned_cancel'): retained output",
+      "passed": true
+    },
+    {
+      "check": "('rust', 'unoptimized', 'shared_cancel'): unique and exact",
+      "passed": true
+    },
+    {
+      "check": "('rust', 'unoptimized', 'shared_cancel'): retained output",
+      "passed": true
+    },
+    {
+      "check": "('rust', 'unoptimized', 'shared_complete'): unique and exact",
+      "passed": true
+    },
+    {
+      "check": "('rust', 'unoptimized', 'shared_complete'): retained output",
+      "passed": true
+    },
+    {
+      "check": "('rust', 'unoptimized', 'atomic_commit_cancel'): unique and exact",
+      "passed": true
+    },
+    {
+      "check": "('rust', 'unoptimized', 'atomic_commit_cancel'): retained output",
+      "passed": true
+    },
+    {
+      "check": "('rust', 'unoptimized', 'rollback_cancel'): unique and exact",
+      "passed": true
+    },
+    {
+      "check": "('rust', 'unoptimized', 'rollback_cancel'): retained output",
+      "passed": true
+    },
+    {
+      "check": "('rust', 'unoptimized', 'child_survives'): unique and exact",
+      "passed": true
+    },
+    {
+      "check": "('rust', 'unoptimized', 'child_survives'): retained output",
+      "passed": true
+    },
+    {
+      "check": "('rust', 'unoptimized', 'managed_child_cancel'): unique and exact",
+      "passed": true
+    },
+    {
+      "check": "('rust', 'unoptimized', 'managed_child_cancel'): retained output",
+      "passed": true
+    },
+    {
+      "check": "('rust', 'unoptimized', 'blocking_drop'): unique and exact",
+      "passed": true
+    },
+    {
+      "check": "('rust', 'unoptimized', 'blocking_drop'): retained output",
+      "passed": true
+    },
+    {
+      "check": "('rust', 'unoptimized', 'bounded_drop'): unique and exact",
+      "passed": true
+    },
+    {
+      "check": "('rust', 'unoptimized', 'bounded_drop'): retained output",
+      "passed": true
+    },
+    {
+      "check": "('rust', 'optimized', 'owned_cancel'): unique and exact",
+      "passed": true
+    },
+    {
+      "check": "('rust', 'optimized', 'owned_cancel'): retained output",
+      "passed": true
+    },
+    {
+      "check": "('rust', 'optimized', 'shared_cancel'): unique and exact",
+      "passed": true
+    },
+    {
+      "check": "('rust', 'optimized', 'shared_cancel'): retained output",
+      "passed": true
+    },
+    {
+      "check": "('rust', 'optimized', 'shared_complete'): unique and exact",
+      "passed": true
+    },
+    {
+      "check": "('rust', 'optimized', 'shared_complete'): retained output",
+      "passed": true
+    },
+    {
+      "check": "('rust', 'optimized', 'atomic_commit_cancel'): unique and exact",
+      "passed": true
+    },
+    {
+      "check": "('rust', 'optimized', 'atomic_commit_cancel'): retained output",
+      "passed": true
+    },
+    {
+      "check": "('rust', 'optimized', 'rollback_cancel'): unique and exact",
+      "passed": true
+    },
+    {
+      "check": "('rust', 'optimized', 'rollback_cancel'): retained output",
+      "passed": true
+    },
+    {
+      "check": "('rust', 'optimized', 'child_survives'): unique and exact",
+      "passed": true
+    },
+    {
+      "check": "('rust', 'optimized', 'child_survives'): retained output",
+      "passed": true
+    },
+    {
+      "check": "('rust', 'optimized', 'managed_child_cancel'): unique and exact",
+      "passed": true
+    },
+    {
+      "check": "('rust', 'optimized', 'managed_child_cancel'): retained output",
+      "passed": true
+    },
+    {
+      "check": "('rust', 'optimized', 'blocking_drop'): unique and exact",
+      "passed": true
+    },
+    {
+      "check": "('rust', 'optimized', 'blocking_drop'): retained output",
+      "passed": true
+    },
+    {
+      "check": "('rust', 'optimized', 'bounded_drop'): unique and exact",
+      "passed": true
+    },
+    {
+      "check": "('rust', 'optimized', 'bounded_drop'): retained output",
+      "passed": true
+    },
+    {
+      "check": "('erlang', 'jit', 'owned_kill'): unique and exact",
+      "passed": true
+    },
+    {
+      "check": "('erlang', 'jit', 'owned_kill'): retained output",
+      "passed": true
+    },
+    {
+      "check": "('erlang', 'jit', 'ets_cancel'): unique and exact",
+      "passed": true
+    },
+    {
+      "check": "('erlang', 'jit', 'ets_cancel'): retained output",
+      "passed": true
+    },
+    {
+      "check": "('erlang', 'jit', 'ets_complete'): unique and exact",
+      "passed": true
+    },
+    {
+      "check": "('erlang', 'jit', 'ets_complete'): retained output",
+      "passed": true
+    },
+    {
+      "check": "('erlang', 'jit', 'ets_atomic_cancel'): unique and exact",
+      "passed": true
+    },
+    {
+      "check": "('erlang', 'jit', 'ets_atomic_cancel'): retained output",
+      "passed": true
+    },
+    {
+      "check": "('erlang', 'jit', 'unlinked_child'): unique and exact",
+      "passed": true
+    },
+    {
+      "check": "('erlang', 'jit', 'unlinked_child'): retained output",
+      "passed": true
+    },
+    {
+      "check": "('erlang', 'jit', 'linked_child'): unique and exact",
+      "passed": true
+    },
+    {
+      "check": "('erlang', 'jit', 'linked_child'): retained output",
+      "passed": true
+    },
+    {
+      "check": "('erlang', 'debug-emu', 'owned_kill'): unique and exact",
+      "passed": true
+    },
+    {
+      "check": "('erlang', 'debug-emu', 'owned_kill'): retained output",
+      "passed": true
+    },
+    {
+      "check": "('erlang', 'debug-emu', 'ets_cancel'): unique and exact",
+      "passed": true
+    },
+    {
+      "check": "('erlang', 'debug-emu', 'ets_cancel'): retained output",
+      "passed": true
+    },
+    {
+      "check": "('erlang', 'debug-emu', 'ets_complete'): unique and exact",
+      "passed": true
+    },
+    {
+      "check": "('erlang', 'debug-emu', 'ets_complete'): retained output",
+      "passed": true
+    },
+    {
+      "check": "('erlang', 'debug-emu', 'ets_atomic_cancel'): unique and exact",
+      "passed": true
+    },
+    {
+      "check": "('erlang', 'debug-emu', 'ets_atomic_cancel'): retained output",
+      "passed": true
+    },
+    {
+      "check": "('erlang', 'debug-emu', 'unlinked_child'): unique and exact",
+      "passed": true
+    },
+    {
+      "check": "('erlang', 'debug-emu', 'unlinked_child'): retained output",
+      "passed": true
+    },
+    {
+      "check": "('erlang', 'debug-emu', 'linked_child'): unique and exact",
+      "passed": true
+    },
+    {
+      "check": "('erlang', 'debug-emu', 'linked_child'): retained output",
+      "passed": true
+    },
+    {
+      "check": "unoptimized: nine cases",
+      "passed": true
+    },
+    {
+      "check": "optimized: nine cases",
+      "passed": true
+    },
+    {
+      "check": "jit: six cases",
+      "passed": true
+    },
+    {
+      "check": "debug-emu: six cases",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/.tools/termination-boundary/20261009-boundary-03/unoptimized",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/.tools/termination-boundary/20261009-boundary-03/optimized",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/rustc",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/evidence/process-protocol-review/source-build.json",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/evidence/termination-boundary/runs/20261009-boundary-03/inputs/otp-source-build.json",
+      "passed": true
+    },
+    {
+      "check": "OTP source provenance",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/upstream/otp-reference-build/bin/x86_64-pc-linux-gnu/beam.jit",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/upstream/otp-reference-build/bin/x86_64-pc-linux-gnu/beam.debug.emu",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/upstream/otp-reference-build/bin/erl",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/upstream/otp-reference-build/bin/erlc",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/upstream/otp-reference-build/bin/x86_64-pc-linux-gnu/beam.debug.emu",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/upstream/otp-reference-build/bin/x86_64-pc-linux-gnu/beam.jit",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/upstream/otp-reference-build/bin/x86_64-pc-linux-gnu/beam.smp",
+      "passed": true
+    },
+    {
+      "check": "/home/bat/projects/bream/.tools/termination-boundary/20261009-boundary-03/termination_reference.beam",
+      "passed": true
+    }
+  ],
+  "all_passed": true
+}

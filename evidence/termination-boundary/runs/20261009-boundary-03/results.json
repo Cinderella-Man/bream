@@ -1,0 +1,1058 @@
+{
+  "schema": 1,
+  "recorded_at_utc": "2026-10-08T22:20:01.375896+00:00",
+  "scope": "bounded cancellation/ownership/peer semantic probes; no timing or performance comparisons",
+  "source_inputs": [
+    {
+      "source": "experiments/termination-boundary/Cargo.toml",
+      "retained": "evidence/termination-boundary/runs/20261009-boundary-03/inputs/Cargo.toml",
+      "sha256": "8327a00043ca2eecc7f310e891fbc366d003f14b7704f461ca45f7c210502e93"
+    },
+    {
+      "source": "experiments/termination-boundary/src/main.rs",
+      "retained": "evidence/termination-boundary/runs/20261009-boundary-03/inputs/src/main.rs",
+      "sha256": "a2baf34be3f35e5442b6f3d7ed4e31fcd00702b1eb8cef552feb90b5b0aaad54"
+    },
+    {
+      "source": "experiments/termination-boundary/termination_reference.erl",
+      "retained": "evidence/termination-boundary/runs/20261009-boundary-03/inputs/termination_reference.erl",
+      "sha256": "86db41a780618aafd3c64ea03f84de1973a2854100f2fe9fa616bc43c7fd7353"
+    },
+    {
+      "source": "experiments/termination-boundary/run.py",
+      "retained": "evidence/termination-boundary/runs/20261009-boundary-03/inputs/run.py",
+      "sha256": "1bf64fa49bbc60c8133bd64e54819729a2ff0199603663eb23f175e584ef01d6"
+    }
+  ],
+  "commands": [
+    {
+      "name": "rustc-version",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/rustc",
+        "--version",
+        "--verbose"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 30,
+      "stdout": "evidence/termination-boundary/runs/20261009-boundary-03/rustc-version.stdout",
+      "stdout_sha256": "778fbc643a806f0dd123c056e66201d7e8a56a61928ec0a33171be8d6c2d5a37",
+      "stderr": "evidence/termination-boundary/runs/20261009-boundary-03/rustc-version.stderr",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "succeeded": true
+    },
+    {
+      "name": "otp-commit",
+      "argv": [
+        "git",
+        "-C",
+        "/home/bat/projects/bream/upstream/otp",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 30,
+      "stdout": "evidence/termination-boundary/runs/20261009-boundary-03/otp-commit.stdout",
+      "stdout_sha256": "063a85610325bb1993b92255be48c9a95c69dd7dd9bd74855a7480264e608391",
+      "stderr": "evidence/termination-boundary/runs/20261009-boundary-03/otp-commit.stderr",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "succeeded": true
+    },
+    {
+      "name": "otp-build-commit",
+      "argv": [
+        "git",
+        "-C",
+        "/home/bat/projects/bream/upstream/otp-reference-build",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 30,
+      "stdout": "evidence/termination-boundary/runs/20261009-boundary-03/otp-build-commit.stdout",
+      "stdout_sha256": "063a85610325bb1993b92255be48c9a95c69dd7dd9bd74855a7480264e608391",
+      "stderr": "evidence/termination-boundary/runs/20261009-boundary-03/otp-build-commit.stderr",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "succeeded": true
+    },
+    {
+      "name": "unoptimized-compile",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/rustc",
+        "--edition=2024",
+        "-Dwarnings",
+        "-C",
+        "opt-level=0",
+        "-C",
+        "panic=unwind",
+        "/home/bat/projects/bream/evidence/termination-boundary/runs/20261009-boundary-03/inputs/src/main.rs",
+        "-o",
+        "/home/bat/projects/bream/.tools/termination-boundary/20261009-boundary-03/unoptimized"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": "evidence/termination-boundary/runs/20261009-boundary-03/unoptimized-compile.stdout",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr": "evidence/termination-boundary/runs/20261009-boundary-03/unoptimized-compile.stderr",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "succeeded": true
+    },
+    {
+      "name": "unoptimized-owned_cancel",
+      "argv": [
+        "/home/bat/projects/bream/.tools/termination-boundary/20261009-boundary-03/unoptimized",
+        "owned_cancel"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 30,
+      "stdout": "evidence/termination-boundary/runs/20261009-boundary-03/unoptimized-owned_cancel.stdout",
+      "stdout_sha256": "1a66eb670015ec85d4e8392ef7e0dec774a81137302f8a24843cd62c1f12e177",
+      "stderr": "evidence/termination-boundary/runs/20261009-boundary-03/unoptimized-owned_cancel.stderr",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "succeeded": true
+    },
+    {
+      "name": "unoptimized-shared_cancel",
+      "argv": [
+        "/home/bat/projects/bream/.tools/termination-boundary/20261009-boundary-03/unoptimized",
+        "shared_cancel"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 30,
+      "stdout": "evidence/termination-boundary/runs/20261009-boundary-03/unoptimized-shared_cancel.stdout",
+      "stdout_sha256": "a56ae0656e13c481c34e0ecf803e95f881f4f338f6381bfbb67ebdc2601b6ae0",
+      "stderr": "evidence/termination-boundary/runs/20261009-boundary-03/unoptimized-shared_cancel.stderr",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "succeeded": true
+    },
+    {
+      "name": "unoptimized-shared_complete",
+      "argv": [
+        "/home/bat/projects/bream/.tools/termination-boundary/20261009-boundary-03/unoptimized",
+        "shared_complete"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 30,
+      "stdout": "evidence/termination-boundary/runs/20261009-boundary-03/unoptimized-shared_complete.stdout",
+      "stdout_sha256": "e8fabd98e2b39bb8377db97b58c7b1e1390cbe11b3562d545aafbf24798e4845",
+      "stderr": "evidence/termination-boundary/runs/20261009-boundary-03/unoptimized-shared_complete.stderr",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "succeeded": true
+    },
+    {
+      "name": "unoptimized-atomic_commit_cancel",
+      "argv": [
+        "/home/bat/projects/bream/.tools/termination-boundary/20261009-boundary-03/unoptimized",
+        "atomic_commit_cancel"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 30,
+      "stdout": "evidence/termination-boundary/runs/20261009-boundary-03/unoptimized-atomic_commit_cancel.stdout",
+      "stdout_sha256": "043df0389082502b7fe1d377384dd22ff76d19ce397751743380b303aa591574",
+      "stderr": "evidence/termination-boundary/runs/20261009-boundary-03/unoptimized-atomic_commit_cancel.stderr",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "succeeded": true
+    },
+    {
+      "name": "unoptimized-rollback_cancel",
+      "argv": [
+        "/home/bat/projects/bream/.tools/termination-boundary/20261009-boundary-03/unoptimized",
+        "rollback_cancel"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 30,
+      "stdout": "evidence/termination-boundary/runs/20261009-boundary-03/unoptimized-rollback_cancel.stdout",
+      "stdout_sha256": "290525aee2b6834b4eb62deebd8654021287b155822b024ab4e07f098aa6d643",
+      "stderr": "evidence/termination-boundary/runs/20261009-boundary-03/unoptimized-rollback_cancel.stderr",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "succeeded": true
+    },
+    {
+      "name": "unoptimized-child_survives",
+      "argv": [
+        "/home/bat/projects/bream/.tools/termination-boundary/20261009-boundary-03/unoptimized",
+        "child_survives"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 30,
+      "stdout": "evidence/termination-boundary/runs/20261009-boundary-03/unoptimized-child_survives.stdout",
+      "stdout_sha256": "c01099047f686a21dbcf6f97b2fd7ee5f8663d225dfcbc4a14386831af201802",
+      "stderr": "evidence/termination-boundary/runs/20261009-boundary-03/unoptimized-child_survives.stderr",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "succeeded": true
+    },
+    {
+      "name": "unoptimized-managed_child_cancel",
+      "argv": [
+        "/home/bat/projects/bream/.tools/termination-boundary/20261009-boundary-03/unoptimized",
+        "managed_child_cancel"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 30,
+      "stdout": "evidence/termination-boundary/runs/20261009-boundary-03/unoptimized-managed_child_cancel.stdout",
+      "stdout_sha256": "8bfff4e3a710d0f06cec85ca84544ed499514e29016a29d92d1b24df2c6b0078",
+      "stderr": "evidence/termination-boundary/runs/20261009-boundary-03/unoptimized-managed_child_cancel.stderr",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "succeeded": true
+    },
+    {
+      "name": "unoptimized-blocking_drop",
+      "argv": [
+        "/home/bat/projects/bream/.tools/termination-boundary/20261009-boundary-03/unoptimized",
+        "blocking_drop"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 30,
+      "stdout": "evidence/termination-boundary/runs/20261009-boundary-03/unoptimized-blocking_drop.stdout",
+      "stdout_sha256": "7fde49261f55d5049c8cf4b86702c2793ca03dbb35f352e77d357bf0291eaa95",
+      "stderr": "evidence/termination-boundary/runs/20261009-boundary-03/unoptimized-blocking_drop.stderr",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "succeeded": true
+    },
+    {
+      "name": "unoptimized-bounded_drop",
+      "argv": [
+        "/home/bat/projects/bream/.tools/termination-boundary/20261009-boundary-03/unoptimized",
+        "bounded_drop"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 30,
+      "stdout": "evidence/termination-boundary/runs/20261009-boundary-03/unoptimized-bounded_drop.stdout",
+      "stdout_sha256": "7ec66c0853816dd5ed2434dfbb8bde5f2f6beda41e0453b36d2d14f27a9f1378",
+      "stderr": "evidence/termination-boundary/runs/20261009-boundary-03/unoptimized-bounded_drop.stderr",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "succeeded": true
+    },
+    {
+      "name": "optimized-compile",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/rustc",
+        "--edition=2024",
+        "-Dwarnings",
+        "-C",
+        "opt-level=3",
+        "-C",
+        "panic=unwind",
+        "/home/bat/projects/bream/evidence/termination-boundary/runs/20261009-boundary-03/inputs/src/main.rs",
+        "-o",
+        "/home/bat/projects/bream/.tools/termination-boundary/20261009-boundary-03/optimized"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": "evidence/termination-boundary/runs/20261009-boundary-03/optimized-compile.stdout",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr": "evidence/termination-boundary/runs/20261009-boundary-03/optimized-compile.stderr",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "succeeded": true
+    },
+    {
+      "name": "optimized-owned_cancel",
+      "argv": [
+        "/home/bat/projects/bream/.tools/termination-boundary/20261009-boundary-03/optimized",
+        "owned_cancel"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 30,
+      "stdout": "evidence/termination-boundary/runs/20261009-boundary-03/optimized-owned_cancel.stdout",
+      "stdout_sha256": "1a66eb670015ec85d4e8392ef7e0dec774a81137302f8a24843cd62c1f12e177",
+      "stderr": "evidence/termination-boundary/runs/20261009-boundary-03/optimized-owned_cancel.stderr",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "succeeded": true
+    },
+    {
+      "name": "optimized-shared_cancel",
+      "argv": [
+        "/home/bat/projects/bream/.tools/termination-boundary/20261009-boundary-03/optimized",
+        "shared_cancel"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 30,
+      "stdout": "evidence/termination-boundary/runs/20261009-boundary-03/optimized-shared_cancel.stdout",
+      "stdout_sha256": "a56ae0656e13c481c34e0ecf803e95f881f4f338f6381bfbb67ebdc2601b6ae0",
+      "stderr": "evidence/termination-boundary/runs/20261009-boundary-03/optimized-shared_cancel.stderr",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "succeeded": true
+    },
+    {
+      "name": "optimized-shared_complete",
+      "argv": [
+        "/home/bat/projects/bream/.tools/termination-boundary/20261009-boundary-03/optimized",
+        "shared_complete"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 30,
+      "stdout": "evidence/termination-boundary/runs/20261009-boundary-03/optimized-shared_complete.stdout",
+      "stdout_sha256": "e8fabd98e2b39bb8377db97b58c7b1e1390cbe11b3562d545aafbf24798e4845",
+      "stderr": "evidence/termination-boundary/runs/20261009-boundary-03/optimized-shared_complete.stderr",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "succeeded": true
+    },
+    {
+      "name": "optimized-atomic_commit_cancel",
+      "argv": [
+        "/home/bat/projects/bream/.tools/termination-boundary/20261009-boundary-03/optimized",
+        "atomic_commit_cancel"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 30,
+      "stdout": "evidence/termination-boundary/runs/20261009-boundary-03/optimized-atomic_commit_cancel.stdout",
+      "stdout_sha256": "043df0389082502b7fe1d377384dd22ff76d19ce397751743380b303aa591574",
+      "stderr": "evidence/termination-boundary/runs/20261009-boundary-03/optimized-atomic_commit_cancel.stderr",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "succeeded": true
+    },
+    {
+      "name": "optimized-rollback_cancel",
+      "argv": [
+        "/home/bat/projects/bream/.tools/termination-boundary/20261009-boundary-03/optimized",
+        "rollback_cancel"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 30,
+      "stdout": "evidence/termination-boundary/runs/20261009-boundary-03/optimized-rollback_cancel.stdout",
+      "stdout_sha256": "290525aee2b6834b4eb62deebd8654021287b155822b024ab4e07f098aa6d643",
+      "stderr": "evidence/termination-boundary/runs/20261009-boundary-03/optimized-rollback_cancel.stderr",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "succeeded": true
+    },
+    {
+      "name": "optimized-child_survives",
+      "argv": [
+        "/home/bat/projects/bream/.tools/termination-boundary/20261009-boundary-03/optimized",
+        "child_survives"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 30,
+      "stdout": "evidence/termination-boundary/runs/20261009-boundary-03/optimized-child_survives.stdout",
+      "stdout_sha256": "c01099047f686a21dbcf6f97b2fd7ee5f8663d225dfcbc4a14386831af201802",
+      "stderr": "evidence/termination-boundary/runs/20261009-boundary-03/optimized-child_survives.stderr",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "succeeded": true
+    },
+    {
+      "name": "optimized-managed_child_cancel",
+      "argv": [
+        "/home/bat/projects/bream/.tools/termination-boundary/20261009-boundary-03/optimized",
+        "managed_child_cancel"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 30,
+      "stdout": "evidence/termination-boundary/runs/20261009-boundary-03/optimized-managed_child_cancel.stdout",
+      "stdout_sha256": "8bfff4e3a710d0f06cec85ca84544ed499514e29016a29d92d1b24df2c6b0078",
+      "stderr": "evidence/termination-boundary/runs/20261009-boundary-03/optimized-managed_child_cancel.stderr",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "succeeded": true
+    },
+    {
+      "name": "optimized-blocking_drop",
+      "argv": [
+        "/home/bat/projects/bream/.tools/termination-boundary/20261009-boundary-03/optimized",
+        "blocking_drop"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 30,
+      "stdout": "evidence/termination-boundary/runs/20261009-boundary-03/optimized-blocking_drop.stdout",
+      "stdout_sha256": "7fde49261f55d5049c8cf4b86702c2793ca03dbb35f352e77d357bf0291eaa95",
+      "stderr": "evidence/termination-boundary/runs/20261009-boundary-03/optimized-blocking_drop.stderr",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "succeeded": true
+    },
+    {
+      "name": "optimized-bounded_drop",
+      "argv": [
+        "/home/bat/projects/bream/.tools/termination-boundary/20261009-boundary-03/optimized",
+        "bounded_drop"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 30,
+      "stdout": "evidence/termination-boundary/runs/20261009-boundary-03/optimized-bounded_drop.stdout",
+      "stdout_sha256": "7ec66c0853816dd5ed2434dfbb8bde5f2f6beda41e0453b36d2d14f27a9f1378",
+      "stderr": "evidence/termination-boundary/runs/20261009-boundary-03/optimized-bounded_drop.stderr",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "succeeded": true
+    },
+    {
+      "name": "beam-compile",
+      "argv": [
+        "/home/bat/projects/bream/upstream/otp-reference-build/bin/erlc",
+        "-Werror",
+        "+debug_info",
+        "-o",
+        "/home/bat/projects/bream/.tools/termination-boundary/20261009-boundary-03",
+        "/home/bat/projects/bream/evidence/termination-boundary/runs/20261009-boundary-03/inputs/termination_reference.erl"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "stdout": "evidence/termination-boundary/runs/20261009-boundary-03/beam-compile.stdout",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr": "evidence/termination-boundary/runs/20261009-boundary-03/beam-compile.stderr",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "succeeded": true
+    },
+    {
+      "name": "beam-jit",
+      "argv": [
+        "/home/bat/projects/bream/upstream/otp-reference-build/bin/erl",
+        "-noshell",
+        "-pa",
+        "/home/bat/projects/bream/.tools/termination-boundary/20261009-boundary-03",
+        "-s",
+        "termination_reference",
+        "run"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 30,
+      "stdout": "evidence/termination-boundary/runs/20261009-boundary-03/beam-jit.stdout",
+      "stdout_sha256": "fe14c41eb2cbec9af4d5f659e3123aea3e77a475943bc3e75ad727e2f8209dae",
+      "stderr": "evidence/termination-boundary/runs/20261009-boundary-03/beam-jit.stderr",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "succeeded": true
+    },
+    {
+      "name": "beam-debug-emu",
+      "argv": [
+        "/home/bat/projects/bream/upstream/otp-reference-build/bin/erl",
+        "-emu_type",
+        "debug",
+        "-emu_flavor",
+        "emu",
+        "-noshell",
+        "-pa",
+        "/home/bat/projects/bream/.tools/termination-boundary/20261009-boundary-03",
+        "-s",
+        "termination_reference",
+        "run"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 30,
+      "stdout": "evidence/termination-boundary/runs/20261009-boundary-03/beam-debug-emu.stdout",
+      "stdout_sha256": "e12edff7e204051760156d6a8e3d58be44c030df90e0b21ec45c8bc6779d8300",
+      "stderr": "evidence/termination-boundary/runs/20261009-boundary-03/beam-debug-emu.stderr",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "succeeded": true
+    }
+  ],
+  "observations": [
+    {
+      "language": "rust",
+      "profile": "unoptimized",
+      "case": "owned_cancel",
+      "actual": {
+        "case": "owned_cancel",
+        "peer_total": 200,
+        "frame_drops": 1
+      },
+      "expected": {
+        "case": "owned_cancel",
+        "peer_total": 200,
+        "frame_drops": 1
+      },
+      "matches": true,
+      "binary": ".tools/termination-boundary/20261009-boundary-03/unoptimized",
+      "binary_sha256": "22126641587ad9d3ab6de32d6743f3b5fe3a95bbad4520d12ab702053de23111"
+    },
+    {
+      "language": "rust",
+      "profile": "unoptimized",
+      "case": "shared_cancel",
+      "actual": {
+        "case": "shared_cancel",
+        "peer_total": 199,
+        "left": 99,
+        "right": 100,
+        "mutex_unpoisoned": 1,
+        "frame_drops": 1
+      },
+      "expected": {
+        "case": "shared_cancel",
+        "peer_total": 199,
+        "left": 99,
+        "right": 100,
+        "mutex_unpoisoned": 1,
+        "frame_drops": 1
+      },
+      "matches": true,
+      "binary": ".tools/termination-boundary/20261009-boundary-03/unoptimized",
+      "binary_sha256": "22126641587ad9d3ab6de32d6743f3b5fe3a95bbad4520d12ab702053de23111"
+    },
+    {
+      "language": "rust",
+      "profile": "unoptimized",
+      "case": "shared_complete",
+      "actual": {
+        "case": "shared_complete",
+        "peer_total": 200,
+        "left": 99,
+        "right": 101,
+        "mutex_unpoisoned": 1,
+        "frame_drops": 1
+      },
+      "expected": {
+        "case": "shared_complete",
+        "peer_total": 200,
+        "left": 99,
+        "right": 101,
+        "mutex_unpoisoned": 1,
+        "frame_drops": 1
+      },
+      "matches": true,
+      "binary": ".tools/termination-boundary/20261009-boundary-03/unoptimized",
+      "binary_sha256": "22126641587ad9d3ab6de32d6743f3b5fe3a95bbad4520d12ab702053de23111"
+    },
+    {
+      "language": "rust",
+      "profile": "unoptimized",
+      "case": "atomic_commit_cancel",
+      "actual": {
+        "case": "atomic_commit_cancel",
+        "peer_total": 200,
+        "left": 99,
+        "right": 101,
+        "mutex_unpoisoned": 1,
+        "frame_drops": 1
+      },
+      "expected": {
+        "case": "atomic_commit_cancel",
+        "peer_total": 200,
+        "left": 99,
+        "right": 101,
+        "mutex_unpoisoned": 1,
+        "frame_drops": 1
+      },
+      "matches": true,
+      "binary": ".tools/termination-boundary/20261009-boundary-03/unoptimized",
+      "binary_sha256": "22126641587ad9d3ab6de32d6743f3b5fe3a95bbad4520d12ab702053de23111"
+    },
+    {
+      "language": "rust",
+      "profile": "unoptimized",
+      "case": "rollback_cancel",
+      "actual": {
+        "case": "rollback_cancel",
+        "peer_total": 200,
+        "rollbacks": 1
+      },
+      "expected": {
+        "case": "rollback_cancel",
+        "peer_total": 200,
+        "rollbacks": 1
+      },
+      "matches": true,
+      "binary": ".tools/termination-boundary/20261009-boundary-03/unoptimized",
+      "binary_sha256": "22126641587ad9d3ab6de32d6743f3b5fe3a95bbad4520d12ab702053de23111"
+    },
+    {
+      "language": "rust",
+      "profile": "unoptimized",
+      "case": "child_survives",
+      "actual": {
+        "case": "child_survives",
+        "parent_drops": 1,
+        "child_effects_after_parent_drop": 1,
+        "child_drops_after_explicit_stop": 1
+      },
+      "expected": {
+        "case": "child_survives",
+        "parent_drops": 1,
+        "child_effects_after_parent_drop": 1,
+        "child_drops_after_explicit_stop": 1
+      },
+      "matches": true,
+      "binary": ".tools/termination-boundary/20261009-boundary-03/unoptimized",
+      "binary_sha256": "22126641587ad9d3ab6de32d6743f3b5fe3a95bbad4520d12ab702053de23111"
+    },
+    {
+      "language": "rust",
+      "profile": "unoptimized",
+      "case": "managed_child_cancel",
+      "actual": {
+        "case": "managed_child_cancel",
+        "child_effects": 0,
+        "child_drops": 1,
+        "post_drop_command_rejected": 1
+      },
+      "expected": {
+        "case": "managed_child_cancel",
+        "child_effects": 0,
+        "child_drops": 1,
+        "post_drop_command_rejected": 1
+      },
+      "matches": true,
+      "binary": ".tools/termination-boundary/20261009-boundary-03/unoptimized",
+      "binary_sha256": "22126641587ad9d3ab6de32d6743f3b5fe3a95bbad4520d12ab702053de23111"
+    },
+    {
+      "language": "rust",
+      "profile": "unoptimized",
+      "case": "blocking_drop",
+      "actual": {
+        "case": "blocking_drop",
+        "peer_blocked_at_destructor_gate": 1,
+        "cleanup_finished": 1,
+        "peer_reply": 17
+      },
+      "expected": {
+        "case": "blocking_drop",
+        "peer_blocked_at_destructor_gate": 1,
+        "cleanup_finished": 1,
+        "peer_reply": 17
+      },
+      "matches": true,
+      "binary": ".tools/termination-boundary/20261009-boundary-03/unoptimized",
+      "binary_sha256": "22126641587ad9d3ab6de32d6743f3b5fe3a95bbad4520d12ab702053de23111"
+    },
+    {
+      "language": "rust",
+      "profile": "unoptimized",
+      "case": "bounded_drop",
+      "actual": {
+        "case": "bounded_drop",
+        "peer_blocked_at_destructor_gate": 0,
+        "cleanup_finished": 1,
+        "peer_reply": 17
+      },
+      "expected": {
+        "case": "bounded_drop",
+        "peer_blocked_at_destructor_gate": 0,
+        "cleanup_finished": 1,
+        "peer_reply": 17
+      },
+      "matches": true,
+      "binary": ".tools/termination-boundary/20261009-boundary-03/unoptimized",
+      "binary_sha256": "22126641587ad9d3ab6de32d6743f3b5fe3a95bbad4520d12ab702053de23111"
+    },
+    {
+      "language": "rust",
+      "profile": "optimized",
+      "case": "owned_cancel",
+      "actual": {
+        "case": "owned_cancel",
+        "peer_total": 200,
+        "frame_drops": 1
+      },
+      "expected": {
+        "case": "owned_cancel",
+        "peer_total": 200,
+        "frame_drops": 1
+      },
+      "matches": true,
+      "binary": ".tools/termination-boundary/20261009-boundary-03/optimized",
+      "binary_sha256": "7310a1377f2b17dd22317d7856d153ff731f0ff76ef56d7f3ddabd4070bb3ac8"
+    },
+    {
+      "language": "rust",
+      "profile": "optimized",
+      "case": "shared_cancel",
+      "actual": {
+        "case": "shared_cancel",
+        "peer_total": 199,
+        "left": 99,
+        "right": 100,
+        "mutex_unpoisoned": 1,
+        "frame_drops": 1
+      },
+      "expected": {
+        "case": "shared_cancel",
+        "peer_total": 199,
+        "left": 99,
+        "right": 100,
+        "mutex_unpoisoned": 1,
+        "frame_drops": 1
+      },
+      "matches": true,
+      "binary": ".tools/termination-boundary/20261009-boundary-03/optimized",
+      "binary_sha256": "7310a1377f2b17dd22317d7856d153ff731f0ff76ef56d7f3ddabd4070bb3ac8"
+    },
+    {
+      "language": "rust",
+      "profile": "optimized",
+      "case": "shared_complete",
+      "actual": {
+        "case": "shared_complete",
+        "peer_total": 200,
+        "left": 99,
+        "right": 101,
+        "mutex_unpoisoned": 1,
+        "frame_drops": 1
+      },
+      "expected": {
+        "case": "shared_complete",
+        "peer_total": 200,
+        "left": 99,
+        "right": 101,
+        "mutex_unpoisoned": 1,
+        "frame_drops": 1
+      },
+      "matches": true,
+      "binary": ".tools/termination-boundary/20261009-boundary-03/optimized",
+      "binary_sha256": "7310a1377f2b17dd22317d7856d153ff731f0ff76ef56d7f3ddabd4070bb3ac8"
+    },
+    {
+      "language": "rust",
+      "profile": "optimized",
+      "case": "atomic_commit_cancel",
+      "actual": {
+        "case": "atomic_commit_cancel",
+        "peer_total": 200,
+        "left": 99,
+        "right": 101,
+        "mutex_unpoisoned": 1,
+        "frame_drops": 1
+      },
+      "expected": {
+        "case": "atomic_commit_cancel",
+        "peer_total": 200,
+        "left": 99,
+        "right": 101,
+        "mutex_unpoisoned": 1,
+        "frame_drops": 1
+      },
+      "matches": true,
+      "binary": ".tools/termination-boundary/20261009-boundary-03/optimized",
+      "binary_sha256": "7310a1377f2b17dd22317d7856d153ff731f0ff76ef56d7f3ddabd4070bb3ac8"
+    },
+    {
+      "language": "rust",
+      "profile": "optimized",
+      "case": "rollback_cancel",
+      "actual": {
+        "case": "rollback_cancel",
+        "peer_total": 200,
+        "rollbacks": 1
+      },
+      "expected": {
+        "case": "rollback_cancel",
+        "peer_total": 200,
+        "rollbacks": 1
+      },
+      "matches": true,
+      "binary": ".tools/termination-boundary/20261009-boundary-03/optimized",
+      "binary_sha256": "7310a1377f2b17dd22317d7856d153ff731f0ff76ef56d7f3ddabd4070bb3ac8"
+    },
+    {
+      "language": "rust",
+      "profile": "optimized",
+      "case": "child_survives",
+      "actual": {
+        "case": "child_survives",
+        "parent_drops": 1,
+        "child_effects_after_parent_drop": 1,
+        "child_drops_after_explicit_stop": 1
+      },
+      "expected": {
+        "case": "child_survives",
+        "parent_drops": 1,
+        "child_effects_after_parent_drop": 1,
+        "child_drops_after_explicit_stop": 1
+      },
+      "matches": true,
+      "binary": ".tools/termination-boundary/20261009-boundary-03/optimized",
+      "binary_sha256": "7310a1377f2b17dd22317d7856d153ff731f0ff76ef56d7f3ddabd4070bb3ac8"
+    },
+    {
+      "language": "rust",
+      "profile": "optimized",
+      "case": "managed_child_cancel",
+      "actual": {
+        "case": "managed_child_cancel",
+        "child_effects": 0,
+        "child_drops": 1,
+        "post_drop_command_rejected": 1
+      },
+      "expected": {
+        "case": "managed_child_cancel",
+        "child_effects": 0,
+        "child_drops": 1,
+        "post_drop_command_rejected": 1
+      },
+      "matches": true,
+      "binary": ".tools/termination-boundary/20261009-boundary-03/optimized",
+      "binary_sha256": "7310a1377f2b17dd22317d7856d153ff731f0ff76ef56d7f3ddabd4070bb3ac8"
+    },
+    {
+      "language": "rust",
+      "profile": "optimized",
+      "case": "blocking_drop",
+      "actual": {
+        "case": "blocking_drop",
+        "peer_blocked_at_destructor_gate": 1,
+        "cleanup_finished": 1,
+        "peer_reply": 17
+      },
+      "expected": {
+        "case": "blocking_drop",
+        "peer_blocked_at_destructor_gate": 1,
+        "cleanup_finished": 1,
+        "peer_reply": 17
+      },
+      "matches": true,
+      "binary": ".tools/termination-boundary/20261009-boundary-03/optimized",
+      "binary_sha256": "7310a1377f2b17dd22317d7856d153ff731f0ff76ef56d7f3ddabd4070bb3ac8"
+    },
+    {
+      "language": "rust",
+      "profile": "optimized",
+      "case": "bounded_drop",
+      "actual": {
+        "case": "bounded_drop",
+        "peer_blocked_at_destructor_gate": 0,
+        "cleanup_finished": 1,
+        "peer_reply": 17
+      },
+      "expected": {
+        "case": "bounded_drop",
+        "peer_blocked_at_destructor_gate": 0,
+        "cleanup_finished": 1,
+        "peer_reply": 17
+      },
+      "matches": true,
+      "binary": ".tools/termination-boundary/20261009-boundary-03/optimized",
+      "binary_sha256": "7310a1377f2b17dd22317d7856d153ff731f0ff76ef56d7f3ddabd4070bb3ac8"
+    },
+    {
+      "language": "erlang",
+      "profile": "jit",
+      "case": "owned_kill",
+      "actual": {
+        "case": "owned_kill",
+        "peer_total": 200
+      },
+      "expected": {
+        "case": "owned_kill",
+        "peer_total": 200
+      },
+      "matches": true
+    },
+    {
+      "language": "erlang",
+      "profile": "jit",
+      "case": "ets_cancel",
+      "actual": {
+        "case": "ets_cancel",
+        "peer_total": 199
+      },
+      "expected": {
+        "case": "ets_cancel",
+        "peer_total": 199
+      },
+      "matches": true
+    },
+    {
+      "language": "erlang",
+      "profile": "jit",
+      "case": "ets_complete",
+      "actual": {
+        "case": "ets_complete",
+        "peer_total": 200
+      },
+      "expected": {
+        "case": "ets_complete",
+        "peer_total": 200
+      },
+      "matches": true
+    },
+    {
+      "language": "erlang",
+      "profile": "jit",
+      "case": "ets_atomic_cancel",
+      "actual": {
+        "case": "ets_atomic_cancel",
+        "peer_total": 200
+      },
+      "expected": {
+        "case": "ets_atomic_cancel",
+        "peer_total": 200
+      },
+      "matches": true
+    },
+    {
+      "language": "erlang",
+      "profile": "jit",
+      "case": "unlinked_child",
+      "actual": {
+        "case": "unlinked_child",
+        "child_effects_after_parent_down": 1
+      },
+      "expected": {
+        "case": "unlinked_child",
+        "child_effects_after_parent_down": 1
+      },
+      "matches": true
+    },
+    {
+      "language": "erlang",
+      "profile": "jit",
+      "case": "linked_child",
+      "actual": {
+        "case": "linked_child",
+        "child_effects_after_parent_down": 0
+      },
+      "expected": {
+        "case": "linked_child",
+        "child_effects_after_parent_down": 0
+      },
+      "matches": true
+    },
+    {
+      "language": "erlang",
+      "profile": "debug-emu",
+      "case": "owned_kill",
+      "actual": {
+        "case": "owned_kill",
+        "peer_total": 200
+      },
+      "expected": {
+        "case": "owned_kill",
+        "peer_total": 200
+      },
+      "matches": true
+    },
+    {
+      "language": "erlang",
+      "profile": "debug-emu",
+      "case": "ets_cancel",
+      "actual": {
+        "case": "ets_cancel",
+        "peer_total": 199
+      },
+      "expected": {
+        "case": "ets_cancel",
+        "peer_total": 199
+      },
+      "matches": true
+    },
+    {
+      "language": "erlang",
+      "profile": "debug-emu",
+      "case": "ets_complete",
+      "actual": {
+        "case": "ets_complete",
+        "peer_total": 200
+      },
+      "expected": {
+        "case": "ets_complete",
+        "peer_total": 200
+      },
+      "matches": true
+    },
+    {
+      "language": "erlang",
+      "profile": "debug-emu",
+      "case": "ets_atomic_cancel",
+      "actual": {
+        "case": "ets_atomic_cancel",
+        "peer_total": 200
+      },
+      "expected": {
+        "case": "ets_atomic_cancel",
+        "peer_total": 200
+      },
+      "matches": true
+    },
+    {
+      "language": "erlang",
+      "profile": "debug-emu",
+      "case": "unlinked_child",
+      "actual": {
+        "case": "unlinked_child",
+        "child_effects_after_parent_down": 1
+      },
+      "expected": {
+        "case": "unlinked_child",
+        "child_effects_after_parent_down": 1
+      },
+      "matches": true
+    },
+    {
+      "language": "erlang",
+      "profile": "debug-emu",
+      "case": "linked_child",
+      "actual": {
+        "case": "linked_child",
+        "child_effects_after_parent_down": 0
+      },
+      "expected": {
+        "case": "linked_child",
+        "child_effects_after_parent_down": 0
+      },
+      "matches": true
+    }
+  ],
+  "all_expected_observations": true,
+  "limits": [
+    "Rust probes use standard-library futures and explicit test gates, not the checked Bream API.",
+    "Rust cancellation happens only after poll returns Pending; no live native stack is abandoned.",
+    "The original native preemption experiment is not rerun and arbitrary native preemption is not qualified.",
+    "Shared-state cancellation demonstrates lost application invariants, not memory unsafety.",
+    "Explicit rollback and joining are controls for these bounded protocols, not universal cancellation solutions.",
+    "BEAM controls do not exercise NIFs, speed, scheduler latency, or full resource cleanup.",
+    "External watchdogs only detect hangs; their values and elapsed time are not performance evidence."
+  ],
+  "rustc": {
+    "path": "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/rustc",
+    "sha256": "859254978c0a0402c32f949f6de0d99aee73be8d15f45aac00ae1448aac51e74",
+    "version": "rustc 1.98.1 (48a229cea 2026-09-01)\nbinary: rustc\ncommit-hash: 48a229ceaefd4985c50990b14116b6d856af0985\ncommit-date: 2026-09-01\nhost: x86_64-unknown-linux-gnu\nrelease: 1.98.1\nLLVM version: 22.1.8\n"
+  },
+  "otp": {
+    "commit": "ad05823719d77c8faee87348ea39513d4e2f99c5",
+    "erl_path": "/home/bat/projects/bream/upstream/otp-reference-build/bin/erl",
+    "erl_sha256": "12c142c54d5605bb29cb9f5015d40fd12cb6c3e199a2c69ecee33946d0d4b2b9",
+    "erlc_sha256": "4f75f3b2aaa9c3b3500b0852462df89dfd9f3244a72d817d616c325130110be0",
+    "build_commit": "ad05823719d77c8faee87348ea39513d4e2f99c5",
+    "prior_build_provenance": "evidence/process-protocol-review/source-build.json",
+    "retained_build_provenance": "evidence/termination-boundary/runs/20261009-boundary-03/inputs/otp-source-build.json",
+    "provenance_sha256": "21d859181a2b7b385bd5a36509bb5c926533d8395e16fa3bade81bbcfcaaab08",
+    "prior_binary_hashes_match": true,
+    "environment": {
+      "ERL_FLAGS": "+S 1:1 +SDcpu 1 +SDio 1"
+    },
+    "emulators": [
+      {
+        "path": "/home/bat/projects/bream/upstream/otp-reference-build/bin/x86_64-pc-linux-gnu/beam.debug.emu",
+        "sha256": "cfb447a49cd279777325512cda0695cf91d2d52834b4e257c85858988b885d48"
+      },
+      {
+        "path": "/home/bat/projects/bream/upstream/otp-reference-build/bin/x86_64-pc-linux-gnu/beam.jit",
+        "sha256": "36b57fc442e2829f217403d2f2859dd782d28e910d5a96a411d07b5d577150aa"
+      },
+      {
+        "path": "/home/bat/projects/bream/upstream/otp-reference-build/bin/x86_64-pc-linux-gnu/beam.smp",
+        "sha256": "36b57fc442e2829f217403d2f2859dd782d28e910d5a96a411d07b5d577150aa"
+      }
+    ],
+    "jit": {
+      "emu_flavor": "jit",
+      "otp_release": "29"
+    },
+    "fixture_sha256": "450a06132f57bfe3d85d6e67a8d955b787124fc9e95660c781b2a0037d135fca",
+    "debug-emu": {
+      "emu_flavor": "emu",
+      "otp_release": "29"
+    }
+  }
+}

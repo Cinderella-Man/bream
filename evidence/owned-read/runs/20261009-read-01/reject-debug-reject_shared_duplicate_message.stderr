@@ -1,0 +1,21 @@
+   Compiling bream-read-consumer v0.0.0 (/home/bat/projects/bream/experiments/owned-read/consumer)
+error[E0382]: use of moved value: `message`
+   --> consumer/examples/reject_shared_duplicate_message.rs:7:35
+    |
+  2 | #[process_module]
+    | ----------------- `message` moved due to this method call
+...
+  5 |         let message = receive_shared_any();
+    |             ------- move occurs because `message` has type `SharedEnvelope`, which does not implement the `Copy` trait
+  6 |         let first = shared_bytes(message);
+  7 |         let second = shared_bytes(message);
+    |                                   ^^^^^^^ value used here after move
+    |
+note: `SharedEnvelope::into_bytes` takes ownership of the receiver `self`, which moves `message`
+   --> runtime/src/shared.rs:131:23
+    |
+131 |     pub fn into_bytes(self) -> SharedBytes {
+    |                       ^^^^
+
+For more information about this error, try `rustc --explain E0382`.
+error: could not compile `bream-read-consumer` (example "reject_shared_duplicate_message") due to 2 previous errors

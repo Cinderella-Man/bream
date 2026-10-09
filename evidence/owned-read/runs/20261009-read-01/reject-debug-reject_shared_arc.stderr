@@ -1,0 +1,8 @@
+   Compiling bream-read-consumer v0.0.0 (/home/bat/projects/bream/experiments/owned-read/consumer)
+error: bream structured subset: only private checked data or concrete primitive/Words types are admitted
+ --> consumer/examples/reject_shared_arc.rs:5:16
+  |
+5 |         bytes: Arc<SharedBytes>,
+  |                ^^^
+
+error: could not compile `bream-read-consumer` (example "reject_shared_arc") due to 1 previous error

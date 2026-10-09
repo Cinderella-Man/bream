@@ -1,0 +1,8 @@
+   Compiling bream-read-consumer v0.0.0 (/home/bat/projects/bream/experiments/owned-read/consumer)
+error: bream structured subset: annotation type mismatch
+ --> consumer/examples/reject_shared_words.rs:5:20
+  |
+5 |         let bytes: Words = shared_bytes(receive_shared_any());
+  |                    ^^^^^
+
+error: could not compile `bream-read-consumer` (example "reject_shared_words") due to 1 previous error

@@ -1,0 +1,15 @@
+task '<unnamed>' failed at 'intentional historical task panic', /home/bat/projects/bream/evidence/rust-green-history/runs/20261009-green-02/inputs/historical.rs:112
+stack backtrace:
+   1:     0x5fc0d92fb500 - rt::backtrace::imp::write::h5f2b8198d7c95ed2BCq
+   2:     0x5fc0d92fe4b0 - failure::on_fail::he562db2a9820ef2a3Xq
+   3:     0x5fc0d930bdc0 - unwind::begin_unwind_inner::hd8b5c02cf3de9566Ixd
+   4:     0x5fc0d92933f0 - unwind::begin_unwind::h11758776742581330641
+   5:     0x5fc0d92a4ae0 - panic_cleanup::closure.4584
+   6:     0x5fc0d929e290 - task::TaskBuilder<S>::try_future::closure.4508
+   7:     0x5fc0d92b64d0 - task::bootstrap_green_task::closure.6770
+   8:     0x5fc0d930c950 - rust_try_inner
+   9:     0x5fc0d930c940 - rust_try
+  10:     0x5fc0d9309f60 - unwind::try::hf0b22403f3912bcfqmd
+  11:     0x5fc0d9309e00 - task::Task::run::h7b539be345e221754Bc
+  12:     0x5fc0d92b6330 - task::bootstrap_green_task::h1a9f1a1435a640d7M7b
+  13:                0x0 - <unknown>

@@ -1,0 +1,16 @@
+   Compiling bream-exit-consumer v0.0.0 (/home/bat/projects/bream/experiments/explicit-exit/consumer)
+error[E0603]: function `__bream_helper_helper` is private
+  --> consumer/examples/reject_struct_private_helper.rs:10:22
+   |
+10 |     let _ = checked::__bream_helper_helper;
+   |                      ^^^^^^^^^^^^^^^^^^^^^ private function
+   |
+note: the function `__bream_helper_helper` is defined here
+  --> consumer/examples/reject_struct_private_helper.rs:2:1
+   |
+ 2 | #[process_module]
+   | ^^^^^^^^^^^^^^^^^
+   = note: this error originates in the attribute macro `process_module` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+For more information about this error, try `rustc --explain E0603`.
+error: could not compile `bream-exit-consumer` (example "reject_struct_private_helper") due to 1 previous error

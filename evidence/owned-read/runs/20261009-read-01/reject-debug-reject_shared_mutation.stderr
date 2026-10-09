@@ -1,0 +1,8 @@
+   Compiling bream-read-consumer v0.0.0 (/home/bat/projects/bream/experiments/owned-read/consumer)
+error: bream structured subset: only local or checked-record places are admitted
+ --> consumer/examples/reject_shared_mutation.rs:6:9
+  |
+6 |         bytes[0] = 42;
+  |         ^^^^^
+
+error: could not compile `bream-read-consumer` (example "reject_shared_mutation") due to 1 previous error

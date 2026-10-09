@@ -1,0 +1,10 @@
+[package]
+name = "bream-exit-consumer"
+version = "0.0.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+bream-exit-runtime = { path = "../runtime" }
+bream-exit-macros = { path = "../macros" }
+

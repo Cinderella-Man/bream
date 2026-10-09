@@ -1,0 +1,4 @@
+   Compiling libc v0.2.190
+   Compiling bream-read-runtime v0.0.0 (/home/bat/projects/bream/experiments/owned-read/runtime)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 3.09s
+     Running unittests src/lib.rs (.tools/owned-read/20261009-read-01/debug/deps/bream_read_runtime-92833b36f4cf6ff9)

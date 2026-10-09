@@ -1,0 +1,100 @@
+{
+  "commit": "85a1eff3a99c5d60bf34ca6f08f87ed341329af0",
+  "files": [
+    {
+      "path": "src/libstd/rt/kill.rs",
+      "url": "https://raw.githubusercontent.com/rust-lang/rust/85a1eff3a99c5d60bf34ca6f08f87ed341329af0/src/libstd/rt/kill.rs",
+      "sha256": "e916f4acc5d06640619801fdf681ea91fec6a7c4dbe17cbc6536bd55519cba54"
+    },
+    {
+      "path": "src/libstd/rt/task.rs",
+      "url": "https://raw.githubusercontent.com/rust-lang/rust/85a1eff3a99c5d60bf34ca6f08f87ed341329af0/src/libstd/rt/task.rs",
+      "sha256": "a52f8660977bd07da206d9358510ad6f1e73aa45428d515fff406fc014d70f04"
+    },
+    {
+      "path": "src/libstd/rt/sched.rs",
+      "url": "https://raw.githubusercontent.com/rust-lang/rust/85a1eff3a99c5d60bf34ca6f08f87ed341329af0/src/libstd/rt/sched.rs",
+      "sha256": "8bddba8dd92ca82da313fb52b113ff2870e8bfcb5bf19d888a62ae21f6737395"
+    },
+    {
+      "path": "src/libstd/task/mod.rs",
+      "url": "https://raw.githubusercontent.com/rust-lang/rust/85a1eff3a99c5d60bf34ca6f08f87ed341329af0/src/libstd/task/mod.rs",
+      "sha256": "6b509099bb6a28c7ba4d892d27efe0732d531b1bbb907c212c6088d47d6da71e"
+    },
+    {
+      "path": "src/libstd/task/spawn.rs",
+      "url": "https://raw.githubusercontent.com/rust-lang/rust/85a1eff3a99c5d60bf34ca6f08f87ed341329af0/src/libstd/task/spawn.rs",
+      "sha256": "ce5d0f352c1fd746d04582d4a9e46110a29cce2c0f937bf0afea2ad91ab18787"
+    },
+    {
+      "path": "src/libstd/unstable/sync.rs",
+      "url": "https://raw.githubusercontent.com/rust-lang/rust/85a1eff3a99c5d60bf34ca6f08f87ed341329af0/src/libstd/unstable/sync.rs",
+      "sha256": "b1aa51cca1297b0a71e74afe82a8e6162945ae9c255dabdcff97d476efca4322"
+    },
+    {
+      "path": "src/librustuv/net.rs",
+      "url": "https://raw.githubusercontent.com/rust-lang/rust/85a1eff3a99c5d60bf34ca6f08f87ed341329af0/src/librustuv/net.rs",
+      "sha256": "4d8adb6d5a632143a772f9f5937ae627f98db2eaf110857699e64b3737a7fc2b"
+    },
+    {
+      "path": "src/librustuv/file.rs",
+      "url": "https://raw.githubusercontent.com/rust-lang/rust/85a1eff3a99c5d60bf34ca6f08f87ed341329af0/src/librustuv/file.rs",
+      "sha256": "818f4a7e7cc2539832e86ca2b8d216b0c99a055624c1a5df6a2f8c5933337c80"
+    },
+    {
+      "path": "src/librustuv/pipe.rs",
+      "url": "https://raw.githubusercontent.com/rust-lang/rust/85a1eff3a99c5d60bf34ca6f08f87ed341329af0/src/librustuv/pipe.rs",
+      "sha256": "436e4dd4535e8655c06272b2f9b3f1595452bfa60f9811b48a323de1561f8b2e"
+    },
+    {
+      "path": "doc/tutorial-tasks.md",
+      "url": "https://raw.githubusercontent.com/rust-lang/rust/85a1eff3a99c5d60bf34ca6f08f87ed341329af0/doc/tutorial-tasks.md",
+      "sha256": "d72ee79a4832ea9f56710eab45b00dab314525a37930d753b89c6dc0981db2db"
+    },
+    {
+      "path": "src/libextra/sync.rs",
+      "url": "https://raw.githubusercontent.com/rust-lang/rust/85a1eff3a99c5d60bf34ca6f08f87ed341329af0/src/libextra/sync.rs",
+      "sha256": "a27b73a6a9ed648c31529599803076fa49470063b3ef054bbe05a47b1de8b099"
+    },
+    {
+      "path": "src/libstd/select.rs",
+      "url": "https://raw.githubusercontent.com/rust-lang/rust/85a1eff3a99c5d60bf34ca6f08f87ed341329af0/src/libstd/select.rs",
+      "sha256": "38bfa259a0cb467ad64dbb9e55c8bd27d3d803e755fbed1c0e85ecfb8c7f4b20"
+    },
+    {
+      "path": "src/librustuv/stream.rs",
+      "url": "https://raw.githubusercontent.com/rust-lang/rust/85a1eff3a99c5d60bf34ca6f08f87ed341329af0/src/librustuv/stream.rs",
+      "sha256": "cc787bc7c920e7df5389f4e4af8f88b427276aa0ebbbd4e603b407c7b1f6bd46"
+    },
+    {
+      "path": "src/librustuv/uvio.rs",
+      "url": "https://raw.githubusercontent.com/rust-lang/rust/85a1eff3a99c5d60bf34ca6f08f87ed341329af0/src/librustuv/uvio.rs",
+      "sha256": "309dc53418d427ee5c82b8f624321c53a79cb430405fe3889e568d292077051a"
+    },
+    {
+      "path": "src/libstd/unstable/mod.rs",
+      "url": "https://raw.githubusercontent.com/rust-lang/rust/85a1eff3a99c5d60bf34ca6f08f87ed341329af0/src/libstd/unstable/mod.rs",
+      "sha256": "1d89c22643532e9f6de7ee429c1e174cabad5f23f7520a43c51bfc15e55a1561"
+    },
+    {
+      "path": "src/libstd/cleanup.rs",
+      "url": "https://raw.githubusercontent.com/rust-lang/rust/85a1eff3a99c5d60bf34ca6f08f87ed341329af0/src/libstd/cleanup.rs",
+      "sha256": "fa9632c377d1f7c2cb3b26c810b2c7369ca34cb7fb8340667b744f4f6b21a487"
+    },
+    {
+      "path": "LICENSE-MIT",
+      "url": "https://raw.githubusercontent.com/rust-lang/rust/85a1eff3a99c5d60bf34ca6f08f87ed341329af0/LICENSE-MIT",
+      "sha256": "52232c2cee3bb7d8cabe47ef367f1bf8bb607c22bdfca0219d6156cb7f446e9d"
+    },
+    {
+      "path": "LICENSE-APACHE",
+      "url": "https://raw.githubusercontent.com/rust-lang/rust/85a1eff3a99c5d60bf34ca6f08f87ed341329af0/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+    },
+    {
+      "path": "src/librustuv/lib.rs",
+      "url": "https://raw.githubusercontent.com/rust-lang/rust/85a1eff3a99c5d60bf34ca6f08f87ed341329af0/src/librustuv/lib.rs",
+      "sha256": "48adabe46e56f89a4439c95393e7528d736406fc0a59ab5144a6ee4e95042b2f"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+   Compiling bream-exit-consumer v0.0.0 (/home/bat/projects/bream/experiments/explicit-exit/consumer)
+warning: unused variable: `target_id`
+  --> consumer/examples/shadow_monitor.rs:39:13
+   |
+39 |         let target_id = down_target(down);
+   |             ^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_target_id`
+   |
+   = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `unexpected_shared_1`
+  --> consumer/examples/shadow_monitor.rs:72:27
+   |
+72 |             Event::Shared(unexpected_shared_1) => {
+   |                           ^^^^^^^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_unexpected_shared_1`
+
+warning: unused variable: `unexpected_shared_2`
+  --> consumer/examples/shadow_monitor.rs:91:31
+   |
+91 |                 Event::Shared(unexpected_shared_2) => {
+   |                               ^^^^^^^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_unexpected_shared_2`
+
+warning: `bream-exit-consumer` (example "shadow_monitor") generated 3 warnings (run `cargo fix --example "shadow_monitor" -p bream-exit-consumer` to apply 3 suggestions)
+    Finished `release` profile [optimized] target(s) in 0.45s

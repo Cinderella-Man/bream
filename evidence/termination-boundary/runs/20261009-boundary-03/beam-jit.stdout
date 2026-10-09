@@ -1,0 +1,1 @@
+{"emu_flavor":"jit","otp_release":"29","cases":[{"case":"owned_kill","peer_total":200},{"case":"ets_cancel","peer_total":199},{"case":"ets_complete","peer_total":200},{"case":"ets_atomic_cancel","peer_total":200},{"case":"unlinked_child","child_effects_after_parent_down":1},{"case":"linked_child","child_effects_after_parent_down":0}]}

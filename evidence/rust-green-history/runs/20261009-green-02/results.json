@@ -1,0 +1,1108 @@
+{
+  "schema": 1,
+  "recorded_at_utc": "2026-10-09T06:35:57.381767+00:00",
+  "scope": "historical cooperative scheduling and modern lifetime/identity correctness; no performance evidence",
+  "source_inputs": [
+    {
+      "source": "experiments/rust-green-history/historical.rs",
+      "retained": "evidence/rust-green-history/runs/20261009-green-02/inputs/historical.rs",
+      "sha256": "d171b62792ccfe5c4ade84f1d20f4301a7cfba01da885e6843a27ff60de9e918"
+    },
+    {
+      "source": "experiments/rust-green-history/modern.rs",
+      "retained": "evidence/rust-green-history/runs/20261009-green-02/inputs/modern.rs",
+      "sha256": "8cc08bf3cc0c8a8b2edab64d98cc4c14724488d5671e1732d6d761741fe8e313"
+    },
+    {
+      "source": "experiments/rust-green-history/registration.rs",
+      "retained": "evidence/rust-green-history/runs/20261009-green-02/inputs/registration.rs",
+      "sha256": "10f58363ce5d88a441e7f5bb9b8d073f0e648f111cd6380dfab8b2bdb9d721af"
+    },
+    {
+      "source": "experiments/rust-green-history/reject_borrowed_drop.rs",
+      "retained": "evidence/rust-green-history/runs/20261009-green-02/inputs/reject_borrowed_drop.rs",
+      "sha256": "39526e550b75f884a9f7ead8775061c200b1925008c87cc0fdba61a8fac485bf"
+    },
+    {
+      "source": "experiments/rust-green-history/reject_registration_reuse.rs",
+      "retained": "evidence/rust-green-history/runs/20261009-green-02/inputs/reject_registration_reuse.rs",
+      "sha256": "34dd8ecaedf2d60f7d4284f4959de1401a29044c6b2993500f3bcb3f7d5f4832"
+    },
+    {
+      "source": "experiments/rust-green-history/run.py",
+      "retained": "evidence/rust-green-history/runs/20261009-green-02/inputs/run.py",
+      "sha256": "e8eb88f255c76747172b3b3913e6f33d00aca82cb0eb57514c30d57aeb82dff7"
+    },
+    {
+      "source": "experiments/rust-green-history/prepare.py",
+      "retained": "evidence/rust-green-history/runs/20261009-green-02/inputs/prepare.py",
+      "sha256": "8742c915a35446260367f7ed2c2ea337b921d448968177d073ac094125b64d36"
+    }
+  ],
+  "provenance": {
+    "retained": "evidence/rust-green-history/runs/20261009-green-02/inputs/provenance.json",
+    "sha256": "58a43375448eafd9a83fff9067f6a83ea5a00b4ab73ffa75f6872da5e2b9cc62"
+  },
+  "historical_source_manifests": [
+    {
+      "checkout": "upstream/rust-green-history/770378a313a573776b16237a46b75bafa49072c1",
+      "manifest": "evidence/rust-green-history/sources/770378a313a573776b16237a46b75bafa49072c1.json",
+      "retained": "evidence/rust-green-history/runs/20261009-green-02/inputs/770378a313a573776b16237a46b75bafa49072c1.json",
+      "sha256": "dd32e9a0950d0ac570a7931dc09b3a05e5d8d912f9c8e07eb2bf1f3e43d94ffa",
+      "files_checked": 65
+    },
+    {
+      "checkout": "upstream/rust-green-history/ba4081a5a8573875fed17545846f6f6902c8ba8d",
+      "manifest": "evidence/rust-green-history/sources/ba4081a5a8573875fed17545846f6f6902c8ba8d.json",
+      "retained": "evidence/rust-green-history/runs/20261009-green-02/inputs/ba4081a5a8573875fed17545846f6f6902c8ba8d.json",
+      "sha256": "4d2c2be4b2535bf0ea1cfff6a094aa9e1b2a7f50c0e9a582e468850972bd8ebd",
+      "files_checked": 80
+    },
+    {
+      "checkout": "upstream/rust-green-history/linked-failure-85a1eff3a99c5d60bf34ca6f08f87ed341329af0",
+      "manifest": "evidence/rust-green-history/sources/linked-failure-85a1eff3a99c5d60bf34ca6f08f87ed341329af0.json",
+      "retained": "evidence/rust-green-history/runs/20261009-green-02/inputs/linked-failure-85a1eff3a99c5d60bf34ca6f08f87ed341329af0.json",
+      "sha256": "c9f8933712d6476374b797ed91f65f81bc5a72fc0f970dd9ac60dbffea25720d",
+      "files_checked": 19
+    }
+  ],
+  "tools": [
+    {
+      "name": "historical",
+      "path": "/home/bat/projects/bream/.tools/rust-green-history/rust-0.12.0-x86_64-unknown-linux-gnu/bin/rustc",
+      "sha256": "aae681a9e8fd0baca4906b6dc902c9a77e7038ca3515d90f73e5e7a9e3f53acb",
+      "version": "rustc 0.12.0 (ba4081a5a 2014-10-07 13:44:41 -0700)\n"
+    },
+    {
+      "name": "modern",
+      "path": "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/rustc",
+      "sha256": "859254978c0a0402c32f949f6de0d99aee73be8d15f45aac00ae1448aac51e74",
+      "version": "rustc 1.98.1 (48a229cea 2026-09-01)\nbinary: rustc\ncommit-hash: 48a229ceaefd4985c50990b14116b6d856af0985\ncommit-date: 2026-09-01\nhost: x86_64-unknown-linux-gnu\nrelease: 1.98.1\nLLVM version: 22.1.8\n"
+    }
+  ],
+  "commands": [
+    {
+      "name": "historical-version",
+      "argv": [
+        "/home/bat/projects/bream/.tools/rust-green-history/rust-0.12.0-x86_64-unknown-linux-gnu/bin/rustc",
+        "--version"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 30,
+      "expected_rejection_code": null,
+      "stdout": "evidence/rust-green-history/runs/20261009-green-02/historical-version.stdout",
+      "stdout_sha256": "6a1d3a1155ff643739e8c556732c9104cb8c7f5ff24607cb61caba0cf3fc3e12",
+      "stderr": "evidence/rust-green-history/runs/20261009-green-02/historical-version.stderr",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matched_expectation": true
+    },
+    {
+      "name": "modern-version",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/rustc",
+        "--version",
+        "--verbose"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 30,
+      "expected_rejection_code": null,
+      "stdout": "evidence/rust-green-history/runs/20261009-green-02/modern-version.stdout",
+      "stdout_sha256": "778fbc643a806f0dd123c056e66201d7e8a56a61928ec0a33171be8d6c2d5a37",
+      "stderr": "evidence/rust-green-history/runs/20261009-green-02/modern-version.stderr",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matched_expectation": true
+    },
+    {
+      "name": "historical-unoptimized-compile",
+      "argv": [
+        "/home/bat/projects/bream/.tools/rust-green-history/rust-0.12.0-x86_64-unknown-linux-gnu/bin/rustc",
+        "-D",
+        "warnings",
+        "/home/bat/projects/bream/evidence/rust-green-history/runs/20261009-green-02/inputs/historical.rs",
+        "-o",
+        "/home/bat/projects/bream/.tools/rust-green-history/runs/20261009-green-02/historical-unoptimized"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "expected_rejection_code": null,
+      "stdout": "evidence/rust-green-history/runs/20261009-green-02/historical-unoptimized-compile.stdout",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr": "evidence/rust-green-history/runs/20261009-green-02/historical-unoptimized-compile.stderr",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matched_expectation": true
+    },
+    {
+      "name": "historical-unoptimized-no_yield_gate",
+      "argv": [
+        "/home/bat/projects/bream/.tools/rust-green-history/runs/20261009-green-02/historical-unoptimized",
+        "no_yield_gate"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 30,
+      "expected_rejection_code": null,
+      "stdout": "evidence/rust-green-history/runs/20261009-green-02/historical-unoptimized-no_yield_gate.stdout",
+      "stdout_sha256": "34dfeec4bc3204d1e9c93cf96575fea81d7df70f8cb83eca00e80bb9c221d6c2",
+      "stderr": "evidence/rust-green-history/runs/20261009-green-02/historical-unoptimized-no_yield_gate.stderr",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matched_expectation": true
+    },
+    {
+      "name": "historical-unoptimized-cooperative_yield",
+      "argv": [
+        "/home/bat/projects/bream/.tools/rust-green-history/runs/20261009-green-02/historical-unoptimized",
+        "cooperative_yield"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 30,
+      "expected_rejection_code": null,
+      "stdout": "evidence/rust-green-history/runs/20261009-green-02/historical-unoptimized-cooperative_yield.stdout",
+      "stdout_sha256": "b3a197d3944dd038ddf2a33673032a5d374df0094ed4f5899936c078492cc032",
+      "stderr": "evidence/rust-green-history/runs/20261009-green-02/historical-unoptimized-cooperative_yield.stderr",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matched_expectation": true
+    },
+    {
+      "name": "historical-unoptimized-channel_and_task_local",
+      "argv": [
+        "/home/bat/projects/bream/.tools/rust-green-history/runs/20261009-green-02/historical-unoptimized",
+        "channel_and_task_local"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 30,
+      "expected_rejection_code": null,
+      "stdout": "evidence/rust-green-history/runs/20261009-green-02/historical-unoptimized-channel_and_task_local.stdout",
+      "stdout_sha256": "31341370b50b91a0c96882e378a845e367c2e8fa0d4717985314f24b23821989",
+      "stderr": "evidence/rust-green-history/runs/20261009-green-02/historical-unoptimized-channel_and_task_local.stderr",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matched_expectation": true
+    },
+    {
+      "name": "historical-unoptimized-panic_cleanup",
+      "argv": [
+        "/home/bat/projects/bream/.tools/rust-green-history/runs/20261009-green-02/historical-unoptimized",
+        "panic_cleanup"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 30,
+      "expected_rejection_code": null,
+      "stdout": "evidence/rust-green-history/runs/20261009-green-02/historical-unoptimized-panic_cleanup.stdout",
+      "stdout_sha256": "2db0c3a167b31e1ff4aa7aa4ddfee49fee821155c9f9341f34195d60b7a912c2",
+      "stderr": "evidence/rust-green-history/runs/20261009-green-02/historical-unoptimized-panic_cleanup.stderr",
+      "stderr_sha256": "d256674e48752cd55afa4c7a57c7aba9a6a8d60004708a5a20c09a1367169a57",
+      "matched_expectation": true
+    },
+    {
+      "name": "modern-unoptimized-compile",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/rustc",
+        "--edition=2024",
+        "-C",
+        "panic=unwind",
+        "-C",
+        "opt-level=0",
+        "-D",
+        "warnings",
+        "/home/bat/projects/bream/evidence/rust-green-history/runs/20261009-green-02/inputs/modern.rs",
+        "-o",
+        "/home/bat/projects/bream/.tools/rust-green-history/runs/20261009-green-02/modern-unoptimized"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "expected_rejection_code": null,
+      "stdout": "evidence/rust-green-history/runs/20261009-green-02/modern-unoptimized-compile.stdout",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr": "evidence/rust-green-history/runs/20261009-green-02/modern-unoptimized-compile.stderr",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matched_expectation": true
+    },
+    {
+      "name": "modern-unoptimized-owned_cancel",
+      "argv": [
+        "/home/bat/projects/bream/.tools/rust-green-history/runs/20261009-green-02/modern-unoptimized",
+        "owned_cancel"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 30,
+      "expected_rejection_code": null,
+      "stdout": "evidence/rust-green-history/runs/20261009-green-02/modern-unoptimized-owned_cancel.stdout",
+      "stdout_sha256": "753199e5bd1bec60a9cdf43d123b40dd2498ece84d8a4b12afc7a2a80bd1ebdb",
+      "stderr": "evidence/rust-green-history/runs/20261009-green-02/modern-unoptimized-owned_cancel.stderr",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matched_expectation": true
+    },
+    {
+      "name": "modern-unoptimized-owned_complete",
+      "argv": [
+        "/home/bat/projects/bream/.tools/rust-green-history/runs/20261009-green-02/modern-unoptimized",
+        "owned_complete"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 30,
+      "expected_rejection_code": null,
+      "stdout": "evidence/rust-green-history/runs/20261009-green-02/modern-unoptimized-owned_complete.stdout",
+      "stdout_sha256": "11f01440f3d439eb69d62ea0ae7d7b4fb7cbe21b6217a04ff3b9c7a7950a7107",
+      "stderr": "evidence/rust-green-history/runs/20261009-green-02/modern-unoptimized-owned_complete.stderr",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matched_expectation": true
+    },
+    {
+      "name": "modern-unoptimized-reused_identity",
+      "argv": [
+        "/home/bat/projects/bream/.tools/rust-green-history/runs/20261009-green-02/modern-unoptimized",
+        "reused_identity"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 30,
+      "expected_rejection_code": null,
+      "stdout": "evidence/rust-green-history/runs/20261009-green-02/modern-unoptimized-reused_identity.stdout",
+      "stdout_sha256": "0be85e75f304f848397f52351a8f1db1057335e2e4a1122dfeb44f4e533098be",
+      "stderr": "evidence/rust-green-history/runs/20261009-green-02/modern-unoptimized-reused_identity.stderr",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matched_expectation": true
+    },
+    {
+      "name": "modern-unoptimized-wake_registration",
+      "argv": [
+        "/home/bat/projects/bream/.tools/rust-green-history/runs/20261009-green-02/modern-unoptimized",
+        "wake_registration"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 30,
+      "expected_rejection_code": null,
+      "stdout": "evidence/rust-green-history/runs/20261009-green-02/modern-unoptimized-wake_registration.stdout",
+      "stdout_sha256": "21fa801a961c4a98f633776b6eaadc5deab16eb8610bc897aa2d2ac668ed4b12",
+      "stderr": "evidence/rust-green-history/runs/20261009-green-02/modern-unoptimized-wake_registration.stderr",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matched_expectation": true
+    },
+    {
+      "name": "unoptimized-reject_borrowed_drop",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/rustc",
+        "--edition=2024",
+        "-C",
+        "opt-level=0",
+        "/home/bat/projects/bream/evidence/rust-green-history/runs/20261009-green-02/inputs/reject_borrowed_drop.rs",
+        "-o",
+        "/home/bat/projects/bream/.tools/rust-green-history/runs/20261009-green-02/unoptimized-reject_borrowed_drop"
+      ],
+      "exit_code": 1,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "expected_rejection_code": "E0505",
+      "stdout": "evidence/rust-green-history/runs/20261009-green-02/unoptimized-reject_borrowed_drop.stdout",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr": "evidence/rust-green-history/runs/20261009-green-02/unoptimized-reject_borrowed_drop.stderr",
+      "stderr_sha256": "3a307dc3474be44a4de6b3ec2e69cd3a951436609bff6d53c46e84ab95aa7a08",
+      "matched_expectation": true
+    },
+    {
+      "name": "unoptimized-reject_registration_reuse",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/rustc",
+        "--edition=2024",
+        "-C",
+        "opt-level=0",
+        "/home/bat/projects/bream/evidence/rust-green-history/runs/20261009-green-02/inputs/reject_registration_reuse.rs",
+        "-o",
+        "/home/bat/projects/bream/.tools/rust-green-history/runs/20261009-green-02/unoptimized-reject_registration_reuse"
+      ],
+      "exit_code": 1,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "expected_rejection_code": "E0382",
+      "stdout": "evidence/rust-green-history/runs/20261009-green-02/unoptimized-reject_registration_reuse.stdout",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr": "evidence/rust-green-history/runs/20261009-green-02/unoptimized-reject_registration_reuse.stderr",
+      "stderr_sha256": "3e09130989796220e168003a2f622ef1b035957243fd009ea091d9aa6149b32e",
+      "matched_expectation": true
+    },
+    {
+      "name": "historical-optimized-compile",
+      "argv": [
+        "/home/bat/projects/bream/.tools/rust-green-history/rust-0.12.0-x86_64-unknown-linux-gnu/bin/rustc",
+        "-O",
+        "-D",
+        "warnings",
+        "/home/bat/projects/bream/evidence/rust-green-history/runs/20261009-green-02/inputs/historical.rs",
+        "-o",
+        "/home/bat/projects/bream/.tools/rust-green-history/runs/20261009-green-02/historical-optimized"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "expected_rejection_code": null,
+      "stdout": "evidence/rust-green-history/runs/20261009-green-02/historical-optimized-compile.stdout",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr": "evidence/rust-green-history/runs/20261009-green-02/historical-optimized-compile.stderr",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matched_expectation": true
+    },
+    {
+      "name": "historical-optimized-no_yield_gate",
+      "argv": [
+        "/home/bat/projects/bream/.tools/rust-green-history/runs/20261009-green-02/historical-optimized",
+        "no_yield_gate"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 30,
+      "expected_rejection_code": null,
+      "stdout": "evidence/rust-green-history/runs/20261009-green-02/historical-optimized-no_yield_gate.stdout",
+      "stdout_sha256": "34dfeec4bc3204d1e9c93cf96575fea81d7df70f8cb83eca00e80bb9c221d6c2",
+      "stderr": "evidence/rust-green-history/runs/20261009-green-02/historical-optimized-no_yield_gate.stderr",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matched_expectation": true
+    },
+    {
+      "name": "historical-optimized-cooperative_yield",
+      "argv": [
+        "/home/bat/projects/bream/.tools/rust-green-history/runs/20261009-green-02/historical-optimized",
+        "cooperative_yield"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 30,
+      "expected_rejection_code": null,
+      "stdout": "evidence/rust-green-history/runs/20261009-green-02/historical-optimized-cooperative_yield.stdout",
+      "stdout_sha256": "b3a197d3944dd038ddf2a33673032a5d374df0094ed4f5899936c078492cc032",
+      "stderr": "evidence/rust-green-history/runs/20261009-green-02/historical-optimized-cooperative_yield.stderr",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matched_expectation": true
+    },
+    {
+      "name": "historical-optimized-channel_and_task_local",
+      "argv": [
+        "/home/bat/projects/bream/.tools/rust-green-history/runs/20261009-green-02/historical-optimized",
+        "channel_and_task_local"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 30,
+      "expected_rejection_code": null,
+      "stdout": "evidence/rust-green-history/runs/20261009-green-02/historical-optimized-channel_and_task_local.stdout",
+      "stdout_sha256": "31341370b50b91a0c96882e378a845e367c2e8fa0d4717985314f24b23821989",
+      "stderr": "evidence/rust-green-history/runs/20261009-green-02/historical-optimized-channel_and_task_local.stderr",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matched_expectation": true
+    },
+    {
+      "name": "historical-optimized-panic_cleanup",
+      "argv": [
+        "/home/bat/projects/bream/.tools/rust-green-history/runs/20261009-green-02/historical-optimized",
+        "panic_cleanup"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 30,
+      "expected_rejection_code": null,
+      "stdout": "evidence/rust-green-history/runs/20261009-green-02/historical-optimized-panic_cleanup.stdout",
+      "stdout_sha256": "2db0c3a167b31e1ff4aa7aa4ddfee49fee821155c9f9341f34195d60b7a912c2",
+      "stderr": "evidence/rust-green-history/runs/20261009-green-02/historical-optimized-panic_cleanup.stderr",
+      "stderr_sha256": "8bbcfef6b2fe110cb83c2a6fa89d96f1e5e353debe98346f0482d797be76e7ea",
+      "matched_expectation": true
+    },
+    {
+      "name": "modern-optimized-compile",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/rustc",
+        "--edition=2024",
+        "-C",
+        "panic=unwind",
+        "-C",
+        "opt-level=3",
+        "-D",
+        "warnings",
+        "/home/bat/projects/bream/evidence/rust-green-history/runs/20261009-green-02/inputs/modern.rs",
+        "-o",
+        "/home/bat/projects/bream/.tools/rust-green-history/runs/20261009-green-02/modern-optimized"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "expected_rejection_code": null,
+      "stdout": "evidence/rust-green-history/runs/20261009-green-02/modern-optimized-compile.stdout",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr": "evidence/rust-green-history/runs/20261009-green-02/modern-optimized-compile.stderr",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matched_expectation": true
+    },
+    {
+      "name": "modern-optimized-owned_cancel",
+      "argv": [
+        "/home/bat/projects/bream/.tools/rust-green-history/runs/20261009-green-02/modern-optimized",
+        "owned_cancel"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 30,
+      "expected_rejection_code": null,
+      "stdout": "evidence/rust-green-history/runs/20261009-green-02/modern-optimized-owned_cancel.stdout",
+      "stdout_sha256": "753199e5bd1bec60a9cdf43d123b40dd2498ece84d8a4b12afc7a2a80bd1ebdb",
+      "stderr": "evidence/rust-green-history/runs/20261009-green-02/modern-optimized-owned_cancel.stderr",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matched_expectation": true
+    },
+    {
+      "name": "modern-optimized-owned_complete",
+      "argv": [
+        "/home/bat/projects/bream/.tools/rust-green-history/runs/20261009-green-02/modern-optimized",
+        "owned_complete"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 30,
+      "expected_rejection_code": null,
+      "stdout": "evidence/rust-green-history/runs/20261009-green-02/modern-optimized-owned_complete.stdout",
+      "stdout_sha256": "11f01440f3d439eb69d62ea0ae7d7b4fb7cbe21b6217a04ff3b9c7a7950a7107",
+      "stderr": "evidence/rust-green-history/runs/20261009-green-02/modern-optimized-owned_complete.stderr",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matched_expectation": true
+    },
+    {
+      "name": "modern-optimized-reused_identity",
+      "argv": [
+        "/home/bat/projects/bream/.tools/rust-green-history/runs/20261009-green-02/modern-optimized",
+        "reused_identity"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 30,
+      "expected_rejection_code": null,
+      "stdout": "evidence/rust-green-history/runs/20261009-green-02/modern-optimized-reused_identity.stdout",
+      "stdout_sha256": "0be85e75f304f848397f52351a8f1db1057335e2e4a1122dfeb44f4e533098be",
+      "stderr": "evidence/rust-green-history/runs/20261009-green-02/modern-optimized-reused_identity.stderr",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matched_expectation": true
+    },
+    {
+      "name": "modern-optimized-wake_registration",
+      "argv": [
+        "/home/bat/projects/bream/.tools/rust-green-history/runs/20261009-green-02/modern-optimized",
+        "wake_registration"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "watchdog_seconds": 30,
+      "expected_rejection_code": null,
+      "stdout": "evidence/rust-green-history/runs/20261009-green-02/modern-optimized-wake_registration.stdout",
+      "stdout_sha256": "21fa801a961c4a98f633776b6eaadc5deab16eb8610bc897aa2d2ac668ed4b12",
+      "stderr": "evidence/rust-green-history/runs/20261009-green-02/modern-optimized-wake_registration.stderr",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matched_expectation": true
+    },
+    {
+      "name": "optimized-reject_borrowed_drop",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/rustc",
+        "--edition=2024",
+        "-C",
+        "opt-level=3",
+        "/home/bat/projects/bream/evidence/rust-green-history/runs/20261009-green-02/inputs/reject_borrowed_drop.rs",
+        "-o",
+        "/home/bat/projects/bream/.tools/rust-green-history/runs/20261009-green-02/optimized-reject_borrowed_drop"
+      ],
+      "exit_code": 1,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "expected_rejection_code": "E0505",
+      "stdout": "evidence/rust-green-history/runs/20261009-green-02/optimized-reject_borrowed_drop.stdout",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr": "evidence/rust-green-history/runs/20261009-green-02/optimized-reject_borrowed_drop.stderr",
+      "stderr_sha256": "3a307dc3474be44a4de6b3ec2e69cd3a951436609bff6d53c46e84ab95aa7a08",
+      "matched_expectation": true
+    },
+    {
+      "name": "optimized-reject_registration_reuse",
+      "argv": [
+        "/home/bat/projects/rust-actor-runtime-lab/.tools/rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/rustc",
+        "--edition=2024",
+        "-C",
+        "opt-level=3",
+        "/home/bat/projects/bream/evidence/rust-green-history/runs/20261009-green-02/inputs/reject_registration_reuse.rs",
+        "-o",
+        "/home/bat/projects/bream/.tools/rust-green-history/runs/20261009-green-02/optimized-reject_registration_reuse"
+      ],
+      "exit_code": 1,
+      "timed_out": false,
+      "watchdog_seconds": 60,
+      "expected_rejection_code": "E0382",
+      "stdout": "evidence/rust-green-history/runs/20261009-green-02/optimized-reject_registration_reuse.stdout",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr": "evidence/rust-green-history/runs/20261009-green-02/optimized-reject_registration_reuse.stderr",
+      "stderr_sha256": "3e09130989796220e168003a2f622ef1b035957243fd009ea091d9aa6149b32e",
+      "matched_expectation": true
+    }
+  ],
+  "observations": [
+    {
+      "baseline": "historical",
+      "profile": "unoptimized",
+      "case": "no_yield_gate",
+      "expected": {
+        "case": "no_yield_gate",
+        "peer_saw_finished_phase": true
+      },
+      "actual": {
+        "case": "no_yield_gate",
+        "peer_saw_finished_phase": true
+      },
+      "matches": true,
+      "binary": ".tools/rust-green-history/runs/20261009-green-02/historical-unoptimized",
+      "binary_sha256": "d30e5d3d66ce2bb28c951ed133b55118d629e1fa4a1d9e6e26ab93ccbab7fff5"
+    },
+    {
+      "baseline": "historical",
+      "profile": "unoptimized",
+      "case": "cooperative_yield",
+      "expected": {
+        "case": "cooperative_yield",
+        "peer_saw_active_phase": true,
+        "stack_preserved": true
+      },
+      "actual": {
+        "case": "cooperative_yield",
+        "peer_saw_active_phase": true,
+        "stack_preserved": true
+      },
+      "matches": true,
+      "binary": ".tools/rust-green-history/runs/20261009-green-02/historical-unoptimized",
+      "binary_sha256": "d30e5d3d66ce2bb28c951ed133b55118d629e1fa4a1d9e6e26ab93ccbab7fff5"
+    },
+    {
+      "baseline": "historical",
+      "profile": "unoptimized",
+      "case": "channel_and_task_local",
+      "expected": {
+        "case": "channel_and_task_local",
+        "child_ran": true,
+        "locals_isolated": true
+      },
+      "actual": {
+        "case": "channel_and_task_local",
+        "child_ran": true,
+        "locals_isolated": true
+      },
+      "matches": true,
+      "binary": ".tools/rust-green-history/runs/20261009-green-02/historical-unoptimized",
+      "binary_sha256": "d30e5d3d66ce2bb28c951ed133b55118d629e1fa4a1d9e6e26ab93ccbab7fff5"
+    },
+    {
+      "baseline": "historical",
+      "profile": "unoptimized",
+      "case": "panic_cleanup",
+      "expected": {
+        "case": "panic_cleanup",
+        "drops": 1,
+        "peer_reply": 17
+      },
+      "actual": {
+        "case": "panic_cleanup",
+        "drops": 1,
+        "peer_reply": 17
+      },
+      "matches": true,
+      "binary": ".tools/rust-green-history/runs/20261009-green-02/historical-unoptimized",
+      "binary_sha256": "d30e5d3d66ce2bb28c951ed133b55118d629e1fa4a1d9e6e26ab93ccbab7fff5"
+    },
+    {
+      "baseline": "modern",
+      "profile": "unoptimized",
+      "case": "owned_cancel",
+      "expected": {
+        "case": "owned_cancel",
+        "actor_drops": 1,
+        "buffer_retained_after_stop": true,
+        "peer_before_completion": 17,
+        "buffer_drops": 1
+      },
+      "actual": {
+        "case": "owned_cancel",
+        "actor_drops": 1,
+        "buffer_retained_after_stop": true,
+        "peer_before_completion": 17,
+        "buffer_drops": 1
+      },
+      "matches": true,
+      "binary": ".tools/rust-green-history/runs/20261009-green-02/modern-unoptimized",
+      "binary_sha256": "5cdb91b0828f627d5603f113b76a30d32a41cbd1ffd6f711bafc936813a6fb8b"
+    },
+    {
+      "baseline": "modern",
+      "profile": "unoptimized",
+      "case": "owned_complete",
+      "expected": {
+        "case": "owned_complete",
+        "value": 7,
+        "actor_drops": 1,
+        "buffer_drops": 1
+      },
+      "actual": {
+        "case": "owned_complete",
+        "value": 7,
+        "actor_drops": 1,
+        "buffer_drops": 1
+      },
+      "matches": true,
+      "binary": ".tools/rust-green-history/runs/20261009-green-02/modern-unoptimized",
+      "binary_sha256": "5cdb91b0828f627d5603f113b76a30d32a41cbd1ffd6f711bafc936813a6fb8b"
+    },
+    {
+      "baseline": "modern",
+      "profile": "unoptimized",
+      "case": "reused_identity",
+      "expected": {
+        "case": "reused_identity",
+        "stale_rejected": true,
+        "replacement_value": 99,
+        "buffer_drops": 1
+      },
+      "actual": {
+        "case": "reused_identity",
+        "stale_rejected": true,
+        "replacement_value": 99,
+        "buffer_drops": 1
+      },
+      "matches": true,
+      "binary": ".tools/rust-green-history/runs/20261009-green-02/modern-unoptimized",
+      "binary_sha256": "5cdb91b0828f627d5603f113b76a30d32a41cbd1ffd6f711bafc936813a6fb8b"
+    },
+    {
+      "baseline": "modern",
+      "profile": "unoptimized",
+      "case": "wake_registration",
+      "expected": {
+        "case": "wake_registration",
+        "schedules": 3,
+        "naive_violations": 1,
+        "barrier_violations": 0,
+        "consuming_registration": true
+      },
+      "actual": {
+        "case": "wake_registration",
+        "schedules": 3,
+        "naive_violations": 1,
+        "barrier_violations": 0,
+        "consuming_registration": true
+      },
+      "matches": true,
+      "binary": ".tools/rust-green-history/runs/20261009-green-02/modern-unoptimized",
+      "binary_sha256": "5cdb91b0828f627d5603f113b76a30d32a41cbd1ffd6f711bafc936813a6fb8b"
+    },
+    {
+      "baseline": "compile-rejection",
+      "profile": "unoptimized",
+      "case": "reject_borrowed_drop.rs",
+      "expected_code": "E0505",
+      "matches": true
+    },
+    {
+      "baseline": "compile-rejection",
+      "profile": "unoptimized",
+      "case": "reject_registration_reuse.rs",
+      "expected_code": "E0382",
+      "matches": true
+    },
+    {
+      "baseline": "historical",
+      "profile": "optimized",
+      "case": "no_yield_gate",
+      "expected": {
+        "case": "no_yield_gate",
+        "peer_saw_finished_phase": true
+      },
+      "actual": {
+        "case": "no_yield_gate",
+        "peer_saw_finished_phase": true
+      },
+      "matches": true,
+      "binary": ".tools/rust-green-history/runs/20261009-green-02/historical-optimized",
+      "binary_sha256": "24fbef9f1bac76f38fcd834ed4d52cfd79aecdb240518f3afbbfbcfe9817b013"
+    },
+    {
+      "baseline": "historical",
+      "profile": "optimized",
+      "case": "cooperative_yield",
+      "expected": {
+        "case": "cooperative_yield",
+        "peer_saw_active_phase": true,
+        "stack_preserved": true
+      },
+      "actual": {
+        "case": "cooperative_yield",
+        "peer_saw_active_phase": true,
+        "stack_preserved": true
+      },
+      "matches": true,
+      "binary": ".tools/rust-green-history/runs/20261009-green-02/historical-optimized",
+      "binary_sha256": "24fbef9f1bac76f38fcd834ed4d52cfd79aecdb240518f3afbbfbcfe9817b013"
+    },
+    {
+      "baseline": "historical",
+      "profile": "optimized",
+      "case": "channel_and_task_local",
+      "expected": {
+        "case": "channel_and_task_local",
+        "child_ran": true,
+        "locals_isolated": true
+      },
+      "actual": {
+        "case": "channel_and_task_local",
+        "child_ran": true,
+        "locals_isolated": true
+      },
+      "matches": true,
+      "binary": ".tools/rust-green-history/runs/20261009-green-02/historical-optimized",
+      "binary_sha256": "24fbef9f1bac76f38fcd834ed4d52cfd79aecdb240518f3afbbfbcfe9817b013"
+    },
+    {
+      "baseline": "historical",
+      "profile": "optimized",
+      "case": "panic_cleanup",
+      "expected": {
+        "case": "panic_cleanup",
+        "drops": 1,
+        "peer_reply": 17
+      },
+      "actual": {
+        "case": "panic_cleanup",
+        "drops": 1,
+        "peer_reply": 17
+      },
+      "matches": true,
+      "binary": ".tools/rust-green-history/runs/20261009-green-02/historical-optimized",
+      "binary_sha256": "24fbef9f1bac76f38fcd834ed4d52cfd79aecdb240518f3afbbfbcfe9817b013"
+    },
+    {
+      "baseline": "modern",
+      "profile": "optimized",
+      "case": "owned_cancel",
+      "expected": {
+        "case": "owned_cancel",
+        "actor_drops": 1,
+        "buffer_retained_after_stop": true,
+        "peer_before_completion": 17,
+        "buffer_drops": 1
+      },
+      "actual": {
+        "case": "owned_cancel",
+        "actor_drops": 1,
+        "buffer_retained_after_stop": true,
+        "peer_before_completion": 17,
+        "buffer_drops": 1
+      },
+      "matches": true,
+      "binary": ".tools/rust-green-history/runs/20261009-green-02/modern-optimized",
+      "binary_sha256": "2fb29bbcacd2c8d2f168413c7072af5486ce6a5ac9f4c8276ea488f664c6a5b1"
+    },
+    {
+      "baseline": "modern",
+      "profile": "optimized",
+      "case": "owned_complete",
+      "expected": {
+        "case": "owned_complete",
+        "value": 7,
+        "actor_drops": 1,
+        "buffer_drops": 1
+      },
+      "actual": {
+        "case": "owned_complete",
+        "value": 7,
+        "actor_drops": 1,
+        "buffer_drops": 1
+      },
+      "matches": true,
+      "binary": ".tools/rust-green-history/runs/20261009-green-02/modern-optimized",
+      "binary_sha256": "2fb29bbcacd2c8d2f168413c7072af5486ce6a5ac9f4c8276ea488f664c6a5b1"
+    },
+    {
+      "baseline": "modern",
+      "profile": "optimized",
+      "case": "reused_identity",
+      "expected": {
+        "case": "reused_identity",
+        "stale_rejected": true,
+        "replacement_value": 99,
+        "buffer_drops": 1
+      },
+      "actual": {
+        "case": "reused_identity",
+        "stale_rejected": true,
+        "replacement_value": 99,
+        "buffer_drops": 1
+      },
+      "matches": true,
+      "binary": ".tools/rust-green-history/runs/20261009-green-02/modern-optimized",
+      "binary_sha256": "2fb29bbcacd2c8d2f168413c7072af5486ce6a5ac9f4c8276ea488f664c6a5b1"
+    },
+    {
+      "baseline": "modern",
+      "profile": "optimized",
+      "case": "wake_registration",
+      "expected": {
+        "case": "wake_registration",
+        "schedules": 3,
+        "naive_violations": 1,
+        "barrier_violations": 0,
+        "consuming_registration": true
+      },
+      "actual": {
+        "case": "wake_registration",
+        "schedules": 3,
+        "naive_violations": 1,
+        "barrier_violations": 0,
+        "consuming_registration": true
+      },
+      "matches": true,
+      "binary": ".tools/rust-green-history/runs/20261009-green-02/modern-optimized",
+      "binary_sha256": "2fb29bbcacd2c8d2f168413c7072af5486ce6a5ac9f4c8276ea488f664c6a5b1"
+    },
+    {
+      "baseline": "compile-rejection",
+      "profile": "optimized",
+      "case": "reject_borrowed_drop.rs",
+      "expected_code": "E0505",
+      "matches": true
+    },
+    {
+      "baseline": "compile-rejection",
+      "profile": "optimized",
+      "case": "reject_registration_reuse.rs",
+      "expected_code": "E0382",
+      "matches": true
+    }
+  ],
+  "all_expected_observations": true,
+  "limits": [
+    "Historical execution is Rust 0.12 at ba4081a5a, not the earlier 2013 linked-failure runtime.",
+    "The historical no-yield gate has an external releaser; it does not run an intentionally endless task.",
+    "The modern owned-operation driver is a safe, channel-gated stand-in; no native I/O cancellation or FFI is exercised.",
+    "Modern peer progress is a separate application step in the probe, not an integration result from the Bream scheduler.",
+    "Registration enumeration covers three abstract event orders, not all memory-model interleavings.",
+    "No arbitrary-PC interruption, stack abandonment, forced thread kill, or production-runtime modification.",
+    "Watchdog deadlines detect hangs only; no durations, throughput, latency, or rankings are recorded."
+  ],
+  "archive_checksum_verified": true,
+  "historical_artifacts": [
+    {
+      "path": ".tools/rust-green-history/rust-0.12.0-x86_64-unknown-linux-gnu/bin/rustc",
+      "sha256": "aae681a9e8fd0baca4906b6dc902c9a77e7038ca3515d90f73e5e7a9e3f53acb"
+    },
+    {
+      "path": ".tools/rust-green-history/rust-0.12.0-x86_64-unknown-linux-gnu/lib/libarena-4e7c5e5c.so",
+      "sha256": "0bff2611fde586b4859611aa6c5b971102e4eda3f608900994a77c3ece519194"
+    },
+    {
+      "path": ".tools/rust-green-history/rust-0.12.0-x86_64-unknown-linux-gnu/lib/libdebug-4e7c5e5c.so",
+      "sha256": "89e1d486709cd0a2877e0af9eb7235a8ea29ec8f9ee544073104fa2d2dd5000a"
+    },
+    {
+      "path": ".tools/rust-green-history/rust-0.12.0-x86_64-unknown-linux-gnu/lib/libflate-4e7c5e5c.so",
+      "sha256": "517667d51fb4a311715c93c99c2ae1e2d2cf99668e116daf3ba5203b765e0d85"
+    },
+    {
+      "path": ".tools/rust-green-history/rust-0.12.0-x86_64-unknown-linux-gnu/lib/libfmt_macros-4e7c5e5c.so",
+      "sha256": "29c91c66cbdcfbc0758f01c869ba410a413ac58d80436dcdb02d4e7819bd6fa9"
+    },
+    {
+      "path": ".tools/rust-green-history/rust-0.12.0-x86_64-unknown-linux-gnu/lib/libgetopts-4e7c5e5c.so",
+      "sha256": "ba5f5d3b8949d2f7f2fd12be642cd3645e622622c44ffbcb4ffd8856820d7c8a"
+    },
+    {
+      "path": ".tools/rust-green-history/rust-0.12.0-x86_64-unknown-linux-gnu/lib/libgraphviz-4e7c5e5c.so",
+      "sha256": "482259bb01356af786bcb8da11c07225a47579ba94285bba79415a5c19882ca1"
+    },
+    {
+      "path": ".tools/rust-green-history/rust-0.12.0-x86_64-unknown-linux-gnu/lib/liblog-4e7c5e5c.so",
+      "sha256": "30a9252ed07ce808b07e0983c2b6dd2eda929c17fa823c842859ae08c6f2e1ec"
+    },
+    {
+      "path": ".tools/rust-green-history/rust-0.12.0-x86_64-unknown-linux-gnu/lib/libnative-4e7c5e5c.so",
+      "sha256": "b722346e96fcd33fd448f2a528148919cdfa7a246758ffc69a12ff2ea1f7d287"
+    },
+    {
+      "path": ".tools/rust-green-history/rust-0.12.0-x86_64-unknown-linux-gnu/lib/librbml-4e7c5e5c.so",
+      "sha256": "fc51d2ae957b03488d1d07ca6d279bfeb62dfd4c2be708f9d0b894cb009e4c61"
+    },
+    {
+      "path": ".tools/rust-green-history/rust-0.12.0-x86_64-unknown-linux-gnu/lib/libregex-4e7c5e5c.so",
+      "sha256": "ff914d202ff1ee8241fad2c9f5d68bb925bb08d9bac0e05cb743de7cc42dd830"
+    },
+    {
+      "path": ".tools/rust-green-history/rust-0.12.0-x86_64-unknown-linux-gnu/lib/librustc-4e7c5e5c.so",
+      "sha256": "acc1f785b5b2d8bee6786c7e865103810b1b2d840968ce435b1fa7ef6bd5c2df"
+    },
+    {
+      "path": ".tools/rust-green-history/rust-0.12.0-x86_64-unknown-linux-gnu/lib/librustc_back-4e7c5e5c.so",
+      "sha256": "1e4a448055c7d05e3767f75412daaa04f7a821456fe8b58e183ce73b09847460"
+    },
+    {
+      "path": ".tools/rust-green-history/rust-0.12.0-x86_64-unknown-linux-gnu/lib/librustc_llvm-4e7c5e5c.so",
+      "sha256": "2a2e015f967853687c17cf16bfd406186c7b60fd324f410b37ea105a6b0daa82"
+    },
+    {
+      "path": ".tools/rust-green-history/rust-0.12.0-x86_64-unknown-linux-gnu/lib/librustdoc-4e7c5e5c.so",
+      "sha256": "ee77994dd883b1b9fbfb9cdf50537eb545e692e040c5da2c5a6c47fbdf848ebb"
+    },
+    {
+      "path": ".tools/rust-green-history/rust-0.12.0-x86_64-unknown-linux-gnu/lib/librustrt-4e7c5e5c.so",
+      "sha256": "8e9028da139e0fc9e606975bada2b32820dd572f651417ee6b27f577e5bb2705"
+    },
+    {
+      "path": ".tools/rust-green-history/rust-0.12.0-x86_64-unknown-linux-gnu/lib/libserialize-4e7c5e5c.so",
+      "sha256": "1cd036578b61a25c0eb14891fb4c97727627b14c50d439f672fb05f46c376c9d"
+    },
+    {
+      "path": ".tools/rust-green-history/rust-0.12.0-x86_64-unknown-linux-gnu/lib/libstd-4e7c5e5c.so",
+      "sha256": "9f7a67bc30616e8af0ab0e5fbb3171f0583bc1abd43d61362556ec53a3b39769"
+    },
+    {
+      "path": ".tools/rust-green-history/rust-0.12.0-x86_64-unknown-linux-gnu/lib/libsync-4e7c5e5c.so",
+      "sha256": "2f338f0807b2e0c573f09a8fddc1bd9f0f8fdcdff969ae45d750b1751d31c47a"
+    },
+    {
+      "path": ".tools/rust-green-history/rust-0.12.0-x86_64-unknown-linux-gnu/lib/libsyntax-4e7c5e5c.so",
+      "sha256": "a35976025ced5312e7070fcfd72a67a382340a4fc38068955d53f61d5928a822"
+    },
+    {
+      "path": ".tools/rust-green-history/rust-0.12.0-x86_64-unknown-linux-gnu/lib/libterm-4e7c5e5c.so",
+      "sha256": "4778372896e10a4ecedb436c9cdd4bab4f976d02492dafb8bc732a87b63481f0"
+    },
+    {
+      "path": ".tools/rust-green-history/rust-0.12.0-x86_64-unknown-linux-gnu/lib/libtest-4e7c5e5c.so",
+      "sha256": "e54ea4e2eacb766c486b9c9257ce1d150be19adbe65d80d25de18316a56d49d0"
+    },
+    {
+      "path": ".tools/rust-green-history/rust-0.12.0-x86_64-unknown-linux-gnu/lib/libtime-4e7c5e5c.so",
+      "sha256": "f0b15472a2fd55dd2dfd206fd14b442db8d2e51ce2bdc04cae3b64c6b5003952"
+    },
+    {
+      "path": ".tools/rust-green-history/rust-0.12.0-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/liballoc-4e7c5e5c.rlib",
+      "sha256": "e32bffc6936b310ea2e95fd96af4bf5211d53dd27c7b6b1946bd4ef350bacd3f"
+    },
+    {
+      "path": ".tools/rust-green-history/rust-0.12.0-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libarena-4e7c5e5c.rlib",
+      "sha256": "e4d9927f82fb8246273ef71eb463e0af0bdaec55d04a0c9069e35b3d93c0525f"
+    },
+    {
+      "path": ".tools/rust-green-history/rust-0.12.0-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libcollections-4e7c5e5c.rlib",
+      "sha256": "59bde3a8cc48ec6dfcf2b4711fc2f1c3263a84a7c81ebda5cc36e50163736b5b"
+    },
+    {
+      "path": ".tools/rust-green-history/rust-0.12.0-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libcore-4e7c5e5c.rlib",
+      "sha256": "df61b38200f07188447e531e9218506de2b9d6d1b494e6a2c3f4e09bc08d88d0"
+    },
+    {
+      "path": ".tools/rust-green-history/rust-0.12.0-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libdebug-4e7c5e5c.rlib",
+      "sha256": "42c3160c1526153ca175c2530aee38bbf83f52b27082f2f87bbdc3db60f5d8e8"
+    },
+    {
+      "path": ".tools/rust-green-history/rust-0.12.0-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libflate-4e7c5e5c.rlib",
+      "sha256": "080e5af12d9f15d4105a2bf59b7d6484da6fac9920d1e3110cfe98e18c33d72c"
+    },
+    {
+      "path": ".tools/rust-green-history/rust-0.12.0-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libgetopts-4e7c5e5c.rlib",
+      "sha256": "0fe7443ccfdda945c356b0d1a1298abe48e7d630c4cedcc87f87f08193a9aa49"
+    },
+    {
+      "path": ".tools/rust-green-history/rust-0.12.0-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libglob-4e7c5e5c.rlib",
+      "sha256": "8de0647baec4172364fa39f104796b3eadea1562a80c8971f8b3c726d9fbe6c2"
+    },
+    {
+      "path": ".tools/rust-green-history/rust-0.12.0-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libgraphviz-4e7c5e5c.rlib",
+      "sha256": "8e6c9d79f8c24b6b85c4daec0cba7a1c4069c580e32651ba6cfde93536aaddab"
+    },
+    {
+      "path": ".tools/rust-green-history/rust-0.12.0-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libgreen-4e7c5e5c.rlib",
+      "sha256": "8d7d27ab6a6461afeb566b9c5f3f61b7d1a163b268deefd64a18f84bf8fc4d2d"
+    },
+    {
+      "path": ".tools/rust-green-history/rust-0.12.0-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/liblibc-4e7c5e5c.rlib",
+      "sha256": "47d9d1b0356a317b9b4d0652a12b316bd303e2e48329ce5c7525de496d10ee68"
+    },
+    {
+      "path": ".tools/rust-green-history/rust-0.12.0-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/liblog-4e7c5e5c.rlib",
+      "sha256": "a658153b586a14d3a61aa2a17f20b7d416b5a2b8f9eea4df7c844e34803ae0b5"
+    },
+    {
+      "path": ".tools/rust-green-history/rust-0.12.0-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libnative-4e7c5e5c.rlib",
+      "sha256": "99a2da5233af050987eebd3dfc317aa0d7b341811b17ebd58f18e7955662f3e3"
+    },
+    {
+      "path": ".tools/rust-green-history/rust-0.12.0-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libnum-4e7c5e5c.rlib",
+      "sha256": "a771ea7b372868f7cca5c4fe99093726edfd8eb19b6af41f8f2ee8508ed44633"
+    },
+    {
+      "path": ".tools/rust-green-history/rust-0.12.0-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/librand-4e7c5e5c.rlib",
+      "sha256": "0d47512504ca64eaed2468cc0963c96929a0588e43e5b7bc34acc0ebcd56f5fd"
+    },
+    {
+      "path": ".tools/rust-green-history/rust-0.12.0-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/librbml-4e7c5e5c.rlib",
+      "sha256": "dda0ae17a391521ce3223145a850d6f3eb13126dabdba741b52964206661c4c7"
+    },
+    {
+      "path": ".tools/rust-green-history/rust-0.12.0-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libregex-4e7c5e5c.rlib",
+      "sha256": "c396a8552883882ff499bd1c0619409640a86cbdaea8365e5ae6727bd061d875"
+    },
+    {
+      "path": ".tools/rust-green-history/rust-0.12.0-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/librlibc-4e7c5e5c.rlib",
+      "sha256": "947b7e7ecdb8bdea1dc2c1ead869fe1f9afbba5fbe051f5b0384b17bc093ba0c"
+    },
+    {
+      "path": ".tools/rust-green-history/rust-0.12.0-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/librustrt-4e7c5e5c.rlib",
+      "sha256": "a615321e23c0c9ed93f790094548f8d715e18536e0caab43caee5380044ea3c1"
+    },
+    {
+      "path": ".tools/rust-green-history/rust-0.12.0-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libsemver-4e7c5e5c.rlib",
+      "sha256": "f18ca111c956f0e805896e67cd2a93457321a0c1e1f250700b87506616e209e2"
+    },
+    {
+      "path": ".tools/rust-green-history/rust-0.12.0-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libserialize-4e7c5e5c.rlib",
+      "sha256": "495014457ad94861abe946bb2a1dbf2f88b593bba3201775520412b77afb4c86"
+    },
+    {
+      "path": ".tools/rust-green-history/rust-0.12.0-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libstd-4e7c5e5c.rlib",
+      "sha256": "784d9ceb08e3ec7dab416768737db790f21dec3e7791940a7c68af836731b2a9"
+    },
+    {
+      "path": ".tools/rust-green-history/rust-0.12.0-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libsync-4e7c5e5c.rlib",
+      "sha256": "4486ad356948f83712fb1f7ddc84d3f8f8eba41c47f885508c539a3dfdc99957"
+    },
+    {
+      "path": ".tools/rust-green-history/rust-0.12.0-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libterm-4e7c5e5c.rlib",
+      "sha256": "f837877c8ec91cfdbf5982cd8a2bfe496ef50937be0170113e333d170f300a5b"
+    },
+    {
+      "path": ".tools/rust-green-history/rust-0.12.0-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libtest-4e7c5e5c.rlib",
+      "sha256": "14dd03af0fe7cdbd61712f7ce8aeddba80db6f8e68a84affd7456b85c0513a05"
+    },
+    {
+      "path": ".tools/rust-green-history/rust-0.12.0-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libtime-4e7c5e5c.rlib",
+      "sha256": "d3d783dc8ccb675a2cc45a786648894fdf8c786c0a2423172c2fcf3f8fdc2b58"
+    },
+    {
+      "path": ".tools/rust-green-history/rust-0.12.0-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libunicode-4e7c5e5c.rlib",
+      "sha256": "13570a86ed915147647f3616e4d56bc3dde46f34ac2bc96c14728879245d4bf8"
+    },
+    {
+      "path": ".tools/rust-green-history/rust-0.12.0-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/liburl-4e7c5e5c.rlib",
+      "sha256": "b491bdf6d477810af44e47a0ebe3a80843d637b3db743189a2deae61d1d8511d"
+    },
+    {
+      "path": ".tools/rust-green-history/rust-0.12.0-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libuuid-4e7c5e5c.rlib",
+      "sha256": "bedd92829afd34fb2e042b217d4b37f12571e2bda9a62cf9c62167b549eb3289"
+    }
+  ]
+}

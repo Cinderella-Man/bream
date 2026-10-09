@@ -1,0 +1,8 @@
+   Compiling bream-read-consumer v0.0.0 (/home/bat/projects/bream/experiments/owned-read/consumer)
+error: bream structured subset: unknown record
+ --> consumer/examples/reject_shared_message_constructor.rs:5:23
+  |
+5 |         let message = SharedMessage {
+  |                       ^^^^^^^^^^^^^
+
+error: could not compile `bream-read-consumer` (example "reject_shared_message_constructor") due to 1 previous error

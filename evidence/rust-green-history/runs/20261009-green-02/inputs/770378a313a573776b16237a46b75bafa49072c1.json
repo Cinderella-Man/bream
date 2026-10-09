@@ -1,0 +1,267 @@
+{
+  "revision": "770378a313a573776b16237a46b75bafa49072c1",
+  "archive_url": "https://codeload.github.com/rust-lang/rust/tar.gz/770378a313a573776b16237a46b75bafa49072c1",
+  "archive_sha256": "1e51b9fc95bc2571774cbbcad6a7ece3fe32dbbba17c3e185927fcf3d7beca4c",
+  "files": [
+    {
+      "path": "LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+    },
+    {
+      "path": "LICENSE-MIT",
+      "sha256": "6485b8ed310d3f0340bf1ad1f47645069ce4069dcc6bb46c7d5c6faf41de1fdb"
+    },
+    {
+      "path": "src/doc/guide-tasks.md",
+      "sha256": "b20086c4796f2476e3318f1fc3e721b3a9e3bb658dedae3ba42acad511ef9661"
+    },
+    {
+      "path": "src/libgreen/basic.rs",
+      "sha256": "d6abbee89fc2efdde23467e2cd01d5d667dd61bd77c0c8c1125c29a106536312"
+    },
+    {
+      "path": "src/libgreen/context.rs",
+      "sha256": "1394f6f0d7bee23a79a15164b17007ba188d818d7ff38808c0f2a0a27c75b715"
+    },
+    {
+      "path": "src/libgreen/coroutine.rs",
+      "sha256": "f6fbce1509c7bebcc3420bc4912e7187511690cbcd5313207cd297e21c3e9fb2"
+    },
+    {
+      "path": "src/libgreen/lib.rs",
+      "sha256": "4ef65a2866fe34e4a1e5ad2334252e0a8d46a846d9352f33e0a233fba6d1fa9c"
+    },
+    {
+      "path": "src/libgreen/macros.rs",
+      "sha256": "2a1d852ecfe1979889775198945c80e8cf1e56296214bbe60f853b9feec49727"
+    },
+    {
+      "path": "src/libgreen/message_queue.rs",
+      "sha256": "8511a49dd9f98ec6033bdfeba5ed6871779962ca92d10d5f2ac2a93c3d2de0d8"
+    },
+    {
+      "path": "src/libgreen/sched.rs",
+      "sha256": "9ec1c00eeaed662442097576e2d675d2bcef981322bf481f272f8de579b0fcca"
+    },
+    {
+      "path": "src/libgreen/simple.rs",
+      "sha256": "2d6a38cb42d16b2edb4500f1afbdbddd5fd5f2e06cbe8f2410fa2ebaa1ac5d3f"
+    },
+    {
+      "path": "src/libgreen/sleeper_list.rs",
+      "sha256": "5daf4c412dd697da932051c887209da7bbbc023afcd62b839db3cfcb465fffe4"
+    },
+    {
+      "path": "src/libgreen/stack.rs",
+      "sha256": "3911ae51ce6d1dae81989c4f3261baa16d67c70f1e7a921abfab404e6db28e4b"
+    },
+    {
+      "path": "src/libgreen/task.rs",
+      "sha256": "8a1821d05c767660258422b6e453cf6936cbc93ae3544efbe3c9cf219113610f"
+    },
+    {
+      "path": "src/libnative/io/addrinfo.rs",
+      "sha256": "5c7f8ae1fb0765f80161363ed62461f99e25d10ec646daf012f48961582c5b54"
+    },
+    {
+      "path": "src/libnative/io/process.rs",
+      "sha256": "cb9fa8473c3ad471f58c10a91cfd945aa08f42d416695514ed2dd243bebed137"
+    },
+    {
+      "path": "src/libnative/lib.rs",
+      "sha256": "5a3d0ec0e7763c288bb32025bb83034f180844af675302ad8a2245996174351d"
+    },
+    {
+      "path": "src/libnative/task.rs",
+      "sha256": "0d741323602ee8365e16076e382c61219d5e6f2a1c0b388965ba77d54c46fef5"
+    },
+    {
+      "path": "src/librustrt/args.rs",
+      "sha256": "c105770ec7a82dd7868ae7a19ca8c833d9025435a83fc04ea3bd3eb9a175a55a"
+    },
+    {
+      "path": "src/librustrt/at_exit_imp.rs",
+      "sha256": "b411a43e33ac5d3f7fc734e8dd3a4862f80e351329770d7e5f834b17ca05b201"
+    },
+    {
+      "path": "src/librustrt/bookkeeping.rs",
+      "sha256": "b075d7cebceb678b80873360a49e6bc0b79c90e797b121671478298c4647bba6"
+    },
+    {
+      "path": "src/librustrt/c_str.rs",
+      "sha256": "57e2d0fa653b5f39e88ecc61c710c16789336ea5849b76d4232805b8ac2d19c1"
+    },
+    {
+      "path": "src/librustrt/exclusive.rs",
+      "sha256": "c09acadbd989121466f8c0ac3d56c6543e5f2ce573a71c2fc01a82f6f98fd3c1"
+    },
+    {
+      "path": "src/librustrt/lib.rs",
+      "sha256": "201e168f2b0c7936de45a72314e4dec832b266f5527235248ef430a594b11a1a"
+    },
+    {
+      "path": "src/librustrt/libunwind.rs",
+      "sha256": "38626e5c02b030a745ad1906ebb0e35814092bb11356234353af1012179d0636"
+    },
+    {
+      "path": "src/librustrt/local.rs",
+      "sha256": "beb911376d4430d5eba71228e5b11115e2aed5fd9f0ee6adcfcba047859577ba"
+    },
+    {
+      "path": "src/librustrt/local_data.rs",
+      "sha256": "b45e6881afdbff9bea77c2c9df9e7e9dd05e7b812dce2cba0a4d33f9e1aed4dd"
+    },
+    {
+      "path": "src/librustrt/local_ptr.rs",
+      "sha256": "26187526128e28df7ce8cd9fc9e1ec5a26ab3b43325386b81c9c3e69f3d88c89"
+    },
+    {
+      "path": "src/librustrt/macros.rs",
+      "sha256": "d6c3310afddca8129e2d3f96b4a777578a961659ca98f0bde9f3801783352c7b"
+    },
+    {
+      "path": "src/librustrt/mutex.rs",
+      "sha256": "d83ea789aefe30c19f55ee4ac324a42825eff02c3863d67ddbe0141df2bb3c50"
+    },
+    {
+      "path": "src/librustrt/rtio.rs",
+      "sha256": "f8497a62a3b9d136363b693b816f09e1b13f9e03935b4c6cfca88b13fb5af84d"
+    },
+    {
+      "path": "src/librustrt/stack.rs",
+      "sha256": "a46cd6c64b12c2662838be0547178a08d8d6ad330a6d6f404468f577a25f8e8a"
+    },
+    {
+      "path": "src/librustrt/stack_overflow.rs",
+      "sha256": "6121517bd32b92961ac002b34100a029db3b92b9d3f4a722dd04d04c9e36f57c"
+    },
+    {
+      "path": "src/librustrt/task.rs",
+      "sha256": "8905132f6d23bb6878df0e6160abb1649d6404b27674a6a8bf9f76ffbfce776e"
+    },
+    {
+      "path": "src/librustrt/thread.rs",
+      "sha256": "e21660d359280e168e4ed99da53d7c6b03f883f1094c4bda3a87434b0e680b2a"
+    },
+    {
+      "path": "src/librustrt/thread_local_storage.rs",
+      "sha256": "6db0d2287bed682c1a76e69b7efabfcd25266e27a8a52d1cdb8900d98f224a43"
+    },
+    {
+      "path": "src/librustrt/unwind.rs",
+      "sha256": "ad2f30cd5a6a194154cfc35143834ee14094bdc4793e212e66b97824c9e5aa09"
+    },
+    {
+      "path": "src/librustrt/util.rs",
+      "sha256": "1e071a7478993bd1f7ed1833b893a134281c96aee9d38b81eac965cc2793b2a0"
+    },
+    {
+      "path": "src/libstd/io/buffered.rs",
+      "sha256": "24fc3d1b1ae84bae1d4f9dcd1a86b431c3d5001a85be59daf4e35b2ccd8b7cce"
+    },
+    {
+      "path": "src/libstd/io/comm_adapters.rs",
+      "sha256": "d026c677431ebb8e6862a6b845dbf995c3b2bf09187f0dbea1d2f7b7d7e0f19c"
+    },
+    {
+      "path": "src/libstd/io/extensions.rs",
+      "sha256": "2f34b4c1ba561a7f521f92dde667f503ce373da79dc4746839cd165294dd38b3"
+    },
+    {
+      "path": "src/libstd/io/fs.rs",
+      "sha256": "f0fe7ea6a5a5a30399dd0dd5742caca56b4fce3807da097a79494594e99c94e5"
+    },
+    {
+      "path": "src/libstd/io/mem.rs",
+      "sha256": "fd51341baa8a15709f067b22e923588582dfe361fabeeb13fe225c526b50e791"
+    },
+    {
+      "path": "src/libstd/io/mod.rs",
+      "sha256": "22ba29f0245cda3667495a6dee4b8f3631af4ea326a7dff2224f7e6429802b35"
+    },
+    {
+      "path": "src/libstd/io/net/addrinfo.rs",
+      "sha256": "26278335936daee70a5d62dbaa507d207d91cd88a81d5806b4ae62e53a30f67e"
+    },
+    {
+      "path": "src/libstd/io/net/ip.rs",
+      "sha256": "6eb90111e5ed65b1dbf5116df457c821b6212772da30587666c5cd105b038756"
+    },
+    {
+      "path": "src/libstd/io/net/mod.rs",
+      "sha256": "301c95cbae2cc7888e073673538addd1da4cff39355be5ceb801cfdb198b6dbb"
+    },
+    {
+      "path": "src/libstd/io/net/pipe.rs",
+      "sha256": "e13a40ef147a76b6864d0126a794bbd9cc2bb1058b133e99939a07581a50788b"
+    },
+    {
+      "path": "src/libstd/io/net/tcp.rs",
+      "sha256": "4b144a89272241dd6bd72920877922e58b2a7ef50e4287483bc3d17a2f07ef90"
+    },
+    {
+      "path": "src/libstd/io/net/udp.rs",
+      "sha256": "6214d1453323edca904b528f4c0621547c2c8d7dd29fdbf92ac59c058d1232f6"
+    },
+    {
+      "path": "src/libstd/io/pipe.rs",
+      "sha256": "c63e92f3725af8258a8ef670464a239d922ad34e8c8d48f6f352fbee94b0989c"
+    },
+    {
+      "path": "src/libstd/io/process.rs",
+      "sha256": "d5f8542f027d463934267ead53cf9702631a487eaf99edcbc40c9b325194cad1"
+    },
+    {
+      "path": "src/libstd/io/result.rs",
+      "sha256": "67b92cffde900e8e8621e4ef516edd2f1845d45f33bad1e2ae437be0a5385d81"
+    },
+    {
+      "path": "src/libstd/io/stdio.rs",
+      "sha256": "17059de1752acafee1a82bf9a03bcc78cd2909f517420802e0591892a0e38519"
+    },
+    {
+      "path": "src/libstd/io/tempfile.rs",
+      "sha256": "58c58ec955cf3f345b82e553d9a346a3540ddaa38400ece6a402d8eadd02e5d5"
+    },
+    {
+      "path": "src/libstd/io/test.rs",
+      "sha256": "98b12bb640132c2caede0f8859f6bdbc522c3958108a88e7175bcfffe3e88bc7"
+    },
+    {
+      "path": "src/libstd/io/timer.rs",
+      "sha256": "071a875c133dd5ee65a3b05666b0dad4a774c71d9205332cd23ed440b4ee9a10"
+    },
+    {
+      "path": "src/libstd/io/util.rs",
+      "sha256": "fa009030b431a26267a5f91cfd466371ea3941311bb9267c8a2e5a7a4c256ff4"
+    },
+    {
+      "path": "src/libstd/rt/backtrace.rs",
+      "sha256": "29187f502257b1cad65ccf5594536e41f8efcd82bd41abcba5e01d04a4703e7d"
+    },
+    {
+      "path": "src/libstd/rt/mod.rs",
+      "sha256": "45c7906ec6c2dfe4e0df601d3bbb5b8a1f54b9f5de018de4291b81d9087a5840"
+    },
+    {
+      "path": "src/libstd/rt/util.rs",
+      "sha256": "85baeec04da14b237c6813cda1074123ca3a65ed09b6950d29db2dac8eec9c26"
+    },
+    {
+      "path": "src/libstd/sync/future.rs",
+      "sha256": "8c91e5db20202e6fd820cf00f77b02e4a818174f08b7025f9ae872e5e875f253"
+    },
+    {
+      "path": "src/libstd/sync/mod.rs",
+      "sha256": "bc3f111b2ea5c83d2bd7296c001ef4c3b29e1542e2734817c815f3e36bf89fe7"
+    },
+    {
+      "path": "src/libstd/sync/task_pool.rs",
+      "sha256": "c35c32ab70e8079405e3f3e773ee0becbf0e98cb08644f370093723e5f185192"
+    },
+    {
+      "path": "src/libstd/task.rs",
+      "sha256": "223490c37fd823223de3163045901f321a7637a68d0975c6adaaa22d919cae55"
+    }
+  ]
+}

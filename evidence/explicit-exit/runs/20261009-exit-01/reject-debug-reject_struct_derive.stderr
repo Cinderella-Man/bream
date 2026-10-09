@@ -1,0 +1,8 @@
+   Compiling bream-exit-consumer v0.0.0 (/home/bat/projects/bream/experiments/explicit-exit/consumer)
+error: bream structured subset: data attributes/visibility/generics forbidden
+ --> consumer/examples/reject_struct_derive.rs:4:5
+  |
+4 |     #[derive(Clone)]
+  |     ^
+
+error: could not compile `bream-exit-consumer` (example "reject_struct_derive") due to 1 previous error

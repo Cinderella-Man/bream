@@ -1,0 +1,41 @@
+error[E0597]: `buffer` does not live long enough
+  --> /home/bat/projects/bream/evidence/rust-green-history/runs/20261009-green-02/inputs/reject_borrowed_drop.rs:6:24
+   |
+ 4 |     let buffer = vec![7u8];
+   |         ------ binding `buffer` declared here
+ 5 |     std::thread::scope(|scope| {
+   |                         ----- has type `&'1 Scope<'1, '_>`
+ 6 |         let borrowed = &buffer;
+   |                        ^^^^^^^ borrowed value does not live long enough
+ 7 |         let callback = scope.spawn(move || borrowed[0]);
+   |                        -------------------------------- argument requires that `buffer` is borrowed for `'1`
+...
+10 |     });
+   |     - `buffer` dropped here while still borrowed
+   |
+note: requirement that the value outlives `'1` introduced here
+  --> /rustc/48a229ceaefd4985c50990b14116b6d856af0985/library/std/src/thread/scoped.rs:203:34
+
+error[E0505]: cannot move out of `buffer` because it is borrowed
+ --> /home/bat/projects/bream/evidence/rust-green-history/runs/20261009-green-02/inputs/reject_borrowed_drop.rs:8:14
+  |
+4 |     let buffer = vec![7u8];
+  |         ------ binding `buffer` declared here
+5 |     std::thread::scope(|scope| {
+6 |         let borrowed = &buffer;
+  |                        ------- borrow of `buffer` occurs here
+7 |         let callback = scope.spawn(move || borrowed[0]);
+8 |         drop(buffer);
+  |              ^^^^^^ move out of `buffer` occurs here
+9 |         assert_eq!(callback.join().unwrap(), 7);
+  |                    -------- borrow later used here
+  |
+help: consider cloning the value if the performance cost is acceptable
+  |
+6 |         let borrowed = &buffer.clone();
+  |                               ++++++++
+
+error: aborting due to 2 previous errors
+
+Some errors have detailed explanations: E0505, E0597.
+For more information about an error, try `rustc --explain E0505`.

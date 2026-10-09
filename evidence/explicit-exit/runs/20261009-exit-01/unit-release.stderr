@@ -1,0 +1,3 @@
+   Compiling bream-exit-runtime v0.0.0 (/home/bat/projects/bream/experiments/explicit-exit/runtime)
+    Finished `release` profile [optimized] target(s) in 5.39s
+     Running unittests src/lib.rs (.tools/explicit-exit/20261009-exit-01/release/deps/bream_exit_runtime-cb1687d71cd705f1)
