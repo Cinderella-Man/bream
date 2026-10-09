@@ -1,0 +1,8 @@
+   Compiling bream-stream-consumer v0.0.0 (/home/bat/projects/bream/experiments/persistent-read/consumer)
+error: bream structured subset: unsupported expression or unqualified execution
+ --> consumer/examples/reject_struct_closure.rs:5:24
+  |
+5 |         let callback = || loop {};
+  |                        ^
+
+error: could not compile `bream-stream-consumer` (example "reject_struct_closure") due to 1 previous error

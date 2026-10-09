@@ -1,0 +1,8 @@
+   Compiling bream-stream-consumer v0.0.0 (/home/bat/projects/bream/experiments/persistent-read/consumer)
+error: bream structured subset: link/try_link/unlink requires concrete Pid
+ --> consumer/examples/reject_link_numeric_target.rs:5:9
+  |
+5 |         link(7);
+  |         ^^^^
+
+error: could not compile `bream-stream-consumer` (example "reject_link_numeric_target") due to 1 previous error

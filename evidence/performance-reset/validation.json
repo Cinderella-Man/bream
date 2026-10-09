@@ -9,12 +9,12 @@
     "hashes_verified": 7188,
     "evidence_files": 3003,
     "implementation_inputs": 2548,
-    "subsequent_evidence_files": 10070,
+    "subsequent_evidence_files": 11278,
     "deleted_files_absent": 1504,
-    "json_records_scanned": 156,
-    "raw_json_rows_scanned": 637,
+    "json_records_scanned": 159,
+    "raw_json_rows_scanned": 711,
     "archive_source_files": 149,
-    "documents_checked": 164
+    "documents_checked": 170
   },
   "retained_correctness_cohorts": [
     {

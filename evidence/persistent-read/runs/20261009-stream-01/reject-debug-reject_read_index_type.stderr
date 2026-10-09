@@ -1,0 +1,8 @@
+   Compiling bream-stream-consumer v0.0.0 (/home/bat/projects/bream/experiments/persistent-read/consumer)
+error: bream structured subset: read byte index requires u64
+ --> consumer/examples/reject_read_index_type.rs:7:24
+  |
+7 |                 result(read_byte(bytes, true));
+  |                        ^^^^^^^^^
+
+error: could not compile `bream-stream-consumer` (example "reject_read_index_type") due to 1 previous error

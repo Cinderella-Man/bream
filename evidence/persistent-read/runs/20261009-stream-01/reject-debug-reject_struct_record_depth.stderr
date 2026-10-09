@@ -1,0 +1,8 @@
+   Compiling bream-stream-consumer v0.0.0 (/home/bat/projects/bream/experiments/persistent-read/consumer)
+error: bream structured subset: record depth/leaf bound exceeded
+ --> consumer/examples/reject_struct_record_depth.rs:4:12
+  |
+4 |     struct S0 {
+  |            ^^
+
+error: could not compile `bream-stream-consumer` (example "reject_struct_record_depth") due to 1 previous error

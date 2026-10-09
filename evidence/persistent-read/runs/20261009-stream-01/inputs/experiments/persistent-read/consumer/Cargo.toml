@@ -1,0 +1,10 @@
+[package]
+name = "bream-stream-consumer"
+version = "0.0.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+bream-stream-runtime = { path = "../runtime" }
+bream-stream-macros = { path = "../macros" }
+

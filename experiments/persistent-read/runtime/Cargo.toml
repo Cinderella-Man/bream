@@ -1,0 +1,9 @@
+[package]
+name = "bream-stream-runtime"
+version = "0.0.0"
+edition = "2021"
+publish = false
+
+
+[dependencies]
+libc = "=0.2.190"

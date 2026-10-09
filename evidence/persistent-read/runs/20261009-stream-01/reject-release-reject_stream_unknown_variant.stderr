@@ -1,0 +1,8 @@
+   Compiling bream-stream-consumer v0.0.0 (/home/bat/projects/bream/experiments/persistent-read/consumer)
+error: bream structured subset: unknown stream result variant
+ --> consumer/examples/reject_stream_unknown_variant.rs:6:13
+  |
+6 |             StreamResult::Other => {}
+  |             ^^^^^^^^^^^^
+
+error: could not compile `bream-stream-consumer` (example "reject_stream_unknown_variant") due to 1 previous error

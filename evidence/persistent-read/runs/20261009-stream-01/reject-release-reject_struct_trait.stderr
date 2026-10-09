@@ -1,0 +1,8 @@
+   Compiling bream-stream-consumer v0.0.0 (/home/bat/projects/bream/experiments/persistent-read/consumer)
+error: bream structured subset: only private checked structs/enums/functions; no impl/import/alias/macro
+ --> consumer/examples/reject_struct_trait.rs:4:5
+  |
+4 |     trait Evil {
+  |     ^^^^^
+
+error: could not compile `bream-stream-consumer` (example "reject_struct_trait") due to 1 previous error

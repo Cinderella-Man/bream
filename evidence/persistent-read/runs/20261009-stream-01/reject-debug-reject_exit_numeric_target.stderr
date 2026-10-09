@@ -1,0 +1,8 @@
+   Compiling bream-stream-consumer v0.0.0 (/home/bat/projects/bream/experiments/persistent-read/consumer)
+error: bream structured subset: exit_to requires Pid and ExitReason
+ --> consumer/examples/reject_exit_numeric_target.rs:3:27
+  |
+3 | mod rejected { fn run() { exit_to(1, ExitReason::Kill); } }
+  |                           ^^^^^^^
+
+error: could not compile `bream-stream-consumer` (example "reject_exit_numeric_target") due to 1 previous error

@@ -1,0 +1,8 @@
+   Compiling bream-stream-consumer v0.0.0 (/home/bat/projects/bream/experiments/persistent-read/consumer)
+error: bream structured subset: reserved or raw identifier
+ --> consumer/examples/reject_link_builtin_shadow.rs:4:8
+  |
+4 |     fn try_link(target: Pid) {
+  |        ^^^^^^^^
+
+error: could not compile `bream-stream-consumer` (example "reject_link_builtin_shadow") due to 1 previous error

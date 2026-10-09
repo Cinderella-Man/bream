@@ -1,0 +1,8 @@
+   Compiling bream-stream-consumer v0.0.0 (/home/bat/projects/bream/experiments/persistent-read/consumer)
+error: bream structured subset: reserved or raw identifier
+ --> consumer/examples/reject_exit_helper_shadow.rs:3:19
+  |
+3 | mod rejected { fn self_exit() {} fn run() { self_exit(); } }
+  |                   ^^^^^^^^^
+
+error: could not compile `bream-stream-consumer` (example "reject_exit_helper_shadow") due to 1 previous error

@@ -1,0 +1,4 @@
+   Compiling libc v0.2.190
+   Compiling bream-stream-runtime v0.0.0 (/home/bat/projects/bream/experiments/persistent-read/runtime)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 3.56s
+     Running unittests src/lib.rs (.tools/persistent-read/20261009-stream-01/debug/deps/bream_stream_runtime-e73f6ed4149c65ea)

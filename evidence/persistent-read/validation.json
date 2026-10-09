@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "date": "2026-10-09",
+  "cohort": "evidence/persistent-read/runs/20261009-stream-01",
+  "retained_cohorts": 1,
+  "hash_records_verified": 1233,
+  "current_inputs_verified": 233,
+  "previous_inputs_preserved": 219,
+  "commands": 484,
+  "observations": 434,
+  "rust_exit_configurations": 6,
+  "rust_read_configurations": 6,
+  "rust_stream_configurations": 6,
+  "beam_reference_observations": 78,
+  "experiments_executed_by_audit": false,
+  "benchmarks_executed": false,
+  "errors": []
+}

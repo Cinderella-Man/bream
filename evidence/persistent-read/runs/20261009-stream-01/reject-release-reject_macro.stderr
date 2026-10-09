@@ -1,0 +1,8 @@
+   Compiling bream-stream-consumer v0.0.0 (/home/bat/projects/bream/experiments/persistent-read/consumer)
+error: bream milestone subset: items and statement macros are forbidden
+ --> consumer/examples/reject_macro.rs:5:5
+  |
+5 |     println!("not an approved builtin");
+  |     ^^^^^^^
+
+error: could not compile `bream-stream-consumer` (example "reject_macro") due to 1 previous error

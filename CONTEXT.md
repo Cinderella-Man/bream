@@ -90,6 +90,12 @@ Always examine what Rust can eliminate or check earlier than the reference imple
 
 **Cleanup obligation**: The runtime's responsibility to release a process-associated ownership or external registration when its defined lifetime ends. _Avoid_: assuming that forgetting an application handle, stopping execution or removing a process address discharges that responsibility.
 
+**Process-owned endpoint**: An admitted external communication resource whose ownership belongs to one process incarnation and may span several operations. _Avoid_: the process itself, one read request, or one returned buffer as interchangeable lifetimes.
+
+**Operation identity**: The identity of one admitted request, distinct from its owning process and endpoint, used to associate completion or cancellation with that request alone. _Avoid_: identifying whichever request is currently active merely by its process or endpoint.
+
+**Operation settlement**: Resolution of a request's outstanding access and result-delivery obligations, after which that request cannot affect a later operation. _Avoid_: cancellation intent, rollback of external effects, or destruction of a result already transferred to its recipient.
+
 **Readiness notification**: A report that an I/O operation may make progress; the operation must still establish its actual result. _Avoid_: completed I/O, reserved bytes or a guarantee that readiness persists until use.
 
 **Registration lifetime**: The interval during which a backend association or work derived from it still carries access or release obligations. _Avoid_: the lifetime of one numeric descriptor, its application handle or its recipient process.

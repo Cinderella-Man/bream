@@ -17,3 +17,5 @@ The [passing cohort](../../evidence/owned-read/runs/20261009-read-01/results.jso
 The [read-only audit](../../evidence/owned-read/validation.json) checks 1,157 hash records and preservation of all 205 preceding-milestone inputs. No remaining material issue was found in the source-contract review within the declared single-worker, trusted-host scope. This is bounded evidence, not an exhaustive concurrency proof or general driver-panic recovery.
 
 Next: preserve a local endpoint across sequential reads. A persistent resource introduces a new distinction between endpoint ownership and successive request identities on the same live actor. Old cancellation/readiness/completion must not affect a later read, and stopping between operations must still close the endpoint and settle buffers exactly once. [Milestone exit conditions](../milestones.md).
+
+Subsequent status: [milestone fifteen passed](69-persistent-read-milestone.md), preserving this one-shot implementation and its retained inputs.
